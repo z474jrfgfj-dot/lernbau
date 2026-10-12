@@ -1,1428 +1,1516 @@
 {
-  "unit": "mathe-grundlagen",
-  "subject": "mathe",
-  "decks": [
+ "unit": "mathe-grundlagen",
+ "subject": "mathe",
+ "decks": [
+  {
+   "id": "mathe-grundlagen-rechtwinklig",
+   "title": "Rechtwinkliges Dreieck: sin, cos, tan & Pythagoras",
+   "description": "Seitenbezeichnungen, Winkelfunktionen und Flächensätze im rechtwinkligen Dreieck sicher anwenden.",
+   "sources": [
+    "Grundlagen Trigonometrie.pdf",
+    "Merkhilfe.pdf"
+   ],
+   "cards": [
     {
-      "id": "mathe-grundlagen-rechtwinklig",
-      "title": "Rechtwinkliges Dreieck: sin, cos, tan & Pythagoras",
-      "description": "Seitenbezeichnungen, Winkelfunktionen und Flächensätze im rechtwinkligen Dreieck sicher anwenden.",
-      "sources": ["Grundlagen Trigonometrie.pdf", "Merkhilfe.pdf"],
-      "cards": [
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c001",
-          "type": "basic",
-          "front": "Hypotenuse – welche Seite ist das?",
-          "back": "Die **längste Seite** im rechtwinkligen Dreieck; sie liegt dem rechten Winkel gegenüber.\nBei γ = 90° ist das die Seite c.",
-          "hint": "Schreibweise: Hypotenuse (ohne „h“ nach dem t)."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c002",
-          "type": "basic",
-          "front": "Was ist die Gegenkathete eines spitzen Winkels α?",
-          "back": "Die Kathete, die dem Winkel α **gegenüber** liegt – sie berührt α nicht."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c003",
-          "type": "basic",
-          "front": "Was ist die Ankathete eines spitzen Winkels α?",
-          "back": "Die Kathete, die **am** Winkel α anliegt – sie bildet zusammen mit der Hypotenuse den Winkel α."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c004",
-          "type": "basic",
-          "front": "Was passiert mit Ankathete und Gegenkathete, wenn du statt α den anderen spitzen Winkel β betrachtest?",
-          "back": "Sie tauschen die Rollen: Die Gegenkathete von α ist die Ankathete von β und umgekehrt. Die Hypotenuse bleibt dieselbe."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c005",
-          "type": "basic",
-          "front": "sin α = ?",
-          "back": "sin α = Gegenkathete / Hypotenuse = GK / H"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c006",
-          "type": "basic",
-          "front": "cos α = ?",
-          "back": "cos α = Ankathete / Hypotenuse = AK / H"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c007",
-          "type": "basic",
-          "front": "tan α = ? (zwei Schreibweisen)",
-          "back": "tan α = Gegenkathete / Ankathete = GK / AK\ntan α = sin α / cos α"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c008",
-          "type": "basic",
-          "front": "Merkhilfe „GAG über HHA“ – was bedeutet sie?",
-          "back": "Zähler G – A – G, Nenner H – H – A, in der Reihenfolge sin – cos – tan:\n- sin = G / H\n- cos = A / H\n- tan = G / A"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c009",
-          "type": "basic",
-          "front": "Dreieck ABC mit γ = 90° (Bezeichnung wie in der Merkhilfe): sin α, cos α und tan α in den Seiten a, b, c?",
-          "back": "sin α = a / c\ncos α = b / c\ntan α = a / b",
-          "hint": "a liegt α gegenüber, b liegt an α an, c ist die Hypotenuse."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c010",
-          "type": "basic",
-          "front": "Komplementwinkel: Wie lassen sich sin und cos ineinander umrechnen?",
-          "back": "sin α = cos (90° − α)\ncos α = sin (90° − α)\nGrund: β = 90° − α, und die Gegenkathete von α ist die Ankathete von β."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c011",
-          "type": "basic",
-          "front": "sin α = a / c umstellen – nach a und nach c?",
-          "back": "a = c · sin α\nc = a / sin α",
-          "hint": "Erst mit c multiplizieren, dann ggf. durch sin α teilen."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c012",
-          "type": "basic",
-          "front": "Satz des Pythagoras?",
-          "back": "a² + b² = c²\nSumme der Kathetenquadrate = Hypotenusenquadrat. Gilt **nur** im rechtwinkligen Dreieck (c = Hypotenuse)."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c013",
-          "type": "basic",
-          "front": "Höhensatz (rechtwinkliges Dreieck)?",
-          "back": "h² = p · q\nh = Höhe auf die Hypotenuse, p und q = die beiden Hypotenusenabschnitte."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c014",
-          "type": "basic",
-          "front": "Kathetensatz (rechtwinkliges Dreieck)?",
-          "back": "a² = c · p und b² = c · q\nKathete² = Hypotenuse · der Hypotenusenabschnitt, der unter dieser Kathete liegt.",
-          "hint": "Merkhilfe-Skizze: p liegt bei B unter a, q liegt bei A unter b."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c015",
-          "type": "basic",
-          "front": "Fläche eines rechtwinkligen Dreiecks?",
-          "back": "A = ½ · Kathete · Kathete (bei γ = 90°: A = ½ · a · b)\nalternativ: A = ½ · c · h_c"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c016",
-          "type": "basic",
-          "front": "Rechtwinkliges Dreieck mit γ = 90°: Höhe h_c aus der Kathete b und dem Winkel α?",
-          "back": "h_c = b · sin α\nIm Teildreieck mit der Hypotenuse b ist h_c die Gegenkathete von α."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-c017",
-          "type": "basic",
-          "front": "Wie rechnest du 23°18′24″ in Dezimalgrad um?",
-          "back": "23 + 18/60 + 24/3600 = 23,3067°\nAm Taschenrechner direkt mit der Grad-Minuten-Sekunden-Taste (° ′ ″) eingeben.",
-          "hint": "1° = 60′ (Minuten), 1′ = 60″ (Sekunden)"
-        }
-      ],
-      "quiz": [
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q001",
-          "type": "mc",
-          "question": "Rechtwinkliges Dreieck: Der rechte Winkel liegt zwischen den Katheten x und z, y ist die Hypotenuse. β liegt zwischen z und y, α liegt zwischen x und y. Welcher Ausdruck ist tan β?",
-          "options": ["z / x", "x / y", "x / z", "z / y"],
-          "answer": 2,
-          "explanation": "Gegenkathete von β ist x (liegt β gegenüber), Ankathete ist z (liegt an β an). tan β = GK / AK = x / z."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q002",
-          "type": "mc",
-          "question": "Rechtwinkliges Dreieck: Der rechte Winkel liegt zwischen d und e, f ist die Hypotenuse. δ liegt zwischen e und f, ε liegt zwischen d und f. Welcher Ausdruck ist cos δ?",
-          "options": ["d / f", "e / f", "d / e", "f / e"],
-          "answer": 1,
-          "explanation": "Ankathete von δ ist e, Hypotenuse f → cos δ = e / f. Gleichzeitig gilt sin ε = e / f, weil e die Gegenkathete von ε ist."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q003",
-          "type": "mc",
-          "question": "Gleiches Dreieck (rechter Winkel zwischen d und e, Hypotenuse f, δ liegt zwischen e und f): tan δ = ?",
-          "options": ["e / d", "d / f", "f / d", "d / e"],
-          "answer": 3,
-          "explanation": "Gegenkathete von δ ist d, Ankathete ist e → tan δ = d / e."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q004",
-          "type": "mc",
-          "question": "Dreieck ABC mit γ = 90°. Welcher Ausdruck ist cos β?",
-          "options": ["a / c", "b / c", "a / b", "b / a"],
-          "answer": 0,
-          "explanation": "Die Ankathete von β ist a (Seite zwischen B und C), die Hypotenuse ist c → cos β = a / c. Das ist derselbe Wert wie sin α."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q005",
-          "type": "numeric",
-          "question": "Bestimme mit dem Taschenrechner auf 4 Dezimalstellen: cos 16°38′",
-          "answer": 0.9582,
-          "tolerance": 0.001,
-          "explanation": "16°38′ = 16 + 38/60 = 16,6333°\ncos 16,6333° = 0,95816 ≈ 0,9582 (korrekt gerundet, nicht abgeschnitten)."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q006",
-          "type": "numeric",
-          "question": "Bestimme mit dem Taschenrechner auf 4 Dezimalstellen: tan 23°18′24″",
-          "answer": 0.4308,
-          "tolerance": 0.001,
-          "explanation": "23°18′24″ = 23 + 18/60 + 24/3600 = 23,3067°\ntan 23,3067° ≈ 0,4308"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q007",
-          "type": "numeric",
-          "question": "Bestimme mit dem Taschenrechner auf 4 Dezimalstellen: tan 89,99°",
-          "answer": 5729.5779,
-          "tolerance": 0.001,
-          "explanation": "tan 89,99° ≈ 5729,5779. Je näher der Winkel an 90° liegt, desto größer wird der Tangens (cos α → 0). Bei 90° ist tan nicht definiert."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q008",
-          "type": "numeric",
-          "question": "Bestimme den Winkel α (2 Dezimalstellen): tan α = 2,1958",
-          "answer": 65.51,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "α = tan⁻¹(2,1958) ≈ 65,51° (am TR: SHIFT + tan)."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q009",
-          "type": "numeric",
-          "question": "Bestimme den Winkel α (2 Dezimalstellen): cos α = 0,0085",
-          "answer": 89.51,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "α = cos⁻¹(0,0085) ≈ 89,51°. Ein Kosinus nahe 0 bedeutet einen Winkel nahe 90°."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q010",
-          "type": "numeric",
-          "question": "Bestimme den Winkel α (2 Dezimalstellen): sin α = 0,6789",
-          "answer": 42.76,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "α = sin⁻¹(0,6789) ≈ 42,76°"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q011",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck mit γ = 90°: b = 5 cm, α = 55°. Berechne die Hypotenuse c.",
-          "answer": 8.72,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "b ist die Ankathete von α.\ncos 55° = b / c\nc = 5 cm / cos 55° = 5 / 0,5736 = 8,72 cm"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q012",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck mit γ = 90°: b = 5 cm, α = 55°. Berechne die Kathete a.",
-          "answer": 7.14,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "a ist die Gegenkathete von α, b die Ankathete.\ntan 55° = a / b\na = 5 cm · tan 55° = 5 · 1,4281 = 7,14 cm\n(oder a = c · sin 55° = 8,72 · 0,8192 = 7,14 cm)"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q013",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck mit γ = 90°: b = 5 cm, α = 55° (a = 7,14 cm). Berechne die Fläche A.",
-          "answer": 17.85,
-          "unit": "cm²",
-          "tolerance": 0.01,
-          "explanation": "A = ½ · a · b = ½ · 7,1407 cm · 5 cm = 17,85 cm²\nHinweis: Über A = ½ · c · h mit gerundeten Zwischenwerten (8,72 · 4,10) kommt 17,88 cm² heraus – mit ungerundeten Werten weiterrechnen."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q014",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck ABC mit der Hypotenuse c: Kathete b = 45 cm und β = 61°. Berechne c.",
-          "answer": 51.45,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "b liegt β gegenüber (Gegenkathete).\nsin 61° = b / c\nc = 45 cm / sin 61° = 45 / 0,8746 = 51,45 cm"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q015",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck ABC mit der Hypotenuse c: Kathete b = 45 cm und β = 61°. Berechne die Kathete a.",
-          "answer": 24.94,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "a ist die Ankathete von β.\ncos 61° = a / c\na = 51,45 cm · cos 61° = 51,45 · 0,4848 = 24,94 cm\n(direkt: a = b / tan 61° = 45 / 1,8040 = 24,94 cm; α = 90° − 61° = 29°)"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q016",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck ABC: Hypotenuse c = 100 cm, Kathete b = 45 cm. Berechne den Winkel α (bei A, zwischen b und c).",
-          "answer": 63.26,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "b ist die Ankathete von α.\ncos α = 45 / 100 = 0,45\nα = cos⁻¹(0,45) = 63,26°\n(β = 90° − 63,26° = 26,74°)"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q017",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck ABC: Hypotenuse c = 100 cm, Kathete b = 45 cm. Berechne die fehlende Kathete a.",
-          "answer": 89.3,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "Pythagoras: a = √(c² − b²) = √(100² − 45²) = √7975 = 89,30 cm\nÜber tan mit dem gerundeten Winkel 63,26° ergibt sich 89,32 cm – der Pythagoras ist hier genauer."
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q018",
-          "type": "numeric",
-          "question": "Optischer Entfernungsmesser (vor Erfindung des Radars): Die beiden „Augen“ sind 6 m voneinander entfernt, das Schiff liegt mittig davor. An jedem Auge wird zwischen der Basis und der Visierlinie zum Schiff ein Winkel von 89,8° gemessen. Wie weit ist das Schiff von der Mitte des Entfernungsmessers entfernt?",
-          "answer": 859.43,
-          "unit": "m",
-          "tolerance": 0.01,
-          "explanation": "Halbe Basis: l = 6 m / 2 = 3 m (Ankathete)\nGesuchte Entfernung h ist die Gegenkathete des 89,8°-Winkels.\ntan 89,8° = h / 3 m\nh = 3 m · tan 89,8° = 3 · 286,48 = 859,43 m"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q019",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck ABC mit γ = 90°, b = 4,7 cm, α = 38°. Berechne die Höhe h_c.",
-          "answer": 2.89,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "Im Teildreieck mit der Hypotenuse b ist h_c die Gegenkathete von α.\nh_c = b · sin 38° = 4,7 cm · 0,6157 = 2,89 cm"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q020",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck ABC mit γ = 90°, b = 4,7 cm, α = 38°. Berechne die Fläche A.",
-          "answer": 8.63,
-          "unit": "cm²",
-          "tolerance": 0.01,
-          "explanation": "a = b · tan 38° = 4,7 · 0,7813 = 3,672 cm\nA = ½ · a · b = ½ · 3,672 cm · 4,7 cm = 8,63 cm²\n(Kontrolle: c = 4,7 / cos 38° = 5,964 cm; ½ · c · h_c = ½ · 5,964 · 2,894 = 8,63 cm²)"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q021",
-          "type": "numeric",
-          "question": "Eine rechteckige Baugrube ist 12,50 m lang und 8,40 m breit. Wie lang muss die Diagonale sein, damit die Ecken rechtwinklig sind?",
-          "answer": 15.06,
-          "unit": "m",
-          "tolerance": 0.01,
-          "explanation": "Die Diagonale ist die Hypotenuse.\nd = √(12,50² + 8,40²) = √(156,25 + 70,56) = √226,81 = 15,06 m"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q022",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck: Die Höhe teilt die Hypotenuse in die Abschnitte p = 2,5 cm und q = 6,4 cm. Wie groß ist die Höhe h?",
-          "answer": 4,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "Höhensatz: h² = p · q = 2,5 · 6,4 = 16 cm²\nh = √16 = 4,0 cm"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q023",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck: Hypotenuse c = 12 cm, der unter der Kathete b liegende Hypotenusenabschnitt ist q = 4,8 cm. Berechne b.",
-          "answer": 7.59,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "Kathetensatz: b² = c · q = 12 · 4,8 = 57,6 cm²\nb = √57,6 = 7,59 cm"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q024",
-          "type": "numeric",
-          "question": "Eine Treppe hat das Steigungsverhältnis 17/29 (Steigung 17 cm, Auftritt 29 cm). Wie groß ist der Neigungswinkel der Treppe?",
-          "answer": 30.38,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "Steigung = Gegenkathete, Auftritt = Ankathete.\ntan α = 17 / 29 = 0,5862\nα = tan⁻¹(0,5862) = 30,38°"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q025",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck mit γ = 90°: c = 7,5 cm, α = 28°. Berechne die Kathete a.",
-          "answer": 3.52,
-          "unit": "cm",
-          "tolerance": 0.01,
-          "explanation": "a ist die Gegenkathete von α.\nsin 28° = a / c\na = 7,5 cm · sin 28° = 7,5 · 0,4695 = 3,52 cm"
-        },
-        {
-          "id": "mathe-grundlagen-rechtwinklig-q026",
-          "type": "numeric",
-          "question": "Rechtwinkliges Dreieck mit γ = 90°: a = 3,5 cm, c = 6,2 cm. Berechne den Winkel α.",
-          "answer": 34.37,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "a ist die Gegenkathete von α, c die Hypotenuse.\nsin α = 3,5 / 6,2 = 0,5645\nα = sin⁻¹(0,5645) = 34,37°"
-        }
-      ]
+     "id": "mathe-grundlagen-rechtwinklig-c004",
+     "type": "basic",
+     "front": "Was passiert mit Ankathete und Gegenkathete, wenn du statt α den anderen spitzen Winkel β betrachtest?",
+     "back": "Sie tauschen die Rollen: Die Gegenkathete von α ist die Ankathete von β und umgekehrt. Die Hypotenuse bleibt dieselbe."
     },
     {
-      "id": "mathe-grundlagen-einheitskreis",
-      "title": "Einheitskreis, Quadranten & besondere Werte",
-      "description": "sin und cos am Einheitskreis, Vorzeichen in den vier Quadranten, Winkel über 90° und Funktionswerte besonderer Winkel.",
-      "sources": ["Grundlagen Trigonometrie.pdf", "Merkhilfe.pdf"],
-      "cards": [
-        {
-          "id": "mathe-grundlagen-einheitskreis-c001",
-          "type": "basic",
-          "front": "Was ist der Einheitskreis?",
-          "back": "Ein Kreis mit dem Radius r = 1 um den Ursprung O(0|0). Winkel werden ab der positiven x-Achse gegen den Uhrzeigersinn gemessen."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c002",
-          "type": "basic",
-          "front": "Wo liest du am Einheitskreis sin α und cos α ab?",
-          "back": "sin α = y-Wert des Kreispunkts (an der **y-Achse**)\ncos α = x-Wert des Kreispunkts (an der **x-Achse**)"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c003",
-          "type": "basic",
-          "front": "Trigonometrischer Pythagoras – Formel und Herkunft?",
-          "back": "(sin α)² + (cos α)² = 1\nFolgt aus dem Pythagoras im Dreieck am Einheitskreis: Katheten sin α und cos α, Hypotenuse r = 1."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c004",
-          "type": "basic",
-          "front": "cos α aus sin α berechnen (und umgekehrt) – spitzer Winkel?",
-          "back": "cos α = √(1 − (sin α)²)\nsin α = √(1 − (cos α)²)",
-          "hint": "Bei Winkeln über 90° das Vorzeichen über den Quadranten festlegen."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c005",
-          "type": "basic",
-          "front": "Welche Winkelbereiche gehören zu den vier Quadranten?",
-          "back": "I: 0° bis 90°\nII: 90° bis 180°\nIII: 180° bis 270°\nIV: 270° bis 360°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c006",
-          "type": "basic",
-          "front": "Vorzeichen von sin α in den Quadranten I–IV?",
-          "back": "I +, II +, III −, IV −\n(sin = y-Wert: oberhalb der x-Achse positiv)"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c007",
-          "type": "basic",
-          "front": "Vorzeichen von cos α in den Quadranten I–IV?",
-          "back": "I +, II −, III −, IV +\n(cos = x-Wert: rechts der y-Achse positiv)"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c008",
-          "type": "basic",
-          "front": "Vorzeichen von tan α in den Quadranten I–IV?",
-          "back": "I +, II −, III +, IV −\n(tan = sin / cos: positiv, wenn sin und cos dasselbe Vorzeichen haben)"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c009",
-          "type": "basic",
-          "front": "II. Quadrant: Wie rechnest du sin, cos und tan von (180° − α) auf den spitzen Winkel α zurück?",
-          "back": "sin (180° − α) = sin α\ncos (180° − α) = −cos α\ntan (180° − α) = −tan α"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c010",
-          "type": "basic",
-          "front": "III. Quadrant: sin, cos und tan von (180° + α)?",
-          "back": "sin (180° + α) = −sin α\ncos (180° + α) = −cos α\ntan (180° + α) = tan α"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c011",
-          "type": "basic",
-          "front": "IV. Quadrant: sin, cos und tan von (360° − α)?",
-          "back": "sin (360° − α) = −sin α\ncos (360° − α) = cos α\ntan (360° − α) = −tan α"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c012",
-          "type": "basic",
-          "front": "Negative Winkel: sin (−α), cos (−α), tan (−α)?",
-          "back": "sin (−α) = −sin α\ncos (−α) = cos α\ntan (−α) = −tan α\n(−α liegt spiegelbildlich zur x-Achse im IV. Quadranten)"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c013",
-          "type": "basic",
-          "front": "Winkel zwischen 0° und 360° aus einem Funktionswert bestimmen – welche 3 Schritte?",
-          "back": "1. Betrag (ohne Vorzeichen) eingeben → Grundwinkel α′ mit sin⁻¹, cos⁻¹ oder tan⁻¹\n2. Mit der Vorzeichenregel die beiden möglichen Quadranten bestimmen\n3. Beide Winkel mit den Umrechnungsformeln berechnen",
-          "hint": "Der Taschenrechner liefert immer nur einen Winkel."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c014",
-          "type": "basic",
-          "front": "Umrechnungsformeln: Winkel im jeweiligen Quadranten aus dem Grundwinkel α′?",
-          "back": "I: α = α′\nII: α = 180° − α′\nIII: α = 180° + α′\nIV: α = 360° − α′"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c015",
-          "type": "basic",
-          "front": "sin 30° und cos 30° (exakt)?",
-          "back": "sin 30° = 1/2\ncos 30° = √3 / 2 ≈ 0,866"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c016",
-          "type": "basic",
-          "front": "sin 45° und cos 45° (exakt)?",
-          "back": "sin 45° = cos 45° = √2 / 2 ≈ 0,707"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c017",
-          "type": "basic",
-          "front": "sin 60° und cos 60° (exakt)?",
-          "back": "sin 60° = √3 / 2 ≈ 0,866\ncos 60° = 1/2"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c018",
-          "type": "basic",
-          "front": "tan 30°, tan 45° und tan 60° (exakt)?",
-          "back": "tan 30° = √3 / 3 ≈ 0,577\ntan 45° = 1\ntan 60° = √3 ≈ 1,732"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c019",
-          "type": "basic",
-          "front": "sin und cos bei 0°, 90°, 180° und 270°?",
-          "back": "sin: 0 | 1 | 0 | −1\ncos: 1 | 0 | −1 | 0",
-          "hint": "Am Einheitskreis: Punkte (1|0), (0|1), (−1|0), (0|−1)"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c020",
-          "type": "basic",
-          "front": "Wo ist tan α nicht definiert – und warum?",
-          "back": "Bei 90° und 270°: Dort ist cos α = 0, und tan α = sin α / cos α wäre eine Division durch null. Kurz vor 90° wird tan sehr groß (tan 89,99° ≈ 5729,6)."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c021",
-          "type": "basic",
-          "front": "Merktrick für sin 0°, 30°, 45°, 60°, 90°?",
-          "back": "sin = √0/2 | √1/2 | √2/2 | √3/2 | √4/2\n= 0 | 0,5 | 0,707 | 0,866 | 1\nFür cos gilt dieselbe Reihe rückwärts."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c022",
-          "type": "basic",
-          "front": "Merkhilfe: Doppelwinkelformeln für sin 2φ und cos 2φ?",
-          "back": "sin 2φ = 2 · sin φ · cos φ\ncos 2φ = (cos φ)² − (sin φ)²"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-c023",
-          "type": "basic",
-          "front": "Merkhilfe: Additionstheoreme für sin (α + β) und cos (α + β)?",
-          "back": "sin (α + β) = sin α · cos β + cos α · sin β\ncos (α + β) = cos α · cos β − sin α · sin β"
-        }
-      ],
-      "quiz": [
-        {
-          "id": "mathe-grundlagen-einheitskreis-q001",
-          "type": "mc",
-          "question": "Richtig oder falsch? cos 20° < cos 30°",
-          "options": ["Richtig", "Falsch"],
-          "answer": 1,
-          "explanation": "Falsch: Der Kosinus fällt im I. Quadranten mit wachsendem Winkel von 1 auf 0. cos 20° ≈ 0,940 ist größer als cos 30° ≈ 0,866."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q002",
-          "type": "mc",
-          "question": "Richtig oder falsch? cos 90° > sin 0°",
-          "options": ["Richtig", "Falsch"],
-          "answer": 1,
-          "explanation": "Falsch: cos 90° = 0 und sin 0° = 0 – die Werte sind gleich."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q003",
-          "type": "mc",
-          "question": "Richtig oder falsch? sin 30° < tan 30°",
-          "options": ["Richtig", "Falsch"],
-          "answer": 0,
-          "explanation": "Richtig: tan 30° = sin 30° / cos 30°, und weil cos 30° < 1 ist, wird der Wert durch die Division größer (0,5 < 0,577). Das gilt für alle Winkel zwischen 0° und 90°."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q004",
-          "type": "numeric",
-          "question": "α ist ein spitzer Winkel mit sin α = 0,6. Berechne tan α, ohne α zu bestimmen.",
-          "answer": 0.75,
-          "tolerance": 0.01,
-          "explanation": "cos α = √(1 − 0,6²) = √0,64 = 0,8\ntan α = sin α / cos α = 0,6 / 0,8 = 0,75"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q005",
-          "type": "numeric",
-          "question": "α ist ein spitzer Winkel mit cos α = 12/13. Berechne sin α (als Dezimalzahl, 4 Nachkommastellen).",
-          "answer": 0.3846,
-          "tolerance": 0.005,
-          "explanation": "sin α = √(1 − (12/13)²) = √(1 − 144/169) = √(25/169) = 5/13 ≈ 0,3846"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q006",
-          "type": "numeric",
-          "question": "α ist ein spitzer Winkel mit cos α = 12/13. Berechne tan α (als Dezimalzahl, 4 Nachkommastellen).",
-          "answer": 0.4167,
-          "tolerance": 0.005,
-          "explanation": "sin α = 5/13 (siehe trigonometrischer Pythagoras)\ntan α = (5/13) / (12/13) = 5/12 ≈ 0,4167"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q007",
-          "type": "numeric",
-          "question": "α ist ein spitzer Winkel mit sin α = √5 / 3. Berechne cos α (4 Nachkommastellen).",
-          "answer": 0.6667,
-          "tolerance": 0.005,
-          "explanation": "(sin α)² = 5/9\ncos α = √(1 − 5/9) = √(4/9) = 2/3 ≈ 0,6667"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q008",
-          "type": "numeric",
-          "question": "α ist ein spitzer Winkel mit sin α = √5 / 3. Berechne tan α (4 Nachkommastellen).",
-          "answer": 1.118,
-          "tolerance": 0.005,
-          "explanation": "cos α = 2/3\ntan α = (√5 / 3) / (2/3) = √5 / 2 ≈ 1,1180"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q009",
-          "type": "numeric",
-          "question": "α ist ein spitzer Winkel mit sin α = 0,28. Berechne cos α, ohne α zu bestimmen.",
-          "answer": 0.96,
-          "tolerance": 0.005,
-          "explanation": "cos α = √(1 − 0,28²) = √(1 − 0,0784) = √0,9216 = 0,96"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q010",
-          "type": "numeric",
-          "question": "Taschenrechner (4 Dezimalstellen): sin 125° = ?",
-          "answer": 0.8192,
-          "tolerance": 0.001,
-          "explanation": "sin 125° ≈ 0,8192. Kontrolle: sin 125° = sin (180° − 55°) = sin 55° – im II. Quadranten ist sin positiv."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q011",
-          "type": "numeric",
-          "question": "Taschenrechner (4 Dezimalstellen): cos 212° = ?",
-          "answer": -0.848,
-          "tolerance": 0.001,
-          "explanation": "cos 212° ≈ −0,8480. Kontrolle: cos (180° + 32°) = −cos 32° – im III. Quadranten ist cos negativ."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q012",
-          "type": "numeric",
-          "question": "Taschenrechner (4 Dezimalstellen): tan 333° = ?",
-          "answer": -0.5095,
-          "tolerance": 0.001,
-          "explanation": "tan 333° ≈ −0,5095. Kontrolle: tan (360° − 27°) = −tan 27° – im IV. Quadranten ist tan negativ."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q013",
-          "type": "numeric",
-          "question": "sin α = −0,2435. Es gibt zwei Winkel zwischen 0° und 360°. Gib den Winkel im IV. Quadranten an (2 Dezimalstellen).",
-          "answer": 345.91,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "1. Grundwinkel: sin⁻¹(0,2435) = 14,09°\n2. sin negativ → III. und IV. Quadrant\n3. α₃ = 180° + 14,09° = 194,09°\n   α₄ = 360° − 14,09° = 345,91°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q014",
-          "type": "numeric",
-          "question": "cos α = −0,8888. Gib den Winkel im III. Quadranten an (2 Dezimalstellen).",
-          "answer": 207.28,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "1. Grundwinkel: cos⁻¹(0,8888) = 27,28°\n2. cos negativ → II. und III. Quadrant\n3. α₂ = 180° − 27,28° = 152,72°\n   α₃ = 180° + 27,28° = 207,28°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q015",
-          "type": "numeric",
-          "question": "sin α = 0,1568. Gib den Winkel im II. Quadranten an (2 Dezimalstellen).",
-          "answer": 170.98,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "1. Grundwinkel: sin⁻¹(0,1568) = 9,02°\n2. sin positiv → I. und II. Quadrant\n3. α₁ = 9,02°; α₂ = 180° − 9,02° = 170,98°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q016",
-          "type": "numeric",
-          "question": "tan α = −1,4859. Gib den Winkel im II. Quadranten an (2 Dezimalstellen).",
-          "answer": 123.94,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "1. Grundwinkel: tan⁻¹(1,4859) = 56,06°\n2. tan negativ → II. und IV. Quadrant\n3. α₂ = 180° − 56,06° = 123,94°\n   α₄ = 360° − 56,06° = 303,94°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q017",
-          "type": "numeric",
-          "question": "cos α = −0,9159. Gib den Winkel im II. Quadranten an (2 Dezimalstellen).",
-          "answer": 156.33,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "1. Grundwinkel: cos⁻¹(0,9159) = 23,67°\n2. cos negativ → II. und III. Quadrant\n3. α₂ = 180° − 23,67° = 156,33°\n   α₃ = 180° + 23,67° = 203,67°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q018",
-          "type": "numeric",
-          "question": "sin α = −0,7777. Gib den Winkel im III. Quadranten an (2 Dezimalstellen).",
-          "answer": 231.05,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "1. Grundwinkel: sin⁻¹(0,7777) = 51,05°\n2. sin negativ → III. und IV. Quadrant\n3. α₃ = 180° + 51,05° = 231,05°\n   α₄ = 360° − 51,05° = 308,95°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q019",
-          "type": "numeric",
-          "question": "tan α = 3,1415. Gib den Winkel im III. Quadranten an (2 Dezimalstellen).",
-          "answer": 252.34,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "1. Grundwinkel: tan⁻¹(3,1415) = 72,34°\n2. tan positiv → I. und III. Quadrant\n3. α₁ = 72,34°; α₃ = 180° + 72,34° = 252,34°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q020",
-          "type": "numeric",
-          "question": "cos α = 0,4174. Gib den Winkel im IV. Quadranten an (2 Dezimalstellen).",
-          "answer": 294.67,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "1. Grundwinkel: cos⁻¹(0,4174) = 65,33°\n2. cos positiv → I. und IV. Quadrant\n3. α₁ = 65,33°; α₄ = 360° − 65,33° = 294,67°"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q021",
-          "type": "mc",
-          "question": "In welchem Quadranten ist sin α negativ und cos α positiv?",
-          "options": ["I. Quadrant", "II. Quadrant", "III. Quadrant", "IV. Quadrant"],
-          "answer": 3,
-          "explanation": "sin < 0 heißt unterhalb der x-Achse (III. oder IV.), cos > 0 heißt rechts der y-Achse (I. oder IV.) → IV. Quadrant (270° bis 360°)."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q022",
-          "type": "mc",
-          "question": "cos (180° − α) = ?",
-          "options": ["cos α", "−cos α", "sin α", "−sin α"],
-          "answer": 1,
-          "explanation": "180° − α liegt im II. Quadranten: Der x-Wert wird an der y-Achse gespiegelt, also cos (180° − α) = −cos α."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q023",
-          "type": "mc",
-          "question": "tan (180° + α) = ?",
-          "options": ["−tan α", "1 / tan α", "tan α", "−sin α"],
-          "answer": 2,
-          "explanation": "Im III. Quadranten sind sin und cos beide negativ – die Vorzeichen heben sich im Quotienten auf: tan (180° + α) = tan α."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q024",
-          "type": "mc",
-          "question": "sin (−30°) = ?",
-          "options": ["0,5", "−0,5", "√3 / 2", "−√3 / 2"],
-          "answer": 1,
-          "explanation": "sin (−α) = −sin α → sin (−30°) = −sin 30° = −0,5"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q025",
-          "type": "input",
-          "question": "Ohne Taschenrechner: sin 30° = ? (als Dezimalzahl)",
-          "answer": "0,5",
-          "accept": ["0.5", "1/2", ",5"],
-          "explanation": "sin 30° = 1/2 = 0,5 (Merktrick: √1 / 2)."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q026",
-          "type": "mc",
-          "question": "cos 60° = ?",
-          "options": ["√3 / 2", "√2 / 2", "1/2", "1"],
-          "answer": 2,
-          "explanation": "cos 60° = sin 30° = 1/2 (Komplementwinkel)."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q027",
-          "type": "mc",
-          "question": "tan 60° = ?",
-          "options": ["√3", "√3 / 3", "1", "√3 / 2"],
-          "answer": 0,
-          "explanation": "tan 60° = sin 60° / cos 60° = (√3 / 2) / (1/2) = √3 ≈ 1,732"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q028",
-          "type": "mc",
-          "question": "sin 270° = ?",
-          "options": ["0", "1", "−1", "nicht definiert"],
-          "answer": 2,
-          "explanation": "Bei 270° liegt der Punkt am Einheitskreis bei (0|−1). Der y-Wert und damit sin 270° ist −1."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q029",
-          "type": "mc",
-          "question": "Für welchen dieser Winkel ist tan α nicht definiert?",
-          "options": ["0°", "45°", "180°", "270°"],
-          "answer": 3,
-          "explanation": "cos 270° = 0 → tan 270° = sin / cos wäre eine Division durch null. Dasselbe gilt für 90°."
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q030",
-          "type": "numeric",
-          "question": "Ohne Taschenrechner: sin 150° = ?",
-          "answer": 0.5,
-          "tolerance": 0.01,
-          "explanation": "sin 150° = sin (180° − 30°) = sin 30° = 0,5"
-        },
-        {
-          "id": "mathe-grundlagen-einheitskreis-q031",
-          "type": "numeric",
-          "question": "Ohne Taschenrechner: cos 120° = ?",
-          "answer": -0.5,
-          "tolerance": 0.01,
-          "explanation": "cos 120° = cos (180° − 60°) = −cos 60° = −0,5"
-        }
-      ]
+     "id": "mathe-grundlagen-rechtwinklig-c008",
+     "type": "basic",
+     "front": "Merkhilfe „GAG über HHA“ – was bedeutet sie?",
+     "back": "Zähler G – A – G, Nenner H – H – A, in der Reihenfolge sin – cos – tan:\n- sin = G / H\n- cos = A / H\n- tan = G / A"
     },
     {
-      "id": "mathe-grundlagen-winkelmasse",
-      "title": "Winkelmaße (Grad, Gon, Bogenmaß) & Winkel an Parallelen",
-      "description": "Winkeleinheiten am Taschenrechner, Umrechnung Grad – Gon – Bogenmaß und Winkelbeziehungen an geschnittenen Parallelen.",
-      "sources": ["Grundlagen Trigonometrie.pdf", "Ergänzung"],
-      "cards": [
-        {
-          "id": "mathe-grundlagen-winkelmasse-c001",
-          "type": "basic",
-          "front": "Welche drei Winkeleinheiten kennt der Taschenrechner (DRG)?",
-          "back": "- **D**eg: Grad (Altgrad), Vollkreis = 360°\n- **R**ad: Bogenmaß (Radiant), Vollkreis = 2π\n- **G**ra: Gon (Neugrad), Vollkreis = 400 gon"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c002",
-          "type": "basic",
-          "front": "Was ist 1 gon und wo wird Gon verwendet?",
-          "back": "1 gon ist der 400. Teil des Vollkreises (rechter Winkel = 100 gon). Verwendet wird Gon in der **Vermessung**."
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c003",
-          "type": "basic",
-          "front": "Grad → Gon umrechnen?",
-          "back": "α_gon = α_grad · 10/9\n(1° = 10/9 gon ≈ 1,111 gon)",
-          "hint": "Bsp.: 180° · 10/9 = 200 gon"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c004",
-          "type": "basic",
-          "front": "Gon → Grad umrechnen?",
-          "back": "α_grad = α_gon · 9/10\n(1 gon = 0,9°)",
-          "hint": "Bsp.: 200 gon · 9/10 = 180°"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c005",
-          "type": "basic",
-          "front": "Was ist das Bogenmaß x eines Winkels?",
-          "back": "Die Länge des Bogens, den der Winkel aus dem Einheitskreis (r = 1) ausschneidet.\nVollkreis: U = 2 · π · 1 = 2π ≙ 360°"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c006",
-          "type": "basic",
-          "front": "Grad → Bogenmaß umrechnen?",
-          "back": "x = α / 180° · π",
-          "hint": "Bsp.: 30° → 30°/180° · π = π/6 ≈ 0,524"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c007",
-          "type": "basic",
-          "front": "Bogenmaß → Grad umrechnen?",
-          "back": "α = x / π · 180°",
-          "hint": "Bsp.: x = π/3 → (π/3) / π · 180° = 60°"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c008",
-          "type": "basic",
-          "front": "90°, 180° und 360° in Bogenmaß und Gon?",
-          "back": "90° = π/2 = 100 gon\n180° = π = 200 gon\n360° = 2π = 400 gon"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c009",
-          "type": "basic",
-          "front": "Wie viel Grad ist 1 rad ungefähr?",
-          "back": "1 rad = 180° / π ≈ 57,3°"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c010",
-          "type": "basic",
-          "front": "Bogenlänge b bei Radius r und Mittelpunktswinkel α?",
-          "back": "b = r · x = r · π · α / 180°\n(x = Bogenmaß des Winkels)"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c011",
-          "type": "basic",
-          "front": "Stufenwinkel an geschnittenen Parallelen – Lage und Regel?",
-          "back": "Sie liegen an beiden Schnittpunkten in **gleicher Lage** (F-Figur) und sind **gleich groß**."
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c012",
-          "type": "basic",
-          "front": "Wechselwinkel (Z-Winkel) an geschnittenen Parallelen – Lage und Regel?",
-          "back": "Sie liegen an den beiden Schnittpunkten auf **entgegengesetzten Seiten** der schneidenden Geraden (Z-Figur) und sind **gleich groß**."
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c013",
-          "type": "basic",
-          "front": "Scheitelwinkel – Lage und Regel?",
-          "back": "Sie liegen sich **am selben Schnittpunkt gegenüber** und sind **gleich groß**.",
-          "hint": "Im Skript ist dieses Paar (α₁ = γ₁) als „Wechselwinkel“ notiert – fachlich heißt es Scheitelwinkel."
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-c014",
-          "type": "basic",
-          "front": "Nebenwinkel (im Skript: Ergänzungswinkel) – Lage und Regel?",
-          "back": "Sie liegen am selben Schnittpunkt direkt nebeneinander und ergänzen sich zu **180°**."
-        }
-      ],
-      "quiz": [
-        {
-          "id": "mathe-grundlagen-winkelmasse-q001",
-          "type": "numeric",
-          "question": "Rechne 54° in gon um.",
-          "answer": 60,
-          "unit": "gon",
-          "tolerance": 0.005,
-          "explanation": "α_gon = α_grad · 10/9 = 54 · 10/9 = 60 gon"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q002",
-          "type": "numeric",
-          "question": "Rechne 250 gon in Grad um.",
-          "answer": 225,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "α_grad = α_gon · 9/10 = 250 · 0,9 = 225°"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q003",
-          "type": "numeric",
-          "question": "Rechne 72° in gon um.",
-          "answer": 80,
-          "unit": "gon",
-          "tolerance": 0.005,
-          "explanation": "72 · 10/9 = 80 gon"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q004",
-          "type": "numeric",
-          "question": "Ein Vermessungsinstrument zeigt 63,5 gon. Wie viel Grad sind das?",
-          "answer": 57.15,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "63,5 · 9/10 = 57,15°"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q005",
-          "type": "numeric",
-          "question": "Rechne 45° ins Bogenmaß um (Dezimalzahl, 4 Nachkommastellen).",
-          "answer": 0.7854,
-          "tolerance": 0.005,
-          "explanation": "x = 45° / 180° · π = π/4 ≈ 0,7854"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q006",
-          "type": "numeric",
-          "question": "Rechne 135° ins Bogenmaß um (Dezimalzahl, 4 Nachkommastellen).",
-          "answer": 2.3562,
-          "tolerance": 0.005,
-          "explanation": "x = 135° / 180° · π = 3π/4 ≈ 2,3562"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q007",
-          "type": "numeric",
-          "question": "Rechne x = 1,2 (Bogenmaß) in Grad um.",
-          "answer": 68.75,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "α = x / π · 180° = 1,2 / π · 180° = 68,75°"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q008",
-          "type": "numeric",
-          "question": "Rechne x = 2,5 (Bogenmaß) in Grad um.",
-          "answer": 143.24,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "α = 2,5 / π · 180° = 143,24°"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q009",
-          "type": "numeric",
-          "question": "Über einer Maueröffnung wird ein halbkreisförmiger Rundbogen mit dem Radius r = 1,25 m gemauert. Wie lang ist der Bogen (Bogenlänge)?",
-          "answer": 3.927,
-          "unit": "m",
-          "tolerance": 0.01,
-          "explanation": "Halbkreis: α = 180° → x = π\nb = r · x = 1,25 m · π = 3,927 m"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q010",
-          "type": "numeric",
-          "question": "Ein Kreisbogen hat den Radius r = 4,50 m und den Mittelpunktswinkel 60°. Wie lang ist der Bogen?",
-          "answer": 4.712,
-          "unit": "m",
-          "tolerance": 0.01,
-          "explanation": "x = 60° / 180° · π = π/3 = 1,0472\nb = r · x = 4,50 m · 1,0472 = 4,712 m"
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q011",
-          "type": "mc",
-          "question": "Wie groß ist ein rechter Winkel in gon?",
-          "options": ["90 gon", "π/2 gon", "400 gon", "100 gon"],
-          "answer": 3,
-          "explanation": "Vollkreis = 400 gon → Viertelkreis (rechter Winkel) = 100 gon."
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q012",
-          "type": "mc",
-          "question": "Du tippst sin 30 in den Taschenrechner und erhältst −0,988. Was ist die Ursache?",
-          "options": ["Der Rechner steht auf RAD (Bogenmaß)", "Der Rechner steht auf DEG (Grad)", "sin 30° ist tatsächlich negativ", "Der Rechner steht auf GRA (Gon)"],
-          "answer": 0,
-          "explanation": "Im RAD-Modus rechnet der TR sin (30 rad) ≈ −0,988. Im DEG-Modus käme sin 30° = 0,5 heraus, im GRA-Modus sin 30 gon ≈ 0,454."
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q013",
-          "type": "mc",
-          "question": "Zwei Winkel an zwei geschnittenen Parallelen bilden eine „Z-Figur“. Wie heißen sie und was gilt?",
-          "options": ["Stufenwinkel – sie ergänzen sich zu 180°", "Nebenwinkel – sie sind gleich groß", "Wechselwinkel – sie sind gleich groß", "Scheitelwinkel – sie ergänzen sich zu 90°"],
-          "answer": 2,
-          "explanation": "Z-Figur = Wechselwinkel; an Parallelen sind Wechselwinkel gleich groß."
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q014",
-          "type": "mc",
-          "question": "Zwei Parallelen werden von einer Geraden geschnitten. Am ersten Schnittpunkt ist α₁ = 72°. Wie groß ist der Stufenwinkel α₂ am zweiten Schnittpunkt?",
-          "options": ["108°", "72°", "18°", "144°"],
-          "answer": 1,
-          "explanation": "Stufenwinkel an Parallelen sind gleich groß: α₂ = α₁ = 72°."
-        },
-        {
-          "id": "mathe-grundlagen-winkelmasse-q015",
-          "type": "numeric",
-          "question": "An einem Geradenschnittpunkt beträgt ein Winkel 64°. Wie groß ist sein Nebenwinkel?",
-          "answer": 116,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "Nebenwinkel ergänzen sich zu 180°: 180° − 64° = 116°"
-        }
-      ]
+     "id": "mathe-grundlagen-rechtwinklig-c009",
+     "type": "basic",
+     "front": "Dreieck ABC mit γ = 90° (Bezeichnung wie in der Merkhilfe): sin α, cos α und tan α in den Seiten a, b, c?",
+     "back": "sin α = a / c\ncos α = b / c\ntan α = a / b",
+     "hint": "a liegt α gegenüber, b liegt an α an, c ist die Hypotenuse."
     },
     {
-      "id": "mathe-grundlagen-sinus-kosinussatz",
-      "title": "Sinussatz & Kosinussatz – Grundlagen",
-      "description": "Herleitung, Formeln und Auswahlregel für Berechnungen im allgemeinen (schiefwinkligen) Dreieck.",
-      "sources": ["Grundlagen Trigonometrie.pdf", "Merkhilfe.pdf"],
-      "cards": [
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c001",
-          "type": "basic",
-          "front": "Sinussatz – Formel?",
-          "back": "a / sin α = b / sin β = c / sin γ\nMerkhilfe-Schreibweise: a : b : c = sin α : sin β : sin γ\nIn Worten: Zwei Seiten verhalten sich wie die Sinuswerte ihrer Gegenwinkel."
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c002",
-          "type": "basic",
-          "front": "Wie wird der Sinussatz hergeleitet?",
-          "back": "Die Höhe h_c teilt das Dreieck in zwei rechtwinklige Dreiecke:\nh_c = b · sin α und h_c = a · sin β\n⇒ a · sin β = b · sin α ⇒ a / b = sin α / sin β"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c003",
-          "type": "basic",
-          "front": "Trick zum Umstellen des Sinussatzes?",
-          "back": "Die gesuchte Größe nach **oben links** schreiben – dann nur noch einmal multiplizieren.\nBsp.: b gesucht → b / c = sin β / sin γ → b = c · sin β / sin γ"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c004",
-          "type": "basic",
-          "front": "Wann verwendest du den Sinussatz?",
-          "back": "- 1 Seite + 2 Winkel (WSW, SWW)\n- 2 Seiten + der Gegenwinkel einer dieser Seiten (SsW)\nVoraussetzung: Ein Paar aus Seite und gegenüberliegendem Winkel ist bekannt (oder berechenbar).",
-          "hint": "Ist der gegebene Winkel zwischen den beiden Seiten eingeschlossen, brauchst du den Kosinussatz."
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c005",
-          "type": "basic",
-          "front": "Kosinussatz – Form für a²?",
-          "back": "a² = b² + c² − 2 · b · c · cos α"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c006",
-          "type": "basic",
-          "front": "Kosinussatz – Formen für b² und c²?",
-          "back": "b² = a² + c² − 2 · a · c · cos β\nc² = a² + b² − 2 · a · b · cos γ",
-          "hint": "Links die Seite, rechts ihr Gegenwinkel; die beiden anderen Seiten stehen im Produkt."
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c007",
-          "type": "basic",
-          "front": "Kosinussatz nach cos α umgestellt?",
-          "back": "cos α = (b² + c² − a²) / (2 · b · c)"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c008",
-          "type": "basic",
-          "front": "Wann verwendest du den Kosinussatz?",
-          "back": "- 2 Seiten + der **eingeschlossene** Winkel (SWS)\n- 3 Seiten (SSS)"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c009",
-          "type": "basic",
-          "front": "Wie wird der Kosinussatz hergeleitet (Idee)?",
-          "back": "Die Höhe h_c teilt c in c₁ = b · cos α und c₂ = c − c₁; außerdem h_c = b · sin α.\nPythagoras im Teildreieck DBC: a² = h_c² + c₂²\nEinsetzen und (sin α)² + (cos α)² = 1 nutzen ⇒ a² = b² + c² − 2bc · cos α"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-c010",
-          "type": "basic",
-          "front": "Fläche eines allgemeinen Dreiecks – zwei Formeln?",
-          "back": "A = ½ · g · h (Grundseite · zugehörige Höhe, Merkhilfe)\nA = ½ · b · c · sin α (zwei Seiten und der eingeschlossene Winkel, da h_c = b · sin α)"
-        }
-      ],
-      "quiz": [
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q001",
-          "type": "numeric",
-          "question": "Dreieck ABC: c = AB = 2 km, α = 55°, β = 80°. Berechne b = AC.",
-          "answer": 2.79,
-          "unit": "km",
-          "tolerance": 0.01,
-          "explanation": "γ = 180° − 55° − 80° = 45°\nSinussatz: b / c = sin β / sin γ\nb = c · sin 80° / sin 45° = 2 km · 0,9848 / 0,7071 = 2,79 km"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q002",
-          "type": "numeric",
-          "question": "Dreieck ABC: c = 2 km, α = 55°, β = 80°. Berechne a = BC.",
-          "answer": 2.32,
-          "unit": "km",
-          "tolerance": 0.01,
-          "explanation": "γ = 45°\na / c = sin α / sin γ\na = 2 km · sin 55° / sin 45° = 2 · 0,8192 / 0,7071 = 2,32 km"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q003",
-          "type": "numeric",
-          "question": "Dreieck ABC: b = AC = 7 km, c = AB = 6 km, α = 75°. Berechne a = BC.",
-          "answer": 7.95,
-          "unit": "km",
-          "tolerance": 0.01,
-          "explanation": "SWS → Kosinussatz:\na² = b² + c² − 2 · b · c · cos α\na² = 49 + 36 − 2 · 7 · 6 · cos 75° = 85 − 84 · 0,2588 = 63,26\na = √63,26 = 7,95 km"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q004",
-          "type": "numeric",
-          "question": "Dreieck ABC: a = 3,19 cm, b = 6,23 cm, c = 6,00 cm. Berechne den Winkel α.",
-          "answer": 30.16,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "SSS → Kosinussatz umgestellt:\ncos α = (b² + c² − a²) / (2bc)\n= (6,23² + 6,00² − 3,19²) / (2 · 6,23 · 6,00)\n= (38,813 + 36 − 10,176) / 74,76 = 64,637 / 74,76 = 0,8646\nα = cos⁻¹(0,8646) = 30,16°"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q005",
-          "type": "numeric",
-          "question": "Dreieck ABC: a = 12,0 m, α = 48°, β = 67°. Berechne b.",
-          "answer": 14.86,
-          "unit": "m",
-          "tolerance": 0.01,
-          "explanation": "Sinussatz (Paar a/α bekannt):\nb / a = sin β / sin α\nb = 12,0 m · sin 67° / sin 48° = 12,0 · 0,9205 / 0,7431 = 14,86 m"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q006",
-          "type": "numeric",
-          "question": "Ein dreieckiges Grundstück: Zwei Grenzen von 32,0 m und 25,0 m schließen einen Winkel von 105° ein. Wie lang ist die dritte Grenze?",
-          "answer": 45.42,
-          "unit": "m",
-          "tolerance": 0.01,
-          "explanation": "SWS → Kosinussatz:\nx² = 32,0² + 25,0² − 2 · 32,0 · 25,0 · cos 105°\nx² = 1024 + 625 − 1600 · (−0,2588) = 1649 + 414,1 = 2063,1\nx = √2063,1 = 45,42 m\n(cos 105° ist negativ → das Minus wird zum Plus.)"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q007",
-          "type": "numeric",
-          "question": "Dreiecksbinder: Die beiden Obergurtstäbe sind 5,40 m und 4,20 m lang, der Untergurt 8,00 m. Wie groß ist der Winkel zwischen den beiden Obergurtstäben (am First)?",
-          "answer": 112.28,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "SSS → Kosinussatz; der gesuchte Winkel liegt dem Untergurt (8,00 m) gegenüber:\ncos γ = (5,40² + 4,20² − 8,00²) / (2 · 5,40 · 4,20)\n= (29,16 + 17,64 − 64) / 45,36 = −17,2 / 45,36 = −0,3792\nγ = cos⁻¹(−0,3792) = 112,28° (stumpf, da cos negativ)"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q008",
-          "type": "numeric",
-          "question": "Dreieck ABC: a = 9 cm, b = 6 cm, α = 70°. Berechne β.",
-          "answer": 38.79,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "SsW → Sinussatz:\nsin β = b · sin α / a = 6 · sin 70° / 9 = 6 · 0,9397 / 9 = 0,6265\nβ = sin⁻¹(0,6265) = 38,79°\nEindeutig, weil der gegebene Winkel α der längeren Seite a gegenüberliegt."
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q009",
-          "type": "numeric",
-          "question": "Dreieck ABC: b = 7 km, c = 6 km, α = 75°. Berechne die Fläche des Dreiecks.",
-          "answer": 20.28,
-          "unit": "km²",
-          "tolerance": 0.01,
-          "explanation": "A = ½ · b · c · sin α = ½ · 7 · 6 · sin 75° = 21 · 0,9659 = 20,28 km²"
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q010",
-          "type": "mc",
-          "question": "Gegeben sind c, β und γ. Wie berechnest du b?",
-          "options": ["b = c · sin γ / sin β", "b = c · sin β / sin γ", "b = sin β / (c · sin γ)", "b = c · cos β / cos γ"],
-          "answer": 1,
-          "explanation": "Gesuchtes nach oben links: b / c = sin β / sin γ → mit c multiplizieren: b = c · sin β / sin γ."
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q011",
-          "type": "mc",
-          "question": "Gegeben sind a, b und der Winkel γ. Womit berechnest du die Seite c?",
-          "options": ["Sinussatz", "Kosinussatz", "Pythagoras", "Höhensatz"],
-          "answer": 1,
-          "explanation": "γ liegt zwischen a und b (eingeschlossener Winkel) → SWS → Kosinussatz: c² = a² + b² − 2ab · cos γ. Pythagoras nur, wenn γ = 90°."
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q012",
-          "type": "mc",
-          "question": "Gegeben sind a, b und α. Womit berechnest du β?",
-          "options": ["Kosinussatz", "Pythagoras", "Sinussatz", "Gar nicht lösbar"],
-          "answer": 2,
-          "explanation": "α liegt der Seite a gegenüber – das Paar a/α ist bekannt (SsW) → Sinussatz: sin β = b · sin α / a."
-        },
-        {
-          "id": "mathe-grundlagen-sinus-kosinussatz-q013",
-          "type": "mc",
-          "question": "Welche Form des Kosinussatzes ist richtig?",
-          "options": ["b² = a² + c² − 2ac · cos β", "b² = a² + c² − 2ac · cos α", "b² = a² + c² + 2ac · cos β", "b² = a² · c² − 2ac · cos β"],
-          "answer": 0,
-          "explanation": "Links die Seite b, rechts ihr Gegenwinkel β; a und c stehen im Produkt, und die Quadrate werden **addiert**: b² = a² + c² − 2ac · cos β."
-        }
-      ]
+     "id": "mathe-grundlagen-rechtwinklig-c011",
+     "type": "basic",
+     "front": "sin α = a / c umstellen – nach a und nach c?",
+     "back": "a = c · sin α\nc = a / sin α",
+     "hint": "Erst mit c multiplizieren, dann ggf. durch sin α teilen."
     },
     {
-      "id": "mathe-grundlagen-merkhilfe-formeln",
-      "title": "Merkhilfe: Algebra, Flächen & Körper",
-      "description": "Die wichtigsten Mittelstufen-Formeln der Merkhilfe – binomische Formeln, Potenzen, quadratische Gleichungen, Geraden sowie Flächen und Volumen.",
-      "sources": ["Merkhilfe.pdf", "Ergänzung"],
-      "cards": [
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c001",
-          "type": "basic",
-          "front": "1. binomische Formel?",
-          "back": "(a + b)² = a² + 2ab + b²"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c002",
-          "type": "basic",
-          "front": "2. binomische Formel?",
-          "back": "(a − b)² = a² − 2ab + b²"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c003",
-          "type": "basic",
-          "front": "3. binomische Formel?",
-          "back": "(a + b) · (a − b) = a² − b²"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c004",
-          "type": "basic",
-          "front": "Lösungsformel für ax² + bx + c = 0?",
-          "back": "x₁/₂ = (−b ± √(b² − 4ac)) / (2a)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c005",
-          "type": "basic",
-          "front": "Was verrät die Diskriminante D = b² − 4ac über die Lösungen?",
-          "back": "D > 0: zwei Lösungen\nD = 0: genau eine Lösung\nD < 0: keine reelle Lösung"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c006",
-          "type": "basic",
-          "front": "Potenzgesetze bei gleicher Basis?",
-          "back": "aˣ · aᶻ = aˣ⁺ᶻ\naˣ / aᶻ = aˣ⁻ᶻ\n(aˣ)ᶻ = aˣ·ᶻ"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c007",
-          "type": "basic",
-          "front": "Negative Hochzahl und Hochzahl 0?",
-          "back": "a⁻ˣ = 1 / aˣ\na⁰ = 1"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c008",
-          "type": "basic",
-          "front": "Wurzeln als Potenzen schreiben?",
-          "back": "a^(1/n) = ⁿ√a\na^(n/m) = ᵐ√(aⁿ)\nz. B. √a = a^(1/2)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c009",
-          "type": "basic",
-          "front": "Geradengleichung – zwei Formen?",
-          "back": "y = m · x + t (allgemeine Form, t = y-Achsenabschnitt)\ny = m · (x − x₀) + y₀ (Punkt-Steigungsform)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c010",
-          "type": "basic",
-          "front": "Zusammenhang zwischen Steigung m und Steigungswinkel α einer Geraden?",
-          "back": "m = Δy / Δx = tan α\n(α = Winkel der Geraden gegen die x-Achse)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c011",
-          "type": "basic",
-          "front": "Schnittwinkel φ zweier Geraden mit den Steigungen m₁ und m₂?",
-          "back": "tan φ = |(m₁ − m₂) / (1 + m₁ · m₂)|"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c012",
-          "type": "basic",
-          "front": "Scheitelform der Parabel?",
-          "back": "y = a · (x − x_s)² + y_s mit dem Scheitel S(x_s | y_s)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c013",
-          "type": "basic",
-          "front": "Logarithmus – Definition?",
-          "back": "log_b(a) = z ⇔ b^z = a\n(z ist die Hochzahl, mit der man b potenzieren muss, um a zu erhalten)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c014",
-          "type": "basic",
-          "front": "Fläche eines Trapezes?",
-          "back": "A = (a + c) / 2 · h\n(a und c = die beiden parallelen Seiten, h = Abstand zwischen ihnen)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c015",
-          "type": "basic",
-          "front": "Kreis: Umfang und Fläche?",
-          "back": "U = 2 · r · π\nA = r² · π"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c016",
-          "type": "basic",
-          "front": "Gleichseitiges Dreieck (Seite a): Höhe und Fläche?",
-          "back": "h = a/2 · √3\nA = a²/4 · √3"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c017",
-          "type": "basic",
-          "front": "Volumen von Prisma und Pyramide?",
-          "back": "Prisma: V = G · h\nPyramide: V = ⅓ · G · h\n(G = Grundfläche, h = Höhe)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c018",
-          "type": "basic",
-          "front": "Gerader Kreiszylinder: Volumen und Mantelfläche?",
-          "back": "V = r² · π · h\nM = 2 · r · π · h"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c019",
-          "type": "basic",
-          "front": "Gerader Kreiskegel: Volumen und Mantelfläche?",
-          "back": "V = ⅓ · r² · π · h\nM = r · π · m (m = Mantellinie)"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-c020",
-          "type": "basic",
-          "front": "Kugel: Volumen und Oberfläche?",
-          "back": "V = 4/3 · r³ · π\nO = 4 · r² · π"
-        }
-      ],
-      "quiz": [
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q001",
-          "type": "mc",
-          "question": "(2x − 3)² = ?",
-          "options": ["4x² − 9", "4x² − 6x + 9", "4x² − 12x + 9", "2x² − 12x + 9"],
-          "answer": 2,
-          "explanation": "2. binomische Formel mit a = 2x, b = 3: (2x)² − 2 · 2x · 3 + 3² = 4x² − 12x + 9"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q002",
-          "type": "mc",
-          "question": "(x + 5) · (x − 5) = ?",
-          "options": ["x² − 25", "x² + 25", "x² − 10x − 25", "x² + 10x − 25"],
-          "answer": 0,
-          "explanation": "3. binomische Formel: (a + b)(a − b) = a² − b² → x² − 25"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q003",
-          "type": "numeric",
-          "question": "Löse x² − 2x − 8 = 0. Gib die größere Lösung an.",
-          "answer": 4,
-          "tolerance": 0.01,
-          "explanation": "a = 1, b = −2, c = −8\nx₁/₂ = (2 ± √(4 + 32)) / 2 = (2 ± 6) / 2\nx₁ = 4, x₂ = −2"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q004",
-          "type": "numeric",
-          "question": "Löse 2x² + 3x − 5 = 0. Gib die negative Lösung an.",
-          "answer": -2.5,
-          "tolerance": 0.01,
-          "explanation": "a = 2, b = 3, c = −5\nx₁/₂ = (−3 ± √(9 + 40)) / 4 = (−3 ± 7) / 4\nx₁ = 1, x₂ = −2,5"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q005",
-          "type": "mc",
-          "question": "Wie viele reelle Lösungen hat x² + 4x + 5 = 0?",
-          "options": ["zwei", "eine", "keine", "unendlich viele"],
-          "answer": 2,
-          "explanation": "D = b² − 4ac = 16 − 20 = −4 < 0 → keine reelle Lösung."
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q006",
-          "type": "mc",
-          "question": "a³ · a⁴ = ?",
-          "options": ["a¹²", "a⁷", "2a⁷", "a"],
-          "answer": 1,
-          "explanation": "Gleiche Basis: Hochzahlen addieren → a³⁺⁴ = a⁷"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q007",
-          "type": "mc",
-          "question": "10⁻³ = ?",
-          "options": ["−1000", "0,001", "−0,001", "1/3"],
-          "answer": 1,
-          "explanation": "a⁻ˣ = 1 / aˣ → 10⁻³ = 1 / 1000 = 0,001"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q008",
-          "type": "numeric",
-          "question": "Ein Graben hat einen trapezförmigen Querschnitt: Sohlenbreite 0,60 m, obere Breite 1,80 m, Tiefe 1,20 m. Der Graben ist 25 m lang. Wie groß ist das Aushubvolumen?",
-          "answer": 36,
-          "unit": "m³",
-          "tolerance": 0.01,
-          "explanation": "Querschnitt (Trapez): A = (1,80 + 0,60) / 2 · 1,20 = 1,44 m²\nVolumen (Prisma): V = A · l = 1,44 m² · 25 m = 36,0 m³"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q009",
-          "type": "numeric",
-          "question": "Eine runde Betonstütze hat den Durchmesser 40 cm und die Höhe 3,00 m. Wie viel Beton wird benötigt?",
-          "answer": 0.377,
-          "unit": "m³",
-          "tolerance": 0.01,
-          "explanation": "r = 0,20 m\nV = r² · π · h = 0,20² · π · 3,00 = 0,04 · π · 3,00 = 0,377 m³"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q010",
-          "type": "numeric",
-          "question": "Ein Kies-Schüttkegel hat den Radius 3,00 m und die Höhe 2,00 m. Wie groß ist sein Volumen?",
-          "answer": 18.85,
-          "unit": "m³",
-          "tolerance": 0.01,
-          "explanation": "V = ⅓ · r² · π · h = ⅓ · 3,00² · π · 2,00 = ⅓ · 9 · π · 2 = 18,85 m³"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q011",
-          "type": "numeric",
-          "question": "Ein Zeltdach (Pyramide) steht über einem quadratischen Grundriss von 4,00 m × 4,00 m und ist 3,00 m hoch. Wie groß ist der eingeschlossene Rauminhalt?",
-          "answer": 16,
-          "unit": "m³",
-          "tolerance": 0.01,
-          "explanation": "G = 4,00 · 4,00 = 16,0 m²\nV = ⅓ · G · h = ⅓ · 16,0 · 3,00 = 16,0 m³"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q012",
-          "type": "numeric",
-          "question": "Ein kreisrunder Schacht hat den Innendurchmesser 1,20 m. Wie groß ist seine Querschnittsfläche?",
-          "answer": 1.131,
-          "unit": "m²",
-          "tolerance": 0.01,
-          "explanation": "r = 0,60 m\nA = r² · π = 0,36 · π = 1,131 m²"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q013",
-          "type": "numeric",
-          "question": "Gleichseitiges Dreieck mit der Seitenlänge a = 2,00 m. Wie groß ist die Fläche?",
-          "answer": 1.732,
-          "unit": "m²",
-          "tolerance": 0.01,
-          "explanation": "A = a²/4 · √3 = 4,00/4 · √3 = √3 = 1,732 m²"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q014",
-          "type": "numeric",
-          "question": "Unter welchem Winkel steigt die Gerade y = 0,25 · x + 2 gegen die x-Achse an?",
-          "answer": 14.04,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "m = 0,25 = tan α\nα = tan⁻¹(0,25) = 14,04°"
-        },
-        {
-          "id": "mathe-grundlagen-merkhilfe-formeln-q015",
-          "type": "numeric",
-          "question": "Zwei Geraden haben die Steigungen m₁ = 2 und m₂ = 0,5. Unter welchem Winkel schneiden sie sich?",
-          "answer": 36.87,
-          "unit": "°",
-          "tolerance": 0.005,
-          "explanation": "tan φ = |(m₁ − m₂) / (1 + m₁ · m₂)| = |(2 − 0,5) / (1 + 2 · 0,5)| = 1,5 / 2 = 0,75\nφ = tan⁻¹(0,75) = 36,87°"
-        }
-      ]
+     "id": "mathe-grundlagen-rechtwinklig-c012",
+     "type": "basic",
+     "front": "Satz des Pythagoras?",
+     "back": "a² + b² = c²\nSumme der Kathetenquadrate = Hypotenusenquadrat. Gilt **nur** im rechtwinkligen Dreieck (c = Hypotenuse)."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-c013",
+     "type": "basic",
+     "front": "Höhensatz (rechtwinkliges Dreieck)?",
+     "back": "h² = p · q\nh = Höhe auf die Hypotenuse, p und q = die beiden Hypotenusenabschnitte."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-c014",
+     "type": "basic",
+     "front": "Kathetensatz (rechtwinkliges Dreieck)?",
+     "back": "a² = c · p und b² = c · q\nKathete² = Hypotenuse · der Hypotenusenabschnitt, der unter dieser Kathete liegt.",
+     "hint": "Merkhilfe-Skizze: p liegt bei B unter a, q liegt bei A unter b."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-c015",
+     "type": "basic",
+     "front": "Fläche eines rechtwinkligen Dreiecks?",
+     "back": "A = ½ · Kathete · Kathete (bei γ = 90°: A = ½ · a · b)\nalternativ: A = ½ · c · h_c"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-c016",
+     "type": "basic",
+     "front": "Rechtwinkliges Dreieck mit γ = 90°: Höhe h_c aus der Kathete b und dem Winkel α?",
+     "back": "h_c = b · sin α\nIm Teildreieck mit der Hypotenuse b ist h_c die Gegenkathete von α."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-c017",
+     "type": "basic",
+     "front": "Wie rechnest du 23°18′24″ in Dezimalgrad um?",
+     "back": "23 + 18/60 + 24/3600 = 23,3067°\nAm Taschenrechner direkt mit der Grad-Minuten-Sekunden-Taste (° ′ ″) eingeben.",
+     "hint": "1° = 60′ (Minuten), 1′ = 60″ (Sekunden)"
     }
-  ]
+   ],
+   "quiz": [
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q001",
+     "type": "mc",
+     "question": "Rechtwinkliges Dreieck: Der rechte Winkel liegt zwischen den Katheten x und z, y ist die Hypotenuse. β liegt zwischen z und y, α liegt zwischen x und y. Welcher Ausdruck ist tan β?",
+     "options": [
+      "z / x",
+      "x / y",
+      "x / z",
+      "z / y"
+     ],
+     "answer": 2,
+     "explanation": "Gegenkathete von β ist x (liegt β gegenüber), Ankathete ist z (liegt an β an). tan β = GK / AK = x / z."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q002",
+     "type": "mc",
+     "question": "Rechtwinkliges Dreieck: Der rechte Winkel liegt zwischen d und e, f ist die Hypotenuse. δ liegt zwischen e und f, ε liegt zwischen d und f. Welcher Ausdruck ist sin ε?",
+     "options": [
+      "d / f",
+      "e / f",
+      "d / e",
+      "f / e"
+     ],
+     "answer": 1,
+     "explanation": "Gegenkathete von ε ist e (liegt ε gegenüber), Hypotenuse ist f → sin ε = e / f.\nDerselbe Wert ist cos δ, weil e die Ankathete von δ ist."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q003",
+     "type": "mc",
+     "question": "Gleiches Dreieck (rechter Winkel zwischen d und e, Hypotenuse f, δ liegt zwischen e und f): tan δ = ?",
+     "options": [
+      "e / d",
+      "d / f",
+      "f / d",
+      "d / e"
+     ],
+     "answer": 3,
+     "explanation": "Gegenkathete von δ ist d, Ankathete ist e → tan δ = d / e."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q004",
+     "type": "mc",
+     "question": "Dreieck ABC mit γ = 90°. Welcher Ausdruck ist cos β?",
+     "options": [
+      "a / c",
+      "b / c",
+      "a / b",
+      "b / a"
+     ],
+     "answer": 0,
+     "explanation": "Die Ankathete von β ist a (Seite zwischen B und C), die Hypotenuse ist c → cos β = a / c. Das ist derselbe Wert wie sin α."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q005",
+     "type": "numeric",
+     "question": "Bestimme mit dem Taschenrechner auf 4 Dezimalstellen: cos 16°38′",
+     "answer": 0.9582,
+     "tolerance": 0.0005,
+     "explanation": "16°38′ = 16 + 38/60 = 16,6333°\ncos 16,6333° = 0,95816 ≈ 0,9582 (korrekt gerundet, nicht abgeschnitten)."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q006",
+     "type": "numeric",
+     "question": "Bestimme mit dem Taschenrechner auf 4 Dezimalstellen: tan 23°18′24″",
+     "answer": 0.4308,
+     "tolerance": 0.001,
+     "explanation": "23°18′24″ = 23 + 18/60 + 24/3600 = 23,3067°\ntan 23,3067° ≈ 0,4308"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q007",
+     "type": "numeric",
+     "question": "Bestimme mit dem Taschenrechner auf 4 Dezimalstellen: tan 89,99°",
+     "answer": 5729.5779,
+     "tolerance": 0.001,
+     "explanation": "tan 89,99° ≈ 5729,5779. Je näher der Winkel an 90° liegt, desto größer wird der Tangens (cos α → 0). Bei 90° ist tan nicht definiert."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q008",
+     "type": "numeric",
+     "question": "Bestimme den Winkel α (2 Dezimalstellen): tan α = 2,1958",
+     "answer": 65.51,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "α = tan⁻¹(2,1958) ≈ 65,51° (am TR: SHIFT + tan)."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q009",
+     "type": "numeric",
+     "question": "Bestimme den Winkel α (2 Dezimalstellen): cos α = 0,0085",
+     "answer": 89.51,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "α = cos⁻¹(0,0085) ≈ 89,51°. Ein Kosinus nahe 0 bedeutet einen Winkel nahe 90°."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q010",
+     "type": "numeric",
+     "question": "Bestimme den Winkel α (2 Dezimalstellen): sin α = 0,6789",
+     "answer": 42.76,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "α = sin⁻¹(0,6789) ≈ 42,76°"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q011",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck mit γ = 90°: b = 5 cm, α = 55°. Berechne die Hypotenuse c.",
+     "answer": 8.72,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "b ist die Ankathete von α.\ncos 55° = b / c\nc = 5 cm / cos 55° = 5 / 0,5736 = 8,72 cm"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q012",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck mit γ = 90°: b = 5 cm, α = 55°. Berechne die Kathete a.",
+     "answer": 7.14,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "a ist die Gegenkathete von α, b die Ankathete.\ntan 55° = a / b\na = 5 cm · tan 55° = 5 · 1,4281 = 7,14 cm\n(oder a = c · sin 55° = 8,72 · 0,8192 = 7,14 cm)"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q013",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck mit γ = 90°: b = 5 cm, α = 55° (a = 7,14 cm). Berechne die Fläche A.",
+     "answer": 17.85,
+     "unit": "cm²",
+     "tolerance": 0.01,
+     "explanation": "A = ½ · a · b = ½ · 7,1407 cm · 5 cm = 17,85 cm²\nHinweis: Über A = ½ · c · h mit gerundeten Zwischenwerten (8,72 · 4,10) kommt 17,88 cm² heraus – mit ungerundeten Werten weiterrechnen."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q014",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit der Hypotenuse c: Kathete b = 45 cm und β = 61°. Berechne c.",
+     "answer": 51.45,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "b liegt β gegenüber (Gegenkathete).\nsin 61° = b / c\nc = 45 cm / sin 61° = 45 / 0,8746 = 51,45 cm"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q015",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit der Hypotenuse c: Kathete b = 45 cm und β = 61°. Berechne die Kathete a.",
+     "answer": 24.94,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "a ist die Ankathete von β.\ncos 61° = a / c\na = 51,45 cm · cos 61° = 51,45 · 0,4848 = 24,94 cm\n(direkt: a = b / tan 61° = 45 / 1,8040 = 24,94 cm; α = 90° − 61° = 29°)"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q016",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC: Hypotenuse c = 100 cm, Kathete b = 45 cm. Berechne den Winkel α (bei A, zwischen b und c).",
+     "answer": 63.26,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "b ist die Ankathete von α.\ncos α = 45 / 100 = 0,45\nα = cos⁻¹(0,45) = 63,26°\n(β = 90° − 63,26° = 26,74°)"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q017",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC: Hypotenuse c = 100 cm, Kathete b = 45 cm. Berechne die fehlende Kathete a.",
+     "answer": 89.3,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Pythagoras: a = √(c² − b²) = √(100² − 45²) = √7975 = 89,30 cm\nÜber tan mit dem gerundeten Winkel 63,26° ergibt sich 89,32 cm – der Pythagoras ist hier genauer."
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q018",
+     "type": "numeric",
+     "question": "Optischer Entfernungsmesser (vor Erfindung des Radars): Die beiden „Augen“ sind 6 m voneinander entfernt, das Schiff liegt mittig davor. An jedem Auge wird zwischen der Basis und der Visierlinie zum Schiff ein Winkel von 89,8° gemessen. Wie weit ist das Schiff von der Mitte des Entfernungsmessers entfernt?",
+     "answer": 859.43,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Halbe Basis: l = 6 m / 2 = 3 m (Ankathete)\nGesuchte Entfernung h ist die Gegenkathete des 89,8°-Winkels.\ntan 89,8° = h / 3 m\nh = 3 m · tan 89,8° = 3 · 286,48 = 859,43 m"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q019",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90°, b = 4,7 cm, α = 38°. Berechne die Höhe h_c.",
+     "answer": 2.89,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Im Teildreieck mit der Hypotenuse b ist h_c die Gegenkathete von α.\nh_c = b · sin 38° = 4,7 cm · 0,6157 = 2,89 cm"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q020",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90°, b = 4,7 cm, α = 38°. Berechne die Fläche A.",
+     "answer": 8.63,
+     "unit": "cm²",
+     "tolerance": 0.01,
+     "explanation": "a = b · tan 38° = 4,7 · 0,7813 = 3,672 cm\nA = ½ · a · b = ½ · 3,672 cm · 4,7 cm = 8,63 cm²\n(Kontrolle: c = 4,7 / cos 38° = 5,964 cm; ½ · c · h_c = ½ · 5,964 · 2,894 = 8,63 cm²)"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q021",
+     "type": "numeric",
+     "question": "Eine rechteckige Baugrube ist 12,50 m lang und 8,40 m breit. Wie lang muss die Diagonale sein, damit die Ecken rechtwinklig sind?",
+     "answer": 15.06,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Die Diagonale ist die Hypotenuse.\nd = √(12,50² + 8,40²) = √(156,25 + 70,56) = √226,81 = 15,06 m"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q022",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck: Die Höhe teilt die Hypotenuse in die Abschnitte p = 2,5 cm und q = 6,4 cm. Wie groß ist die Höhe h?",
+     "answer": 4,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Höhensatz: h² = p · q = 2,5 · 6,4 = 16 cm²\nh = √16 = 4,0 cm"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q023",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck: Hypotenuse c = 12 cm, der unter der Kathete b liegende Hypotenusenabschnitt ist q = 4,8 cm. Berechne b.",
+     "answer": 7.59,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Kathetensatz: b² = c · q = 12 · 4,8 = 57,6 cm²\nb = √57,6 = 7,59 cm"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q024",
+     "type": "numeric",
+     "question": "Eine Treppe hat das Steigungsverhältnis 17/29 (Steigung 17 cm, Auftritt 29 cm). Wie groß ist der Neigungswinkel der Treppe?",
+     "answer": 30.38,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "Steigung = Gegenkathete, Auftritt = Ankathete.\ntan α = 17 / 29 = 0,5862\nα = tan⁻¹(0,5862) = 30,38°"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q025",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck mit γ = 90°: c = 7,5 cm, α = 28°. Berechne die Kathete a.",
+     "answer": 3.52,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "a ist die Gegenkathete von α.\nsin 28° = a / c\na = 7,5 cm · sin 28° = 7,5 · 0,4695 = 3,52 cm"
+    },
+    {
+     "id": "mathe-grundlagen-rechtwinklig-q026",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck mit γ = 90°: a = 3,5 cm, c = 6,2 cm. Berechne den Winkel α.",
+     "answer": 34.37,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "a ist die Gegenkathete von α, c die Hypotenuse.\nsin α = 3,5 / 6,2 = 0,5645\nα = sin⁻¹(0,5645) = 34,37°"
+    }
+   ]
+  },
+  {
+   "id": "mathe-grundlagen-einheitskreis",
+   "title": "Einheitskreis, Quadranten & besondere Werte",
+   "description": "sin und cos am Einheitskreis, Vorzeichen in den vier Quadranten, Winkel über 90° und Funktionswerte besonderer Winkel.",
+   "sources": [
+    "Grundlagen Trigonometrie.pdf",
+    "Merkhilfe.pdf"
+   ],
+   "cards": [
+    {
+     "id": "mathe-grundlagen-einheitskreis-c001",
+     "type": "basic",
+     "front": "Was ist der Einheitskreis?",
+     "back": "Ein Kreis mit dem Radius r = 1 um den Ursprung O(0|0). Winkel werden ab der positiven x-Achse gegen den Uhrzeigersinn gemessen."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c002",
+     "type": "basic",
+     "front": "Wo liest du am Einheitskreis sin α und cos α ab?",
+     "back": "sin α = y-Wert des Kreispunkts (an der **y-Achse**)\ncos α = x-Wert des Kreispunkts (an der **x-Achse**)"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c003",
+     "type": "basic",
+     "front": "Trigonometrischer Pythagoras – Formel und Herkunft?",
+     "back": "(sin α)² + (cos α)² = 1\nFolgt aus dem Pythagoras im Dreieck am Einheitskreis: Katheten sin α und cos α, Hypotenuse r = 1."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c004",
+     "type": "basic",
+     "front": "cos α aus sin α berechnen, wenn α stumpf ist (II. Quadrant)?",
+     "back": "cos α = −√(1 − (sin α)²)\nDie Wurzel liefert nur den Betrag – das Vorzeichen legt der Quadrant fest. Im II. Quadranten ist cos negativ.",
+     "hint": "Bsp.: sin α = 0,8 und α stumpf → cos α = −0,6"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c005",
+     "type": "basic",
+     "front": "Welche Winkelbereiche gehören zu den vier Quadranten?",
+     "back": "I: 0° bis 90°\nII: 90° bis 180°\nIII: 180° bis 270°\nIV: 270° bis 360°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c006",
+     "type": "basic",
+     "front": "Vorzeichen von sin α in den Quadranten I–IV?",
+     "back": "I +, II +, III −, IV −\n(sin = y-Wert: oberhalb der x-Achse positiv)"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c007",
+     "type": "basic",
+     "front": "Vorzeichen von cos α in den Quadranten I–IV?",
+     "back": "I +, II −, III −, IV +\n(cos = x-Wert: rechts der y-Achse positiv)"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c008",
+     "type": "basic",
+     "front": "Vorzeichen von tan α in den Quadranten I–IV?",
+     "back": "I +, II −, III +, IV −\n(tan = sin / cos: positiv, wenn sin und cos dasselbe Vorzeichen haben)"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c009",
+     "type": "basic",
+     "front": "II. Quadrant: Wie rechnest du sin, cos und tan von (180° − α) auf den spitzen Winkel α zurück?",
+     "back": "sin (180° − α) = sin α\ncos (180° − α) = −cos α\ntan (180° − α) = −tan α"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c010",
+     "type": "basic",
+     "front": "III. Quadrant: sin, cos und tan von (180° + α)?",
+     "back": "sin (180° + α) = −sin α\ncos (180° + α) = −cos α\ntan (180° + α) = tan α"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c011",
+     "type": "basic",
+     "front": "IV. Quadrant: sin, cos und tan von (360° − α)?",
+     "back": "sin (360° − α) = −sin α\ncos (360° − α) = cos α\ntan (360° − α) = −tan α"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c012",
+     "type": "basic",
+     "front": "Negative Winkel: sin (−α), cos (−α), tan (−α)?",
+     "back": "sin (−α) = −sin α\ncos (−α) = cos α\ntan (−α) = −tan α\n(−α ist α an der x-Achse gespiegelt; bei spitzem α liegt −α im IV. Quadranten)"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c013",
+     "type": "basic",
+     "front": "Winkel zwischen 0° und 360° aus einem Funktionswert bestimmen – welche 3 Schritte?",
+     "back": "1. Betrag (ohne Vorzeichen) eingeben → Grundwinkel α′ mit sin⁻¹, cos⁻¹ oder tan⁻¹\n2. Mit der Vorzeichenregel die beiden möglichen Quadranten bestimmen\n3. Beide Winkel mit den Umrechnungsformeln berechnen",
+     "hint": "Der Taschenrechner liefert immer nur einen Winkel."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c014",
+     "type": "basic",
+     "front": "Umrechnungsformeln: Winkel im jeweiligen Quadranten aus dem Grundwinkel α′?",
+     "back": "I: α = α′\nII: α = 180° − α′\nIII: α = 180° + α′\nIV: α = 360° − α′"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c015",
+     "type": "basic",
+     "front": "sin 30° und cos 30° (exakt)?",
+     "back": "sin 30° = 1/2\ncos 30° = √3 / 2 ≈ 0,866"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c016",
+     "type": "basic",
+     "front": "sin 45° und cos 45° (exakt)?",
+     "back": "sin 45° = cos 45° = √2 / 2 ≈ 0,707"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c017",
+     "type": "basic",
+     "front": "sin 60° und cos 60° (exakt)?",
+     "back": "sin 60° = √3 / 2 ≈ 0,866\ncos 60° = 1/2"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c018",
+     "type": "basic",
+     "front": "tan 30°, tan 45° und tan 60° (exakt)?",
+     "back": "tan 30° = √3 / 3 ≈ 0,577\ntan 45° = 1\ntan 60° = √3 ≈ 1,732"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c019",
+     "type": "basic",
+     "front": "sin und cos bei 0°, 90°, 180° und 270°?",
+     "back": "sin: 0 | 1 | 0 | −1\ncos: 1 | 0 | −1 | 0",
+     "hint": "Am Einheitskreis: Punkte (1|0), (0|1), (−1|0), (0|−1)"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c020",
+     "type": "basic",
+     "front": "Wo ist tan α nicht definiert – und warum?",
+     "back": "Bei 90° und 270°: Dort ist cos α = 0, und tan α = sin α / cos α wäre eine Division durch null. Kurz vor 90° wird tan sehr groß (tan 89,99° ≈ 5729,6)."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c021",
+     "type": "basic",
+     "front": "Merktrick für sin 0°, 30°, 45°, 60°, 90°?",
+     "back": "sin = √0/2 | √1/2 | √2/2 | √3/2 | √4/2\n= 0 | 0,5 | 0,707 | 0,866 | 1\nFür cos gilt dieselbe Reihe rückwärts."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c022",
+     "type": "basic",
+     "front": "Merkhilfe: Doppelwinkelformeln für sin 2φ und cos 2φ?",
+     "back": "sin 2φ = 2 · sin φ · cos φ\ncos 2φ = (cos φ)² − (sin φ)²"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-c023",
+     "type": "basic",
+     "front": "Merkhilfe: Additionstheoreme für sin (α + β) und cos (α + β)?",
+     "back": "sin (α + β) = sin α · cos β + cos α · sin β\ncos (α + β) = cos α · cos β − sin α · sin β"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "mathe-grundlagen-einheitskreis-q001",
+     "type": "mc",
+     "question": "Richtig oder falsch? cos 20° < cos 30°",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Falsch: Der Kosinus fällt im I. Quadranten mit wachsendem Winkel von 1 auf 0. cos 20° ≈ 0,940 ist größer als cos 30° ≈ 0,866."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q002",
+     "type": "mc",
+     "question": "Richtig oder falsch? cos 90° > sin 0°",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Falsch: cos 90° = 0 und sin 0° = 0 – die Werte sind gleich."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q003",
+     "type": "mc",
+     "question": "Richtig oder falsch? sin 30° < tan 30°",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Richtig: tan 30° = sin 30° / cos 30°, und weil cos 30° < 1 ist, wird der Wert durch die Division größer (0,5 < 0,577). Das gilt für alle Winkel zwischen 0° und 90°."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q004",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit sin α = 0,6. Berechne cos α, ohne α zu bestimmen.",
+     "answer": 0.8,
+     "tolerance": 0.01,
+     "explanation": "cos α = √(1 − (sin α)²) = √(1 − 0,6²) = √(1 − 0,36) = √0,64 = 0,8\n(daraus weiter: tan α = 0,6 / 0,8 = 0,75)"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q005",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit cos α = 12/13. Berechne sin α (als Dezimalzahl, 4 Nachkommastellen).",
+     "answer": 0.3846,
+     "tolerance": 0.005,
+     "explanation": "sin α = √(1 − (12/13)²) = √(1 − 144/169) = √(25/169) = 5/13 ≈ 0,3846"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q006",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit cos α = 12/13. Berechne tan α (als Dezimalzahl, 4 Nachkommastellen).",
+     "answer": 0.4167,
+     "tolerance": 0.005,
+     "explanation": "sin α = 5/13 (siehe trigonometrischer Pythagoras)\ntan α = (5/13) / (12/13) = 5/12 ≈ 0,4167"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q007",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit sin α = √5 / 3. Berechne cos α (4 Nachkommastellen).",
+     "answer": 0.6667,
+     "tolerance": 0.005,
+     "explanation": "(sin α)² = 5/9\ncos α = √(1 − 5/9) = √(4/9) = 2/3 ≈ 0,6667"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q008",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit sin α = √5 / 3. Berechne tan α (4 Nachkommastellen).",
+     "answer": 1.118,
+     "tolerance": 0.005,
+     "explanation": "cos α = 2/3\ntan α = (√5 / 3) / (2/3) = √5 / 2 ≈ 1,1180"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q009",
+     "type": "numeric",
+     "question": "α ist ein stumpfer Winkel (90° < α < 180°) mit sin α = 0,28. Berechne cos α, ohne α zu bestimmen.",
+     "answer": -0.96,
+     "tolerance": 0.005,
+     "explanation": "Betrag: √(1 − 0,28²) = √(1 − 0,0784) = √0,9216 = 0,96\nα liegt im II. Quadranten → cos α ist negativ\ncos α = −0,96"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q010",
+     "type": "numeric",
+     "question": "Taschenrechner (4 Dezimalstellen): sin 125° = ?",
+     "answer": 0.8192,
+     "tolerance": 0.001,
+     "explanation": "sin 125° ≈ 0,8192. Kontrolle: sin 125° = sin (180° − 55°) = sin 55° – im II. Quadranten ist sin positiv."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q011",
+     "type": "numeric",
+     "question": "Taschenrechner (4 Dezimalstellen): cos 212° = ?",
+     "answer": -0.848,
+     "tolerance": 0.001,
+     "explanation": "cos 212° ≈ −0,8480. Kontrolle: cos (180° + 32°) = −cos 32° – im III. Quadranten ist cos negativ."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q012",
+     "type": "numeric",
+     "question": "Taschenrechner (4 Dezimalstellen): tan 333° = ?",
+     "answer": -0.5095,
+     "tolerance": 0.001,
+     "explanation": "tan 333° ≈ −0,5095. Kontrolle: tan (360° − 27°) = −tan 27° – im IV. Quadranten ist tan negativ."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q013",
+     "type": "numeric",
+     "question": "sin α = −0,2435. Es gibt zwei Winkel zwischen 0° und 360°. Gib den Winkel im IV. Quadranten an (2 Dezimalstellen).",
+     "answer": 345.91,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "1. Grundwinkel: sin⁻¹(0,2435) = 14,09°\n2. sin negativ → III. und IV. Quadrant\n3. α₃ = 180° + 14,09° = 194,09°\n   α₄ = 360° − 14,09° = 345,91°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q014",
+     "type": "numeric",
+     "question": "cos α = −0,8888. Gib den Winkel im III. Quadranten an (2 Dezimalstellen).",
+     "answer": 207.28,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "1. Grundwinkel: cos⁻¹(0,8888) = 27,28°\n2. cos negativ → II. und III. Quadrant\n3. α₂ = 180° − 27,28° = 152,72°\n   α₃ = 180° + 27,28° = 207,28°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q015",
+     "type": "numeric",
+     "question": "sin α = 0,1568. Gib den Winkel im II. Quadranten an (2 Dezimalstellen).",
+     "answer": 170.98,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "1. Grundwinkel: sin⁻¹(0,1568) = 9,02°\n2. sin positiv → I. und II. Quadrant\n3. α₁ = 9,02°; α₂ = 180° − 9,02° = 170,98°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q016",
+     "type": "numeric",
+     "question": "tan α = −1,4859. Gib den Winkel im II. Quadranten an (2 Dezimalstellen).",
+     "answer": 123.94,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "1. Grundwinkel: tan⁻¹(1,4859) = 56,06°\n2. tan negativ → II. und IV. Quadrant\n3. α₂ = 180° − 56,06° = 123,94°\n   α₄ = 360° − 56,06° = 303,94°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q017",
+     "type": "numeric",
+     "question": "cos α = −0,9159. Gib den Winkel im II. Quadranten an (2 Dezimalstellen).",
+     "answer": 156.33,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "1. Grundwinkel: cos⁻¹(0,9159) = 23,67°\n2. cos negativ → II. und III. Quadrant\n3. α₂ = 180° − 23,67° = 156,33°\n   α₃ = 180° + 23,67° = 203,67°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q018",
+     "type": "numeric",
+     "question": "sin α = −0,7777. Gib den Winkel im III. Quadranten an (2 Dezimalstellen).",
+     "answer": 231.05,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "1. Grundwinkel: sin⁻¹(0,7777) = 51,05°\n2. sin negativ → III. und IV. Quadrant\n3. α₃ = 180° + 51,05° = 231,05°\n   α₄ = 360° − 51,05° = 308,95°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q019",
+     "type": "numeric",
+     "question": "tan α = 3,1415. Gib den Winkel im III. Quadranten an (2 Dezimalstellen).",
+     "answer": 252.34,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "1. Grundwinkel: tan⁻¹(3,1415) = 72,34°\n2. tan positiv → I. und III. Quadrant\n3. α₁ = 72,34°; α₃ = 180° + 72,34° = 252,34°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q020",
+     "type": "numeric",
+     "question": "cos α = 0,4174. Gib den Winkel im IV. Quadranten an (2 Dezimalstellen).",
+     "answer": 294.67,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "1. Grundwinkel: cos⁻¹(0,4174) = 65,33°\n2. cos positiv → I. und IV. Quadrant\n3. α₁ = 65,33°; α₄ = 360° − 65,33° = 294,67°"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q021",
+     "type": "mc",
+     "question": "In welchem Quadranten ist sin α negativ und cos α positiv?",
+     "options": [
+      "I. Quadrant",
+      "II. Quadrant",
+      "III. Quadrant",
+      "IV. Quadrant"
+     ],
+     "answer": 3,
+     "explanation": "sin < 0 heißt unterhalb der x-Achse (III. oder IV.), cos > 0 heißt rechts der y-Achse (I. oder IV.) → IV. Quadrant (270° bis 360°)."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q022",
+     "type": "mc",
+     "question": "cos (180° − α) = ?",
+     "options": [
+      "cos α",
+      "−cos α",
+      "sin α",
+      "−sin α"
+     ],
+     "answer": 1,
+     "explanation": "180° − α liegt im II. Quadranten: Der x-Wert wird an der y-Achse gespiegelt, also cos (180° − α) = −cos α."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q023",
+     "type": "mc",
+     "question": "tan (180° + α) = ?",
+     "options": [
+      "−tan α",
+      "1 / tan α",
+      "tan α",
+      "−sin α"
+     ],
+     "answer": 2,
+     "explanation": "Im III. Quadranten sind sin und cos beide negativ – die Vorzeichen heben sich im Quotienten auf: tan (180° + α) = tan α."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q024",
+     "type": "mc",
+     "question": "sin (−30°) = ?",
+     "options": [
+      "0,5",
+      "−0,5",
+      "√3 / 2",
+      "−√3 / 2"
+     ],
+     "answer": 1,
+     "explanation": "sin (−α) = −sin α → sin (−30°) = −sin 30° = −0,5"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q025",
+     "type": "input",
+     "question": "Ohne Taschenrechner: sin 30° = ? (als Dezimalzahl)",
+     "answer": "0,5",
+     "accept": [
+      "0.5",
+      "0,50",
+      "0.50",
+      "1/2",
+      "½",
+      ",5"
+     ],
+     "explanation": "sin 30° = 1/2 = 0,5 (Merktrick: √1 / 2)."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q026",
+     "type": "mc",
+     "question": "cos 60° = ?",
+     "options": [
+      "√3 / 2",
+      "√2 / 2",
+      "1/2",
+      "1"
+     ],
+     "answer": 2,
+     "explanation": "cos 60° = sin 30° = 1/2 (Komplementwinkel)."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q027",
+     "type": "mc",
+     "question": "tan 60° = ?",
+     "options": [
+      "√3",
+      "√3 / 3",
+      "1",
+      "√3 / 2"
+     ],
+     "answer": 0,
+     "explanation": "tan 60° = sin 60° / cos 60° = (√3 / 2) / (1/2) = √3 ≈ 1,732"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q028",
+     "type": "mc",
+     "question": "sin 270° = ?",
+     "options": [
+      "0",
+      "1",
+      "−1",
+      "nicht definiert"
+     ],
+     "answer": 2,
+     "explanation": "Bei 270° liegt der Punkt am Einheitskreis bei (0|−1). Der y-Wert und damit sin 270° ist −1."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q029",
+     "type": "mc",
+     "question": "Für welchen dieser Winkel ist tan α nicht definiert?",
+     "options": [
+      "0°",
+      "45°",
+      "180°",
+      "270°"
+     ],
+     "answer": 3,
+     "explanation": "cos 270° = 0 → tan 270° = sin / cos wäre eine Division durch null. Dasselbe gilt für 90°."
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q030",
+     "type": "numeric",
+     "question": "Ohne Taschenrechner: sin 150° = ?",
+     "answer": 0.5,
+     "tolerance": 0.01,
+     "explanation": "sin 150° = sin (180° − 30°) = sin 30° = 0,5"
+    },
+    {
+     "id": "mathe-grundlagen-einheitskreis-q031",
+     "type": "numeric",
+     "question": "Ohne Taschenrechner: cos 120° = ?",
+     "answer": -0.5,
+     "tolerance": 0.01,
+     "explanation": "cos 120° = cos (180° − 60°) = −cos 60° = −0,5"
+    }
+   ]
+  },
+  {
+   "id": "mathe-grundlagen-winkelmasse",
+   "title": "Winkelmaße (Grad, Gon, Bogenmaß) & Winkel an Parallelen",
+   "description": "Winkeleinheiten am Taschenrechner, Umrechnung Grad – Gon – Bogenmaß und Winkelbeziehungen an geschnittenen Parallelen.",
+   "sources": [
+    "Grundlagen Trigonometrie.pdf",
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "mathe-grundlagen-winkelmasse-c001",
+     "type": "basic",
+     "front": "Welche drei Winkeleinheiten kennt der Taschenrechner (DRG)?",
+     "back": "- **D**eg: Grad (Altgrad), Vollkreis = 360°\n- **R**ad: Bogenmaß (Radiant), Vollkreis = 2π\n- **G**ra: Gon (Neugrad), Vollkreis = 400 gon"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c002",
+     "type": "basic",
+     "front": "Was ist 1 gon und wo wird Gon verwendet?",
+     "back": "1 gon ist der 400. Teil des Vollkreises (rechter Winkel = 100 gon). Verwendet wird Gon in der **Vermessung**."
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c003",
+     "type": "basic",
+     "front": "Grad → Gon umrechnen?",
+     "back": "α_gon = α_grad · 10/9\n(1° = 10/9 gon ≈ 1,111 gon)",
+     "hint": "Bsp.: 180° · 10/9 = 200 gon"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c004",
+     "type": "basic",
+     "front": "Gon → Grad umrechnen?",
+     "back": "α_grad = α_gon · 9/10\n(1 gon = 0,9°)",
+     "hint": "Bsp.: 200 gon · 9/10 = 180°"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c005",
+     "type": "basic",
+     "front": "Was ist das Bogenmaß x eines Winkels?",
+     "back": "Die Länge des Bogens, den der Winkel aus dem Einheitskreis (r = 1) ausschneidet.\nVollkreis: U = 2 · π · 1 = 2π ≙ 360°"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c006",
+     "type": "basic",
+     "front": "Grad → Bogenmaß umrechnen?",
+     "back": "x = α / 180° · π",
+     "hint": "Bsp.: 30° → 30°/180° · π = π/6 ≈ 0,524"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c007",
+     "type": "basic",
+     "front": "Bogenmaß → Grad umrechnen?",
+     "back": "α = x / π · 180°",
+     "hint": "Bsp.: x = π/3 → (π/3) / π · 180° = 60°"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c008",
+     "type": "basic",
+     "front": "90°, 180° und 360° in Bogenmaß und Gon?",
+     "back": "90° = π/2 = 100 gon\n180° = π = 200 gon\n360° = 2π = 400 gon"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c009",
+     "type": "basic",
+     "front": "Wie viel Grad ist 1 rad ungefähr?",
+     "back": "1 rad = 180° / π ≈ 57,3°"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c010",
+     "type": "basic",
+     "front": "Bogenlänge b bei Radius r und Mittelpunktswinkel α?",
+     "back": "b = r · x = r · π · α / 180°\n(x = Bogenmaß des Winkels)"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c011",
+     "type": "basic",
+     "front": "Stufenwinkel an geschnittenen Parallelen – Lage und Regel?",
+     "back": "Sie liegen an beiden Schnittpunkten in **gleicher Lage** (F-Figur) und sind **gleich groß**."
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c012",
+     "type": "basic",
+     "front": "Wechselwinkel (Z-Winkel) an geschnittenen Parallelen – Lage und Regel?",
+     "back": "Sie liegen an den beiden Schnittpunkten auf **entgegengesetzten Seiten** der schneidenden Geraden (Z-Figur) und sind **gleich groß**."
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c013",
+     "type": "basic",
+     "front": "Scheitelwinkel – Lage und Regel?",
+     "back": "Sie liegen sich **am selben Schnittpunkt gegenüber** und sind **gleich groß**.",
+     "hint": "Im Skript ist dieses Paar (α₁ = γ₁) als „Wechselwinkel“ notiert – fachlich heißt es Scheitelwinkel."
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-c014",
+     "type": "basic",
+     "front": "Nebenwinkel (im Skript: Ergänzungswinkel) – Lage und Regel?",
+     "back": "Sie liegen am selben Schnittpunkt direkt nebeneinander und ergänzen sich zu **180°**."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "mathe-grundlagen-winkelmasse-q001",
+     "type": "numeric",
+     "question": "Rechne 54° in gon um.",
+     "answer": 60,
+     "unit": "gon",
+     "tolerance": 0.005,
+     "explanation": "α_gon = α_grad · 10/9 = 54 · 10/9 = 60 gon"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q002",
+     "type": "numeric",
+     "question": "Rechne 250 gon in Grad um.",
+     "answer": 225,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "α_grad = α_gon · 9/10 = 250 · 0,9 = 225°"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q003",
+     "type": "numeric",
+     "question": "Rechne 72° in gon um.",
+     "answer": 80,
+     "unit": "gon",
+     "tolerance": 0.005,
+     "explanation": "72 · 10/9 = 80 gon"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q004",
+     "type": "numeric",
+     "question": "Ein Vermessungsinstrument zeigt 63,5 gon. Wie viel Grad sind das?",
+     "answer": 57.15,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "63,5 · 9/10 = 57,15°"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q005",
+     "type": "numeric",
+     "question": "Rechne 45° ins Bogenmaß um (Dezimalzahl, 4 Nachkommastellen).",
+     "answer": 0.7854,
+     "tolerance": 0.005,
+     "explanation": "x = 45° / 180° · π = π/4 ≈ 0,7854"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q006",
+     "type": "numeric",
+     "question": "Rechne 135° ins Bogenmaß um (Dezimalzahl, 4 Nachkommastellen).",
+     "answer": 2.3562,
+     "tolerance": 0.005,
+     "explanation": "x = 135° / 180° · π = 3π/4 ≈ 2,3562"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q007",
+     "type": "numeric",
+     "question": "Rechne x = 1,2 (Bogenmaß) in Grad um.",
+     "answer": 68.75,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "α = x / π · 180° = 1,2 / π · 180° = 68,75°"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q008",
+     "type": "numeric",
+     "question": "Rechne x = 2,5 (Bogenmaß) in Grad um.",
+     "answer": 143.24,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "α = 2,5 / π · 180° = 143,24°"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q009",
+     "type": "numeric",
+     "question": "Über einer Maueröffnung wird ein halbkreisförmiger Rundbogen mit dem Radius r = 1,25 m gemauert. Wie lang ist der Bogen (Bogenlänge)?",
+     "answer": 3.927,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Halbkreis: α = 180° → x = π\nb = r · x = 1,25 m · π = 3,927 m"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q010",
+     "type": "numeric",
+     "question": "Ein Kreisbogen hat den Radius r = 4,50 m und den Mittelpunktswinkel 60°. Wie lang ist der Bogen?",
+     "answer": 4.712,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "x = 60° / 180° · π = π/3 = 1,0472\nb = r · x = 4,50 m · 1,0472 = 4,712 m"
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q011",
+     "type": "mc",
+     "question": "Wie groß ist ein rechter Winkel in gon?",
+     "options": [
+      "90 gon",
+      "π/2 gon",
+      "400 gon",
+      "100 gon"
+     ],
+     "answer": 3,
+     "explanation": "Vollkreis = 400 gon → Viertelkreis (rechter Winkel) = 100 gon."
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q012",
+     "type": "mc",
+     "question": "Du tippst sin 30 in den Taschenrechner und erhältst −0,988. Was ist die Ursache?",
+     "options": [
+      "Der Rechner steht auf RAD (Bogenmaß)",
+      "Der Rechner steht auf DEG (Grad)",
+      "sin 30° ist tatsächlich negativ",
+      "Der Rechner steht auf GRA (Gon)"
+     ],
+     "answer": 0,
+     "explanation": "Im RAD-Modus rechnet der TR sin (30 rad) ≈ −0,988. Im DEG-Modus käme sin 30° = 0,5 heraus, im GRA-Modus sin 30 gon ≈ 0,454."
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q013",
+     "type": "mc",
+     "question": "Zwei Winkel an zwei geschnittenen Parallelen bilden eine „Z-Figur“. Wie heißen sie und was gilt?",
+     "options": [
+      "Stufenwinkel – sie ergänzen sich zu 180°",
+      "Nebenwinkel – sie sind gleich groß",
+      "Wechselwinkel – sie sind gleich groß",
+      "Scheitelwinkel – sie ergänzen sich zu 90°"
+     ],
+     "answer": 2,
+     "explanation": "Z-Figur = Wechselwinkel; an Parallelen sind Wechselwinkel gleich groß."
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q014",
+     "type": "mc",
+     "question": "Zwei Parallelen werden von einer Geraden geschnitten. Am ersten Schnittpunkt ist α₁ = 72°. Wie groß ist der Stufenwinkel α₂ am zweiten Schnittpunkt?",
+     "options": [
+      "108°",
+      "72°",
+      "18°",
+      "144°"
+     ],
+     "answer": 1,
+     "explanation": "Stufenwinkel an Parallelen sind gleich groß: α₂ = α₁ = 72°."
+    },
+    {
+     "id": "mathe-grundlagen-winkelmasse-q015",
+     "type": "numeric",
+     "question": "An einem Geradenschnittpunkt beträgt ein Winkel 64°. Wie groß ist sein Nebenwinkel?",
+     "answer": 116,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "Nebenwinkel ergänzen sich zu 180°: 180° − 64° = 116°"
+    }
+   ]
+  },
+  {
+   "id": "mathe-grundlagen-sinus-kosinussatz",
+   "title": "Sinussatz & Kosinussatz – Grundlagen",
+   "description": "Herleitung, Merkhilfe-Formen und Anwendung von Sinus- und Kosinussatz im allgemeinen (schiefwinkligen) Dreieck.",
+   "sources": [
+    "Grundlagen Trigonometrie.pdf",
+    "Merkhilfe.pdf"
+   ],
+   "cards": [
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-c001",
+     "type": "basic",
+     "front": "Sinussatz in der Merkhilfe-Schreibweise – und was bedeutet er in Worten?",
+     "back": "a : b : c = sin α : sin β : sin γ\nIn Worten: Die Seiten verhalten sich wie die Sinuswerte ihrer Gegenwinkel.\nGleichwertig: a / sin α = b / sin β = c / sin γ"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-c002",
+     "type": "basic",
+     "front": "Wie wird der Sinussatz hergeleitet?",
+     "back": "Die Höhe h_c teilt das Dreieck in zwei rechtwinklige Dreiecke:\nh_c = b · sin α und h_c = a · sin β\n⇒ a · sin β = b · sin α ⇒ a / b = sin α / sin β"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-c003",
+     "type": "basic",
+     "front": "Trick zum Umstellen des Sinussatzes?",
+     "back": "Die gesuchte Größe nach **oben links** schreiben – dann nur noch einmal multiplizieren.\nBsp.: b gesucht → b / c = sin β / sin γ → b = c · sin β / sin γ"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-c006",
+     "type": "basic",
+     "front": "Kosinussatz – Formen für b² und c² (Merkhilfe)?",
+     "back": "b² = a² + c² − 2 · a · c · cos β\nc² = a² + b² − 2 · a · b · cos γ",
+     "hint": "Links die Seite, rechts ihr Gegenwinkel; die beiden anderen Seiten stehen im Produkt."
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-c009",
+     "type": "basic",
+     "front": "Wie wird der Kosinussatz hergeleitet (Idee)?",
+     "back": "Die Höhe h_c teilt c in c₁ = b · cos α und c₂ = c − c₁; außerdem h_c = b · sin α.\nPythagoras im Teildreieck DBC: a² = h_c² + c₂²\nEinsetzen und (sin α)² + (cos α)² = 1 nutzen ⇒ a² = b² + c² − 2bc · cos α"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-c010",
+     "type": "basic",
+     "front": "Fläche eines allgemeinen Dreiecks – zwei Formeln?",
+     "back": "A = ½ · g · h (Grundseite · zugehörige Höhe, Merkhilfe)\nA = ½ · b · c · sin α (zwei Seiten und der eingeschlossene Winkel, da h_c = b · sin α)"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q001",
+     "type": "numeric",
+     "question": "Dreieck ABC: c = AB = 2 km, α = 55°, β = 80°. Berechne b = AC.",
+     "answer": 2.79,
+     "unit": "km",
+     "tolerance": 0.01,
+     "explanation": "γ = 180° − 55° − 80° = 45°\nSinussatz: b / c = sin β / sin γ\nb = c · sin 80° / sin 45° = 2 km · 0,9848 / 0,7071 = 2,79 km"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q002",
+     "type": "numeric",
+     "question": "Dreieck ABC: c = 2 km, α = 55°, β = 80°. Berechne a = BC.",
+     "answer": 2.32,
+     "unit": "km",
+     "tolerance": 0.01,
+     "explanation": "γ = 45°\na / c = sin α / sin γ\na = 2 km · sin 55° / sin 45° = 2 · 0,8192 / 0,7071 = 2,32 km"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q003",
+     "type": "numeric",
+     "question": "Dreieck ABC: b = AC = 7 km, c = AB = 6 km, α = 75°. Berechne a = BC.",
+     "answer": 7.95,
+     "unit": "km",
+     "tolerance": 0.01,
+     "explanation": "SWS → Kosinussatz:\na² = b² + c² − 2 · b · c · cos α\na² = 49 + 36 − 2 · 7 · 6 · cos 75° = 85 − 84 · 0,2588 = 63,26\na = √63,26 = 7,95 km"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q004",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 3,19 cm, b = 6,23 cm, c = 6,00 cm. Berechne den Winkel α.",
+     "answer": 30.16,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "SSS → Kosinussatz umgestellt:\ncos α = (b² + c² − a²) / (2bc)\n= (6,23² + 6,00² − 3,19²) / (2 · 6,23 · 6,00)\n= (38,813 + 36 − 10,176) / 74,76 = 64,637 / 74,76 = 0,8646\nα = cos⁻¹(0,8646) = 30,16°"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q005",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 12,0 m, α = 48°, β = 67°. Berechne b.",
+     "answer": 14.86,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Sinussatz (Paar a/α bekannt):\nb / a = sin β / sin α\nb = 12,0 m · sin 67° / sin 48° = 12,0 · 0,9205 / 0,7431 = 14,86 m"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q006",
+     "type": "numeric",
+     "question": "Ein dreieckiges Grundstück: Zwei Grenzen von 32,0 m und 25,0 m schließen einen Winkel von 105° ein. Wie lang ist die dritte Grenze?",
+     "answer": 45.42,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "SWS → Kosinussatz:\nx² = 32,0² + 25,0² − 2 · 32,0 · 25,0 · cos 105°\nx² = 1024 + 625 − 1600 · (−0,2588) = 1649 + 414,1 = 2063,1\nx = √2063,1 = 45,42 m\n(cos 105° ist negativ → das Minus wird zum Plus.)"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q007",
+     "type": "numeric",
+     "question": "Dreiecksbinder: Die beiden Obergurtstäbe sind 5,40 m und 4,20 m lang, der Untergurt 8,00 m. Wie groß ist der Winkel zwischen den beiden Obergurtstäben (am First)?",
+     "answer": 112.28,
+     "unit": "°",
+     "tolerance": 0.001,
+     "explanation": "SSS → Kosinussatz; der gesuchte Winkel liegt dem Untergurt (8,00 m) gegenüber:\ncos γ = (5,40² + 4,20² − 8,00²) / (2 · 5,40 · 4,20)\n= (29,16 + 17,64 − 64) / 45,36 = −17,2 / 45,36 = −0,3792\nγ = cos⁻¹(−0,3792) = 112,28° (stumpf, da cos negativ)"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q008",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 9 cm, b = 6 cm, α = 70°. Berechne β.",
+     "answer": 38.79,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "SsW → Sinussatz:\nsin β = b · sin α / a = 6 · sin 70° / 9 = 6 · 0,9397 / 9 = 0,6265\nβ = sin⁻¹(0,6265) = 38,79°\nEindeutig, weil der gegebene Winkel α der längeren Seite a gegenüberliegt."
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q009",
+     "type": "numeric",
+     "question": "Dreieck ABC: b = 7 km, c = 6 km, α = 75°. Berechne die Fläche des Dreiecks.",
+     "answer": 20.28,
+     "unit": "km²",
+     "tolerance": 0.01,
+     "explanation": "A = ½ · b · c · sin α = ½ · 7 · 6 · sin 75° = 21 · 0,9659 = 20,28 km²"
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q010",
+     "type": "mc",
+     "question": "Gegeben sind c, β und γ. Wie berechnest du b?",
+     "options": [
+      "b = c · sin γ / sin β",
+      "b = c · sin β / sin γ",
+      "b = sin β / (c · sin γ)",
+      "b = c · cos β / cos γ"
+     ],
+     "answer": 1,
+     "explanation": "Gesuchtes nach oben links: b / c = sin β / sin γ → mit c multiplizieren: b = c · sin β / sin γ."
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q011",
+     "type": "mc",
+     "question": "Gegeben sind a, b und der Winkel γ. Womit berechnest du die Seite c?",
+     "options": [
+      "Sinussatz",
+      "Kosinussatz",
+      "Pythagoras",
+      "Höhensatz"
+     ],
+     "answer": 1,
+     "explanation": "γ liegt zwischen a und b (eingeschlossener Winkel) → SWS → Kosinussatz: c² = a² + b² − 2ab · cos γ. Pythagoras nur, wenn γ = 90°."
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q012",
+     "type": "mc",
+     "question": "Gegeben sind a, b und α. Mit welchem Satz berechnest du β direkt?",
+     "options": [
+      "Kosinussatz",
+      "Pythagoras",
+      "Sinussatz",
+      "Gar nicht lösbar"
+     ],
+     "answer": 2,
+     "explanation": "α liegt der Seite a gegenüber – das Paar a/α ist bekannt (SsW) → Sinussatz: sin β = b · sin α / a. Weil a/α bekannt ist, reicht ein Schritt."
+    },
+    {
+     "id": "mathe-grundlagen-sinus-kosinussatz-q013",
+     "type": "mc",
+     "question": "Welche Form des Kosinussatzes ist richtig?",
+     "options": [
+      "b² = a² + c² − 2ac · cos β",
+      "b² = a² + c² − 2ac · cos α",
+      "b² = a² + c² + 2ac · cos β",
+      "b² = a² · c² − 2ac · cos β"
+     ],
+     "answer": 0,
+     "explanation": "Links die Seite b, rechts ihr Gegenwinkel β; a und c stehen im Produkt, und die Quadrate werden **addiert**: b² = a² + c² − 2ac · cos β."
+    }
+   ]
+  },
+  {
+   "id": "mathe-grundlagen-merkhilfe-formeln",
+   "title": "Merkhilfe: Algebra, Flächen & Körper",
+   "description": "Die wichtigsten Mittelstufen-Formeln der Merkhilfe – binomische Formeln, Potenzen, quadratische Gleichungen, Geraden sowie Flächen und Volumen.",
+   "sources": [
+    "Merkhilfe.pdf",
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c001",
+     "type": "basic",
+     "front": "1. binomische Formel?",
+     "back": "(a + b)² = a² + 2ab + b²"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c002",
+     "type": "basic",
+     "front": "2. binomische Formel?",
+     "back": "(a − b)² = a² − 2ab + b²"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c003",
+     "type": "basic",
+     "front": "3. binomische Formel?",
+     "back": "(a + b) · (a − b) = a² − b²"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c004",
+     "type": "basic",
+     "front": "Lösungsformel für ax² + bx + c = 0?",
+     "back": "x₁/₂ = (−b ± √(b² − 4ac)) / (2a)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c005",
+     "type": "basic",
+     "front": "Was verrät die Diskriminante D = b² − 4ac über die Lösungen?",
+     "back": "D > 0: zwei Lösungen\nD = 0: genau eine Lösung\nD < 0: keine reelle Lösung"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c006",
+     "type": "basic",
+     "front": "Potenzgesetze bei gleicher Basis?",
+     "back": "aˣ · aᶻ = aˣ⁺ᶻ\naˣ / aᶻ = aˣ⁻ᶻ\n(aˣ)ᶻ = aˣ·ᶻ"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c007",
+     "type": "basic",
+     "front": "Negative Hochzahl und Hochzahl 0?",
+     "back": "a⁻ˣ = 1 / aˣ\na⁰ = 1"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c008",
+     "type": "basic",
+     "front": "Wurzeln als Potenzen schreiben?",
+     "back": "a^(1/n) = ⁿ√a\na^(n/m) = ᵐ√(aⁿ)\nz. B. √a = a^(1/2)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c009",
+     "type": "basic",
+     "front": "Geradengleichung – zwei Formen?",
+     "back": "y = m · x + t (allgemeine Form, t = y-Achsenabschnitt)\ny = m · (x − x₀) + y₀ (Punkt-Steigungsform)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c010",
+     "type": "basic",
+     "front": "Zusammenhang zwischen Steigung m und Steigungswinkel α einer Geraden?",
+     "back": "m = Δy / Δx = tan α\n(α = Winkel der Geraden gegen die x-Achse)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c011",
+     "type": "basic",
+     "front": "Schnittwinkel φ zweier Geraden mit den Steigungen m₁ und m₂?",
+     "back": "tan φ = |(m₁ − m₂) / (1 + m₁ · m₂)|"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c012",
+     "type": "basic",
+     "front": "Scheitelform der Parabel?",
+     "back": "y = a · (x − x_s)² + y_s mit dem Scheitel S(x_s | y_s)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c013",
+     "type": "basic",
+     "front": "Logarithmus – Definition?",
+     "back": "log_b(a) = z ⇔ b^z = a\n(z ist die Hochzahl, mit der man b potenzieren muss, um a zu erhalten)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c014",
+     "type": "basic",
+     "front": "Fläche eines Trapezes?",
+     "back": "A = (a + c) / 2 · h\n(a und c = die beiden parallelen Seiten, h = Abstand zwischen ihnen)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c015",
+     "type": "basic",
+     "front": "Kreis: Umfang und Fläche?",
+     "back": "U = 2 · r · π\nA = r² · π"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c016",
+     "type": "basic",
+     "front": "Gleichseitiges Dreieck (Seite a): Höhe und Fläche?",
+     "back": "h = a/2 · √3\nA = a²/4 · √3"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c017",
+     "type": "basic",
+     "front": "Volumen von Prisma und Pyramide?",
+     "back": "Prisma: V = G · h\nPyramide: V = ⅓ · G · h\n(G = Grundfläche, h = Höhe)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c018",
+     "type": "basic",
+     "front": "Gerader Kreiszylinder: Volumen und Mantelfläche?",
+     "back": "V = r² · π · h\nM = 2 · r · π · h"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c019",
+     "type": "basic",
+     "front": "Gerader Kreiskegel: Volumen und Mantelfläche?",
+     "back": "V = ⅓ · r² · π · h\nM = r · π · m (m = Mantellinie)"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-c020",
+     "type": "basic",
+     "front": "Kugel: Volumen und Oberfläche?",
+     "back": "V = 4/3 · r³ · π\nO = 4 · r² · π"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q001",
+     "type": "mc",
+     "question": "(2x − 3)² = ?",
+     "options": [
+      "4x² − 9",
+      "4x² − 6x + 9",
+      "4x² − 12x + 9",
+      "2x² − 12x + 9"
+     ],
+     "answer": 2,
+     "explanation": "2. binomische Formel mit a = 2x, b = 3: (2x)² − 2 · 2x · 3 + 3² = 4x² − 12x + 9"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q002",
+     "type": "mc",
+     "question": "(x + 5) · (x − 5) = ?",
+     "options": [
+      "x² − 25",
+      "x² + 25",
+      "x² − 10x − 25",
+      "x² + 10x − 25"
+     ],
+     "answer": 0,
+     "explanation": "3. binomische Formel: (a + b)(a − b) = a² − b² → x² − 25"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q003",
+     "type": "numeric",
+     "question": "Löse x² − 2x − 8 = 0. Gib die größere Lösung an.",
+     "answer": 4,
+     "tolerance": 0.01,
+     "explanation": "a = 1, b = −2, c = −8\nx₁/₂ = (2 ± √(4 + 32)) / 2 = (2 ± 6) / 2\nx₁ = 4, x₂ = −2"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q004",
+     "type": "numeric",
+     "question": "Löse 2x² + 3x − 5 = 0. Gib die negative Lösung an.",
+     "answer": -2.5,
+     "tolerance": 0.01,
+     "explanation": "a = 2, b = 3, c = −5\nx₁/₂ = (−3 ± √(9 + 40)) / 4 = (−3 ± 7) / 4\nx₁ = 1, x₂ = −2,5"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q005",
+     "type": "mc",
+     "question": "Wie viele reelle Lösungen hat x² + 4x + 5 = 0?",
+     "options": [
+      "zwei",
+      "eine",
+      "keine",
+      "unendlich viele"
+     ],
+     "answer": 2,
+     "explanation": "D = b² − 4ac = 16 − 20 = −4 < 0 → keine reelle Lösung."
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q006",
+     "type": "mc",
+     "question": "a³ · a⁴ = ?",
+     "options": [
+      "a¹²",
+      "a⁷",
+      "2a⁷",
+      "a"
+     ],
+     "answer": 1,
+     "explanation": "Gleiche Basis: Hochzahlen addieren → a³⁺⁴ = a⁷"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q007",
+     "type": "mc",
+     "question": "10⁻³ = ?",
+     "options": [
+      "−1000",
+      "0,001",
+      "−0,001",
+      "1/3"
+     ],
+     "answer": 1,
+     "explanation": "a⁻ˣ = 1 / aˣ → 10⁻³ = 1 / 1000 = 0,001"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q008",
+     "type": "numeric",
+     "question": "Ein Graben hat einen trapezförmigen Querschnitt: Sohlenbreite 0,60 m, obere Breite 1,80 m, Tiefe 1,20 m. Der Graben ist 25 m lang. Wie groß ist das Aushubvolumen?",
+     "answer": 36,
+     "unit": "m³",
+     "tolerance": 0.01,
+     "explanation": "Querschnitt (Trapez): A = (1,80 + 0,60) / 2 · 1,20 = 1,44 m²\nVolumen (Prisma): V = A · l = 1,44 m² · 25 m = 36,0 m³"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q009",
+     "type": "numeric",
+     "question": "Eine runde Betonstütze hat den Durchmesser 40 cm und die Höhe 3,00 m. Wie viel Beton wird benötigt?",
+     "answer": 0.377,
+     "unit": "m³",
+     "tolerance": 0.01,
+     "explanation": "r = 0,20 m\nV = r² · π · h = 0,20² · π · 3,00 = 0,04 · π · 3,00 = 0,377 m³"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q010",
+     "type": "numeric",
+     "question": "Ein Kies-Schüttkegel hat den Radius 3,00 m und die Höhe 2,00 m. Wie groß ist sein Volumen?",
+     "answer": 18.85,
+     "unit": "m³",
+     "tolerance": 0.01,
+     "explanation": "V = ⅓ · r² · π · h = ⅓ · 3,00² · π · 2,00 = ⅓ · 9 · π · 2 = 18,85 m³"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q011",
+     "type": "numeric",
+     "question": "Ein Zeltdach (Pyramide) steht über einem quadratischen Grundriss von 4,00 m × 4,00 m und ist 3,00 m hoch. Wie groß ist der eingeschlossene Rauminhalt?",
+     "answer": 16,
+     "unit": "m³",
+     "tolerance": 0.01,
+     "explanation": "G = 4,00 · 4,00 = 16,0 m²\nV = ⅓ · G · h = ⅓ · 16,0 · 3,00 = 16,0 m³"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q012",
+     "type": "numeric",
+     "question": "Ein kreisrunder Schacht hat den Innendurchmesser 1,20 m. Wie groß ist seine Querschnittsfläche?",
+     "answer": 1.131,
+     "unit": "m²",
+     "tolerance": 0.01,
+     "explanation": "r = 0,60 m\nA = r² · π = 0,36 · π = 1,131 m²"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q013",
+     "type": "numeric",
+     "question": "Gleichseitiges Dreieck mit der Seitenlänge a = 2,00 m. Wie groß ist die Fläche?",
+     "answer": 1.732,
+     "unit": "m²",
+     "tolerance": 0.01,
+     "explanation": "A = a²/4 · √3 = 4,00/4 · √3 = √3 = 1,732 m²"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q014",
+     "type": "numeric",
+     "question": "Unter welchem Winkel steigt die Gerade y = 0,25 · x + 2 gegen die x-Achse an?",
+     "answer": 14.04,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "m = 0,25 = tan α\nα = tan⁻¹(0,25) = 14,04°"
+    },
+    {
+     "id": "mathe-grundlagen-merkhilfe-formeln-q015",
+     "type": "numeric",
+     "question": "Zwei Geraden haben die Steigungen m₁ = 2 und m₂ = 0,5. Unter welchem Winkel schneiden sie sich?",
+     "answer": 36.87,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "tan φ = |(m₁ − m₂) / (1 + m₁ · m₂)| = |(2 − 0,5) / (1 + 2 · 0,5)| = 1,5 / 2 = 0,75\nφ = tan⁻¹(0,75) = 36,87°"
+    }
+   ]
+  }
+ ]
 }
