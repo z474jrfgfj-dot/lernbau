@@ -1,0 +1,9 @@
+[
+  { "id": "englisch",        "name": "Englisch",        "icon": "🇬🇧", "color": "#FF3B30", "teacher": "Finck" },
+  { "id": "statik",          "name": "Statik",          "icon": "🏗️", "color": "#007AFF", "teacher": "Schäfer" },
+  { "id": "baustoffe",       "name": "Baustoffe",       "icon": "🧱", "color": "#A2845E", "teacher": "" },
+  { "id": "bauphysik",       "name": "Bauphysik",       "icon": "🌡️", "color": "#FF9500", "teacher": "" },
+  { "id": "baukonstruktion", "name": "Baukonstruktion", "icon": "📐", "color": "#5856D6", "teacher": "Reißer" },
+  { "id": "vermessung",      "name": "Vermessung",      "icon": "🧭", "color": "#34C759", "teacher": "" },
+  { "id": "mathe",           "name": "Mathe",           "icon": "➗", "color": "#AF52DE", "teacher": "" }
+]

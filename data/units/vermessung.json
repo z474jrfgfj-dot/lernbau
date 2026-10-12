@@ -1,0 +1,2142 @@
+{
+ "unit": "vermessung",
+ "subject": "vermessung",
+ "decks": [
+  {
+   "id": "vermessung-begriffe",
+   "title": "Begriffe & Vermessungsarten",
+   "description": "Grundbegriffe der Vermessung und die neun Vermessungsarten mit ihren Aufgaben.",
+   "sources": [
+    "1 Vermessung grundlagen (1).pdf"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-begriffe-c001",
+     "type": "basic",
+     "front": "Was versteht man unter einer **Messung**?",
+     "back": "Das quantitative Erfassen einer einzelnen geometrischen Größe, z. B. einer Strecke, eines Winkels oder einer Höhe."
+    },
+    {
+     "id": "vermessung-begriffe-c002",
+     "type": "basic",
+     "front": "Was versteht man unter einer **Vermessung**?",
+     "back": "Die Gesamtheit aller Messungen, die zur Erfassung eines Objekts (Grundstück, Gebäude, Straße …) erforderlich sind.",
+     "hint": "Messung = eine Größe, Vermessung = alle Messungen am Objekt"
+    },
+    {
+     "id": "vermessung-begriffe-c003",
+     "type": "basic",
+     "front": "Welcher Fachbegriff wird oft gleichbedeutend mit „Vermessung“ verwendet?",
+     "back": "**Geodäsie** – die Wissenschaft von der Ausmessung und Abbildung der Erdoberfläche. Sie beschreibt die technischen und mathematischen Verfahren der Vermessung."
+    },
+    {
+     "id": "vermessung-begriffe-c004",
+     "type": "basic",
+     "front": "Wessen Aufgabe ist die **terrestrische Vermessung** in der deutschen Verwaltung?",
+     "back": "Aufgabe der **Katasterverwaltung** – zur Dokumentation von Grenzen und zur Feststellung von Eigenschaften der Geländeoberfläche.\n(terrestrisch = von der Erde aus, lat. terra)"
+    },
+    {
+     "id": "vermessung-begriffe-c005",
+     "type": "basic",
+     "front": "Nenne die neun Vermessungsarten (Arbeitsblatt).",
+     "back": "- Ingenieurvermessung\n- Landesvermessung\n- Katastervermessung\n- Bodenordnung\n- Bergvermessung\n- Hydrografische Vermessung\n- Schiffsvermessung\n- Satellitenvermessung\n- Astronomische Vermessung",
+     "hint": "Bau, Land, Grenzen, Neuordnung – dann Berg, Wasser, Schiff, Satellit, Sterne"
+    },
+    {
+     "id": "vermessung-begriffe-c006",
+     "type": "basic",
+     "front": "Was ist **Ingenieurvermessung**?",
+     "back": "Das Teilgebiet der Vermessung, das für das Bauen komplexer Bauwerke benötigt wird – z. B. Gebäude, Brücken, Straßen, Tunnel oder Kraftwerke."
+    },
+    {
+     "id": "vermessung-begriffe-c007",
+     "type": "basic",
+     "front": "Nenne typische Aufgaben der Ingenieurvermessung.",
+     "back": "- Maßermittlungen\n- Abstecken von Bauachsen und -höhen\n- Setzungsmessungen während der Bauzeit\n- baubegleitende Kontrollmessungen"
+    },
+    {
+     "id": "vermessung-begriffe-c008",
+     "type": "basic",
+     "front": "Womit beschäftigt sich die **Landesvermessung**?",
+     "back": "- kartenmäßige Erfassung des Landes → topografische Karten (ca. 1:5.000 bis 1:200.000)\n- Aufbau eines landesweiten Vermessungsnetzes aus koordinatenmäßig bekannten Punkten (Festpunkte)"
+    },
+    {
+     "id": "vermessung-begriffe-c009",
+     "type": "basic",
+     "front": "Wie wurden die Netzpunkte der Landesvermessung früher bestimmt und wie heute?",
+     "back": "- früher: optische **trigonometrische** Messungen (Winkelmessung in Dreiecksnetzen)\n- heute: zunehmend **satellitengestützt** (GPS/GNSS)"
+    },
+    {
+     "id": "vermessung-begriffe-c010",
+     "type": "basic",
+     "front": "Was ist **Photogrammetrie**?",
+     "back": "Die Auswertung von Luftbildern (Messbildern), um Lage, Form und Größe von Objekten zu bestimmen – Grundlage z. B. für Karten und Navigationskarten."
+    },
+    {
+     "id": "vermessung-begriffe-c011",
+     "type": "basic",
+     "front": "Was muss die Landesvermessung im Gegensatz zur Katastervermessung berücksichtigen?",
+     "back": "Die **Erdkrümmung** bei optischen Messungen über weite Entfernungen – und für genaue Höhen die Theorien der Höheren Geodäsie."
+    },
+    {
+     "id": "vermessung-begriffe-c012",
+     "type": "basic",
+     "front": "Wer ist in Deutschland für die Landesvermessung verantwortlich?",
+     "back": "Die **Landesvermessungsämter (LVA)** bzw. entsprechende Landesbetriebe der Bundesländer (Vermessung ist Ländersache). In Bayern: das **LDBV**."
+    },
+    {
+     "id": "vermessung-begriffe-c013",
+     "type": "basic",
+     "front": "Was geschieht bei der **Katastervermessung**?",
+     "back": "Rechtmäßige Grundstücksgrenzen werden ermittelt oder nachgewiesen und die Bebauung der Grundstücke wird festgestellt. Daraus entstehen maßstäbliche Karten und Eigentumsnachweise."
+    },
+    {
+     "id": "vermessung-begriffe-c014",
+     "type": "basic",
+     "front": "Wozu dient die Katastervermessung?",
+     "back": "- Sicherung des Eigentums an Grundstücken\n- Fortführung des Liegenschaftskatasters (z. B. Flurkarte mit neuen Grenzen oder neu eingemessenen Gebäuden)"
+    },
+    {
+     "id": "vermessung-begriffe-c015",
+     "type": "basic",
+     "front": "Welche zwei Formen der **Bodenordnung** gibt es?",
+     "back": "- im ländlichen Bereich: **Flurbereinigung**\n- im besiedelten Bereich: **(Bauland-)Umlegung**"
+    },
+    {
+     "id": "vermessung-begriffe-c016",
+     "type": "basic",
+     "front": "Wann wird eine **Flurbereinigung** durchgeführt?",
+     "back": "- bei Zersplitterung ländlicher Grundstücke (Neuordnung nötig)\n- wenn größere Flächen in Anspruch genommen werden (z. B. Straßenbau)\nIn Bayern zuständig: **Amt für Ländliche Entwicklung (ALE)**."
+    },
+    {
+     "id": "vermessung-begriffe-c017",
+     "type": "basic",
+     "front": "Wozu dient die **Umlegung**?",
+     "back": "Zur Neueinteilung von Grundstücken für **Bauland** im besiedelten Bereich, damit zweckmäßig bebaubare Grundstücke entstehen. Durchführung für die Gemeinden meist durch städtische bzw. staatliche Vermessungsämter (heute ÄDBV)."
+    },
+    {
+     "id": "vermessung-begriffe-c018",
+     "type": "basic",
+     "front": "Wer führt die Vermessungsarbeiten im Bergbau (**Bergvermessung**) durch?",
+     "back": "**Markscheider** sowie Bergvermessungsingenieure und -techniker – unter Tage und im Tagebau."
+    },
+    {
+     "id": "vermessung-begriffe-c019",
+     "type": "basic",
+     "front": "Was ist eine **hydrografische Vermessung** (Gewässervermessung)?",
+     "back": "Die Form- und Tiefenbestimmung von Gewässern (Seen, Flusssohlen, Fahrwasser, Mündungen) mit Vermessungsschiffen durch Kombination von Positions- und Tiefenmessung."
+    },
+    {
+     "id": "vermessung-begriffe-c020",
+     "type": "basic",
+     "front": "Was wird bei der **Schiffsvermessung** ermittelt?",
+     "back": "Der **Raumgehalt** eines Seeschiffes."
+    },
+    {
+     "id": "vermessung-begriffe-c021",
+     "type": "basic",
+     "front": "Welche zwei Aufgaben hat die **Satellitenvermessung**?",
+     "back": "- Bahnvermessung von Satelliten von der Erdoberfläche aus\n- Vermessung der Erdoberfläche von Satelliten aus (z. B. GPS/GNSS)"
+    },
+    {
+     "id": "vermessung-begriffe-c022",
+     "type": "basic",
+     "front": "Was bestimmt die **Astrogeodäsie** (astronomische Vermessung)?",
+     "back": "Mit astronomischen Methoden: die Lotrichtung, genaue Richtungen (Azimute) und geografische Koordinaten."
+    },
+    {
+     "id": "vermessung-begriffe-c023",
+     "type": "basic",
+     "front": "Wofür steht **GNSS**?",
+     "back": "Global Navigation Satellite System – Oberbegriff für Satellitennavigationssysteme wie GPS (USA), GLONASS (Russland), Galileo (EU) und BeiDou (China)."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-begriffe-q001",
+     "type": "mc",
+     "question": "Zu welcher Vermessungsart gehören das Abstecken von Bauachsen und Setzungsmessungen?",
+     "options": [
+      "Landesvermessung",
+      "Katastervermessung",
+      "Ingenieurvermessung",
+      "Hydrografische Vermessung"
+     ],
+     "answer": 2,
+     "explanation": "Die Ingenieurvermessung begleitet das Bauen: Maßermittlung, Absteckung von Achsen und Höhen, Setzungs- und Kontrollmessungen."
+    },
+    {
+     "id": "vermessung-begriffe-q002",
+     "type": "mc",
+     "question": "Wie heißt die Bodenordnung im ländlichen Bereich?",
+     "options": [
+      "Flurbereinigung",
+      "Baulandumlegung",
+      "Grenzwiederherstellung",
+      "Teilungsvermessung"
+     ],
+     "answer": 0,
+     "explanation": "Ländlicher Bereich = Flurbereinigung, besiedelter Bereich = (Bauland-)Umlegung."
+    },
+    {
+     "id": "vermessung-begriffe-q003",
+     "type": "input",
+     "question": "Wie heißt die Bodenordnung im besiedelten Bereich, mit der Grundstücke für Bauland neu eingeteilt werden?",
+     "answer": "Umlegung",
+     "accept": [
+      "Baulandumlegung",
+      "Bauland-Umlegung"
+     ],
+     "explanation": "Die (Bauland-)Umlegung ordnet Grundstücke im besiedelten Bereich neu, die Flurbereinigung im ländlichen Bereich."
+    },
+    {
+     "id": "vermessung-begriffe-q004",
+     "type": "mc",
+     "question": "Wer führt Vermessungsarbeiten im Bergbau durch?",
+     "options": [
+      "Geometer",
+      "Markscheider",
+      "Hydrografen",
+      "Photogrammeter"
+     ],
+     "answer": 1,
+     "explanation": "Bergvermessung ist Aufgabe der Markscheider (bzw. Bergvermessungsingenieure und -techniker)."
+    },
+    {
+     "id": "vermessung-begriffe-q005",
+     "type": "mc",
+     "question": "Was wird bei der Schiffsvermessung bestimmt?",
+     "options": [
+      "Die Tiefe des Fahrwassers",
+      "Die Position des Schiffes per GPS",
+      "Der Tiefgang bei voller Beladung",
+      "Der Raumgehalt des Seeschiffes"
+     ],
+     "answer": 3,
+     "explanation": "Schiffsvermessung = Ermittlung des Raumgehalts eines Seeschiffes. Die Tiefe des Fahrwassers gehört zur hydrografischen Vermessung."
+    },
+    {
+     "id": "vermessung-begriffe-q006",
+     "type": "mc",
+     "question": "Bei welcher Vermessungsart muss bei optischen Messungen über weite Entfernungen die Erdkrümmung berücksichtigt werden?",
+     "options": [
+      "Katastervermessung",
+      "Landesvermessung",
+      "Ingenieurvermessung im Hochbau",
+      "Schiffsvermessung"
+     ],
+     "answer": 1,
+     "explanation": "Die Landesvermessung misst über große Entfernungen – dort ist die Erdkrümmung nicht mehr vernachlässigbar (Höhere Geodäsie)."
+    },
+    {
+     "id": "vermessung-begriffe-q007",
+     "type": "input",
+     "question": "Wie nennt man die Auswertung von Luftbildern zu Vermessungszwecken?",
+     "answer": "Photogrammetrie",
+     "accept": [
+      "Fotogrammetrie"
+     ],
+     "explanation": "Photogrammetrie = Bildmessung, v. a. Auswertung von Luftbildern für Karten."
+    },
+    {
+     "id": "vermessung-begriffe-q008",
+     "type": "mc",
+     "question": "Richtig oder falsch? Eine „Vermessung“ ist das Messen einer einzelnen Strecke.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Falsch. Das Erfassen einer einzelnen Größe ist eine Messung. Vermessung ist die Gesamtheit aller Messungen, die zur Erfassung eines Objekts nötig sind."
+    },
+    {
+     "id": "vermessung-begriffe-q009",
+     "type": "mc",
+     "question": "In welchem Maßstabsbereich erstellt die Landesvermessung topografische Karten?",
+     "options": [
+      "1:100 bis 1:1.000",
+      "1:500 bis 1:5.000",
+      "1:5.000 bis ca. 1:200.000",
+      "1:1.000.000 und kleiner"
+     ],
+     "answer": 2,
+     "explanation": "Topografische Karten der Landesvermessung reichen etwa von 1:5.000 bis 1:200.000."
+    },
+    {
+     "id": "vermessung-begriffe-q010",
+     "type": "mc",
+     "question": "Welche Aufgabe gehört zur Katastervermessung?",
+     "options": [
+      "Rechtmäßige Grenzen ermitteln und die Bebauung feststellen",
+      "Den Raumgehalt von Schiffen bestimmen",
+      "Flugbahnen von Himmelskörpern bestimmen",
+      "Die Sedimentation in Stauseen messen"
+     ],
+     "answer": 0,
+     "explanation": "Katastervermessung ermittelt bzw. weist Grenzen nach und stellt die Bebauung fest – zur Eigentumssicherung und Fortführung des Liegenschaftskatasters."
+    },
+    {
+     "id": "vermessung-begriffe-q011",
+     "type": "mc",
+     "question": "Welche Behörde führt in Bayern die Flurbereinigung durch?",
+     "options": [
+      "Grundbuchamt",
+      "Städtisches Vermessungsamt",
+      "Landratsamt (Bauaufsicht)",
+      "Amt für Ländliche Entwicklung"
+     ],
+     "answer": 3,
+     "explanation": "Flurbereinigung (Flurneuordnung) wird in Bayern vom Amt für Ländliche Entwicklung (ALE) durchgeführt."
+    },
+    {
+     "id": "vermessung-begriffe-q012",
+     "type": "input",
+     "question": "Wie heißt die Form- und Tiefenbestimmung von Gewässern (Seen, Flusssohlen, Fahrwasser)? Gesucht ist ein Wort auf „…vermessung“.",
+     "answer": "Gewässervermessung",
+     "accept": [
+      "Gewässer-Vermessung",
+      "hydrografische Vermessung",
+      "hydrographische Vermessung"
+     ],
+     "explanation": "Hydrografische Vermessung = Gewässervermessung: Form- und Tiefenbestimmung durch Positions- und Tiefenmessung vom Schiff aus."
+    },
+    {
+     "id": "vermessung-begriffe-q013",
+     "type": "mc",
+     "question": "Welches Verfahren ersetzt heute zunehmend die trigonometrische Bestimmung der Netzpunkte der Landesvermessung?",
+     "options": [
+      "Nivellement",
+      "Satellitengestützte Messung (GNSS)",
+      "Messung mit dem Messrad",
+      "Schlauchwaage"
+     ],
+     "answer": 1,
+     "explanation": "Früher trigonometrische (optische) Messungen, heute zunehmend GNSS/GPS."
+    }
+   ]
+  },
+  {
+   "id": "vermessung-bauwesen",
+   "title": "Vermessung im Bauwesen",
+   "description": "Bestands-, Absteckungs- und Kontrollmessungen sowie einfache Vermessungsaufgaben auf der Baustelle.",
+   "sources": [
+    "1 Vermessung grundlagen (1).pdf",
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-bauwesen-c001",
+     "type": "basic",
+     "front": "Welche drei Bereiche umfasst die Vermessung im Bauwesen?",
+     "back": "1. Bestandsvermessung\n2. Absteckungsvermessung\n3. Kontrollmessungen",
+     "hint": "Erfassen – Übertragen – Überprüfen"
+    },
+    {
+     "id": "vermessung-bauwesen-c002",
+     "type": "basic",
+     "front": "Was gehört zur **Bestandsvermessung**?",
+     "back": "- Aufnahme des zu bebauenden Geländes\n- Bestandsplan als Planungsgrundlage\n- Aufmaß zur Abrechnung\n- Digitales Geländemodell (DGM) als Abrechnungsgrundlage"
+    },
+    {
+     "id": "vermessung-bauwesen-c003",
+     "type": "basic",
+     "front": "Was ist ein **DGM**?",
+     "back": "Ein **Digitales Geländemodell**: digitale Beschreibung der Geländeoberfläche durch viele Punkte mit Lage und Höhe (x, y, z) – Grundlage für Planung und Massenberechnung bzw. Abrechnung (z. B. Erdaushub)."
+    },
+    {
+     "id": "vermessung-bauwesen-c004",
+     "type": "basic",
+     "front": "Was ist die Aufgabe der **Absteckungsvermessung**?",
+     "back": "Das Übertragen der Planung in die Örtlichkeit (z. B. Gebäudeecken, Achsen, Höhen) – einschließlich der Übergabe von Festpunkten (Lage- und/oder Höhenpunkte) an die Baufirma."
+    },
+    {
+     "id": "vermessung-bauwesen-c005",
+     "type": "basic",
+     "front": "Was sind **Kontrollmessungen** im Bauwesen?",
+     "back": "Baubegleitende Messungen, v. a. **Bauwerkssetzungsmessungen**, sowie Bestands- und Kontrollmessungen (Soll-Ist-Vergleich)."
+    },
+    {
+     "id": "vermessung-bauwesen-c006",
+     "type": "basic",
+     "front": "Was ist der Unterschied zwischen **Lagemessung** und **Höhenmessung**?",
+     "back": "- Lagemessung: Position im Grundriss (x, y) über Strecken und Winkel\n- Höhenmessung: Höhe eines Punktes (z) bzw. Höhenunterschiede"
+    },
+    {
+     "id": "vermessung-bauwesen-c007",
+     "type": "basic",
+     "front": "Was bedeutet **Ausfluchten** (Einfluchten) einer Geraden?",
+     "back": "Zwischenpunkte mit Fluchtstäben genau in die Verbindungslinie zweier gegebener Punkte einweisen – nach Augenmaß über die Fluchtstäbe oder mit dem Doppelpentagon."
+    },
+    {
+     "id": "vermessung-bauwesen-c008",
+     "type": "basic",
+     "front": "Was ist eine **Staffelmessung**?",
+     "back": "Messung der **horizontalen** Strecke in geneigtem Gelände in kurzen Abschnitten (Staffeln): Messband bzw. Messlatte waagerecht halten, Endpunkt mit Lot oder Fluchtstab auf den Boden übertragen, Staffeln addieren.",
+     "hint": "wie Treppenstufen am Hang"
+    },
+    {
+     "id": "vermessung-bauwesen-c009",
+     "type": "basic",
+     "front": "Wie steckt man mit dem Bandmaß einen **rechten Winkel** ab?",
+     "back": "Mit der **3-4-5-Regel** (Satz des Pythagoras): Katheten 3 m und 4 m → Verbindung genau 5 m (oder Vielfache, z. B. 6-8-10 m).\n3² + 4² = 5²"
+    },
+    {
+     "id": "vermessung-bauwesen-c010",
+     "type": "basic",
+     "front": "Wie kontrolliert man ein abgestecktes Rechteck (z. B. Gebäudegrundriss)?",
+     "back": "Beide **Diagonalen** messen: Sie müssen gleich lang sein und d = √(a² + b²) ergeben."
+    },
+    {
+     "id": "vermessung-bauwesen-c011",
+     "type": "basic",
+     "front": "Wie funktioniert das **Aufmessen von Punkten auf eine Gerade** (Orthogonalverfahren)?",
+     "back": "Mit dem Winkelprisma den Lotfußpunkt des Punktes auf der Messungslinie suchen, dann messen:\n- Abszisse: Strecke entlang der Linie bis zum Fußpunkt\n- Ordinate: rechtwinkliger Abstand vom Fußpunkt zum Punkt"
+    },
+    {
+     "id": "vermessung-bauwesen-c012",
+     "type": "basic",
+     "front": "Was ist eine **Höhenfeststellung**?",
+     "back": "Die vorhandene (Ist-)Höhe eines Punktes bestimmen, z. B. eines Kanaldeckels oder Geländepunktes."
+    },
+    {
+     "id": "vermessung-bauwesen-c013",
+     "type": "basic",
+     "front": "Was versteht man unter **Höhenübertrag**?",
+     "back": "Eine bekannte Höhe (z. B. von einem Höhenfestpunkt) an eine andere Stelle übertragen, z. B. auf die Baustelle oder an das Schnurgerüst."
+    },
+    {
+     "id": "vermessung-bauwesen-c014",
+     "type": "basic",
+     "front": "Was versteht man unter **Höhenantrag**?",
+     "back": "Eine geplante **Sollhöhe** in der Örtlichkeit markieren, z. B. OK Fundament oder Baugrubensohle – das Gegenstück zur Höhenfeststellung."
+    },
+    {
+     "id": "vermessung-bauwesen-c015",
+     "type": "basic",
+     "front": "Nenne die einfachen Vermessungsaufgaben der **Lage** (Arbeitsblatt).",
+     "back": "- Ausfluchten und Verlängern von Geraden\n- Überwinden von Geländehindernissen\n- Geradenschnitte\n- rechte Winkel absetzen, mit Bandmaß kontrollieren\n- Staffelmessung\n- Aufmessen von Punkten mit Prismen auf eine Gerade\n- Parallelen antragen"
+    },
+    {
+     "id": "vermessung-bauwesen-c016",
+     "type": "basic",
+     "front": "Nenne die einfachen Vermessungsaufgaben der **Höhe** (Arbeitsblatt).",
+     "back": "- Höhenfeststellung\n- Höhenübertrag\n- Höhenantrag\n- Höhendifferenz feststellen"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-bauwesen-q001",
+     "type": "mc",
+     "question": "Bauwerkssetzungsmessungen gehören zu …",
+     "options": [
+      "der Bestandsvermessung",
+      "der Absteckungsvermessung",
+      "den Kontrollmessungen",
+      "der Landesvermessung"
+     ],
+     "answer": 2,
+     "explanation": "Setzungsmessungen begleiten den Bau und das fertige Bauwerk – sie zählen zu den Kontrollmessungen."
+    },
+    {
+     "id": "vermessung-bauwesen-q002",
+     "type": "mc",
+     "question": "Wofür steht die Abkürzung DGM?",
+     "options": [
+      "Digitale Grundstücksmappe",
+      "Digitales Geländemodell",
+      "Deutsches Grundmaß",
+      "Digitale Gebäudemessung"
+     ],
+     "answer": 1,
+     "explanation": "DGM = Digitales Geländemodell, eine digitale 3D-Beschreibung der Geländeoberfläche, z. B. als Abrechnungsgrundlage für Erdarbeiten."
+    },
+    {
+     "id": "vermessung-bauwesen-q003",
+     "type": "mc",
+     "question": "Was ist die Hauptaufgabe der Absteckungsvermessung?",
+     "options": [
+      "Aufmaß zur Abrechnung erstellen",
+      "Grundstücksgrenzen im Grundbuch eintragen",
+      "Setzungen am Bauwerk überwachen",
+      "Die Planung in die Örtlichkeit übertragen"
+     ],
+     "answer": 3,
+     "explanation": "Absteckung = Übertragen der Planung in die Örtlichkeit, inkl. Übergabe von Lage- und Höhenfestpunkten an die Baufirma."
+    },
+    {
+     "id": "vermessung-bauwesen-q004",
+     "type": "numeric",
+     "question": "Ein rechter Winkel soll mit dem Bandmaß abgesteckt werden. Auf der Grundlinie trägst du 6,00 m ab, auf der Senkrechten 8,00 m. Wie lang muss die Verbindungsstrecke (Hypotenuse) sein?",
+     "answer": 10.0,
+     "unit": "m",
+     "tolerance": 0.005,
+     "explanation": "Satz des Pythagoras: c = √(a² + b²)\nc = √(6,00² + 8,00²) = √(36 + 64) = √100 = **10,00 m**\n(Vielfaches der 3-4-5-Regel)"
+    },
+    {
+     "id": "vermessung-bauwesen-q005",
+     "type": "numeric",
+     "question": "Ein rechteckiger Gebäudegrundriss von 12,00 m × 9,00 m wurde am Schnurgerüst abgesteckt. Wie lang müssen die Diagonalen zur Kontrolle sein?",
+     "answer": 15.0,
+     "unit": "m",
+     "tolerance": 0.001,
+     "explanation": "d = √(a² + b²) = √(12,00² + 9,00²) = √(144 + 81) = √225 = **15,00 m**\nBeide Diagonalen müssen gleich lang sein."
+    },
+    {
+     "id": "vermessung-bauwesen-q006",
+     "type": "numeric",
+     "question": "Ein Einfamilienhaus hat den Grundriss 14,50 m × 10,25 m. Berechne die Soll-Länge der Diagonale (auf cm genau).",
+     "answer": 17.757,
+     "unit": "m",
+     "tolerance": 0.001,
+     "explanation": "d = √(14,50² + 10,25²)\n= √(210,25 + 105,0625)\n= √315,3125\n= **17,757 m ≈ 17,76 m**"
+    },
+    {
+     "id": "vermessung-bauwesen-q007",
+     "type": "numeric",
+     "question": "Am Hang wurde eine Schrägstrecke von 25,00 m gemessen. Der Höhenunterschied zwischen Anfangs- und Endpunkt beträgt 1,80 m. Wie lang ist die horizontale Strecke?",
+     "answer": 24.935,
+     "unit": "m",
+     "tolerance": 0.0005,
+     "explanation": "Die Schrägstrecke ist die Hypotenuse:\ns_h = √(s² − Δh²)\n= √(25,00² − 1,80²)\n= √(625 − 3,24) = √621,76\n= **24,935 m ≈ 24,94 m**"
+    },
+    {
+     "id": "vermessung-bauwesen-q008",
+     "type": "numeric",
+     "question": "Staffelmessung am Hang mit vier Staffeln: horizontale Längen 5,00 m, 5,00 m, 5,00 m und 3,45 m; abgelotete Höhenunterschiede 0,85 m, 0,92 m, 0,78 m und 0,40 m. Wie groß ist das mittlere Gefälle in %?",
+     "answer": 15.99,
+     "unit": "%",
+     "tolerance": 0.01,
+     "explanation": "Horizontale Gesamtlänge: l = 5,00 + 5,00 + 5,00 + 3,45 = 18,45 m\nHöhenunterschied: Δh = 0,85 + 0,92 + 0,78 + 0,40 = 2,95 m\nGefälle: p = Δh / l · 100 = 2,95 / 18,45 · 100 = **15,99 % ≈ 16 %**"
+    },
+    {
+     "id": "vermessung-bauwesen-q009",
+     "type": "input",
+     "question": "Wie heißt die abschnittsweise Messung horizontaler Strecken in geneigtem Gelände mit waagerecht gehaltenem Messband?",
+     "answer": "Staffelmessung",
+     "accept": [
+      "Staffeln"
+     ],
+     "explanation": "Bei der Staffelmessung wird das Band waagerecht gehalten und der Endpunkt mit dem Lot auf den Boden übertragen."
+    },
+    {
+     "id": "vermessung-bauwesen-q010",
+     "type": "mc",
+     "question": "Richtig oder falsch? Bei einem korrekt abgesteckten Rechteck sind beide Diagonalen gleich lang.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Richtig. Sind die Diagonalen unterschiedlich lang, ist das Viereck kein Rechteck (Winkel ≠ 90°)."
+    },
+    {
+     "id": "vermessung-bauwesen-q011",
+     "type": "mc",
+     "question": "Eine Sollhöhe (z. B. OK Fundament) in der Örtlichkeit markieren heißt …",
+     "options": [
+      "Höhenfeststellung",
+      "Höhenantrag",
+      "Höhenübertrag",
+      "Höhendifferenz feststellen"
+     ],
+     "answer": 1,
+     "explanation": "Höhenantrag = Sollhöhe abstecken. Höhenfeststellung = vorhandene Höhe bestimmen. Höhenübertrag = bekannte Höhe an andere Stelle bringen."
+    },
+    {
+     "id": "vermessung-bauwesen-q012",
+     "type": "mc",
+     "question": "Welche Tätigkeit gehört zur Bestandsvermessung?",
+     "options": [
+      "Aufmaß zur Abrechnung",
+      "Übergabe von Festpunkten an die Baufirma",
+      "Abstecken der Gebäudeecken",
+      "Setzungsmessung am Rohbau"
+     ],
+     "answer": 0,
+     "explanation": "Bestandsvermessung erfasst Vorhandenes: Geländeaufnahme, Bestandsplan, Aufmaß, DGM. Festpunktübergabe und Gebäudeecken = Absteckung, Setzungsmessung = Kontrolle."
+    }
+   ]
+  },
+  {
+   "id": "vermessung-geraete",
+   "title": "Vermessungsgeräte",
+   "description": "Geräte für Strecken-, Winkel- und Höhenmessung – vom Fluchtstab bis zum Nivelliergerät.",
+   "sources": [
+    "1 Vermessung grundlagen (1).pdf",
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-geraete-c001",
+     "type": "basic",
+     "front": "Mit welchen Geräten misst man **Strecken** (Arbeitsblatt)?",
+     "back": "- Bandmaß oder Messlatte\n- Messrad\n- Tachymeter"
+    },
+    {
+     "id": "vermessung-geraete-c002",
+     "type": "basic",
+     "front": "Mit welchen Geräten misst man **Winkel** bzw. steckt sie ab (Arbeitsblatt)?",
+     "back": "- Winkelprisma oder Kreuzscheibe (rechte Winkel)\n- Nivelliergerät (Horizontalwinkel, sofern es einen Horizontalkreis hat)\n- Theodolit (Horizontal- und Vertikalwinkel)"
+    },
+    {
+     "id": "vermessung-geraete-c003",
+     "type": "basic",
+     "front": "Mit welchen Geräten misst man **Höhen** (Arbeitsblatt)?",
+     "back": "- Nivelliergerät\n- Tachymeter\n- Laser (Rotationslaser)\n- Theodolit\n- Schlauchwaage"
+    },
+    {
+     "id": "vermessung-geraete-c004",
+     "type": "basic",
+     "front": "Nenne die **einfachen Vermessungsgeräte** (Arbeitsblatt).",
+     "back": "- Fluchtstab\n- Schnurlot oder Lattenrichter\n- Messband\n- Kreuzscheibe\n- Winkelprismen"
+    },
+    {
+     "id": "vermessung-geraete-c005",
+     "type": "basic",
+     "front": "Was misst ein **Theodolit**?",
+     "back": "**Horizontal- und Vertikalwinkel** (Richtungen und Zenit- bzw. Höhenwinkel)."
+    },
+    {
+     "id": "vermessung-geraete-c006",
+     "type": "basic",
+     "front": "Was ist ein **Tachymeter**?",
+     "back": "Ein Theodolit mit elektronischer Distanzmessung: misst Winkel **und** Strecken gleichzeitig → Lage und Höhe von Punkten (Polarverfahren). Moderne Bauform: Totalstation."
+    },
+    {
+     "id": "vermessung-geraete-c007",
+     "type": "basic",
+     "front": "Wozu dient das **Nivelliergerät**?",
+     "back": "Es erzeugt eine **horizontale Ziellinie**. Aus den Ablesungen an senkrecht gehaltenen Nivellierlatten werden Höhenunterschiede bestimmt."
+    },
+    {
+     "id": "vermessung-geraete-c008",
+     "type": "basic",
+     "front": "Nach welchem Prinzip funktioniert die **Schlauchwaage**?",
+     "back": "**Kommunizierende Röhren**: Das Wasser steht in beiden Schlauchenden gleich hoch → eine Höhe kann auch um Ecken und ohne Sichtverbindung übertragen werden.",
+     "hint": "Luftblasen im Schlauch verfälschen das Ergebnis"
+    },
+    {
+     "id": "vermessung-geraete-c009",
+     "type": "basic",
+     "front": "Wie funktioniert ein **Rotationslaser** bei der Höhenmessung?",
+     "back": "Ein rotierender Laserstrahl erzeugt eine horizontale Ebene. Ein Empfänger an der Latte zeigt an, wo die Ebene liegt – Messung durch eine Person möglich."
+    },
+    {
+     "id": "vermessung-geraete-c010",
+     "type": "basic",
+     "front": "Wie sieht ein **Fluchtstab** aus und wozu dient er?",
+     "back": "Meist 2 m lang, abwechselnd **rot-weiß** in 50-cm-Abschnitten. Er macht Punkte von Weitem sichtbar und dient zum Abstecken (Ausfluchten) von Geraden."
+    },
+    {
+     "id": "vermessung-geraete-c011",
+     "type": "basic",
+     "front": "Wozu dienen **Schnurlot** und **Lattenrichter**?",
+     "back": "- Schnurlot: Punkte lotrecht übertragen (abloten)\n- Lattenrichter (mit Dosenlibelle): Latte oder Fluchtstab senkrecht halten"
+    },
+    {
+     "id": "vermessung-geraete-c012",
+     "type": "basic",
+     "front": "Wie funktioniert die **Kreuzscheibe**?",
+     "back": "Sie hat zwei **rechtwinklig** zueinander stehende Visiereinrichtungen (Schlitz und Faden). Visiert man mit der einen einen Fluchtstab der Geraden an, zeigt die andere die Rechtwinklige → rechter Winkel abstecken."
+    },
+    {
+     "id": "vermessung-geraete-c013",
+     "type": "basic",
+     "front": "Wozu dient ein **Winkelprisma** (Pentagonprisma)?",
+     "back": "Es lenkt den Sehstrahl um genau **90°** ab → rechte Winkel abstecken und den Lotfußpunkt eines Punktes auf einer Geraden finden."
+    },
+    {
+     "id": "vermessung-geraete-c014",
+     "type": "basic",
+     "front": "Was kann ein **Doppelpentagon** zusätzlich zum einfachen Winkelprisma?",
+     "back": "Zwei übereinanderliegende Pentagonprismen zeigen gleichzeitig beide Endpunkte der Geraden. Erscheinen beide Fluchtstäbe übereinander, steht man **genau auf der Geraden** (Einfluchten). Zugleich kann man einen rechten Winkel absetzen."
+    },
+    {
+     "id": "vermessung-geraete-c015",
+     "type": "basic",
+     "front": "Nenne übliche Werkzeuge zur **manuellen Streckenmessung**.",
+     "back": "- Messband/Rollbandmaß (Stahl oder Kunststoff, z. B. 20, 30, 50 m)\n- Messlatten (z. B. 3 m oder 5 m)\n- Gliedermaßstab (Zollstock)\n- Messrad"
+    },
+    {
+     "id": "vermessung-geraete-c016",
+     "type": "basic",
+     "front": "Nenne typische Fehlerquellen bei der Streckenmessung mit dem Messband.",
+     "back": "- Band nicht horizontal bzw. Durchhang\n- falsche Zugspannung\n- Temperatur (Stahlband dehnt sich aus)\n- Band nicht in der Flucht\n- Ablese- und Nullpunktfehler"
+    },
+    {
+     "id": "vermessung-geraete-c017",
+     "type": "basic",
+     "front": "Nenne die äußeren Bauteile eines **Nivelliergeräts**.",
+     "back": "- Fernrohr mit **Objektiv** und **Okular**\n- Fokussiertrieb (Scharfstellung)\n- Seitenfeintrieb\n- Grobvisier (Kimme und Korn)\n- **Dosenlibelle**\n- **Fußschrauben** mit Dreifuß/Grundplatte\n- Horizontalkreis\nZubehör: Stativ und Nivellierlatte"
+    },
+    {
+     "id": "vermessung-geraete-c018",
+     "type": "basic",
+     "front": "Wie wird ein Nivelliergerät aufgebaut und horizontiert?",
+     "back": "1. Stativ standfest aufstellen, Stativkopf etwa waagerecht\n2. Gerät festschrauben\n3. Mit den **drei Fußschrauben** die **Dosenlibelle** einspielen\nDer **Kompensator** stellt die Ziellinie danach automatisch fein horizontal."
+    },
+    {
+     "id": "vermessung-geraete-c019",
+     "type": "basic",
+     "front": "In welcher Reihenfolge stellt man das Nivellierfernrohr scharf?",
+     "back": "1. **Okular** auf das Fadenkreuz scharf stellen\n2. Latte mit dem Grobvisier anzielen\n3. Mit dem **Fokussiertrieb** die Latte scharf stellen (keine Parallaxe)\n4. Mit dem Seitenfeintrieb auf Lattenmitte stellen und ablesen"
+    },
+    {
+     "id": "vermessung-geraete-c020",
+     "type": "basic",
+     "front": "Wo und wie genau liest man an der Nivellierlatte ab?",
+     "back": "Am **Mittelfaden** (horizontaler Hauptfaden) des Fadenkreuzes, in Metern mit drei Nachkommastellen: m, dm und cm ablesen, mm schätzen – z. B. 1,524 m."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-geraete-q001",
+     "type": "mc",
+     "question": "Welches Gerät misst Horizontal- und Vertikalwinkel?",
+     "options": [
+      "Nivelliergerät",
+      "Kreuzscheibe",
+      "Theodolit",
+      "Schlauchwaage"
+     ],
+     "answer": 2,
+     "explanation": "Der Theodolit misst Horizontal- und Vertikalwinkel. Das Nivellier liefert nur eine horizontale Ziellinie (ggf. mit Horizontalkreis)."
+    },
+    {
+     "id": "vermessung-geraete-q002",
+     "type": "mc",
+     "question": "Die Schlauchwaage funktioniert nach dem Prinzip …",
+     "options": [
+      "der kommunizierenden Röhren",
+      "der Lichtbrechung im Prisma",
+      "der Laufzeitmessung von Licht",
+      "der Libelle"
+     ],
+     "answer": 0,
+     "explanation": "In verbundenen Gefäßen (kommunizierende Röhren) stellt sich der Wasserspiegel überall auf gleiche Höhe ein."
+    },
+    {
+     "id": "vermessung-geraete-q003",
+     "type": "input",
+     "question": "Wie heißt das einfache Gerät mit zwei rechtwinklig angeordneten Visiereinrichtungen (Schlitz und Faden) zum Abstecken rechter Winkel?",
+     "answer": "Kreuzscheibe",
+     "accept": [],
+     "explanation": "Die Kreuzscheibe hat zwei um 90° versetzte Visiereinrichtungen."
+    },
+    {
+     "id": "vermessung-geraete-q004",
+     "type": "mc",
+     "question": "Welches Gerät eignet sich NICHT zur Höhenmessung?",
+     "options": [
+      "Nivelliergerät",
+      "Rotationslaser",
+      "Schlauchwaage",
+      "Messrad"
+     ],
+     "answer": 3,
+     "explanation": "Das Messrad misst nur Strecken durch Abrollen. Nivellier, Laser und Schlauchwaage sind Höhenmessgeräte."
+    },
+    {
+     "id": "vermessung-geraete-q005",
+     "type": "mc",
+     "question": "Was unterscheidet ein Tachymeter von einem Theodolit?",
+     "options": [
+      "Es kann nur Höhen messen",
+      "Es misst zusätzlich elektronisch Strecken",
+      "Es braucht kein Stativ",
+      "Es misst nur Horizontalwinkel"
+     ],
+     "answer": 1,
+     "explanation": "Tachymeter = Theodolit + elektronische Distanzmessung → Lage und Höhe in einem Arbeitsgang."
+    },
+    {
+     "id": "vermessung-geraete-q006",
+     "type": "mc",
+     "question": "Wie sind Fluchtstäbe üblicherweise gekennzeichnet?",
+     "options": [
+      "gelb-schwarz in 1-m-Abschnitten",
+      "blau-weiß in 20-cm-Abschnitten",
+      "rot-weiß in 50-cm-Abschnitten",
+      "einfarbig orange"
+     ],
+     "answer": 2,
+     "explanation": "Fluchtstäbe sind meist 2 m lang und abwechselnd rot-weiß in 50-cm-Abschnitten gestrichen."
+    },
+    {
+     "id": "vermessung-geraete-q007",
+     "type": "mc",
+     "question": "Woran erkennt man beim Doppelpentagon, dass man genau auf der Geraden steht?",
+     "options": [
+      "Die Dosenlibelle spielt ein",
+      "Beide Fluchtstäbe erscheinen im Prisma übereinander",
+      "Der Laserempfänger gibt einen Ton",
+      "Das Fadenkreuz ist scharf"
+     ],
+     "answer": 1,
+     "explanation": "Die beiden Prismen zeigen die Fluchtstäbe links und rechts. Stehen sie im Bild genau übereinander, befindet man sich auf der Verbindungsgeraden."
+    },
+    {
+     "id": "vermessung-geraete-q008",
+     "type": "mc",
+     "question": "Womit wird ein Nivelliergerät grob horizontiert?",
+     "options": [
+      "Mit dem Fokussiertrieb",
+      "Mit dem Seitenfeintrieb",
+      "Mit dem Okular",
+      "Mit den Fußschrauben und der Dosenlibelle"
+     ],
+     "answer": 3,
+     "explanation": "Mit den drei Fußschrauben wird die Dosenlibelle eingespielt; den Rest erledigt der Kompensator."
+    },
+    {
+     "id": "vermessung-geraete-q009",
+     "type": "mc",
+     "question": "Was stellt man beim Nivellierfernrohr ZUERST scharf?",
+     "options": [
+      "Die Latte über den Fokussiertrieb",
+      "Das Fadenkreuz über das Okular",
+      "Die Dosenlibelle",
+      "Den Horizontalkreis"
+     ],
+     "answer": 1,
+     "explanation": "Erst das Fadenkreuz mit dem Okular scharf stellen, dann die Latte mit dem Fokussiertrieb – sonst entsteht Parallaxe."
+    },
+    {
+     "id": "vermessung-geraete-q010",
+     "type": "mc",
+     "question": "Richtig oder falsch? Beim automatischen Nivellier sorgt der Kompensator für die exakt horizontale Ziellinie.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Richtig. Nach dem Einspielen der Dosenlibelle gleicht der Kompensator die Restneigung automatisch aus."
+    },
+    {
+     "id": "vermessung-geraete-q011",
+     "type": "input",
+     "question": "Wie heißt das Prisma aus zwei übereinanderliegenden Pentagonprismen, mit dem man sich auch in eine Gerade einfluchten kann?",
+     "answer": "Doppelpentagon",
+     "accept": [
+      "Doppelpentagonprisma",
+      "Doppel-Pentagon"
+     ],
+     "explanation": "Das Doppelpentagon kann rechte Winkel absetzen und zusätzlich auf einer Geraden einfluchten."
+    },
+    {
+     "id": "vermessung-geraete-q012",
+     "type": "mc",
+     "question": "Mit einem Stahlmessband wird bei großer Hitze gemessen, ohne Temperaturkorrektur. Wie wirkt sich das aus?",
+     "options": [
+      "Die gemessenen Strecken sind zu lang",
+      "Die gemessenen Strecken sind zu kurz",
+      "Es hat keine Auswirkung",
+      "Nur Winkel werden verfälscht"
+     ],
+     "answer": 1,
+     "explanation": "Das Band dehnt sich aus, die Teilung wird „gestreckt“. Für eine wahre Strecke liest man deshalb einen zu kleinen Wert ab → Messwerte zu kurz."
+    }
+   ]
+  },
+  {
+   "id": "vermessung-ldbv",
+   "title": "LDBV & Bayerische Vermessungsverwaltung",
+   "description": "Aufbau, Aufgaben und Zahlen der Bayerischen Vermessungsverwaltung mit LDBV und ÄDBV.",
+   "sources": [
+    "1 Landesamt für Digitalisierung Seite1-5 (1).pdf"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-ldbv-c001",
+     "type": "basic",
+     "front": "Wofür steht **LDBV**?",
+     "back": "**L**andesamt für **D**igitalisierung, **B**reitband und **V**ermessung (Bayern)."
+    },
+    {
+     "id": "vermessung-ldbv-c002",
+     "type": "basic",
+     "front": "Wo hat das LDBV seinen Sitz und welche Rolle hat es?",
+     "back": "Sitz in **München**. Es ist zentraler Ansprechpartner für den gesamten Bereich der amtlichen Vermessung in Bayern."
+    },
+    {
+     "id": "vermessung-ldbv-c003",
+     "type": "basic",
+     "front": "Was macht das LDBV mit den **Geobasisdaten**?",
+     "back": "Es **erfasst** sie, **beschreibt** sie in Informationssystemen und **stellt** sie in Karten **dar**."
+    },
+    {
+     "id": "vermessung-ldbv-c004",
+     "type": "basic",
+     "front": "Was sind **Geobasisdaten**?",
+     "back": "Amtliche Grunddaten, die Topographie (Landschaft), Grundstücke und Gebäude einheitlich und flächendeckend beschreiben – Grundlage für viele weitere Fachdaten und Karten."
+    },
+    {
+     "id": "vermessung-ldbv-c005",
+     "type": "basic",
+     "front": "Welche drei Qualitätsmerkmale haben die Geobasisdaten des LDBV?",
+     "back": "- Einheitlichkeit\n- Flächendeckung\n- hohe Aktualität\n(jeweils für ganz Bayern)"
+    },
+    {
+     "id": "vermessung-ldbv-c006",
+     "type": "basic",
+     "front": "Welche Behörde ist **oberste Dienstbehörde** der Bayerischen Vermessungsverwaltung (BVV)?",
+     "back": "Das **Bayerische Staatsministerium der Finanzen** (im Blatt: „… für Landesentwicklung und Heimat“, heute „… und für Heimat“), dort die Abteilung VII „Digitalisierung, Breitband und Vermessung“."
+    },
+    {
+     "id": "vermessung-ldbv-c007",
+     "type": "basic",
+     "front": "Wie ist die Bayerische Vermessungsverwaltung (BVV) aufgebaut?",
+     "back": "Dreistufig:\n- oberste Dienstbehörde: Finanzministerium (Abt. VII)\n- Mittelbehörde: **LDBV**\n- untere Ebene: **51 Ämter für Digitalisierung, Breitband und Vermessung (ÄDBV)** mit 22 Außenstellen"
+    },
+    {
+     "id": "vermessung-ldbv-c008",
+     "type": "basic",
+     "front": "Welche Einrichtungen gehören zum LDBV?",
+     "back": "- das **Breitbandzentrum Amberg**\n- das **IT-Dienstleistungszentrum des Freistaats Bayern (IT-DLZ)**"
+    },
+    {
+     "id": "vermessung-ldbv-c009",
+     "type": "basic",
+     "front": "Über welche Behörden ist das LDBV **Aufsichtsbehörde**?",
+     "back": "Über die **51 Ämter für Digitalisierung, Breitband und Vermessung (ÄDBV)** mit ihren 22 Außenstellen."
+    },
+    {
+     "id": "vermessung-ldbv-c010",
+     "type": "basic",
+     "front": "Welche Aufgaben haben die **ÄDBV**?",
+     "back": "- Liegenschaftskataster führen und täglich aktualisieren\n- Grundstücksvermessungen (ca. 30.000 pro Jahr)\n- Gebäudeeinmessungen (Neubauten, Grundrissänderungen)\n- Kommunen beim Breitbandausbau unterstützen"
+    },
+    {
+     "id": "vermessung-ldbv-c011",
+     "type": "basic",
+     "front": "Wie viele Flurstücke und Gebäude sind in Bayern digital dokumentiert?",
+     "back": "Über **10 Mio. Flurstücke** und rund **8 Mio. Gebäude**."
+    },
+    {
+     "id": "vermessung-ldbv-c012",
+     "type": "basic",
+     "front": "Nenne die vier Aufgabenbereiche des LDBV (Aufgaben und Ziele).",
+     "back": "1. Digitalisierung (eGovernment)\n2. Breitbandausbau\n3. Sicherung des Grundeigentums\n4. Topographische Landesaufnahme"
+    },
+    {
+     "id": "vermessung-ldbv-c013",
+     "type": "basic",
+     "front": "Wie wird das **Grundeigentum** gesichert?",
+     "back": "Durch **Grundstücksvermessungen** der ÄDBV: Grundstücksgrenzen werden festgelegt und im Liegenschaftskataster nachgewiesen, die Geoinformationen laufend aktualisiert."
+    },
+    {
+     "id": "vermessung-ldbv-c014",
+     "type": "basic",
+     "front": "Was umfasst die **Topographische Landesaufnahme**?",
+     "back": "Die Erfassung der Geobasisdaten (Topographie, Grundstücke, Gebäude) und ihre Bereitstellung und Präsentation in modernen Medien wie dem **BayernAtlas**."
+    },
+    {
+     "id": "vermessung-ldbv-c015",
+     "type": "basic",
+     "front": "Wo kann man die Geodaten der Bayerischen Vermessungsverwaltung online einsehen?",
+     "back": "Im **BayernAtlas** bzw. über das Geoportal Bayern (www.geoportal.bayern.de)."
+    },
+    {
+     "id": "vermessung-ldbv-c016",
+     "type": "basic",
+     "front": "Welchen Beitrag leistet das LDBV zur **Digitalisierung**?",
+     "back": "Es baut die eGovernment-Services von Freistaat und Kommunen mit aus – durch digitale Bereitstellung von Daten, Prozessen und Infrastrukturen (z. B. Behördennetze)."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-ldbv-q001",
+     "type": "input",
+     "question": "Wie lautet die Abkürzung des Landesamts für Digitalisierung, Breitband und Vermessung?",
+     "answer": "LDBV",
+     "accept": [],
+     "explanation": "LDBV = Landesamt für Digitalisierung, Breitband und Vermessung, Sitz München."
+    },
+    {
+     "id": "vermessung-ldbv-q002",
+     "type": "mc",
+     "question": "Wo hat das LDBV seinen Sitz?",
+     "options": [
+      "Würzburg",
+      "Nürnberg",
+      "München",
+      "Amberg"
+     ],
+     "answer": 2,
+     "explanation": "Sitz ist München. In Amberg sitzt das Breitbandzentrum, das zum LDBV gehört."
+    },
+    {
+     "id": "vermessung-ldbv-q003",
+     "type": "mc",
+     "question": "Welche Stellung hat das LDBV in der Bayerischen Vermessungsverwaltung?",
+     "options": [
+      "Oberste Dienstbehörde",
+      "Mittelbehörde",
+      "Untere Vermessungsbehörde",
+      "Gemeindebehörde"
+     ],
+     "answer": 1,
+     "explanation": "Oberste Dienstbehörde = Finanzministerium, Mittelbehörde = LDBV, untere Ebene = 51 ÄDBV."
+    },
+    {
+     "id": "vermessung-ldbv-q004",
+     "type": "mc",
+     "question": "Wie viele Ämter für Digitalisierung, Breitband und Vermessung (ÄDBV) gibt es laut Arbeitsblatt in Bayern?",
+     "options": [
+      "22",
+      "51",
+      "71",
+      "96"
+     ],
+     "answer": 1,
+     "explanation": "51 ÄDBV mit zusätzlich 22 Außenstellen."
+    },
+    {
+     "id": "vermessung-ldbv-q005",
+     "type": "mc",
+     "question": "Wer führt das Liegenschaftskataster in Bayern und aktualisiert es täglich?",
+     "options": [
+      "Das Grundbuchamt",
+      "Das Amt für Ländliche Entwicklung",
+      "Das Landratsamt",
+      "Die Ämter für Digitalisierung, Breitband und Vermessung (ÄDBV)"
+     ],
+     "answer": 3,
+     "explanation": "Die ÄDBV führen und aktualisieren das Liegenschaftskataster (ca. 30.000 Grundstücksvermessungen pro Jahr)."
+    },
+    {
+     "id": "vermessung-ldbv-q006",
+     "type": "mc",
+     "question": "Welche Einrichtung gehört zum LDBV?",
+     "options": [
+      "Das Breitbandzentrum Amberg",
+      "Das Grundbuchamt München",
+      "Das Amt für Ländliche Entwicklung Unterfranken",
+      "Das Bayerische Landesamt für Umwelt"
+     ],
+     "answer": 0,
+     "explanation": "Zum LDBV gehören das Breitbandzentrum Amberg und das IT-Dienstleistungszentrum des Freistaats Bayern."
+    },
+    {
+     "id": "vermessung-ldbv-q007",
+     "type": "mc",
+     "question": "In welchem Online-Portal stellt das LDBV Karten, Luftbilder und Geobasisdaten bereit?",
+     "options": [
+      "Google Earth",
+      "BayernAtlas",
+      "OpenStreetMap",
+      "BauGB-Portal"
+     ],
+     "answer": 1,
+     "explanation": "Der BayernAtlas ist das amtliche Kartenportal der Bayerischen Vermessungsverwaltung."
+    },
+    {
+     "id": "vermessung-ldbv-q008",
+     "type": "mc",
+     "question": "Welche drei Qualitätsmerkmale nennt das LDBV für seine Geobasisdaten?",
+     "options": [
+      "Kostenlos, anonym, international",
+      "Maßstabstreue, Farbigkeit, Lesbarkeit",
+      "Einheitlichkeit, Flächendeckung, hohe Aktualität",
+      "Genauigkeit, Rechtskraft, Eigentum"
+     ],
+     "answer": 2,
+     "explanation": "Einheitlichkeit, Flächendeckung und hohe Aktualität für ganz Bayern."
+    },
+    {
+     "id": "vermessung-ldbv-q009",
+     "type": "mc",
+     "question": "Richtig oder falsch? Das LDBV ist neben der Vermessung auch für Breitbandausbau und Digitalisierung zuständig.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Richtig – daher der Name: Digitalisierung, Breitband und Vermessung."
+    },
+    {
+     "id": "vermessung-ldbv-q010",
+     "type": "mc",
+     "question": "Welcher Bereich gehört NICHT zu den vier Aufgabenbereichen des LDBV?",
+     "options": [
+      "Topographische Landesaufnahme",
+      "Sicherung des Grundeigentums",
+      "Breitbandausbau",
+      "Erteilung von Baugenehmigungen"
+     ],
+     "answer": 3,
+     "explanation": "Die vier Bereiche: Digitalisierung, Breitbandausbau, Sicherung des Grundeigentums, Topographische Landesaufnahme. Baugenehmigungen erteilt die Bauaufsichtsbehörde."
+    },
+    {
+     "id": "vermessung-ldbv-q011",
+     "type": "mc",
+     "question": "Wie viele Grundstücksvermessungen führen die ÄDBV etwa pro Jahr durch?",
+     "options": [
+      "ca. 3.000",
+      "ca. 30.000",
+      "ca. 300.000",
+      "ca. 3 Mio."
+     ],
+     "answer": 1,
+     "explanation": "Laut Arbeitsblatt ca. 30.000 Grundstücksvermessungen pro Jahr."
+    }
+   ]
+  },
+  {
+   "id": "vermessung-aemter",
+   "title": "Vermessungsämter in Bayern",
+   "description": "Aufgabenverteilung zwischen Landesvermessungsamt, staatlichem und städtischem Vermessungsamt und Amt für Ländliche Entwicklung.",
+   "sources": [
+    "1 Vermessung grundlagen (1).pdf"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-aemter-c001",
+     "type": "basic",
+     "front": "Welche vier Vermessungsbehörden in Bayern nennt das Arbeitsblatt?",
+     "back": "1. Bayerisches Landesvermessungsamt (München) – heute LDBV\n2. Staatliches Vermessungsamt – heute ÄDBV\n3. Städtisches Vermessungsamt\n4. Amt für Ländliche Entwicklung"
+    },
+    {
+     "id": "vermessung-aemter-c002",
+     "type": "basic",
+     "front": "Welche Festpunkt-Aufgaben hat das **Landesvermessungsamt** (heute LDBV)?",
+     "back": "- Festpunktnetze in großen Dimensionen aufbauen und sichern (**Lagekoordinaten**)\n- **Nivellementpunktfeld** aufbauen und sichern (**Höhen**)"
+    },
+    {
+     "id": "vermessung-aemter-c003",
+     "type": "basic",
+     "front": "Wo werden die Höhenfestpunkte des Landesvermessungsamts dokumentiert?",
+     "back": "In einer Kartei mit Punktbeschreibungen und in der **Nivellementfestpunktübersicht** im Maßstab **1:25.000**."
+    },
+    {
+     "id": "vermessung-aemter-c004",
+     "type": "basic",
+     "front": "Welche Kartenprodukte gibt das Landesvermessungsamt (heute LDBV) ab?",
+     "back": "- topografische Karten (analog und digital)\n- Flurkarte in digitaler Form\n- Luftbildkarten (im Blattschnitt der 1:5.000-Karten)"
+    },
+    {
+     "id": "vermessung-aemter-c005",
+     "type": "basic",
+     "front": "Welche Grenz-Aufgaben hat das **staatliche Vermessungsamt** (heute ÄDBV)?",
+     "back": "- Grenzermittlung\n- Grenzwiederherstellung\n- Teilung von Flurstücken"
+    },
+    {
+     "id": "vermessung-aemter-c006",
+     "type": "basic",
+     "front": "Wo weist das staatliche Vermessungsamt (ÄDBV) die Fläche aller Grundstücke nach?",
+     "back": "Im (elektronischen) **Liegenschaftsbuch**."
+    },
+    {
+     "id": "vermessung-aemter-c007",
+     "type": "basic",
+     "front": "Nenne weitere Aufgaben des staatlichen Vermessungsamts (ÄDBV) neben den Grenzaufgaben.",
+     "back": "- Umlegungsverfahren für Gemeinden\n- Verdichtung des Festpunktnetzes\n- Fortführung der Karten 1:5.000, 1:2.500 und 1:1.000\n- Aktualisierung der Digitalen Flurkarte (DFK)"
+    },
+    {
+     "id": "vermessung-aemter-c008",
+     "type": "basic",
+     "front": "Welche Aufgaben hat das **städtische Vermessungsamt**?",
+     "back": "- Verdichtung des Nivellementpunktfeldes\n- Kontrolle der Abstandsflächen bei Baumaßnahmen (**Schnurgerüstabnahme**)\n- Aufnahme und Fortführung des **Leitungskatasters**"
+    },
+    {
+     "id": "vermessung-aemter-c009",
+     "type": "basic",
+     "front": "Was wird bei der **Schnurgerüstabnahme** geprüft?",
+     "back": "Ob das am Schnurgerüst abgesteckte Gebäude lagerichtig steht und die **Abstandsflächen** eingehalten werden – bevor weitergebaut wird."
+    },
+    {
+     "id": "vermessung-aemter-c010",
+     "type": "basic",
+     "front": "Was ist das **Leitungskataster**?",
+     "back": "Der Nachweis (Pläne/Daten) der Ver- und Entsorgungsleitungen: Gas, Strom, Wasser, Abwasser."
+    },
+    {
+     "id": "vermessung-aemter-c011",
+     "type": "basic",
+     "front": "Welche Aufgaben hat das **Amt für Ländliche Entwicklung (ALE)**?",
+     "back": "- Neugestaltung des ländlichen Raums durch **Zusammenlegung** kleiner Flurstücke (bessere Bewirtschaftung)\n- Neugestaltung der Flurwege\n- schnelle Umsetzung größerer Planungen durch Neuordnungsverfahren (Arbeitsblatt: „Umlegungsverfahren“)"
+    },
+    {
+     "id": "vermessung-aemter-c012",
+     "type": "basic",
+     "front": "Wie ist das Amt für Ländliche Entwicklung in Bayern organisiert?",
+     "back": "Ein Amt je **Regierungsbezirk** – z. B. ALE Unterfranken in Würzburg."
+    },
+    {
+     "id": "vermessung-aemter-c013",
+     "type": "basic",
+     "front": "Wofür steht **DFK**?",
+     "back": "**Digitale Flurkarte** – die digital geführte Flurkarte (Liegenschaftskarte) in Bayern."
+    },
+    {
+     "id": "vermessung-aemter-c014",
+     "type": "basic",
+     "front": "Was bedeutet **Verdichtung** eines Festpunktfeldes?",
+     "back": "Zwischen vorhandenen, weit auseinanderliegenden Festpunkten werden zusätzliche Punkte bestimmt, damit für Vermessungen vor Ort genug Anschlusspunkte in der Nähe liegen."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-aemter-q001",
+     "type": "mc",
+     "question": "Wer führt laut Arbeitsblatt die Schnurgerüstabnahme durch?",
+     "options": [
+      "Amt für Ländliche Entwicklung",
+      "Städtisches Vermessungsamt",
+      "Landesvermessungsamt",
+      "Grundbuchamt"
+     ],
+     "answer": 1,
+     "explanation": "Das städtische Vermessungsamt kontrolliert die Einhaltung der Abstandsflächen bei Baumaßnahmen (Schnurgerüstabnahme)."
+    },
+    {
+     "id": "vermessung-aemter-q002",
+     "type": "mc",
+     "question": "In welchem Maßstab ist die Nivellementfestpunktübersicht dargestellt?",
+     "options": [
+      "1:1.000",
+      "1:5.000",
+      "1:25.000",
+      "1:200.000"
+     ],
+     "answer": 2,
+     "explanation": "Die Höhenfestpunkte werden in der Nivellementfestpunktübersicht 1:25.000 eingezeichnet."
+    },
+    {
+     "id": "vermessung-aemter-q003",
+     "type": "mc",
+     "question": "Wer ist für Grenzwiederherstellung und Teilung von Flurstücken zuständig?",
+     "options": [
+      "Notar",
+      "Städtisches Vermessungsamt",
+      "Amt für Ländliche Entwicklung",
+      "Staatliches Vermessungsamt (heute ÄDBV)"
+     ],
+     "answer": 3,
+     "explanation": "Grenzermittlung, Grenzwiederherstellung und Teilung sind Aufgaben des staatlichen Vermessungsamts, heute ÄDBV."
+    },
+    {
+     "id": "vermessung-aemter-q004",
+     "type": "mc",
+     "question": "Was wird im Leitungskataster dokumentiert?",
+     "options": [
+      "Grundstücksgrenzen",
+      "Eigentümer und Grundschulden",
+      "Gas-, Strom-, Wasser- und Abwasserleitungen",
+      "Höhenfestpunkte"
+     ],
+     "answer": 2,
+     "explanation": "Das Leitungskataster weist die Ver- und Entsorgungsleitungen nach; es wird vom städtischen Vermessungsamt geführt."
+    },
+    {
+     "id": "vermessung-aemter-q005",
+     "type": "input",
+     "question": "Wofür steht die Abkürzung DFK?",
+     "answer": "Digitale Flurkarte",
+     "accept": [],
+     "explanation": "DFK = Digitale Flurkarte. Hinweis: Auf dem Arbeitsblatt steht „deutsche Flurkarte“ – gemeint ist die digitale Flurkarte in Bayern."
+    },
+    {
+     "id": "vermessung-aemter-q006",
+     "type": "mc",
+     "question": "Welche Aufgabe hat das Amt für Ländliche Entwicklung?",
+     "options": [
+      "Abgabe topografischer Karten",
+      "Zusammenlegung kleiner Flurstücke und Neugestaltung der Flurwege",
+      "Führen des Grundbuchs",
+      "Schnurgerüstabnahme"
+     ],
+     "answer": 1,
+     "explanation": "Das ALE gestaltet den ländlichen Raum neu (Flurneuordnung, Flurwege) und setzt größere Planungen durch Neuordnungsverfahren um."
+    },
+    {
+     "id": "vermessung-aemter-q007",
+     "type": "mc",
+     "question": "Wer verdichtet laut Arbeitsblatt das Nivellementpunktfeld?",
+     "options": [
+      "Städtisches Vermessungsamt",
+      "Amt für Ländliche Entwicklung",
+      "Grundbuchamt",
+      "Bauaufsichtsbehörde"
+     ],
+     "answer": 0,
+     "explanation": "Das Landesvermessungsamt baut das Nivellementpunktfeld auf, das städtische Vermessungsamt verdichtet es."
+    },
+    {
+     "id": "vermessung-aemter-q008",
+     "type": "mc",
+     "question": "Welche Kartenmaßstäbe führt das staatliche Vermessungsamt (ÄDBV) laut Arbeitsblatt fort?",
+     "options": [
+      "1:25.000 und 1:50.000",
+      "1:5.000, 1:2.500 und 1:1.000",
+      "1:100 und 1:50",
+      "1:200.000"
+     ],
+     "answer": 1,
+     "explanation": "Die großmaßstäbigen Katasterkarten 1:5.000, 1:2.500 und 1:1.000."
+    },
+    {
+     "id": "vermessung-aemter-q009",
+     "type": "mc",
+     "question": "Richtig oder falsch? Das Landesvermessungsamt hat das Nivellementpunktfeld für die Höhenangaben aufgebaut und gesichert.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Richtig. Lagefestpunktnetz und Nivellementpunktfeld (Höhen) im großen Maßstab sind Aufgaben der Landesvermessung."
+    }
+   ]
+  },
+  {
+   "id": "vermessung-kataster",
+   "title": "Liegenschaftskataster & Grundbuch",
+   "description": "Flurstück, Grundstück, Flurkarte, Liegenschaftsbuch, Grundbuch und typische Katastervermessungen.",
+   "sources": [
+    "1 Vermessung grundlagen (1).pdf",
+    "1 Landesamt für Digitalisierung Seite1-5 (1).pdf",
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-kataster-c001",
+     "type": "basic",
+     "front": "Was ist das **Liegenschaftskataster**?",
+     "back": "Das amtliche Verzeichnis aller **Flurstücke** und **Gebäude** eines Landes – mit Lage, Form, Größe und Nutzung."
+    },
+    {
+     "id": "vermessung-kataster-c002",
+     "type": "basic",
+     "front": "Aus welchen zwei Teilen besteht das Liegenschaftskataster klassisch?",
+     "back": "- **Liegenschaftskarte** (Flurkarte): darstellender Teil (Grenzen, Gebäude, Flurstücksnummern)\n- **Liegenschaftsbuch**: beschreibender Teil (Fläche, Lage, Nutzung, Eigentümerangaben)"
+    },
+    {
+     "id": "vermessung-kataster-c003",
+     "type": "basic",
+     "front": "Wofür steht **ALKIS**?",
+     "back": "**Amtliches Liegenschaftskatasterinformationssystem** – führt Liegenschaftskarte und Liegenschaftsbuch heute gemeinsam digital."
+    },
+    {
+     "id": "vermessung-kataster-c004",
+     "type": "basic",
+     "front": "Was ist ein **Flurstück**?",
+     "back": "Ein örtlich abgegrenzter Teil der Erdoberfläche, der im Liegenschaftskataster unter einer eigenen **Flurstücksnummer** geführt wird – die kleinste Buchungseinheit des Katasters."
+    },
+    {
+     "id": "vermessung-kataster-c005",
+     "type": "basic",
+     "front": "Was ist ein **Grundstück** im Rechtssinn?",
+     "back": "Ein Teil der Erdoberfläche, der im **Grundbuch** unter einer eigenen Nummer gebucht ist. Es kann aus **einem oder mehreren Flurstücken** bestehen."
+    },
+    {
+     "id": "vermessung-kataster-c006",
+     "type": "basic",
+     "front": "Was wird im **Grundbuch** nachgewiesen und wer führt es?",
+     "back": "Die **Rechtsverhältnisse** an Grundstücken: Eigentümer, Rechte (z. B. Wegerecht) und Belastungen (z. B. Grundschuld). Geführt vom **Grundbuchamt** beim Amtsgericht."
+    },
+    {
+     "id": "vermessung-kataster-c007",
+     "type": "basic",
+     "front": "Wie hängen Liegenschaftskataster und Grundbuch zusammen?",
+     "back": "Das Liegenschaftskataster ist das **amtliche Verzeichnis der Grundstücke** für das Grundbuch (§ 2 GBO):\n- Kataster: tatsächliche Verhältnisse (Lage, Form, Größe, Nutzung)\n- Grundbuch: rechtliche Verhältnisse (Eigentum, Rechte, Lasten)"
+    },
+    {
+     "id": "vermessung-kataster-c008",
+     "type": "basic",
+     "front": "Wer ist in Bayern für das Liegenschaftskataster zuständig, wer für das Grundbuch?",
+     "back": "- Liegenschaftskataster: **Ämter für Digitalisierung, Breitband und Vermessung (ÄDBV)**\n- Grundbuch: **Grundbuchamt** (beim Amtsgericht)"
+    },
+    {
+     "id": "vermessung-kataster-c009",
+     "type": "basic",
+     "front": "Was ist eine **Gemarkung**?",
+     "back": "Ein Katasterbezirk (meist das Gebiet einer früheren Gemeinde), innerhalb dessen die Flurstücke nummeriert werden."
+    },
+    {
+     "id": "vermessung-kataster-c010",
+     "type": "basic",
+     "front": "Was versteht man unter **Abmarkung**?",
+     "back": "Die dauerhafte Kennzeichnung von Grenzpunkten in der Örtlichkeit durch **Grenzzeichen** (z. B. Grenzstein, Kunststoffmarke, Grenznagel)."
+    },
+    {
+     "id": "vermessung-kataster-c011",
+     "type": "basic",
+     "front": "Was ist eine **Grenzwiederherstellung**?",
+     "back": "Verloren gegangene oder versetzte Grenzzeichen werden anhand der Katasterunterlagen (Messzahlen bzw. Koordinaten) wieder an ihren richtigen Ort gesetzt."
+    },
+    {
+     "id": "vermessung-kataster-c012",
+     "type": "basic",
+     "front": "Was geschieht bei einer **Teilungsvermessung**?",
+     "back": "Ein Flurstück wird geteilt: Die neue Grenze wird vermessen und abgemarkt, die neuen Flurstücke erhalten eigene Nummern und werden im Kataster fortgeführt."
+    },
+    {
+     "id": "vermessung-kataster-c013",
+     "type": "basic",
+     "front": "Warum werden Neubauten **eingemessen** (Gebäudeeinmessung)?",
+     "back": "Damit das Gebäude im Liegenschaftskataster (Flurkarte) nachgewiesen wird – so bleibt das Kataster aktuell. In Bayern messen die ÄDBV Neubauten und Grundrissänderungen ein."
+    },
+    {
+     "id": "vermessung-kataster-c014",
+     "type": "basic",
+     "front": "Was bedeutet **Fortführung** des Liegenschaftskatasters?",
+     "back": "Die laufende Aktualisierung bei Veränderungen – z. B. neue Grenzen durch Teilung, neu eingemessene Gebäude oder geänderte Nutzung."
+    },
+    {
+     "id": "vermessung-kataster-c015",
+     "type": "basic",
+     "front": "In welchen Maßstäben liegen Flurkarten in Bayern klassisch vor?",
+     "back": "**1:1.000**, **1:2.500** und **1:5.000** (größere Maßstäbe für Ortslagen); heute digital als DFK."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-kataster-q001",
+     "type": "mc",
+     "question": "Was ist die kleinste Buchungseinheit des Liegenschaftskatasters?",
+     "options": [
+      "Grundstück",
+      "Gemarkung",
+      "Flurstück",
+      "Flur"
+     ],
+     "answer": 2,
+     "explanation": "Das Flurstück ist die kleinste Buchungseinheit des Katasters. Ein Grundstück (Grundbuch) kann aus mehreren Flurstücken bestehen."
+    },
+    {
+     "id": "vermessung-kataster-q002",
+     "type": "mc",
+     "question": "Wer führt das Grundbuch?",
+     "options": [
+      "Die ÄDBV",
+      "Das Grundbuchamt beim Amtsgericht",
+      "Das Landratsamt",
+      "Das LDBV"
+     ],
+     "answer": 1,
+     "explanation": "Das Grundbuch führt das Grundbuchamt (Amtsgericht); das Liegenschaftskataster führen die ÄDBV."
+    },
+    {
+     "id": "vermessung-kataster-q003",
+     "type": "mc",
+     "question": "Richtig oder falsch? Ein Grundstück im Rechtssinn kann aus mehreren Flurstücken bestehen.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Richtig. Grundstück = Buchungseinheit im Grundbuch, es kann ein oder mehrere Flurstücke umfassen."
+    },
+    {
+     "id": "vermessung-kataster-q004",
+     "type": "input",
+     "question": "Wie lautet die Abkürzung des Amtlichen Liegenschaftskatasterinformationssystems?",
+     "answer": "ALKIS",
+     "accept": [],
+     "explanation": "ALKIS vereint Liegenschaftskarte und Liegenschaftsbuch digital."
+    },
+    {
+     "id": "vermessung-kataster-q005",
+     "type": "mc",
+     "question": "Was wird im Grundbuch, aber NICHT im Liegenschaftskataster rechtsverbindlich nachgewiesen?",
+     "options": [
+      "Die Flurstücksgrenze",
+      "Die Gebäudegrundfläche",
+      "Die tatsächliche Nutzung",
+      "Eine Grundschuld"
+     ],
+     "answer": 3,
+     "explanation": "Belastungen wie Grundschulden stehen im Grundbuch. Grenzen, Gebäude und Nutzung weist das Liegenschaftskataster nach."
+    },
+    {
+     "id": "vermessung-kataster-q006",
+     "type": "input",
+     "question": "Wie nennt man die Kennzeichnung von Grenzpunkten durch Grenzsteine oder Grenzmarken?",
+     "answer": "Abmarkung",
+     "accept": [],
+     "explanation": "Abmarkung = dauerhafte Kennzeichnung der Grenzpunkte mit Grenzzeichen."
+    },
+    {
+     "id": "vermessung-kataster-q007",
+     "type": "mc",
+     "question": "Ein Grenzstein wurde beim Baggern versetzt. Welche Vermessung ist nötig?",
+     "options": [
+      "Teilungsvermessung",
+      "Gebäudeeinmessung",
+      "Grenzwiederherstellung",
+      "Höhenübertrag"
+     ],
+     "answer": 2,
+     "explanation": "Bei einer Grenzwiederherstellung wird das Grenzzeichen anhand der Katasterunterlagen wieder richtig gesetzt."
+    },
+    {
+     "id": "vermessung-kataster-q008",
+     "type": "mc",
+     "question": "Welche zwei Teile bilden klassisch das Liegenschaftskataster?",
+     "options": [
+      "Grundbuch und Baulastenverzeichnis",
+      "Liegenschaftskarte und Liegenschaftsbuch",
+      "Bebauungsplan und Flächennutzungsplan",
+      "Topografische Karte und Luftbild"
+     ],
+     "answer": 1,
+     "explanation": "Liegenschaftskarte (Flurkarte) = darstellender Teil, Liegenschaftsbuch = beschreibender Teil."
+    },
+    {
+     "id": "vermessung-kataster-q009",
+     "type": "mc",
+     "question": "Nach Fertigstellung eines Anbaus misst das ÄDBV das Gebäude ein. Zu welchem Zweck?",
+     "options": [
+      "Prüfung der Statik",
+      "Fortführung des Liegenschaftskatasters",
+      "Eintragung einer Grundschuld",
+      "Kontrolle der Wärmedämmung"
+     ],
+     "answer": 1,
+     "explanation": "Die Gebäudeeinmessung dient dem Nachweis des Gebäudes in der Flurkarte, also der Fortführung des Katasters."
+    },
+    {
+     "id": "vermessung-kataster-q010",
+     "type": "mc",
+     "question": "Was ist eine Gemarkung?",
+     "options": [
+      "Ein Grenzstein",
+      "Ein Höhenfestpunkt",
+      "Eine Abteilung des Grundbuchs",
+      "Ein Katasterbezirk, in dem die Flurstücke nummeriert sind"
+     ],
+     "answer": 3,
+     "explanation": "Die Gemarkung ist ein Katasterbezirk; Flurstücksnummern sind innerhalb einer Gemarkung eindeutig."
+    }
+   ]
+  },
+  {
+   "id": "vermessung-bezugssysteme",
+   "title": "Bezugssysteme, Höhen & Festpunkte",
+   "description": "Lage- und Höhenbezug in Deutschland (ETRS89/UTM, NHN, DHHN2016), Festpunkte und Höhenangaben am Bau.",
+   "sources": [
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-bezugssysteme-c001",
+     "type": "basic",
+     "front": "Was ist ein **Festpunkt**?",
+     "back": "Ein dauerhaft vermarkter Punkt mit amtlich bekannten Koordinaten und/oder bekannter Höhe. Alle Festpunkte zusammen bilden das Festpunktfeld, an das Vermessungen angeschlossen werden."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c002",
+     "type": "basic",
+     "front": "Welche Arten von Festpunkten unterscheidet man?",
+     "back": "- **Lagefestpunkte** (z. B. trigonometrische Punkte, TP): bekannte Lagekoordinaten\n- **Höhenfestpunkte** (HFP, Nivellementpunkte): bekannte Höhe\n- heute zusätzlich GNSS-Referenzstationen (SAPOS)"
+    },
+    {
+     "id": "vermessung-bezugssysteme-c003",
+     "type": "basic",
+     "front": "Wie sind Höhenfestpunkte meist vermarkt?",
+     "back": "Als **Höhenbolzen** in Wänden von Gebäuden, Brücken oder Mauern, teils auch als Pfeiler im Boden."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c004",
+     "type": "basic",
+     "front": "Auf welche Bezugsfläche beziehen sich amtliche Höhen in Deutschland?",
+     "back": "Auf **Normalhöhennull (NHN)** – Angabe in **m ü. NHN** (Meter über Normalhöhennull)."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c005",
+     "type": "basic",
+     "front": "Wie heißt das aktuelle amtliche Höhensystem in Deutschland?",
+     "back": "**DHHN2016** (Deutsches Haupthöhennetz 2016) mit Höhen über NHN. Vorgänger: DHHN92."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c006",
+     "type": "basic",
+     "front": "Was ist der Unterschied zwischen **NN** und **NHN**?",
+     "back": "- NN (Normalnull): alte Höhenbezugsfläche (vor dem DHHN92)\n- NHN (Normalhöhennull): heutige Bezugsfläche\nBeide gehen auf den Amsterdamer Pegel zurück; die Höhen unterscheiden sich meist nur um wenige Zentimeter."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c007",
+     "type": "basic",
+     "front": "Auf welchen Pegel gehen die deutschen Höhen zurück?",
+     "back": "Auf den **Amsterdamer Pegel** (Normaal Amsterdams Peil, NAP)."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c008",
+     "type": "basic",
+     "front": "Was ist das **Geoid**?",
+     "back": "Die Niveaufläche des Erdschwerefelds, die dem mittleren Meeresspiegel entspricht und unter den Kontinenten fortgesetzt gedacht wird – physikalische Bezugsfläche für Höhen."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c009",
+     "type": "basic",
+     "front": "Was ist ein **Ellipsoid** in der Vermessung?",
+     "back": "Ein mathematisch definierter, an den Polen abgeplatteter Rotationskörper, der die Erdform annähert – Rechenfläche für Lagekoordinaten (z. B. GRS80 bei ETRS89, Bessel-Ellipsoid beim alten DHDN)."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c010",
+     "type": "basic",
+     "front": "Welches Lagebezugssystem ist heute in Deutschland amtlich?",
+     "back": "**ETRS89** (Europäisches Terrestrisches Referenzsystem 1989) mit **UTM**-Abbildung – Koordinaten als Ostwert und Nordwert."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c011",
+     "type": "basic",
+     "front": "Welche Koordinaten waren in Deutschland früher amtlich?",
+     "back": "**Gauß-Krüger**-Koordinaten (Rechtswert/Hochwert) im System DHDN mit Bessel-Ellipsoid."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c012",
+     "type": "basic",
+     "front": "Wie ist das **geodätische** Koordinatensystem im Vergleich zum mathematischen orientiert?",
+     "back": "- x-Achse nach **Norden** (Hochwert), y-Achse nach **Osten** (Rechtswert)\n- Winkel und Quadranten werden **im Uhrzeigersinn** gezählt\n(mathematisch: x nach rechts, Zählung gegen den Uhrzeigersinn)"
+    },
+    {
+     "id": "vermessung-bezugssysteme-c013",
+     "type": "basic",
+     "front": "Was ist **SAPOS**?",
+     "back": "Der Satellitenpositionierungsdienst der deutschen Landesvermessung: ein Netz von GNSS-Referenzstationen, das Korrekturdaten liefert → Positionen auf wenige Zentimeter genau in Echtzeit."
+    },
+    {
+     "id": "vermessung-bezugssysteme-c014",
+     "type": "basic",
+     "front": "Was ist der Unterschied zwischen **absoluter** und **relativer** Höhe?",
+     "back": "- absolute Höhe: bezogen auf die amtliche Bezugsfläche (m ü. NHN)\n- relative Höhe: bezogen auf einen örtlich festgelegten Bezugspunkt (z. B. ±0,00 am Bau)"
+    },
+    {
+     "id": "vermessung-bezugssysteme-c015",
+     "type": "basic",
+     "front": "Wie werden Höhen auf der Baustelle meist angegeben?",
+     "back": "Relativ zu **±0,00** (meist OK Fertigfußboden EG). Im Plan steht zusätzlich die absolute Höhe, z. B. ±0,00 = 285,40 m ü. NHN."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-bezugssysteme-q001",
+     "type": "mc",
+     "question": "Auf welche Bezugsfläche beziehen sich amtliche Höhen in Deutschland heute?",
+     "options": [
+      "Adria-Pegel Triest",
+      "Mittelwasser der Ostsee in Kiel",
+      "Normalhöhennull (NHN)",
+      "Ellipsoidoberfläche GRS80"
+     ],
+     "answer": 2,
+     "explanation": "Amtliche Höhen werden in m ü. NHN angegeben (DHHN2016). Der Adria-Pegel gilt z. B. in Österreich."
+    },
+    {
+     "id": "vermessung-bezugssysteme-q002",
+     "type": "input",
+     "question": "Nach welcher Stadt ist der Pegel benannt, auf den die deutschen Höhen zurückgehen?",
+     "answer": "Amsterdam",
+     "accept": [
+      "Amsterdamer Pegel",
+      "Amsterdamer"
+     ],
+     "explanation": "NN und NHN gehen auf den Amsterdamer Pegel (NAP) zurück."
+    },
+    {
+     "id": "vermessung-bezugssysteme-q003",
+     "type": "mc",
+     "question": "Welches Lagebezugssystem ist heute in Deutschland amtlich?",
+     "options": [
+      "Gauß-Krüger im DHDN",
+      "ETRS89 mit UTM-Abbildung",
+      "Soldner-Koordinaten",
+      "Geografische Koordinaten auf dem Bessel-Ellipsoid"
+     ],
+     "answer": 1,
+     "explanation": "Heute amtlich: ETRS89/UTM. Gauß-Krüger im DHDN ist das Vorgängersystem."
+    },
+    {
+     "id": "vermessung-bezugssysteme-q004",
+     "type": "mc",
+     "question": "Im geodätischen Koordinatensystem zeigt die x-Achse nach …",
+     "options": [
+      "Osten",
+      "Süden",
+      "Norden",
+      "Westen"
+     ],
+     "answer": 2,
+     "explanation": "Geodätisch: x = Norden (Hochwert), y = Osten (Rechtswert) – anders als im mathematischen System."
+    },
+    {
+     "id": "vermessung-bezugssysteme-q005",
+     "type": "mc",
+     "question": "Wie sind Höhenfestpunkte häufig vermarkt?",
+     "options": [
+      "Als Höhenbolzen in Gebäudewänden",
+      "Als rot-weiße Fluchtstäbe",
+      "Als Grenzsteine an Flurstücksecken",
+      "Nur als Markierung im Luftbild"
+     ],
+     "answer": 0,
+     "explanation": "Höhenfestpunkte sind meist Höhenbolzen in Gebäuden, Brücken oder Mauern."
+    },
+    {
+     "id": "vermessung-bezugssysteme-q006",
+     "type": "mc",
+     "question": "Richtig oder falsch? NN-Höhen und NHN-Höhen sind exakt identisch.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Falsch. Beide beruhen auf dem Amsterdamer Pegel, unterscheiden sich aber meist um einige Zentimeter. Bei alten Plänen den Höhenbezug prüfen!"
+    },
+    {
+     "id": "vermessung-bezugssysteme-q007",
+     "type": "input",
+     "question": "Wie lautet die Abkürzung des aktuellen Deutschen Haupthöhennetzes?",
+     "answer": "DHHN2016",
+     "accept": [
+      "DHHN 2016"
+     ],
+     "explanation": "DHHN2016 = Deutsches Haupthöhennetz 2016, Höhen über NHN."
+    },
+    {
+     "id": "vermessung-bezugssysteme-q008",
+     "type": "mc",
+     "question": "Was ist SAPOS?",
+     "options": [
+      "Ein Programm zur Grundbuchführung",
+      "Ein Nivelliergerät-Typ",
+      "Die Software des BayernAtlas",
+      "Ein Satellitenpositionierungsdienst der Landesvermessung mit Referenzstationen"
+     ],
+     "answer": 3,
+     "explanation": "SAPOS liefert über ein Netz von GNSS-Referenzstationen Korrekturdaten für zentimetergenaue Positionen."
+    },
+    {
+     "id": "vermessung-bezugssysteme-q009",
+     "type": "mc",
+     "question": "Welche Angabe ist eine relative Höhe?",
+     "options": [
+      "+2,75 m bezogen auf ±0,00 (OKFF EG)",
+      "312,45 m ü. NHN",
+      "Höhe eines Höhenfestpunkts im DHHN2016",
+      "Höhe eines TP in m ü. NHN"
+     ],
+     "answer": 0,
+     "explanation": "Relative Höhen beziehen sich auf einen örtlichen Bezugspunkt wie ±0,00; alle anderen sind absolute Höhen über NHN."
+    },
+    {
+     "id": "vermessung-bezugssysteme-q010",
+     "type": "mc",
+     "question": "Wie werden im geodätischen Koordinatensystem Richtungswinkel gezählt?",
+     "options": [
+      "Gegen den Uhrzeigersinn ab Osten",
+      "Im Uhrzeigersinn ab Norden",
+      "Gegen den Uhrzeigersinn ab Norden",
+      "Im Uhrzeigersinn ab Osten"
+     ],
+     "answer": 1,
+     "explanation": "Geodätisch: Beginn bei der x-Achse (Norden), Zählung im Uhrzeigersinn."
+    }
+   ]
+  },
+  {
+   "id": "vermessung-nivellement",
+   "title": "Höhenmessung & Nivellement",
+   "description": "Geometrisches Nivellement rechnen: Rückblick, Vorblick, Instrumentenhöhe, Höhenantrag, Liniennivellement, Gefälle.",
+   "sources": [
+    "1 Vermessung grundlagen (1).pdf",
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-nivellement-c001",
+     "type": "basic",
+     "front": "Was ist das Prinzip des **geometrischen Nivellements**?",
+     "back": "Das Nivellier erzeugt eine **horizontale Ziellinie**. Aus den Ablesungen an senkrecht gehaltenen Latten auf zwei Punkten ergibt sich ihr Höhenunterschied."
+    },
+    {
+     "id": "vermessung-nivellement-c002",
+     "type": "basic",
+     "front": "Was ist ein **Rückblick (R)**?",
+     "back": "Die Lattenablesung auf einem Punkt mit **bekannter Höhe** (Anschlusspunkt bzw. zuletzt bestimmter Punkt)."
+    },
+    {
+     "id": "vermessung-nivellement-c003",
+     "type": "basic",
+     "front": "Was ist ein **Vorblick (V)**?",
+     "back": "Die Lattenablesung auf dem Punkt, dessen Höhe **bestimmt** werden soll (Neupunkt)."
+    },
+    {
+     "id": "vermessung-nivellement-c004",
+     "type": "basic",
+     "front": "Formel für den Höhenunterschied beim Nivellement?",
+     "back": "Δh = R − V\n(Rückblick minus Vorblick)\nΔh > 0 → Neupunkt liegt höher",
+     "hint": "Große Ablesung = tief liegender Punkt"
+    },
+    {
+     "id": "vermessung-nivellement-c005",
+     "type": "basic",
+     "front": "Wie berechnet man die **Instrumentenhöhe** (Ziellinienhöhe H_i)?",
+     "back": "H_i = H_A + R\n(Höhe des bekannten Punkts + Rückblick)"
+    },
+    {
+     "id": "vermessung-nivellement-c006",
+     "type": "basic",
+     "front": "Wie berechnet man die Höhe eines Neupunkts B?",
+     "back": "H_B = H_A + R − V\noder: H_B = H_i − V"
+    },
+    {
+     "id": "vermessung-nivellement-c007",
+     "type": "basic",
+     "front": "Wie berechnet man beim **Höhenantrag** die Soll-Lattenablesung?",
+     "back": "V_soll = H_i − H_soll\nLatte verschieben, bis am Mittelfaden V_soll erscheint → der Lattenfuß steht auf Sollhöhe."
+    },
+    {
+     "id": "vermessung-nivellement-c008",
+     "type": "basic",
+     "front": "Was ist ein **Wechselpunkt**?",
+     "back": "Ein Punkt beim Liniennivellement, auf dem die Latte stehen bleibt, während das Instrument umgesetzt wird: erst **Vorblick**, nach dem Umsetzen **Rückblick**."
+    },
+    {
+     "id": "vermessung-nivellement-c009",
+     "type": "basic",
+     "front": "Wie berechnet man den Höhenunterschied eines **Liniennivellements**?",
+     "back": "Δh = ΣR − ΣV\nH_Ende = H_Anfang + ΣR − ΣV\n(dient auch als Rechenprobe)"
+    },
+    {
+     "id": "vermessung-nivellement-c010",
+     "type": "basic",
+     "front": "Warum stellt man das Nivellier möglichst in der **Mitte** zwischen Rück- und Vorblick auf?",
+     "back": "Bei gleichen Zielweiten heben sich ein restlicher **Ziellinienfehler** (Neigung der Ziellinie) sowie Einflüsse von Erdkrümmung und Refraktion weitgehend auf."
+    },
+    {
+     "id": "vermessung-nivellement-c011",
+     "type": "basic",
+     "front": "Wie bestimmt man mit den **Distanzfäden** die Entfernung zur Latte?",
+     "back": "e = 100 · l\nl = Lattenabschnitt = obere Ablesung − untere Ablesung\n(Multiplikationskonstante 100)"
+    },
+    {
+     "id": "vermessung-nivellement-c012",
+     "type": "basic",
+     "front": "Wie berechnet man ein **Gefälle** bzw. eine **Steigung** in Prozent?",
+     "back": "p = Δh / l · 100 %\n(Δh = Höhenunterschied, l = horizontale Länge)"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-nivellement-q001",
+     "type": "numeric",
+     "question": "Punkt A hat die Höhe H_A = 245,372 m ü. NHN. Rückblick auf A: R = 1,524 m. Vorblick auf B: V = 0,867 m. Berechne die Höhe von B.",
+     "answer": 246.029,
+     "unit": "m ü. NHN",
+     "tolerance": 1e-05,
+     "explanation": "H_B = H_A + R − V\n= 245,372 + 1,524 − 0,867\n= **246,029 m ü. NHN**\n(R > V → B liegt höher als A)"
+    },
+    {
+     "id": "vermessung-nivellement-q002",
+     "type": "numeric",
+     "question": "Rückblick auf A: R = 2,135 m, Vorblick auf B: V = 0,478 m. Wie groß ist der Höhenunterschied Δh von A nach B?",
+     "answer": 1.657,
+     "unit": "m",
+     "tolerance": 0.002,
+     "explanation": "Δh = R − V = 2,135 − 0,478 = **+1,657 m**\nPositiv → B liegt 1,657 m höher als A."
+    },
+    {
+     "id": "vermessung-nivellement-q003",
+     "type": "numeric",
+     "question": "Ein Höhenfestpunkt hat 312,450 m ü. NHN. Rückblick auf den HFP: R = 1,385 m. Wie hoch liegt die Ziellinie (Instrumentenhöhe H_i)?",
+     "answer": 313.835,
+     "unit": "m ü. NHN",
+     "tolerance": 1e-05,
+     "explanation": "H_i = H_HFP + R = 312,450 + 1,385 = **313,835 m ü. NHN**"
+    },
+    {
+     "id": "vermessung-nivellement-q004",
+     "type": "numeric",
+     "question": "Höhenantrag am Schnurgerüst: Ein HFP hat 178,640 m ü. NHN, Rückblick R = 1,250 m. Die Oberkante des Schnurgerüstbretts soll auf 179,100 m ü. NHN liegen. Welcher Wert muss an der Latte abgelesen werden?",
+     "answer": 0.79,
+     "unit": "m",
+     "tolerance": 0.005,
+     "explanation": "1. Instrumentenhöhe: H_i = 178,640 + 1,250 = 179,890 m ü. NHN\n2. Soll-Ablesung: V_soll = H_i − H_soll = 179,890 − 179,100 = **0,790 m**\nLatte so lange verschieben, bis 0,790 m abgelesen wird."
+    },
+    {
+     "id": "vermessung-nivellement-q005",
+     "type": "numeric",
+     "question": "Liniennivellement von A (H_A = 302,118 m ü. NHN) über zwei Wechselpunkte nach E. Rückblicke: 1,842 m; 2,015 m; 0,976 m. Vorblicke: 0,653 m; 1,208 m; 2,344 m. Berechne die Höhe von E.",
+     "answer": 302.746,
+     "unit": "m ü. NHN",
+     "tolerance": 1e-05,
+     "explanation": "ΣR = 1,842 + 2,015 + 0,976 = 4,833 m\nΣV = 0,653 + 1,208 + 2,344 = 4,205 m\nΔh = ΣR − ΣV = 4,833 − 4,205 = +0,628 m\nH_E = 302,118 + 0,628 = **302,746 m ü. NHN**"
+    },
+    {
+     "id": "vermessung-nivellement-q006",
+     "type": "numeric",
+     "question": "Im Bauplan gilt: ±0,00 = 285,40 m ü. NHN. Die Fundamentsohle liegt auf −1,25 m. Welche absolute Höhe hat die Fundamentsohle?",
+     "answer": 284.15,
+     "unit": "m ü. NHN",
+     "tolerance": 1e-05,
+     "explanation": "H = 285,40 + (−1,25) = 285,40 − 1,25 = **284,15 m ü. NHN**"
+    },
+    {
+     "id": "vermessung-nivellement-q007",
+     "type": "numeric",
+     "question": "Eine Grundleitung soll mit 2 % Gefälle verlegt werden und ist horizontal 35,00 m lang. Wie groß ist der Höhenunterschied zwischen Anfang und Ende?",
+     "answer": 0.7,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Δh = p / 100 · l = 0,02 · 35,00 = **0,70 m**"
+    },
+    {
+     "id": "vermessung-nivellement-q008",
+     "type": "numeric",
+     "question": "Eine Zufahrt überwindet 0,84 m Höhenunterschied auf 28,00 m horizontaler Länge. Wie groß ist die Steigung in %?",
+     "answer": 3.0,
+     "unit": "%",
+     "tolerance": 0.01,
+     "explanation": "p = Δh / l · 100 = 0,84 / 28,00 · 100 = **3,0 %**"
+    },
+    {
+     "id": "vermessung-nivellement-q009",
+     "type": "numeric",
+     "question": "Die Baugrubensohle soll auf 194,800 m ü. NHN abgesteckt werden. HFP: 196,215 m ü. NHN, Rückblick R = 0,842 m. Welche Lattenablesung gilt für die Sollhöhe?",
+     "answer": 2.257,
+     "unit": "m",
+     "tolerance": 0.002,
+     "explanation": "1. H_i = 196,215 + 0,842 = 197,057 m ü. NHN\n2. V_soll = H_i − H_soll = 197,057 − 194,800 = **2,257 m**"
+    },
+    {
+     "id": "vermessung-nivellement-q010",
+     "type": "numeric",
+     "question": "Am Nivellier werden an den Distanzfäden abgelesen: oberer Faden 1,642 m, unterer Faden 1,358 m. Wie weit ist die Latte vom Gerät entfernt?",
+     "answer": 28.4,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Lattenabschnitt l = 1,642 − 1,358 = 0,284 m\ne = 100 · l = 100 · 0,284 = **28,4 m**"
+    },
+    {
+     "id": "vermessung-nivellement-q011",
+     "type": "numeric",
+     "question": "Rückblick auf A: R = 0,654 m, Vorblick auf B: V = 2,318 m. Um wie viele Meter liegt B tiefer als A?",
+     "answer": 1.664,
+     "unit": "m",
+     "tolerance": 0.002,
+     "explanation": "Δh = R − V = 0,654 − 2,318 = −1,664 m\nNegativ → B liegt **1,664 m** tiefer als A."
+    },
+    {
+     "id": "vermessung-nivellement-q012",
+     "type": "numeric",
+     "question": "Bezugshöhe ±0,00 = 241,85 m ü. NHN. Das Gelände an der Hausecke liegt auf 240,97 m ü. NHN. Wie viele Meter liegt das Gelände unter ±0,00?",
+     "answer": 0.88,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "241,85 − 240,97 = 0,88 m\nDas Gelände liegt **0,88 m** unter ±0,00 (relative Höhe −0,88)."
+    },
+    {
+     "id": "vermessung-nivellement-q013",
+     "type": "mc",
+     "question": "Die Vorblick-Ablesung ist größer als die Rückblick-Ablesung. Was folgt daraus?",
+     "options": [
+      "Der Neupunkt liegt höher",
+      "Der Neupunkt liegt tiefer",
+      "Beide Punkte liegen gleich hoch",
+      "Das Gerät ist falsch horizontiert"
+     ],
+     "answer": 1,
+     "explanation": "Δh = R − V < 0 → der Neupunkt liegt tiefer. An einem tiefen Punkt liest man an der Latte einen großen Wert ab."
+    },
+    {
+     "id": "vermessung-nivellement-q014",
+     "type": "mc",
+     "question": "Welche Formel gilt für die Höhe eines Neupunkts B?",
+     "options": [
+      "H_B = H_A − R + V",
+      "H_B = H_A + R + V",
+      "H_B = H_A + R − V",
+      "H_B = R − V"
+     ],
+     "answer": 2,
+     "explanation": "H_B = H_A + R − V (bzw. H_i − V mit H_i = H_A + R)."
+    },
+    {
+     "id": "vermessung-nivellement-q015",
+     "type": "mc",
+     "question": "Was wird auf einem Wechselpunkt abgelesen?",
+     "options": [
+      "Erst ein Vorblick, nach dem Umsetzen des Instruments ein Rückblick",
+      "Nur ein Rückblick",
+      "Nur ein Zwischenblick",
+      "Gar nichts – er dient nur zur Orientierung"
+     ],
+     "answer": 0,
+     "explanation": "Der Wechselpunkt verbindet zwei Aufstellungen: Vorblick vom alten Standpunkt, Rückblick vom neuen."
+    }
+   ]
+  },
+  {
+   "id": "vermessung-massstab",
+   "title": "Maßstab & Winkeleinheiten",
+   "description": "Längen und Flächen mit Kartenmaßstäben umrechnen sowie Grad in Gon umrechnen.",
+   "sources": [
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "vermessung-massstab-c001",
+     "type": "basic",
+     "front": "Was bedeutet ein Maßstab von **1 : M**?",
+     "back": "1 Längeneinheit auf der Karte entspricht M Längeneinheiten in der Natur.\nBeispiel 1:1.000 → 1 cm Karte = 1.000 cm = 10 m Natur."
+    },
+    {
+     "id": "vermessung-massstab-c002",
+     "type": "basic",
+     "front": "Formel: Naturlänge aus Kartenlänge?",
+     "back": "L_Natur = L_Karte · M\numgekehrt: L_Karte = L_Natur / M",
+     "hint": "Einheiten beachten: cm ÷ 100 = m"
+    },
+    {
+     "id": "vermessung-massstab-c003",
+     "type": "basic",
+     "front": "Wie rechnet man **Flächen** mit dem Maßstab um?",
+     "back": "A_Natur = A_Karte · M²\nDer Maßstab geht bei Flächen **quadratisch** ein!",
+     "hint": "1 m² = 10.000 cm²"
+    },
+    {
+     "id": "vermessung-massstab-c004",
+     "type": "basic",
+     "front": "Was ist ein **großer** bzw. **kleiner** Maßstab?",
+     "back": "- großer Maßstab: kleine Maßstabszahl (z. B. 1:500, 1:1.000) → kleines Gebiet, viele Details (Flurkarte, Lageplan)\n- kleiner Maßstab: große Maßstabszahl (z. B. 1:200.000) → großes Gebiet, wenig Details"
+    },
+    {
+     "id": "vermessung-massstab-c005",
+     "type": "basic",
+     "front": "Welche Winkeleinheit wird in der deutschen Vermessung meist verwendet?",
+     "back": "Das **Gon**: Vollkreis = **400 gon**, rechter Winkel = **100 gon**."
+    },
+    {
+     "id": "vermessung-massstab-c006",
+     "type": "basic",
+     "front": "Wie rechnet man zwischen Grad und Gon um?",
+     "back": "1 gon = 0,9°\n1° = 10/9 gon ≈ 1,111 gon\nα[gon] = α[°] · 400 / 360"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "vermessung-massstab-q001",
+     "type": "numeric",
+     "question": "In der Flurkarte 1:1.000 misst eine Grundstücksgrenze 4,3 cm. Wie lang ist sie in der Natur?",
+     "answer": 43.0,
+     "unit": "m",
+     "tolerance": 0.005,
+     "explanation": "L_Natur = 4,3 cm · 1.000 = 4.300 cm = **43 m**"
+    },
+    {
+     "id": "vermessung-massstab-q002",
+     "type": "numeric",
+     "question": "Auf einer topografischen Karte 1:25.000 misst eine Strecke 6,8 cm. Wie lang ist sie in der Natur (in km)?",
+     "answer": 1.7,
+     "unit": "km",
+     "tolerance": 0.005,
+     "explanation": "L_Natur = 6,8 cm · 25.000 = 170.000 cm = 1.700 m = **1,7 km**"
+    },
+    {
+     "id": "vermessung-massstab-q003",
+     "type": "numeric",
+     "question": "Eine 85 m lange Grundstücksgrenze soll im Lageplan 1:500 gezeichnet werden. Wie lang wird die Linie?",
+     "answer": 17.0,
+     "unit": "cm",
+     "tolerance": 0.005,
+     "explanation": "L_Karte = L_Natur / M = 8.500 cm / 500 = **17 cm**"
+    },
+    {
+     "id": "vermessung-massstab-q004",
+     "type": "numeric",
+     "question": "Auf einer Flurkarte 1:5.000 wird eine Fläche von 2,4 cm² gemessen. Wie groß ist die Fläche in der Natur?",
+     "answer": 6000.0,
+     "unit": "m²",
+     "tolerance": 0.005,
+     "explanation": "A_Natur = A_Karte · M² = 2,4 cm² · 5.000² = 2,4 · 25.000.000 cm² = 60.000.000 cm²\n60.000.000 cm² / 10.000 = **6.000 m²**"
+    },
+    {
+     "id": "vermessung-massstab-q005",
+     "type": "numeric",
+     "question": "Ein rechteckiges Flurstück misst in der Flurkarte 1:1.000 3,2 cm × 2,5 cm. Wie groß ist es in der Natur?",
+     "answer": 800.0,
+     "unit": "m²",
+     "tolerance": 0.005,
+     "explanation": "Seiten in der Natur: 3,2 cm · 1.000 = 32 m und 2,5 cm · 1.000 = 25 m\nA = 32 m · 25 m = **800 m²**"
+    },
+    {
+     "id": "vermessung-massstab-q006",
+     "type": "numeric",
+     "question": "Eine Strecke von 120 m ist in einem Plan 4,8 cm lang. Wie groß ist die Maßstabszahl M (Maßstab 1 : M)?",
+     "answer": 2500.0,
+     "unit": "–",
+     "tolerance": 0.005,
+     "explanation": "M = L_Natur / L_Karte = 12.000 cm / 4,8 cm = 2.500 → Maßstab **1:2.500**"
+    },
+    {
+     "id": "vermessung-massstab-q007",
+     "type": "numeric",
+     "question": "Rechne 63° in Gon um.",
+     "answer": 70.0,
+     "unit": "gon",
+     "tolerance": 0.005,
+     "explanation": "α[gon] = 63 · 400 / 360 = 63 / 0,9 = **70 gon**"
+    },
+    {
+     "id": "vermessung-massstab-q008",
+     "type": "numeric",
+     "question": "Rechne 150 gon in Grad um.",
+     "answer": 135.0,
+     "unit": "°",
+     "tolerance": 0.005,
+     "explanation": "α[°] = 150 · 0,9 = **135°**"
+    },
+    {
+     "id": "vermessung-massstab-q009",
+     "type": "numeric",
+     "question": "Eine Gebäudeseite von 37,50 m soll im Plan 1:250 dargestellt werden. Wie lang wird die Linie?",
+     "answer": 15.0,
+     "unit": "cm",
+     "tolerance": 0.005,
+     "explanation": "L_Karte = 3.750 cm / 250 = **15 cm**"
+    },
+    {
+     "id": "vermessung-massstab-q010",
+     "type": "mc",
+     "question": "Welcher Maßstab ist der größte?",
+     "options": [
+      "1:25.000",
+      "1:5.000",
+      "1:1.000",
+      "1:200.000"
+     ],
+     "answer": 2,
+     "explanation": "Je kleiner die Maßstabszahl, desto größer der Maßstab: 1:1.000 zeigt die meisten Details."
+    },
+    {
+     "id": "vermessung-massstab-q011",
+     "type": "mc",
+     "question": "Wie viel Gon hat ein rechter Winkel?",
+     "options": [
+      "90 gon",
+      "100 gon",
+      "360 gon",
+      "400 gon"
+     ],
+     "answer": 1,
+     "explanation": "Vollkreis = 400 gon → rechter Winkel = 400 / 4 = 100 gon."
+    },
+    {
+     "id": "vermessung-massstab-q012",
+     "type": "mc",
+     "question": "Dieselbe Kartenfläche wird einmal mit 1:1.000 und einmal mit 1:2.000 ausgewertet. Wie verhält sich die Naturfläche bei 1:2.000?",
+     "options": [
+      "Sie verdoppelt sich",
+      "Sie vervierfacht sich",
+      "Sie halbiert sich",
+      "Sie bleibt gleich"
+     ],
+     "answer": 1,
+     "explanation": "Flächen gehen mit M² ein: (2.000 / 1.000)² = 2² = 4 → vierfache Naturfläche."
+    }
+   ]
+  }
+ ]
+}

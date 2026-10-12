@@ -1,0 +1,931 @@
+{
+ "unit": "statik-pruefung",
+ "subject": "statik",
+ "decks": [
+  {
+   "id": "statik-pruefung-training",
+   "title": "Prüfungstraining Statik",
+   "description": "Originalaufgaben aus 1. Schulaufgabe und Stegreifaufgabe plus Varianten mit vollständigem Rechenweg: Kraftsystem, Auflagerreaktionen, Gelenksystem, Fachwerk, Durchlaufträger, Schwerpunkt.",
+   "sources": [
+    "1. Schulaufgabe_FST 1.pdf",
+    "24_25_Musterlösung_Erstschrift.pdf",
+    "1. Stegreifaufgabe FST 1 - Gruppe A.pdf",
+    "1. Stegreifaufgabe FST 1 - Gruppe A (1).pdf",
+    "1. Stegreifaufgabe FST 1 - Gruppe A_LÖS.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-pruefung-training-c001",
+     "type": "basic",
+     "front": "Grad der statischen Bestimmtheit (Träger, Rahmen): Formel aus der Musterlösung?",
+     "back": "n = n_A − 3 − n_U\n- n_A = Anzahl der Auflagerreaktionen (Lagerwertigkeiten)\n- 3 = Gleichgewichtsbedingungen ΣH, ΣV, ΣM\n- n_U = Zusatzbedingungen, z. B. je Gelenk 1 (M_G = 0)",
+     "hint": "Stegreifaufgabe: n = 3 − 3 − 0 = 0"
+    },
+    {
+     "id": "statik-pruefung-training-c002",
+     "type": "basic",
+     "front": "Was bedeutet n = 0, n > 0 und n < 0 beim Grad der statischen Bestimmtheit?",
+     "back": "- n = 0: statisch bestimmt (Gleichgewichtsbedingungen reichen)\n- n > 0: n-fach statisch unbestimmt (z. B. Durchlaufträger → Tabellen)\n- n < 0: verschieblich, kein tragfähiges System"
+    },
+    {
+     "id": "statik-pruefung-training-c003",
+     "type": "basic",
+     "front": "Statische Bestimmtheit eines Fachwerks: Formel?",
+     "back": "n = s + a − 2 · k\ns = Anzahl Stäbe, a = Auflagerreaktionen, k = Knoten\nBeispiel Schulaufgabe: 7 + 3 − 2 · 5 = 0 → statisch bestimmt"
+    },
+    {
+     "id": "statik-pruefung-training-c004",
+     "type": "basic",
+     "front": "Wertigkeit (Anzahl Auflagerreaktionen) von Loslager, Festlager und Einspannung?",
+     "back": "- Loslager: 1 (rechtwinklig zur Gleitebene)\n- Festlager: 2 (H und V)\n- Einspannung: 3 (H, V und Moment M)"
+    },
+    {
+     "id": "statik-pruefung-training-c005",
+     "type": "basic",
+     "front": "Wie zerlegt man eine Trapezlast (a1 → a2 über Länge l) in Resultierende?",
+     "back": "Rechteck + Dreieck:\n- R_Rechteck = a1 · l, Angriff bei l/2\n- R_Dreieck = ½ · (a2 − a1) · l, Angriff bei 2/3 · l vom kleinen Lastende",
+     "hint": "Stegreifaufgabe: R2 = 3 · 3 = 9 kN, R3 = ½ · 6 · 3 = 9 kN"
+    },
+    {
+     "id": "statik-pruefung-training-c006",
+     "type": "basic",
+     "front": "Schräge Einzellast F unter dem Winkel α zur Horizontalen zerlegen",
+     "back": "F_V = F · sin α\nF_H = F · cos α",
+     "hint": "11 kN unter 35°: F_V = 6,31 kN; F_H = 9,01 kN"
+    },
+    {
+     "id": "statik-pruefung-training-c007",
+     "type": "basic",
+     "front": "Loslager auf einer um β geneigten Gleitebene: Richtung und Komponenten der Lagerkraft B?",
+     "back": "B wirkt rechtwinklig zur Gleitebene, ist also um β gegen die Senkrechte geneigt:\nB_V = B · cos β\nB_H = B · sin β"
+    },
+    {
+     "id": "statik-pruefung-training-c008",
+     "type": "basic",
+     "front": "Was überträgt ein Gelenk (Momentengelenk)?",
+     "back": "Nur Kräfte (G_H, G_V), kein Moment. Die Bedingung M_G = 0 liefert eine zusätzliche Gleichung."
+    },
+    {
+     "id": "statik-pruefung-training-c009",
+     "type": "basic",
+     "front": "Vorgehen bei einem Gelenksystem (Kragträger mit angehängter Stütze)?",
+     "back": "1. Am Gelenk G freischneiden\n2. Teilsystem mit nur einer unbekannten Lagerkraft: ΣM_G = 0 → z. B. B_H\n3. Gesamtsystem: ΣV = 0, ΣH = 0, ΣM_A = 0"
+    },
+    {
+     "id": "statik-pruefung-training-c010",
+     "type": "basic",
+     "front": "Eine Auflagerkraft ergibt sich negativ. Was bedeutet das?",
+     "back": "Sie wirkt entgegen der angenommenen Pfeilrichtung, der Betrag stimmt. Im weiteren Rechengang mit Vorzeichen einsetzen."
+    },
+    {
+     "id": "statik-pruefung-training-c011",
+     "type": "basic",
+     "front": "Vorzeichen der Stabkräfte im Knotenpunktverfahren?",
+     "back": "Alle Stabkräfte als Zug ansetzen (Pfeil vom Knoten weg):\n- positives Ergebnis = Zugstab\n- negatives Ergebnis = Druckstab"
+    },
+    {
+     "id": "statik-pruefung-training-c012",
+     "type": "basic",
+     "front": "Nullstabregel: unbelasteter Knoten mit zwei Stäben, die nicht in einer Geraden liegen",
+     "back": "Beide Stäbe sind Nullstäbe."
+    },
+    {
+     "id": "statik-pruefung-training-c013",
+     "type": "basic",
+     "front": "Nullstabregel: unbelasteter Knoten mit drei Stäben, von denen zwei in einer Geraden liegen",
+     "back": "Der dritte (abzweigende) Stab ist ein Nullstab."
+    },
+    {
+     "id": "statik-pruefung-training-c014",
+     "type": "basic",
+     "front": "Nullstabregel: Knoten mit zwei Stäben und einer äußeren Kraft in Richtung eines der Stäbe",
+     "back": "Der andere Stab ist ein Nullstab.\nSchulaufgabe: Knoten A mit Stab 4 (waagrecht), Stab 6 (senkrecht) und A_H (waagrecht) → S6 = 0"
+    },
+    {
+     "id": "statik-pruefung-training-c015",
+     "type": "basic",
+     "front": "Knotenpunktverfahren: An welchem Knoten beginnt man?",
+     "back": "An einem Knoten mit höchstens 2 unbekannten Stabkräften, denn pro Knoten gibt es nur 2 Gleichungen (ΣH = 0, ΣV = 0)."
+    },
+    {
+     "id": "statik-pruefung-training-c016",
+     "type": "basic",
+     "front": "Zweifeldträger, gleiche Stützweiten l, Gleichlast q auf beiden Feldern: Auflagerkräfte?",
+     "back": "A = C = 0,375 · q · l\nB = 1,25 · q · l",
+     "hint": "Kontrolle: 0,375 + 1,25 + 0,375 = 2 → gesamte Last 2 · q · l"
+    },
+    {
+     "id": "statik-pruefung-training-c017",
+     "type": "basic",
+     "front": "Zweifeldträger, Gleichlast q nur in Feld 2: Auflagerkräfte?",
+     "back": "A = −0,063 · q · l (abhebend)\nB = 0,625 · q · l\nC = 0,438 · q · l"
+    },
+    {
+     "id": "statik-pruefung-training-c018",
+     "type": "basic",
+     "front": "Zweifeldträger, Einzellast F in der Mitte von Feld 1: Auflagerkräfte?",
+     "back": "A = 0,406 · F\nB = 0,688 · F\nC = −0,094 · F (abhebend)"
+    },
+    {
+     "id": "statik-pruefung-training-c019",
+     "type": "basic",
+     "front": "Warum rechnet man den Zweifeldträger mit Tabellenbeiwerten?",
+     "back": "Er ist 1-fach statisch unbestimmt (n = 4 − 3 = 1), die 3 Gleichgewichtsbedingungen reichen nicht. Darum: jeden Lastfall mit den Beiwerten aus dem Tabellenbuch rechnen und je Lager addieren (Superposition)."
+    },
+    {
+     "id": "statik-pruefung-training-c020",
+     "type": "basic",
+     "front": "Schwerpunkt eines zusammengesetzten Querschnitts: Formel?",
+     "back": "y_s = Σ(A_i · y_i) / ΣA_i\nz_s = Σ(A_i · z_i) / ΣA_i\nTeilflächen ohne Überlappung (Aussparungen als negative Fläche), Abstände von einer festen Bezugsachse"
+    },
+    {
+     "id": "statik-pruefung-training-c021",
+     "type": "basic",
+     "front": "Zentrales Kraftsystem zeichnerisch lösen (Krafteck): Schritte?",
+     "back": "1. Kräftemaßstab wählen (z. B. 1 cm ≙ 20 N)\n2. Bekannte Kraft maßstäblich antragen\n3. Durch Anfang und Ende Parallelen zu den Wirkungslinien der Unbekannten\n4. Schnittpunkt schließt das Krafteck, Pfeile in einem Umlaufsinn\n5. Längen messen · Maßstab = Kräfte"
+    },
+    {
+     "id": "statik-pruefung-training-c022",
+     "type": "basic",
+     "front": "Wo legt man den Momentenbezugspunkt bei der Auflagerberechnung sinnvoll hin?",
+     "back": "In ein Lager bzw. den Schnittpunkt unbekannter Kräfte. Dann bleibt nur eine Unbekannte in der Gleichung (z. B. ΣM_B = 0 → A_V direkt)."
+    },
+    {
+     "id": "statik-pruefung-training-c023",
+     "type": "basic",
+     "front": "Wie macht man die Probe nach der Auflagerberechnung?",
+     "back": "Mit einer nicht benutzten Gleichgewichtsbedingung, meist ΣV = 0: alle Lasten minus alle berechneten Auflagerkräfte muss 0 ergeben."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-pruefung-training-q001",
+     "type": "numeric",
+     "question": "Stegreifaufgabe Pos. 01 – Laterne: Eine Laterne (F_G = 150 N) hängt an zwei Seilen. Seil 1 läuft nach links oben unter 65° zur Senkrechten, Seil 2 nach rechts oben unter 70° zur Senkrechten. Wie groß ist die Seilkraft S1?",
+     "answer": 0.199,
+     "unit": "kN",
+     "tolerance": 0.03,
+     "explanation": "Rechnerisch (zentrales Kraftsystem):\nΣH = 0: S1 · sin 65° = S2 · sin 70°\nΣV = 0: S1 · cos 65° + S2 · cos 70° = 150 N\nAufgelöst: S1 = F_G · sin 70° / sin(65° + 70°) = 150 · 0,9397 / 0,7071 = 199,3 N ≈ **0,20 kN**\nZeichnerisch (Musterlösung, 1 cm ≙ 20 N): F_G = 7,5 cm, S1 gemessen 10 cm → 200 N = 0,20 kN"
+    },
+    {
+     "id": "statik-pruefung-training-q002",
+     "type": "numeric",
+     "question": "Stegreifaufgabe Pos. 01 – Laterne: F_G = 150 N, Seil 1 unter 65° zur Senkrechten (links oben), Seil 2 unter 70° zur Senkrechten (rechts oben). Wie groß ist die Seilkraft S2?",
+     "answer": 0.192,
+     "unit": "kN",
+     "tolerance": 0.03,
+     "explanation": "S2 = F_G · sin 65° / sin(65° + 70°) = 150 · 0,9063 / 0,7071 = 192,3 N ≈ **0,19 kN**\nProbe ΣH: 199,3 · sin 65° = 180,7 N; 192,3 · sin 70° = 180,7 N ✓\nMusterlösung zeichnerisch: 9,5 cm · 20 N/cm = 190 N = 0,19 kN (Zeichengenauigkeit)."
+    },
+    {
+     "id": "statik-pruefung-training-q003",
+     "type": "numeric",
+     "question": "Variante: Ein Schild (F_G = 400 N) hängt an zwei Seilen. Seil 1 läuft nach links oben unter 50° zur Senkrechten, Seil 2 nach rechts oben unter 60° zur Senkrechten. Wie groß ist S1?",
+     "answer": 0.369,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣH = 0: S1 · sin 50° = S2 · sin 60°\nΣV = 0: S1 · cos 50° + S2 · cos 60° = 400 N\nS1 = 400 · sin 60° / sin(50° + 60°) = 400 · 0,8660 / 0,9397 = 368,6 N = **0,369 kN**"
+    },
+    {
+     "id": "statik-pruefung-training-q004",
+     "type": "numeric",
+     "question": "Variante: Schild F_G = 400 N, Seil 1 unter 50° zur Senkrechten (links oben), Seil 2 unter 60° zur Senkrechten (rechts oben). Wie groß ist S2?",
+     "answer": 0.326,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "S2 = 400 · sin 50° / sin 110° = 400 · 0,7660 / 0,9397 = 326,1 N = **0,326 kN**\nProbe ΣH: 368,6 · sin 50° = 282,4 N und 326,1 · sin 60° = 282,4 N ✓\nProbe ΣV: 368,6 · cos 50° + 326,1 · cos 60° = 236,9 + 163,0 = 400 N ✓"
+    },
+    {
+     "id": "statik-pruefung-training-q005",
+     "type": "numeric",
+     "question": "Variante: Eine Leuchte (F_G = 500 N) hängt symmetrisch an zwei Seilen, die jeweils unter 75° zur Senkrechten nach links und rechts oben laufen. Wie groß ist die Kraft in einem Seil?",
+     "answer": 966,
+     "unit": "N",
+     "tolerance": 0.02,
+     "explanation": "Symmetrie → S1 = S2 = S\nΣV = 0: 2 · S · cos 75° = 500 N\nS = 500 / (2 · 0,2588) = **966 N**\nMerke: Je flacher die Seile, desto größer die Seilkräfte – hier fast das Doppelte der Last."
+    },
+    {
+     "id": "statik-pruefung-training-q006",
+     "type": "numeric",
+     "question": "Krafteck mit Kräftemaßstab 1 cm ≙ 20 N: Wie lang zeichnest du die Gewichtskraft F_G = 150 N?",
+     "answer": 7.5,
+     "unit": "cm",
+     "tolerance": 0.02,
+     "explanation": "Länge = Kraft / Maßstab = 150 N / (20 N/cm) = **7,5 cm**\nUmgekehrt: gemessene Länge · 20 N/cm = Kraft (z. B. 10 cm → 200 N = 0,20 kN)."
+    },
+    {
+     "id": "statik-pruefung-training-q007",
+     "type": "mc",
+     "question": "Zwei Seile tragen eine Last. Was passiert mit den Seilkräften, wenn die Seile flacher (größerer Winkel zur Senkrechten) gespannt werden?",
+     "options": [
+      "Sie werden kleiner",
+      "Sie bleiben gleich, da die Last gleich bleibt",
+      "Sie werden größer",
+      "Sie werden zu null"
+     ],
+     "answer": 2,
+     "explanation": "Nur der senkrechte Anteil S · cos β trägt die Last. Wird β größer, sinkt cos β, also muss S steigen (symmetrisch: S = F_G / (2 · cos β)). Bei β → 90° würden die Seilkräfte unendlich groß."
+    },
+    {
+     "id": "statik-pruefung-training-q008",
+     "type": "mc",
+     "question": "Stegreifaufgabe Pos. EG 01: Einfeldträger mit Festlager A und Loslager B auf einer um 25° geneigten Gleitebene, keine Gelenke. Grad der statischen Bestimmtheit?",
+     "options": [
+      "n = 4 − 3 − 0 = 1 → 1-fach statisch unbestimmt",
+      "n = 3 − 3 − 0 = 0 → statisch bestimmt",
+      "n = 2 − 3 − 0 = −1 → verschieblich",
+      "n = 3 − 3 − 1 = −1 → verschieblich"
+     ],
+     "answer": 1,
+     "explanation": "Festlager A (2) + Loslager B (1) → n_A = 3; keine Gelenke → n_U = 0.\nn = n_A − 3 − n_U = 3 − 3 − 0 = 0 → statisch bestimmt. Die Neigung des Loslagers ändert seine Wertigkeit nicht."
+    },
+    {
+     "id": "statik-pruefung-training-q009",
+     "type": "numeric",
+     "question": "Stegreifaufgabe Pos. EG 01: Einfeldträger l = 10,00 m. Trapezlast von x = 3,50 m (a1 = 3 kN/m) bis x = 6,50 m (a2 = 9 kN/m). In welchem Abstand von Auflager A greift die Resultierende des Dreiecksanteils an?",
+     "answer": 5.5,
+     "unit": "m",
+     "tolerance": 0.02,
+     "explanation": "Zerlegung der Trapezlast:\n- Rechteck: R2 = 3 kN/m · 3,00 m = 9 kN bei 3,50 + 1,50 = 5,00 m\n- Dreieck: R3 = ½ · (9 − 3) kN/m · 3,00 m = 9 kN\nDreiecksschwerpunkt bei 2/3 der Länge vom kleinen Lastende: 3,50 + 2/3 · 3,00 = **5,50 m** von A (4,50 m von B)."
+    },
+    {
+     "id": "statik-pruefung-training-q010",
+     "type": "numeric",
+     "question": "Stegreifaufgabe Pos. EG 01: Einfeldträger l = 10,00 m, Festlager A links, Loslager B rechts. Lasten: c1 = 5 kN/m auf ganzer Länge; Trapezlast von x = 3,50 m (3 kN/m) bis x = 6,50 m (9 kN/m); Einzellast b2 = 11 kN bei x = 8,50 m, schräg nach links unten unter 35° zur Horizontalen. Berechne A_V.",
+     "answer": 34.5,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Resultierende:\n- R1 = 5 · 10 = 50 kN bei 5,00 m\n- R2 = 3 · 3 = 9 kN bei 5,00 m\n- R3 = ½ · 6 · 3 = 9 kN bei 5,50 m\n- F_V = 11 · sin 35° = 6,31 kN bei 8,50 m; F_H = 11 · cos 35° = 9,01 kN\nΣM_B = 0:\n−A_V · 10 + 50 · 5 + 9 · 5 + 9 · 4,5 + 6,31 · 1,5 = 0\nA_V = (250 + 45 + 40,5 + 9,47) / 10 = **34,50 kN**"
+    },
+    {
+     "id": "statik-pruefung-training-q011",
+     "type": "numeric",
+     "question": "Stegreifaufgabe Pos. EG 01 (Lasten wie zuvor: c1 = 5 kN/m auf 10 m, Trapezlast 3 → 9 kN/m von 3,50 bis 6,50 m, b2 = 11 kN unter 35° bei 8,50 m). Das Loslager B liegt auf einer um 25° geneigten Gleitebene. Wie groß ist die resultierende Lagerkraft B?",
+     "answer": 43.93,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B steht rechtwinklig zur Gleitebene → B_V = B · cos 25°\nΣM_A = 0:\nB · cos 25° · 10 = 50 · 5 + 9 · 5 + 9 · 5,5 + 6,31 · 8,5 = 398,1 kNm\nB_V = B · cos 25° = 39,81 kN\nB = 39,81 / 0,9063 = **43,93 kN**\nProbe ΣV: 34,50 + 39,81 = 74,31 kN = 50 + 9 + 9 + 6,31 ✓"
+    },
+    {
+     "id": "statik-pruefung-training-q012",
+     "type": "numeric",
+     "question": "Stegreifaufgabe Pos. EG 01: B = 43,93 kN (um 25° gegen die Senkrechte geneigt, Horizontalanteil nach links). Die Schräglast b2 = 11 kN wirkt unter 35° zur Horizontalen nach links unten. Wie groß ist A_H?",
+     "answer": 27.58,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B_H = B · sin 25° = 43,93 · 0,4226 = 18,57 kN (nach links)\nF_H = 11 · cos 35° = 9,01 kN (nach links)\nΣH = 0: A_H − F_H − B_H = 0\nA_H = 9,01 + 18,57 = **27,58 kN** (nach rechts)"
+    },
+    {
+     "id": "statik-pruefung-training-q013",
+     "type": "numeric",
+     "question": "Variante: Einfeldträger l = 8,00 m, Festlager A links, Loslager B rechts. Lasten: Gleichlast 4 kN/m auf ganzer Länge; Trapezlast von x = 2,00 m (2 kN/m) bis x = 5,00 m (8 kN/m); Einzellast F = 15 kN bei x = 6,50 m, unter 45° zur Horizontalen nach links unten. Berechne A_V.",
+     "answer": 25.86,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Resultierende:\n- R1 = 4 · 8 = 32 kN bei 4,00 m\n- R2 = 2 · 3 = 6 kN bei 2,00 + 1,50 = 3,50 m\n- R3 = ½ · (8 − 2) · 3 = 9 kN bei 2,00 + 2/3 · 3 = 4,00 m\n- F_V = 15 · sin 45° = 10,61 kN bei 6,50 m\nΣM_B = 0:\nA_V · 8 = 32 · 4 + 6 · 4,5 + 9 · 4 + 10,61 · 1,5\nA_V = (128 + 27 + 36 + 15,91) / 8 = **25,86 kN**"
+    },
+    {
+     "id": "statik-pruefung-training-q014",
+     "type": "numeric",
+     "question": "Variante (l = 8,00 m, Lasten: 4 kN/m auf ganzer Länge, Trapezlast 2 → 8 kN/m von 2,00 bis 5,00 m, F = 15 kN unter 45° bei 6,50 m). Loslager B auf einer um 30° geneigten Gleitebene. Wie groß ist die resultierende Lagerkraft B?",
+     "answer": 36.65,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0:\nB_V · 8 = 32 · 4 + 6 · 3,5 + 9 · 4 + 10,61 · 6,5 = 128 + 21 + 36 + 68,94 = 253,94 kNm\nB_V = 31,74 kN\nB = B_V / cos 30° = 31,74 / 0,8660 = **36,65 kN**\nProbe ΣV: 25,86 + 31,74 = 57,60 kN ≈ 32 + 6 + 9 + 10,61 ✓"
+    },
+    {
+     "id": "statik-pruefung-training-q015",
+     "type": "numeric",
+     "question": "Variante: B = 36,65 kN (um 30° gegen die Senkrechte, Horizontalanteil nach links), Schräglast F = 15 kN unter 45° nach links unten. Wie groß ist A_H?",
+     "answer": 28.93,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B_H = B · sin 30° = 36,65 · 0,5 = 18,33 kN (nach links)\nF_H = 15 · cos 45° = 10,61 kN (nach links)\nΣH = 0: A_H − F_H − B_H = 0\nA_H = 10,61 + 18,33 = **28,93 kN** (nach rechts)"
+    },
+    {
+     "id": "statik-pruefung-training-q016",
+     "type": "mc",
+     "question": "Wie ist die Lagerkraft eines Loslagers auf einer geneigten Gleitebene gerichtet?",
+     "options": [
+      "Immer senkrecht nach oben",
+      "Parallel zur Gleitebene",
+      "In Richtung der Resultierenden aller Lasten",
+      "Rechtwinklig zur Gleitebene"
+     ],
+     "answer": 3,
+     "explanation": "Ein Loslager kann nur eine Kraft rechtwinklig zur Gleitebene aufnehmen. Bei Neigung β ist sie um β gegen die Senkrechte gekippt: B_V = B · cos β, B_H = B · sin β."
+    },
+    {
+     "id": "statik-pruefung-training-q017",
+     "type": "mc",
+     "question": "Warum beginnt die Musterlösung der Stegreifaufgabe mit ΣM_B = 0, um A_V zu bestimmen?",
+     "options": [
+      "Weil beide Komponenten der Lagerkraft B durch Punkt B gehen und A_H auf der Trägerachse liegt – nur A_V bleibt unbekannt",
+      "Weil ΣM_B immer das größte Moment liefert",
+      "Weil A_H sonst negativ würde",
+      "Weil die Einzellast näher an B liegt"
+     ],
+     "answer": 0,
+     "explanation": "Kräfte, deren Wirkungslinie durch den Bezugspunkt geht, erzeugen kein Moment. Um B fallen B_V und B_H weg, A_H hat keinen Hebelarm → eine Gleichung, eine Unbekannte."
+    },
+    {
+     "id": "statik-pruefung-training-q018",
+     "type": "mc",
+     "question": "Schulaufgabe Pos. 001: Kragträger links eingespannt (A), am rechten Ende ein Gelenk G, an dem eine Stütze hängt. Die Stütze wird durch ein Loslager B gehalten, das nur eine horizontale Kraft aufnimmt. Grad der statischen Bestimmtheit?",
+     "options": [
+      "n = 4 − 3 − 0 = 1 → 1-fach statisch unbestimmt",
+      "n = 3 − 3 − 1 = −1 → verschieblich",
+      "n = 4 − 3 − 1 = 0 → statisch bestimmt",
+      "n = 5 − 3 − 1 = 1 → 1-fach statisch unbestimmt"
+     ],
+     "answer": 2,
+     "explanation": "Einspannung A: 3 Reaktionen (A_H, A_V, M_A) + Loslager B: 1 → n_A = 4.\nGelenk G: 1 Zusatzbedingung (M_G = 0) → n_U = 1.\nn = 4 − 3 − 1 = 0 → statisch bestimmt."
+    },
+    {
+     "id": "statik-pruefung-training-q019",
+     "type": "mc",
+     "question": "Schulaufgabe Pos. 001 (Kragträger mit angehängter Stütze): Mit welcher Gleichung beginnt man sinnvollerweise?",
+     "options": [
+      "ΣV = 0 am Gesamtsystem",
+      "ΣH = 0 am Gesamtsystem",
+      "ΣM_A = 0 am Gesamtsystem",
+      "ΣM_G = 0 am Teilsystem Stütze"
+     ],
+     "answer": 3,
+     "explanation": "Am Gesamtsystem gibt es 4 Unbekannte (A_H, A_V, M_A, B_H). Am freigeschnittenen Teilsystem Stütze gehen G_H und G_V durch G – mit ΣM_G = 0 bleibt nur B_H unbekannt."
+    },
+    {
+     "id": "statik-pruefung-training-q020",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 001: Am Gelenk G hängt eine 4,00 m lange Stütze. 2,00 m unter G ist sie durch ein Loslager B gehalten, das nur eine horizontale Kraft B_H aufnimmt. Am Stützenfuß wirkt H = 15 kN waagrecht nach rechts. Wie groß ist der Betrag von B_H?",
+     "answer": 30,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Teilsystem Stütze, ΣM_G = 0 (B_H nach rechts angenommen):\nB_H · 2,00 m + 15 kN · 4,00 m = 0\nB_H = −60 / 2,00 = −30,00 kN\nNegativ → B_H wirkt nach links, Betrag **30 kN**."
+    },
+    {
+     "id": "statik-pruefung-training-q021",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 001: Kragträger (A eingespannt), Länge 6,00 m, Gleichlast g = 5 kN/m auf ganzer Länge, am Ende (Gelenk G) Einzellast 26 kN senkrecht. Die angehängte Stütze trägt nur horizontale Kräfte. Wie groß ist A_V?",
+     "answer": 56,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Resultierende Streckenlast: R = 5 kN/m · 6,00 m = 30 kN, Angriff 3,00 m von A.\nGesamtsystem ΣV = 0: A_V − 30 − 26 = 0\nA_V = **56,00 kN** (nach oben)"
+    },
+    {
+     "id": "statik-pruefung-training-q022",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 001: B_H = −30 kN (nach rechts angesetzt, wirkt also nach links), am Stützenfuß wirkt H = 15 kN nach rechts. Weitere Horizontalkräfte gibt es nicht. Wie groß ist A_H?",
+     "answer": 15,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Gesamtsystem ΣH = 0 (rechts positiv):\nA_H + B_H + 15 = 0\nA_H + (−30) + 15 = 0\nA_H = **15,00 kN** (nach rechts)"
+    },
+    {
+     "id": "statik-pruefung-training-q023",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 001: Kragträger (A eingespannt) 6,00 m, g = 5 kN/m, am Ende (Gelenk G) Einzellast 26 kN senkrecht. Am Gelenk hängt eine 4,00 m lange Stütze mit B_H = −30 kN (nach rechts angesetzt) 2,00 m unter G und H = 15 kN nach rechts am Stützenfuß. Wie groß ist das Einspannmoment M_A (Betrag)?",
+     "answer": 246,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0 (gegen den Uhrzeigersinn positiv, M_A im Uhrzeigersinn angesetzt – wie Musterlösung):\n−M_A − 30 · 3 − 26 · 6 + (−30) · 2 + 15 · 4 = 0\nM_A = −90 − 156 − 60 + 60 = −246 kNm\n→ Betrag **246 kNm**, wirkt gegen den Uhrzeigersinn.\nDie Momente aus B_H und H heben sich auf, weil die Stütze momentenfrei an G (auf Höhe von A) hängt."
+    },
+    {
+     "id": "statik-pruefung-training-q024",
+     "type": "mc",
+     "question": "Die Rechnung liefert B_H = −30 kN, angenommen war B_H nach rechts. Was gilt?",
+     "options": [
+      "B_H wirkt mit 30 kN nach links; im Weiteren mit −30 kN einsetzen",
+      "Das System ist instabil",
+      "B_H ist null, da negative Kräfte nicht möglich sind",
+      "Man muss die Skizze ändern und erhält dann ein anderes Ergebnis"
+     ],
+     "answer": 0,
+     "explanation": "Ein negatives Ergebnis heißt nur: Die Kraft wirkt entgegen der angenommenen Richtung. Der Betrag ist richtig. Weiterrechnen mit Vorzeichen, wie in der Musterlösung: A_H + (−30) + 15 = 0."
+    },
+    {
+     "id": "statik-pruefung-training-q025",
+     "type": "numeric",
+     "question": "Variante Gelenksystem: Stütze 4,50 m lang, hängt am Gelenk G. 3,00 m unter G wird sie durch ein Loslager B gehalten, das nur eine horizontale Kraft aufnimmt; am Stützenfuß wirkt H = 12 kN nach rechts. Betrag von B_H?",
+     "answer": 18,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Teilsystem Stütze, ΣM_G = 0:\nB_H · 3,00 + 12 · 4,50 = 0\nB_H = −54 / 3 = −18,00 kN → **18 kN** nach links"
+    },
+    {
+     "id": "statik-pruefung-training-q026",
+     "type": "numeric",
+     "question": "Variante Gelenksystem: Kragträger (A eingespannt) 5,00 m, g = 6 kN/m, am Ende (Gelenk G) F = 20 kN senkrecht. Stütze: B_H = −18 kN (nach rechts angesetzt), H = 12 kN nach rechts am Fuß. Weitere Horizontalkräfte gibt es nicht. Wie groß ist A_H?",
+     "answer": 6,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣH = 0: A_H + B_H + H = 0\nA_H + (−18) + 12 = 0\nA_H = **6,00 kN** (nach rechts)"
+    },
+    {
+     "id": "statik-pruefung-training-q027",
+     "type": "numeric",
+     "question": "Variante Gelenksystem: Kragträger (A eingespannt) 5,00 m, g = 6 kN/m, am Ende Gelenk G mit F = 20 kN senkrecht. Stütze 4,50 m, B_H = −18 kN (nach rechts angesetzt) 3,00 m unter G, H = 12 kN am Fuß nach rechts. Einspannmoment M_A (Betrag)?",
+     "answer": 175,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "R = 6 · 5 = 30 kN bei 2,50 m; A_V = 30 + 20 = 50 kN\nΣM_A = 0 (gegen den Uhrzeigersinn positiv, M_A im Uhrzeigersinn angesetzt):\n−M_A − 30 · 2,5 − 20 · 5 + (−18) · 3 + 12 · 4,5 = 0\nM_A = −75 − 100 − 54 + 54 = −175 kNm\n→ Betrag **175 kNm** (gegen den Uhrzeigersinn)"
+    },
+    {
+     "id": "statik-pruefung-training-q028",
+     "type": "numeric",
+     "question": "Variante Gelenksystem: Kragträger (A eingespannt) 5,50 m, g = 4 kN/m, am Ende Gelenk G mit F = 18 kN senkrecht. Am Gelenk hängt eine 3,60 m lange Stütze, 2,40 m unter G gehalten durch ein Loslager B, das nur eine horizontale Kraft aufnimmt; H = 10 kN am Fuß nach rechts. Einspannmoment M_A (Betrag)?",
+     "answer": 159.5,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "1. Teilsystem Stütze, ΣM_G = 0: B_H · 2,4 + 10 · 3,6 = 0 → B_H = −15 kN\n2. R = 4 · 5,5 = 22 kN bei 2,75 m\n3. ΣM_A = 0: −M_A − 22 · 2,75 − 18 · 5,5 + (−15) · 2,4 + 10 · 3,6 = 0\nM_A = −60,5 − 99 − 36 + 36 = −159,5 kNm → **159,5 kNm**\n(Zusatz: A_V = 40 kN, A_H = 15 − 10 = 5 kN)"
+    },
+    {
+     "id": "statik-pruefung-training-q029",
+     "type": "mc",
+     "question": "Schulaufgabe Pos. 002: Fachwerk mit 7 Stäben, 5 Knoten und 3 Auflagerreaktionen (A_H, B_H, B_V). Ist es statisch bestimmt?",
+     "options": [
+      "Ja: n = s + a − 2k = 7 + 3 − 10 = 0",
+      "Nein: n = s + a − k = 7 + 3 − 5 = 5 → 5-fach unbestimmt",
+      "Nein: n = s − 2k = 7 − 10 = −3 → verschieblich"
+     ],
+     "answer": 0,
+     "explanation": "Fachwerkformel n = s + a − 2 · k: 7 Stäbe + 3 Auflagerreaktionen − 2 · 5 Knoten = 0 → statisch bestimmt (2 Gleichungen je Knoten)."
+    },
+    {
+     "id": "statik-pruefung-training-q030",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 002 Fachwerk: Feldweite 2,00 m, Höhe 1,50 m. Unter welchem Winkel α (gegen die Horizontale) liegen die Diagonalen?",
+     "answer": 36.87,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "tan α = GK / AK = 1,50 / 2,00 = 0,75\nα = arctan 0,75 = **36,87°**\nDaraus: sin α = 0,6; cos α = 0,8; Diagonalenlänge 2,50 m."
+    },
+    {
+     "id": "statik-pruefung-training-q031",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 002 Fachwerk: Knoten oben A (0|1,50), C (2,00|1,50), E (4,00|1,50); unten B (0|0), D (2,00|0). Lager: A nur horizontal, B horizontal + vertikal. F = 10 kN senkrecht nach unten in E. Betrag der Auflagerkraft A_H?",
+     "answer": 26.67,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_B = 0 (A_H nach rechts angesetzt, liegt 1,50 m über B):\nA_H · 1,50 + 10 · 4,00 = 0\nA_H = −40 / 1,5 = −26,67 kN → **26,67 kN** nach links\nΣH = 0: B_H = +26,67 kN; ΣV = 0: B_V = +10,00 kN"
+    },
+    {
+     "id": "statik-pruefung-training-q032",
+     "type": "mc",
+     "question": "Fachwerk der Schulaufgabe: An welchem Knoten startet man das Knotenpunktverfahren ohne vorherige Auflagerberechnung?",
+     "options": [
+      "Knoten C (vier Stäbe)",
+      "Knoten B (drei Stäbe und zwei Lagerkräfte)",
+      "Knoten D (drei Stäbe)",
+      "Knoten E (zwei Stäbe und bekannte Last F)"
+     ],
+     "answer": 3,
+     "explanation": "Pro Knoten gibt es nur 2 Gleichungen (ΣH, ΣV). Knoten E hat nur die Stäbe 1 und 2 als Unbekannte. Knoten A geht ebenfalls, aber erst wenn A_H berechnet ist."
+    },
+    {
+     "id": "statik-pruefung-training-q033",
+     "type": "numeric",
+     "question": "Fachwerk der Schulaufgabe (α = 36,87°, F = 10 kN in E): Knoten E verbindet Stab 1 (waagrecht nach links zu C) und Stab 2 (Diagonale nach links unten zu D). Betrag der Stabkraft S2?",
+     "answer": 16.67,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten E, Stabkräfte als Zug angesetzt:\nΣV = 0: 10 + S2 · sin 36,87° = 0\nS2 = −10 / 0,6 = −16,67 kN\n→ Betrag **16,67 kN**, negativ = Druckstab"
+    },
+    {
+     "id": "statik-pruefung-training-q034",
+     "type": "numeric",
+     "question": "Fachwerk der Schulaufgabe: S2 = −16,67 kN (α = 36,87°). Wie groß ist S1 (Obergurt C–E)?",
+     "answer": 13.33,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten E, ΣH = 0: −S1 − S2 · cos 36,87° = 0\nS1 = −(−16,67) · 0,8 = **13,33 kN** → positiv = Zugstab"
+    },
+    {
+     "id": "statik-pruefung-training-q035",
+     "type": "numeric",
+     "question": "Fachwerk der Schulaufgabe: Knoten A hat Stab 4 (waagrecht zu C), Stab 6 (senkrecht zu B) und die Lagerkraft A_H = −26,67 kN (nach rechts angesetzt). Stabkräfte als Zug angesetzt. Wie groß ist S4?",
+     "answer": 26.67,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten A, ΣH = 0: A_H + S4 = 0\n−26,67 + S4 = 0 → S4 = **26,67 kN** (Zugstab)\nΣV = 0: S6 = 0 → Nullstab"
+    },
+    {
+     "id": "statik-pruefung-training-q036",
+     "type": "numeric",
+     "question": "Fachwerk der Schulaufgabe: Knoten C hat Stab 4 (nach links), Stab 1 (nach rechts), Stab 7 (Diagonale nach links unten) und Stab 3 (nach unten). S4 = 26,67 kN, S1 = 13,33 kN, α = 36,87°. Betrag von S7?",
+     "answer": 16.67,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten C, ΣH = 0: −S4 + S1 − S7 · cos 36,87° = 0\nS7 = (13,33 − 26,67) / 0,8 = −16,67 kN\n→ Betrag **16,67 kN**, Druckstab\nKontrolle ΣV: −S3 − S7 · sin α = −10 + 10 = 0 ✓ (S3 = +10 kN)"
+    },
+    {
+     "id": "statik-pruefung-training-q037",
+     "type": "mc",
+     "question": "Fachwerk der Schulaufgabe: Welcher Stab ist Nullstab und nach welcher Regel?",
+     "options": [
+      "Stab 3 – unbelasteter Knoten mit drei Stäben",
+      "Stab 6 – zweistäbiger Knoten A, die äußere Kraft A_H wirkt in Richtung von Stab 4",
+      "Stab 5 – Untergurtstab ohne Last",
+      "Stab 1 – Endstab eines Kragfachwerks"
+     ],
+     "answer": 1,
+     "explanation": "Knoten A hat nur die Stäbe 4 (waagrecht) und 6 (senkrecht). Die einzige äußere Kraft A_H wirkt waagrecht, also in Richtung von Stab 4 → Stab 6 ist Nullstab (ΣV = 0 → S6 = 0)."
+    },
+    {
+     "id": "statik-pruefung-training-q038",
+     "type": "mc",
+     "question": "Für Stab 2 ergibt sich S2 = −16,67 kN (Stabkräfte als Zug angesetzt). Was bedeutet das?",
+     "options": [
+      "Zugstab",
+      "Nullstab",
+      "Druckstab",
+      "Rechenfehler – Stabkräfte sind immer positiv"
+     ],
+     "answer": 2,
+     "explanation": "Werden alle Stabkräfte als Zug (vom Knoten weg) angesetzt, bedeutet ein negatives Ergebnis Druck. Ergebnistabelle Schulaufgabe: Druck S2, S5, S7; Zug S1, S3, S4; Nullstab S6."
+    },
+    {
+     "id": "statik-pruefung-training-q039",
+     "type": "numeric",
+     "question": "Variante Fachwerk (gleiche Form wie Schulaufgabe): Feldweite 2,50 m, Höhe 2,00 m, F = 15 kN senkrecht nach unten im Endknoten E. An E treffen nur Stab 1 (waagrecht nach links) und Stab 2 (Diagonale nach links unten). Betrag der Diagonalkraft S2?",
+     "answer": 24.01,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "tan α = 2,00 / 2,50 = 0,8 → α = 38,66°; sin α = 0,6247; cos α = 0,7809\nKnoten E, ΣV = 0: 15 + S2 · sin α = 0\nS2 = −15 / 0,6247 = −24,01 kN → **24,01 kN** (Druck)"
+    },
+    {
+     "id": "statik-pruefung-training-q040",
+     "type": "numeric",
+     "question": "Variante Fachwerk: Feldweite 2,50 m, Höhe 2,00 m, F = 15 kN in E, S2 = −24,01 kN (cos α = 0,7809). Wie groß ist S1 (Obergurt C–E)?",
+     "answer": 18.75,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten E, ΣH = 0: −S1 − S2 · cos α = 0\nS1 = 24,01 · 0,7809 = **18,75 kN** (Zug)\nKurzform: S1 = F · a / h = 15 · 2,50 / 2,00 = 18,75 kN"
+    },
+    {
+     "id": "statik-pruefung-training-q041",
+     "type": "numeric",
+     "question": "Variante Fachwerk: Feldweite 2,50 m, Höhe 2,00 m, F = 15 kN senkrecht in E (5,00 m waagrecht von B). Lager wie in der Schulaufgabe: A oben nur horizontal, B 2,00 m senkrecht darunter fest. Knoten A hat nur Stab 4 (waagrecht) und Stab 6 (senkrecht). Wie groß ist S4 (Obergurt A–C)?",
+     "answer": 37.5,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_B = 0: A_H · 2,00 + 15 · 5,00 = 0 → A_H = −37,50 kN (nach links)\nKnoten A, ΣH = 0: A_H + S4 = 0 → S4 = **37,50 kN** (Zug)\nS6 = 0 (Nullstab, gleiche Regel wie im Original)"
+    },
+    {
+     "id": "statik-pruefung-training-q042",
+     "type": "numeric",
+     "question": "Variante Fachwerk: Feldweite 2,50 m, Höhe 2,00 m, S2 = −24,01 kN, cos α = 0,7809. Knoten D verbindet Stab 5 (nach links zu B), Stab 3 (nach oben zu C) und Stab 2 (Diagonale nach rechts oben zu E). Betrag von S5?",
+     "answer": 18.75,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten D, ΣH = 0: −S5 + S2 · cos α = 0\nS5 = −24,01 · 0,7809 = −18,75 kN → **18,75 kN** (Druck)\nΣV = 0: S3 + S2 · sin α = 0 → S3 = +15 kN (Zug)\n(Im Original analog: S5 = −13,33 kN, S3 = +10 kN)"
+    },
+    {
+     "id": "statik-pruefung-training-q043",
+     "type": "mc",
+     "question": "Schulaufgabe Pos. 003: Zweifeldträger mit einem Festlager und zwei Loslagern. Grad der statischen Bestimmtheit?",
+     "options": [
+      "n = 3 − 3 = 0 → statisch bestimmt",
+      "n = 4 − 3 = 1 → 1-fach statisch unbestimmt",
+      "n = 5 − 3 = 2 → 2-fach statisch unbestimmt"
+     ],
+     "answer": 1,
+     "explanation": "Festlager (2) + 2 Loslager (je 1) = 4 Auflagerreaktionen; 4 − 3 = 1 → 1-fach statisch unbestimmt. Deshalb werden Tabellenbeiwerte (Durchlaufträgertabellen) verwendet."
+    },
+    {
+     "id": "statik-pruefung-training-q044",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 003: Zweifeldträger 2 × 3,50 m. g = 8 kN/m auf beiden Feldern, q = 5 kN/m nur in Feld 2, F = 45 kN in Mitte Feld 1. Beiwerte: g überall 0,375 / 1,25 / 0,375 · gl; q nur Feld 2 −0,063 / 0,625 / 0,438 · ql; F Mitte Feld 1 0,406 / 0,688 / −0,094 · F. Berechne A.",
+     "answer": 27.67,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "gl = 8 · 3,5 = 28 kN; ql = 5 · 3,5 = 17,5 kN\nA = 0,375 · 28 − 0,063 · 17,5 + 0,406 · 45\nA = 10,50 − 1,10 + 18,27 = **27,67 kN**\n(Musterlösung: 27,667 kN)"
+    },
+    {
+     "id": "statik-pruefung-training-q045",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 003 (Zweifeldträger 2 × 3,50 m, g = 8 kN/m überall, q = 5 kN/m nur Feld 2, F = 45 kN Mitte Feld 1). Beiwerte für B: g 1,25 · gl; q nur Feld 2 0,625 · ql; F Mitte Feld 1 0,688 · F. Berechne das Mittelauflager B.",
+     "answer": 76.9,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B = 1,25 · gl + 0,625 · ql + 0,688 · F\nB = 1,25 · 28 + 0,625 · 17,5 + 0,688 · 45\nB = 35,00 + 10,94 + 30,96 = **76,90 kN**\n(Musterlösung: 76,898 kN)"
+    },
+    {
+     "id": "statik-pruefung-training-q046",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 003 (Zweifeldträger 2 × 3,50 m, g = 8 kN/m überall, q = 5 kN/m nur Feld 2, F = 45 kN Mitte Feld 1). Beiwerte für C: g 0,375 · gl; q nur Feld 2 0,438 · ql; F Mitte Feld 1 −0,094 · F. Berechne das Endauflager C.",
+     "answer": 13.94,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "C = 0,375 · gl + 0,438 · ql − 0,094 · F\nC = 0,375 · 28 + 0,438 · 17,5 − 0,094 · 45\nC = 10,50 + 7,67 − 4,23 = **13,94 kN**\n(Musterlösung: 13,935 kN)\nProbe ΣV: 27,67 + 76,90 + 13,94 = 118,51 kN ≈ 2 · 28 + 17,5 + 45 = 118,5 kN ✓"
+    },
+    {
+     "id": "statik-pruefung-training-q047",
+     "type": "mc",
+     "question": "Beim Zweifeldträger ergibt sich für die Nutzlast nur in Feld 2 am Lager A ein negativer Beiwert (−0,063). Warum?",
+     "options": [
+      "Rechenfehler im Tabellenbuch",
+      "Weil A ein Festlager ist",
+      "Weil q kleiner ist als g",
+      "Die Last in Feld 2 biegt den durchlaufenden Träger über B, das Ende bei A will abheben – A muss nach unten halten"
+     ],
+     "answer": 3,
+     "explanation": "Der Träger ist über B durchlaufend. Belastung nur in Feld 2 dreht ihn über B wie eine Wippe, Feld 1 hebt sich bei A an → abhebende (negative) Auflagerkraft. Gleiches gilt für C bei F in Feld 1 (−0,094)."
+    },
+    {
+     "id": "statik-pruefung-training-q048",
+     "type": "mc",
+     "question": "Zweifeldträger mit ausschließlich senkrechten Lasten: Wie groß ist die Horizontalkraft A_H am Festlager?",
+     "options": [
+      "A_H = 0",
+      "A_H = A_V",
+      "A_H = 0,375 · g · l",
+      "A_H lässt sich ohne Tabellen nicht ermitteln"
+     ],
+     "answer": 0,
+     "explanation": "ΣH = 0: Ohne horizontale Lasten ist A_H = 0. Die statische Unbestimmtheit betrifft nur die senkrechten Lagerkräfte."
+    },
+    {
+     "id": "statik-pruefung-training-q049",
+     "type": "mc",
+     "question": "Wie ermittelt man am Durchlaufträger die Auflagerkräfte bei mehreren Lastfällen (g, q, F)?",
+     "options": [
+      "Alle Lasten zu einer Gesamtlast addieren und mit einem Beiwert multiplizieren",
+      "Jeden Lastfall mit seinen Tabellenbeiwerten getrennt rechnen und je Lager addieren",
+      "Nur den größten Lastfall rechnen",
+      "Mit ΣM = 0 um jedes Lager, wie beim Einfeldträger"
+     ],
+     "answer": 1,
+     "explanation": "Superposition: Jeder Lastfall hat eigene Beiwerte (Gleichlast überall, Gleichlast in einem Feld, Einzellast in Feldmitte). Ergebnisse je Lager addieren, wie in der Musterlösung: A = A_g + A_q + A_F."
+    },
+    {
+     "id": "statik-pruefung-training-q050",
+     "type": "numeric",
+     "question": "Variante: Zweifeldträger 2 × 4,00 m. g = 6 kN/m auf beiden Feldern, q = 4 kN/m nur in Feld 1, F = 30 kN in Mitte Feld 2. Berechne A. (Beiwerte A / B / C – g überall: 0,375 / 1,25 / 0,375 · gl; q nur Feld 1: 0,438 / 0,625 / −0,063 · ql; F Mitte Feld 2: −0,094 / 0,688 / 0,406 · F)",
+     "answer": 13.19,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "gl = 6 · 4 = 24 kN; ql = 4 · 4 = 16 kN\nA = 0,375 · 24 + 0,438 · 16 − 0,094 · 30\nA = 9,00 + 7,01 − 2,82 = **13,19 kN**\n(Beiwerte gespiegelt, weil Last jetzt in Feld 1 bzw. F in Feld 2)"
+    },
+    {
+     "id": "statik-pruefung-training-q051",
+     "type": "numeric",
+     "question": "Variante: Zweifeldträger 2 × 4,00 m, g = 6 kN/m überall, q = 4 kN/m nur Feld 1, F = 30 kN Mitte Feld 2. Berechne B. (Beiwerte für B: g 1,25 · gl; q nur Feld 1 0,625 · ql; F Mitte Feld 2 0,688 · F)",
+     "answer": 60.64,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "gl = 6 · 4 = 24 kN; ql = 4 · 4 = 16 kN\nB = 1,25 · 24 + 0,625 · 16 + 0,688 · 30\nB = 30,00 + 10,00 + 20,64 = **60,64 kN**"
+    },
+    {
+     "id": "statik-pruefung-training-q052",
+     "type": "numeric",
+     "question": "Variante: Zweifeldträger 2 × 4,00 m, g = 6 kN/m überall, q = 4 kN/m nur Feld 1, F = 30 kN Mitte Feld 2. Berechne C. (Beiwerte für C: g 0,375 · gl; q nur Feld 1 −0,063 · ql; F Mitte Feld 2 0,406 · F)",
+     "answer": 20.17,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "C = 0,375 · 24 − 0,063 · 16 + 0,406 · 30\nC = 9,00 − 1,01 + 12,18 = **20,17 kN**\nProbe ΣV: 13,19 + 60,64 + 20,17 = 94,0 kN = 2 · 24 + 16 + 30 ✓"
+    },
+    {
+     "id": "statik-pruefung-training-q053",
+     "type": "numeric",
+     "question": "Variante: Zweifeldträger 2 × 5,00 m mit Gleichlast 10 kN/m auf beiden Feldern. Wie groß ist das Mittelauflager B?",
+     "answer": 62.5,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B = 1,25 · q · l = 1,25 · 10 · 5 = **62,5 kN**\nA = C = 0,375 · 50 = 18,75 kN\nProbe: 18,75 + 62,5 + 18,75 = 100 kN = 10 · 10 ✓"
+    },
+    {
+     "id": "statik-pruefung-training-q054",
+     "type": "numeric",
+     "question": "Variante: Zweifeldträger 2 × 4,50 m, Gleichlast (g + q) = 10 kN/m auf beiden Feldern, zusätzlich F = 20 kN in Mitte Feld 1. Wie groß ist C? (Beiwerte für C: Gleichlast überall 0,375 · ql; F Mitte Feld 1 −0,094 · F)",
+     "answer": 15,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ql = 10 · 4,5 = 45 kN\nC = 0,375 · 45 − 0,094 · 20 = 16,88 − 1,88 = **15,00 kN**\n(A = 0,375 · 45 + 0,406 · 20 = 25,0 kN; B = 1,25 · 45 + 0,688 · 20 = 70,0 kN; Probe 25 + 70 + 15 = 110 kN ✓)"
+    },
+    {
+     "id": "statik-pruefung-training-q055",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 004: Dünnwandiger Querschnitt, t = 5 mm, Außenmaße: linker Steg 320 mm hoch, Obergurt 320 mm breit, rechte Lippe 205 mm (ab Oberkante nach unten), Unterflansch 205 mm (ab linker Außenkante nach rechts). Gesamtfläche?",
+     "answer": 5175,
+     "unit": "mm²",
+     "tolerance": 0.02,
+     "explanation": "Zerlegung ohne Überlappung:\n- A1 Steg: 5 · 320 = 1600 mm²\n- A2 Obergurt ohne Steg: 315 · 5 = 1575 mm²\n- A3 Lippe ohne Gurt: 5 · 200 = 1000 mm²\n- A4 Unterflansch ohne Steg: 200 · 5 = 1000 mm²\nΣA = **5175 mm²** (= 51,75 cm²)"
+    },
+    {
+     "id": "statik-pruefung-training-q056",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 004 (Steg 320, Obergurt 320, Lippe 205, Unterflansch 205, t = 5 mm, Außenmaße). Abstand des Schwerpunkts von der linken Außenkante?",
+     "answer": 131.87,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "Teilschwerpunkte ab linker Kante: x1 = 2,5; x2 = 5 + 157,5 = 162,5; x3 = 317,5; x4 = 5 + 100 = 105 mm\nΣA · x = 1600 · 2,5 + 1575 · 162,5 + 1000 · 317,5 + 1000 · 105 = 682 437,5 mm³\nx_s = 682 437,5 / 5175 = **131,87 mm**"
+    },
+    {
+     "id": "statik-pruefung-training-q057",
+     "type": "numeric",
+     "question": "Schulaufgabe Pos. 004 (Steg 320, Obergurt 320, Lippe 205, Unterflansch 205, t = 5 mm, Außenmaße). Abstand des Schwerpunkts von der unteren Außenkante?",
+     "answer": 188.13,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "Teilschwerpunkte ab Unterkante: y1 = 160; y2 = 317,5; y3 = 320 − 5 − 100 = 215; y4 = 2,5 mm\nΣA · y = 1600 · 160 + 1575 · 317,5 + 1000 · 215 + 1000 · 2,5 = 973 562,5 mm³\ny_s = 973 562,5 / 5175 = **188,13 mm**\nKontrolle: Der Querschnitt ist symmetrisch zur Diagonalen durch die linke obere Ecke → x_s + y_s = 320 mm ✓"
+    },
+    {
+     "id": "statik-pruefung-training-q058",
+     "type": "mc",
+     "question": "Warum dürfen sich die Teilflächen bei der Schwerpunktberechnung nicht überlappen?",
+     "options": [
+      "Überlappungen mitteln sich heraus und sind daher egal",
+      "Weil sich sonst die Bezugsachse verschiebt",
+      "Weil der Taschenrechner sonst rundet",
+      "Die Überlappungsfläche würde doppelt gezählt – ΣA und ΣA · y wären falsch"
+     ],
+     "answer": 3,
+     "explanation": "Jede Fläche darf nur einmal in ΣA und ΣA · y eingehen. Deshalb z. B. den Obergurt nur mit 315 mm (ohne Steg) ansetzen."
+    },
+    {
+     "id": "statik-pruefung-training-q059",
+     "type": "numeric",
+     "question": "Variante Schwerpunkt: Winkel aus Flachstahl, senkrechter Schenkel 100 mm hoch, waagrechter Schenkel 60 mm breit (Außenmaße), Dicke t = 10 mm, Ecke links unten. Abstand des Schwerpunkts von der linken Außenkante?",
+     "answer": 15,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "A1 senkrecht: 10 · 100 = 1000 mm², x1 = 5 mm\nA2 waagrecht ohne Ecke: 50 · 10 = 500 mm², x2 = 10 + 25 = 35 mm\nx_s = (1000 · 5 + 500 · 35) / 1500 = 22 500 / 1500 = **15,0 mm**"
+    },
+    {
+     "id": "statik-pruefung-training-q060",
+     "type": "numeric",
+     "question": "Variante Schwerpunkt: Winkel 100 mm hoch, 60 mm breit, t = 10 mm, Ecke links unten. Abstand des Schwerpunkts von der Unterkante?",
+     "answer": 35,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "A1 = 1000 mm² mit y1 = 50 mm; A2 = 500 mm² mit y2 = 5 mm\ny_s = (1000 · 50 + 500 · 5) / 1500 = 52 500 / 1500 = **35,0 mm**"
+    },
+    {
+     "id": "statik-pruefung-training-q061",
+     "type": "numeric",
+     "question": "Variante Schwerpunkt: T-Querschnitt, Flansch 200 × 20 mm oben, darunter Steg 20 × 180 mm (Gesamthöhe 200 mm). Abstand des Schwerpunkts von der Unterkante?",
+     "answer": 142.63,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "A1 Flansch = 200 · 20 = 4000 mm², y1 = 180 + 10 = 190 mm\nA2 Steg = 20 · 180 = 3600 mm², y2 = 90 mm\ny_s = (4000 · 190 + 3600 · 90) / 7600 = 1 084 000 / 7600 = **142,63 mm**\nWaagrecht liegt der Schwerpunkt auf der Symmetrieachse (Stegmitte)."
+    },
+    {
+     "id": "statik-pruefung-training-q062",
+     "type": "mc",
+     "question": "Wo liegt der Schwerpunkt eines Querschnitts, der eine Symmetrieachse hat?",
+     "options": [
+      "In der Mitte der größten Teilfläche",
+      "Nur bei Rechtecken auf der Symmetrieachse",
+      "Immer auf der Symmetrieachse",
+      "Immer am Rand des Querschnitts"
+     ],
+     "answer": 2,
+     "explanation": "Bei einer Symmetrieachse heben sich die statischen Momente beider Hälften auf → der Schwerpunkt liegt immer auf ihr. Man muss dann nur noch die andere Koordinate berechnen."
+    },
+    {
+     "id": "statik-pruefung-training-q063",
+     "type": "numeric",
+     "question": "Variante zu Pos. 004: t = 10 mm, Außenmaße: Steg 300 mm hoch, Obergurt 240 mm breit, rechte Lippe 150 mm (ab Oberkante), Unterflansch 120 mm (ab linker Außenkante). Abstand des Schwerpunkts von der linken Außenkante?",
+     "answer": 90.13,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "- A1 Steg: 10 · 300 = 3000 mm², x = 5\n- A2 Obergurt: 230 · 10 = 2300 mm², x = 10 + 115 = 125\n- A3 Lippe: 10 · 140 = 1400 mm², x = 235\n- A4 Unterflansch: 110 · 10 = 1100 mm², x = 10 + 55 = 65\nΣA = 7800 mm²\nx_s = (15 000 + 287 500 + 329 000 + 71 500) / 7800 = 703 000 / 7800 = **90,13 mm**"
+    },
+    {
+     "id": "statik-pruefung-training-q064",
+     "type": "numeric",
+     "question": "Variante zu Pos. 004 (t = 10 mm, Steg 300, Obergurt 240, Lippe 150, Unterflansch 120, Außenmaße). Abstand des Schwerpunkts von der unteren Außenkante?",
+     "answer": 184.87,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "Teilschwerpunkte ab Unterkante: Steg 150; Obergurt 295; Lippe 300 − 10 − 70 = 220; Unterflansch 5 mm\nΣA · y = 3000 · 150 + 2300 · 295 + 1400 · 220 + 1100 · 5 = 1 442 000 mm³\ny_s = 1 442 000 / 7800 = **184,87 mm**"
+    }
+   ]
+  },
+  {
+   "id": "statik-pruefung-allgemein",
+   "title": "Allgemeines zur Statik",
+   "description": "Prüfungsmodalitäten im Fach Baustatik: Gewichtung, Hilfsmittel, Bewertung und Aufbau der Leistungsnachweise.",
+   "sources": [
+    "Allgemeines Zur Statik.pdf",
+    "1. Schulaufgabe_FST 1.pdf",
+    "1. Stegreifaufgabe FST 1 - Gruppe A.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-pruefung-allgemein-c001",
+     "type": "basic",
+     "front": "Wie zählt eine Schulaufgabe in Baustatik bei der Zeugnisnote?",
+     "back": "2-fach. Schulaufgaben werden spätestens eine Woche vorher angekündigt."
+    },
+    {
+     "id": "statik-pruefung-allgemein-c002",
+     "type": "basic",
+     "front": "Wie zählen mündliche Leistungsnachweise (z. B. Kurzarbeiten) in Baustatik?",
+     "back": "1-fach. Sie werden nicht angekündigt."
+    },
+    {
+     "id": "statik-pruefung-allgemein-c003",
+     "type": "basic",
+     "front": "Was kann Inhalt der Leistungsnachweise in Baustatik sein?",
+     "back": "- alle im Hauptskript behandelten Themen\n- die Inhalte der Erklärvideos zum Skript\n- die Übungsaufgaben im SharePoint"
+    },
+    {
+     "id": "statik-pruefung-allgemein-c004",
+     "type": "basic",
+     "front": "Rundungsregel für die Zeugnisnote in Baustatik?",
+     "back": "Bis einschließlich x,50 wird die bessere Note gegeben (z. B. 2,50 → 2)."
+    },
+    {
+     "id": "statik-pruefung-allgemein-c005",
+     "type": "basic",
+     "front": "Welche Materialien gehören in jede Statikstunde?",
+     "back": "Geodreieck, Taschenrechner, Schreibmaterial (z. B. Tablet) und das Tabellenbuch in analoger (gedruckter) Form."
+    },
+    {
+     "id": "statik-pruefung-allgemein-c006",
+     "type": "basic",
+     "front": "Erlaubte Hilfsmittel in der 1. Schulaufgabe bzw. 1. Stegreifaufgabe Statik?",
+     "back": "Schulaufgabe: Taschenrechner, Tabellenbuch (z. B. Schneider Bautabellen) und die Tabelle zur Schwerpunktberechnung.\nStegreifaufgabe: nur Taschenrechner und Tabellenbuch."
+    },
+    {
+     "id": "statik-pruefung-allgemein-c007",
+     "type": "basic",
+     "front": "Was ist Voraussetzung für die volle Punktzahl in Statik-Prüfungen?",
+     "back": "Formeln, Gleichgewichtsbedingungen und ein nachvollziehbarer Rechenweg – das Endergebnis allein reicht nicht."
+    },
+    {
+     "id": "statik-pruefung-allgemein-c008",
+     "type": "basic",
+     "front": "Aufbau der 1. Schulaufgabe Baustatik (FST 1)?",
+     "back": "4 Aufgaben, 135 Minuten, 45 Punkte:\n- Auflagerreaktionen eines Gelenksystems (Kragträger mit Stütze)\n- Fachwerk: Stabkräfte, Nullstäbe, Zug/Druck\n- Durchlaufträger (Zweifeldträger mit Tabellen)\n- Schwerpunkt eines zusammengesetzten Querschnitts"
+    },
+    {
+     "id": "statik-pruefung-allgemein-c009",
+     "type": "basic",
+     "front": "Aufbau der 1. Stegreifaufgabe Lerngebiet 1?",
+     "back": "2 Aufgaben, 45 Minuten, 25 Punkte:\n- Zentrales Kraftsystem zeichnerisch (Laterne an zwei Seilen, Krafteck mit Kräftemaßstab)\n- Einfeldträger: statische Bestimmtheit und Auflagerreaktionen (Trapezlast, Schräglast, geneigtes Loslager)"
+    },
+    {
+     "id": "statik-pruefung-allgemein-c010",
+     "type": "basic",
+     "front": "Ab wie vielen Punkten gab es in der 1. Schulaufgabe bzw. 1. Stegreifaufgabe Statik noch die Note 4?",
+     "back": "Schulaufgabe: ab 23 von 45 Punkten (ca. 51 %).\nStegreifaufgabe: ab 12,5 von 25 Punkten (50 %)."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-pruefung-allgemein-q001",
+     "type": "mc",
+     "question": "Wie zählt eine Schulaufgabe in Baustatik bei der Bildung der Zeugnisnote?",
+     "options": [
+      "1-fach",
+      "2-fach",
+      "3-fach",
+      "Gar nicht, nur mündliche Noten zählen"
+     ],
+     "answer": 1,
+     "explanation": "Schriftliche Leistungsnachweise (Schulaufgaben) zählen 2-fach, mündliche Leistungsnachweise (z. B. Kurzarbeiten) 1-fach."
+    },
+    {
+     "id": "statik-pruefung-allgemein-q002",
+     "type": "mc",
+     "question": "Die Gesamtnote in Baustatik beträgt genau 2,50. Welche Note steht im Zeugnis?",
+     "options": [
+      "3",
+      "2",
+      "2,5",
+      "Das entscheidet die Lehrkraft frei"
+     ],
+     "answer": 1,
+     "explanation": "Bis einschließlich x,50 wird im Zeugnis immer die bessere Note gegeben → 2,50 ergibt die Note 2."
+    },
+    {
+     "id": "statik-pruefung-allgemein-q003",
+     "type": "mc",
+     "question": "Welches Hilfsmittel war in der 1. Schulaufgabe zusätzlich zu Taschenrechner und Tabellenbuch erlaubt?",
+     "options": [
+      "Das Hauptskript",
+      "Eine eigene Formelsammlung",
+      "Die Tabelle zur Schwerpunktberechnung",
+      "Das Smartphone"
+     ],
+     "answer": 2,
+     "explanation": "Laut Deckblatt der 1. Schulaufgabe: 1. Taschenrechner, 2. Tabellenbuch (z. B. Schneider Bautabellen), 3. Tabelle zur Schwerpunktberechnung."
+    },
+    {
+     "id": "statik-pruefung-allgemein-q004",
+     "type": "mc",
+     "question": "Werden mündliche Leistungsnachweise (z. B. Kurzarbeiten) in Baustatik angekündigt?",
+     "options": [
+      "Ja, spätestens eine Woche vorher",
+      "Ja, am Vortag",
+      "Nein, sie werden nicht angekündigt"
+     ],
+     "answer": 2,
+     "explanation": "Mündliche Leistungsnachweise werden nicht angekündigt. Nur Schulaufgaben werden spätestens eine Woche vorher angekündigt."
+    }
+   ]
+  }
+ ]
+}

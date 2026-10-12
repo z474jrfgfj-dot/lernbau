@@ -1,0 +1,1792 @@
+{
+ "unit": "mathe-aufgaben",
+ "subject": "mathe",
+ "decks": [
+  {
+   "id": "mathe-aufgaben-trig-grundlagen",
+   "title": "Trigonometrie-Grundlagen: sin, cos, tan",
+   "description": "Winkelfunktionen im rechtwinkligen Dreieck aufstellen und damit fehlende Seiten und Winkel berechnen.",
+   "sources": [
+    "2_Aufgaben Grundlagen Trigonometrie_zum Ueben_26_27.pdf",
+    "2_LÖSUNGEN.pdf"
+   ],
+   "cards": [
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c001",
+     "type": "basic",
+     "front": "Wie ist sin α im rechtwinkligen Dreieck definiert?",
+     "back": "sin α = Gegenkathete / Hypotenuse (GK / H)",
+     "hint": "Merkhilfe: „GAGA HühnerHof AG“ – sin = G/H, cos = A/H, tan = G/A"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c002",
+     "type": "basic",
+     "front": "Wie ist cos α im rechtwinkligen Dreieck definiert?",
+     "back": "cos α = Ankathete / Hypotenuse (AK / H)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c003",
+     "type": "basic",
+     "front": "Wie ist tan α im rechtwinkligen Dreieck definiert?",
+     "back": "tan α = Gegenkathete / Ankathete (GK / AK)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c004",
+     "type": "basic",
+     "front": "Welche Seite ist im rechtwinkligen Dreieck die Hypotenuse?",
+     "back": "Die längste Seite – sie liegt dem rechten Winkel gegenüber."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c005",
+     "type": "basic",
+     "front": "Was ist die Gegenkathete eines Winkels α?",
+     "back": "Die Kathete, die dem Winkel α gegenüberliegt (sie berührt den Scheitel von α nicht)."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c006",
+     "type": "basic",
+     "front": "Was ist die Ankathete eines Winkels α?",
+     "back": "Die Kathete, die am Winkel α anliegt (ein Schenkel von α, aber nicht die Hypotenuse)."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c007",
+     "type": "basic",
+     "front": "Dreieck PQR, rechter Winkel bei R, Winkel φ bei P. Seite p liegt P gegenüber, q liegt Q gegenüber, r liegt R gegenüber. Wie lauten sin φ, cos φ und tan φ?",
+     "back": "sin φ = p / r\ncos φ = q / r\ntan φ = p / q",
+     "hint": "r ist die Hypotenuse, p die Gegenkathete von φ"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c008",
+     "type": "basic",
+     "front": "Wie hängen sin und cos von Komplementwinkeln zusammen?",
+     "back": "sin α = cos (90° − α) und cos α = sin (90° − α)\nz. B. cos 20° = sin 70°",
+     "hint": "Die Gegenkathete von α ist die Ankathete des anderen spitzen Winkels."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c009",
+     "type": "basic",
+     "front": "Trigonometrischer Pythagoras – welche Beziehung gilt zwischen sin α und cos α?",
+     "back": "sin² α + cos² α = 1\n⇒ cos α = √(1 − sin² α) bzw. sin α = √(1 − cos² α) (für spitze Winkel)",
+     "hint": "Folgt aus a² + b² = c², geteilt durch c²"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c010",
+     "type": "basic",
+     "front": "Wie lässt sich tan α durch sin α und cos α ausdrücken?",
+     "back": "tan α = sin α / cos α"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c011",
+     "type": "basic",
+     "front": "Wie verändert sich sin α, wenn α von 0° bis 90° wächst?",
+     "back": "sin α steigt von 0 auf 1. Daher z. B. sin 20° < sin 70°."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c012",
+     "type": "basic",
+     "front": "Wie verändert sich cos α, wenn α von 0° bis 90° wächst?",
+     "back": "cos α fällt von 1 auf 0. Daher z. B. cos 40° > cos 60°."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c013",
+     "type": "basic",
+     "front": "Werte von sin und cos bei 0° und 90°?",
+     "back": "sin 0° = 0, cos 0° = 1\nsin 90° = 1, cos 90° = 0\n⇒ z. B. cos 0° + cos 90° = 1"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c014",
+     "type": "basic",
+     "front": "Rechtwinkliges Dreieck: Wie erhältst du den zweiten spitzen Winkel β, wenn α bekannt ist?",
+     "back": "β = 90° − α (Winkelsumme 180°, ein Winkel ist 90°)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c015",
+     "type": "basic",
+     "front": "Gegeben: α und die Gegenkathete a. Wie berechnest du die Ankathete b?",
+     "back": "tan α = a / b ⇒ b = a / tan α",
+     "hint": "Durch tan teilen, nicht malnehmen!"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c016",
+     "type": "basic",
+     "front": "Wie bestimmst du einen Winkel aus einem Seitenverhältnis?",
+     "back": "Mit der Umkehrfunktion: z. B. sin β = 8/17 ⇒ β = sin⁻¹(8/17) ≈ 28,07°\n(Taschenrechner: SHIFT + sin)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c017",
+     "type": "basic",
+     "front": "Was ist an der Schreibweise „sin β = 28,07°“ falsch?",
+     "back": "sin β ist ein Verhältnis (reine Zahl), kein Winkel. Richtig: sin β = 0,4706 ⇒ β ≈ 28,07°"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c018",
+     "type": "basic",
+     "front": "Zwei Seiten im rechtwinkligen Dreieck sind bekannt, die dritte ist gesucht. Welcher Satz ist am schnellsten?",
+     "back": "Satz des Pythagoras: c² = a² + b² (c = Hypotenuse), z. B. c = √(5² + 12²) = 13"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-c019",
+     "type": "basic",
+     "front": "Welche Winkeleinstellung muss der Taschenrechner bei diesen Aufgaben haben?",
+     "back": "DEG (Gradmaß) – nicht RAD oder GRAD."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q001",
+     "type": "mc",
+     "question": "Rechtwinkliges Dreieck: Der rechte Winkel liegt zwischen den Seiten a und c, die Hypotenuse ist b. Der Winkel α liegt zwischen b und c. Welche Beziehung stimmt?",
+     "options": [
+      "tan α = a / c",
+      "tan α = c / a",
+      "sin α = c / b",
+      "cos α = a / b"
+     ],
+     "answer": 0,
+     "explanation": "Für α gilt: Gegenkathete = a (liegt α gegenüber), Ankathete = c, Hypotenuse = b.\n- sin α = a / b\n- cos α = c / b\n- tan α = a / c"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q002",
+     "type": "mc",
+     "question": "Rechtwinkliges Dreieck: Der rechte Winkel liegt zwischen d und e, die Hypotenuse ist f. Der Winkel δ liegt zwischen e und f. Was ist cos δ?",
+     "options": [
+      "d / f",
+      "e / d",
+      "e / f",
+      "f / e"
+     ],
+     "answer": 2,
+     "explanation": "Für δ gilt: Ankathete = e, Gegenkathete = d, Hypotenuse = f.\n- sin δ = d / f\n- cos δ = e / f\n- tan δ = d / e"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q003",
+     "type": "mc",
+     "question": "Rechtwinkliges Dreieck: Der rechte Winkel liegt zwischen b und c, die Hypotenuse ist a. Der Winkel γ liegt zwischen a und b. Was ist tan γ?",
+     "options": [
+      "b / c",
+      "c / a",
+      "b / a",
+      "c / b"
+     ],
+     "answer": 3,
+     "explanation": "Für γ gilt: Gegenkathete = c, Ankathete = b, Hypotenuse = a.\n- sin γ = c / a\n- cos γ = b / a\n- tan γ = c / b"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q004",
+     "type": "mc",
+     "question": "Rechtwinkliges Dreieck: Der rechte Winkel liegt zwischen v und w, die Hypotenuse ist u. Der Winkel β liegt zwischen v und u. Was ist sin β?",
+     "options": [
+      "w / u",
+      "v / u",
+      "w / v",
+      "u / w"
+     ],
+     "answer": 0,
+     "explanation": "Für β gilt: Gegenkathete = w (liegt β gegenüber), Ankathete = v, Hypotenuse = u.\n- sin β = w / u\n- cos β = v / u\n- tan β = w / v"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q005",
+     "type": "mc",
+     "question": "Dreieck PQR mit rechtem Winkel bei R; p liegt P gegenüber, q liegt Q gegenüber, r liegt R gegenüber. Der Winkel φ liegt bei P. Welche Aussage stimmt?",
+     "options": [
+      "sin φ = q / r",
+      "cos φ = q / r",
+      "tan φ = q / p",
+      "cos φ = p / r"
+     ],
+     "answer": 1,
+     "explanation": "r ist die Hypotenuse, p die Gegenkathete und q die Ankathete von φ.\n- sin φ = p / r\n- cos φ = q / r\n- tan φ = p / q"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q006",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: α = 34°, a = 2,8 cm. Berechne die Hypotenuse c.",
+     "answer": 5.01,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "a ist die Gegenkathete von α, c die Hypotenuse.\n- sin α = a / c ⇒ c = a / sin α\n- c = 2,8 cm / sin 34° = 2,8 / 0,5592 ≈ 5,01 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q007",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: α = 34°, a = 2,8 cm. Berechne die Kathete b.",
+     "answer": 4.15,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "b ist die Ankathete von α.\n- tan α = a / b ⇒ b = a / tan α\n- b = 2,8 cm / tan 34° = 2,8 / 0,6745 ≈ 4,15 cm\n- Außerdem: β = 90° − 34° = 56°"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q008",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: α = 43°, b = 3,1 cm. Berechne die Hypotenuse c.",
+     "answer": 4.24,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "b ist die Ankathete von α.\n- cos α = b / c ⇒ c = b / cos α\n- c = 3,1 cm / cos 43° = 3,1 / 0,7314 ≈ 4,24 cm\n- (Alternativ mit β = 47°: c = b / sin 47°)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q009",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: α = 43°, b = 3,1 cm. Berechne die Kathete a.",
+     "answer": 2.89,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "a ist die Gegenkathete, b die Ankathete von α.\n- tan α = a / b ⇒ a = b · tan α\n- a = 3,1 cm · tan 43° = 3,1 · 0,9325 ≈ 2,89 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q010",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: β = 67,4°, c = 9,3 cm. Berechne die Kathete b.",
+     "answer": 8.59,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "b ist die Gegenkathete von β, c die Hypotenuse.\n- sin β = b / c ⇒ b = c · sin β\n- b = 9,3 cm · sin 67,4° = 9,3 · 0,9232 ≈ 8,59 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q011",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: β = 67,4°, c = 9,3 cm. Berechne die Kathete a.",
+     "answer": 3.57,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "a ist die Ankathete von β.\n- cos β = a / c ⇒ a = c · cos β\n- a = 9,3 cm · cos 67,4° = 9,3 · 0,3843 ≈ 3,57 cm\n- Außerdem: α = 90° − 67,4° = 22,6°\n- (Mit gerundetem b und tan α erhält man 3,58 cm – Rundungsdifferenz.)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q012",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit dem rechten Winkel bei A (Hypotenuse a = BC; Kathete b = AC liegt β gegenüber, Kathete c = AB liegt γ gegenüber). Gegeben: β = 30°, c = 5 cm. Berechne die Hypotenuse a.",
+     "answer": 5.77,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "c ist die Ankathete von β.\n- cos β = c / a ⇒ a = c / cos β\n- a = 5 cm / cos 30° = 5 / 0,8660 ≈ 5,77 cm\n- (Alternativ: γ = 60°, sin γ = c / a)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q013",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit dem rechten Winkel bei A (Hypotenuse a = BC; Kathete b = AC liegt β gegenüber, Kathete c = AB liegt γ gegenüber). Gegeben: β = 30°, c = 5 cm. Berechne die Kathete b.",
+     "answer": 2.89,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "b ist die Gegenkathete, c die Ankathete von β.\n- tan β = b / c ⇒ b = c · tan β\n- b = 5 cm · tan 30° = 5 · 0,5774 ≈ 2,89 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q014",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit dem rechten Winkel bei A (Hypotenuse a = BC; Kathete b = AC liegt β gegenüber, Kathete c = AB liegt γ gegenüber). Gegeben: b = 8 cm, γ = 65°. Berechne die Hypotenuse a.",
+     "answer": 18.93,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "b = AC liegt am Winkel γ an (Ankathete).\n- cos γ = b / a ⇒ a = b / cos γ\n- a = 8 cm / cos 65° = 8 / 0,4226 ≈ 18,93 cm\n- (Alternativ: β = 25°, sin β = b / a)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q015",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit dem rechten Winkel bei A (Hypotenuse a = BC; Kathete b = AC liegt β gegenüber, Kathete c = AB liegt γ gegenüber). Gegeben: b = 8 cm, γ = 65°. Berechne die Kathete c.",
+     "answer": 17.16,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "c ist die Gegenkathete, b die Ankathete von γ.\n- tan γ = c / b ⇒ c = b · tan γ\n- c = 8 cm · tan 65° = 8 · 2,1445 ≈ 17,16 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q016",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit dem rechten Winkel bei A (Hypotenuse a = BC; Kathete b = AC liegt β gegenüber, Kathete c = AB liegt γ gegenüber). Gegeben: b = 5 cm, c = 12 cm. Berechne den Winkel β.",
+     "answer": 22.62,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "b ist die Gegenkathete, c die Ankathete von β.\n- tan β = b / c = 5 / 12 ≈ 0,4167\n- β = tan⁻¹(0,4167) ≈ 22,62°\n- γ = 90° − β ≈ 67,38°\n- (Auf dem Lösungsblatt steht „2,62°“ – Tippfehler, richtig ist 22,62°.)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q017",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit dem rechten Winkel bei A (Hypotenuse a = BC; Kathete b = AC liegt β gegenüber, Kathete c = AB liegt γ gegenüber). Gegeben: b = 5 cm, c = 12 cm. Berechne die Hypotenuse a.",
+     "answer": 13,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Zwei Katheten gegeben ⇒ Pythagoras:\n- a² = b² + c² = 5² + 12² = 25 + 144 = 169\n- a = √169 = 13 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q018",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit dem rechten Winkel bei A (Hypotenuse a = BC; Kathete b = AC liegt β gegenüber, Kathete c = AB liegt γ gegenüber). Gegeben: a = 17 cm, b = 8 cm. Berechne den Winkel β.",
+     "answer": 28.07,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "b ist die Gegenkathete von β, a die Hypotenuse.\n- sin β = b / a = 8 / 17 ≈ 0,4706\n- β = sin⁻¹(0,4706) ≈ 28,07°\n- γ = 90° − β ≈ 61,93°"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q019",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit dem rechten Winkel bei A (Hypotenuse a = BC; Kathete b = AC liegt β gegenüber, Kathete c = AB liegt γ gegenüber). Gegeben: a = 17 cm, b = 8 cm. Berechne die Kathete c.",
+     "answer": 15,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Hypotenuse und Kathete gegeben ⇒ Pythagoras:\n- c² = a² − b² = 289 − 64 = 225\n- c = √225 = 15 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q020",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit sin α = 0,9. Berechne cos α, ohne α selbst zu bestimmen (4 Nachkommastellen).",
+     "answer": 0.4359,
+     "tolerance": 0.01,
+     "explanation": "- sin² α + cos² α = 1 ⇒ cos α = √(1 − sin² α)\n- cos α = √(1 − 0,9²) = √(1 − 0,81) = √0,19 ≈ 0,4359\n- exakt: √19 / 10"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q021",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit sin α = 0,9. Berechne tan α, ohne α selbst zu bestimmen (4 Nachkommastellen).",
+     "answer": 2.0647,
+     "tolerance": 0.01,
+     "explanation": "- cos α = √(1 − 0,81) = √0,19 ≈ 0,4359\n- tan α = sin α / cos α = 0,9 / 0,4359 ≈ 2,0647\n- exakt: 9·√19 / 19"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q022",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit cos α = 5/8. Berechne sin α, ohne α selbst zu bestimmen (4 Nachkommastellen).",
+     "answer": 0.7806,
+     "tolerance": 0.01,
+     "explanation": "- sin α = √(1 − cos² α) = √(1 − (5/8)²) = √(1 − 25/64) = √(39/64) = √39 / 8\n- sin α ≈ 0,7806"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q023",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit cos α = 5/8. Berechne tan α, ohne α selbst zu bestimmen (4 Nachkommastellen).",
+     "answer": 1.249,
+     "tolerance": 0.01,
+     "explanation": "- sin α = √39 / 8\n- tan α = sin α / cos α = (√39 / 8) : (5 / 8) = √39 / 5 ≈ 1,2490"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q024",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit cos α = √3 / 5. Berechne sin α, ohne α selbst zu bestimmen (4 Nachkommastellen).",
+     "answer": 0.9381,
+     "tolerance": 0.01,
+     "explanation": "- sin α = √(1 − cos² α) = √(1 − 3/25) = √(22/25) = √22 / 5\n- sin α ≈ 0,9381"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q025",
+     "type": "numeric",
+     "question": "α ist ein spitzer Winkel mit cos α = √3 / 5. Berechne tan α, ohne α selbst zu bestimmen (4 Nachkommastellen).",
+     "answer": 2.708,
+     "tolerance": 0.01,
+     "explanation": "- sin α = √22 / 5\n- tan α = (√22 / 5) : (√3 / 5) = √22 / √3 = √66 / 3 ≈ 2,7080"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q026",
+     "type": "input",
+     "question": "Ergänze ohne Taschenrechner: cos 20° = sin ___° (nur die Zahl eingeben)",
+     "answer": "70",
+     "accept": [
+      "70°"
+     ],
+     "explanation": "cos α = sin (90° − α) ⇒ cos 20° = sin (90° − 20°) = sin 70°"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q027",
+     "type": "input",
+     "question": "Ergänze ohne Taschenrechner: sin 75° = cos ___° (nur die Zahl eingeben)",
+     "answer": "15",
+     "accept": [
+      "15°"
+     ],
+     "explanation": "sin α = cos (90° − α) ⇒ sin 75° = cos (90° − 75°) = cos 15°"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q028",
+     "type": "input",
+     "question": "Ergänze ohne Taschenrechner: cos 80° = sin ___° (nur die Zahl eingeben)",
+     "answer": "10",
+     "accept": [
+      "10°"
+     ],
+     "explanation": "cos 80° = sin (90° − 80°) = sin 10°"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q029",
+     "type": "mc",
+     "question": "Welches Zeichen gehört in die Lücke? cos 40° ☐ cos 60°",
+     "options": [
+      "<",
+      "=",
+      ">"
+     ],
+     "answer": 2,
+     "explanation": "Zwischen 0° und 90° fällt der Kosinus von 1 auf 0. Der größere Winkel hat den kleineren Kosinuswert ⇒ cos 40° > cos 60° (0,766 > 0,5)."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q030",
+     "type": "mc",
+     "question": "Welches Zeichen gehört in die Lücke? sin 20° ☐ sin 70°",
+     "options": [
+      "<",
+      ">",
+      "="
+     ],
+     "answer": 0,
+     "explanation": "Zwischen 0° und 90° steigt der Sinus von 0 auf 1 ⇒ sin 20° < sin 70° (0,342 < 0,940)."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q031",
+     "type": "mc",
+     "question": "Welches Zeichen gehört in die Lücke? sin 35° ☐ cos 55°",
+     "options": [
+      ">",
+      "<",
+      "="
+     ],
+     "answer": 2,
+     "explanation": "35° und 55° ergänzen sich zu 90° ⇒ sin 35° = cos (90° − 35°) = cos 55°."
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q032",
+     "type": "input",
+     "question": "Berechne ohne Taschenrechner: cos 0° + cos 90° = ?",
+     "answer": "1",
+     "accept": [
+      "1,0",
+      "1.0"
+     ],
+     "explanation": "cos 0° = 1 und cos 90° = 0 ⇒ 1 + 0 = 1"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q033",
+     "type": "numeric",
+     "question": "Ein senkrecht stehender Baum wirft auf waagerechtem Boden einen 23 m langen Schatten. Die Sonnenstrahlen treffen unter einem Winkel von 46° auf den Boden. Wie hoch ist der Baum?",
+     "answer": 23.82,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Rechtwinkliges Dreieck aus Baum (Gegenkathete), Schatten (Ankathete, 23 m) und Sonnenstrahl (Hypotenuse).\n- tan 46° = Baumhöhe / 23 m\n- Baumhöhe = 23 m · tan 46° = 23 · 1,0355 ≈ 23,82 m\n- (Auf dem Lösungsblatt steht tan 48° – Tippfehler, das Ergebnis 23,82 m gilt für 46°.)"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q034",
+     "type": "numeric",
+     "question": "Eine 8 m lange Zugbrücke liegt waagerecht und steht senkrecht zur Burgmauer. Eine Kette führt von der Mauer zum äußeren Ende der Brücke und schließt mit der Mauer einen Winkel von 43° ein. Wie lang muss die Kette sein?",
+     "answer": 11.73,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Rechtwinkliges Dreieck: Mauer und Brücke stehen senkrecht aufeinander, die Kette ist die Hypotenuse.\n- Die Brücke (8 m) liegt dem 43°-Winkel gegenüber ⇒ Gegenkathete.\n- sin 43° = 8 m / Kette ⇒ Kette = 8 m / sin 43°\n- Kette = 8 / 0,6820 ≈ 11,73 m"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q035",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: β = 52°, b = 6,4 cm. Berechne die Hypotenuse c.",
+     "answer": 8.12,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "b ist die Gegenkathete von β.\n- sin β = b / c ⇒ c = b / sin β\n- c = 6,4 cm / sin 52° = 6,4 / 0,7880 ≈ 8,12 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q036",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: β = 52°, b = 6,4 cm. Berechne die Kathete a.",
+     "answer": 5.0,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "a ist die Ankathete von β.\n- tan β = b / a ⇒ a = b / tan β\n- a = 6,4 cm / tan 52° = 6,4 / 1,2799 ≈ 5,00 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q037",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: a = 7,5 cm, b = 4,0 cm. Berechne den Winkel α.",
+     "answer": 61.93,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "a ist die Gegenkathete, b die Ankathete von α.\n- tan α = a / b = 7,5 / 4,0 = 1,875\n- α = tan⁻¹(1,875) ≈ 61,93°\n- β = 90° − α ≈ 28,07°"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q038",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: a = 7,5 cm, b = 4,0 cm. Berechne die Hypotenuse c.",
+     "answer": 8.5,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Pythagoras: c = √(a² + b²) = √(56,25 + 16) = √72,25 = 8,5 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q039",
+     "type": "numeric",
+     "question": "Rechtwinkliges Dreieck ABC mit γ = 90° (Hypotenuse c; Kathete a liegt α gegenüber, Kathete b liegt β gegenüber). Gegeben: a = 5,4 cm, b = 8,6 cm. Berechne den Winkel α.",
+     "answer": 32.12,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- tan α = a / b = 5,4 / 8,6 ≈ 0,6279\n- α = tan⁻¹(0,6279) ≈ 32,12°\n- β = 90° − α ≈ 57,88°\n- c = √(5,4² + 8,6²) ≈ 10,15 cm"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q040",
+     "type": "numeric",
+     "question": "Eine 6,00 m lange Leiter lehnt an einer senkrechten Wand und bildet mit dem waagerechten Boden einen Winkel von 70°. In welcher Höhe berührt die Leiter die Wand?",
+     "answer": 5.64,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Leiter = Hypotenuse, Höhe = Gegenkathete des 70°-Winkels.\n- sin 70° = h / 6,00 m ⇒ h = 6,00 · sin 70°\n- h = 6,00 · 0,9397 ≈ 5,64 m"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q041",
+     "type": "numeric",
+     "question": "Eine 6,00 m lange Leiter lehnt an einer senkrechten Wand und bildet mit dem waagerechten Boden einen Winkel von 70°. Wie weit steht der Leiterfuß von der Wand entfernt?",
+     "answer": 2.05,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Abstand = Ankathete des 70°-Winkels.\n- cos 70° = x / 6,00 m ⇒ x = 6,00 · cos 70°\n- x = 6,00 · 0,3420 ≈ 2,05 m"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q042",
+     "type": "numeric",
+     "question": "Symmetrisches Satteldach: Die waagerechte Strecke von der Traufe bis unter den First beträgt 5,20 m, die Dachneigung 35°. Wie lang ist ein Sparren (ohne Überstand)?",
+     "answer": 6.35,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Waagerechte Strecke = Ankathete, Sparren = Hypotenuse.\n- cos 35° = 5,20 m / s ⇒ s = 5,20 / cos 35°\n- s = 5,20 / 0,8192 ≈ 6,35 m"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q043",
+     "type": "numeric",
+     "question": "Symmetrisches Satteldach: Die waagerechte Strecke von der Traufe bis unter den First beträgt 5,20 m, die Dachneigung 35°. Wie hoch liegt der First über der Traufe?",
+     "answer": 3.64,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Firsthöhe = Gegenkathete, waagerechte Strecke = Ankathete.\n- tan 35° = h / 5,20 m ⇒ h = 5,20 · tan 35°\n- h = 5,20 · 0,7002 ≈ 3,64 m"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q044",
+     "type": "numeric",
+     "question": "Ein senkrechter Baukran-Mast wirft auf waagerechtem Gelände einen 15 m langen Schatten, die Sonnenstrahlen treffen unter 38° auf den Boden. Wie hoch ist der Mast?",
+     "answer": 11.72,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- tan 38° = h / 15 m\n- h = 15 · tan 38° = 15 · 0,7813 ≈ 11,72 m"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q045",
+     "type": "numeric",
+     "question": "α ist spitz und sin α = 0,6. Berechne tan α, ohne α zu bestimmen.",
+     "answer": 0.75,
+     "tolerance": 0.01,
+     "explanation": "- cos α = √(1 − 0,6²) = √0,64 = 0,8\n- tan α = sin α / cos α = 0,6 / 0,8 = 0,75"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q046",
+     "type": "numeric",
+     "question": "α ist spitz und cos α = 0,28. Berechne sin α, ohne α zu bestimmen.",
+     "answer": 0.96,
+     "tolerance": 0.01,
+     "explanation": "- sin α = √(1 − 0,28²) = √(1 − 0,0784) = √0,9216 = 0,96"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q047",
+     "type": "numeric",
+     "question": "Eine 6,50 m lange Zugbrücke liegt waagerecht und steht senkrecht zur Mauer. Die Kette von der Mauer zum Brückenende schließt mit der Mauer 38° ein. Wie lang ist die Kette?",
+     "answer": 10.56,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- Brücke = Gegenkathete des 38°-Winkels, Kette = Hypotenuse\n- Kette = 6,50 m / sin 38° = 6,50 / 0,6157 ≈ 10,56 m"
+    },
+    {
+     "id": "mathe-aufgaben-trig-grundlagen-q048",
+     "type": "mc",
+     "question": "Für welchen spitzen Winkel gilt sin α = cos α?",
+     "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+     ],
+     "answer": 1,
+     "explanation": "sin α = cos α ⇔ tan α = 1 ⇔ α = 45°. Dann sind beide Katheten gleich lang (gleichschenklig-rechtwinkliges Dreieck)."
+    }
+   ]
+  },
+  {
+   "id": "mathe-aufgaben-rechtwinklig",
+   "title": "Anwendungsaufgaben am rechtwinkligen Dreieck",
+   "description": "Praxisaufgaben (Giebel, Steigung, Höhenmessung, Kräfte, Pyramide) mit sin, cos und tan lösen.",
+   "sources": [
+    "3_Aufgaben am rechtwinkligen Dreieck.pdf"
+   ],
+   "cards": [
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c001",
+     "type": "basic",
+     "front": "Wie rechnest du eine Steigung in Prozent in einen Neigungswinkel um?",
+     "back": "tan α = p / 100 ⇒ α = tan⁻¹(p / 100)\nz. B. 12,5 % ⇒ α = tan⁻¹(0,125) ≈ 7,13°",
+     "hint": "p % = Höhenunterschied pro 100 m waagerechter Strecke"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c002",
+     "type": "basic",
+     "front": "Wie groß ist der Höhenunterschied bei p % Steigung auf der waagerechten Länge l?",
+     "back": "h = l · p / 100\nz. B. 12,5 % auf 250 m ⇒ h = 31,25 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c003",
+     "type": "basic",
+     "front": "Welchem Winkel entspricht eine Steigung von 100 %?",
+     "back": "45°, denn tan 45° = 1 (Höhe = waagerechte Strecke)."
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c004",
+     "type": "basic",
+     "front": "Was ist ein Höhenwinkel?",
+     "back": "Der Winkel zwischen der Waagerechten und der Sichtlinie nach oben zu einem Punkt."
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c005",
+     "type": "basic",
+     "front": "Höhenmessung mit Höhenwinkel α und Standlinie a: Was darf man nicht vergessen?",
+     "back": "Die Instrumenten- bzw. Augenhöhe addieren: h = a · tan α + Augenhöhe"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c006",
+     "type": "basic",
+     "front": "Wie berechnet man ein Dreieck, das nicht rechtwinklig ist, aber dessen Höhe bekannt ist (z. B. Giebel)?",
+     "back": "Mit der Höhe in zwei rechtwinklige Teildreiecke zerlegen; die Höhe ist in beiden eine Kathete."
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c007",
+     "type": "basic",
+     "front": "Ein Ballon steigt senkrecht von A auf. Beobachter B im waagerechten Abstand s sieht ihn erst unter dem Höhenwinkel α (Punkt C), später unter β (Punkt D). Wie lang ist CD?",
+     "back": "CD = AD − AC = s · tan β − s · tan α"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c008",
+     "type": "basic",
+     "front": "Unzugängliche Strecke x (z. B. Flussbreite) vor einem Objekt der Höhe h, das die bekannte Strecke e hinter x steht; gemessen wird der Höhenwinkel α zur Spitze. Wie berechnet man x?",
+     "back": "Gesamtabstand = h / tan α, dann bekannte Strecke abziehen: x = h / tan α − e"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c009",
+     "type": "basic",
+     "front": "Quadratische Pyramide mit Grundkante a: Wie lang ist die halbe Diagonale der Grundfläche?",
+     "back": "a · √2 / 2 (≈ 0,707 · a)"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c010",
+     "type": "basic",
+     "front": "Quadratische Pyramide (Grundkante a, Seitenkante s): Wie berechnet man die Höhe h?",
+     "back": "h = √(s² − (a·√2/2)²) – Dreieck aus Höhe, halber Diagonale und Seitenkante"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c011",
+     "type": "basic",
+     "front": "Pyramide: Wie berechnet man den Neigungswinkel α der Seitenkante gegen die Grundfläche?",
+     "back": "cos α = (halbe Diagonale) / s bzw. tan α = h / (halbe Diagonale)"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c012",
+     "type": "basic",
+     "front": "Pyramide: Wie berechnet man den Neigungswinkel β der Seitenfläche gegen die Grundfläche?",
+     "back": "tan β = h / (a/2) – Dreieck aus Höhe, halber Grundkante und Höhe der Seitenfläche"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c013",
+     "type": "basic",
+     "front": "Last G hängt an einem schrägen Stab, der mit der Senkrechten den Winkel α bildet; ein waagerechter Stab stützt. Wie groß ist die Kraft F₁ im schrägen Stab?",
+     "back": "F₁ = G / cos α",
+     "hint": "F₁ ist die Hypotenuse im Krafteck – sie muss größer als G sein!"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c014",
+     "type": "basic",
+     "front": "Last G, schräger Stab unter α zur Senkrechten, waagerechter Stab. Wie groß ist die Kraft F₂ im waagerechten Stab?",
+     "back": "F₂ = G · tan α"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-c015",
+     "type": "basic",
+     "front": "Rechteck ABCD, Diagonale AC bildet mit AB den Winkel α. Welchen Winkel bildet das Lot h von B auf die Diagonale mit der Seite BC?",
+     "back": "Ebenfalls α. (Winkel ABF = 90° − α ⇒ Winkel FBC = 90° − (90° − α) = α)"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q001",
+     "type": "numeric",
+     "question": "Giebel eines Altstadthauses: Dreieck ABC mit der Grundlinie AB = 10 m. Die Höhe CD = h = 3,2 m steht senkrecht auf AB (D liegt zwischen A und B). Der Winkel zwischen der Höhe CD und der Dachseite CB beträgt γ₂ = 65,43°. Berechne den Dachneigungswinkel β bei B.",
+     "answer": 24.57,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "Im rechtwinkligen Teildreieck DBC (rechter Winkel bei D):\n- β = 180° − 90° − γ₂ = 90° − 65,43° = 24,57°"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q002",
+     "type": "numeric",
+     "question": "Giebel eines Altstadthauses: Dreieck ABC mit der Grundlinie AB = 10 m. Die Höhe CD = h = 3,2 m steht senkrecht auf AB (D liegt zwischen A und B). Der Winkel zwischen der Höhe CD und der Dachseite CB beträgt γ₂ = 65,43°. Berechne die Strecke DB.",
+     "answer": 7.0,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Im Teildreieck DBC ist DB die Gegenkathete und h die Ankathete von γ₂.\n- tan γ₂ = DB / h ⇒ DB = h · tan γ₂\n- DB = 3,2 m · tan 65,43° = 3,2 · 2,1872 ≈ 7,00 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q003",
+     "type": "numeric",
+     "question": "Giebel eines Altstadthauses: Dreieck ABC mit der Grundlinie AB = 10 m. Die Höhe CD = h = 3,2 m steht senkrecht auf AB (D liegt zwischen A und B). Der Winkel zwischen der Höhe CD und der Dachseite CB beträgt γ₂ = 65,43°. Berechne den Dachneigungswinkel α bei A.",
+     "answer": 46.84,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- DB = 3,2 · tan 65,43° ≈ 7,00 m\n- AD = AB − DB = 10 m − 7,00 m ≈ 3,00 m\n- Im Teildreieck ADC: tan α = h / AD = 3,2 / 3,00 ≈ 1,0663\n- α = tan⁻¹(1,0663) ≈ 46,84°\n- (Wer tan α auf 1,07 rundet, erhält 46,94° – Zwischenwerte nicht zu grob runden.)"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q004",
+     "type": "numeric",
+     "question": "Rechteck ABCD mit AB = a und BC = b. Die Diagonale d = AC bildet mit AB den Winkel α = 44°. Das Lot von B auf die Diagonale hat die Länge h = 2,5 cm. Berechne die Seite a.",
+     "answer": 3.6,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Im rechtwinkligen Dreieck ABF (F = Lotfußpunkt) ist a die Hypotenuse und h die Gegenkathete von α.\n- sin α = h / a ⇒ a = h / sin α\n- a = 2,5 cm / sin 44° = 2,5 / 0,6947 ≈ 3,60 cm"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q005",
+     "type": "numeric",
+     "question": "Rechteck ABCD mit AB = a und BC = b. Die Diagonale d = AC bildet mit AB den Winkel α = 44°. Das Lot von B auf die Diagonale hat die Länge h = 2,5 cm. Berechne die Seite b.",
+     "answer": 3.48,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Im Dreieck FBC ist der Winkel bei B: 90° − (90° − α) = α = 44°. Dort ist h die Ankathete und b die Hypotenuse.\n- cos 44° = h / b ⇒ b = h / cos 44°\n- b = 2,5 / 0,7193 ≈ 3,48 cm"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q006",
+     "type": "numeric",
+     "question": "Rechteck ABCD mit AB = a und BC = b. Die Diagonale d = AC bildet mit AB den Winkel α = 44°. Das Lot von B auf die Diagonale hat die Länge h = 2,5 cm. Berechne die Länge der Diagonale d.",
+     "answer": 5.0,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Im Dreieck ABC ist a die Ankathete von α, d die Hypotenuse.\n- cos α = a / d ⇒ d = a / cos α\n- d = 3,60 / 0,7193 ≈ 5,00 cm\n- Kontrolle Pythagoras: √(3,60² + 3,48²) ≈ 5,00 cm"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q007",
+     "type": "numeric",
+     "question": "Die Steigung einer Autobahn darf in Längsrichtung höchstens 4,3 % betragen. Welchem Neigungswinkel gegen die Horizontale entspricht das?",
+     "answer": 2.46,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "4,3 % bedeutet 4,3 m Höhenunterschied auf 100 m waagerechter Strecke.\n- tan α = 4,3 / 100 = 0,043\n- α = tan⁻¹(0,043) ≈ 2,46°"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q008",
+     "type": "numeric",
+     "question": "Eine Straße steigt geradlinig mit 12,5 % auf einer waagerechten Strecke von 250 m an. Wie groß ist der Neigungswinkel α?",
+     "answer": 7.13,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- tan α = 12,5 / 100 = 0,125\n- α = tan⁻¹(0,125) ≈ 7,13°"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q009",
+     "type": "numeric",
+     "question": "Eine Straße steigt geradlinig mit 12,5 % auf einer waagerechten Strecke von 250 m an. Wie groß ist der Höhenunterschied h?",
+     "answer": 31.25,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- h = waagerechte Strecke · p / 100\n- h = 250 m · 0,125 = 31,25 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q010",
+     "type": "numeric",
+     "question": "Ein Ballon steigt von Punkt A senkrecht auf. Punkt B liegt 100 m waagerecht von A entfernt. Von B aus sieht man den Ballon zuerst (Position C) unter dem Höhenwinkel α = 30°, etwas später (Position D) unter β = 40°. Wie lang ist die Strecke CD?",
+     "answer": 26.17,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Zwei rechtwinklige Dreiecke mit der gemeinsamen Ankathete AB = 100 m.\n- AC = 100 m · tan 30° = 100 · 0,5774 ≈ 57,74 m\n- AD = 100 m · tan 40° = 100 · 0,8391 ≈ 83,91 m\n- CD = AD − AC ≈ 26,17 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q011",
+     "type": "numeric",
+     "question": "Ein Hinweisschild (Gewicht G = 44 N) hängt an einem Knotenpunkt: Ein schräger Stab führt vom oberen Wandpunkt A zum Knoten und schließt mit der senkrechten Wand den Winkel α = 38° ein; ein waagerechter Stab verbindet den Knoten mit dem tiefer liegenden Wandpunkt B. Wie groß ist die Kraft F₁ im schrägen Stab (Zug in A)?",
+     "answer": 55.84,
+     "unit": "N",
+     "tolerance": 0.01,
+     "explanation": "Krafteck: G senkrecht, F₂ waagerecht, F₁ in Stabrichtung – rechtwinkliges Dreieck mit F₁ als Hypotenuse. G ist die Ankathete von α.\n- cos α = G / F₁ ⇒ F₁ = G / cos α\n- F₁ = 44 N / cos 38° = 44 / 0,7880 ≈ 55,84 N\n- Achtung: F₁ = G · cos α ≈ 34,67 N ist falsch umgestellt – die Hypotenuse F₁ muss größer als G sein."
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q012",
+     "type": "numeric",
+     "question": "Ein Hinweisschild (Gewicht G = 44 N) hängt an einem Knotenpunkt: Ein schräger Stab führt vom oberen Wandpunkt A zum Knoten und schließt mit der senkrechten Wand den Winkel α = 38° ein; ein waagerechter Stab verbindet den Knoten mit dem tiefer liegenden Wandpunkt B. Wie groß ist die Kraft F₂ im waagerechten Stab (Druck in B)?",
+     "answer": 34.38,
+     "unit": "N",
+     "tolerance": 0.01,
+     "explanation": "Im Krafteck ist F₂ die Gegenkathete, G die Ankathete von α.\n- tan α = F₂ / G ⇒ F₂ = G · tan α\n- F₂ = 44 N · tan 38° = 44 · 0,7813 ≈ 34,38 N"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q013",
+     "type": "numeric",
+     "question": "Um die Höhe eines Turmes zu bestimmen, wird vom Turmfuß aus auf waagerechtem Gelände eine Standlinie a = 120 m abgesteckt. Am Endpunkt wird der Höhenwinkel zur Turmspitze α = 36,5° gemessen; das Auge des Beobachters befindet sich 1,5 m über dem Boden. Wie hoch ist der Turm?",
+     "answer": 90.3,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- Rechtwinkliges Dreieck in Augenhöhe: tan α = x / 120 m\n- x = 120 m · tan 36,5° = 120 · 0,7400 ≈ 88,80 m\n- Augenhöhe addieren: h = 88,80 m + 1,5 m ≈ 90,30 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q014",
+     "type": "numeric",
+     "question": "Ein Kirchturm (Höhe h = 60,5 m) steht 250 m vom Flussufer entfernt. Vom gegenüberliegenden Ufer aus wird die Turmspitze unter dem Höhenwinkel α = 12,6° angepeilt (Messpunkt auf Höhe des Turmfußes). Wie breit ist der Fluss (x)?",
+     "answer": 20.66,
+     "unit": "m",
+     "tolerance": 0.02,
+     "explanation": "Gesamter waagerechter Abstand Messpunkt–Turm = x + 250 m (Ankathete), h = Gegenkathete.\n- tan α = h / (x + 250 m)\n- x + 250 m = h / tan α = 60,5 / 0,2235 ≈ 270,66 m\n- x = 270,66 m − 250 m ≈ 20,66 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q015",
+     "type": "numeric",
+     "question": "Eine gerade Pyramide hat eine quadratische Grundfläche mit der Kante a = 4 cm und die Seitenkante s = 6 cm. Berechne den Neigungswinkel α einer Seitenkante gegen die Grundfläche.",
+     "answer": 61.87,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "Dreieck aus Seitenkante s (Hypotenuse), halber Diagonale (Ankathete) und Höhe.\n- halbe Diagonale = a · √2 / 2 = 4 · √2 / 2 ≈ 2,83 cm\n- cos α = 2,83 / 6 ≈ 0,4714\n- α = cos⁻¹(0,4714) ≈ 61,87°"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q016",
+     "type": "numeric",
+     "question": "Eine gerade Pyramide hat eine quadratische Grundfläche mit der Kante a = 4 cm und die Seitenkante s = 6 cm. Berechne die Höhe h der Pyramide.",
+     "answer": 5.29,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "- halbe Diagonale = 4 · √2 / 2 ≈ 2,83 cm\n- h = √(s² − (halbe Diagonale)²) = √(36 − 8) = √28 ≈ 5,29 cm\n- (oder h = s · sin α = 6 · sin 61,87°)"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q017",
+     "type": "numeric",
+     "question": "Eine gerade Pyramide hat eine quadratische Grundfläche mit der Kante a = 4 cm und die Seitenkante s = 6 cm. Berechne den Neigungswinkel β einer Seitenfläche gegen die Grundfläche.",
+     "answer": 69.3,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "Dreieck aus Höhe h, halber Grundkante a/2 = 2 cm und Höhe der Seitenfläche.\n- h = √28 ≈ 5,29 cm\n- tan β = h / (a/2) = 5,29 / 2 ≈ 2,6458\n- β = tan⁻¹(2,6458) ≈ 69,30°\n- (In der handschriftlichen Lösung auf dem Arbeitsblatt steht 63,29° – Rechenfehler, richtig ist 69,30°.)"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q018",
+     "type": "numeric",
+     "question": "Giebel: Grundlinie AB = 12 m, Höhe CD = 4,0 m senkrecht auf AB (D zwischen A und B). Der Winkel zwischen der Höhe CD und der Dachseite CB beträgt 60°. Berechne den Neigungswinkel α bei A.",
+     "answer": 38.26,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- DB = h · tan 60° = 4,0 · 1,7321 ≈ 6,93 m\n- AD = 12 m − 6,93 m ≈ 5,07 m\n- tan α = h / AD = 4,0 / 5,07 ≈ 0,7887\n- α ≈ 38,26°\n- (Neigung bei B: 90° − 60° = 30°)"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q019",
+     "type": "numeric",
+     "question": "Eine Zufahrtsrampe überwindet einen Höhenunterschied von 1,20 m auf 15 m waagerechter Länge. Wie groß ist der Neigungswinkel?",
+     "answer": 4.57,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- Steigung = 1,20 / 15 = 0,08 = 8 %\n- tan α = 0,08 ⇒ α = tan⁻¹(0,08) ≈ 4,57°"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q020",
+     "type": "numeric",
+     "question": "Eine barrierefreie Rampe darf höchstens 6 % Steigung haben. Welchem Neigungswinkel entspricht das?",
+     "answer": 3.43,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- tan α = 6 / 100 = 0,06\n- α = tan⁻¹(0,06) ≈ 3,43°"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q021",
+     "type": "numeric",
+     "question": "Eine Rampe mit 6 % Steigung soll 0,48 m Höhenunterschied überwinden. Wie lang ist die geneigte Rampenfläche (schräge Länge)?",
+     "answer": 8.01,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- waagerechte Länge = 0,48 / 0,06 = 8,00 m\n- Neigungswinkel α = tan⁻¹(0,06) ≈ 3,43°\n- schräge Länge = h / sin α = 0,48 / 0,05989 ≈ 8,01 m\n- (oder Pythagoras: √(8,00² + 0,48²) ≈ 8,01 m)"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q022",
+     "type": "numeric",
+     "question": "Ein Ballon steigt von Punkt A senkrecht auf. Ein Beobachter steht 80 m waagerecht von A entfernt. Zuerst sieht er den Ballon unter dem Höhenwinkel 25°, später unter 38°. Wie weit ist der Ballon in dieser Zeit gestiegen?",
+     "answer": 25.2,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- Höhe 1 = 80 · tan 25° ≈ 37,30 m\n- Höhe 2 = 80 · tan 38° ≈ 62,50 m\n- Differenz = 25,20 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q023",
+     "type": "numeric",
+     "question": "Ein Schild (G = 60 N) hängt an einem Knoten, der von einem schrägen Zugstab (Winkel zur senkrechten Wand α = 30°) und einem waagerechten Druckstab gehalten wird. Wie groß ist die Kraft im schrägen Stab?",
+     "answer": 69.28,
+     "unit": "N",
+     "tolerance": 0.01,
+     "explanation": "- cos α = G / F₁ ⇒ F₁ = G / cos α\n- F₁ = 60 N / cos 30° = 60 / 0,8660 ≈ 69,28 N"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q024",
+     "type": "numeric",
+     "question": "Ein Schild (G = 60 N) hängt an einem Knoten, der von einem schrägen Zugstab (Winkel zur senkrechten Wand α = 30°) und einem waagerechten Druckstab gehalten wird. Wie groß ist die Kraft im waagerechten Stab?",
+     "answer": 34.64,
+     "unit": "N",
+     "tolerance": 0.01,
+     "explanation": "- tan α = F₂ / G ⇒ F₂ = G · tan α\n- F₂ = 60 N · tan 30° = 60 · 0,5774 ≈ 34,64 N"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q025",
+     "type": "numeric",
+     "question": "Ein Theodolit (Instrumentenhöhe 1,60 m) steht 85 m waagerecht vom Fuß eines Schornsteins entfernt. Der Höhenwinkel zur Schornsteinspitze beträgt 28,4°. Wie hoch ist der Schornstein?",
+     "answer": 47.56,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- x = 85 m · tan 28,4° = 85 · 0,5407 ≈ 45,96 m\n- Instrumentenhöhe addieren: h = 45,96 + 1,60 ≈ 47,56 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q026",
+     "type": "numeric",
+     "question": "Ein 45 m hoher Wasserturm steht 180 m vom Ufer eines Flusses entfernt. Vom gegenüberliegenden Ufer (auf Höhe des Turmfußes) erscheint die Turmspitze unter dem Höhenwinkel 11,2°. Wie breit ist der Fluss?",
+     "answer": 47.27,
+     "unit": "m",
+     "tolerance": 0.02,
+     "explanation": "- Gesamtabstand = 45 / tan 11,2° = 45 / 0,1980 ≈ 227,27 m\n- Flussbreite = 227,27 − 180 ≈ 47,27 m"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q027",
+     "type": "numeric",
+     "question": "Quadratische Pyramide: Grundkante a = 6 cm, Seitenkante s = 8 cm. Berechne die Höhe h.",
+     "answer": 6.78,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "- halbe Diagonale = 6 · √2 / 2 ≈ 4,24 cm\n- h = √(8² − 4,24²) = √(64 − 18) = √46 ≈ 6,78 cm"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q028",
+     "type": "numeric",
+     "question": "Quadratische Pyramide: Grundkante a = 6 cm, Seitenkante s = 8 cm. Berechne den Neigungswinkel der Seitenfläche gegen die Grundfläche.",
+     "answer": 66.14,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- h = √46 ≈ 6,78 cm\n- tan β = h / (a/2) = 6,78 / 3 ≈ 2,2608\n- β ≈ 66,14°"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q029",
+     "type": "numeric",
+     "question": "Rechteck ABCD: Die Diagonale AC bildet mit AB den Winkel 30°, das Lot von B auf die Diagonale ist 3 cm lang. Wie lang ist die Diagonale?",
+     "answer": 6.93,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "- AB = h / sin 30° = 3 / 0,5 = 6 cm\n- d = AB / cos 30° = 6 / 0,8660 ≈ 6,93 cm"
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q030",
+     "type": "mc",
+     "question": "Ein schräger Zugstab bildet mit der Senkrechten den Winkel α und trägt (zusammen mit einem waagerechten Stab) die Last G. Welche Formel liefert die Stabkraft F₁?",
+     "options": [
+      "F₁ = G · cos α",
+      "F₁ = G / cos α",
+      "F₁ = G · tan α",
+      "F₁ = G / sin α"
+     ],
+     "answer": 1,
+     "explanation": "Im Krafteck ist F₁ die Hypotenuse und G die Ankathete von α: cos α = G / F₁ ⇒ F₁ = G / cos α. G · tan α ist die Kraft im waagerechten Stab."
+    },
+    {
+     "id": "mathe-aufgaben-rechtwinklig-q031",
+     "type": "mc",
+     "question": "Eine Straße hat 100 % Steigung. Wie groß ist der Neigungswinkel?",
+     "options": [
+      "90°",
+      "60°",
+      "45°",
+      "100°"
+     ],
+     "answer": 2,
+     "explanation": "100 % ⇒ tan α = 100/100 = 1 ⇒ α = 45°. (90° wäre senkrecht – unendlich große Steigung.)"
+    }
+   ]
+  },
+  {
+   "id": "mathe-aufgaben-sinus-kosinussatz",
+   "title": "Sinus- und Kosinussatz: Grundaufgaben",
+   "description": "Fehlende Seiten und Winkel in beliebigen Dreiecken mit Sinus- und Kosinussatz berechnen.",
+   "sources": [
+    "4_Aufgaben_Sinus_Kosinussatz_1.pdf",
+    "5_Sinus_Kosinussatz_26_27.pdf"
+   ],
+   "cards": [
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c001",
+     "type": "basic",
+     "front": "Wie lautet der Sinussatz?",
+     "back": "a / sin α = b / sin β = c / sin γ",
+     "hint": "Jede Seite steht mit ihrem Gegenwinkel im Bruch"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c002",
+     "type": "basic",
+     "front": "Wann verwendet man den Sinussatz?",
+     "back": "Wenn zwei Winkel und eine Seite (WSW / SWW) oder zwei Seiten und der Gegenwinkel einer dieser Seiten gegeben sind. Eindeutig ist das nur bei SsW (Winkel liegt der größeren Seite gegenüber); sonst kann es zwei Lösungen geben."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c003",
+     "type": "basic",
+     "front": "Wie lautet der Kosinussatz für die Seite a?",
+     "back": "a² = b² + c² − 2 · b · c · cos α"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c004",
+     "type": "basic",
+     "front": "Merkregel für den Kosinussatz?",
+     "back": "Gesuchte Seite² = Summe der Quadrate der beiden anderen Seiten − 2 · Produkt dieser Seiten · cos (Winkel gegenüber der gesuchten Seite)\nz. B. b² = a² + c² − 2·a·c·cos β"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c005",
+     "type": "basic",
+     "front": "Wann verwendet man den Kosinussatz?",
+     "back": "Wenn zwei Seiten und der eingeschlossene Winkel (SWS) oder alle drei Seiten (SSS) gegeben sind."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c006",
+     "type": "basic",
+     "front": "Kosinussatz nach dem Winkel α umgestellt?",
+     "back": "cos α = (b² + c² − a²) / (2 · b · c)"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c007",
+     "type": "basic",
+     "front": "Was bedeutet ein negativer Kosinuswert bei der Winkelberechnung?",
+     "back": "Der Winkel ist stumpf (zwischen 90° und 180°). cos⁻¹ liefert ihn direkt richtig, z. B. cos α = −0,41 ⇒ α ≈ 114°."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c008",
+     "type": "basic",
+     "front": "Welche Falle gibt es beim Berechnen eines Winkels mit dem Sinussatz?",
+     "back": "sin⁻¹ liefert nur Winkel bis 90°. Es kann zusätzlich die stumpfe Lösung 180° − β geben."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c009",
+     "type": "basic",
+     "front": "SsW: Wann ist die Lösung mit dem Sinussatz eindeutig?",
+     "back": "Wenn der gegebene Winkel der größeren der beiden gegebenen Seiten gegenüberliegt – dann ist der gesuchte Winkel spitz."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c010",
+     "type": "basic",
+     "front": "Welcher Zusammenhang besteht zwischen Seiten und Winkeln im Dreieck?",
+     "back": "Der größten Seite liegt der größte Winkel gegenüber, der kleinsten Seite der kleinste Winkel. (Gute Kontrolle!)"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c011",
+     "type": "basic",
+     "front": "SWS: Nach dem Kosinussatz ist die dritte Seite bekannt. Welchen Winkel berechnest du als nächstes mit dem Sinussatz?",
+     "back": "Den Winkel gegenüber der kleineren der beiden gegebenen Seiten – er ist sicher spitz, sin⁻¹ liefert also das richtige Ergebnis. Den dritten Winkel über die Winkelsumme."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c012",
+     "type": "basic",
+     "front": "Sinussatz richtig nach sin β umgestellt (a, b, α gegeben)?",
+     "back": "sin β = b · sin α / a",
+     "hint": "Typischer Fehler: sin β = a · b / sin α"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c013",
+     "type": "basic",
+     "front": "Was wird aus dem Kosinussatz c² = a² + b² − 2ab · cos γ, wenn γ = 90° ist?",
+     "back": "Der Satz des Pythagoras c² = a² + b², weil cos 90° = 0."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c014",
+     "type": "basic",
+     "front": "Bezeichnung im Dreieck ABC: Welche Seite liegt dem Winkel α gegenüber?",
+     "back": "Die Seite a (= BC). Allgemein: Seite und Gegenwinkel tragen denselben Buchstaben."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-c015",
+     "type": "basic",
+     "front": "Warum lässt sich ein Dreieck aus drei Winkeln allein nicht berechnen?",
+     "back": "Drei Winkel legen nur die Form fest; ähnliche Dreiecke können beliebig groß sein. Mindestens eine Seite ist nötig."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q001",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 6,0 cm, b = 4,5 cm, α = 75°. Berechne den Winkel β.",
+     "answer": 46.42,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "SsW (α liegt der größeren Seite a gegenüber ⇒ eindeutig) ⇒ Sinussatz.\n- sin β / b = sin α / a ⇒ sin β = b · sin α / a\n- sin β = 4,5 · sin 75° / 6,0 = 4,5 · 0,9659 / 6,0 ≈ 0,7244\n- β = sin⁻¹(0,7244) ≈ 46,42°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q002",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 6,0 cm, b = 4,5 cm, α = 75°. Berechne den Winkel γ.",
+     "answer": 58.58,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- β = sin⁻¹(4,5 · sin 75° / 6,0) ≈ 46,42°\n- γ = 180° − α − β = 180° − 75° − 46,42° ≈ 58,58°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q003",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 6,0 cm, b = 4,5 cm, α = 75°. Berechne die Seite c.",
+     "answer": 5.3,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "- β ≈ 46,42°, γ ≈ 58,58°\n- Sinussatz: c / sin γ = a / sin α ⇒ c = a · sin γ / sin α\n- c = 6,0 · sin 58,58° / sin 75° = 6,0 · 0,8533 / 0,9659 ≈ 5,30 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q004",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 8 cm, b = 5 cm, α = 80°. Berechne β.",
+     "answer": 37.99,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "SsW, α liegt der größeren Seite gegenüber ⇒ Sinussatz, eindeutig.\n- sin β = b · sin α / a = 5 · sin 80° / 8 = 5 · 0,9848 / 8 ≈ 0,6155\n- β ≈ 37,99°\n- (weiter: γ ≈ 62,01°, c = 8 · sin γ / sin 80° ≈ 7,17 cm)"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q005",
+     "type": "numeric",
+     "question": "Dreieck ABC: c = 8 cm, γ = 30°, α = 35°. Berechne die Seite a.",
+     "answer": 9.18,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "Zwei Winkel und eine Seite ⇒ Sinussatz.\n- a / sin α = c / sin γ ⇒ a = c · sin α / sin γ\n- a = 8 · sin 35° / sin 30° = 8 · 0,5736 / 0,5 ≈ 9,18 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q006",
+     "type": "numeric",
+     "question": "Dreieck ABC: c = 8 cm, γ = 30°, α = 35°. Berechne die Seite b.",
+     "answer": 14.5,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "- β = 180° − 35° − 30° = 115°\n- b = c · sin β / sin γ = 8 · sin 115° / sin 30° = 8 · 0,9063 / 0,5 ≈ 14,50 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q007",
+     "type": "numeric",
+     "question": "Dreieck ABC: b = 4,9 cm, c = 8,5 cm, α = 62°. Berechne die Seite a.",
+     "answer": 7.56,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "SWS (α liegt zwischen b und c) ⇒ Kosinussatz.\n- a² = b² + c² − 2·b·c·cos α\n- a² = 4,9² + 8,5² − 2 · 4,9 · 8,5 · cos 62° = 24,01 + 72,25 − 83,3 · 0,4695 ≈ 57,15\n- a = √57,15 ≈ 7,56 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q008",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 7,1 cm, c = 11,8 cm, β = 18°. Berechne die Seite b.",
+     "answer": 5.5,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "SWS ⇒ Kosinussatz.\n- b² = a² + c² − 2·a·c·cos β\n- b² = 7,1² + 11,8² − 2 · 7,1 · 11,8 · cos 18° = 50,41 + 139,24 − 167,56 · 0,9511 ≈ 30,29\n- b = √30,29 ≈ 5,50 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q009",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 8,2 cm, b = 4,4 cm, c = 9,7 cm. Berechne α.",
+     "answer": 57.22,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "SSS ⇒ Kosinussatz nach dem Winkel umgestellt.\n- cos α = (b² + c² − a²) / (2·b·c)\n- cos α = (4,4² + 9,7² − 8,2²) / (2 · 4,4 · 9,7) = (19,36 + 94,09 − 67,24) / 85,36 ≈ 0,5414\n- α ≈ 57,22°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q010",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 8,2 cm, b = 4,4 cm, c = 9,7 cm. Berechne β.",
+     "answer": 26.82,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- cos β = (a² + c² − b²) / (2·a·c) = (67,24 + 94,09 − 19,36) / (2 · 8,2 · 9,7) = 141,97 / 159,08 ≈ 0,8924\n- β ≈ 26,82°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q011",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 8,2 cm, b = 4,4 cm, c = 9,7 cm. Berechne γ (den größten Winkel).",
+     "answer": 95.96,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "γ liegt der größten Seite c gegenüber.\n- cos γ = (a² + b² − c²) / (2·a·b) = (67,24 + 19,36 − 94,09) / (2 · 8,2 · 4,4) = −7,49 / 72,16 ≈ −0,1038\n- negativ ⇒ stumpf: γ ≈ 95,96°\n- Kontrolle: 57,22° + 26,82° + 95,96° = 180°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q012",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 10,1 cm, b = 3 cm, c = 8,5 cm. Berechne α.",
+     "answer": 114.02,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- cos α = (b² + c² − a²) / (2·b·c) = (9 + 72,25 − 102,01) / (2 · 3 · 8,5) = −20,76 / 51 ≈ −0,4071\n- negativ ⇒ stumpfer Winkel: α ≈ 114,02°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q013",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 10,1 cm, b = 3 cm, c = 8,5 cm. Berechne β.",
+     "answer": 15.74,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- cos β = (a² + c² − b²) / (2·a·c) = (102,01 + 72,25 − 9) / (2 · 10,1 · 8,5) = 165,26 / 171,7 ≈ 0,9625\n- β ≈ 15,74°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q014",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 10,1 cm, b = 3 cm, c = 8,5 cm. Berechne γ.",
+     "answer": 50.24,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- cos γ = (a² + b² − c²) / (2·a·b) = (102,01 + 9 − 72,25) / (2 · 10,1 · 3) = 38,76 / 60,6 ≈ 0,6396\n- γ ≈ 50,24°\n- Kontrolle: 114,02° + 15,74° + 50,24° = 180°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q015",
+     "type": "numeric",
+     "question": "Dreieck ABC: b = 4 cm, c = 6,4 cm, α = 112°. Berechne a.",
+     "answer": 8.73,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "SWS ⇒ Kosinussatz.\n- a² = b² + c² − 2·b·c·cos α = 16 + 40,96 − 51,2 · cos 112°\n- cos 112° ≈ −0,3746 ⇒ a² = 56,96 + 19,18 ≈ 76,14\n- a ≈ 8,73 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q016",
+     "type": "numeric",
+     "question": "Dreieck ABC: b = 4 cm, c = 6,4 cm, α = 112°. Berechne β.",
+     "answer": 25.15,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- a ≈ 8,73 cm (Kosinussatz)\n- Sinussatz: sin β = b · sin α / a = 4 · sin 112° / 8,73 ≈ 0,4250\n- β ≈ 25,15° (spitz, da α schon stumpf ist)\n- Achtung: sin β = a · b / sin α ist falsch umgestellt!"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q017",
+     "type": "numeric",
+     "question": "Dreieck ABC: b = 4 cm, c = 6,4 cm, α = 112°. Berechne γ.",
+     "answer": 42.85,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- β ≈ 25,15°\n- γ = 180° − 112° − 25,15° ≈ 42,85°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q018",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 2,4 cm, b = 5,3 cm, c = 4,8 cm. Berechne α.",
+     "answer": 26.91,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "SSS ⇒ Kosinussatz.\n- cos α = (b² + c² − a²) / (2·b·c) = (28,09 + 23,04 − 5,76) / 50,88 ≈ 0,8917\n- α ≈ 26,91°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q019",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 2,4 cm, b = 5,3 cm, c = 4,8 cm. Berechne β.",
+     "answer": 88.23,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "b ist die größte Seite ⇒ β ist der größte Winkel, daher mit dem Kosinussatz rechnen.\n- cos β = (a² + c² − b²) / (2·a·c) = (5,76 + 23,04 − 28,09) / 23,04 = 0,71 / 23,04 ≈ 0,0308\n- β ≈ 88,23°\n- (Mit dem Sinussatz und falsch umgestellter Formel kommt man auf falsche Werte wie 28,10°.)"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q020",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 2,4 cm, b = 5,3 cm, c = 4,8 cm. Berechne γ.",
+     "answer": 64.85,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- α ≈ 26,91°, β ≈ 88,23°\n- γ = 180° − α − β ≈ 64,85°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q021",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 8,7 cm, c = 10 cm, β = 59°. Berechne b.",
+     "answer": 9.28,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "SWS ⇒ Kosinussatz.\n- b² = a² + c² − 2·a·c·cos β = 75,69 + 100 − 174 · 0,5150 ≈ 86,07\n- b ≈ 9,28 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q022",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 8,7 cm, c = 10 cm, β = 59°. Berechne α.",
+     "answer": 53.49,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- b ≈ 9,28 cm\n- a ist die kleinste Seite ⇒ α ist spitz ⇒ Sinussatz eindeutig.\n- sin α = a · sin β / b = 8,7 · sin 59° / 9,28 ≈ 0,8038\n- α ≈ 53,49°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q023",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 8,7 cm, c = 10 cm, β = 59°. Berechne γ.",
+     "answer": 67.51,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- α ≈ 53,49°\n- γ = 180° − 59° − 53,49° ≈ 67,51° (größter Winkel gegenüber der größten Seite c = 10 cm ✓)"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q024",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 4,8 cm, b = 8 cm, γ = 109°. Berechne c.",
+     "answer": 10.59,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "SWS ⇒ Kosinussatz.\n- c² = a² + b² − 2·a·b·cos γ = 23,04 + 64 − 76,8 · cos 109°\n- cos 109° ≈ −0,3256 ⇒ c² ≈ 87,04 + 25,00 = 112,04\n- c ≈ 10,59 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q025",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 4,8 cm, b = 8 cm, γ = 109°. Berechne α.",
+     "answer": 25.39,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- c ≈ 10,59 cm\n- sin α = a · sin γ / c = 4,8 · sin 109° / 10,59 ≈ 0,4288\n- α ≈ 25,39°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q026",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 4,8 cm, b = 8 cm, γ = 109°. Berechne β.",
+     "answer": 45.61,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- α ≈ 25,39°\n- β = 180° − 109° − 25,39° ≈ 45,61°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q027",
+     "type": "mc",
+     "question": "Dreieck SKV: Die Seite v verbindet S und K, die Seite k verbindet S und V, die Seite s verbindet K und V. Der Winkel λ liegt bei S, φ bei K und ε bei V. Welche Gleichung stimmt?",
+     "options": [
+      "cos φ = (v² + k² − s²) / (2·v·k)",
+      "s = √(v² + k² − 2·v·k·cos λ)",
+      "k² = v² + s² − 2·v·s·cos ε"
+     ],
+     "answer": 1,
+     "explanation": "s liegt λ gegenüber (λ liegt zwischen v und k) ⇒ s² = v² + k² − 2·v·k·cos λ ✓\n- cos φ = (v² + k² − s²) / (2·v·k) ist falsch: Das ist cos λ. Richtig wäre cos φ = (v² + s² − k²) / (2·v·s), denn k liegt φ gegenüber.\n- k² = v² + s² − 2·v·s·cos ε ist falsch: Zu k² gehört der Gegenwinkel φ, nicht ε."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q028",
+     "type": "mc",
+     "question": "Dreieck SKV: Die Seite v verbindet S und K, die Seite k verbindet S und V, die Seite s verbindet K und V. Der Winkel λ liegt bei S, φ bei K und ε bei V. Welche Gleichung stimmt?",
+     "options": [
+      "v² = k² + s² − 2·k·s·cos λ",
+      "cos ε = (v² + k² − s²) / (2·v·k)",
+      "k² = v² + s² − 2·v·s·cos φ",
+      "s / sin ε = v / sin λ"
+     ],
+     "answer": 2,
+     "explanation": "k liegt dem Winkel φ bei K gegenüber, φ liegt zwischen v und s ⇒ k² = v² + s² − 2·v·s·cos φ. ✓\n- v gehört zu ε (bei V), nicht zu λ.\n- (v² + k² − s²) / (2vk) ist cos λ.\n- Sinussatz richtig: s / sin λ = v / sin ε."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q029",
+     "type": "mc",
+     "question": "Gegeben sind zwei Seiten und der von ihnen eingeschlossene Winkel (SWS). Womit beginnst du?",
+     "options": [
+      "Sinussatz",
+      "Winkelsumme",
+      "Satz des Pythagoras",
+      "Kosinussatz"
+     ],
+     "answer": 3,
+     "explanation": "Beim Sinussatz fehlt bei SWS zu jedem Paar Seite/Gegenwinkel ein Wert. Der Kosinussatz liefert direkt die dritte Seite."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q030",
+     "type": "mc",
+     "question": "Gegeben sind alle drei Seiten (SSS). Womit berechnest du den ersten Winkel?",
+     "options": [
+      "Kosinussatz",
+      "Sinussatz",
+      "tan α = a / b",
+      "Winkelsumme"
+     ],
+     "answer": 0,
+     "explanation": "Nur der Kosinussatz verknüpft drei Seiten mit einem Winkel: cos α = (b² + c² − a²) / (2bc). Am besten zuerst den größten Winkel."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q031",
+     "type": "mc",
+     "question": "Gegeben sind eine Seite und zwei Winkel (WSW). Wie gehst du vor?",
+     "options": [
+      "Kosinussatz für die fehlenden Seiten",
+      "Pythagoras",
+      "Dritten Winkel über die Winkelsumme, dann Sinussatz",
+      "Nicht lösbar"
+     ],
+     "answer": 2,
+     "explanation": "Mit α + β + γ = 180° ist der dritte Winkel bekannt; dann liefert der Sinussatz jede Seite, z. B. a = c · sin α / sin γ."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q032",
+     "type": "mc",
+     "question": "Bei einer Winkelberechnung ergibt sich cos γ = −0,35. Was folgt daraus?",
+     "options": [
+      "Rechenfehler – cos kann nicht negativ sein.",
+      "Der Winkel ist stumpf (> 90°).",
+      "Der Winkel ist spitz.",
+      "Das Dreieck existiert nicht."
+     ],
+     "answer": 1,
+     "explanation": "Im Dreieck ist cos γ < 0 für 90° < γ < 180°. Hier: γ = cos⁻¹(−0,35) ≈ 110,49°."
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q033",
+     "type": "mc",
+     "question": "Richtig oder falsch? „Bei a = 8 cm, b = 5 cm und α = 80° gibt es für β zwei mögliche Lösungen.“",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Falsch: α liegt der größeren Seite a gegenüber. Dann ist β < α und spitz ⇒ eindeutig β ≈ 37,99°. (Die Zweitlösung 180° − 37,99° = 142,01° wäre mit α = 80° zusammen über 180°.)"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q034",
+     "type": "numeric",
+     "question": "Dreieck ABC: b = 7,2 m, c = 5,6 m, α = 48°. Berechne a.",
+     "answer": 5.41,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "SWS ⇒ Kosinussatz.\n- a² = 7,2² + 5,6² − 2 · 7,2 · 5,6 · cos 48° = 51,84 + 31,36 − 80,64 · 0,6691 ≈ 29,24\n- a ≈ 5,41 m"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q035",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 5 cm, b = 7 cm, c = 9 cm. Berechne den größten Winkel.",
+     "answer": 95.74,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "Größter Winkel = γ (gegenüber der größten Seite c).\n- cos γ = (a² + b² − c²) / (2·a·b) = (25 + 49 − 81) / 70 = −7 / 70 = −0,1\n- γ = cos⁻¹(−0,1) ≈ 95,74°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q036",
+     "type": "numeric",
+     "question": "Dreieck ABC: c = 12 cm, α = 40°, β = 65°. Berechne a.",
+     "answer": 7.99,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "- γ = 180° − 40° − 65° = 75°\n- a = c · sin α / sin γ = 12 · 0,6428 / 0,9659 ≈ 7,99 cm"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q037",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 9 cm, c = 7 cm, α = 70°. Berechne γ.",
+     "answer": 46.96,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "SsW, α liegt der größeren Seite a gegenüber ⇒ eindeutig.\n- sin γ = c · sin α / a = 7 · 0,9397 / 9 ≈ 0,7309\n- γ ≈ 46,96°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q038",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 3 cm, b = 5 cm, c = 7 cm. Berechne γ.",
+     "answer": 120.0,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- cos γ = (a² + b² − c²) / (2·a·b) = (9 + 25 − 49) / 30 = −15 / 30 = −0,5\n- γ = cos⁻¹(−0,5) = 120°"
+    },
+    {
+     "id": "mathe-aufgaben-sinus-kosinussatz-q039",
+     "type": "numeric",
+     "question": "Dreieck ABC: a = 6 cm, b = 10 cm, γ = 60°. Berechne c.",
+     "answer": 8.72,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "- c² = a² + b² − 2·a·b·cos γ = 36 + 100 − 120 · 0,5 = 76\n- c = √76 ≈ 8,72 cm"
+    }
+   ]
+  },
+  {
+   "id": "mathe-aufgaben-sk-anwendung",
+   "title": "Sinus- und Kosinussatz: Anwendungsaufgaben",
+   "description": "Vermessungs- und Praxisaufgaben (Höhen, Entfernungen, Grundstücke) mit Sinus- und Kosinussatz lösen.",
+   "sources": [
+    "5_Sinus_Kosinussatz_26_27.pdf"
+   ],
+   "cards": [
+    {
+     "id": "mathe-aufgaben-sk-anwendung-c001",
+     "type": "basic",
+     "front": "Was besagt der Außenwinkelsatz?",
+     "back": "Ein Außenwinkel eines Dreiecks ist so groß wie die Summe der beiden nicht anliegenden Innenwinkel."
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-c002",
+     "type": "basic",
+     "front": "Höhenmessung: Zwei Messpunkte liegen auf einer Linie mit dem Objektfuß, Höhenwinkel α (ferner Punkt) und β (naher Punkt). Welcher Winkel liegt im Dreieck ferner Punkt – naher Punkt – Spitze an der Spitze?",
+     "back": "β − α (Außenwinkelsatz). Der Innenwinkel am nahen Messpunkt ist 180° − β."
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-c003",
+     "type": "basic",
+     "front": "Höhenwinkel α zur Oberkante und β zur Unterkante eines aufgesetzten Objekts (Statue auf Sockel): Welche Winkel hat das Dreieck Messpunkt–Fuß–Spitze?",
+     "back": "Am Messpunkt α − β, an der Spitze 90° − α, am Fuß 90° + β"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-c004",
+     "type": "basic",
+     "front": "Allgemeines Vorgehen bei Anwendungsaufgaben zu Sinus-/Kosinussatz?",
+     "back": "- Skizze, gegebene Größen eintragen\n- Teildreieck mit drei bekannten Größen suchen\n- Fall bestimmen (SSS, SWS, WSW, SsW)\n- passenden Satz wählen, ggf. Ergebnis ins nächste Dreieck übernehmen"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-c005",
+     "type": "basic",
+     "front": "Entfernung zweier Punkte, zwischen denen ein Hindernis liegt (z. B. Fähre über See): Wie misst und rechnet man?",
+     "back": "Von einem Standpunkt aus beide Strecken und den eingeschlossenen Winkel messen (SWS) ⇒ Kosinussatz."
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-c006",
+     "type": "basic",
+     "front": "Entfernung zweier unzugänglicher Punkte P und Q von einer Basislinie AB aus: Rechenweg?",
+     "back": "In den Dreiecken ABQ und ABP mit dem Sinussatz BQ und BP berechnen, dann im Dreieck PBQ den Kosinussatz mit dem Winkel bei B (Summe der beiden in B gemessenen Teilwinkel, z. B. β + δ = 77° + 34° = 111°)."
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-c007",
+     "type": "basic",
+     "front": "WSW: Gegeben ist eine Seite und die beiden an ihr anliegenden Winkel. Welcher Winkel liegt der gegebenen Seite gegenüber?",
+     "back": "Der dritte Winkel (180° − beide gegebenen). Nur mit ihm darf die gegebene Seite im Sinussatz stehen."
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-c008",
+     "type": "basic",
+     "front": "Zwei Teildreiecke mit gemeinsamem Eckpunkt: Wie erhält man den Winkel im zweiten Teildreieck?",
+     "back": "Gesamtwinkel am Eckpunkt minus den bereits berechneten Teilwinkel, z. B. Grenzstein-Aufgabe: t₄ = t₁ − t₃ = 108° − 21,63° = 86,37°."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q001",
+     "type": "numeric",
+     "question": "Die Höhe eines Baumes soll bestimmt werden. Auf waagerechtem Boden liegen zwei Messpunkte auf einer Linie mit dem Baumfuß, 20 m voneinander entfernt. Vom weiter entfernten Punkt sieht man die Baumspitze unter dem Höhenwinkel α = 45°, vom näheren Punkt unter β = 65°. Wie hoch ist der Baum?",
+     "answer": 37.47,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Dreieck P₁ (fern), P₂ (nah), Spitze S:\n- Winkel bei P₁ = 45°, bei P₂ = 180° − 65° = 115°, bei S = 65° − 45° = 20°\n- Sinussatz: P₂S = 20 m · sin 45° / sin 20° = 20 · 0,7071 / 0,3420 ≈ 41,35 m\n- Rechtwinkliges Dreieck P₂–Fuß–Spitze: h = P₂S · sin 65° = 41,35 · 0,9063 ≈ 37,47 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q002",
+     "type": "numeric",
+     "question": "Die Höhe eines Baumes soll bestimmt werden. Auf waagerechtem Boden liegen zwei Messpunkte auf einer Linie mit dem Baumfuß, 20 m voneinander entfernt. Vom weiter entfernten Punkt sieht man die Baumspitze unter dem Höhenwinkel α = 45°, vom näheren Punkt unter β = 65°. Wie weit ist der nähere Messpunkt von der Baumspitze entfernt (Sichtlinie)?",
+     "answer": 41.35,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- Winkel an der Spitze: 65° − 45° = 20°\n- Sinussatz: P₂S / sin 45° = 20 m / sin 20°\n- P₂S = 20 · sin 45° / sin 20° ≈ 41,35 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q003",
+     "type": "numeric",
+     "question": "Ein Denkmal besteht aus einem Sockel und einer 3,40 m hohen Statue darauf. Von einem Messpunkt wird der Höhenwinkel zur Statuenspitze α = 45,38° und zum Statuenfuß (Oberkante Sockel) β = 38,19° gemessen. Wie hoch liegt die Oberkante des Sockels über der Waagerechten durch den Messpunkt (Länge x)?",
+     "answer": 11.8,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Dreieck Messpunkt M, Statuenfuß F, Spitze K (FK = 3,40 m):\n- Winkel bei M: 45,38° − 38,19° = 7,19°\n- Winkel bei K: 90° − 45,38° = 44,62°\n- Winkel bei F: 180° − 7,19° − 44,62° = 128,19°\n- Sinussatz: MF = 3,40 · sin 44,62° / sin 7,19° ≈ 19,08 m\n- rechtwinkliges Dreieck: x = MF · sin 38,19° ≈ 11,80 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q004",
+     "type": "numeric",
+     "question": "Ein Denkmal besteht aus einem Sockel und einer 3,40 m hohen Statue darauf. Von einem Messpunkt wird der Höhenwinkel zur Statuenspitze α = 45,38° und zum Statuenfuß (Oberkante Sockel) β = 38,19° gemessen. Wie weit ist der Messpunkt vom Statuenfuß entfernt (Sichtlinie)?",
+     "answer": 19.08,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- Winkel bei M: α − β = 7,19°, Winkel bei K: 90° − α = 44,62°\n- MF / sin 44,62° = 3,40 / sin 7,19°\n- MF = 3,40 · 0,7024 / 0,1252 ≈ 19,08 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q005",
+     "type": "numeric",
+     "question": "Drei Straßen begrenzen ein dreieckiges Wohngebiet: Holbeinstraße 300 m, Thorwaldenstraße 410 m, Kennedyallee 368 m. Welchen Winkel schließen Kennedyallee und Holbeinstraße ein? (auf ganze Grad)",
+     "answer": 75,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "SSS ⇒ Kosinussatz. Der gesuchte Winkel liegt der Thorwaldenstraße (410 m) gegenüber.\n- cos ω = (300² + 368² − 410²) / (2 · 300 · 368) = 57 324 / 220 800 ≈ 0,2596\n- ω ≈ 74,95° ≈ 75°"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q006",
+     "type": "numeric",
+     "question": "Drei Straßen begrenzen ein dreieckiges Wohngebiet: Holbeinstraße 300 m, Thorwaldenstraße 410 m, Kennedyallee 368 m. Welchen Winkel schließen Holbeinstraße und Thorwaldenstraße ein? (auf ganze Grad)",
+     "answer": 60,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "Der gesuchte Winkel liegt der Kennedyallee (368 m) gegenüber.\n- cos ω = (300² + 410² − 368²) / (2 · 300 · 410) = 122 676 / 246 000 ≈ 0,4987\n- ω ≈ 60,09° ≈ 60°"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q007",
+     "type": "numeric",
+     "question": "Drei Straßen begrenzen ein dreieckiges Wohngebiet: Holbeinstraße 300 m, Thorwaldenstraße 410 m, Kennedyallee 368 m. Welchen Winkel schließen Kennedyallee und Thorwaldenstraße ein? (auf ganze Grad)",
+     "answer": 45,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "Der gesuchte Winkel liegt der Holbeinstraße (300 m) gegenüber.\n- Winkelsumme: 180° − 74,95° − 60,09° ≈ 44,96° ≈ 45°\n- oder: cos ω = (368² + 410² − 300²) / (2 · 368 · 410) ≈ 0,7076"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q008",
+     "type": "numeric",
+     "question": "Ein dreieckiges Waldstück soll umzäunt werden. Eine Seite ist 300 m lang; die beiden Winkel an den Enden dieser Seite betragen 51° und 40°. Wie lang ist der Zaun insgesamt?",
+     "answer": 726.04,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "WSW: Beide Winkel liegen an der 300-m-Seite an.\n- dritter Winkel = 180° − 51° − 40° = 89° – er liegt der 300-m-Seite gegenüber\n- Seite gegenüber 40°: 300 · sin 40° / sin 89° ≈ 192,87 m\n- Seite gegenüber 51°: 300 · sin 51° / sin 89° ≈ 233,18 m\n- Zaun = 300 + 192,87 + 233,18 ≈ 726,0 m\n- Achtung: Wer die 300 m dem 51°-Winkel gegenüberstellt, erhält fälschlich ca. 934 m."
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q009",
+     "type": "numeric",
+     "question": "Ein dreieckiges Waldstück soll umzäunt werden. Eine Seite ist 300 m lang; die beiden Winkel an den Enden dieser Seite betragen 51° und 40°. Wie lang ist die Seite, die dem 40°-Winkel gegenüberliegt?",
+     "answer": 192.87,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- dritter Winkel = 89° (liegt der 300-m-Seite gegenüber)\n- x / sin 40° = 300 / sin 89°\n- x = 300 · 0,6428 / 0,9998 ≈ 192,87 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q010",
+     "type": "numeric",
+     "question": "Ein dreieckiges Blumenbeet hat die Randlängen 4,80 m, 3,80 m und 2,80 m. Wie groß ist der Winkel gegenüber dem 4,80 m langen Rand?",
+     "answer": 92.05,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "SSS ⇒ Kosinussatz.\n- cos ω = (3,80² + 2,80² − 4,80²) / (2 · 3,80 · 2,80) = (14,44 + 7,84 − 23,04) / 21,28 = −0,76 / 21,28 ≈ −0,0357\n- negativ ⇒ stumpf: ω ≈ 92,05°"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q011",
+     "type": "numeric",
+     "question": "Ein dreieckiges Blumenbeet hat die Randlängen 4,80 m, 3,80 m und 2,80 m. Wie groß ist der Winkel gegenüber dem 3,80 m langen Rand?",
+     "answer": 52.29,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- cos ω = (4,80² + 2,80² − 3,80²) / (2 · 4,80 · 2,80) = (23,04 + 7,84 − 14,44) / 26,88 = 16,44 / 26,88 ≈ 0,6116\n- ω ≈ 52,29°"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q012",
+     "type": "numeric",
+     "question": "Ein dreieckiges Blumenbeet hat die Randlängen 4,80 m, 3,80 m und 2,80 m. Wie groß ist der Winkel gegenüber dem 2,80 m langen Rand?",
+     "answer": 35.66,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- cos ω = (4,80² + 3,80² − 2,80²) / (2 · 4,80 · 3,80) = 29,64 / 36,48 ≈ 0,8125\n- ω ≈ 35,66°\n- Kontrolle: 92,05° + 52,29° + 35,66° = 180°"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q013",
+     "type": "numeric",
+     "question": "Zwischen L-Dorf und W-Dorf soll eine Fährverbindung über einen See entstehen. Von einem Punkt B aus werden gemessen: BL = 4109 m, BW = 3742 m und der Winkel LBW = 38,5°. Wie lang ist die Fährverbindung LW?",
+     "answer": 2611.49,
+     "unit": "m",
+     "tolerance": 0.005,
+     "explanation": "SWS (Winkel bei B zwischen den beiden Strecken) ⇒ Kosinussatz.\n- LW² = BW² + BL² − 2 · BW · BL · cos 38,5°\n- LW² = 3742² + 4109² − 2 · 3742 · 4109 · 0,7826 ≈ 6819870\n- LW ≈ 2611,49 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q014",
+     "type": "numeric",
+     "question": "Die Entfernung zweier Orte P und Q kann nicht direkt gemessen werden. Von der Basislinie AB = 380 m aus werden gemessen: in A der Winkel zwischen AB und AQ α = 41° und zwischen AB und AP γ = 82°; in B der Winkel zwischen BA und BQ β = 77° und zwischen BA und BP δ = 34°. P und Q liegen auf verschiedenen Seiten der Geraden AB. Berechne BQ.",
+     "answer": 282.35,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Dreieck ABQ: Winkel bei A = 41°, bei B = 77°, bei Q = 180° − 41° − 77° = 62°.\n- BQ liegt dem Winkel bei A gegenüber, AB dem Winkel bei Q.\n- BQ = 380 · sin 41° / sin 62° = 380 · 0,6561 / 0,8829 ≈ 282,35 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q015",
+     "type": "numeric",
+     "question": "Die Entfernung zweier Orte P und Q kann nicht direkt gemessen werden. Von der Basislinie AB = 380 m aus werden gemessen: in A der Winkel zwischen AB und AQ α = 41° und zwischen AB und AP γ = 82°; in B der Winkel zwischen BA und BQ β = 77° und zwischen BA und BP δ = 34°. P und Q liegen auf verschiedenen Seiten der Geraden AB. Berechne PB.",
+     "answer": 418.67,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Dreieck ABP: Winkel bei A = 82°, bei B = 34°, bei P = 180° − 82° − 34° = 64°.\n- PB liegt dem Winkel bei A gegenüber.\n- PB = 380 · sin 82° / sin 64° = 380 · 0,9903 / 0,8988 ≈ 418,67 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q016",
+     "type": "numeric",
+     "question": "Die Entfernung zweier Orte P und Q kann nicht direkt gemessen werden. Von der Basislinie AB = 380 m aus werden gemessen: in A der Winkel zwischen AB und AQ α = 41° und zwischen AB und AP γ = 82°; in B der Winkel zwischen BA und BQ β = 77° und zwischen BA und BP δ = 34°. P und Q liegen auf verschiedenen Seiten der Geraden AB. Berechne die Entfernung PQ.",
+     "answer": 582.87,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- BQ ≈ 282,35 m (Sinussatz im Dreieck ABQ), PB ≈ 418,67 m (Sinussatz im Dreieck ABP)\n- Im Dreieck PBQ ist der Winkel bei B: β + δ = 77° + 34° = 111°\n- Kosinussatz: PQ² = BQ² + PB² − 2 · BQ · PB · cos 111° ≈ 339739\n- PQ ≈ 582,87 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q017",
+     "type": "numeric",
+     "question": "Der Abstand zweier Grenzsteine G₁ und G₂ kann wegen eines Hauses nicht direkt gemessen werden. Gemessen werden: H₁G₁ = c = 19,00 m, H₁H₂ = d = 35,50 m, H₂G₂ = e = 15,50 m, in H₁ der Winkel zwischen H₁G₁ und H₁H₂ t₁ = 108°, in H₂ der Winkel zwischen H₂H₁ und H₂G₂ t₂ = 100,8°. Die Strecke H₁G₂ liegt innerhalb des Winkels t₁. Berechne die Hilfsstrecke a = H₁G₂.",
+     "answer": 41.31,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Dreieck H₁H₂G₂ mit SWS ⇒ Kosinussatz.\n- a² = d² + e² − 2 · d · e · cos t₂ = 35,5² + 15,5² − 2 · 35,5 · 15,5 · cos 100,8°\n- a² = 1260,25 + 240,25 + 206,21 ≈ 1706,71\n- a ≈ 41,31 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q018",
+     "type": "numeric",
+     "question": "Der Abstand zweier Grenzsteine G₁ und G₂ kann wegen eines Hauses nicht direkt gemessen werden. Gemessen werden: H₁G₁ = c = 19,00 m, H₁H₂ = d = 35,50 m, H₂G₂ = e = 15,50 m, in H₁ der Winkel zwischen H₁G₁ und H₁H₂ t₁ = 108°, in H₂ der Winkel zwischen H₂H₁ und H₂G₂ t₂ = 100,8°. Die Strecke H₁G₂ liegt innerhalb des Winkels t₁. Berechne den Winkel t₃ zwischen H₁H₂ und H₁G₂.",
+     "answer": 21.63,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "- a = H₁G₂ ≈ 41,31 m (Kosinussatz)\n- Sinussatz im Dreieck H₁H₂G₂: sin t₃ = e · sin t₂ / a = 15,5 · sin 100,8° / 41,31 ≈ 0,3685\n- t₃ ≈ 21,63° (spitz, da e < a)"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q019",
+     "type": "numeric",
+     "question": "Der Abstand zweier Grenzsteine G₁ und G₂ kann wegen eines Hauses nicht direkt gemessen werden. Gemessen werden: H₁G₁ = c = 19,00 m, H₁H₂ = d = 35,50 m, H₂G₂ = e = 15,50 m, in H₁ der Winkel zwischen H₁G₁ und H₁H₂ t₁ = 108°, in H₂ der Winkel zwischen H₂H₁ und H₂G₂ t₂ = 100,8°. Die Strecke H₁G₂ liegt innerhalb des Winkels t₁. Berechne den Abstand b = G₁G₂ der Grenzsteine.",
+     "answer": 44.37,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- a ≈ 41,31 m, t₃ ≈ 21,63°\n- t₄ = t₁ − t₃ = 108° − 21,63° ≈ 86,37°\n- Dreieck H₁G₁G₂ (SWS), Kosinussatz: b² = a² + c² − 2 · a · c · cos t₄\n- b² ≈ 1706,71 + 361 − 2 · 41,31 · 19 · 0,0632 ≈ 1968,43\n- b ≈ 44,37 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q020",
+     "type": "numeric",
+     "question": "Höhe eines Schornsteins: Zwei Messpunkte liegen auf waagerechtem Boden in einer Linie mit dem Schornsteinfuß, 15 m voneinander entfernt. Höhenwinkel zur Spitze: vom fernen Punkt 30°, vom nahen Punkt 50°. Wie hoch ist der Schornstein?",
+     "answer": 16.8,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- Winkel an der Spitze: 50° − 30° = 20°\n- nahe Sichtlinie = 15 · sin 30° / sin 20° = 15 · 0,5 / 0,3420 ≈ 21,93 m\n- h = 21,93 · sin 50° ≈ 16,80 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q021",
+     "type": "numeric",
+     "question": "Unsymmetrisches Satteldach: Die Sparren sind 6,20 m und 4,80 m lang, die Spannweite (Traufe zu Traufe) beträgt 9,50 m. Wie groß ist der Winkel am First?",
+     "answer": 118.91,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "SSS ⇒ Kosinussatz; der Firstwinkel liegt der Spannweite gegenüber.\n- cos φ = (6,20² + 4,80² − 9,50²) / (2 · 6,20 · 4,80) = (38,44 + 23,04 − 90,25) / 59,52 ≈ −0,4834\n- φ ≈ 118,91° (stumpf)"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q022",
+     "type": "numeric",
+     "question": "Unsymmetrisches Satteldach: Die Sparren sind 6,20 m und 4,80 m lang, die Spannweite (Traufe zu Traufe) beträgt 9,50 m. Wie groß ist die Dachneigung des 6,20 m langen Sparrens?",
+     "answer": 26.25,
+     "unit": "°",
+     "tolerance": 0.01,
+     "explanation": "Die Neigung ist der Winkel zwischen dem 6,20-m-Sparren und der Spannweite; er liegt dem 4,80-m-Sparren gegenüber.\n- cos ω = (6,20² + 9,50² − 4,80²) / (2 · 6,20 · 9,50) = 105,65 / 117,8 ≈ 0,8969\n- ω ≈ 26,25°"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q023",
+     "type": "numeric",
+     "question": "Zwei Grundstücksecken A und B liegen auf verschiedenen Seiten eines Teichs. Von einem Punkt S aus misst man SA = 86,4 m, SB = 112,7 m und den Winkel ASB = 54,2°. Wie weit sind A und B voneinander entfernt?",
+     "answer": 93.67,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "SWS ⇒ Kosinussatz.\n- AB² = 86,4² + 112,7² − 2 · 86,4 · 112,7 · cos 54,2° ≈ 8774,46\n- AB ≈ 93,67 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q024",
+     "type": "numeric",
+     "question": "Ein dreieckiges Grundstück soll eingezäunt werden. Eine Seite ist 180 m lang, die beiden Winkel an ihren Enden betragen 62° und 48°. Wie lang ist der Zaun?",
+     "answer": 491.48,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "- dritter Winkel = 180° − 62° − 48° = 70° (gegenüber der 180-m-Seite)\n- Seite gegenüber 48°: 180 · sin 48° / sin 70° ≈ 142,35 m\n- Seite gegenüber 62°: 180 · sin 62° / sin 70° ≈ 169,13 m\n- Zaun ≈ 180 + 142,35 + 169,13 ≈ 491,48 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q025",
+     "type": "numeric",
+     "question": "Ein dreieckiges Baugrundstück hat die Seitenlängen 25 m, 31 m und 40 m. Wie groß ist der größte Innenwinkel?",
+     "answer": 90.52,
+     "unit": "°",
+     "tolerance": 0.002,
+     "explanation": "Größter Winkel gegenüber der größten Seite (40 m).\n- cos ω = (25² + 31² − 40²) / (2 · 25 · 31) = (625 + 961 − 1600) / 1550 = −14 / 1550 ≈ −0,0090\n- ω ≈ 90,52°\n- Knapp stumpf, also **nicht** rechtwinklig – 90° ist falsch (Kontrolle: 25² + 31² = 1586 ≠ 1600 = 40²)."
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q026",
+     "type": "numeric",
+     "question": "Von einem Standpunkt aus werden zwei Bojen angepeilt: Entfernungen 640 m und 890 m, eingeschlossener Winkel 112°. Wie weit sind die Bojen voneinander entfernt?",
+     "answer": 1276.11,
+     "unit": "m",
+     "tolerance": 0.005,
+     "explanation": "SWS ⇒ Kosinussatz.\n- x² = 640² + 890² − 2 · 640 · 890 · cos 112°\n- cos 112° ≈ −0,3746 (negativ ⇒ der Term wird addiert)\n- x² ≈ 1628452 ⇒ x ≈ 1276,11 m"
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q027",
+     "type": "mc",
+     "question": "Waldstück: Eine Seite ist 300 m lang, die an ihr anliegenden Winkel sind 51° und 40°. Mit welcher Gleichung berechnest du die Seite x gegenüber dem 40°-Winkel?",
+     "options": [
+      "x = 300 · sin 40° / sin 51°",
+      "x = 300 · sin 40° / sin 89°",
+      "x = 300 · sin 89° / sin 40°",
+      "x = 300 · cos 40°"
+     ],
+     "answer": 1,
+     "explanation": "Die 300-m-Seite liegt dem dritten Winkel 180° − 51° − 40° = 89° gegenüber. Sinussatz: x / sin 40° = 300 / sin 89°."
+    },
+    {
+     "id": "mathe-aufgaben-sk-anwendung-q028",
+     "type": "mc",
+     "question": "Höhenmessung: Vom fernen Punkt sieht man die Spitze unter 45°, vom 20 m näheren Punkt unter 65°. Welcher Winkel liegt im Dreieck (ferner Punkt, naher Punkt, Spitze) an der Spitze?",
+     "options": [
+      "110°",
+      "65°",
+      "20°",
+      "45°"
+     ],
+     "answer": 2,
+     "explanation": "Außenwinkelsatz: Der Außenwinkel 65° am nahen Punkt ist die Summe der nicht anliegenden Innenwinkel 45° + Spitzenwinkel ⇒ Spitzenwinkel = 65° − 45° = 20°."
+    }
+   ]
+  }
+ ]
+}

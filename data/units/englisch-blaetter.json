@@ -1,0 +1,2333 @@
+{
+ "unit": "englisch-blaetter",
+ "subject": "englisch",
+ "decks": [
+  {
+   "id": "englisch-blaetter-baustelle",
+   "title": "Baustelle: Was ist zu sehen?",
+   "description": "Englische Begriffe zum Baustellenfoto vom Arbeitsblatt – mit Beispielsätzen in britischem Englisch.",
+   "sources": [
+    "Baustelle.pdf"
+   ],
+   "cards": [
+    {
+     "id": "englisch-blaetter-baustelle-c001",
+     "type": "vocab",
+     "en": "concrete",
+     "de": "der Beton",
+     "example": "Ready-mixed concrete is delivered to the site in a truck mixer.",
+     "exampleDe": "Transportbeton wird im Fahrmischer auf die Baustelle geliefert.",
+     "note": "Als Adjektiv heißt concrete auch konkret (a concrete example) – kein False Friend. Transportbeton = ready-mixed concrete."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c002",
+     "type": "vocab",
+     "en": "reinforcing steel",
+     "de": "der Betonstahl (Bewehrungsstahl)",
+     "example": "The reinforcing steel needs enough concrete cover to protect it from corrosion.",
+     "exampleDe": "Der Betonstahl braucht genug Betondeckung, um ihn vor Korrosion zu schützen.",
+     "note": "Auf dem Blatt: reinforcement steel (auch verständlich). Einzelner Stab: reinforcing bar, kurz rebar."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c003",
+     "type": "vocab",
+     "en": "reinforcement mesh",
+     "de": "die Betonstahlmatte (Bewehrungsmatte)",
+     "example": "The workers placed the reinforcement mesh on spacers.",
+     "exampleDe": "Die Arbeiter legten die Bewehrungsmatte auf Abstandhalter.",
+     "note": "Im Foto: die gestapelten rostbraunen Matten."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c004",
+     "type": "vocab",
+     "en": "pile of soil",
+     "de": "der Erdhaufen (Aushubhaufen)",
+     "example": "The excavated soil is stored in a pile at the edge of the site.",
+     "exampleDe": "Der Aushub wird auf einem Haufen am Rand der Baustelle gelagert.",
+     "note": "Fachlich auch: spoil heap. Achtung: pile heißt auch der Pfahl (pile foundation = Pfahlgründung)."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c005",
+     "type": "vocab",
+     "en": "crane",
+     "de": "der Kran",
+     "example": "The crane lifted the reinforcement mesh onto the slab.",
+     "exampleDe": "Der Kran hob die Bewehrungsmatten auf die Platte.",
+     "note": "tower crane = der Turmdrehkran (im Foto), mobile crane = der Autokran"
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c006",
+     "type": "vocab",
+     "en": "construction fence",
+     "de": "der Bauzaun",
+     "example": "The construction fence keeps unauthorised people off the site.",
+     "exampleDe": "Der Bauzaun hält Unbefugte von der Baustelle fern.",
+     "note": "BE auch: site fence; geschlossene Bauzaunwand aus Platten = hoarding"
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c007",
+     "type": "vocab",
+     "en": "gravel",
+     "de": "der Kies",
+     "example": "A layer of compacted gravel was laid under the floor slab.",
+     "exampleDe": "Unter der Bodenplatte wurde eine Schicht aus verdichtetem Kies eingebaut.",
+     "note": "Schotter = crushed stone; verdichten = to compact"
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c008",
+     "type": "vocab",
+     "en": "construction site",
+     "de": "die Baustelle",
+     "example": "Hard hats must be worn on the construction site at all times.",
+     "exampleDe": "Auf der Baustelle müssen jederzeit Schutzhelme getragen werden.",
+     "note": "BE oft: building site; kurz: site"
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c009",
+     "type": "vocab",
+     "en": "site container",
+     "de": "der Baucontainer",
+     "example": "The site manager's office is in a container next to the entrance.",
+     "exampleDe": "Das Büro des Bauleiters ist in einem Container neben der Einfahrt.",
+     "note": "Auf dem Blatt: container. BE auch: site cabin, site hut"
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c010",
+     "type": "vocab",
+     "en": "saw",
+     "de": "die Säge",
+     "example": "He cut the timber to length with a circular saw.",
+     "exampleDe": "Er schnitt das Holz mit einer Kreissäge auf Länge.",
+     "note": "Verb: to saw – sawed – sawn (sägen). Achtung: saw ist auch Simple Past von see (see – saw – seen)!"
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c011",
+     "type": "vocab",
+     "en": "excavation",
+     "de": "die Baugrube",
+     "example": "The excavation for the basement is three metres deep.",
+     "exampleDe": "Die Baugrube für den Keller ist drei Meter tief.",
+     "note": "auch: der Aushub; to excavate = ausheben"
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c012",
+     "type": "vocab",
+     "en": "timber",
+     "de": "das Bauholz",
+     "example": "The timber is stacked on pallets to keep it off the wet ground.",
+     "exampleDe": "Das Bauholz wird auf Paletten gestapelt, damit es nicht auf dem nassen Boden liegt.",
+     "note": "BE: timber, AE: lumber"
+    },
+    {
+     "id": "englisch-blaetter-baustelle-c013",
+     "type": "vocab",
+     "en": "neighbouring building",
+     "de": "das Nachbargebäude",
+     "example": "The excavation must not damage the foundations of the neighbouring buildings.",
+     "exampleDe": "Die Baugrube darf die Fundamente der Nachbargebäude nicht beschädigen.",
+     "note": "Auf dem Blatt: houses. BE-Schreibung: neighbour (AE: neighbor)"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "englisch-blaetter-baustelle-q001",
+     "type": "input",
+     "question": "Wie heißt *der Beton* auf Englisch?",
+     "answer": "concrete",
+     "accept": [],
+     "explanation": "concrete = der Beton. Nicht verwechseln mit cement (der Zement)."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q002",
+     "type": "mc",
+     "question": "Was bedeutet *reinforcement mesh*?",
+     "options": [
+      "die Bewehrungsmatte",
+      "das Gitter des Bauzauns",
+      "das Gerüstnetz",
+      "der einzelne Bewehrungsstab"
+     ],
+     "answer": 0,
+     "explanation": "reinforcement mesh = Betonstahlmatte. Ein einzelner Stab heißt reinforcing bar (rebar)."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q003",
+     "type": "input",
+     "question": "Wie heißt *der Bauzaun* auf Englisch?",
+     "answer": "construction fence",
+     "accept": [
+      "site fence",
+      "site fencing",
+      "construction fencing"
+     ],
+     "explanation": "construction fence oder site fence; eine geschlossene Plattenwand heißt hoarding."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q004",
+     "type": "mc",
+     "question": "Was bedeutet *pile* in *pile foundation*?",
+     "options": [
+      "der Haufen",
+      "der Pfahl",
+      "die Platte",
+      "der Pfeiler"
+     ],
+     "answer": 1,
+     "explanation": "pile foundation = Pfahlgründung. In *pile of soil* heißt pile dagegen Haufen."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q005",
+     "type": "input",
+     "question": "Wie heißt *der Kies* auf Englisch?",
+     "answer": "gravel",
+     "accept": [],
+     "explanation": "gravel = der Kies; Schotter = crushed stone."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q006",
+     "type": "mc",
+     "question": "Was bedeutet *saw* im Satz *I saw the crane from my window*?",
+     "options": [
+      "sägte",
+      "stand",
+      "sah",
+      "baute"
+     ],
+     "answer": 2,
+     "explanation": "Hier ist saw das Simple Past von see (see – saw – seen). Das Nomen saw heißt die Säge."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q007",
+     "type": "mc",
+     "question": "Wie heißt *Bauholz* in britischem Englisch?",
+     "options": [
+      "lumber",
+      "logs",
+      "planks",
+      "timber"
+     ],
+     "answer": 3,
+     "explanation": "BE: timber, AE: lumber. logs = Baumstämme, planks = Bretter/Bohlen."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q008",
+     "type": "input",
+     "question": "Wie heißt *die Baugrube* auf Englisch?",
+     "answer": "excavation",
+     "accept": [
+      "excavation pit"
+     ],
+     "explanation": "excavation = Baugrube/Aushub; to excavate = ausheben."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q009",
+     "type": "input",
+     "question": "Wie heißt *die Baustelle* auf Englisch?",
+     "answer": "construction site",
+     "accept": [
+      "building site",
+      "site"
+     ],
+     "explanation": "construction site, im britischen Englisch oft building site oder kurz site."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q010",
+     "type": "input",
+     "question": "Wie heißt *der Betonstahl* (Bewehrungsstahl) auf Englisch?",
+     "answer": "reinforcing steel",
+     "accept": [
+      "reinforcement steel",
+      "rebar",
+      "reinforcing bar",
+      "reinforcing bars"
+     ],
+     "explanation": "reinforcing steel; ein einzelner Stab heißt reinforcing bar bzw. rebar."
+    },
+    {
+     "id": "englisch-blaetter-baustelle-q011",
+     "type": "input",
+     "question": "Wie heißt *der Baucontainer* auf Englisch?",
+     "answer": "site container",
+     "accept": [
+      "container",
+      "site cabin",
+      "site hut"
+     ],
+     "explanation": "site container; britisch auch site cabin oder site hut."
+    }
+   ]
+  },
+  {
+   "id": "englisch-blaetter-baustoffe",
+   "title": "Baustoffe & Bauteile",
+   "description": "Ergänzender Grundwortschatz zu Baustoffen, Bauteilen und Geschossen im britischen Englisch.",
+   "sources": [
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "englisch-blaetter-baustoffe-c001",
+     "type": "vocab",
+     "en": "reinforced concrete",
+     "de": "der Stahlbeton",
+     "example": "The basement walls are made of reinforced concrete.",
+     "exampleDe": "Die Kellerwände bestehen aus Stahlbeton.",
+     "note": "to reinforce = bewehren, verstärken"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c002",
+     "type": "vocab",
+     "en": "cement",
+     "de": "der Zement",
+     "example": "Cement, water and aggregate are mixed to make concrete.",
+     "exampleDe": "Zement, Wasser und Gesteinskörnung werden zu Beton gemischt.",
+     "note": "Achtung: cement (Bindemittel) ist nicht concrete (Beton)!"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c003",
+     "type": "vocab",
+     "en": "aggregate",
+     "de": "die Gesteinskörnung (der Zuschlag)",
+     "example": "The aggregate makes up about 70 per cent of the volume of concrete.",
+     "exampleDe": "Die Gesteinskörnung macht etwa 70 Prozent des Betonvolumens aus.",
+     "note": "fine aggregate = Sand, coarse aggregate = Kies/Splitt"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c004",
+     "type": "vocab",
+     "en": "mortar",
+     "de": "der Mörtel",
+     "example": "The bricklayer spreads mortar on each course of bricks.",
+     "exampleDe": "Der Maurer trägt auf jede Steinlage Mörtel auf.",
+     "note": "course = die Schicht/Lage im Mauerwerk"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c005",
+     "type": "vocab",
+     "en": "brick",
+     "de": "der Ziegel (Mauerziegel)",
+     "example": "The outer walls are built of red bricks.",
+     "exampleDe": "Die Außenwände sind aus roten Ziegeln gemauert.",
+     "note": "to lay bricks = mauern; bricklayer = der Maurer"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c006",
+     "type": "vocab",
+     "en": "masonry",
+     "de": "das Mauerwerk",
+     "example": "Masonry walls carry the loads of the upper floors.",
+     "exampleDe": "Mauerwerkswände tragen die Lasten der oberen Geschosse."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c007",
+     "type": "vocab",
+     "en": "formwork",
+     "de": "die Schalung",
+     "example": "The formwork can be removed when the concrete has hardened.",
+     "exampleDe": "Die Schalung kann entfernt werden, wenn der Beton erhärtet ist.",
+     "note": "BE auch: shuttering; ausschalen = to strike the formwork"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c008",
+     "type": "vocab",
+     "en": "to pour concrete",
+     "de": "betonieren (Beton einbringen)",
+     "example": "We poured the concrete for the ground floor slab last Friday.",
+     "exampleDe": "Wir haben die Bodenplatte letzten Freitag betoniert.",
+     "note": "pour – poured – poured (regelmäßig)"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c009",
+     "type": "vocab",
+     "en": "foundation",
+     "de": "das Fundament (die Gründung)",
+     "example": "The foundations must be deep enough to be safe from frost.",
+     "exampleDe": "Die Fundamente müssen tief genug liegen, um frostsicher zu sein.",
+     "note": "strip foundation = Streifenfundament, pad foundation = Einzelfundament"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c010",
+     "type": "vocab",
+     "en": "slab",
+     "de": "die Platte (Decken- oder Bodenplatte aus Beton)",
+     "example": "The ground floor slab is 25 centimetres thick.",
+     "exampleDe": "Die Bodenplatte des Erdgeschosses ist 25 Zentimeter dick.",
+     "note": "Die sichtbare Zimmerdecke (Unterseite) = ceiling"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c011",
+     "type": "vocab",
+     "en": "beam",
+     "de": "der Träger (Balken)",
+     "example": "A steel beam supports the floor above the opening.",
+     "exampleDe": "Ein Stahlträger trägt die Decke über der Öffnung."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c012",
+     "type": "vocab",
+     "en": "column",
+     "de": "die Stütze (Säule)",
+     "example": "The columns transfer the loads to the foundations.",
+     "exampleDe": "Die Stützen leiten die Lasten in die Fundamente ab."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c013",
+     "type": "vocab",
+     "en": "load-bearing wall",
+     "de": "die tragende Wand",
+     "example": "You must not remove a load-bearing wall without asking a structural engineer.",
+     "exampleDe": "Eine tragende Wand darf man nicht entfernen, ohne einen Tragwerksplaner zu fragen.",
+     "note": "Gegenteil: non-load-bearing wall / partition wall = nichttragende Wand / Trennwand"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c014",
+     "type": "vocab",
+     "en": "insulation",
+     "de": "die Dämmung",
+     "example": "Thermal insulation reduces heat loss through the walls.",
+     "exampleDe": "Wärmedämmung verringert den Wärmeverlust durch die Wände.",
+     "note": "to insulate = dämmen; sound insulation = Schalldämmung"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c015",
+     "type": "vocab",
+     "en": "damp-proof course",
+     "de": "die Horizontalsperre",
+     "example": "The damp-proof course stops moisture rising up the wall.",
+     "exampleDe": "Die Horizontalsperre verhindert, dass Feuchtigkeit in der Wand aufsteigt.",
+     "note": "Abkürzung DPC – typisch britischer Begriff"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c016",
+     "type": "vocab",
+     "en": "blinding",
+     "de": "die Sauberkeitsschicht",
+     "example": "A thin layer of blinding was placed before the reinforcement was laid.",
+     "exampleDe": "Bevor die Bewehrung verlegt wurde, wurde eine dünne Sauberkeitsschicht eingebracht.",
+     "note": "auch: blinding concrete; lean concrete = Magerbeton"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c017",
+     "type": "vocab",
+     "en": "spacer",
+     "de": "der Abstandhalter",
+     "example": "Spacers make sure that the reinforcement has the correct concrete cover.",
+     "exampleDe": "Abstandhalter sorgen dafür, dass die Bewehrung die richtige Betondeckung hat.",
+     "note": "concrete cover = die Betondeckung"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c018",
+     "type": "vocab",
+     "en": "storey",
+     "de": "das Geschoss (Stockwerk)",
+     "example": "The new office building will have four storeys.",
+     "exampleDe": "Das neue Bürogebäude wird vier Geschosse haben.",
+     "note": "BE: storey (Plural storeys), AE: story"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c019",
+     "type": "vocab",
+     "en": "ground floor",
+     "de": "das Erdgeschoss",
+     "example": "The site office is on the ground floor.",
+     "exampleDe": "Das Baubüro ist im Erdgeschoss.",
+     "note": "BE: ground floor = EG, first floor = 1. OG. AE: first floor = EG!"
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c020",
+     "type": "vocab",
+     "en": "basement",
+     "de": "das Untergeschoss (der Keller)",
+     "example": "The basement must be waterproof because of the high groundwater level.",
+     "exampleDe": "Das Untergeschoss muss wegen des hohen Grundwasserspiegels wasserdicht sein."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-c021",
+     "type": "vocab",
+     "en": "pitched roof",
+     "de": "das Steildach (das geneigte Dach)",
+     "example": "The houses next to the site have pitched roofs with red tiles.",
+     "exampleDe": "Die Häuser neben der Baustelle haben Steildächer mit roten Ziegeln.",
+     "note": "flat roof = das Flachdach; roof tile = der Dachziegel"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "englisch-blaetter-baustoffe-q001",
+     "type": "mc",
+     "question": "Was ist der Unterschied zwischen *cement* und *concrete*?",
+     "options": [
+      "Beides heißt Beton.",
+      "cement = Beton, concrete = Zement",
+      "cement = Zement (Bindemittel), concrete = Beton",
+      "cement = Mörtel, concrete = Beton"
+     ],
+     "answer": 2,
+     "explanation": "Zement ist nur das Bindemittel. Beton (concrete) besteht aus Zement, Wasser und Gesteinskörnung."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q002",
+     "type": "input",
+     "question": "Wie heißt *die Schalung* auf Englisch?",
+     "answer": "formwork",
+     "accept": [
+      "shuttering"
+     ],
+     "explanation": "formwork, im britischen Englisch auch shuttering."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q003",
+     "type": "input",
+     "question": "Wie heißt *der Mörtel* auf Englisch?",
+     "answer": "mortar",
+     "accept": [],
+     "explanation": "mortar = Mörtel; mit ihm werden die bricks (Ziegel) vermauert."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q004",
+     "type": "mc",
+     "question": "Britisches Englisch: *first floor* entspricht im Deutschen …",
+     "options": [
+      "dem Erdgeschoss",
+      "dem 1. Obergeschoss",
+      "dem Untergeschoss",
+      "dem Dachgeschoss"
+     ],
+     "answer": 1,
+     "explanation": "Im BE ist das Erdgeschoss der ground floor, der first floor ist das 1. OG. Im AE ist first floor dagegen das Erdgeschoss."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q005",
+     "type": "input",
+     "question": "Wie heißt *das Geschoss* auf Englisch (britische Schreibweise)?",
+     "answer": "storey",
+     "accept": [],
+     "explanation": "BE: storey (Plural storeys), AE: story."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q006",
+     "type": "input",
+     "question": "Wie heißt *die Dämmung* auf Englisch?",
+     "answer": "insulation",
+     "accept": [],
+     "explanation": "insulation; thermal insulation = Wärmedämmung, sound insulation = Schalldämmung."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q007",
+     "type": "mc",
+     "question": "Was ist ein *damp-proof course (DPC)*?",
+     "options": [
+      "eine Dampfbremse im Dach",
+      "die Abdichtung des Flachdachs",
+      "ein Lehrgang zur Feuchtemessung",
+      "die Horizontalsperre gegen aufsteigende Feuchtigkeit"
+     ],
+     "answer": 3,
+     "explanation": "Der DPC ist die Horizontalsperre in der Wand, die kapillar aufsteigende Feuchtigkeit stoppt. course bedeutet hier Lage/Schicht."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q008",
+     "type": "input",
+     "question": "Wie heißt *der Stahlbeton* auf Englisch?",
+     "answer": "reinforced concrete",
+     "accept": [],
+     "explanation": "reinforced concrete = bewehrter Beton = Stahlbeton."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q009",
+     "type": "mc",
+     "question": "Was ist eine *load-bearing wall*?",
+     "options": [
+      "die tragende Wand",
+      "die Trennwand",
+      "die Brandwand",
+      "die Vorsatzschale"
+     ],
+     "answer": 0,
+     "explanation": "load = Last, to bear = tragen → tragende Wand."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q010",
+     "type": "input",
+     "question": "Wie heißt *die Stütze* (senkrechtes tragendes Bauteil) auf Englisch?",
+     "answer": "column",
+     "accept": [
+      "pillar"
+     ],
+     "explanation": "column = Stütze; beam = Träger/Balken."
+    },
+    {
+     "id": "englisch-blaetter-baustoffe-q011",
+     "type": "mc",
+     "question": "Was bedeutet *blinding* auf der Baustelle?",
+     "options": [
+      "die Blendung durch die Sonne",
+      "die Sauberkeitsschicht unter der Bewehrung",
+      "die Abdeckplane",
+      "die Wärmedämmung unter der Bodenplatte"
+     ],
+     "answer": 1,
+     "explanation": "blinding (blinding concrete) ist die dünne Sauberkeitsschicht aus Magerbeton, auf der die Bewehrung verlegt wird."
+    }
+   ]
+  },
+  {
+   "id": "englisch-blaetter-berufe-geraete",
+   "title": "Berufe, Geräte & Baupläne",
+   "description": "Ergänzender Wortschatz zu Personen, Maschinen, Arbeitssicherheit und Bauzeichnungen auf der Baustelle.",
+   "sources": [
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "englisch-blaetter-berufe-geraete-c001",
+     "type": "vocab",
+     "en": "site manager",
+     "de": "der Bauleiter / die Bauleiterin",
+     "example": "The site manager checks the progress of the work every morning.",
+     "exampleDe": "Der Bauleiter kontrolliert jeden Morgen den Baufortschritt."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c002",
+     "type": "vocab",
+     "en": "bricklayer",
+     "de": "der Maurer / die Maurerin",
+     "example": "The bricklayers built the walls of the ground floor in two weeks.",
+     "exampleDe": "Die Maurer haben die Wände des Erdgeschosses in zwei Wochen gemauert.",
+     "note": "to lay bricks = mauern"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c003",
+     "type": "vocab",
+     "en": "carpenter",
+     "de": "der Zimmerer / die Zimmerin",
+     "example": "The carpenters put up the roof structure in three days.",
+     "exampleDe": "Die Zimmerer haben den Dachstuhl in drei Tagen aufgestellt.",
+     "note": "joiner (BE) = der Schreiner/Tischler"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c004",
+     "type": "vocab",
+     "en": "structural engineer",
+     "de": "der Tragwerksplaner (Statiker)",
+     "example": "The structural engineer calculates the loads on the beams and columns.",
+     "exampleDe": "Der Tragwerksplaner berechnet die Lasten auf Träger und Stützen."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c005",
+     "type": "vocab",
+     "en": "excavator",
+     "de": "der Bagger",
+     "example": "The excavator dug a trench for the drainage pipes.",
+     "exampleDe": "Der Bagger hob einen Graben für die Entwässerungsrohre aus.",
+     "note": "BE umgangssprachlich: digger; to dig – dug – dug"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c006",
+     "type": "vocab",
+     "en": "wheelbarrow",
+     "de": "die Schubkarre",
+     "example": "He moved the gravel with a wheelbarrow.",
+     "exampleDe": "Er transportierte den Kies mit einer Schubkarre."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c007",
+     "type": "vocab",
+     "en": "concrete mixer",
+     "de": "der Betonmischer",
+     "example": "We mixed the mortar in a small concrete mixer.",
+     "exampleDe": "Wir haben den Mörtel in einem kleinen Betonmischer angemischt.",
+     "note": "umgangssprachlich: cement mixer; Fahrmischer = truck mixer"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c008",
+     "type": "vocab",
+     "en": "lorry",
+     "de": "der Lastkraftwagen (Lkw)",
+     "example": "A lorry delivered the reinforcement early this morning.",
+     "exampleDe": "Ein Lkw hat heute früh die Bewehrung geliefert.",
+     "note": "BE: lorry, AE: truck"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c009",
+     "type": "vocab",
+     "en": "spirit level",
+     "de": "die Wasserwaage",
+     "example": "Use a spirit level to check that the wall is plumb.",
+     "exampleDe": "Prüfe mit der Wasserwaage, ob die Wand lotrecht ist.",
+     "note": "AE: level. plumb = lotrecht, level = waagerecht"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c010",
+     "type": "vocab",
+     "en": "tape measure",
+     "de": "das Maßband",
+     "example": "Measure the opening with a tape measure before you order the window.",
+     "exampleDe": "Miss die Öffnung mit einem Maßband aus, bevor du das Fenster bestellst."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c011",
+     "type": "vocab",
+     "en": "hard hat",
+     "de": "der Schutzhelm",
+     "example": "Visitors must wear a hard hat on site.",
+     "exampleDe": "Besucher müssen auf der Baustelle einen Schutzhelm tragen.",
+     "note": "auch: safety helmet"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c012",
+     "type": "vocab",
+     "en": "safety boots",
+     "de": "die Sicherheitsschuhe (Pl.)",
+     "example": "Safety boots with steel toecaps protect your feet.",
+     "exampleDe": "Sicherheitsschuhe mit Stahlkappen schützen die Füße.",
+     "note": "steel toecap = die Stahlkappe"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c013",
+     "type": "vocab",
+     "en": "high-visibility vest",
+     "de": "die Warnweste",
+     "example": "Everyone on site has to wear a high-visibility vest.",
+     "exampleDe": "Jeder auf der Baustelle muss eine Warnweste tragen.",
+     "note": "BE kurz: hi-vis vest / hi-vis jacket"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c014",
+     "type": "vocab",
+     "en": "scaffolding",
+     "de": "das Gerüst",
+     "example": "The scaffolding was put up around the whole building.",
+     "exampleDe": "Das Gerüst wurde um das ganze Gebäude herum aufgestellt.",
+     "note": "scaffolder = der Gerüstbauer"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c015",
+     "type": "vocab",
+     "en": "edge protection",
+     "de": "der Seitenschutz (die Absturzsicherung)",
+     "example": "Edge protection must be installed before work starts on the roof.",
+     "exampleDe": "Bevor die Arbeiten auf dem Dach beginnen, muss ein Seitenschutz angebracht werden.",
+     "note": "guardrail = das Schutzgeländer"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c016",
+     "type": "vocab",
+     "en": "floor plan",
+     "de": "der Grundriss",
+     "example": "The floor plan shows the position of all walls, doors and windows.",
+     "exampleDe": "Der Grundriss zeigt die Lage aller Wände, Türen und Fenster."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c017",
+     "type": "vocab",
+     "en": "section",
+     "de": "der Schnitt (Bauzeichnung)",
+     "example": "The section shows the heights of the storeys and the roof.",
+     "exampleDe": "Der Schnitt zeigt die Geschosshöhen und das Dach.",
+     "note": "auch: cross-section"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c018",
+     "type": "vocab",
+     "en": "elevation",
+     "de": "die Ansicht (Bauzeichnung)",
+     "example": "The south elevation shows the large windows of the living room.",
+     "exampleDe": "Die Südansicht zeigt die großen Fenster des Wohnzimmers."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c019",
+     "type": "vocab",
+     "en": "scale",
+     "de": "der Maßstab",
+     "example": "The floor plan is drawn to a scale of 1:100.",
+     "exampleDe": "Der Grundriss ist im Maßstab 1:100 gezeichnet.",
+     "note": "1:100 spricht man: one to a hundred"
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-c020",
+     "type": "vocab",
+     "en": "planning permission",
+     "de": "die Baugenehmigung",
+     "example": "You need planning permission before you can start building.",
+     "exampleDe": "Man braucht eine Baugenehmigung, bevor man mit dem Bauen beginnen darf.",
+     "note": "Britischer Begriff; international auch: building permit"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "englisch-blaetter-berufe-geraete-q001",
+     "type": "input",
+     "question": "Wie heißt *die Wasserwaage* im britischen Englisch?",
+     "answer": "spirit level",
+     "accept": [],
+     "explanation": "BE: spirit level, AE: level."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q002",
+     "type": "input",
+     "question": "Wie heißt *der Bagger* auf Englisch?",
+     "answer": "excavator",
+     "accept": [
+      "digger"
+     ],
+     "explanation": "excavator; im britischen Alltag auch digger."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q003",
+     "type": "mc",
+     "question": "*lorry* ist das britische Wort für …",
+     "options": [
+      "den Kran",
+      "den Gabelstapler",
+      "den Lkw",
+      "den Anhänger"
+     ],
+     "answer": 2,
+     "explanation": "BE: lorry, AE: truck = Lastkraftwagen."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q004",
+     "type": "input",
+     "question": "Wie heißt *der Schutzhelm* auf Englisch?",
+     "answer": "hard hat",
+     "accept": [
+      "safety helmet",
+      "hardhat"
+     ],
+     "explanation": "hard hat oder safety helmet."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q005",
+     "type": "input",
+     "question": "Wie heißt *die Warnweste* auf Englisch?",
+     "answer": "high-visibility vest",
+     "accept": [
+      "high visibility vest",
+      "hi-vis vest",
+      "hi vis vest",
+      "high-vis vest",
+      "hi-vis jacket",
+      "safety vest"
+     ],
+     "explanation": "high-visibility vest, im BE kurz hi-vis vest."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q006",
+     "type": "mc",
+     "question": "Was ist eine *elevation* auf einer Bauzeichnung?",
+     "options": [
+      "der Grundriss",
+      "die Ansicht",
+      "der Schnitt",
+      "der Lageplan"
+     ],
+     "answer": 1,
+     "explanation": "elevation = Ansicht (z. B. south elevation = Südansicht). Grundriss = floor plan, Schnitt = section, Lageplan = site plan."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q007",
+     "type": "mc",
+     "question": "Was ist ein *floor plan*?",
+     "options": [
+      "der Grundriss",
+      "die Ansicht",
+      "der Schnitt",
+      "das Detail"
+     ],
+     "answer": 0,
+     "explanation": "floor plan = Grundriss."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q008",
+     "type": "input",
+     "question": "Wie heißt *der Maßstab* (einer Zeichnung) auf Englisch?",
+     "answer": "scale",
+     "accept": [],
+     "explanation": "scale; drawn to a scale of 1:100 = im Maßstab 1:100 gezeichnet."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q009",
+     "type": "mc",
+     "question": "Wie spricht man den Maßstab *1:100* auf Englisch aus?",
+     "options": [
+      "one by hundred",
+      "one of a hundred",
+      "one hundredth",
+      "one to a hundred"
+     ],
+     "answer": 3,
+     "explanation": "Ein Verhältnis wird mit to gesprochen: one to a hundred (auch one to one hundred)."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q010",
+     "type": "input",
+     "question": "Wie heißt *das Gerüst* auf Englisch?",
+     "answer": "scaffolding",
+     "accept": [
+      "scaffold"
+     ],
+     "explanation": "scaffolding (das Gerüst als Ganzes); scaffolder = Gerüstbauer."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q011",
+     "type": "mc",
+     "question": "Wer ist der *structural engineer*?",
+     "options": [
+      "der Bauleiter",
+      "der Tragwerksplaner (Statiker)",
+      "der Vermesser",
+      "der Bauzeichner"
+     ],
+     "answer": 1,
+     "explanation": "structural engineer = Tragwerksplaner. Bauleiter = site manager, Vermesser = surveyor."
+    },
+    {
+     "id": "englisch-blaetter-berufe-geraete-q012",
+     "type": "mc",
+     "question": "Was bedeutet *planning permission*?",
+     "options": [
+      "die Bauplanung",
+      "der Bauzeitenplan",
+      "die Baugenehmigung",
+      "die Ausführungsplanung"
+     ],
+     "answer": 2,
+     "explanation": "planning permission ist der britische Begriff für die Baugenehmigung (international: building permit)."
+    }
+   ]
+  },
+  {
+   "id": "englisch-blaetter-simple-past",
+   "title": "Simple Past – Regeln",
+   "description": "Verwendung, Signalwörter, Bildung, Schreibweise, Verneinung und Fragen im Simple Past.",
+   "sources": [
+    "AB simplepast.pdf"
+   ],
+   "cards": [
+    {
+     "id": "englisch-blaetter-simple-past-c001",
+     "type": "basic",
+     "front": "Wann verwendet man das **Simple Past**?",
+     "back": "Für Handlungen, die in der Vergangenheit **abgeschlossen** sind – meist mit **bestimmtem Zeitpunkt** (yesterday, last week, in 2020).\n*She walked to work yesterday.*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c002",
+     "type": "basic",
+     "front": "Signalwörter des Simple Past",
+     "back": "- yesterday\n- last week / last month / last year\n- ... ago (two days ago)\n- in 2019, on Monday\n- when I was young, the other day"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c003",
+     "type": "basic",
+     "front": "Bildung des Simple Past bei **regelmäßigen** Verben",
+     "back": "Infinitiv + **-ed** – für alle Personen gleich.\n*work → worked, start → started*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c004",
+     "type": "basic",
+     "front": "Simple Past von Verben auf stummes **-e** (z. B. *live, use*)?",
+     "back": "Nur **-d** anhängen:\n*live → lived, use → used, dance → danced*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c005",
+     "type": "basic",
+     "front": "Simple Past von Verben auf **Konsonant + y** (z. B. *study, carry*)?",
+     "back": "y wird zu **-ied**: *study → studied, carry → carried*\nAber Vokal + y bleibt: *play → played, stay → stayed*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c006",
+     "type": "basic",
+     "front": "Wann wird beim Simple Past der Endkonsonant **verdoppelt**?",
+     "back": "Wenn das Verb auf **einen einzelnen Vokal + einen Konsonanten** endet und die letzte Silbe **betont** ist:\n*stop → stopped, plan → planned, drop → dropped, prefer → preferred*\nUnbetonte Endsilbe: keine Verdopplung – *visit → visited, open → opened*\nNie bei w, x, y: *fix → fixed, play → played*\nBE-Sonderfall: End-l wird auch unbetont verdoppelt (*travel → travelled*)"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c007",
+     "type": "basic",
+     "front": "Britisch vs. amerikanisch: Simple Past von *travel* und *cancel*?",
+     "back": "BE: **travelled, cancelled** (l wird verdoppelt)\nAE: traveled, canceled"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c008",
+     "type": "basic",
+     "front": "Aussprache der Endung **-ed**: drei Varianten",
+     "back": "- /t/ nach stimmlosen Lauten (außer t): worked, stopped, washed\n- /d/ nach stimmhaften Lauten (außer d): played, lived, cleaned\n- /ɪd/ nach t oder d: started, needed, waited"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c009",
+     "type": "basic",
+     "front": "Was gilt für **unregelmäßige** Verben im Simple Past?",
+     "back": "Sie haben eine eigene 2. Form, die man auswendig lernen muss.\nReihe: Infinitiv – Simple Past – Past Participle\n*go – went – gone, build – built – built*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c010",
+     "type": "basic",
+     "front": "Verneinung im Simple Past (Vollverben)",
+     "back": "**didn't (did not) + Infinitiv** – für alle Personen gleich.\n*She didn't go out. We didn't have lunch.*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c011",
+     "type": "basic",
+     "front": "Warum ist *She didn't went out.* falsch?",
+     "back": "Nach **didn't** steht immer der **Infinitiv** – die Vergangenheit steckt schon in *did*.\nRichtig: *She didn't go out.*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c012",
+     "type": "basic",
+     "front": "Ja/Nein-Fragen im Simple Past",
+     "back": "**Did + Subjekt + Infinitiv ...?**\n*Did you visit the Grand Canyon?*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c013",
+     "type": "basic",
+     "front": "Fragen mit Fragewort im Simple Past",
+     "back": "**Fragewort + did + Subjekt + Infinitiv ...?**\n*Where did you stay? How long did it take?*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c014",
+     "type": "basic",
+     "front": "Kurzantworten auf *Did you ...?*",
+     "back": "*Yes, I **did**.* / *No, I **didn't**.*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c015",
+     "type": "basic",
+     "front": "Simple Past von **to be**",
+     "back": "I / he / she / it → **was**\nyou / we / they → **were**\nVerneinung: wasn't / weren't"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c016",
+     "type": "basic",
+     "front": "Fragen mit **to be** im Simple Past – was ist anders?",
+     "back": "**Kein did!** Einfach umstellen: **Was/Were + Subjekt ...?**\n*Was the weather good? Were you tired?*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c017",
+     "type": "basic",
+     "front": "Subjektfrage: *Wer hat das Fenster zerbrochen?* – Wie fragt man?",
+     "back": "Fragt man nach dem **Subjekt** (who / what), entfällt *did*:\n*Who broke the window? What happened?*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c018",
+     "type": "basic",
+     "front": "Simple Past von **can**?",
+     "back": "**could** / Verneinung **couldn't**\n*I couldn't come to work yesterday.*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c019",
+     "type": "basic",
+     "front": "Wie sagt man *gestern Abend* bzw. *letzte Nacht* auf Englisch?",
+     "back": "- yesterday evening = gestern Abend\n- **last night** = gestern Abend / letzte Nacht\nUnüblich: *yesterday night*"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-c020",
+     "type": "basic",
+     "front": "*It took her half an hour to get to work.* – Was bedeutet die Konstruktion?",
+     "back": "**It takes/took + Person + Zeit + to + Infinitiv** = jemand braucht(e) ... Zeit für etwas.\nSie brauchte eine halbe Stunde zur Arbeit."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "englisch-blaetter-simple-past-q001",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*Yesterday Laura ___ (get) up at 7 o'clock.*",
+     "answer": "got",
+     "accept": [],
+     "explanation": "get – got – got (unregelmäßig)."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q002",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*The site manager ___ (plan) the next steps last Monday.*",
+     "answer": "planned",
+     "accept": [],
+     "explanation": "Kurzer betonter Vokal + ein Konsonant → Konsonant verdoppeln: plan → planned."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q003",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*We ___ (study) the floor plans yesterday evening.*",
+     "answer": "studied",
+     "accept": [],
+     "explanation": "Konsonant + y → -ied: study → studied."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q004",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*My father ___ (teach) me to drive.*",
+     "answer": "taught",
+     "accept": [],
+     "explanation": "teach – taught – taught. Achtung Schreibweise: taught, nicht tought (und nicht thought = think)."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q005",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*Last year our company ___ (build) three houses.*",
+     "answer": "built",
+     "accept": [],
+     "explanation": "build – built – built (unregelmäßig)."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q006",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*The new excavator ___ (cost) £80,000.*",
+     "answer": "cost",
+     "accept": [],
+     "explanation": "cost – cost – cost: alle drei Formen sind gleich."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q007",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*The workers ___ (stop) for lunch at 12 o'clock.*",
+     "answer": "stopped",
+     "accept": [],
+     "explanation": "Kurzer Vokal + ein Konsonant → verdoppeln: stop → stopped."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q008",
+     "type": "input",
+     "question": "Setze das Simple Past ein (britische Schreibweise):\n*Last summer we ___ (travel) to Scotland.*",
+     "answer": "travelled",
+     "accept": [],
+     "explanation": "BE: travelled (l verdoppelt), AE: traveled."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q009",
+     "type": "input",
+     "question": "Setze die Verneinung im Simple Past ein:\n*It was very cold, so the bricklayers ___ (not / work) yesterday.*",
+     "answer": "didn't work",
+     "accept": [
+      "did not work",
+      "didn’t work",
+      "didnt work"
+     ],
+     "explanation": "Verneinung: didn't + Infinitiv → didn't work."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q010",
+     "type": "input",
+     "question": "Setze die Verneinung im Simple Past ein:\n*I was very tired, so I ___ (not / go) out last night.*",
+     "answer": "didn't go",
+     "accept": [
+      "did not go",
+      "didn’t go",
+      "didnt go"
+     ],
+     "explanation": "didn't + Infinitiv: didn't go (nicht: didn't went)."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q011",
+     "type": "input",
+     "question": "Ergänze das fehlende Wort:\n*___ you check the reinforcement before the concrete was poured?*",
+     "answer": "Did",
+     "accept": [],
+     "explanation": "Ja/Nein-Frage im Simple Past: Did + Subjekt + Infinitiv."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q012",
+     "type": "input",
+     "question": "Ergänze das fehlende Wort:\n*How long ___ it take to dig the excavation?*",
+     "answer": "did",
+     "accept": [],
+     "explanation": "Fragewort + did + Subjekt + Infinitiv: How long did it take ...?"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q013",
+     "type": "input",
+     "question": "Setze das Simple Past von *be* ein:\n*It was hard to carry the bricks. They ___ very heavy.*",
+     "answer": "were",
+     "accept": [],
+     "explanation": "they → were (I/he/she/it → was)."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q014",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*The window was open and a bird ___ (fly) into the site office.*",
+     "answer": "flew",
+     "accept": [],
+     "explanation": "fly – flew – flown."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q015",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*I was very tired, so I ___ (leave) the party early.*",
+     "answer": "left",
+     "accept": [],
+     "explanation": "leave – left – left."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q016",
+     "type": "input",
+     "question": "Setze das Simple Past ein:\n*The lorry ___ (bring) the bricks two hours ago.*",
+     "answer": "brought",
+     "accept": [],
+     "explanation": "bring – brought – brought; Signalwort ago → Simple Past."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q017",
+     "type": "mc",
+     "question": "*She ___ out yesterday evening.*",
+     "options": [
+      "didn't went",
+      "didn't go",
+      "doesn't go",
+      "hasn't gone"
+     ],
+     "answer": 1,
+     "explanation": "yesterday evening → Simple Past; Verneinung mit didn't + Infinitiv."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q018",
+     "type": "mc",
+     "question": "*___ the weather good on your holiday?*",
+     "options": [
+      "Did",
+      "Were",
+      "Was",
+      "Had"
+     ],
+     "answer": 2,
+     "explanation": "Bei to be kein did: Was + Subjekt (the weather = it) ...?"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q019",
+     "type": "mc",
+     "question": "*Where ___ you stay last summer?*",
+     "options": [
+      "did",
+      "were",
+      "have",
+      "do"
+     ],
+     "answer": 0,
+     "explanation": "last summer → Simple Past: Fragewort + did + Subjekt + Infinitiv."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q020",
+     "type": "mc",
+     "question": "*Who ___ the window?* (Frage nach dem Täter)",
+     "options": [
+      "did break",
+      "did broke",
+      "broke",
+      "breaked"
+     ],
+     "answer": 2,
+     "explanation": "Subjektfrage: who ist das Subjekt, daher kein did → Who broke the window?"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q021",
+     "type": "mc",
+     "question": "Welcher Satz ist korrekt?",
+     "options": [
+      "I have seen him yesterday.",
+      "I did saw him yesterday.",
+      "I see him yesterday.",
+      "I saw him yesterday."
+     ],
+     "answer": 3,
+     "explanation": "Mit yesterday steht immer das Simple Past, kein Present Perfect."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q022",
+     "type": "mc",
+     "question": "Welche Zeitangabe passt **nicht** zum Simple Past?",
+     "options": [
+      "two years ago",
+      "last Monday",
+      "since 2020",
+      "yesterday"
+     ],
+     "answer": 2,
+     "explanation": "since + Zeitpunkt beschreibt eine Dauer bis jetzt → Present Perfect."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q023",
+     "type": "mc",
+     "question": "*Fortunately the plate didn't ___.* (zerbrechen)",
+     "options": [
+      "brake",
+      "break",
+      "broke",
+      "broken"
+     ],
+     "answer": 1,
+     "explanation": "didn't + Infinitiv → break. brake heißt bremsen!"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q024",
+     "type": "mc",
+     "question": "*The hotel wasn't very expensive. It ___ very much.* (cost, verneint)",
+     "options": [
+      "didn't costed",
+      "wasn't cost",
+      "doesn't cost",
+      "didn't cost"
+     ],
+     "answer": 3,
+     "explanation": "Verneinung im Simple Past: didn't + Infinitiv (cost). Nach didn't nie die 2. Form oder -ed."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q025",
+     "type": "mc",
+     "question": "Wie wird die Endung *-ed* in *started* ausgesprochen?",
+     "options": [
+      "/t/",
+      "/d/",
+      "/ɪd/"
+     ],
+     "answer": 2,
+     "explanation": "Nach t oder d wird -ed als eigene Silbe /ɪd/ gesprochen."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q026",
+     "type": "mc",
+     "question": "Wie wird die Endung *-ed* in *worked* ausgesprochen?",
+     "options": [
+      "/t/",
+      "/d/",
+      "/ɪd/"
+     ],
+     "answer": 0,
+     "explanation": "k ist stimmlos → -ed klingt wie /t/."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q027",
+     "type": "mc",
+     "question": "Richtig oder falsch? Fragen mit *to be* bildet man im Simple Past mit *did* (*Did you be tired?*).",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Bei to be wird nur umgestellt: Were you tired?"
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q028",
+     "type": "mc",
+     "question": "Simple Past von *visit*?",
+     "options": [
+      "visitted",
+      "visited",
+      "visitet",
+      "visitd"
+     ],
+     "answer": 1,
+     "explanation": "Die Endsilbe -sit ist unbetont (VIS-it) → keine Verdopplung: visited. Endung nach t → Aussprache /ɪd/."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q029",
+     "type": "mc",
+     "question": "Welches Verb bildet das Simple Past **regelmäßig**?",
+     "options": [
+      "catch",
+      "throw",
+      "walk",
+      "sell"
+     ],
+     "answer": 2,
+     "explanation": "walk → walked. Die anderen: caught, threw, sold."
+    },
+    {
+     "id": "englisch-blaetter-simple-past-q030",
+     "type": "mc",
+     "question": "*The old crane was too expensive to repair, so the company ___ it.*",
+     "options": [
+      "sold",
+      "selled",
+      "has sold",
+      "sells"
+     ],
+     "answer": 0,
+     "explanation": "Abgeschlossene Handlung in der Vergangenheit; sell – sold – sold."
+    }
+   ]
+  },
+  {
+   "id": "englisch-blaetter-irregular-verbs",
+   "title": "Unregelmäßige Verben",
+   "description": "Die wichtigsten unregelmäßigen Verben vom Arbeitsblatt plus typische Bau-Verben mit allen drei Formen.",
+   "sources": [
+    "AB simplepast.pdf",
+    "Ergänzung"
+   ],
+   "cards": [
+    {
+     "id": "englisch-blaetter-irregular-verbs-c001",
+     "type": "basic",
+     "front": "Simple Past von **go** (gehen, fahren)?",
+     "back": "**went**\ngo – went – gone"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c002",
+     "type": "basic",
+     "front": "Simple Past von **have** (haben)?",
+     "back": "**had**\nhave – had – had"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c003",
+     "type": "basic",
+     "front": "Simple Past von **get** (bekommen, ankommen)?",
+     "back": "**got**\nget – got – got (BE)\nAE Past Participle: gotten"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c004",
+     "type": "basic",
+     "front": "Simple Past von **take** (nehmen, dauern)?",
+     "back": "**took**\ntake – took – taken"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c005",
+     "type": "basic",
+     "front": "Simple Past von **sleep** (schlafen)?",
+     "back": "**slept**\nsleep – slept – slept"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c006",
+     "type": "basic",
+     "front": "Simple Past von **teach** (unterrichten, beibringen)?",
+     "back": "**taught**\nteach – taught – taught",
+     "hint": "Schreibweise mit au – nicht tought"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c007",
+     "type": "basic",
+     "front": "Simple Past von **catch** (fangen)?",
+     "back": "**caught**\ncatch – caught – caught"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c008",
+     "type": "basic",
+     "front": "Simple Past von **buy** (kaufen)?",
+     "back": "**bought**\nbuy – bought – bought"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c009",
+     "type": "basic",
+     "front": "Simple Past von **bring** (bringen)?",
+     "back": "**brought**\nbring – brought – brought"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c010",
+     "type": "basic",
+     "front": "Simple Past von **think** (denken)?",
+     "back": "**thought**\nthink – thought – thought",
+     "hint": "Nicht verwechseln mit taught (teach)"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c011",
+     "type": "basic",
+     "front": "Simple Past von **sell** (verkaufen)?",
+     "back": "**sold**\nsell – sold – sold"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c012",
+     "type": "basic",
+     "front": "Simple Past von **fall** (fallen)?",
+     "back": "**fell**\nfall – fell – fallen"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c013",
+     "type": "basic",
+     "front": "Simple Past von **hurt** (verletzen, wehtun)?",
+     "back": "**hurt**\nhurt – hurt – hurt (alle Formen gleich)"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c014",
+     "type": "basic",
+     "front": "Simple Past von **cost** (kosten)?",
+     "back": "**cost**\ncost – cost – cost (alle Formen gleich)"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c015",
+     "type": "basic",
+     "front": "Simple Past von **cut** (schneiden)?",
+     "back": "**cut**\ncut – cut – cut (alle Formen gleich)"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c016",
+     "type": "basic",
+     "front": "Simple Past von **throw** (werfen)?",
+     "back": "**threw**\nthrow – threw – thrown"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c017",
+     "type": "basic",
+     "front": "Simple Past von **fly** (fliegen)?",
+     "back": "**flew**\nfly – flew – flown"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c018",
+     "type": "basic",
+     "front": "Simple Past von **write** (schreiben)?",
+     "back": "**wrote**\nwrite – wrote – written"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c019",
+     "type": "basic",
+     "front": "Simple Past von **spend** (ausgeben, verbringen)?",
+     "back": "**spent**\nspend – spent – spent"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c020",
+     "type": "basic",
+     "front": "Simple Past von **leave** (verlassen, abfahren)?",
+     "back": "**left**\nleave – left – left"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c021",
+     "type": "basic",
+     "front": "Simple Past von **see** (sehen)?",
+     "back": "**saw**\nsee – saw – seen",
+     "hint": "saw heißt als Nomen auch die Säge"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c022",
+     "type": "basic",
+     "front": "Simple Past von **meet** (treffen)?",
+     "back": "**met**\nmeet – met – met"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c023",
+     "type": "basic",
+     "front": "Simple Past von **break** (brechen, zerbrechen)?",
+     "back": "**broke**\nbreak – broke – broken",
+     "hint": "Nicht verwechseln mit brake = bremsen"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c024",
+     "type": "basic",
+     "front": "Simple Past von **know** (wissen, kennen)?",
+     "back": "**knew**\nknow – knew – known"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c025",
+     "type": "basic",
+     "front": "Simple Past von **build** (bauen)?",
+     "back": "**built**\nbuild – built – built"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c026",
+     "type": "basic",
+     "front": "Simple Past von **dig** (graben, ausheben)?",
+     "back": "**dug**\ndig – dug – dug"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c027",
+     "type": "basic",
+     "front": "Simple Past von **lay** (legen, verlegen)?",
+     "back": "**laid**\nlay – laid – laid\n*They laid the pipes yesterday.*"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-c028",
+     "type": "basic",
+     "front": "Simple Past von **lie** (liegen)?",
+     "back": "**lay**\nlie – lay – lain\nAchtung: lay ist auch der Infinitiv von legen!\nlie = lügen ist regelmäßig: lie – lied – lied"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "englisch-blaetter-irregular-verbs-q001",
+     "type": "input",
+     "question": "Simple Past von *build* (bauen)?",
+     "answer": "built",
+     "accept": [],
+     "explanation": "build – built – built"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q002",
+     "type": "input",
+     "question": "Simple Past von *dig* (graben)?",
+     "answer": "dug",
+     "accept": [],
+     "explanation": "dig – dug – dug"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q003",
+     "type": "input",
+     "question": "Simple Past von *teach* (unterrichten)?",
+     "answer": "taught",
+     "accept": [],
+     "explanation": "teach – taught – taught"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q004",
+     "type": "input",
+     "question": "Simple Past von *catch* (fangen)?",
+     "answer": "caught",
+     "accept": [],
+     "explanation": "catch – caught – caught"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q005",
+     "type": "input",
+     "question": "Simple Past von *throw* (werfen)?",
+     "answer": "threw",
+     "accept": [],
+     "explanation": "throw – threw – thrown"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q006",
+     "type": "input",
+     "question": "Simple Past von *fly* (fliegen)?",
+     "answer": "flew",
+     "accept": [],
+     "explanation": "fly – flew – flown"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q007",
+     "type": "input",
+     "question": "Simple Past von *bring* (bringen)?",
+     "answer": "brought",
+     "accept": [],
+     "explanation": "bring – brought – brought"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q008",
+     "type": "input",
+     "question": "Simple Past von *lay* (legen, verlegen)?",
+     "answer": "laid",
+     "accept": [],
+     "explanation": "lay – laid – laid"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q009",
+     "type": "input",
+     "question": "Past Participle (3. Form) von *write*?",
+     "answer": "written",
+     "accept": [],
+     "explanation": "write – wrote – written"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q010",
+     "type": "input",
+     "question": "Past Participle (3. Form) von *fall*?",
+     "answer": "fallen",
+     "accept": [],
+     "explanation": "fall – fell – fallen"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q011",
+     "type": "input",
+     "question": "Past Participle (3. Form) von *break*?",
+     "answer": "broken",
+     "accept": [],
+     "explanation": "break – broke – broken"
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q012",
+     "type": "mc",
+     "question": "Simple Past von *think*?",
+     "options": [
+      "taught",
+      "thinked",
+      "thaught",
+      "thought"
+     ],
+     "answer": 3,
+     "explanation": "think – thought – thought. taught gehört zu teach."
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q013",
+     "type": "mc",
+     "question": "*lay – laid – laid* bedeutet …",
+     "options": [
+      "liegen",
+      "legen / verlegen",
+      "lügen",
+      "lassen"
+     ],
+     "answer": 1,
+     "explanation": "lay = legen. liegen heißt lie – lay – lain."
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q014",
+     "type": "mc",
+     "question": "Welches Verb hat in allen drei Formen dieselbe Form?",
+     "options": [
+      "buy",
+      "leave",
+      "cost",
+      "sell"
+     ],
+     "answer": 2,
+     "explanation": "cost – cost – cost. Die anderen: bought, left, sold."
+    },
+    {
+     "id": "englisch-blaetter-irregular-verbs-q015",
+     "type": "mc",
+     "question": "Britisches Englisch: Past Participle von *get*?",
+     "options": [
+      "gotten",
+      "got",
+      "getted",
+      "gat"
+     ],
+     "answer": 1,
+     "explanation": "BE: get – got – got. gotten ist amerikanisch."
+    }
+   ]
+  },
+  {
+   "id": "englisch-blaetter-past-continuous",
+   "title": "Past Continuous & Simple Past",
+   "description": "Bildung und Verwendung des Past Continuous und das Zusammenspiel mit dem Simple Past.",
+   "sources": [
+    "AB simplepast.pdf"
+   ],
+   "cards": [
+    {
+     "id": "englisch-blaetter-past-continuous-c001",
+     "type": "basic",
+     "front": "Bildung des **Past Continuous**",
+     "back": "**was/were + Verb-ing**\n*I was working. They were waiting.*"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c002",
+     "type": "basic",
+     "front": "Wann verwendet man das Past Continuous?",
+     "back": "Für eine Handlung, die zu einem bestimmten Zeitpunkt in der Vergangenheit **gerade im Gange** war.\n*At 8 o'clock yesterday evening I was having dinner.*"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c003",
+     "type": "basic",
+     "front": "Past Continuous + Simple Past in einem Satz – wer macht was?",
+     "back": "- Past Continuous: längere **Hintergrundhandlung**, die gerade lief\n- Simple Past: kurze **neue Handlung**, die dazwischenkommt\n*I was walking along the street when I heard footsteps.*"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c004",
+     "type": "basic",
+     "front": "Typische Konjunktionen: *while* und *when*",
+     "back": "- **while** + Past Continuous: *Ann fell asleep while she was reading.*\n- **when** + Simple Past: *We were driving home when we saw the accident.*"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c005",
+     "type": "basic",
+     "front": "Zwei Handlungen liefen **gleichzeitig** ab – welche Zeitform?",
+     "back": "Beide im **Past Continuous**:\n*While I was cooking, my brother was watching TV.*"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c006",
+     "type": "basic",
+     "front": "Mehrere Handlungen **nacheinander** – welche Zeitform?",
+     "back": "Alle im **Simple Past**:\n*She got up, had breakfast and walked to work.*"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c007",
+     "type": "basic",
+     "front": "Unterschied: *When I arrived, she left.* / *When I arrived, she was leaving.*",
+     "back": "- *she left*: Sie ging **erst nachdem** ich ankam (nacheinander).\n- *she was leaving*: Sie war **gerade dabei** zu gehen, als ich ankam."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c008",
+     "type": "basic",
+     "front": "Verneinung und Frage im Past Continuous",
+     "back": "- Verneinung: **wasn't/weren't + -ing** – *I wasn't looking.*\n- Frage: **Was/Were + Subjekt + -ing?** – *What were you doing?*"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c009",
+     "type": "basic",
+     "front": "Welche Verben stehen (fast) nie in der Verlaufsform?",
+     "back": "Zustandsverben (*state verbs*): **know, want, like, believe, need, understand**\n*We didn't know what to do.* (nicht: *weren't knowing*)"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c010",
+     "type": "basic",
+     "front": "Schreibweise der -ing-Form: *write, stop, travel, lie*",
+     "back": "- stummes e fällt weg: write → writing\n- Verdopplung bei betonter Endsilbe mit Einzelvokal + Konsonant: stop → stopping\n- BE: travel → travelling\n- ie → y: lie → lying"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-c011",
+     "type": "basic",
+     "front": "Typische Zeitangaben für das Past Continuous",
+     "back": "- while\n- at 8 o'clock yesterday / at this time yesterday\n- at that moment\n- all day / all morning yesterday"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "englisch-blaetter-past-continuous-q001",
+     "type": "input",
+     "question": "Past Continuous oder Simple Past?\n*The workers ___ (wait) for the concrete when it started to rain.*",
+     "answer": "were waiting",
+     "accept": [],
+     "explanation": "Hintergrundhandlung, die gerade lief, als etwas Neues passierte → Past Continuous (were + -ing)."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q002",
+     "type": "input",
+     "question": "Past Continuous oder Simple Past?\n*Somebody ___ (follow) me, so I started to run.*",
+     "answer": "was following",
+     "accept": [],
+     "explanation": "Die Verfolgung war gerade im Gange → was following."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q003",
+     "type": "input",
+     "question": "Past Continuous oder Simple Past?\n*Sam took a photo of me while I ___ (not / look).*",
+     "answer": "wasn't looking",
+     "accept": [
+      "was not looking",
+      "wasn’t looking",
+      "wasnt looking"
+     ],
+     "explanation": "while + Past Continuous; Verneinung wasn't + -ing (Schreibweise: wasn't, nicht wasen't)."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q004",
+     "type": "input",
+     "question": "Past Continuous oder Simple Past?\n*Last night I dropped a plate while I ___ (do) the washing-up.*",
+     "answer": "was doing",
+     "accept": [],
+     "explanation": "Hintergrundhandlung mit while → was doing."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q005",
+     "type": "input",
+     "question": "Past Continuous oder Simple Past?\n*When I was young, I ___ (want) to be a pilot.*",
+     "answer": "wanted",
+     "accept": [],
+     "explanation": "want ist ein Zustandsverb → keine Verlaufsform, also Simple Past."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q006",
+     "type": "input",
+     "question": "Past Continuous oder Simple Past?\n*The crane driver ___ (lift) a steel beam when the wind suddenly got stronger.*",
+     "answer": "was lifting",
+     "accept": [],
+     "explanation": "Laufende Handlung, die durch ein neues Ereignis (when + Simple Past) unterbrochen wird → was lifting."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q007",
+     "type": "input",
+     "question": "Past Continuous:\n*At 10 o'clock yesterday morning I ___ (study) English.*",
+     "answer": "was studying",
+     "accept": [],
+     "explanation": "was + -ing-Form: was studying (nicht: was study)."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q008",
+     "type": "input",
+     "question": "Past Continuous oder Simple Past?\n*I was cycling home when a man suddenly ___ (step) into the road.*",
+     "answer": "stepped",
+     "accept": [],
+     "explanation": "Kurze neue Handlung → Simple Past; Konsonant verdoppeln: stepped."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q009",
+     "type": "mc",
+     "question": "*Matt phoned while we ___ dinner.*",
+     "options": [
+      "had",
+      "were having",
+      "have had",
+      "was having"
+     ],
+     "answer": 1,
+     "explanation": "while + Past Continuous; we → were having."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q010",
+     "type": "mc",
+     "question": "*How fast were you driving when the accident ___?*",
+     "options": [
+      "happened",
+      "was happening",
+      "happens",
+      "has happened"
+     ],
+     "answer": 0,
+     "explanation": "Der Unfall ist das kurze, neue Ereignis → Simple Past."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q011",
+     "type": "mc",
+     "question": "*We ___ what to do.* (Wir wussten nicht, was wir tun sollten.)",
+     "options": [
+      "weren't knowing",
+      "wasn't knowing",
+      "didn't knew",
+      "didn't know"
+     ],
+     "answer": 3,
+     "explanation": "know ist ein Zustandsverb → keine Verlaufsform; Verneinung didn't + Infinitiv."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q012",
+     "type": "mc",
+     "question": "*I was walking along the street when I suddenly ___ footsteps behind me.*",
+     "options": [
+      "was hearing",
+      "heard",
+      "hear",
+      "have heard"
+     ],
+     "answer": 1,
+     "explanation": "Plötzliches, kurzes Ereignis → Simple Past."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q013",
+     "type": "mc",
+     "question": "*At 4.30 this morning I ___ in my bed.*",
+     "options": [
+      "slept",
+      "have slept",
+      "was sleeping",
+      "sleep"
+     ],
+     "answer": 2,
+     "explanation": "Handlung, die zu einem bestimmten Zeitpunkt gerade im Gange war → Past Continuous."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q014",
+     "type": "mc",
+     "question": "Welche Zeitform beschreibt in *I was walking home when I heard a noise* die **Hintergrundhandlung**?",
+     "options": [
+      "Present Perfect",
+      "Simple Past",
+      "Past Perfect",
+      "Past Continuous"
+     ],
+     "answer": 3,
+     "explanation": "was walking (Past Continuous) ist die laufende Hintergrundhandlung, heard (Simple Past) das neue Ereignis."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q015",
+     "type": "mc",
+     "question": "Richtig oder falsch? *I was study English.* ist ein korrekter Satz.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Nach was/were muss die -ing-Form stehen: I was studying English. (English immer groß!)"
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q016",
+     "type": "mc",
+     "question": "*The surveyor ___ the site when he fell into the trench.*",
+     "options": [
+      "inspected",
+      "is inspecting",
+      "was inspecting",
+      "has inspected"
+     ],
+     "answer": 2,
+     "explanation": "Die Begehung lief gerade, als er hineinfiel → Past Continuous."
+    },
+    {
+     "id": "englisch-blaetter-past-continuous-q017",
+     "type": "mc",
+     "question": "*When I last met Tom, he ___ for a new job.* (Er war gerade auf Jobsuche.)",
+     "options": [
+      "was looking",
+      "looked",
+      "is looking",
+      "has looked"
+     ],
+     "answer": 0,
+     "explanation": "Andauernde Situation zu diesem Zeitpunkt → Past Continuous."
+    }
+   ]
+  },
+  {
+   "id": "englisch-blaetter-zeitformen",
+   "title": "Zeitformen-Überblick (Time Line)",
+   "description": "Die Zeitformen vom Zeitstrahl – Past Perfect bis going to-future – mit Bildung, Verwendung und Signalwörtern.",
+   "sources": [
+    "Time Line.pdf"
+   ],
+   "cards": [
+    {
+     "id": "englisch-blaetter-zeitformen-c001",
+     "type": "basic",
+     "front": "Zeitstrahl: Welche Zeitform steht genau bei **Now**?",
+     "back": "Das **Simple Present**.\nLinks davon die Vergangenheit (Past Perfect, Present Perfect, Simple Past), rechts die Zukunft (will-future, going to-future)."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c002",
+     "type": "basic",
+     "front": "Zeitstrahl: Was bedeutet der Pfeil von **1. Past Perfect** nach **2. Simple Past**?",
+     "back": "Das Past Perfect ist die **Vorvergangenheit**: Handlung 1 war schon abgeschlossen, bevor Handlung 2 (Simple Past) passierte.\n*When we arrived (2), the lorry had already left (1).*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c003",
+     "type": "basic",
+     "front": "Zeitstrahl: Was bedeutet der Pfeil vom **Present Perfect** bis **Now**?",
+     "back": "Das Present Perfect verbindet Vergangenheit und Gegenwart: Die Handlung begann in der Vergangenheit und reicht bis jetzt – oder ihr Ergebnis ist jetzt noch wichtig."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c004",
+     "type": "basic",
+     "front": "Simple Present – Bildung",
+     "back": "Infinitiv; bei **he/she/it** + **-s**:\n*I work – she works, he goes, it studies*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c005",
+     "type": "basic",
+     "front": "Simple Present – Verwendung",
+     "back": "- Gewohnheiten, regelmäßige Handlungen: *I usually get up at 7.*\n- allgemeine Tatsachen: *Steel expands when it gets hot.*\n- Fahrpläne, Programme: *The train leaves at 8.15.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c006",
+     "type": "basic",
+     "front": "Simple Present – Signalwörter",
+     "back": "always, usually, often, sometimes, never, every day / every week, on Mondays, once a week"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c007",
+     "type": "basic",
+     "front": "Simple Present – Verneinung und Frage",
+     "back": "- Verneinung: **don't/doesn't + Infinitiv** – *He doesn't work on Saturdays.*\n- Frage: **Do/Does + Subjekt + Infinitiv?** – *Does she live in Würzburg?*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c008",
+     "type": "basic",
+     "front": "Was passiert **gerade jetzt**, im Moment des Sprechens? Welche Zeitform?",
+     "back": "**Present Continuous**: am/is/are + -ing\n*The crane is lifting the beam right now.*\nSignalwörter: now, at the moment, Look!\n(Ergänzung – steht nicht auf dem Zeitstrahl)"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c009",
+     "type": "basic",
+     "front": "Simple Past – Verwendung (Zeitstrahl)",
+     "back": "Abgeschlossene Handlung zu einem **bestimmten Zeitpunkt** in der Vergangenheit, ohne Bezug zur Gegenwart.\n*We poured the slab last Friday.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c010",
+     "type": "basic",
+     "front": "Present Perfect – Bildung",
+     "back": "**have/has + Past Participle (3. Form)**\n*The concrete has hardened. We have finished the walls.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c011",
+     "type": "basic",
+     "front": "Present Perfect – Verwendung 1: das Ergebnis zählt",
+     "back": "Handlung in der Vergangenheit, **Zeitpunkt unwichtig oder unbestimmt**, das **Ergebnis zählt jetzt**.\n*I have lost my key.* (Ich habe ihn jetzt nicht.)"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c012",
+     "type": "basic",
+     "front": "Present Perfect – Verwendung 2: Dauer bis jetzt",
+     "back": "Handlung begann in der Vergangenheit und **dauert bis jetzt an** (oft mit since/for).\n*We have worked on this site since March.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c013",
+     "type": "basic",
+     "front": "Present Perfect – Signalwörter",
+     "back": "already, yet, just, ever, never, so far, recently, since, for"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c014",
+     "type": "basic",
+     "front": "**since** oder **for**?",
+     "back": "- **since** + Zeitpunkt: since 2020, since Monday, since 8 o'clock\n- **for** + Zeitraum: for three years, for two hours"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c015",
+     "type": "basic",
+     "front": "Present Perfect oder Simple Past bei *yesterday, last week, ago, in 2020*?",
+     "back": "Immer **Simple Past** – bei einem konkreten Zeitpunkt in der Vergangenheit kein Present Perfect.\n*I saw him yesterday.* (nicht: *I have seen him yesterday.*)\nAchtung: Deutsches Perfekt ≠ englisches Present Perfect."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c016",
+     "type": "basic",
+     "front": "Present Perfect – Verneinung und Frage",
+     "back": "- Verneinung: **haven't/hasn't + 3. Form** – *The lorry hasn't arrived yet.*\n- Frage: **Have/Has + Subjekt + 3. Form?** – *Have you ever driven a crane?*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c017",
+     "type": "basic",
+     "front": "Past Perfect – Bildung",
+     "back": "**had + Past Participle (3. Form)** – für alle Personen gleich.\n*The workers had finished the formwork.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c018",
+     "type": "basic",
+     "front": "Past Perfect – Verwendung",
+     "back": "**Vorvergangenheit**: Eine Handlung war bereits abgeschlossen, **bevor** eine andere vergangene Handlung (Simple Past) stattfand.\n*After the workers had built the formwork, they poured the concrete.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c019",
+     "type": "basic",
+     "front": "Past Perfect – typische Signalwörter",
+     "back": "before, after, already, by the time, when, until\n*By the time we arrived, the meeting had started.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c020",
+     "type": "basic",
+     "front": "will-future – Bildung",
+     "back": "**will + Infinitiv** (für alle Personen)\nVerneinung: **won't** (will not) – *It won't take long.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c021",
+     "type": "basic",
+     "front": "will-future – Verwendung",
+     "back": "- Vorhersagen, Vermutungen: *I think it will rain tomorrow.*\n- spontane Entschlüsse: *I'll help you with the bricks.*\n- Versprechen, Angebote: *I'll call you later.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c022",
+     "type": "basic",
+     "front": "will-future – Signalwörter",
+     "back": "I think, I'm sure, probably, perhaps, tomorrow, next week, in 2030, soon"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c023",
+     "type": "basic",
+     "front": "going to-future – Bildung",
+     "back": "**am/is/are + going to + Infinitiv**\n*We are going to pour the concrete on Monday.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c024",
+     "type": "basic",
+     "front": "going to-future – Verwendung",
+     "back": "- feste **Absicht / Plan**, vorher beschlossen: *We're going to build a house next year.*\n- Vorhersage aufgrund **sichtbarer Anzeichen**: *Look at those clouds – it's going to rain.*"
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c025",
+     "type": "basic",
+     "front": "will oder going to? *Das Telefon klingelt – ich geh ran!*",
+     "back": "**I'll answer it.** – spontaner Entschluss → will.\nBei einem schon vorher gefassten Plan → going to."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-c026",
+     "type": "basic",
+     "front": "Was ist das **Past Participle** (3. Form) und wofür braucht man es?",
+     "back": "- regelmäßig: Infinitiv + -ed (worked)\n- unregelmäßig: eigene Form (built, written, gone)\nGebraucht für Present Perfect (have + 3. Form), Past Perfect (had + 3. Form) und das Passiv."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "englisch-blaetter-zeitformen-q001",
+     "type": "mc",
+     "question": "*We ___ on this site since March.*",
+     "options": [
+      "work",
+      "worked",
+      "have worked",
+      "had worked"
+     ],
+     "answer": 2,
+     "explanation": "since + Zeitpunkt, die Handlung dauert bis jetzt → Present Perfect."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q002",
+     "type": "mc",
+     "question": "*When we arrived, the lorry ___ already ___.*",
+     "options": [
+      "had … left",
+      "has … left",
+      "was … leaving",
+      "did … leave"
+     ],
+     "answer": 0,
+     "explanation": "Die Abfahrt lag vor einer anderen vergangenen Handlung (arrived) → Past Perfect: had left."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q003",
+     "type": "mc",
+     "question": "*Look at those dark clouds! It ___ rain.*",
+     "options": [
+      "will",
+      "rains",
+      "is going to",
+      "has rained"
+     ],
+     "answer": 2,
+     "explanation": "Vorhersage aufgrund sichtbarer Anzeichen → going to-future."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q004",
+     "type": "mc",
+     "question": "*The phone is ringing. – OK, I ___ it.*",
+     "options": [
+      "am going to answer",
+      "'ll answer",
+      "answer",
+      "have answered"
+     ],
+     "answer": 1,
+     "explanation": "Spontaner Entschluss im Moment des Sprechens → will-future (I'll answer it)."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q005",
+     "type": "mc",
+     "question": "*We ___ already ___ the formwork, so we can pour the concrete now.*",
+     "options": [
+      "did … finish",
+      "had … finished",
+      "are … finishing",
+      "have … finished"
+     ],
+     "answer": 3,
+     "explanation": "already + Ergebnis ist jetzt wichtig (wir können jetzt betonieren) → Present Perfect: have finished."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q006",
+     "type": "mc",
+     "question": "Welche Zeitform wird mit *had + Past Participle* gebildet?",
+     "options": [
+      "Past Perfect",
+      "Present Perfect",
+      "Simple Past",
+      "Past Continuous"
+     ],
+     "answer": 0,
+     "explanation": "had + 3. Form = Past Perfect (Vorvergangenheit)."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q007",
+     "type": "mc",
+     "question": "Die Signalwörter *already, yet, ever, never, since, for* gehören typischerweise zum …",
+     "options": [
+      "Present Perfect",
+      "Simple Past",
+      "will-future",
+      "Simple Present"
+     ],
+     "answer": 0,
+     "explanation": "Diese Wörter verbinden Vergangenheit und Gegenwart → Present Perfect."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q008",
+     "type": "mc",
+     "question": "*Steel ___ when it gets hot.* (allgemeine Tatsache)",
+     "options": [
+      "expand",
+      "expands",
+      "is expanding",
+      "expanded"
+     ],
+     "answer": 1,
+     "explanation": "Allgemeine Tatsache → Simple Present; steel = it → -s."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q009",
+     "type": "mc",
+     "question": "*We ___ the slab next Monday – the concrete has already been ordered.*",
+     "options": [
+      "will pour",
+      "poured",
+      "are going to pour",
+      "have poured"
+     ],
+     "answer": 2,
+     "explanation": "Fester, bereits vorbereiteter Plan → going to-future. will eher für Vorhersagen und spontane Entschlüsse."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q010",
+     "type": "mc",
+     "question": "*I think the new hall ___ finished by next summer.*",
+     "options": [
+      "will be",
+      "has been",
+      "was",
+      "had been"
+     ],
+     "answer": 0,
+     "explanation": "Vermutung über die Zukunft mit I think → will-future."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q011",
+     "type": "mc",
+     "question": "*She ___ in Würzburg for five years.* (Sie wohnt immer noch dort.)",
+     "options": [
+      "lived",
+      "lives",
+      "has lived",
+      "had lived"
+     ],
+     "answer": 2,
+     "explanation": "for + Zeitraum, Zustand dauert bis jetzt → Present Perfect."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q012",
+     "type": "mc",
+     "question": "*After the workers ___ the formwork, they poured the concrete.*",
+     "options": [
+      "have built",
+      "had built",
+      "are building",
+      "build"
+     ],
+     "answer": 1,
+     "explanation": "Die Schalung war fertig, bevor betoniert wurde → Past Perfect (had built)."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q013",
+     "type": "mc",
+     "question": "Welche Zeitform steht auf dem Zeitstrahl des Arbeitsblatts beim Punkt *Now*?",
+     "options": [
+      "Simple Past",
+      "Present Perfect",
+      "Simple Present",
+      "will-future"
+     ],
+     "answer": 2,
+     "explanation": "Auf dem Zeitstrahl markiert das Simple Present die Gegenwart (Now)."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q014",
+     "type": "mc",
+     "question": "Richtig oder falsch? *Ich habe ihn gestern gesehen* heißt auf Englisch *I have seen him yesterday.*",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Mit yesterday steht Simple Past: I saw him yesterday. Das deutsche Perfekt entspricht hier nicht dem Present Perfect."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q015",
+     "type": "mc",
+     "question": "*___ you ever ___ a tower crane?*",
+     "options": [
+      "Did … drove",
+      "Have … driven",
+      "Has … driven",
+      "Do … driven"
+     ],
+     "answer": 1,
+     "explanation": "ever (jemals) → Present Perfect: Have + you + 3. Form (driven)."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q016",
+     "type": "mc",
+     "question": "*We have waited ___ two hours.*",
+     "options": [
+      "since",
+      "ago",
+      "from",
+      "for"
+     ],
+     "answer": 3,
+     "explanation": "for + Zeitraum (two hours); since + Zeitpunkt."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q017",
+     "type": "mc",
+     "question": "*Our company ___ this bridge in 2019.*",
+     "options": [
+      "has built",
+      "had built",
+      "builds",
+      "built"
+     ],
+     "answer": 3,
+     "explanation": "in 2019 = abgeschlossener Zeitpunkt in der Vergangenheit → Simple Past."
+    },
+    {
+     "id": "englisch-blaetter-zeitformen-q018",
+     "type": "mc",
+     "question": "*The lorry ___ yet.*",
+     "options": [
+      "didn't arrive",
+      "doesn't arrive",
+      "hadn't arrived",
+      "hasn't arrived"
+     ],
+     "answer": 3,
+     "explanation": "yet → Present Perfect (BE): hasn't arrived yet."
+    }
+   ]
+  }
+ ]
+}

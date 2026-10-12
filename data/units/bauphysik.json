@@ -1,0 +1,1539 @@
+{
+ "unit": "bauphysik",
+ "subject": "bauphysik",
+ "decks": [
+  {
+   "id": "bauphysik-temperatur",
+   "title": "Temperatur und Temperaturskalen",
+   "description": "Was Temperatur physikalisch ist, wie Celsius-, Fahrenheit- und Kelvin-Skala entstanden sind und wie man zwischen ihnen umrechnet.",
+   "sources": [
+    "01_einfuehrungWaermeschutz.pdf",
+    "Vorstellung.pdf"
+   ],
+   "cards": [
+    {
+     "id": "bauphysik-temperatur-c001",
+     "type": "basic",
+     "front": "Wie ist die **Temperatur** physikalisch definiert?",
+     "back": "Die Temperatur beschreibt die **mittlere Bewegungsenergie der Teilchen** eines Stoffes.",
+     "hint": "Schulaufgabenrelevant – Definition wörtlich lernen"
+    },
+    {
+     "id": "bauphysik-temperatur-c002",
+     "type": "basic",
+     "front": "Welche Theorie gab dem Begriff Temperatur erstmals einen physikalischen Hintergrund?",
+     "back": "Die **kinetische Gastheorie** (Waterston, Mitte 19. Jh., aufbauend auf Daniel Bernoulli): Gasdruck entsteht durch Teilchenstöße, höhere Teilchenenergie bedeutet höhere Temperatur."
+    },
+    {
+     "id": "bauphysik-temperatur-c003",
+     "type": "basic",
+     "front": "Was verstand man unter dem **Kalorikum**?",
+     "back": "Eine veraltete Vorstellung von Wärme als unsichtbarer, unwägbarer Flüssigkeit, die alles durchdringt, weder erzeugt noch vernichtet werden kann und vom wärmeren zum kälteren Körper überfließt."
+    },
+    {
+     "id": "bauphysik-temperatur-c004",
+     "type": "basic",
+     "front": "Wodurch wurde die Kalorikumslehre widerlegt?",
+     "back": "Durch die Erkenntnis, dass **mechanische Arbeit Wärme erzeugen** kann (James Prescott Joule). Wärme ist also eine Energieform und kein unzerstörbarer Stoff."
+    },
+    {
+     "id": "bauphysik-temperatur-c005",
+     "type": "basic",
+     "front": "Wem wird die Erfindung des Thermometers zugeschrieben, und was war das Problem der ersten Geräte?",
+     "back": "**Galileo Galilei**. Die ersten Thermometer waren stark vom **Luftdruck** abhängig und hatten keine Skala – man konnte Temperaturen nur qualitativ am selben Ort vergleichen."
+    },
+    {
+     "id": "bauphysik-temperatur-c006",
+     "type": "basic",
+     "front": "Welchen Vorschlag machte **Christian Huygens** für die Temperaturmessung?",
+     "back": "Den **Schmelzpunkt von Eis** und den **Siedepunkt von Wasser** als Fixpunkte zu verwenden und mit 0 und 100 Grad zu bezeichnen. Tatsächlich angewendet wurde das erst knapp 100 Jahre später durch Anders Celsius."
+    },
+    {
+     "id": "bauphysik-temperatur-c007",
+     "type": "basic",
+     "front": "Welche Fixpunkte hat die **Celsius-Skala**?",
+     "back": "- 0 °C: Gefrier-/Schmelzpunkt von Wasser\n- 100 °C: Siedepunkt von Wasser (bei Normaldruck)\n1 °C ist 1/100 des Abstands zwischen beiden Punkten."
+    },
+    {
+     "id": "bauphysik-temperatur-c008",
+     "type": "basic",
+     "front": "Welche Fixpunkte wählte **Daniel Fahrenheit** für seine Skala?",
+     "back": "- 0 °F: tiefste Temperatur des Danziger Winters 1708/09 (er wollte negative Werte vermeiden)\n- 100 °F: seine eigene Körpertemperatur (≈ 37,8 °C)\nWasser gefriert bei 32 °F und siedet bei 212 °F."
+    },
+    {
+     "id": "bauphysik-temperatur-c009",
+     "type": "basic",
+     "front": "Was ist der **Tripelpunkt** von Wasser?",
+     "back": "Der Zustand, in dem **Eis, Wasser und Wasserdampf gleichzeitig im Gleichgewicht** existieren: 0,01 °C = 273,16 K bei einem Druck von nur ca. 0,006 bar."
+    },
+    {
+     "id": "bauphysik-temperatur-c010",
+     "type": "basic",
+     "front": "Warum dient der Tripelpunkt (und nicht Gefrier- oder Siedepunkt) als Eichpunkt der Kelvin-Skala?",
+     "back": "Gefrier- und Siedepunkt hängen von Bedingungen wie dem Luftdruck ab und sind schwer exakt herzustellen. Der Tripelpunkt ist eindeutig und genau reproduzierbar."
+    },
+    {
+     "id": "bauphysik-temperatur-c011",
+     "type": "basic",
+     "front": "Wie ist **1 Kelvin** laut Arbeitsblatt definiert?",
+     "back": "1 K ist der **273,16te Teil** der thermodynamischen Temperatur des **Tripelpunkts von Wasser**.",
+     "hint": "Seit 2019 ist das Kelvin formal über die Boltzmann-Konstante festgelegt – am Zahlenwert ändert das praktisch nichts."
+    },
+    {
+     "id": "bauphysik-temperatur-c012",
+     "type": "basic",
+     "front": "Wie rechnet man zwischen **Celsius** und **Kelvin** um?",
+     "back": "t/°C = T/K − 273,15\nbzw. T/K = t/°C + 273,15\nBeispiel: 20 °C = 293,15 K"
+    },
+    {
+     "id": "bauphysik-temperatur-c013",
+     "type": "basic",
+     "front": "Wo liegt der **absolute Nullpunkt**?",
+     "back": "Bei **0 K = −273,15 °C**. Das ist die tiefste mögliche Temperatur – die Teilchen haben dort die geringstmögliche Bewegungsenergie. Der Nullpunkt der Celsius-Skala liegt bei 273,15 K."
+    },
+    {
+     "id": "bauphysik-temperatur-c014",
+     "type": "basic",
+     "front": "In welcher Einheit gibt man **Temperaturdifferenzen** an, und wie groß ist 1 K Differenz in °C?",
+     "back": "In **Kelvin (K)**. Ein Schritt von 1 K entspricht genau 1 °C.\nBeispiel: innen 20 °C, außen −10 °C → Δθ = 30 K",
+     "hint": "Wichtig für alle U-Wert- und Wärmestromberechnungen"
+    },
+    {
+     "id": "bauphysik-temperatur-c015",
+     "type": "basic",
+     "front": "Wer entwickelte die **thermodynamische (absolute) Temperaturskala**, und worauf stützte er sich?",
+     "back": "**William Thomson (Lord Kelvin)**, 1848. Er nutzte den **Carnot-Kreisprozess** (Nicolas Sadi Carnot) als stoffunabhängiges Maß für Temperaturverhältnisse."
+    },
+    {
+     "id": "bauphysik-temperatur-c016",
+     "type": "basic",
+     "front": "Warum brauchte man eine **stoffunabhängige** Temperaturdefinition?",
+     "back": "Übliche Thermometer setzen voraus, dass sich der Messstoff (z. B. Quecksilber, Alkohol) **proportional ausdehnt** – das stimmt aber nur näherungsweise."
+    },
+    {
+     "id": "bauphysik-temperatur-c017",
+     "type": "basic",
+     "front": "Was passiert mit der mittleren Bewegungsenergie der Teilchen, wenn sich die **absolute Temperatur** verdoppelt?",
+     "back": "Sie **verdoppelt sich** ebenfalls – die Energie ist proportional zur Temperatur in **Kelvin** (nicht in °C)."
+    },
+    {
+     "id": "bauphysik-temperatur-c018",
+     "type": "basic",
+     "front": "Welche Temperatureinheit ist **SI-Basiseinheit**, und ist °C im Alltag erlaubt?",
+     "back": "SI-Basiseinheit ist das **Kelvin (K)**. Grad Celsius ist im Alltag gebräuchlich und zulässig (abgeleitete SI-Einheit, vom SI-System nicht verboten)."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "bauphysik-temperatur-q001",
+     "type": "mc",
+     "question": "Welche Aussage beschreibt die Temperatur physikalisch korrekt?",
+     "options": [
+      "Die Menge an Kalorikum, die ein Körper enthält",
+      "Die mittlere Bewegungsenergie der Teilchen eines Stoffes",
+      "Die gesamte in einem Körper gespeicherte Wärmemenge",
+      "Der Druck, den die Teilchen auf eine Gefäßwand ausüben"
+     ],
+     "answer": 1,
+     "explanation": "Nach der kinetischen Gastheorie ist die Temperatur ein Maß für die mittlere Bewegungsenergie der Teilchen. Das Kalorikum ist eine widerlegte Vorstellung; die gespeicherte Wärmemenge hängt zusätzlich von Masse und Stoff ab."
+    },
+    {
+     "id": "bauphysik-temperatur-q002",
+     "type": "numeric",
+     "question": "Rechne eine Raumtemperatur von 20 °C in Kelvin um.",
+     "answer": 293.15,
+     "unit": "K",
+     "tolerance": 0.001,
+     "explanation": "T = t + 273,15\nT = 20 + 273,15 = 293,15 K"
+    },
+    {
+     "id": "bauphysik-temperatur-q003",
+     "type": "numeric",
+     "question": "Eine Außenlufttemperatur beträgt −18 °C. Wie viel Kelvin sind das?",
+     "answer": 255.15,
+     "unit": "K",
+     "tolerance": 0.001,
+     "explanation": "T = t + 273,15\nT = −18 + 273,15 = 255,15 K"
+    },
+    {
+     "id": "bauphysik-temperatur-q004",
+     "type": "numeric",
+     "question": "Flüssiger Stickstoff siedet bei 77 K. Wie viel Grad Celsius sind das?",
+     "answer": -196.15,
+     "unit": "°C",
+     "tolerance": 0.002,
+     "explanation": "t = T − 273,15\nt = 77 − 273,15 = −196,15 °C"
+    },
+    {
+     "id": "bauphysik-temperatur-q005",
+     "type": "numeric",
+     "question": "Innen herrschen 20 °C, außen −12 °C. Wie groß ist die Temperaturdifferenz Δθ (Einheit beachten)?",
+     "answer": 32,
+     "unit": "K",
+     "tolerance": 0.01,
+     "explanation": "Δθ = θi − θe = 20 °C − (−12 °C) = 32 K\nTemperaturdifferenzen werden in Kelvin angegeben; 1 K Differenz = 1 °C Differenz."
+    },
+    {
+     "id": "bauphysik-temperatur-q006",
+     "type": "numeric",
+     "question": "Fahrenheit legte seine Körpertemperatur als 100 °F fest. Wie viel °C sind das? (Fixpunkte: 32 °F = 0 °C, 212 °F = 100 °C)",
+     "answer": 37.78,
+     "unit": "°C",
+     "tolerance": 0.01,
+     "explanation": "Zwischen den Fixpunkten liegen 212 − 32 = 180 °F, die 100 °C entsprechen → 1 °F = 5/9 °C.\nt = (100 − 32) · 5/9 = 68 · 5/9 ≈ 37,78 °C\nDas passt zur Fußnote im Skript (37,8 °C) – Fahrenheit hatte wohl leicht erhöhte Temperatur."
+    },
+    {
+     "id": "bauphysik-temperatur-q007",
+     "type": "numeric",
+     "question": "Rechne 25 °C in Grad Fahrenheit um. (Fixpunkte: 0 °C = 32 °F, 100 °C = 212 °F)",
+     "answer": 77,
+     "unit": "°F",
+     "tolerance": 0.01,
+     "explanation": "100 °C entsprechen 180 °F → 1 °C = 9/5 °F.\n°F = 25 · 9/5 + 32 = 45 + 32 = 77 °F"
+    },
+    {
+     "id": "bauphysik-temperatur-q008",
+     "type": "numeric",
+     "question": "Ein Gas hat 27 °C. Auf welche Temperatur in °C muss es erwärmt werden, damit sich die mittlere Bewegungsenergie seiner Teilchen verdoppelt?",
+     "answer": 327.15,
+     "unit": "°C",
+     "tolerance": 0.01,
+     "explanation": "Die Bewegungsenergie ist proportional zur absoluten Temperatur (Kelvin).\nT₁ = 27 + 273,15 = 300,15 K\nT₂ = 2 · 300,15 = 600,30 K\nt₂ = 600,30 − 273,15 = 327,15 °C\n(Nicht 54 °C – Verdoppeln in °C wäre falsch!)"
+    },
+    {
+     "id": "bauphysik-temperatur-q009",
+     "type": "numeric",
+     "question": "Wie viel Grad Celsius entsprechen 0 K (absoluter Nullpunkt)?",
+     "answer": -273.15,
+     "unit": "°C",
+     "tolerance": 0.001,
+     "explanation": "t = T − 273,15 = 0 − 273,15 = −273,15 °C"
+    },
+    {
+     "id": "bauphysik-temperatur-q010",
+     "type": "mc",
+     "question": "Bei welcher Temperatur liegt der Tripelpunkt von Wasser?",
+     "options": [
+      "0 °C",
+      "4 °C",
+      "0,01 °C",
+      "−273,15 °C"
+     ],
+     "answer": 2,
+     "explanation": "Der Tripelpunkt liegt bei 0,01 °C = 273,16 K (und ca. 0,006 bar). 0 °C ist der Gefrierpunkt bei Normaldruck, −273,15 °C der absolute Nullpunkt."
+    },
+    {
+     "id": "bauphysik-temperatur-q011",
+     "type": "mc",
+     "question": "Wer zeigte, dass durch mechanische Arbeit Wärme erzeugt werden kann, und brachte damit die Kalorikumslehre zu Fall?",
+     "options": [
+      "Anders Celsius",
+      "Daniel Fahrenheit",
+      "Galileo Galilei",
+      "James Prescott Joule"
+     ],
+     "answer": 3,
+     "explanation": "Joule definierte den Zusammenhang zwischen mechanischer Arbeit und Wärme. Wärme kann also erzeugt werden – im Widerspruch zum unzerstörbaren, nicht erzeugbaren Kalorikum."
+    },
+    {
+     "id": "bauphysik-temperatur-q012",
+     "type": "mc",
+     "question": "Bei welcher Fahrenheit-Temperatur siedet Wasser (Normaldruck)?",
+     "options": [
+      "100 °F",
+      "212 °F",
+      "180 °F",
+      "273 °F"
+     ],
+     "answer": 1,
+     "explanation": "Wasser gefriert bei 32 °F und siedet bei 212 °F. Der Abstand beträgt 180 °F."
+    },
+    {
+     "id": "bauphysik-temperatur-q013",
+     "type": "input",
+     "question": "Wie heißt der Zustand, in dem Eis, Wasser und Wasserdampf gleichzeitig im Gleichgewicht vorliegen?",
+     "answer": "Tripelpunkt",
+     "accept": [
+      "Tripelpunkt von Wasser",
+      "Tripelpunkt des Wassers",
+      "Tripel-Punkt"
+     ],
+     "explanation": "Am Tripelpunkt (0,01 °C, ca. 0,006 bar) koexistieren alle drei Phasen. Er dient als Eichpunkt der Kelvin-Skala."
+    },
+    {
+     "id": "bauphysik-temperatur-q014",
+     "type": "mc",
+     "question": "Richtig oder falsch? Eine Temperaturdifferenz von 15 °C entspricht einer Temperaturdifferenz von 15 K.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Kelvin- und Celsius-Skala haben dieselbe Schrittweite; sie sind nur um 273,15 verschoben. Differenzen sind daher zahlenmäßig gleich."
+    },
+    {
+     "id": "bauphysik-temperatur-q015",
+     "type": "mc",
+     "question": "Richtig oder falsch? Erwärmt man Luft von 10 °C auf 20 °C, verdoppelt sich die mittlere Bewegungsenergie ihrer Teilchen.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Maßgeblich ist die absolute Temperatur: 283,15 K → 293,15 K. Das ist nur eine Zunahme um ca. 3,5 %, keine Verdopplung."
+    },
+    {
+     "id": "bauphysik-temperatur-q016",
+     "type": "mc",
+     "question": "Welche Temperatureinheit ist SI-Basiseinheit?",
+     "options": [
+      "Grad Celsius (°C)",
+      "Grad Fahrenheit (°F)",
+      "Kelvin (K)",
+      "Grad Réaumur (°Ré)"
+     ],
+     "answer": 2,
+     "explanation": "Das Kelvin (K) ist SI-Basiseinheit für Temperaturen und Temperaturdifferenzen. Grad Celsius ist im Alltag gebräuchlich und zulässig."
+    },
+    {
+     "id": "bauphysik-temperatur-q017",
+     "type": "mc",
+     "question": "Eine Mutter sitzt auf einer Schraube fest. Wodurch lässt sie sich am ehesten lockern?",
+     "options": [
+      "Durch Abkühlen",
+      "Durch Erhitzen (der Mutter)",
+      "Durch beides",
+      "Durch keins von beidem"
+     ],
+     "answer": 1,
+     "explanation": "Bei Erwärmung schwingen die Teilchen stärker und brauchen mehr Platz – die Mutter dehnt sich aus, ihre Gewindebohrung wird größer. Gezieltes Erhitzen der Mutter (bevor die Schraube mitwarm wird) lockert die Verbindung."
+    },
+    {
+     "id": "bauphysik-temperatur-q018",
+     "type": "mc",
+     "question": "Durch wen kam die Temperaturskala mit den Fixpunkten Schmelz- und Siedepunkt von Wasser (0 und 100 Grad) ab 1742 tatsächlich zur Anwendung?",
+     "options": [
+      "Anders Celsius",
+      "William Thomson",
+      "Otto von Guericke",
+      "Daniel Fahrenheit"
+     ],
+     "answer": 0,
+     "explanation": "Die Idee stammte von Christian Huygens, angewendet wurde die Skala ab 1742 durch Anders Celsius. Fahrenheit (1724) nutzte andere Fixpunkte, William Thomson entwickelte 1848 die Kelvin-Skala, Otto von Guericke versah als Erster Thermometer mit einer (willkürlichen) Skala."
+    }
+   ]
+  },
+  {
+   "id": "bauphysik-aggregatzustaende",
+   "title": "Aggregatzustände und Phasenübergänge",
+   "description": "Die drei Zustandsformen des Wassers, ihre Übergänge und die dabei aufgenommene oder abgegebene Wärme.",
+   "sources": [
+    "Aggregatzustände.pdf",
+    "01_einfuehrungWaermeschutz.pdf"
+   ],
+   "cards": [
+    {
+     "id": "bauphysik-aggregatzustaende-c001",
+     "type": "basic",
+     "front": "Warum sind Aggregatzustände für den **Feuchteschutz** wichtig?",
+     "back": "„Feuchte“ ist chemisch und physikalisch immer **Wasser** – in einer der drei Zustandsformen **fest** (Eis), **flüssig** (Wasser) oder **gasförmig** (Wasserdampf)."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c002",
+     "type": "basic",
+     "front": "**Schmelzen**: Welcher Übergang – und wird Wärme aufgenommen oder abgegeben?",
+     "back": "fest → flüssig\nWärme wird **aufgenommen**."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c003",
+     "type": "basic",
+     "front": "**Erstarren**: Welcher Übergang – und wird Wärme aufgenommen oder abgegeben?",
+     "back": "flüssig → fest\nWärme wird **abgegeben**."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c004",
+     "type": "basic",
+     "front": "**Verdampfen / Verdunsten**: Welcher Übergang – und wird Wärme aufgenommen oder abgegeben?",
+     "back": "flüssig → gasförmig\nWärme wird **aufgenommen**."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c005",
+     "type": "basic",
+     "front": "**Kondensieren**: Welcher Übergang – und wird Wärme aufgenommen oder abgegeben?",
+     "back": "gasförmig → flüssig\nWärme wird **abgegeben**.\nIn der Bauphysik: Entstehung von **Tauwasser**."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c006",
+     "type": "basic",
+     "front": "Was passiert mit der Wärme, die beim Schmelzen und Verdampfen aufgenommen wurde?",
+     "back": "Sie wird beim **Erstarren** und **Kondensieren** wieder abgegeben."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c007",
+     "type": "basic",
+     "front": "Was ist der Unterschied zwischen **Verdunsten** und **Verdampfen**?",
+     "back": "- Verdunsten: Dampfbildung **unter** der Siedetemperatur (unter 100 °C)\n- Verdampfen: Dampfbildung **bei 100 °C und mehr** (Sieden)\n(Werte für Wasser bei Normaldruck)"
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c008",
+     "type": "basic",
+     "front": "Welche Grundregel gilt für Zustandsänderungen – und welche Ausnahme gibt es?",
+     "back": "In der Regel kann **keine Zustandsform übersprungen** werden.\nAusnahmen:\n- **Sublimieren**: fest → gasförmig (z. B. Schnee „verschwindet“ bei Frost)\n- **Resublimieren**: gasförmig → fest (z. B. Raureif, Eisblumen am Fenster)",
+     "hint": "Die Ausnahme ist eine Ergänzung zum Arbeitsblatt"
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c009",
+     "type": "basic",
+     "front": "Wie verhalten sich die Teilchen im **festen** Zustand?",
+     "back": "Sie sind an eine **feste Struktur** gebunden und schwingen nur um ihren Platz."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c010",
+     "type": "basic",
+     "front": "Wie verhalten sich die Teilchen im **flüssigen** Zustand?",
+     "back": "Sie sind durch **Kohäsionskräfte** noch lose verbunden, haben aber genug Platz, um **aneinander vorbeizugleiten**."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c011",
+     "type": "basic",
+     "front": "Wie verhalten sich die Teilchen im **gasförmigen** Zustand?",
+     "back": "Sie bewegen sich **weitgehend frei** und haben große Abstände zueinander."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c012",
+     "type": "basic",
+     "front": "Warum dehnen sich feste Stoffe bei Erwärmung aus?",
+     "back": "Mit steigender Temperatur schwingen die Teilchen stärker und brauchen mehr Platz – ihr **Abstand vergrößert sich**. Ab der Schmelztemperatur löst sich die Struktur auf."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c013",
+     "type": "basic",
+     "front": "Warum kühlt sich eine verdunstende Flüssigkeit ab (**Verdunstungskälte**)?",
+     "back": "Teilchen, die durch Stöße besonders viel Energie bekommen, verlassen die Flüssigkeit und **nehmen ihre Energie mit**. Die zurückbleibenden Teilchen haben im Mittel weniger Energie → die Temperatur sinkt."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c014",
+     "type": "basic",
+     "front": "Was versteht man unter **latenter Wärme** (Latentenergie)?",
+     "back": "Wärme, die bei einer Zustandsänderung aufgenommen oder abgegeben wird, **ohne dass sich die Temperatur ändert** – im Diagramm als waagerechtes Plateau (z. B. bei 0 °C und 100 °C)."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c015",
+     "type": "basic",
+     "front": "Wie groß ist die **Schmelzwärme** (Schmelzenthalpie) von Eis?",
+     "back": "ca. **335 kJ/kg** – so viel Energie braucht 1 kg Eis von 0 °C, um zu Wasser von 0 °C zu werden."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c016",
+     "type": "basic",
+     "front": "Wie groß ist die **Verdampfungswärme** (Verdampfungsenthalpie) von Wasser?",
+     "back": "ca. **2257 kJ/kg** bei 100 °C – fast siebenmal so viel wie die Schmelzwärme."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-c017",
+     "type": "basic",
+     "front": "Wie viel Energie braucht man, um 1 kg Wasser von 0 °C auf 100 °C zu erwärmen – und welche Wärmekapazität folgt daraus?",
+     "back": "ca. **418 kJ** → spezifische Wärmekapazität c ≈ **4,18 kJ/(kg·K)**\nAllgemein: Q = m · c · Δθ"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "bauphysik-aggregatzustaende-q001",
+     "type": "mc",
+     "question": "Wie heißt der Übergang von gasförmig zu flüssig?",
+     "options": [
+      "Verdunsten",
+      "Kondensieren",
+      "Erstarren",
+      "Sublimieren"
+     ],
+     "answer": 1,
+     "explanation": "Kondensieren: gasförmig → flüssig, dabei wird Wärme abgegeben. So entsteht Tauwasser an kalten Oberflächen."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q002",
+     "type": "mc",
+     "question": "Bei welchem Vorgang gibt Wasser Wärme ab?",
+     "options": [
+      "Schmelzen",
+      "Verdampfen",
+      "Verdunsten",
+      "Erstarren"
+     ],
+     "answer": 3,
+     "explanation": "Beim Erstarren (und Kondensieren) wird die zuvor beim Schmelzen (bzw. Verdampfen) aufgenommene Wärme wieder frei."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q003",
+     "type": "input",
+     "question": "Wie nennt man die Dampfbildung unterhalb der Siedetemperatur (z. B. Pfütze bei 20 °C)?",
+     "answer": "Verdunsten",
+     "accept": [
+      "Verdunstung"
+     ],
+     "explanation": "Verdunsten = Dampfbildung unter 100 °C; Verdampfen = Dampfbildung bei 100 °C und mehr."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q004",
+     "type": "numeric",
+     "question": "Wie viel Energie ist nötig, um 4 kg Eis von 0 °C vollständig zu Wasser von 0 °C zu schmelzen? (Schmelzwärme 335 kJ/kg)",
+     "answer": 1340,
+     "unit": "kJ",
+     "tolerance": 0.02,
+     "explanation": "Q = m · Schmelzwärme\nQ = 4 kg · 335 kJ/kg = 1340 kJ\nDie Temperatur bleibt dabei bei 0 °C (latente Wärme)."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q005",
+     "type": "numeric",
+     "question": "Wie viel Energie braucht man insgesamt, um 1 kg Eis von 0 °C in Wasserdampf von 100 °C umzuwandeln? (Schmelzen 335 kJ/kg, Erwärmen 0 → 100 °C 418 kJ/kg, Verdampfen 2257 kJ/kg)",
+     "answer": 3010,
+     "unit": "kJ",
+     "tolerance": 0.02,
+     "explanation": "1. Schmelzen: 335 kJ\n2. Erwärmen von 0 auf 100 °C: 418 kJ\n3. Verdampfen: 2257 kJ\nSumme: 335 + 418 + 2257 = 3010 kJ"
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q006",
+     "type": "numeric",
+     "question": "2,5 kg Wasser sollen von 15 °C auf 100 °C erwärmt werden (ohne Verdampfen). Wie viel Energie ist nötig? (c = 4,18 kJ/(kg·K))",
+     "answer": 888.25,
+     "unit": "kJ",
+     "tolerance": 0.02,
+     "explanation": "Q = m · c · Δθ\nΔθ = 100 − 15 = 85 K\nQ = 2,5 · 4,18 · 85 = 888,25 kJ"
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q007",
+     "type": "numeric",
+     "question": "An einer kalten Fensterscheibe kondensieren 0,2 kg Wasserdampf. Wie viel Wärme wird dabei frei? (Verdampfungswärme 2257 kJ/kg)",
+     "answer": 451.4,
+     "unit": "kJ",
+     "tolerance": 0.02,
+     "explanation": "Beim Kondensieren wird die Verdampfungswärme wieder abgegeben.\nQ = 0,2 kg · 2257 kJ/kg = 451,4 kJ\n(Vereinfachung: 2257 kJ/kg gilt genau bei 100 °C; bei Raumtemperatur ist der Wert etwas größer, ca. 2450 kJ/kg.)"
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q008",
+     "type": "numeric",
+     "question": "Wie viel Energie wird benötigt, um 0,5 kg Wasser von 100 °C vollständig zu verdampfen? (Verdampfungswärme 2257 kJ/kg)",
+     "answer": 1128.5,
+     "unit": "kJ",
+     "tolerance": 0.02,
+     "explanation": "Q = m · Verdampfungswärme\nQ = 0,5 kg · 2257 kJ/kg = 1128,5 kJ"
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q009",
+     "type": "mc",
+     "question": "Richtig oder falsch? Während Eis bei 0 °C schmilzt, steigt seine Temperatur trotz Wärmezufuhr nicht an.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Die zugeführte Wärme wird als latente Wärme zum Auflösen der festen Struktur verbraucht. Erst wenn alles geschmolzen ist, steigt die Temperatur weiter."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q010",
+     "type": "mc",
+     "question": "Raureif entsteht direkt aus dem Wasserdampf der Luft, ohne flüssige Zwischenstufe. Wie heißt dieser Übergang?",
+     "options": [
+      "Kondensieren",
+      "Erstarren",
+      "Resublimieren",
+      "Sublimieren"
+     ],
+     "answer": 2,
+     "explanation": "Resublimieren: gasförmig → fest. Sublimieren ist der umgekehrte Weg (fest → gasförmig). Beides sind Ausnahmen von der Regel, dass keine Zustandsform übersprungen wird."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q011",
+     "type": "mc",
+     "question": "Richtig oder falsch? Wasserdampf entsteht erst, wenn Wasser 100 °C erreicht.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Auch ohne Sieden entsteht Wasserdampf – durch Verdunsten unterhalb von 100 °C (z. B. Wäsche trocknet, Pfützen verschwinden)."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q012",
+     "type": "mc",
+     "question": "Welcher Vorgang benötigt pro kg Wasser die meiste Energie?",
+     "options": [
+      "Eis von 0 °C schmelzen",
+      "Wasser von 0 °C auf 100 °C erwärmen",
+      "Wasser von 100 °C verdampfen",
+      "Eis von −10 °C auf 0 °C erwärmen"
+     ],
+     "answer": 2,
+     "explanation": "Verdampfen: ca. 2257 kJ/kg – deutlich mehr als Schmelzen (335 kJ/kg) oder Erwärmen von 0 auf 100 °C (418 kJ/kg)."
+    },
+    {
+     "id": "bauphysik-aggregatzustaende-q013",
+     "type": "mc",
+     "question": "Was hält die Teilchen einer Flüssigkeit noch lose zusammen?",
+     "options": [
+      "Kohäsionskräfte",
+      "Adhäsionskräfte zur Gefäßwand",
+      "Das feste Kristallgitter",
+      "Der Luftdruck"
+     ],
+     "answer": 0,
+     "explanation": "Kohäsionskräfte wirken zwischen gleichartigen Teilchen. Sie halten die Flüssigkeit zusammen, lassen aber Platz zum Aneinander-Vorbeigleiten."
+    }
+   ]
+  },
+  {
+   "id": "bauphysik-waerme-feuchte",
+   "title": "Überblick: Wärme- und Feuchteschutz",
+   "description": "Ziele und Teilbereiche des winterlichen und sommerlichen Wärmeschutzes, Regelwerke (DIN 4108, GEG) und die Bereiche des Feuchteschutzes.",
+   "sources": [
+    "01_infoText_EA.pdf",
+    "Wärme, Feuchte, Schall, Brandschutz.pdf",
+    "02a_diskussionsLeitfaden_GA.pdf"
+   ],
+   "cards": [
+    {
+     "id": "bauphysik-waerme-feuchte-c001",
+     "type": "basic",
+     "front": "Nenne die **vier Hauptfachgebiete** der Bauphysik.",
+     "back": "- Wärmeschutz\n- Feuchteschutz\n- Schallschutz\n- Brandschutz"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c002",
+     "type": "basic",
+     "front": "Womit beschäftigt sich die **Bauphysik**?",
+     "back": "Mit physikalischen Gesetzmäßigkeiten und ihren Auswirkungen auf **Gebäude und Nutzer**. Sie verbindet Komfort, Energieeffizienz, Gesundheit und Sicherheit."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c003",
+     "type": "basic",
+     "front": "Was ist das Ziel des **winterlichen Wärmeschutzes**?",
+     "back": "**Wärmeverluste** aus dem Gebäudeinneren an die kühlere Umgebung **minimieren** – behagliche Raumtemperatur bei möglichst geringem Energieaufwand."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c004",
+     "type": "basic",
+     "front": "Was ist das Ziel des **sommerlichen Wärmeschutzes**?",
+     "back": "**Überhitzung** von Gebäuden durch Sonneneinstrahlung und innere Wärmequellen **verhindern** – mehr Komfort, weniger Kühlenergie."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c005",
+     "type": "basic",
+     "front": "Welche zwei zentralen Kenngrößen bzw. Ziele nennt der Infotext für den winterlichen Wärmeschutz?",
+     "back": "- den **U-Wert** (Wärmedurchgangskoeffizient)\n- die Vermeidung von **Wärmebrücken**"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c006",
+     "type": "basic",
+     "front": "Warum beugt guter winterlicher Wärmeschutz **Schimmel** vor?",
+     "back": "Die **inneren Oberflächentemperaturen** bleiben höher. Die Luft an der Wand kühlt nicht bis zum Taupunkt ab und die Oberflächenfeuchte bleibt niedrig → kein Tauwasser, kein Nährboden für Schimmel.\n(Schimmel kann schon ab ca. 80 % relativer Luftfeuchte an der Oberfläche wachsen, nicht erst bei Tauwasser.)"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c007",
+     "type": "basic",
+     "front": "Nenne drei Maßnahmen des **sommerlichen Wärmeschutzes**.",
+     "back": "- **außenliegender Sonnenschutz** (z. B. Lamellen, Raffstores, Rollläden)\n- hohe **Speichermasse** der Bauteile (verzögert den Wärmedurchgang)\n- **Nachtauskühlung** (Lüften in der kühlen Nacht)"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c008",
+     "type": "basic",
+     "front": "Warum ist **außenliegender** Sonnenschutz wirksamer als innenliegender?",
+     "back": "Er hält die Sonnenstrahlung ab, **bevor** sie durch die Scheibe gelangt. Bei innenliegendem Sonnenschutz ist die Wärme bereits im Raum.",
+     "hint": "Ergänzung zum Infotext"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c009",
+     "type": "basic",
+     "front": "Was ist eine **Wärmebrücke**, und welche Folgen hat sie?",
+     "back": "Ein örtlich begrenzter Bereich der Gebäudehülle mit **erhöhtem Wärmeabfluss** (z. B. Außenecken, auskragende Balkonplatten, Stürze). Folge: kältere Innenoberfläche → Tauwasser- und Schimmelgefahr, höhere Heizkosten."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c010",
+     "type": "basic",
+     "front": "Welche Norm regelt den **Mindestwärmeschutz** von Gebäuden?",
+     "back": "**DIN 4108** „Wärmeschutz und Energie-Einsparung in Gebäuden“ (Mindestanforderungen in Teil 2, dort auch der sommerliche Wärmeschutz)."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c011",
+     "type": "basic",
+     "front": "Was ist das **GEG**, und was hat es abgelöst?",
+     "back": "Das **Gebäudeenergiegesetz** (seit 1. November 2020). Es regelt den energiesparenden Wärmeschutz und die Anlagentechnik und hat die **EnEV** (sowie EnEG und EEWärmeG) ersetzt."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c012",
+     "type": "basic",
+     "front": "Welche drei Verfahren nach EnEV/GEG stehen im Tafelbild?",
+     "back": "- **Monatsbilanzverfahren** (MB-Verfahren)\n- **Bauteilverfahren**\n- **Referenzgebäudeverfahren**"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c013",
+     "type": "basic",
+     "front": "Was ist das **Referenzgebäudeverfahren**?",
+     "back": "Nachweis vor allem für **Neubauten**: Das geplante Gebäude wird mit einem **Referenzgebäude** gleicher Geometrie, Nutzfläche und Ausrichtung, aber mit festgelegter **Standardausführung** verglichen. Sein Jahres-Primärenergiebedarf darf den daraus ermittelten Höchstwert nicht überschreiten."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c014",
+     "type": "basic",
+     "front": "Was ist das **Bauteilverfahren**?",
+     "back": "Nachweis bei **Änderungen an bestehenden Gebäuden**: Für die erneuerten Bauteile gelten **Höchstwerte des U-Werts** (z. B. Außenwand 0,24 W/(m²·K))."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c015",
+     "type": "basic",
+     "front": "Was macht das **Monatsbilanzverfahren**?",
+     "back": "Es **bilanziert für jeden Monat** Wärmeverluste (Transmission, Lüftung) und Wärmegewinne (Sonne, innere Quellen) und ermittelt daraus den Jahres-Heizwärmebedarf."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c016",
+     "type": "basic",
+     "front": "In welche Bereiche gliedert sich der **Feuchteschutz** (Tafelbild)?",
+     "back": "- **Tauwasserschutz**: an der Oberfläche von Bauteilen / im Inneren von Bauteilen\n- **Grundwasserschutz**\n- **Regenschutz** (Niederschlag)"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c017",
+     "type": "basic",
+     "front": "Wie entsteht **Tauwasser auf Bauteiloberflächen**?",
+     "back": "Warme, feuchte Raumluft trifft auf eine **kalte Bauteiloberfläche**, kühlt dort unter den Taupunkt ab und **kondensiert**."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c018",
+     "type": "basic",
+     "front": "Welche Gefahr geht von **Tauwasser auf Oberflächen** aus, und wie beugt man vor?",
+     "back": "Gefahr: **Schimmelpilzbildung** (Gesundheitsrisiko und optischer Mangel).\nVorbeugung: ausreichende **Wärmedämmung** und **Lüftung**."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c019",
+     "type": "basic",
+     "front": "Wie entsteht **Tauwasser im Bauteilinneren**?",
+     "back": "Wasserdampf **diffundiert** durch die Bauteilschichten und kondensiert dort, wo die Temperatur im Bauteil **unter den Taupunkt** fällt."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c020",
+     "type": "basic",
+     "front": "Welche Gefahr geht von **Tauwasser im Bauteilinneren** aus, und was schützt davor?",
+     "back": "Gefahr: **Bauschäden** – durchfeuchtete Dämmstoffe (dämmen schlechter), Schäden am Tragwerk.\nSchutz: richtig geplante und ausgeführte **Dampfbremse bzw. Dampfsperre**."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c021",
+     "type": "basic",
+     "front": "Auf welcher Seite der Dämmung wird eine **Dampfbremse** angeordnet?",
+     "back": "Auf der **warmen Raumseite** (innen), damit der Wasserdampf gar nicht erst in die kalte Zone des Bauteils gelangt.",
+     "hint": "Ergänzung zum Infotext"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c022",
+     "type": "basic",
+     "front": "Was ist die **Taupunkttemperatur**?",
+     "back": "Die Temperatur, auf die feuchte Luft (bei gleichem Wasserdampfgehalt) abkühlen muss, damit sie **gesättigt** ist (100 % relative Luftfeuchte). Kühlt sie weiter ab, fällt **Tauwasser** aus."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c023",
+     "type": "basic",
+     "front": "Wie schützt man ein Gebäude vor **Grundwasser und Niederschlag**?",
+     "back": "- **Abdichtung** erdberührter Bauteile (Keller, Fundamente) gegen drückendes und nicht drückendes Wasser\n- **Drainagen**\n- **Abdichtungsbahnen**\n- **WU-Beton** (wasserundurchlässiger Beton)"
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-c024",
+     "type": "basic",
+     "front": "Was sind typische Ursachen für **Schimmel in Wohnungen**, und was hilft dagegen?",
+     "back": "Ursachen: zu hohe Luftfeuchte, falsches Lüften, zu wenig Heizen (kalte Wandoberflächen).\nAbhilfe: regelmäßiges **Stoßlüften** und **ausreichendes Heizen**."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "bauphysik-waerme-feuchte-q001",
+     "type": "mc",
+     "question": "Welche vier Hauptfachgebiete umfasst die Bauphysik?",
+     "options": [
+      "Wärme-, Feuchte-, Licht- und Brandschutz",
+      "Statik, Wärme-, Schall- und Brandschutz",
+      "Wärme-, Feuchte-, Schall- und Brandschutz",
+      "Wärme-, Strahlen-, Schall- und Feuchteschutz"
+     ],
+     "answer": 2,
+     "explanation": "Die vier Hauptfachgebiete sind Wärme-, Feuchte-, Schall- und Brandschutz."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q002",
+     "type": "mc",
+     "question": "Worin unterscheidet sich das Ziel des sommerlichen vom winterlichen Wärmeschutz?",
+     "options": [
+      "Sommerlich: Wärmeverluste minimieren – winterlich: Überhitzung verhindern",
+      "Sommerlich: Überhitzung verhindern – winterlich: Wärmeverluste minimieren",
+      "Beide verfolgen dasselbe Ziel, nur zu unterschiedlichen Jahreszeiten",
+      "Sommerlich: Tauwasser vermeiden – winterlich: Schall dämmen"
+     ],
+     "answer": 1,
+     "explanation": "Winterlich: Wärme soll drinnen bleiben. Sommerlich: Hitze von Sonne und inneren Quellen soll nicht zur Überhitzung führen."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q003",
+     "type": "mc",
+     "question": "Welche Maßnahme gehört zum sommerlichen Wärmeschutz?",
+     "options": [
+      "Dampfbremse auf der Raumseite",
+      "Trittschalldämmung",
+      "Außenliegende Lamellen",
+      "Drainage am Keller"
+     ],
+     "answer": 2,
+     "explanation": "Außenliegender Sonnenschutz hält die Strahlung vor der Scheibe ab. Dazu kommen Speichermasse und Nachtauskühlung."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q004",
+     "type": "mc",
+     "question": "Welche Gefahr geht vor allem von Tauwasser im Bauteilinneren aus?",
+     "options": [
+      "Überhitzung im Sommer",
+      "Erhöhte Trittschallübertragung",
+      "Sichtbares Kondenswasser an der Fensterscheibe",
+      "Durchfeuchtung der Dämmung und Schäden am Tragwerk"
+     ],
+     "answer": 3,
+     "explanation": "Tauwasser im Inneren bleibt oft unbemerkt und führt zu Bauschäden: nasse Dämmung dämmt schlechter, tragende Teile werden geschädigt."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q005",
+     "type": "mc",
+     "question": "Wo muss eine Dampfbremse angeordnet werden, um Tauwasser im Bauteil zu vermeiden?",
+     "options": [
+      "Auf der warmen Raumseite der Dämmung",
+      "Auf der kalten Außenseite der Dämmung",
+      "Direkt unter dem Außenputz",
+      "Zwischen Estrich und Trittschalldämmung"
+     ],
+     "answer": 0,
+     "explanation": "Die Dampfbremse gehört nach innen (warme Seite). So gelangt der Wasserdampf gar nicht erst in die kalten Schichten, wo er kondensieren würde."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q006",
+     "type": "input",
+     "question": "Wie heißt die Temperatur, auf die feuchte Luft abkühlen muss, damit sie mit Wasserdampf gesättigt ist (100 % relative Luftfeuchte) und Tauwasser ausfällt?",
+     "answer": "Taupunkt",
+     "accept": [
+      "Taupunkttemperatur",
+      "Taupunkt-Temperatur"
+     ],
+     "explanation": "Am Taupunkt beträgt die relative Luftfeuchte 100 %. Kühlt die Luft weiter ab, kondensiert Wasserdampf."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q007",
+     "type": "mc",
+     "question": "Welche Verordnung wurde 2020 durch das Gebäudeenergiegesetz (GEG) abgelöst?",
+     "options": [
+      "DIN 4108",
+      "Energieeinsparverordnung (EnEV)",
+      "DIN 4109",
+      "Baugesetzbuch (BauGB)"
+     ],
+     "answer": 1,
+     "explanation": "Das GEG (seit 1. November 2020) ersetzt EnEV, EnEG und EEWärmeG. DIN 4108 ist eine Norm und gilt weiterhin."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q008",
+     "type": "mc",
+     "question": "Bei welchem Nachweisverfahren wird das geplante Gebäude mit einem Gebäude gleicher Geometrie und Ausrichtung, aber mit festgelegter Standardausführung verglichen?",
+     "options": [
+      "Monatsbilanzverfahren",
+      "Bauteilverfahren",
+      "Referenzgebäudeverfahren",
+      "Glaser-Verfahren"
+     ],
+     "answer": 2,
+     "explanation": "Beim Referenzgebäudeverfahren dient ein Gebäude gleicher Geometrie mit festgelegter Standardausführung als Maßstab für den zulässigen Energiebedarf."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q009",
+     "type": "mc",
+     "question": "Welche Norm regelt den Mindestwärmeschutz?",
+     "options": [
+      "DIN 4102",
+      "DIN 4109",
+      "DIN 1045",
+      "DIN 4108"
+     ],
+     "answer": 3,
+     "explanation": "DIN 4108 = Wärmeschutz. DIN 4109 = Schallschutz, DIN 4102 = Brandverhalten, DIN 1045 = Beton."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q010",
+     "type": "mc",
+     "question": "Richtig oder falsch? An einer Wärmebrücke ist die innere Wandoberfläche wärmer als an den übrigen Stellen der Wand.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "An Wärmebrücken fließt mehr Wärme ab, deshalb ist die Innenoberfläche dort kälter – mit erhöhter Tauwasser- und Schimmelgefahr."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q011",
+     "type": "mc",
+     "question": "Welche Maßnahme schützt einen Keller gegen Grundwasser?",
+     "options": [
+      "Nachtauskühlung",
+      "Schwimmender Estrich",
+      "Außenliegender Sonnenschutz",
+      "WU-Beton bzw. Abdichtung"
+     ],
+     "answer": 3,
+     "explanation": "Erdberührte Bauteile werden durch Abdichtungsbahnen, WU-Beton und ggf. Drainagen gegen drückendes und nicht drückendes Wasser geschützt."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q012",
+     "type": "input",
+     "question": "Wie heißt die Kenngröße (Kurzname), die angibt, wie viel Wärme durch ein Bauteil entweicht?",
+     "answer": "U-Wert",
+     "accept": [
+      "U",
+      "Wärmedurchgangskoeffizient",
+      "U Wert",
+      "UWert"
+     ],
+     "explanation": "Der U-Wert (Wärmedurchgangskoeffizient) in W/(m²·K) ist die zentrale Kenngröße des winterlichen Wärmeschutzes."
+    },
+    {
+     "id": "bauphysik-waerme-feuchte-q013",
+     "type": "mc",
+     "question": "Wo entsteht Tauwasser auf Oberflächen typischerweise zuerst?",
+     "options": [
+      "An der wärmsten Stelle der Innenwand",
+      "An kalten Stellen wie Außenecken und Wärmebrücken",
+      "Auf der Außenseite der Fassade im Sommer",
+      "In der Mitte gut gedämmter Wände"
+     ],
+     "answer": 1,
+     "explanation": "Tauwasser bildet sich dort, wo die Oberflächentemperatur unter den Taupunkt der Raumluft fällt – also an den kältesten Stellen."
+    }
+   ]
+  },
+  {
+   "id": "bauphysik-schall-brand",
+   "title": "Überblick: Schall- und Brandschutz",
+   "description": "Die drei Arten der Schallübertragung mit Schutzmaßnahmen sowie Brandverhalten von Baustoffen und Feuerwiderstand von Bauteilen.",
+   "sources": [
+    "01_infoText_EA.pdf",
+    "Wärme, Feuchte, Schall, Brandschutz.pdf",
+    "02a_diskussionsLeitfaden_GA.pdf"
+   ],
+   "cards": [
+    {
+     "id": "bauphysik-schall-brand-c001",
+     "type": "basic",
+     "front": "Nenne die **drei Arten der Schallübertragung** im Bauwesen.",
+     "back": "- Luftschall\n- Körperschall\n- Trittschall"
+    },
+    {
+     "id": "bauphysik-schall-brand-c002",
+     "type": "basic",
+     "front": "Was ist **Luftschall**?",
+     "back": "Die Übertragung von **Schallwellen durch die Luft**, z. B. Gespräche oder Musik."
+    },
+    {
+     "id": "bauphysik-schall-brand-c003",
+     "type": "basic",
+     "front": "Wie verbessert man den **Luftschallschutz** von Trennwänden und -decken?",
+     "back": "- hohe **Masse** (schwere Bauteile)\n- **Mehrschaligkeit**\n- **entkoppelte** Bauweise"
+    },
+    {
+     "id": "bauphysik-schall-brand-c004",
+     "type": "basic",
+     "front": "Was ist **Körperschall**?",
+     "back": "Bauteile werden direkt zu **Schwingungen angeregt** (z. B. Klopfen, Maschinenlärm), und der Schall breitet sich **im Bauteil** aus."
+    },
+    {
+     "id": "bauphysik-schall-brand-c005",
+     "type": "basic",
+     "front": "Welche Maßnahmen mindern die Übertragung von **Körperschall**?",
+     "back": "- **Entkopplung** von Bauteilen\n- **elastische Lagerung** (z. B. von Maschinen oder Rohrleitungen)"
+    },
+    {
+     "id": "bauphysik-schall-brand-c006",
+     "type": "basic",
+     "front": "Was ist **Trittschall**?",
+     "back": "Eine **Sonderform des Körperschalls**: Er entsteht beim Gehen auf Decken und Treppen und breitet sich über die Bauteile in darunterliegende oder angrenzende Räume aus."
+    },
+    {
+     "id": "bauphysik-schall-brand-c007",
+     "type": "basic",
+     "front": "Was ist die gängige Maßnahme gegen **Trittschall**?",
+     "back": "Ein **schwimmender Estrich** auf einer **Trittschalldämmung** – ohne starre Verbindung zu Rohdecke und Wänden (Randdämmstreifen), damit keine Schallbrücken entstehen."
+    },
+    {
+     "id": "bauphysik-schall-brand-c008",
+     "type": "basic",
+     "front": "Welche Norm regelt den **Schallschutz im Hochbau**?",
+     "back": "**DIN 4109**",
+     "hint": "Ergänzung – Merkhilfe: 4108 Wärme, 4109 Schall, 4102 Brand"
+    },
+    {
+     "id": "bauphysik-schall-brand-c009",
+     "type": "basic",
+     "front": "Was ist das Ziel des **Brandschutzes**?",
+     "back": "Schutz von **Leben, Gesundheit und Sachwerten** im Brandfall – u. a. Ausbreitung von Feuer und Rauch begrenzen und Flucht ermöglichen."
+    },
+    {
+     "id": "bauphysik-schall-brand-c010",
+     "type": "basic",
+     "front": "In welche zwei Bereiche gliedert sich der bauliche Brandschutz (Tafelbild)?",
+     "back": "- **Brandverhalten von Baustoffen**\n- **Brandverhalten (Feuerwiderstand) von Bauteilen**"
+    },
+    {
+     "id": "bauphysik-schall-brand-c011",
+     "type": "basic",
+     "front": "Wonach wird das **Brandverhalten von Baustoffen** eingestuft?",
+     "back": "Nach ihrem **Beitrag zur Brandentstehung und -ausbreitung**, z. B. nichtbrennbar, schwerentflammbar, normalentflammbar. Die Einstufung bestimmt, wo der Baustoff eingesetzt werden darf."
+    },
+    {
+     "id": "bauphysik-schall-brand-c012",
+     "type": "basic",
+     "front": "Welche **Baustoffklassen** gibt es nach DIN 4102-1?",
+     "back": "- **A** (A1, A2): nichtbrennbar\n- **B1**: schwerentflammbar\n- **B2**: normalentflammbar\n- **B3**: leichtentflammbar (im Bauwesen nicht zulässig)",
+     "hint": "Ergänzung zum Infotext"
+    },
+    {
+     "id": "bauphysik-schall-brand-c013",
+     "type": "basic",
+     "front": "Was beschreibt der **Feuerwiderstand von Bauteilen**?",
+     "back": "Wie lange ein Bauteil (Wand, Decke, Tür …) im Brandfall seine **Funktion erhält** – vor allem **Tragfähigkeit** und **Raumabschluss**. Angabe in Feuerwiderstandsklassen."
+    },
+    {
+     "id": "bauphysik-schall-brand-c014",
+     "type": "basic",
+     "front": "Was bedeutet die Feuerwiderstandsklasse **F 30**?",
+     "back": "Feuerwiderstandsdauer **mindestens 30 Minuten** – bauaufsichtlich „**feuerhemmend**“."
+    },
+    {
+     "id": "bauphysik-schall-brand-c015",
+     "type": "basic",
+     "front": "Was bedeutet die Feuerwiderstandsklasse **F 90**?",
+     "back": "Feuerwiderstandsdauer **mindestens 90 Minuten** – bauaufsichtlich „**feuerbeständig**“. (F 60 = hochfeuerhemmend)"
+    },
+    {
+     "id": "bauphysik-schall-brand-c016",
+     "type": "basic",
+     "front": "Warum ist die Klassifizierung von Baustoffen und Bauteilen im Brandschutz so wichtig?",
+     "back": "Sie legt fest, **wo welche Baustoffe und Bauteile eingesetzt werden dürfen**. So bleibt das Gebäude im Brandfall **lange genug standsicher** und Feuer und Rauch werden begrenzt – Zeit für Flucht, Rettung und Löscharbeiten."
+    },
+    {
+     "id": "bauphysik-schall-brand-c017",
+     "type": "basic",
+     "front": "Was berücksichtigt die **Brandschutzplanung**?",
+     "back": "- **Flucht- und Rettungswege**\n- **Brandabschnitte**\n- **Bemessung tragender Bauteile** (Standsicherheit im Brandfall)"
+    },
+    {
+     "id": "bauphysik-schall-brand-c018",
+     "type": "basic",
+     "front": "Welchen Zweck haben **Brandabschnitte**?",
+     "back": "Das Gebäude wird durch **feuerbeständige Bauteile** (z. B. Brandwände) in Abschnitte geteilt, damit sich ein Brand **nicht auf das ganze Gebäude ausbreitet**."
+    },
+    {
+     "id": "bauphysik-schall-brand-c019",
+     "type": "basic",
+     "front": "Stahl ist nichtbrennbar – warum ist ein ungeschützter Stahlträger trotzdem ein Brandschutzproblem?",
+     "back": "Stahl **verliert bei hohen Temperaturen stark an Festigkeit** und kann schon nach kurzer Zeit versagen. Nichtbrennbar heißt nicht automatisch hoher Feuerwiderstand – Stahl braucht oft eine Bekleidung oder einen Schutzanstrich."
+    },
+    {
+     "id": "bauphysik-schall-brand-c020",
+     "type": "basic",
+     "front": "Holz ist brennbar – kann es trotzdem für feuerwiderstandsfähige Bauteile verwendet werden?",
+     "back": "**Ja.** Durch entsprechende **Konstruktion und Bemessung** (z. B. größerer Querschnitt, Bekleidung) erreichen auch Holzbauteile eine geforderte Feuerwiderstandsdauer."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "bauphysik-schall-brand-q001",
+     "type": "mc",
+     "question": "Welche Schallart entsteht beim Begehen einer Geschossdecke?",
+     "options": [
+      "Luftschall",
+      "Ultraschall",
+      "Trittschall",
+      "Infraschall"
+     ],
+     "answer": 2,
+     "explanation": "Trittschall entsteht durch Gehen auf Decken und Treppen. Er ist eine Sonderform des Körperschalls."
+    },
+    {
+     "id": "bauphysik-schall-brand-q002",
+     "type": "mc",
+     "question": "Welche Maßnahme ist typisch gegen Trittschall?",
+     "options": [
+      "Dampfsperre unter dem Bodenbelag",
+      "Schwimmender Estrich auf Trittschalldämmung",
+      "Außenliegender Sonnenschutz",
+      "Estrich starr mit den Wänden verbunden"
+     ],
+     "answer": 1,
+     "explanation": "Der schwimmende Estrich liegt entkoppelt auf einer Trittschalldämmung. Starre Verbindungen wären Schallbrücken."
+    },
+    {
+     "id": "bauphysik-schall-brand-q003",
+     "type": "mc",
+     "question": "Wodurch verbessert man vor allem den Luftschallschutz einer einschaligen Trennwand?",
+     "options": [
+      "Durch eine hohe Masse (schwere Wand)",
+      "Durch eine möglichst leichte Bauweise",
+      "Durch eine Dampfbremse",
+      "Durch einen Dämmstoff mit kleinem λ"
+     ],
+     "answer": 0,
+     "explanation": "Bei einschaligen Bauteilen gilt: je schwerer, desto besser die Luftschalldämmung. Alternativ helfen Mehrschaligkeit und Entkopplung."
+    },
+    {
+     "id": "bauphysik-schall-brand-q004",
+     "type": "mc",
+     "question": "Richtig oder falsch? Trittschall ist eine Sonderform des Körperschalls.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 0,
+     "explanation": "Beim Gehen wird die Decke direkt zu Schwingungen angeregt – das ist Körperschall, der sich über die Bauteile ausbreitet."
+    },
+    {
+     "id": "bauphysik-schall-brand-q005",
+     "type": "mc",
+     "question": "Eine Pumpe wird auf elastischen Lagern montiert. Gegen welche Schallart richtet sich diese Maßnahme in erster Linie?",
+     "options": [
+      "Luftschall",
+      "Trittschall",
+      "Ultraschall",
+      "Körperschall"
+     ],
+     "answer": 3,
+     "explanation": "Elastische Lagerung verhindert, dass die Schwingungen der Maschine in die Bauteile übertragen werden – sie mindert Körperschall."
+    },
+    {
+     "id": "bauphysik-schall-brand-q006",
+     "type": "mc",
+     "question": "Was bedeutet die Feuerwiderstandsklasse F 90?",
+     "options": [
+      "Das Bauteil brennt bei 90 °C",
+      "Das Bauteil erhält seine Funktion mindestens 90 Minuten",
+      "Das Bauteil ist zu 90 % nichtbrennbar",
+      "Das Bauteil darf höchstens 90 Minuten belastet werden"
+     ],
+     "answer": 1,
+     "explanation": "Die Zahl gibt die Feuerwiderstandsdauer in Minuten an. F 90 = feuerbeständig."
+    },
+    {
+     "id": "bauphysik-schall-brand-q007",
+     "type": "mc",
+     "question": "Welche Bedeutung hat die Baustoffklasse A nach DIN 4102?",
+     "options": [
+      "Schwerentflammbar",
+      "Normalentflammbar",
+      "Leichtentflammbar",
+      "Nichtbrennbar"
+     ],
+     "answer": 3,
+     "explanation": "A (A1, A2) = nichtbrennbar, B1 = schwerentflammbar, B2 = normalentflammbar, B3 = leichtentflammbar."
+    },
+    {
+     "id": "bauphysik-schall-brand-q008",
+     "type": "mc",
+     "question": "Ein Baustoff ist als B1 eingestuft. Was bedeutet das?",
+     "options": [
+      "Nichtbrennbar",
+      "Normalentflammbar",
+      "Leichtentflammbar",
+      "Schwerentflammbar"
+     ],
+     "answer": 3,
+     "explanation": "B1 = schwerentflammbar (DIN 4102-1)."
+    },
+    {
+     "id": "bauphysik-schall-brand-q009",
+     "type": "input",
+     "question": "Wie lautet die bauaufsichtliche Bezeichnung für Bauteile der Feuerwiderstandsklasse F 30?",
+     "answer": "feuerhemmend",
+     "accept": [
+      "feuer-hemmend"
+     ],
+     "explanation": "F 30 = feuerhemmend, F 60 = hochfeuerhemmend, F 90 = feuerbeständig."
+    },
+    {
+     "id": "bauphysik-schall-brand-q010",
+     "type": "mc",
+     "question": "Welche Funktionen muss ein Bauteil im Brandfall für eine bestimmte Zeit erhalten?",
+     "options": [
+      "Tragfähigkeit und Raumabschluss",
+      "Wärmedämmung und Schallschutz",
+      "Dampfdichtheit und Optik",
+      "Brennbarkeit und Rauchentwicklung"
+     ],
+     "answer": 0,
+     "explanation": "Der Feuerwiderstand beschreibt, wie lange Tragfähigkeit und Raumabschluss erhalten bleiben."
+    },
+    {
+     "id": "bauphysik-schall-brand-q011",
+     "type": "mc",
+     "question": "Richtig oder falsch? Weil Stahl nichtbrennbar ist, sind ungeschützte Stahlträger automatisch feuerbeständig (F 90).",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Stahl brennt nicht, verliert aber bei hohen Temperaturen schnell seine Festigkeit. Für hohe Feuerwiderstandsklassen braucht er eine Schutzbekleidung oder einen Dämmschichtbildner."
+    },
+    {
+     "id": "bauphysik-schall-brand-q012",
+     "type": "mc",
+     "question": "Welchen Zweck haben Brandabschnitte?",
+     "options": [
+      "Sie begrenzen die Ausbreitung eines Brandes auf einen Gebäudeteil",
+      "Sie verkürzen die Fluchtwege auf unter 10 m",
+      "Sie ersetzen die Rauchmelder",
+      "Sie verbessern den Trittschallschutz"
+     ],
+     "answer": 0,
+     "explanation": "Brandabschnitte werden durch feuerbeständige Bauteile (z. B. Brandwände) gebildet und verhindern, dass sich ein Feuer im ganzen Gebäude ausbreitet."
+    },
+    {
+     "id": "bauphysik-schall-brand-q013",
+     "type": "mc",
+     "question": "Welche Norm regelt das Brandverhalten von Baustoffen und Bauteilen (nationale Klassen A1 … B3, F 30 … F 90)?",
+     "options": [
+      "DIN 4108",
+      "DIN 4109",
+      "DIN 4102",
+      "DIN 1053"
+     ],
+     "answer": 2,
+     "explanation": "DIN 4102 = Brandverhalten. DIN 4108 = Wärmeschutz, DIN 4109 = Schallschutz."
+    }
+   ]
+  },
+  {
+   "id": "bauphysik-uwert",
+   "title": "Wärmeschutz: λ, R und U-Wert",
+   "description": "Wärmeübertragungsarten und die Berechnung von Wärmedurchlasswiderstand, U-Wert und Wärmestrom durch Bauteile.",
+   "sources": [
+    "Ergänzung",
+    "01_infoText_EA.pdf"
+   ],
+   "cards": [
+    {
+     "id": "bauphysik-uwert-c001",
+     "type": "basic",
+     "front": "Nenne die **drei Arten der Wärmeübertragung**.",
+     "back": "- **Wärmeleitung** (Konduktion)\n- **Konvektion** (Wärmeströmung)\n- **Wärmestrahlung**"
+    },
+    {
+     "id": "bauphysik-uwert-c002",
+     "type": "basic",
+     "front": "Was ist **Wärmeleitung**?",
+     "back": "Wärmeübertragung **innerhalb eines Stoffes** bzw. zwischen sich berührenden Stoffen von Teilchen zu Teilchen – **ohne Materialtransport** (z. B. durch eine Wand)."
+    },
+    {
+     "id": "bauphysik-uwert-c003",
+     "type": "basic",
+     "front": "Was ist **Konvektion**?",
+     "back": "Wärmetransport durch **strömende Flüssigkeiten oder Gase**, die die Wärme mitführen (z. B. warme Luft steigt am Heizkörper auf)."
+    },
+    {
+     "id": "bauphysik-uwert-c004",
+     "type": "basic",
+     "front": "Was ist **Wärmestrahlung**?",
+     "back": "Wärmeübertragung durch **elektromagnetische Wellen** (Infrarot). Sie braucht **kein Medium** (z. B. Sonne, Kachelofen)."
+    },
+    {
+     "id": "bauphysik-uwert-c005",
+     "type": "basic",
+     "front": "In welche Richtung fließt Wärme immer von selbst?",
+     "back": "Vom **wärmeren zum kälteren** Bereich – im Winter also von innen nach außen."
+    },
+    {
+     "id": "bauphysik-uwert-c006",
+     "type": "basic",
+     "front": "Was gibt die **Wärmeleitfähigkeit λ** an, und welche Einheit hat sie?",
+     "back": "Den Wärmestrom durch **1 m²** einer **1 m dicken** Stoffschicht bei **1 K** Temperaturdifferenz.\nEinheit: **W/(m·K)** – ein Stoffkennwert."
+    },
+    {
+     "id": "bauphysik-uwert-c007",
+     "type": "basic",
+     "front": "Was bedeutet ein **kleiner λ-Wert**?",
+     "back": "Der Stoff leitet Wärme schlecht → er **dämmt gut**."
+    },
+    {
+     "id": "bauphysik-uwert-c008",
+     "type": "basic",
+     "front": "Typische **λ-Werte** (Größenordnung) wichtiger Baustoffe?",
+     "back": "- Dämmstoffe: ca. 0,025–0,045 W/(m·K)\n- Nadelholz: ca. 0,13\n- Mauerwerk: ca. 0,08–1,0 (je nach Stein)\n- Stahlbeton: ca. 2,3\n- Stahl: ca. 50"
+    },
+    {
+     "id": "bauphysik-uwert-c009",
+     "type": "basic",
+     "front": "Warum dämmt ein **nasser Dämmstoff** schlechter?",
+     "back": "Wasser (λ ≈ 0,6 W/(m·K)) leitet Wärme über **20-mal besser** als ruhende Luft (λ ≈ 0,025). Die Feuchte verdrängt die dämmende Luft aus den Poren."
+    },
+    {
+     "id": "bauphysik-uwert-c010",
+     "type": "basic",
+     "front": "Was bedeutet die Angabe **WLS 035** (früher WLG 035) auf einem Dämmstoff?",
+     "back": "Wärmeleitfähigkeitsstufe 035 → **λ = 0,035 W/(m·K)**"
+    },
+    {
+     "id": "bauphysik-uwert-c011",
+     "type": "basic",
+     "front": "Formel und Einheit des **Wärmedurchlasswiderstands R** einer Schicht?",
+     "back": "**R = d / λ**\nd = Schichtdicke in **m**\nEinheit: **m²·K/W**\nJe größer R, desto besser dämmt die Schicht."
+    },
+    {
+     "id": "bauphysik-uwert-c012",
+     "type": "basic",
+     "front": "Wie berechnet man R bei einem **mehrschichtigen** Bauteil?",
+     "back": "Die Widerstände der Schichten werden **addiert**:\nR = d₁/λ₁ + d₂/λ₂ + d₃/λ₃ + …"
+    },
+    {
+     "id": "bauphysik-uwert-c013",
+     "type": "basic",
+     "front": "Was sind die **Wärmeübergangswiderstände Rsi und Rse**, und welche Werte gelten für eine Außenwand?",
+     "back": "Widerstände beim Übergang der Wärme zwischen Luft und Bauteiloberfläche.\nAußenwand (horizontaler Wärmestrom):\n- Rsi (innen) = **0,13 m²·K/W**\n- Rse (außen) = **0,04 m²·K/W**"
+    },
+    {
+     "id": "bauphysik-uwert-c014",
+     "type": "basic",
+     "front": "Wie hängt **Rsi** von der Richtung des Wärmestroms ab?",
+     "back": "- aufwärts (z. B. Dach, Decke nach oben): **0,10**\n- horizontal (Wand): **0,13**\n- abwärts (z. B. Fußboden): **0,17** m²·K/W\nRse = 0,04 für Bauteile, die direkt an die Außenluft grenzen (unabhängig von der Richtung).",
+     "hint": "DIN EN ISO 6946"
+    },
+    {
+     "id": "bauphysik-uwert-c015",
+     "type": "basic",
+     "front": "Wie berechnet man den **Wärmedurchgangswiderstand RT**?",
+     "back": "**RT = Rsi + R + Rse**\n(Widerstand von der Raumluft innen bis zur Außenluft)"
+    },
+    {
+     "id": "bauphysik-uwert-c016",
+     "type": "basic",
+     "front": "Formel, Einheit und Bedeutung des **U-Werts**?",
+     "back": "**U = 1 / RT**\nEinheit: **W/(m²·K)**\nWärmestrom durch **1 m²** Bauteil bei **1 K** Temperaturdifferenz zwischen innen und außen."
+    },
+    {
+     "id": "bauphysik-uwert-c017",
+     "type": "basic",
+     "front": "Was bedeutet ein **kleiner U-Wert**?",
+     "back": "Es geht **wenig Wärme verloren** → **besserer Wärmeschutz**."
+    },
+    {
+     "id": "bauphysik-uwert-c018",
+     "type": "basic",
+     "front": "Wie berechnet man den **Wärmestrom Φ** durch ein Bauteil?",
+     "back": "**Φ = U · A · (θi − θe)**\nΦ in W, U in W/(m²·K), A in m², Temperaturdifferenz in K"
+    },
+    {
+     "id": "bauphysik-uwert-c019",
+     "type": "basic",
+     "front": "Welcher **U-Höchstwert** gilt nach GEG für eine Außenwand, die im Bestand erneuert oder gedämmt wird?",
+     "back": "**U ≤ 0,24 W/(m²·K)** (Bauteilverfahren, GEG Anlage 7)"
+    },
+    {
+     "id": "bauphysik-uwert-c020",
+     "type": "basic",
+     "front": "Halbiert sich der U-Wert, wenn man die **Dämmstoffdicke verdoppelt**?",
+     "back": "**Nein.** Nur der R-Wert der Dämmschicht verdoppelt sich. Rsi, Rse und die übrigen Schichten bleiben gleich – der U-Wert sinkt also weniger als auf die Hälfte (abnehmender Nutzen je zusätzlichem Zentimeter)."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "bauphysik-uwert-q001",
+     "type": "numeric",
+     "question": "Berechne den Wärmedurchlasswiderstand R einer 24 cm dicken Mauerwerksschicht mit λ = 0,21 W/(m·K).",
+     "answer": 1.143,
+     "unit": "m²·K/W",
+     "tolerance": 0.02,
+     "explanation": "R = d / λ (d in m!)\nR = 0,24 m / 0,21 W/(m·K) ≈ 1,143 m²·K/W"
+    },
+    {
+     "id": "bauphysik-uwert-q002",
+     "type": "numeric",
+     "question": "Welchen Wärmedurchlasswiderstand R hat eine 16 cm dicke Dämmschicht der WLS 035?",
+     "answer": 4.571,
+     "unit": "m²·K/W",
+     "tolerance": 0.02,
+     "explanation": "WLS 035 → λ = 0,035 W/(m·K)\nR = 0,16 / 0,035 ≈ 4,571 m²·K/W"
+    },
+    {
+     "id": "bauphysik-uwert-q003",
+     "type": "numeric",
+     "question": "Eine 30 cm dicke Schicht hat einen Wärmedurchlasswiderstand von R = 2,5 m²·K/W. Wie groß ist ihre Wärmeleitfähigkeit λ?",
+     "answer": 0.12,
+     "unit": "W/(m·K)",
+     "tolerance": 0.02,
+     "explanation": "R = d / λ → λ = d / R\nλ = 0,30 m / 2,5 m²·K/W = 0,12 W/(m·K)"
+    },
+    {
+     "id": "bauphysik-uwert-q004",
+     "type": "numeric",
+     "question": "Eine einschalige Außenwand besteht aus 36,5 cm Leichthochlochziegeln mit λ = 0,09 W/(m·K). Putze vernachlässigen. Berechne den U-Wert (Rsi = 0,13; Rse = 0,04 m²·K/W).",
+     "answer": 0.237,
+     "unit": "W/(m²·K)",
+     "tolerance": 0.02,
+     "explanation": "R = 0,365 / 0,09 ≈ 4,056 m²·K/W\nRT = Rsi + R + Rse = 0,13 + 4,056 + 0,04 ≈ 4,226 m²·K/W\nU = 1 / RT = 1 / 4,226 ≈ 0,237 W/(m²·K)"
+    },
+    {
+     "id": "bauphysik-uwert-q005",
+     "type": "numeric",
+     "question": "Außenwand mit WDVS, von innen nach außen:\n- Innenputz 1,5 cm, λ = 0,70\n- Kalksandstein 17,5 cm, λ = 0,99\n- EPS-Dämmung 14 cm, λ = 0,035\n- Außenputz 1,0 cm, λ = 0,70\n(λ in W/(m·K); Rsi = 0,13; Rse = 0,04 m²·K/W). Berechne den U-Wert.",
+     "answer": 0.228,
+     "unit": "W/(m²·K)",
+     "tolerance": 0.02,
+     "explanation": "Schichtwiderstände R = d / λ:\n- Innenputz: 0,015 / 0,70 ≈ 0,021\n- KS: 0,175 / 0,99 ≈ 0,177\n- EPS: 0,14 / 0,035 = 4,000\n- Außenputz: 0,010 / 0,70 ≈ 0,014\nΣR ≈ 4,213 m²·K/W\nRT = 0,13 + 4,213 + 0,04 ≈ 4,382 m²·K/W\nU = 1 / 4,382 ≈ 0,228 W/(m²·K)\n→ Die Dämmung liefert über 90 % des Widerstands."
+    },
+    {
+     "id": "bauphysik-uwert-q006",
+     "type": "numeric",
+     "question": "Eine 20 cm dicke Stahlbetonwand (λ = 2,3 W/(m·K)) ist **ungedämmt**. Berechne ihren U-Wert (Rsi = 0,13; Rse = 0,04 m²·K/W).",
+     "answer": 3.89,
+     "unit": "W/(m²·K)",
+     "tolerance": 0.02,
+     "explanation": "R = 0,20 / 2,3 ≈ 0,087 m²·K/W\nRT = 0,13 + 0,087 + 0,04 ≈ 0,257 m²·K/W\nU = 1 / 0,257 ≈ 3,89 W/(m²·K)\nBeton allein dämmt praktisch nicht – hier wirken fast nur Rsi und Rse."
+    },
+    {
+     "id": "bauphysik-uwert-q007",
+     "type": "numeric",
+     "question": "Die 20 cm Stahlbetonwand (λ = 2,3 W/(m·K)) erhält außen 12 cm Mineralwolle (λ = 0,040 W/(m·K)). Wie groß ist jetzt der U-Wert? (Rsi = 0,13; Rse = 0,04 m²·K/W; Putz vernachlässigen)",
+     "answer": 0.307,
+     "unit": "W/(m²·K)",
+     "tolerance": 0.02,
+     "explanation": "R Beton = 0,20 / 2,3 ≈ 0,087\nR Dämmung = 0,12 / 0,040 = 3,000\nRT = 0,13 + 0,087 + 3,000 + 0,04 ≈ 3,257 m²·K/W\nU = 1 / 3,257 ≈ 0,307 W/(m²·K)\n(vorher ca. 3,89 → mehr als 12-mal besser)"
+    },
+    {
+     "id": "bauphysik-uwert-q008",
+     "type": "numeric",
+     "question": "Eine Bestandswand hat ohne Dämmung RT = 0,80 m²·K/W (inkl. Rsi und Rse). Sie soll den GEG-Höchstwert U = 0,24 W/(m²·K) einhalten. Welche Dämmstoffdicke (λ = 0,035 W/(m·K)) ist mindestens nötig? Ergebnis in cm.",
+     "answer": 11.78,
+     "unit": "cm",
+     "tolerance": 0.02,
+     "explanation": "Erforderliches RT = 1 / U = 1 / 0,24 ≈ 4,167 m²·K/W\nFehlender Widerstand: R_D = 4,167 − 0,80 ≈ 3,367 m²·K/W\nd = R_D · λ = 3,367 · 0,035 ≈ 0,1178 m ≈ 11,8 cm\n→ in der Praxis 12 cm wählen (nächste Handelsdicke)."
+    },
+    {
+     "id": "bauphysik-uwert-q009",
+     "type": "numeric",
+     "question": "Eine Außenwand (U = 0,24 W/(m²·K)) hat eine Fläche von 15 m². Innen herrschen 20 °C, außen −10 °C. Wie groß ist der Wärmestrom Φ durch die Wand?",
+     "answer": 108,
+     "unit": "W",
+     "tolerance": 0.02,
+     "explanation": "Δθ = 20 − (−10) = 30 K\nΦ = U · A · Δθ = 0,24 · 15 · 30 = 108 W"
+    },
+    {
+     "id": "bauphysik-uwert-q010",
+     "type": "numeric",
+     "question": "Ein Fenster mit Uw = 1,3 W/(m²·K) hat eine Fläche von 2,4 m². Innen 20 °C, außen −12 °C. Berechne den Wärmestrom Φ.",
+     "answer": 99.84,
+     "unit": "W",
+     "tolerance": 0.02,
+     "explanation": "Δθ = 20 − (−12) = 32 K\nΦ = 1,3 · 2,4 · 32 = 99,84 W"
+    },
+    {
+     "id": "bauphysik-uwert-q011",
+     "type": "numeric",
+     "question": "Eine Altbauwand (U = 1,4 W/(m²·K), A = 100 m²) wird auf U = 0,24 W/(m²·K) gedämmt. Um wie viel Watt sinkt der Wärmestrom bei Δθ = 30 K?",
+     "answer": 3480,
+     "unit": "W",
+     "tolerance": 0.02,
+     "explanation": "Vorher: Φ = 1,4 · 100 · 30 = 4200 W\nNachher: Φ = 0,24 · 100 · 30 = 720 W\nEinsparung: 4200 − 720 = 3480 W (ca. 83 % weniger)"
+    },
+    {
+     "id": "bauphysik-uwert-q012",
+     "type": "numeric",
+     "question": "Ein Bauteil hat einen U-Wert von 0,28 W/(m²·K). Wie groß ist sein Wärmedurchgangswiderstand RT?",
+     "answer": 3.571,
+     "unit": "m²·K/W",
+     "tolerance": 0.02,
+     "explanation": "U = 1 / RT → RT = 1 / U\nRT = 1 / 0,28 ≈ 3,571 m²·K/W"
+    },
+    {
+     "id": "bauphysik-uwert-q013",
+     "type": "mc",
+     "question": "Welche Einheit hat der U-Wert?",
+     "options": [
+      "W/(m·K)",
+      "m²·K/W",
+      "W/(m²·K)",
+      "kJ/(kg·K)"
+     ],
+     "answer": 2,
+     "explanation": "U in W/(m²·K). W/(m·K) ist die Einheit von λ, m²·K/W die von R, kJ/(kg·K) die der spezifischen Wärmekapazität."
+    },
+    {
+     "id": "bauphysik-uwert-q014",
+     "type": "mc",
+     "question": "Welcher Baustoff hat die kleinste Wärmeleitfähigkeit λ?",
+     "options": [
+      "Stahlbeton",
+      "Kalksandstein",
+      "Nadelholz",
+      "Mineralwolle"
+     ],
+     "answer": 3,
+     "explanation": "Mineralwolle ≈ 0,035–0,040 W/(m·K), Nadelholz ≈ 0,13, Kalksandstein ≈ 0,5–1,0, Stahlbeton ≈ 2,3."
+    },
+    {
+     "id": "bauphysik-uwert-q015",
+     "type": "mc",
+     "question": "Welche Art der Wärmeübertragung funktioniert auch im luftleeren Raum?",
+     "options": [
+      "Wärmeleitung",
+      "Konvektion",
+      "Wärmestrahlung",
+      "Keine davon"
+     ],
+     "answer": 2,
+     "explanation": "Wärmestrahlung besteht aus elektromagnetischen Wellen und braucht kein Medium – so erreicht uns die Wärme der Sonne."
+    },
+    {
+     "id": "bauphysik-uwert-q016",
+     "type": "mc",
+     "question": "Warme Luft steigt an einem Heizkörper auf und verteilt die Wärme im Raum. Welche Wärmeübertragungsart ist das?",
+     "options": [
+      "Konvektion",
+      "Wärmeleitung",
+      "Wärmestrahlung",
+      "Diffusion"
+     ],
+     "answer": 0,
+     "explanation": "Bei der Konvektion wird Wärme durch ein strömendes Gas oder eine Flüssigkeit mitgeführt."
+    },
+    {
+     "id": "bauphysik-uwert-q017",
+     "type": "mc",
+     "question": "Richtig oder falsch? Verdoppelt man die Dämmstoffdicke einer Wand, halbiert sich ihr U-Wert.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "Nur der R-Wert der Dämmschicht verdoppelt sich. Rsi, Rse und die übrigen Schichten bleiben gleich, daher sinkt U weniger als auf die Hälfte."
+    },
+    {
+     "id": "bauphysik-uwert-q018",
+     "type": "mc",
+     "question": "Welcher innere Wärmeübergangswiderstand Rsi gilt für eine Außenwand (horizontaler Wärmestrom)?",
+     "options": [
+      "0,04 m²·K/W",
+      "0,10 m²·K/W",
+      "0,13 m²·K/W",
+      "0,17 m²·K/W"
+     ],
+     "answer": 2,
+     "explanation": "Wand: Rsi = 0,13. Wärmestrom aufwärts: 0,10, abwärts: 0,17. Rse (außen) = 0,04."
+    },
+    {
+     "id": "bauphysik-uwert-q019",
+     "type": "mc",
+     "question": "Eine Wand hat U = 0,30 W/(m²·K), eine andere U = 0,20 W/(m²·K). Welche Aussage stimmt?",
+     "options": [
+      "Die Wand mit U = 0,30 dämmt besser",
+      "Die Wand mit U = 0,20 dämmt besser",
+      "Beide dämmen gleich gut",
+      "Ohne λ-Wert lässt sich das nicht sagen"
+     ],
+     "answer": 1,
+     "explanation": "Je kleiner der U-Wert, desto weniger Wärme geht pro m² und Kelvin verloren – also dämmt die Wand mit U = 0,20 besser."
+    }
+   ]
+  }
+ ]
+}
