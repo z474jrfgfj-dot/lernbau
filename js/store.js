@@ -9,6 +9,7 @@ const DEFAULT_SETTINGS = {
   sessionSize: 20,      // cards per session
   quizSize: 10,         // questions per quiz
   vocabDir: 'both',     // both | en-de | de-en
+  typeVocab: true,      // type vocab answers instead of only revealing
   retention: 0.9,       // FSRS desired retention
   theme: 'auto',        // auto | light | dark
   voice: '',            // speechSynthesis voice URI

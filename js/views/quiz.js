@@ -13,11 +13,11 @@ const SEC_PER_Q = 90;
 
 // ---------- answer checking ----------
 
-const norm = s => String(s ?? '').toLowerCase().normalize('NFC')
+export const norm = s => String(s ?? '').toLowerCase().normalize('NFC')
   .replace(/[’‘`´]/g, "'").replace(/[„“”]/g, '"')
   .replace(/[.!?;:,]+$/, '').replace(/\s+/g, ' ').trim();
 
-function lev(a, b) {
+export function lev(a, b) {
   if (Math.abs(a.length - b.length) > 1) return 2;
   const dp = Array.from({ length: a.length + 1 }, (_, i) => [i]);
   for (let j = 1; j <= b.length; j++) dp[0][j] = j;

@@ -128,6 +128,8 @@ export default function settingsView(el, route) {
         <label class="row"><span class="grow">Neue Karten pro Tag</span>${select('newPerDay')}</label>
         <label class="row"><span class="grow">Rundengröße</span>${select('sessionSize')}</label>
         <label class="row"><span class="grow">Vokabeln abfragen</span>${select('vocabDir')}</label>
+        <label class="row"><span class="grow">Vokabeln eintippen</span>
+          <span class="switch"><input type="checkbox" data-toggle="typeVocab" ${s.typeVocab ? 'checked' : ''} aria-label="Vokabeln eintippen"><span></span></span></label>
         <label class="row"><span class="grow">Behaltensrate</span>${select('retention')}</label>
       </div>
       <p class="footnote">Die Wiederholungen plant der FSRS-Algorithmus: Karten, die du gut kannst, kommen seltener, schwierige öfter. Höhere Behaltensrate = mehr Wiederholungen.</p>
