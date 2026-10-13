@@ -3,6 +3,7 @@ import * as store from './store.js';
 import * as content from './content.js';
 import { $, $$, html } from './util.js';
 import { applyTheme } from './ui.js';
+import * as sync from './sync.js';
 import home from './views/home.js';
 import { subjectsView, subjectView, deckView } from './views/subjects.js';
 import review from './views/review.js';
@@ -65,6 +66,16 @@ async function boot() {
   }
   addEventListener('hashchange', route);
   route();
+  sync.init();
+  // Re-render passive pages when synced data arrives from another device.
+  let lastSync = 0;
+  sync.onStatus(() => {
+    if (sync.status.last !== lastSync) {
+      lastSync = sync.status.last;
+      const name = location.hash.replace(/^#\/?/, '').split(/[/?]/)[0] || 'heute';
+      if (['heute', 'faecher', 'fach', 'deck', 'statistik'].includes(name)) route();
+    }
+  });
   if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     navigator.serviceWorker.register('sw.js').catch(err => console.warn('SW', err));
   }

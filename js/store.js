@@ -134,10 +134,12 @@ export function bestStreak() {
 export function addExam(exam) {
   state.exams.push({ id: Math.random().toString(36).slice(2, 9), ...exam });
   state.exams.sort((a, b) => a.date.localeCompare(b.date));
+  state.examsAt = Date.now();
   save();
 }
 export function removeExam(id) {
   state.exams = state.exams.filter(e => e.id !== id);
+  state.examsAt = Date.now();
   save();
 }
 
@@ -153,27 +155,52 @@ export function importJson(text, mode = 'merge') {
   if (mode === 'replace') {
     state = { ...fresh(), ...incoming, settings: { ...DEFAULT_SETTINGS, ...incoming.settings } };
   } else {
-    for (const [id, c] of Object.entries(incoming.cards)) {
-      const mine = state.cards[id];
-      if (!mine || (c.last || 0) > (mine.last || 0)) state.cards[id] = c;
-    }
-    for (const [k, d] of Object.entries(incoming.days || {})) {
-      const mine = state.days[k];
-      if (!mine || (d.xp || 0) > (mine.xp || 0)) state.days[k] = d;
-    }
-    state.xp = Object.values(state.days).reduce((s, d) => s + (d.xp || 0), 0);
-    for (const [q, n] of Object.entries(incoming.quiz?.wrong || {})) if (!(q in state.quiz.wrong)) state.quiz.wrong[q] = n;
-    for (const [q, t] of Object.entries(incoming.quiz?.seen || {})) state.quiz.seen[q] = Math.max(t, state.quiz.seen[q] || 0);
-    const seenT = new Set(state.quiz.history.map(h => h.t));
-    state.quiz.history.push(...(incoming.quiz?.history || []).filter(h => !seenT.has(h.t)));
-    state.quiz.history.sort((a, b) => a.t - b.t);
-    const examIds = new Set(state.exams.map(e => e.id));
-    state.exams.push(...(incoming.exams || []).filter(e => !examIds.has(e.id)));
+    merge(incoming);
   }
   flush();
 }
 
+/** Merge another device's state into ours: newest review per card wins, days keep the larger XP. */
+export function merge(incoming) {
+  // A reset on one device wins over older progress from any other device.
+  const theirReset = incoming.resetAt || 0, myReset = state.resetAt || 0;
+  if (theirReset < myReset) return;
+  if (theirReset > myReset) {
+    state = { ...fresh(), settings: state.settings, exams: state.exams, examsAt: state.examsAt, resetAt: theirReset };
+  }
+  for (const [id, c] of Object.entries(incoming.cards || {})) {
+    const mine = state.cards[id];
+    if (!mine || (c.last || 0) > (mine.last || 0)) state.cards[id] = c;
+  }
+  for (const [k, d] of Object.entries(incoming.days || {})) {
+    const mine = state.days[k];
+    if (!mine || (d.xp || 0) > (mine.xp || 0)) state.days[k] = d;
+  }
+  state.xp = Object.values(state.days).reduce((s, d) => s + (d.xp || 0), 0);
+
+  // Mistakes: whichever device answered a question last decides whether it is still wrong.
+  const inQ = incoming.quiz || {};
+  const ids = new Set([...Object.keys(inQ.seen || {}), ...Object.keys(state.quiz.seen)]);
+  for (const q of ids) {
+    const theirs = inQ.seen?.[q] || 0, mine = state.quiz.seen[q] || 0;
+    if (theirs > mine) {
+      if (inQ.wrong?.[q]) state.quiz.wrong[q] = inQ.wrong[q];
+      else delete state.quiz.wrong[q];
+      state.quiz.seen[q] = theirs;
+    }
+  }
+  const seenT = new Set(state.quiz.history.map(h => h.t));
+  state.quiz.history.push(...(inQ.history || []).filter(h => !seenT.has(h.t)));
+  state.quiz.history.sort((a, b) => a.t - b.t);
+
+  // Exams: the most recently edited list wins (so deletions sync too).
+  if ((incoming.examsAt || 0) > (state.examsAt || 0)) {
+    state.exams = incoming.exams || [];
+    state.examsAt = incoming.examsAt;
+  }
+}
+
 export function reset() {
-  state = { ...fresh(), settings: state.settings, exams: state.exams };
+  state = { ...fresh(), settings: state.settings, exams: state.exams, examsAt: state.examsAt, resetAt: Date.now() };
   flush();
 }

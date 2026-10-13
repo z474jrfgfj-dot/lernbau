@@ -1,6 +1,7 @@
 import * as store from '../store.js';
 import * as content from '../content.js';
 import * as speech from '../speech.js';
+import * as sync from '../sync.js';
 import { html, $, toast, dayKey, daysBetween } from '../util.js';
 import { chips, sheet, confirmSheet, applyTheme } from '../ui.js';
 
@@ -62,6 +63,37 @@ async function exportBackup() {
 }
 
 export default function settingsView(el, route) {
+  let codeFor = '';      // e-mail a login code was sent to
+  let syncMsg = '';
+
+  const syncSection = () => {
+    const u = sync.user();
+    const st = sync.status;
+    if (u) return html`
+      <h2 class="section-title">Sync</h2>
+      <div class="list">
+        <div class="row"><span class="grow">Angemeldet als</span><span class="value">${u.email}</span></div>
+        <div class="row"><span class="grow">Letzter Abgleich</span><span class="value">${st.running ? 'läuft …' : st.last ? new Date(st.last).toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) : '–'}</span></div>
+        ${st.error ? html`<div class="row"><span class="sub" style="color:var(--red)">${st.error}</span></div>` : ''}
+        <button class="row action" data-sync-now>Jetzt synchronisieren</button>
+        <button class="row danger" data-logout>Abmelden</button>
+      </div>
+      <p class="footnote">Dein Fortschritt wird automatisch zwischen allen Geräten abgeglichen, auf denen du angemeldet bist.</p>`;
+    return html`
+      <h2 class="section-title">Sync</h2>
+      <form class="list" data-login>
+        ${codeFor
+          ? html`<div class="row"><span class="sub">Code an ${codeFor} gesendet. Schau in dein Postfach (auch im Spam).</span></div>
+              <label class="row"><input type="text" name="code" inputmode="numeric" autocomplete="one-time-code" placeholder="Code aus der E-Mail" maxlength="10" required></label>
+              <button class="row action">Anmelden</button>
+              <button type="button" class="row" data-other-mail style="color:var(--label2)">Andere E-Mail</button>`
+          : html`<label class="row"><input type="text" name="email" inputmode="email" autocomplete="email" autocapitalize="off" placeholder="Deine E-Mail-Adresse" required></label>
+              <button class="row action">Anmelde-Code senden</button>`}
+      </form>
+      ${syncMsg ? html`<p class="footnote" style="color:var(--red)">${syncMsg}</p>` : ''}
+      <p class="footnote">Melde dich auf jedem Gerät mit derselben E-Mail an, dann ist dein Fortschritt überall gleich. Kein Passwort nötig – du bekommst jedes Mal einen Code per E-Mail.</p>`;
+  };
+
   const render = () => {
     const s = store.settings();
     const t = content.totals();
@@ -118,6 +150,8 @@ export default function settingsView(el, route) {
         ${OPTIONS.theme.map(([v, l]) => html`<button class="${s.theme === v ? 'on' : ''}" data-theme-v="${v}">${l}</button>`)}
       </div>
 
+      ${sync.enabled() ? syncSection() : ''}
+
       <h2 class="section-title">Daten & Geräte</h2>
       <div class="list">
         <button class="row action" data-export>Fortschritt sichern (Datei)</button>
@@ -172,6 +206,9 @@ export default function settingsView(el, route) {
     }
     if ('testVoice' in t.dataset) return speech.speak('The concrete slab is reinforced with steel bars.');
     if ('export' in t.dataset) return exportBackup();
+    if ('syncNow' in t.dataset) return sync.syncNow();
+    if ('logout' in t.dataset) { sync.logout(); toast('Abgemeldet'); return render(); }
+    if ('otherMail' in t.dataset) { codeFor = ''; return render(); }
     if ('reset' in t.dataset) {
       return confirmSheet('Fortschritt zurücksetzen?', 'Alle Lernstände, XP und die Serie werden gelöscht. Einstellungen und Prüfungen bleiben. Tipp: Vorher sichern.', 'Zurücksetzen', () => {
         store.reset(); toast('Zurückgesetzt'); render();
@@ -179,12 +216,39 @@ export default function settingsView(el, route) {
     }
   }
 
+  async function onSubmit(e) {
+    if (!e.target.matches('[data-login]')) return;
+    e.preventDefault();
+    const f = new FormData(e.target);
+    const btn = e.target.querySelector('button.action');
+    btn.disabled = true;
+    syncMsg = '';
+    try {
+      if (!codeFor) {
+        const email = String(f.get('email')).trim().toLowerCase();
+        await sync.sendCode(email);
+        codeFor = email;
+      } else {
+        await sync.verifyCode(codeFor, String(f.get('code')).replace(/\s/g, ''));
+        codeFor = '';
+        toast('Angemeldet – Fortschritt wird synchronisiert ✓');
+      }
+    } catch (err) {
+      syncMsg = err.message || 'Das hat nicht geklappt.';
+    }
+    render();
+  }
+
   render();
+  const offStatus = sync.onStatus(() => { if (!codeFor) render(); });
+  el.addEventListener('submit', onSubmit);
   speech.whenReady().then(() => { if (el.isConnected && location.hash.startsWith('#/einstellungen')) render(); });
   el.addEventListener('change', onChange);
   el.addEventListener('click', onClick);
   if (route.query.exam === '1') setTimeout(() => examSheet(render), 50);
   return () => {
+    offStatus();
+    el.removeEventListener('submit', onSubmit);
     el.removeEventListener('change', onChange);
     el.removeEventListener('click', onClick);
   };
