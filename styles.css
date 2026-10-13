@@ -468,16 +468,6 @@ details.cardrow .ans { padding: 0 0 14px 18px; color: var(--label2); font-size: 
 .flash .example { font-size: 15px; color: var(--label2); font-style: italic; display: flex; align-items: center; gap: 8px; text-align: left; }
 .flash .note { font-size: 14px; color: var(--label2); background: var(--fill2); padding: 6px 12px; border-radius: 10px; }
 .flash .hint-btn { color: var(--accent); font-size: 15px; font-weight: 500; }
-.flash .typed {
-  align-self: stretch; display: flex; flex-direction: column; gap: 2px;
-  padding: 10px 14px; border-radius: 14px; text-align: left;
-  background: color-mix(in srgb, var(--rc) 13%, transparent);
-  animation: pop .35s cubic-bezier(.3,1.6,.5,1);
-}
-.flash .typed b { color: var(--rc); font: 800 17px var(--font-round); }
-.flash .typed span { font-size: 15px; color: var(--label2); }
-.rate .btn.suggest { outline: 3px solid var(--label); outline-offset: 2px; }
-.dock .answer-field input { text-align: center; }
 .word-row { display: flex; align-items: center; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
 .dock { margin-top: 18px; }

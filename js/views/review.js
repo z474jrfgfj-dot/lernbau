@@ -5,7 +5,6 @@ import * as speech from '../speech.js';
 import { preview, intervalLabel, State } from '../fsrs.js';
 import { html, md, $, confetti, plural } from '../util.js';
 import { icon, scopeFrom } from '../ui.js';
-import { checkVocab } from '../answer.js';
 
 const LABELS = ['Nochmal', 'Schwer', 'Gut', 'Einfach'];
 const COLORS = ['red', 'orange', 'green', ''];
@@ -41,7 +40,7 @@ export default function review(el, route) {
   const opts = () => ({ retention: store.settings().retention });
   let queue = buildQueue(scope, extra);
   const session = { done: 0, ratings: [0, 0, 0, 0], xp0: store.get().xp, started: Date.now(), seen: new Set() };
-  let current = null, revealed = false, shownAt = 0, undo = null, typed = null;
+  let current = null, revealed = false, shownAt = 0, undo = null;
 
   const exit = () => {
     if (history.length > 1) history.back();
@@ -62,24 +61,7 @@ export default function review(el, route) {
     return;
   }
 
-  const wantsTyping = it => !!it.dir && store.settings().typeVocab !== false;
-  const target = it => (it.dir === 'en-de' ? it.card.de : it.card.en);
-  const RESULT_TEXT = {
-    right: ['✓ Richtig!', 'var(--green)'],
-    typo: ['✓ Fast richtig – kleiner Tippfehler', 'var(--green)'],
-    partial: ['◐ Teilweise – alle Formen lernen', 'var(--orange)'],
-    wrong: ['✗ Leider nicht', 'var(--red)'],
-  };
-  const SUGGEST = { right: 3, typo: 3, partial: 2, wrong: 1 };
-
-  function checkTyped(value) {
-    if (revealed) return;
-    typed = { value, result: value.trim() ? checkVocab(target(current), value) : 'wrong' };
-    reveal();
-  }
-
   function next() {
-    typed = null;
     revealed = false;
     current = queue.shift();
     if (!current) return finish();
@@ -129,25 +111,14 @@ export default function review(el, route) {
         <div class="meta"><span class="pill">${it.subject.icon} ${it.subject.name}</span><span>${it.deck.title}</span>
           <span class="state" style="color:${isNew ? 'var(--accent)' : card.state === State.Review ? 'var(--green)' : 'var(--orange)'}">${isNew ? 'NEU' : card.state === State.Review ? '' : 'Lernen'}</span></div>
         <div class="front">${frontHtml(it)}</div>
-        ${revealed ? html`<div class="back">
-          ${typed ? html`<div class="typed" style="--rc:${RESULT_TEXT[typed.result][1]}">
-            <b>${RESULT_TEXT[typed.result][0]}</b>${typed.value.trim() ? html`<span>Deine Antwort: ${typed.value}</span>` : ''}</div>` : ''}
-          ${backHtml(it)}</div>` : ''}
+        ${revealed ? html`<div class="back">${backHtml(it)}</div>` : ''}
       </div>
       <div class="dock">
         ${revealed
-          ? html`<div class="rate">${LABELS.map((l, i) => html`<button class="btn ${COLORS[i]} ${typed && SUGGEST[typed.result] === i + 1 ? 'suggest' : ''}" data-rate="${i + 1}">
-              ${l}<small>${intervalLabel(pv[i])}</small><kbd>${i + 1}</kbd></button>`)}</div>
-              ${typed ? html`<p class="caption" style="text-align:center;margin-top:10px">Vorschlag markiert – du kannst auch anders bewerten.</p>` : ''}`
-          : wantsTyping(it)
-            ? html`<form class="answer-field" data-type-form autocomplete="off">
-                <input name="a" placeholder="${it.dir === 'en-de' ? 'Auf Deutsch …' : 'In English …'}" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" aria-label="Deine Antwort">
-              </form>
-              <div class="btn-row"><button class="btn secondary" type="button" data-reveal>Weiß ich nicht</button><button class="btn" type="button" data-check>Prüfen</button></div>`
-            : html`<button class="btn block" data-reveal>Antwort zeigen <kbd>Leertaste</kbd></button>`}
+          ? html`<div class="rate">${LABELS.map((l, i) => html`<button class="btn ${COLORS[i]}" data-rate="${i + 1}">
+              ${l}<small>${intervalLabel(pv[i])}</small><kbd>${i + 1}</kbd></button>`)}</div>`
+          : html`<button class="btn block" data-reveal>Antwort zeigen <kbd>Leertaste</kbd></button>`}
       </div>`);
-    const inp = $('[data-type-form] input', el);
-    if (inp && matchMedia('(pointer: fine)').matches) inp.focus();
   }
 
   function reveal() {
@@ -192,7 +163,6 @@ export default function review(el, route) {
     session.ratings = undo.session.ratings;
     current = undo.it;
     undo = null;
-    typed = null;
     revealed = true;
     shownAt = Date.now();
     draw();
@@ -239,7 +209,6 @@ export default function review(el, route) {
     if (t.dataset.speak) { e.stopPropagation(); speech.speak(t.dataset.speak); return; }
     if ('close' in t.dataset) return exit();
     if ('reveal' in t.dataset) return reveal();
-    if ('check' in t.dataset) return checkTyped($('[data-type-form] input', el)?.value || '');
     if ('undo' in t.dataset) return doUndo();
     if ('again' in t.dataset) return restart();
     if ('hint' in t.dataset) { t.hidden = true; $('[data-hinttext]', el).hidden = false; return; }
@@ -248,8 +217,8 @@ export default function review(el, route) {
 
   function onKey(e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (!current || e.target.matches('input')) return;
-    if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); revealed ? rate(typed ? SUGGEST[typed.result] : 3) : reveal(); }
+    if (!current) return;
+    if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); revealed ? rate(3) : reveal(); }
     else if (/^[1-4]$/.test(e.key)) rate(+e.key);
     else if (e.key === 'Escape') exit();
     else if (e.key.toLowerCase() === 'z') doUndo();
@@ -258,23 +227,15 @@ export default function review(el, route) {
 
   // Tap anywhere on the card to reveal.
   function onCardTap(e) {
-    if (!revealed && !wantsTyping(current) && e.target.closest('.flash') && !e.target.closest('button')) reveal();
-  }
-
-  function onSubmit(e) {
-    if (!e.target.matches('[data-type-form]')) return;
-    e.preventDefault();
-    checkTyped(e.target.querySelector('input').value);
+    if (!revealed && e.target.closest('.flash') && !e.target.closest('button')) reveal();
   }
 
   el.addEventListener('click', onClick);
   el.addEventListener('click', onCardTap);
-  el.addEventListener('submit', onSubmit);
   addEventListener('keydown', onKey);
   next();
 
   return () => {
-    el.removeEventListener('submit', onSubmit);
     el.removeEventListener('click', onClick);
     el.removeEventListener('click', onCardTap);
     removeEventListener('keydown', onKey);
