@@ -1,0 +1,2321 @@
+{
+ "unit": "statik-skript-2",
+ "subject": "statik",
+ "decks": [
+  {
+   "id": "statik-skript-2-gleichgewicht",
+   "title": "Gleichgewicht & statische Bestimmtheit",
+   "description": "Gleichgewichtsbedingungen, Vorzeichen und Grad der statischen Unbestimmtheit von Tragsystemen (Skript D, D.2 und H).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-gleichgewicht-c001",
+     "type": "basic",
+     "front": "Wann befindet sich ein Körper im statischen Gleichgewicht?",
+     "back": "Wenn er **nicht beschleunigt** wird und in **Ruhe** bleibt.\nDaraus folgt: Die Resultierende aller Kräfte und Momente ist **null**."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c002",
+     "type": "basic",
+     "front": "Die drei Gleichgewichtsbedingungen der ebenen Statik?",
+     "back": "- ΣV = 0 (alle vertikalen Kräfte)\n- ΣH = 0 (alle horizontalen Kräfte)\n- ΣM = 0 (alle Momente um einen beliebigen Punkt)",
+     "hint": "Sind alle drei erfüllt, ist das System standsicher."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c003",
+     "type": "basic",
+     "front": "Positive Richtungen im Skript für ΣV, ΣH und ΣM?",
+     "back": "- ΣV: nach **unten** positiv (↓)\n- ΣH: nach **rechts** positiv (→)\n- ΣM: **gegen den Uhrzeigersinn** positiv (⊕)\nRichtung einmal festlegen und konsequent durchziehen.",
+     "hint": "Koordinatensystem mit z-Achse nach unten"
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c004",
+     "type": "basic",
+     "front": "Was bedeutet ein negatives Ergebnis für eine Auflagerkraft?",
+     "back": "Die Kraft wirkt **entgegen** der angenommenen (eingezeichneten) Richtung. Der Betrag stimmt – Pfeil umdrehen bzw. mit Vorzeichen weiterrechnen."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c005",
+     "type": "basic",
+     "front": "Formel für den Grad der statischen Unbestimmtheit n?",
+     "back": "n = n_A − 3 − n_U\n- n_A = Anzahl der Auflagerreaktionen (Summe der Lagerwertigkeiten)\n- 3 = Gleichgewichtsbedingungen (Konstante)\n- n_U = Anzahl der Gelenke (je Gelenk eine Zusatzbedingung M_G = 0)",
+     "hint": "Einfeldträger: n = 3 − 3 − 0 = 0"
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c006",
+     "type": "basic",
+     "front": "Auswertung von n: n = 0, n > 0, n < 0?",
+     "back": "- n = 0 → statisch bestimmt\n- n > 0 → n-fach statisch **un**bestimmt\n- n < 0 → kinematisch (verschieblich, unbrauchbar)",
+     "hint": "Im Skript steht bei n > 0 versehentlich „statisch bestimmt“ – gemeint ist unbestimmt."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c007",
+     "type": "basic",
+     "front": "Was bedeutet „statisch bestimmt“?",
+     "back": "Alle Auflagerreaktionen und Schnittgrößen lassen sich allein mit den **drei Gleichgewichtsbedingungen** berechnen."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c008",
+     "type": "basic",
+     "front": "Was bewirken Temperatur oder Stützensenkung bei einem statisch bestimmten System?",
+     "back": "Nur **Verformungen** – keine zusätzlichen Schnittgrößen und keine Auflagerreaktionen. Das System kann sich zwängungsfrei verformen."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c009",
+     "type": "basic",
+     "front": "Was bedeutet „statisch unbestimmt“?",
+     "back": "Die drei Gleichgewichtsbedingungen reichen **nicht** aus, um alle Auflagerreaktionen und Schnittgrößen zu berechnen. Temperatur oder Stützensenkung erzeugen hier zusätzlich Schnittgrößen und Auflagerkräfte (Zwang)."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c010",
+     "type": "basic",
+     "front": "Was bedeutet „kinematisch“?",
+     "back": "Das System ist **verschieblich** (zu wenig Lagerung oder zu viele Gelenke) und als Tragwerk im Allgemeinen unbrauchbar."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c011",
+     "type": "basic",
+     "front": "Ab wann ist ein System ohne Gelenk statisch unbestimmt?",
+     "back": "Wenn es **mehr als 3-wertig** gelagert ist (n_A > 3), z. B. Zweifeldträger mit Festlager und zwei Loslagern (n = 1)."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c012",
+     "type": "basic",
+     "front": "Vorteil statisch unbestimmter Systeme?",
+     "back": "Höhere **Sicherheit gegen Versagen**: Fällt ein Teil aus, versagt nicht zwangsläufig das gesamte System (Tragreserven)."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-c013",
+     "type": "basic",
+     "front": "Wie macht man bei statisch unbestimmten Systemen die Probe?",
+     "back": "Mit ΣV = 0: Die Summe aller Lasten (Eigenlast, Verkehrslast …) muss die Summe aller Auflagerkräfte ergeben."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-gleichgewicht-q001",
+     "type": "mc",
+     "question": "Einfeldträger mit Festlager und Loslager, keine Gelenke. Grad der statischen Unbestimmtheit?",
+     "options": [
+      "n = 1 → 1-fach statisch unbestimmt",
+      "n = 0 → statisch bestimmt",
+      "n = −1 → kinematisch",
+      "n = 2 → 2-fach statisch unbestimmt"
+     ],
+     "answer": 1,
+     "explanation": "n_A = 2 + 1 = 3; n_U = 0\nn = 3 − 3 − 0 = 0 → statisch bestimmt."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q002",
+     "type": "mc",
+     "question": "Kragträger: links eingespannt, am freien Ende zusätzlich durch ein Loslager gestützt. Grad der statischen Unbestimmtheit?",
+     "options": [
+      "n = 0",
+      "n = −1",
+      "n = 3",
+      "n = 1"
+     ],
+     "answer": 3,
+     "explanation": "Einspannung 3 + Loslager 1 = 4 Auflagerreaktionen.\nn = 4 − 3 − 0 = 1 → 1-fach statisch unbestimmt."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q003",
+     "type": "mc",
+     "question": "Dreifeldträger: ein Festlager und drei Loslager, keine Gelenke (Skript H, Beispiel [2]). n = ?",
+     "options": [
+      "n = 1",
+      "n = 3",
+      "n = 2",
+      "n = 0"
+     ],
+     "answer": 2,
+     "explanation": "n_A = 2 + 3 · 1 = 5\nn = 5 − 3 − 0 = 2 → 2-fach statisch unbestimmt."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q004",
+     "type": "numeric",
+     "question": "Vierfeldträger mit einem Festlager und vier Loslagern, ohne Gelenke. Berechne den Grad der statischen Unbestimmtheit n.",
+     "answer": 3,
+     "unit": "-fach unbestimmt",
+     "tolerance": 0,
+     "explanation": "n_A = 2 + 4 · 1 = 6\nn = 6 − 3 − 0 = **3** → 3-fach statisch unbestimmt."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q005",
+     "type": "mc",
+     "question": "Beispiel 7: Rahmen mit Loslager links, Einspannung rechts und einem Gelenk in der rechten Rahmenecke. n = ?",
+     "options": [
+      "n = 1 → 1-fach statisch unbestimmt",
+      "n = −1 → kinematisch",
+      "n = 2 → 2-fach statisch unbestimmt",
+      "n = 0 → statisch bestimmt"
+     ],
+     "answer": 3,
+     "explanation": "n_A = 1 (Loslager) + 3 (Einspannung) = 4; n_U = 1 (Gelenk)\nn = 4 − 3 − 1 = 0 → statisch bestimmt."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q006",
+     "type": "mc",
+     "question": "Ein Träger liegt auf zwei Loslagern (beide nehmen nur vertikale Kräfte auf), keine Gelenke. Bewertung?",
+     "options": [
+      "statisch bestimmt",
+      "kinematisch – horizontal verschieblich",
+      "1-fach statisch unbestimmt"
+     ],
+     "answer": 1,
+     "explanation": "n = 2 − 3 − 0 = −1 < 0. Kein Lager nimmt Horizontalkräfte auf, der Träger kann wegrutschen."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q007",
+     "type": "numeric",
+     "question": "Beidseitig eingespannter Einfeldträger ohne Gelenke. Grad der statischen Unbestimmtheit n?",
+     "answer": 3,
+     "unit": "-fach unbestimmt",
+     "tolerance": 0,
+     "explanation": "n_A = 3 + 3 = 6\nn = 6 − 3 − 0 = **3**"
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q008",
+     "type": "mc",
+     "question": "Dreigelenkrahmen: zwei Festlager und ein Gelenk im Riegel. n = ?",
+     "options": [
+      "n = 0",
+      "n = 1",
+      "n = −1",
+      "n = 2"
+     ],
+     "answer": 0,
+     "explanation": "n_A = 2 + 2 = 4; n_U = 1\nn = 4 − 3 − 1 = 0 → statisch bestimmt.\nOhne das Riegelgelenk (Zweigelenkrahmen) wäre n = 1."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q009",
+     "type": "mc",
+     "question": "Gerberträger über drei Felder: ein Festlager, drei Loslager und zwei Gelenke in den Feldern. n = ?",
+     "options": [
+      "n = 2",
+      "n = 1",
+      "n = 0",
+      "n = −1"
+     ],
+     "answer": 2,
+     "explanation": "n_A = 2 + 3 = 5; n_U = 2\nn = 5 − 3 − 2 = 0 → statisch bestimmt. Jedes Gelenk baut eine Unbestimmtheit ab."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q010",
+     "type": "mc",
+     "question": "Übungsaufgabe 3 (E.11): Loslager A, Einspannung B und ein Gelenk dazwischen. n = ?",
+     "options": [
+      "n = 1",
+      "n = −1",
+      "n = 0",
+      "n = 2"
+     ],
+     "answer": 2,
+     "explanation": "n_A = 1 + 3 = 4; n_U = 1\nn = 4 − 3 − 1 = 0 → statisch bestimmt."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q011",
+     "type": "mc",
+     "question": "Ein statisch bestimmter Einfeldträger (Festlager + Loslager) erwärmt sich gleichmäßig. Was passiert?",
+     "options": [
+      "Er dehnt sich zwängungsfrei aus – keine zusätzlichen Auflagerkräfte",
+      "Es entstehen große Horizontalkräfte in beiden Lagern",
+      "Es entsteht ein Einspannmoment am Festlager",
+      "Der Träger wird kinematisch"
+     ],
+     "answer": 0,
+     "explanation": "Bei statisch bestimmten Systemen erzeugen Temperatur und Stützensenkung nur Verformungen – das Loslager lässt die Längenänderung zu."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q012",
+     "type": "mc",
+     "question": "Richtig oder falsch: Bei einem Zweifeldträger (Festlager + 2 Loslager) lassen sich alle Auflagerkräfte allein mit ΣV, ΣH und ΣM berechnen.",
+     "options": [
+      "Richtig",
+      "Falsch"
+     ],
+     "answer": 1,
+     "explanation": "4 Unbekannte (A_H, A_V, B_V, C_V), aber nur 3 Gleichungen → 1-fach statisch unbestimmt. Man braucht Tabellenbeiwerte (Durchlaufträgertafeln)."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q013",
+     "type": "mc",
+     "question": "Wie viele unbekannte Kräfte kann man an einem starren Körper in der Ebene mit den Gleichgewichtsbedingungen höchstens bestimmen?",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+     ],
+     "answer": 1,
+     "explanation": "Es gibt drei Gleichungen (ΣV, ΣH, ΣM) → höchstens drei Unbekannte."
+    },
+    {
+     "id": "statik-skript-2-gleichgewicht-q014",
+     "type": "mc",
+     "question": "Wozu dient bei einem statisch unbestimmten Durchlaufträger die Bedingung ΣV = 0?",
+     "options": [
+      "Zur Berechnung von B_V",
+      "Zur Probe: Summe der Lasten = Summe der Auflagerkräfte",
+      "Zur Ermittlung von A_H",
+      "Sie gilt bei unbestimmten Systemen nicht"
+     ],
+     "answer": 1,
+     "explanation": "Die Auflagerkräfte kommen aus den Tabellen. ΣV = 0 bleibt gültig und dient als Kontrolle."
+    }
+   ]
+  },
+  {
+   "id": "statik-skript-2-auflager",
+   "title": "Auflagerarten & Stützweite",
+   "description": "Loslager, Festlager, Einspannung, Pendelstab und die Ermittlung der Stützweite (Skript E.1–E.4).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-auflager-c001",
+     "type": "basic",
+     "front": "Loslager (Gleitlager): Was ist möglich, was gesperrt?",
+     "back": "- möglich: **Drehung** und **Verschiebung** entlang der Gleitbahn\n- gesperrt: Verschiebung **senkrecht** zur Gleitbahn\n→ **einwertig**, eine Auflagerkraft (z. B. A_V)"
+    },
+    {
+     "id": "statik-skript-2-auflager-c002",
+     "type": "basic",
+     "front": "Festlager (Auflagergelenk): Was ist möglich, was gesperrt?",
+     "back": "- möglich: nur **Drehung**\n- gesperrt: horizontale und vertikale Verschiebung\n→ **zweiwertig**, Auflagerkräfte A_H und A_V"
+    },
+    {
+     "id": "statik-skript-2-auflager-c003",
+     "type": "basic",
+     "front": "Einspannung: Was ist möglich, was gesperrt?",
+     "back": "**Alles gesperrt**: Drehung sowie horizontale und vertikale Verschiebung.\n→ **dreiwertig**: A_H, A_V und Einspannmoment M_A",
+     "hint": "Beispiel: Köcherfundament"
+    },
+    {
+     "id": "statik-skript-2-auflager-c004",
+     "type": "basic",
+     "front": "Was gibt die Wertigkeit eines Auflagers an?",
+     "back": "Die Anzahl der **aufgehobenen Freiheitsgrade** = Anzahl der Auflagerreaktionen.\nLoslager 1, Festlager 2, Einspannung 3."
+    },
+    {
+     "id": "statik-skript-2-auflager-c005",
+     "type": "basic",
+     "front": "Wie zeichnet man Loslager, Festlager und Einspannung?",
+     "back": "- Loslager: Dreieck auf einem **Strich bzw. Doppelstrich** (Gleitfuge), ohne Schraffur\n- Festlager: Dreieck auf **schraffierter** Linie\n- Einspannung: Stabende an einer **schraffierten Wand**, ohne Dreieck"
+    },
+    {
+     "id": "statik-skript-2-auflager-c006",
+     "type": "basic",
+     "front": "In welche Richtung wirkt die Lagerkraft eines Loslagers auf einer schrägen Gleitebene?",
+     "back": "**Senkrecht zur Gleitebene** – sie hat dann eine H- und eine V-Komponente. Die Wertigkeit bleibt 1."
+    },
+    {
+     "id": "statik-skript-2-auflager-c007",
+     "type": "basic",
+     "front": "Was ist das lichte Maß l_n?",
+     "back": "Der Abstand zwischen den **Innenkanten** der Auflager (z. B. lichte Weite zwischen zwei Wänden)."
+    },
+    {
+     "id": "statik-skript-2-auflager-c008",
+     "type": "basic",
+     "front": "Stützweite l_eff eines Balkens auf zwei Wänden (Skizze im Skript)?",
+     "back": "Gemessen von Auflagermitte zu Auflagermitte:\nl_eff = t/2 + l_n + t/2\n(t = Auflagertiefe)",
+     "hint": "Gleiche Auflagertiefen: l_eff = l_n + t"
+    },
+    {
+     "id": "statik-skript-2-auflager-c009",
+     "type": "basic",
+     "front": "Was ist ein Pendelstab und wie wirkt er als Lager?",
+     "back": "Gerader Stab mit **Gelenken an beiden Enden** und ohne Querlast. Er überträgt nur eine Kraft **in Stabrichtung** und wirkt damit wie ein einwertiges Lager."
+    },
+    {
+     "id": "statik-skript-2-auflager-c010",
+     "type": "basic",
+     "front": "Wo findet man Auflagerkräfte einfacher statischer Systeme?",
+     "back": "Im Tabellenbuch (Schneider Bautabellen, Baustatik-Tafeln, laut Skript S. 4.2 ff.)."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-auflager-q001",
+     "type": "mc",
+     "question": "Wie viele Auflagerreaktionen kann ein Festlager aufnehmen?",
+     "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+     ],
+     "answer": 1,
+     "explanation": "Festlager: A_H und A_V → zweiwertig. Nur die Drehung ist frei."
+    },
+    {
+     "id": "statik-skript-2-auflager-q002",
+     "type": "mc",
+     "question": "Welches Lager kann ein Moment aufnehmen?",
+     "options": [
+      "Loslager",
+      "Festlager",
+      "Einspannung",
+      "Pendelstab"
+     ],
+     "answer": 2,
+     "explanation": "Nur die Einspannung sperrt auch die Drehung → Einspannmoment M_A."
+    },
+    {
+     "id": "statik-skript-2-auflager-q003",
+     "type": "mc",
+     "question": "Welche Bewegung lässt ein Festlager zu?",
+     "options": [
+      "Drehung um den Auflagerpunkt",
+      "Nur horizontale Verschiebung",
+      "Keine",
+      "Nur vertikale Verschiebung"
+     ],
+     "answer": 0,
+     "explanation": "Horizontale und vertikale Verschiebung sind gesperrt, die Drehung ist frei."
+    },
+    {
+     "id": "statik-skript-2-auflager-q004",
+     "type": "mc",
+     "question": "Ein Köcherfundament für eine Fertigteilstütze wirkt statisch als …",
+     "options": [
+      "Loslager",
+      "Festlager",
+      "Pendelstütze",
+      "Einspannung"
+     ],
+     "answer": 3,
+     "explanation": "Die Stütze ist im Köcher eingespannt: Drehung und Verschiebungen sind gesperrt (dreiwertig)."
+    },
+    {
+     "id": "statik-skript-2-auflager-q005",
+     "type": "input",
+     "question": "Wie heißt das einwertige Auflager, das Drehung und Verschiebung entlang der Gleitbahn zulässt?",
+     "answer": "Loslager",
+     "accept": [
+      "Gleitlager",
+      "Rollenlager",
+      "verschiebliches Lager",
+      "verschiebliches Auflager",
+      "bewegliches Lager"
+     ],
+     "explanation": "Loslager (Gleitlager): eine Lagerkraft senkrecht zur Gleitbahn."
+    },
+    {
+     "id": "statik-skript-2-auflager-q006",
+     "type": "input",
+     "question": "Wie heißt das einzige dreiwertige Auflager?",
+     "answer": "Einspannung",
+     "accept": [
+      "eingespanntes Auflager",
+      "Volleinspannung",
+      "feste Einspannung"
+     ],
+     "explanation": "Einspannung: A_H, A_V und M_A."
+    },
+    {
+     "id": "statik-skript-2-auflager-q007",
+     "type": "numeric",
+     "question": "Ein Sturz liegt auf zwei Wänden mit je t = 24 cm Auflagertiefe. Lichtes Maß l_n = 4,76 m. Wie groß ist die Stützweite l_eff nach der Skizze im Skript?",
+     "answer": 5.0,
+     "unit": "m",
+     "tolerance": 0.005,
+     "explanation": "l_eff = t/2 + l_n + t/2\n= 0,12 + 4,76 + 0,12 = **5,00 m**"
+    },
+    {
+     "id": "statik-skript-2-auflager-q008",
+     "type": "numeric",
+     "question": "Balken mit l_n = 3,51 m, beidseitig t = 17,5 cm Auflagertiefe. Stützweite l_eff?",
+     "answer": 3.685,
+     "unit": "m",
+     "tolerance": 0.005,
+     "explanation": "l_eff = 0,0875 + 3,51 + 0,0875 = **3,685 m**"
+    },
+    {
+     "id": "statik-skript-2-auflager-q009",
+     "type": "numeric",
+     "question": "Balken mit l_n = 4,385 m, links t = 24 cm, rechts t = 30 cm Auflagertiefe. Stützweite l_eff?",
+     "answer": 4.655,
+     "unit": "m",
+     "tolerance": 0.005,
+     "explanation": "l_eff = 0,24/2 + 4,385 + 0,30/2\n= 0,12 + 4,385 + 0,15 = **4,655 m**"
+    },
+    {
+     "id": "statik-skript-2-auflager-q010",
+     "type": "mc",
+     "question": "In welche Richtung wirkt die Lagerkraft eines Loslagers?",
+     "options": [
+      "Immer senkrecht nach oben",
+      "Parallel zur Gleitbahn",
+      "Senkrecht zur Gleitbahn",
+      "In beliebiger Richtung"
+     ],
+     "answer": 2,
+     "explanation": "Gesperrt ist nur die Bewegung senkrecht zur Gleitbahn – genau dort entsteht die Lagerkraft. Bei waagerechter Gleitbahn ist sie vertikal."
+    },
+    {
+     "id": "statik-skript-2-auflager-q011",
+     "type": "numeric",
+     "question": "Ein Pendelstab verläuft 3,00 m horizontal und 4,00 m vertikal. Seine Stabkraft beträgt 25 kN. Wie groß ist die Vertikalkomponente B_V der Lagerkraft?",
+     "answer": 20,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Stablänge = √(3,00² + 4,00²) = 5,00 m\nB_V = 25 · 4,00 / 5,00 = **20 kN**\nB_H = 25 · 3,00 / 5,00 = 15 kN"
+    },
+    {
+     "id": "statik-skript-2-auflager-q012",
+     "type": "mc",
+     "question": "Übungsaufgabe 2 (E.10): Warum ist die Lagerkraft B als Schrägkraft in Richtung des anschließenden Stabes eingezeichnet?",
+     "options": [
+      "Weil B ein Loslager auf waagerechter Bahn ist",
+      "Weil der Stab ein Pendelstab ist (Gelenke an beiden Enden, keine Querlast) und nur Kräfte in Stabrichtung leitet",
+      "Weil auf den Stab eine schräge Last wirkt",
+      "Weil B eine Einspannung ist"
+     ],
+     "answer": 1,
+     "explanation": "Ein unbelasteter Stab mit Gelenken an beiden Enden kann nur Normalkraft übertragen. Deshalb gilt B_H : B_V = 3 : 4 wie die Stabgeometrie."
+    }
+   ]
+  },
+  {
+   "id": "statik-skript-2-lasten",
+   "title": "Streckenlasten & schräge Lasten",
+   "description": "Resultierende von Rechteck-, Dreieck- und Trapezlasten, Zerlegung schräger Lasten und Lasten auf geneigten Trägern (Skript E.5).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-lasten-c001",
+     "type": "basic",
+     "front": "Streckenlast (Linienlast): Definition und Einheit?",
+     "back": "Über eine Strecke kontinuierlich verteilte Last, Einheit **kN/m** (Kraft je Längeneinheit).\nBeispiele: Eigengewicht eines Balkens, Schnee, Wind."
+    },
+    {
+     "id": "statik-skript-2-lasten-c002",
+     "type": "basic",
+     "front": "Konstante Streckenlast q über die Länge l: Resultierende und Lage?",
+     "back": "R = q · l\nAngriff in der **Mitte** (l/2)."
+    },
+    {
+     "id": "statik-skript-2-lasten-c003",
+     "type": "basic",
+     "front": "Dreieckslast (0 bis q) über die Länge l: Resultierende und Lage?",
+     "back": "R = q · l / 2\nAngriff im Schwerpunkt: **l/3 vom großen Ende** (2l/3 von der Spitze)."
+    },
+    {
+     "id": "statik-skript-2-lasten-c004",
+     "type": "basic",
+     "front": "Trapezlast (q1 bis q2) über die Länge l: Resultierende?",
+     "back": "R = (q1 + q2) / 2 · l"
+    },
+    {
+     "id": "statik-skript-2-lasten-c005",
+     "type": "basic",
+     "front": "Trapezlast: Lage der Resultierenden?",
+     "back": "Abstand vom q1-Ende:\nx = l/3 · (q1 + 2 · q2) / (q1 + q2)\nAlternativ: in Rechteck (q1) und Dreieck (q2 − q1) zerlegen und beide einzeln ansetzen."
+    },
+    {
+     "id": "statik-skript-2-lasten-c006",
+     "type": "basic",
+     "front": "Schräge Einzellast F unter α zur Horizontalen zerlegen?",
+     "back": "F_H = F · cos α\nF_V = F · sin α",
+     "hint": "Winkel zur Vertikalen gegeben? Dann sin und cos tauschen!"
+    },
+    {
+     "id": "statik-skript-2-lasten-c007",
+     "type": "basic",
+     "front": "Geneigter Träger, Eigenlast g: Worauf bezogen, wie groß ist R?",
+     "back": "g wirkt je m **Schräglänge** L' (Dachfläche):\nR_G = g · L', senkrecht nach unten, in Trägermitte."
+    },
+    {
+     "id": "statik-skript-2-lasten-c008",
+     "type": "basic",
+     "front": "Geneigter Träger, Schnee s: Worauf bezogen, wie groß ist R?",
+     "back": "s wirkt je m **Grundrissprojektion** L:\nR_S = s · L, senkrecht nach unten."
+    },
+    {
+     "id": "statik-skript-2-lasten-c009",
+     "type": "basic",
+     "front": "Geneigter Träger, Wind w: Richtung und Resultierende?",
+     "back": "w wirkt **senkrecht zur Dachfläche** über L':\nR_W = w · L'\nKomponenten: R_H = w · h, R_V = w · L"
+    },
+    {
+     "id": "statik-skript-2-lasten-c010",
+     "type": "basic",
+     "front": "Schräglänge L' aus Grundrisslänge L und Höhe h bzw. Neigung α?",
+     "back": "L' = √(L² + h²) = L / cos α"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-lasten-q001",
+     "type": "numeric",
+     "question": "Konstante Streckenlast q = 6,5 kN/m über l = 4,20 m. Wie groß ist die Resultierende R?",
+     "answer": 27.3,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R = q · l = 6,5 · 4,20 = **27,3 kN**, Angriff bei 2,10 m."
+    },
+    {
+     "id": "statik-skript-2-lasten-q002",
+     "type": "numeric",
+     "question": "Dreieckslast, die über 4,50 m von 0 auf 12 kN/m ansteigt. Resultierende R?",
+     "answer": 27,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R = q · l / 2 = 12 · 4,50 / 2 = **27,0 kN**"
+    },
+    {
+     "id": "statik-skript-2-lasten-q003",
+     "type": "numeric",
+     "question": "Dreieckslast 0 → 12 kN/m über 4,50 m. In welchem Abstand vom Lastmaximum greift die Resultierende an?",
+     "answer": 1.5,
+     "unit": "m",
+     "tolerance": 0.02,
+     "explanation": "Schwerpunkt des Dreiecks: l/3 vom großen Ende\n4,50 / 3 = **1,50 m** (bzw. 3,00 m von der Spitze)"
+    },
+    {
+     "id": "statik-skript-2-lasten-q004",
+     "type": "numeric",
+     "question": "Übungsaufgabe 1 (E.9): Trapezlast von 3 kN/m auf 7 kN/m über 3,00 m. Resultierende R?",
+     "answer": 15,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R = (q1 + q2) / 2 · l = (3 + 7) / 2 · 3,00 = **15,0 kN**"
+    },
+    {
+     "id": "statik-skript-2-lasten-q005",
+     "type": "numeric",
+     "question": "Übungsaufgabe 1 (E.9): Trapezlast 3 → 7 kN/m über 3,00 m. Abstand der Resultierenden vom 3-kN/m-Ende?",
+     "answer": 1.7,
+     "unit": "m",
+     "tolerance": 0.02,
+     "explanation": "x = l/3 · (q1 + 2 · q2) / (q1 + q2) = 1,00 · 17 / 10 = **1,70 m**\nKontrolle zerlegt: Rechteck 9 kN bei 1,50 m + Dreieck 6 kN bei 2,00 m → (13,5 + 12) / 15 = 1,70 m ✓"
+    },
+    {
+     "id": "statik-skript-2-lasten-q006",
+     "type": "numeric",
+     "question": "Trapezlast von 4 kN/m auf 10 kN/m über 5,00 m. Abstand der Resultierenden vom 4-kN/m-Ende?",
+     "answer": 2.857,
+     "unit": "m",
+     "tolerance": 0.02,
+     "explanation": "R = (4 + 10) / 2 · 5,00 = 35 kN\nx = 5,00/3 · (4 + 2 · 10) / (4 + 10) = 1,667 · 24 / 14 = **2,86 m**"
+    },
+    {
+     "id": "statik-skript-2-lasten-q007",
+     "type": "numeric",
+     "question": "Aufgabe E.3: Eine Kraft von 10 kN wirkt unter β = 36,9° zur Horizontalen schräg nach unten. Wie groß ist ihre Horizontalkomponente?",
+     "answer": 8.0,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "F_H = 10 · cos 36,9° = **8,0 kN**\nF_V = 10 · sin 36,9° = 6,0 kN"
+    },
+    {
+     "id": "statik-skript-2-lasten-q008",
+     "type": "numeric",
+     "question": "Aufgabe E.5: F1 = 15 kN wirkt unter α = 45° schräg auf den Kragarm. Vertikalkomponente?",
+     "answer": 10.61,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Bei 45° sind beide Komponenten gleich:\nF_V = F_H = 15 · cos 45° = **10,61 kN**"
+    },
+    {
+     "id": "statik-skript-2-lasten-q009",
+     "type": "numeric",
+     "question": "Eine Kraft F = 45 kN wirkt unter 30° zur Horizontalen schräg nach unten. Wie groß ist ihre Horizontalkomponente?",
+     "answer": 38.97,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "F_H = 45 · cos 30° = **38,97 kN**\nF_V = 45 · sin 30° = 22,50 kN"
+    },
+    {
+     "id": "statik-skript-2-lasten-q010",
+     "type": "numeric",
+     "question": "Übungsaufgabe 1 (E.9): Ein schräger Stab überbrückt 1,50 m horizontal und 2,00 m vertikal. Er trägt 12 kN/m senkrecht zur Stabachse über die ganze Länge. Resultierende R?",
+     "answer": 30,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "L' = √(1,50² + 2,00²) = 2,50 m\nR = 12 · 2,50 = **30 kN**, senkrecht zum Stab in Stabmitte"
+    },
+    {
+     "id": "statik-skript-2-lasten-q011",
+     "type": "numeric",
+     "question": "Gleicher schräger Stab (1,50 m horizontal, 2,00 m vertikal, 12 kN/m senkrecht zur Stabachse). Horizontalkomponente der Resultierenden?",
+     "answer": 24,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Wie beim Wind auf ein Dach:\nR_H = w · h = 12 · 2,00 = **24 kN**\nR_V = w · L = 12 · 1,50 = 18 kN\nKontrolle: √(24² + 18²) = 30 kN ✓"
+    },
+    {
+     "id": "statik-skript-2-lasten-q012",
+     "type": "numeric",
+     "question": "Sparren mit L = 4,00 m (Grundriss) und h = 3,00 m. Eigenlast g = 0,9 kN/m je m Dachfläche. Resultierende R_G?",
+     "answer": 4.5,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "L' = √(4,00² + 3,00²) = 5,00 m\nR_G = g · L' = 0,9 · 5,00 = **4,50 kN**"
+    },
+    {
+     "id": "statik-skript-2-lasten-q013",
+     "type": "numeric",
+     "question": "Gleicher Sparren (L = 4,00 m, h = 3,00 m). Schnee s = 1,2 kN/m je m Grundriss. Resultierende R_S?",
+     "answer": 4.8,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Schnee bezieht sich auf die Grundrissprojektion:\nR_S = s · L = 1,2 · 4,00 = **4,80 kN**"
+    },
+    {
+     "id": "statik-skript-2-lasten-q014",
+     "type": "numeric",
+     "question": "Sparren mit L = 5,20 m, h = 2,40 m. Wind w = 0,4 kN/m wirkt senkrecht auf die Dachfläche. Horizontalkomponente R_H?",
+     "answer": 0.96,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R_H = w · h = 0,4 · 2,40 = **0,96 kN**\nR_V = w · L = 0,4 · 5,20 = 2,08 kN\nR_W = w · L' = 0,4 · 5,73 = 2,29 kN"
+    },
+    {
+     "id": "statik-skript-2-lasten-q015",
+     "type": "numeric",
+     "question": "Dachneigung α = 35°, Grundrisslänge L = 5,00 m. Wie lang ist die Dachfläche (Schräglänge L')?",
+     "answer": 6.104,
+     "unit": "m",
+     "tolerance": 0.02,
+     "explanation": "L' = L / cos α = 5,00 / cos 35° = 5,00 / 0,8192 = **6,10 m**"
+    },
+    {
+     "id": "statik-skript-2-lasten-q016",
+     "type": "mc",
+     "question": "Auf welche Länge bezieht sich die Schneelast bei einem geneigten Dach?",
+     "options": [
+      "Schräglänge L'",
+      "Höhe h",
+      "Grundrissprojektion L",
+      "Sparrenlänge inkl. Überstand"
+     ],
+     "answer": 2,
+     "explanation": "Schnee fällt senkrecht und wird je m² Grundfläche angegeben → R_S = s · L."
+    },
+    {
+     "id": "statik-skript-2-lasten-q017",
+     "type": "mc",
+     "question": "In welche Richtung wirkt die Windlast auf eine geneigte Dachfläche?",
+     "options": [
+      "Immer horizontal",
+      "Senkrecht zur Dachfläche",
+      "Immer vertikal",
+      "Parallel zur Dachfläche"
+     ],
+     "answer": 1,
+     "explanation": "Wind wirkt als Druck oder Sog senkrecht auf die Fläche. Für die Auflagerberechnung zerlegt man in R_H = w · h und R_V = w · L."
+    },
+    {
+     "id": "statik-skript-2-lasten-q018",
+     "type": "mc",
+     "question": "Eine Kraft F ist unter 30° zur **Vertikalen** angegeben. Wie groß ist ihre Vertikalkomponente?",
+     "options": [
+      "F · sin 30°",
+      "F · tan 30°",
+      "F / cos 30°",
+      "F · cos 30°"
+     ],
+     "answer": 3,
+     "explanation": "Die Komponente, die am Winkel anliegt, ist F · cos. Hier liegt der Winkel an der Vertikalen → F_V = F · cos 30°, F_H = F · sin 30°."
+    }
+   ]
+  },
+  {
+   "id": "statik-skript-2-auflagerkraefte",
+   "title": "Auflagerkräfte berechnen",
+   "description": "Auflagerreaktionen von Einfeldträgern, Trägern mit Kragarm, Knickträgern und Kragarmen mit den drei Gleichgewichtsbedingungen (Skript E.6).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-auflagerkraefte-c001",
+     "type": "basic",
+     "front": "Arbeitsschritte bei jeder Auflageraufgabe (Skript E.6)?",
+     "back": "0. Grad der statischen Unbestimmtheit ermitteln\n1. Auflagerreaktionen einzeichnen (Richtung annehmen)\n2. Auflagerreaktionen berechnen\n3. Probe durchführen"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-c002",
+     "type": "basic",
+     "front": "Warum stellt man ΣM um einen Auflagerpunkt auf?",
+     "back": "Die Lagerkräfte in diesem Punkt haben **keinen Hebelarm**. Es bleibt nur eine Unbekannte übrig, z. B. ΣM_A = 0 → B_V."
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-c003",
+     "type": "basic",
+     "front": "Wie berücksichtigt man eine Streckenlast bei der Auflagerberechnung?",
+     "back": "Durch ihre **Resultierende** R (z. B. q · l), angesetzt im Schwerpunkt der Lastfläche."
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-c004",
+     "type": "basic",
+     "front": "Moment einer Kraft um einen Punkt?",
+     "back": "M = F · a\na = **senkrechter** Abstand der Wirkungslinie vom Drehpunkt (Hebelarm), Einheit kNm."
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-c005",
+     "type": "basic",
+     "front": "Auflagerkräfte eines Kragarms mit Einspannung A?",
+     "back": "- A_V = Summe aller Vertikallasten\n- A_H = Summe aller Horizontallasten (entgegengesetzt)\n- M_A = Σ (Last · Hebelarm zur Einspannstelle)"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-c006",
+     "type": "basic",
+     "front": "Erzeugt eine Horizontalkraft auf der Trägerachse ein Moment um ein Auflager auf derselben Achse?",
+     "back": "Nein – ihre Wirkungslinie geht durch den Drehpunkt (Hebelarm 0). Sie geht nur in ΣH ein."
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-c007",
+     "type": "basic",
+     "front": "Wie kontrolliert man berechnete Auflagerkräfte (Probe)?",
+     "back": "Mit einer noch nicht benutzten Gleichung, z. B. ΣV = 0 (Lasten = Auflagerkräfte) oder ΣM um das andere Auflager."
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-c008",
+     "type": "basic",
+     "front": "Wie groß ist A_H am Festlager, wenn nur senkrechte Lasten wirken?",
+     "back": "A_H = 0 – ohne horizontale Lastanteile liefert ΣH = 0 keine Horizontalkraft."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-auflagerkraefte-q001",
+     "type": "numeric",
+     "question": "Beispiel 6: Einfeldträger l = 6,00 m (A Festlager, B Loslager), F = 20 kN in Feldmitte. Wie groß ist A_V?",
+     "answer": 10,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0: B_V · 6,00 − 20 · 3,00 = 0 → B_V = 10 kN\nΣV = 0: A_V = 20 − 10 = **10 kN**\nΣH = 0: A_H = 0"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q002",
+     "type": "numeric",
+     "question": "Aufgabe E.1: Auf einen Einfeldträger wirken F1 = 10 kN, F2 = 20 kN und F3 = 30 kN senkrecht. A_V beträgt 25 kN. Wie groß ist B_V?",
+     "answer": 35,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣV = 0: A_V + B_V = F1 + F2 + F3\nB_V = 60 − 25 = **35 kN**"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q003",
+     "type": "numeric",
+     "question": "Aufgabe E.2: Träger 7,00 m lang: Kragarm links 1,00 m, Feld A–B 4,00 m, Kragarm rechts 2,00 m. A = Loslager, B = Festlager. q = 5 kN/m über die ganze Länge, zusätzlich 5 kN direkt über A. Wie groß ist B_V?",
+     "answer": 21.875,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R = 5 · 7,00 = 35 kN, Angriff 3,50 m vom linken Ende = 2,50 m rechts von A\nΣM_A = 0: B_V · 4,00 − 35 · 2,50 = 0 (die 5 kN über A haben keinen Hebelarm)\nB_V = 87,5 / 4,00 = **21,88 kN**"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q004",
+     "type": "numeric",
+     "question": "Aufgabe E.2 (wie oben: 1,00 + 4,00 + 2,00 m, q = 5 kN/m überall, 5 kN über A, B_V = 21,875 kN). Wie groß ist A_V?",
+     "answer": 18.125,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣV = 0: A_V = 35 + 5 − 21,875 = **18,13 kN**\nB_H = 0 (keine Horizontallast)"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q005",
+     "type": "numeric",
+     "question": "Aufgabe E.3: Festlager A, waagerechter Riegel 4,00 m bis zum Knick K mit q = 8 kN/m. In K wirkt 10 kN schräg nach links unten (β = 36,9° zur Horizontalen). Von K führt ein Stab 3,00 m nach rechts und unter α = 53,13° nach unten zum Loslager B; die Lagerkraft B wirkt in Stabrichtung. Betrag von B?",
+     "answer": 27.5,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Last zerlegen: 8,0 kN nach links, 6,0 kN nach unten. R = 8 · 4,00 = 32 kN bei 2,00 m\nB liegt 7,00 m rechts und 3,00 · tan 53,13° = 4,00 m unter A.\nB_H = 0,6 · B (nach links), B_V = 0,8 · B (nach oben)\nΣM_A = 0: 0,8B · 7,00 − 0,6B · 4,00 − 32 · 2,00 − 6,0 · 4,00 = 0\n3,2 · B = 88 → B = **27,5 kN** (B_H = 16,5 kN, B_V = 22,0 kN)"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q006",
+     "type": "numeric",
+     "question": "Aufgabe E.3 (wie oben): B = 27,5 kN mit B_H = 16,5 kN nach links. Die 10-kN-Last hat 8,0 kN nach links. Wie groß ist A_H?",
+     "answer": 24.5,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣH = 0: A_H − 8,0 − 16,5 = 0\nA_H = **24,5 kN** (nach rechts)"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q007",
+     "type": "numeric",
+     "question": "Aufgabe E.3 (wie oben): R = 32 kN, Lastanteil 6,0 kN nach unten, B_V = 22,0 kN nach oben. Wie groß ist A_V?",
+     "answer": 16,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣV = 0: A_V + 22,0 − 32 − 6,0 = 0\nA_V = **16,0 kN**"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q008",
+     "type": "numeric",
+     "question": "Aufgabe E.4 a): Einfeldträger, A Festlager links, B Loslager. F1 wirkt bei l1 = 1,20 m, F2 = 75 kN bei l2 = 1,40 m (Abstände von A). Stützweite l3 = 1,90 m, B_V = 85 kN. Gesucht: F1.",
+     "answer": 47.08,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0: B_V · l3 − F1 · l1 − F2 · l2 = 0\nF1 = (85 · 1,90 − 75 · 1,40) / 1,20 = (161,5 − 105) / 1,20 = **47,08 kN**\nA_V = 47,08 + 75 − 85 = 37,08 kN; A_H = 0"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q009",
+     "type": "numeric",
+     "question": "Aufgabe E.4 b): F1 = 10 N bei unbekanntem l1, F2 = 35 N bei l2 = 35 cm, B_V = 20 N, Stützweite l3 = 75 cm. Gesucht: l1 in cm.",
+     "answer": 27.5,
+     "unit": "cm",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0: 20 · 75 − 10 · l1 − 35 · 35 = 0\nl1 = (1500 − 1225) / 10 = **27,5 cm**\nA_V = 10 + 35 − 20 = 25 N"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q010",
+     "type": "numeric",
+     "question": "Aufgabe E.4 c): F1 = 1,8 MN bei l1 = 2,15 m, F2 unbekannt bei l2 = 3,40 m, B_V = 2,40 MN, l3 = 4,15 m. Gesucht: F2 in MN.",
+     "answer": 1.791,
+     "unit": "MN",
+     "tolerance": 0.02,
+     "explanation": "F2 = (2,40 · 4,15 − 1,8 · 2,15) / 3,40 = (9,96 − 3,87) / 3,40 = **1,79 MN**\nA_V = 1,8 + 1,79 − 2,40 = 1,19 MN"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q011",
+     "type": "numeric",
+     "question": "Aufgabe E.4 d): F1 = 120 kN bei l1 = 60 cm, F2 = 60 kN bei unbekanntem l2, B_V = 70 kN, l3 = 1,80 m. Gesucht: l2 in m.",
+     "answer": 0.9,
+     "unit": "m",
+     "tolerance": 0.02,
+     "explanation": "Einheiten angleichen: l1 = 0,60 m\nl2 = (70 · 1,80 − 120 · 0,60) / 60 = (126 − 72) / 60 = **0,90 m**\nA_V = 120 + 60 − 70 = 110 kN"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q012",
+     "type": "numeric",
+     "question": "Aufgabe E.4 e): F1 = 8 N bei l1 = 20 cm, F2 = 14 N bei l2 = 25 cm, Stützweite l3 = 35 cm. Gesucht: B_V.",
+     "answer": 14.57,
+     "unit": "N",
+     "tolerance": 0.02,
+     "explanation": "B_V = (8 · 20 + 14 · 25) / 35 = 510 / 35 = **14,57 N**\nA_V = 22 − 14,57 = 7,43 N"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q013",
+     "type": "numeric",
+     "question": "Aufgabe E.4 f): F1 = 0,7 MN bei l1 = 1,35 m, F2 = 1,70 kN bei l2 = 180 cm, B_V = 0,4 MN. Gesucht: Stützweite l3 in m.",
+     "answer": 2.37,
+     "unit": "m",
+     "tolerance": 0.01,
+     "explanation": "Einheiten angleichen (kN, m): F1 = 700 kN, B_V = 400 kN, l2 = 1,80 m\nl3 = (700 · 1,35 + 1,70 · 1,80) / 400 = 948,06 / 400 = **2,37 m**\nA_V = 700 + 1,7 − 400 = 301,7 kN"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q014",
+     "type": "numeric",
+     "question": "Aufgabe E.4 a) zu Ende rechnen: F1 = 47,08 kN, F2 = 75 kN, B_V = 85 kN. Wie groß ist A_V?",
+     "answer": 37.08,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣV = 0: A_V = F1 + F2 − B_V = 47,08 + 75 − 85 = **37,08 kN**"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q015",
+     "type": "numeric",
+     "question": "Aufgabe E.5: Kragarm 3,00 m, links eingespannt (A). g = 2,5 kN/m über die ganze Länge, F1 = 15 kN unter 45° schräg nach links unten bei 2,00 m. Wie groß ist A_V?",
+     "answer": 18.11,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "F1: V = H = 15 · cos 45° = 10,61 kN\nR_g = 2,5 · 3,00 = 7,50 kN\nA_V = 7,50 + 10,61 = **18,11 kN**"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q016",
+     "type": "numeric",
+     "question": "Aufgabe E.5 (wie oben). Wie groß ist das Einspannmoment M_A (Betrag)?",
+     "answer": 32.46,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "M_A = R_g · 1,50 + F_V · 2,00\n= 7,50 · 1,50 + 10,61 · 2,00 = 11,25 + 21,21 = **32,46 kNm**\nF_H liegt auf der Trägerachse → kein Moment."
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q017",
+     "type": "numeric",
+     "question": "Aufgabe E.5 (wie oben). Wie groß ist A_H?",
+     "answer": 10.61,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣH = 0: A_H = F_H = 15 · sin 45° = **10,61 kN** (nach rechts, weil F1 nach links zeigt)"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q018",
+     "type": "numeric",
+     "question": "Einfeldträger l = 5,00 m, F1 = 30 kN bei 1,50 m und F2 = 20 kN bei 3,50 m (von A). Wie groß ist B_V?",
+     "answer": 23,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0: B_V · 5,00 = 30 · 1,50 + 20 · 3,50 = 45 + 70\nB_V = 115 / 5 = **23,0 kN**; A_V = 50 − 23 = 27,0 kN"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q019",
+     "type": "numeric",
+     "question": "Träger mit Kragarm: Feld A–B 4,00 m, Kragarm rechts über B hinaus 1,50 m. q = 8 kN/m über die ganzen 5,50 m. Wie groß ist B_V?",
+     "answer": 30.25,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R = 8 · 5,50 = 44 kN, Angriff bei 2,75 m von A\nΣM_A = 0: B_V · 4,00 = 44 · 2,75\nB_V = **30,25 kN**; A_V = 44 − 30,25 = 13,75 kN"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q020",
+     "type": "numeric",
+     "question": "Kragarm 2,50 m (Einspannung A), g = 4 kN/m, am freien Ende F = 12 kN unter 60° zur Horizontalen schräg nach unten. Einspannmoment M_A (Betrag)?",
+     "answer": 38.48,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "F_V = 12 · sin 60° = 10,39 kN; F_H = 12 · cos 60° = 6,00 kN\nM_A = 4 · 2,50 · 1,25 + 10,39 · 2,50 = 12,50 + 25,98 = **38,48 kNm**\n(A_V = 20,39 kN, A_H = 6,00 kN)"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q021",
+     "type": "numeric",
+     "question": "Einfeldträger l = 6,00 m mit Dreieckslast: 0 kN/m bei A, ansteigend auf 9 kN/m bei B. Wie groß ist A_V?",
+     "answer": 9,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R = 9 · 6,00 / 2 = 27 kN, Angriff l/3 vom großen Ende = 4,00 m von A\nΣM_A = 0: B_V · 6 = 27 · 4 → B_V = 18 kN\nA_V = 27 − 18 = **9,0 kN**"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q022",
+     "type": "numeric",
+     "question": "Wie Aufgabe E.2, aber: Kragarm links 1,50 m, Feld A–B 5,00 m, Kragarm rechts 1,00 m, q = 4 kN/m über alles, 8 kN senkrecht am linken Trägerende. Wie groß ist B_V?",
+     "answer": 11.1,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R = 4 · 7,50 = 30 kN bei 3,75 m vom linken Ende = 2,25 m rechts von A\nΣM_A = 0: B_V · 5,00 − 30 · 2,25 + 8 · 1,50 = 0\nB_V = (67,5 − 12) / 5 = **11,10 kN**\nA_V = 30 + 8 − 11,1 = 26,90 kN"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q023",
+     "type": "numeric",
+     "question": "Einfeldträger l = 5,00 m (A Festlager). Bei 2,00 m wirkt F = 20 kN unter 30° zur Horizontalen schräg nach unten. Wie groß ist A_H?",
+     "answer": 17.32,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "F_H = 20 · cos 30° = 17,32 kN → A_H = **17,32 kN** (entgegen F_H)\nF_V = 20 · sin 30° = 10 kN → B_V = 10 · 2 / 5 = 4 kN, A_V = 6 kN"
+    },
+    {
+     "id": "statik-skript-2-auflagerkraefte-q024",
+     "type": "numeric",
+     "question": "Einfeldträger l = 7,50 m, q = 12 kN/m über die ganze Länge, zusätzlich F = 40 kN bei 2,50 m von A. Wie groß ist A_V?",
+     "answer": 71.67,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0: B_V · 7,50 = 90 · 3,75 + 40 · 2,50 = 437,5 → B_V = 58,33 kN\nΣV = 0: A_V = 90 + 40 − 58,33 = **71,67 kN**"
+    }
+   ]
+  },
+  {
+   "id": "statik-skript-2-gelenksysteme",
+   "title": "Gelenksysteme: Aufschneiden",
+   "description": "Auflagerreaktionen von Systemen mit Gelenken durch Aufschneiden in Teilsysteme (Skript E.7–E.11).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-gelenksysteme-c001",
+     "type": "basic",
+     "front": "Was überträgt ein Gelenk?",
+     "back": "Kräfte (G_H, G_V), aber **kein Moment**: M_G = 0."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-c002",
+     "type": "basic",
+     "front": "Prinzip des „Aufschneidens“ (Skript E.7)?",
+     "back": "Das System an den Gelenken in **Teilsysteme** zerlegen. Jedes Teilsystem ist für sich im Gleichgewicht, wenn an der Schnittstelle die Gelenkkräfte angetragen werden."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-c003",
+     "type": "basic",
+     "front": "Wie trägt man die Gelenkkräfte an den beiden Schnittufern an?",
+     "back": "**Gleich groß und entgegengesetzt** (actio = reactio) – an der Schnittstelle ist ihre Summe null."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-c004",
+     "type": "basic",
+     "front": "Wie viele Gleichungen liefern n Teilsysteme?",
+     "back": "n · 3 Gleichungen für n · 3 Unbekannte (Auflagerreaktionen + Gelenkkräfte)."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-c005",
+     "type": "basic",
+     "front": "Mit welchem Teilsystem beginnt man beim Aufschneiden?",
+     "back": "Mit dem Teil, das nur **3 Unbekannte** hat – oft der Teil mit Loslager und Gelenk. ΣM_G = 0 liefert dann direkt die Lagerkraft."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-c006",
+     "type": "basic",
+     "front": "Eine Last greift direkt im Gelenk an – welchem Teilsystem gehört sie?",
+     "back": "Sie wird **einem** der beiden Teilsysteme zugeordnet (nicht beiden). Die Auflagerkräfte ändern sich dadurch nicht."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-c007",
+     "type": "basic",
+     "front": "Ein Gelenk verbindet k Stäbe – wie zählt es in n = n_A − 3 − n_U?",
+     "back": "Als **(k − 1)** Gelenke. Beispiel: Treffen 3 Stäbe gelenkig in einem Punkt zusammen, zählt das Gelenk doppelt (n_U = 2)."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-gelenksysteme-q001",
+     "type": "numeric",
+     "question": "Beispiel 7: Rahmen. Linker Stiel auf Loslager A (nur vertikal). Riegel 10,00 m mit g = 5 kN/m; an der linken Rahmenecke wirkt 10 kN horizontal nach rechts. Rechte Rahmenecke = Gelenk G, darunter rechter Stiel (4,00 m) mit Einspannung B. Am rechten Stiel sitzt eine Konsole mit 50 kN senkrecht, 0,50 m links der Stielachse. Wie groß ist A_V?",
+     "answer": 25,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Linkes Teilsystem (Riegel + Stiel), ΣM_G = 0:\nA_V · 10,00 − 5 · 10,00 · 5,00 = 0 → A_V = **25 kN**\nDie 10 kN liegen auf Höhe von G → kein Hebelarm."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q002",
+     "type": "numeric",
+     "question": "Beispiel 7 (wie oben, A_V = 25 kN). Wie groß ist B_V an der Einspannung?",
+     "answer": 75,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Linkes Teil, ΣV: G_V = 50 − 25 = 25 kN (wirkt auf den Stiel nach unten)\nRechter Stiel, ΣV: B_V = 25 + 50 = **75 kN**\nProbe gesamt: 25 + 75 = 50 + 50 ✓"
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q003",
+     "type": "numeric",
+     "question": "Beispiel 7 (wie oben). Wie groß ist B_H (Betrag)?",
+     "answer": 10,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Das Loslager A nimmt nichts horizontal auf → die 10 kN gehen über das Gelenk in den rechten Stiel.\nΣH = 0: B_H = **10 kN**, nach links gerichtet."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q004",
+     "type": "numeric",
+     "question": "Beispiel 7 (wie oben): Am Stielkopf wirken G_H = 10 kN nach rechts und G_V = 25 kN nach unten; 50 kN an der Konsole 0,50 m links der Achse; Stielhöhe 4,00 m. Einspannmoment M_B (Betrag)?",
+     "answer": 15,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "Momente um B:\n- G_H: 10 · 4,00 = 40 kNm (im Uhrzeigersinn)\n- 50 kN: 50 · 0,50 = 25 kNm (gegen den Uhrzeigersinn)\n- G_V: Hebelarm 0\nM_B = 40 − 25 = **15 kNm**"
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q005",
+     "type": "numeric",
+     "question": "Variante zu Beispiel 7 (gleiches System): Riegel 8,00 m mit g = 6 kN/m, an der linken Rahmenecke 12 kN horizontal nach rechts, Konsollast 40 kN senkrecht 0,60 m links der rechten Stielachse, rechter Stiel 3,50 m hoch mit Einspannung B, Gelenk G in der rechten Rahmenecke. Wie groß ist A_V?",
+     "answer": 24,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_G = 0 am linken Teil: A_V · 8,00 = 6 · 8,00 · 4,00\nA_V = **24 kN**"
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q006",
+     "type": "numeric",
+     "question": "Variante zu Beispiel 7 (Riegel 8,00 m, g = 6 kN/m, 12 kN horizontal nach rechts an der linken Ecke, Konsollast 40 kN senkrecht 0,60 m links der Stielachse, Stiel 3,50 m, A_V = 24 kN). Einspannmoment M_B (Betrag)?",
+     "answer": 18,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "Linkes Teil: G_V = 48 − 24 = 24 kN, G_H = 12 kN → wirken am Stielkopf (G_V nach unten, G_H nach rechts)\nMomente um B:\n- G_H: 12 · 3,50 = 42 kNm (im Uhrzeigersinn)\n- Konsollast: 40 · 0,60 = 24 kNm (gegen den Uhrzeigersinn)\n- G_V: Hebelarm 0\nM_B = 42 − 24 = **18 kNm** (B_V = 64 kN, B_H = 12 kN)"
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q007",
+     "type": "numeric",
+     "question": "Übungsaufgabe 3 (E.11): Träger von 0 bis 4,00 m mit g = 10 kN/m, Loslager A bei 2,00 m, Gelenk G bei 4,00 m. In G wirkt F1 = 50 kN waagerecht nach links. Von G führt ein Stab schräg nach unten (2,00 m nach rechts, 2,00 m tiefer), dann waagerecht 4,00 m zur Einspannung B; F2 = 40 kN wirkt senkrecht 2,00 m links von B. Wie groß ist A_V?",
+     "answer": 40,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Linkes Teilsystem, ΣM_G = 0:\nA_V · 2,00 − 40 · 2,00 = 0 (R = 10 · 4 = 40 kN bei 2,00 m, also genau über A)\nA_V = **40 kN** → daraus G_V = 0"
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q008",
+     "type": "numeric",
+     "question": "Übungsaufgabe 3 (E.11, wie oben): G_V = 0, F1 = 50 kN waagerecht in 2,00 m Höhe über B, F2 = 40 kN mit 2,00 m Abstand zu B. Einspannmoment M_B (Betrag)?",
+     "answer": 180,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "Momente um B:\n- F1: 50 · 2,00 = 100 kNm\n- F2: 40 · 2,00 = 80 kNm\nM_B = **180 kNm** (beide drehen gleichsinnig)\nB_V = 40 kN, B_H = 50 kN (nach rechts)"
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q009",
+     "type": "numeric",
+     "question": "Übungsaufgabe 3 (E.11, wie oben). Wie groß ist B_H (Betrag)?",
+     "answer": 50,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Einzige Horizontallast: F1 = 50 kN nach links. Loslager A nimmt nichts horizontal auf.\nΣH = 0: B_H = **50 kN** nach rechts."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q010",
+     "type": "mc",
+     "question": "Übungsaufgabe 3 (E.11): Wie groß ist die vertikale Gelenkkraft G_V?",
+     "options": [
+      "G_V = 40 kN",
+      "G_V = 0",
+      "G_V = 20 kN",
+      "G_V = 50 kN"
+     ],
+     "answer": 1,
+     "explanation": "Die Resultierende der Streckenlast (40 kN) liegt genau über A. A_V = 40 kN trägt sie allein ab → ΣV am linken Teil: G_V = 40 − 40 = 0."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q011",
+     "type": "numeric",
+     "question": "Variante zu E.11: g = 8 kN/m von 0 bis 5,00 m, Loslager A bei 2,00 m, Gelenk G bei 5,00 m. Wie groß ist A_V?",
+     "answer": 33.33,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "R = 8 · 5,00 = 40 kN bei 2,50 m\nΣM_G = 0: A_V · 3,00 − 40 · 2,50 = 0\nA_V = **33,33 kN**; G_V = 40 − 33,33 = 6,67 kN"
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q012",
+     "type": "numeric",
+     "question": "Variante zu E.11 (fortgesetzt): Am rechten Teil wirken G_V = 6,67 kN nach unten und F1 = 20 kN waagerecht nach links, beide im Gelenk 6,00 m links und 2,00 m über B; dazu F2 = 30 kN senkrecht 2,00 m links von B. Einspannmoment M_B (Betrag)?",
+     "answer": 140,
+     "unit": "kNm",
+     "tolerance": 0.02,
+     "explanation": "- G_V: 6,67 · 6,00 = 40 kNm\n- F1: 20 · 2,00 = 40 kNm\n- F2: 30 · 2,00 = 60 kNm\nM_B = **140 kNm** (B_V = 36,67 kN, B_H = 20 kN)"
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q013",
+     "type": "mc",
+     "question": "Beispiel 7: Mit welcher Gleichung erhält man als Erstes A_V?",
+     "options": [
+      "ΣV = 0 am Gesamtsystem",
+      "ΣH = 0 am rechten Stiel",
+      "ΣM_B = 0 am Gesamtsystem",
+      "ΣM_G = 0 am linken Teilsystem (Riegel + Stiel)"
+     ],
+     "answer": 3,
+     "explanation": "Im linken Teil sind nur A_V, G_H und G_V unbekannt. Um G gerechnet fallen G_H und G_V heraus → A_V direkt."
+    },
+    {
+     "id": "statik-skript-2-gelenksysteme-q014",
+     "type": "mc",
+     "question": "Ein System wird an einem Gelenk in zwei Teilsysteme aufgeschnitten. Wie viele Gleichgewichtsgleichungen stehen insgesamt zur Verfügung?",
+     "options": [
+      "3",
+      "4",
+      "6",
+      "9"
+     ],
+     "answer": 2,
+     "explanation": "Je Teilsystem 3 Gleichungen → 2 · 3 = 6 Gleichungen für 6 Unbekannte (z. B. 4 Lagerkräfte + G_H + G_V)."
+    }
+   ]
+  },
+  {
+   "id": "statik-skript-2-fachwerk",
+   "title": "Fachwerk: Aufbau, Bestimmtheit & Nullstäbe",
+   "description": "Begriffe, statische Bestimmtheit, Bildungsregeln, Nullstabregeln und Konstruktion von Fachwerken (Skript F.1–F.4 und F.8).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-fachwerk-c001",
+     "type": "basic",
+     "front": "Was ist ein Fachwerk?",
+     "back": "Ein Tragwerk aus **geraden Stäben**, die in Knotenpunkten **gelenkig** verbunden sind und **Dreiecke** bilden."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c002",
+     "type": "basic",
+     "front": "Welche Schnittgrößen haben Fachwerkstäbe?",
+     "back": "Nur **Normalkräfte** (Zug oder Druck). Moment M und Querkraft V sind null.",
+     "hint": "Voraussetzung: Lasten nur in den Knoten"
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c003",
+     "type": "basic",
+     "front": "Wo dürfen Lasten bei einem idealen Fachwerk angreifen?",
+     "back": "Nur in den **Knotenpunkten** – sonst entstehen Biegung und Querkraft im Stab."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c004",
+     "type": "basic",
+     "front": "Was gilt für die Stabachsen im Knotenpunkt?",
+     "back": "Alle Stabachsen müssen sich in **einem Punkt** schneiden. Sonst entstehen Ausmitten und Zusatzmomente."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c005",
+     "type": "basic",
+     "front": "Reale Fachwerkknoten sind nicht gelenkig – warum rechnet man trotzdem so?",
+     "back": "Die Abweichungen sind so gering, dass sie vernachlässigt werden. Idealisierung: Die Gelenke übertragen keine Momente."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c006",
+     "type": "basic",
+     "front": "Gurtstäbe und Füllstäbe – was gehört wozu?",
+     "back": "- **Gurtstäbe** (außen): Obergurt, Untergurt\n- **Füllstäbe** (innen): Diagonalen/Streben und Pfosten/Ständer (senkrecht)"
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c007",
+     "type": "basic",
+     "front": "Formel für die innere statische Bestimmtheit eines Fachwerks (Skript)?",
+     "back": "s = 2 · k − 3\ns = Anzahl der Stäbe, k = Anzahl der Knoten, 3 = statisch bestimmte (dreiwertige) Lagerung",
+     "hint": "Allgemein mit a Auflagerreaktionen: n = s + a − 2 · k"
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c008",
+     "type": "basic",
+     "front": "Ein Fachwerk hat mehr bzw. weniger Stäbe als 2k − 3 – was folgt?",
+     "back": "- mehr Stäbe → statisch **unbestimmt** (Überzahl = Grad)\n- weniger Stäbe → **labil**, verschieblich"
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c009",
+     "type": "basic",
+     "front": "Bildungsregel 1 (Fachwerkdreiecke)?",
+     "back": "An ein unverschiebliches Dreieck wird jeweils ein **neuer Knoten mit zwei Stäben** angeschlossen → statisch bestimmt und unverschieblich."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c010",
+     "type": "basic",
+     "front": "Bildungsregel 2 (Verbindung zweier Fachwerke)?",
+     "back": "a) gemeinsames Gelenk + 1 Stab (weder Stab noch Verlängerung durch das Gelenk)\nb) 3 Verbindungsstäbe – nicht parallel, nicht durch einen gemeinsamen Punkt"
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c011",
+     "type": "basic",
+     "front": "Bildungsregel 3 (Stabvertauschung)?",
+     "back": "Ein Stab darf herausgenommen und zwischen zwei anderen Knoten wieder eingesetzt werden, wenn das Fachwerk dabei unverschieblich bleibt."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c012",
+     "type": "basic",
+     "front": "Was ist ein Nullstab?",
+     "back": "Ein Stab, der bei der betrachteten Lastkombination **weder Zug noch Druck** erhält (S = 0)."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c013",
+     "type": "basic",
+     "front": "Nullstabregel 1?",
+     "back": "**Belasteter** Knoten mit **zwei** Stäben: Wirkt die Last in Richtung des einen Stabes, ist der **andere** ein Nullstab."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c014",
+     "type": "basic",
+     "front": "Nullstabregel 2?",
+     "back": "**Unbelasteter** Knoten mit **zwei** Stäben (nicht in einer Linie): **beide** sind Nullstäbe."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c015",
+     "type": "basic",
+     "front": "Nullstabregel 3?",
+     "back": "**Unbelasteter** Gurtknoten mit nur **einem** Füllstab, die beiden Gurtstäbe liegen in einer Wirkungslinie: Der Füllstab ist ein Nullstab."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c016",
+     "type": "basic",
+     "front": "Keine Nullstabregel passt – ist der Stab dann sicher belastet?",
+     "back": "Nein. Ohne Rechnung ist nur **keine Aussage** möglich. Jeden Knoten einzeln prüfen; gefundene Nullstäbe gedanklich entfernen und die Nachbarknoten erneut prüfen."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c017",
+     "type": "basic",
+     "front": "Darf man Nullstäbe einfach weglassen?",
+     "back": "Nein. Sie sind nur für **diesen Lastfall** kraftlos, steifen das Fachwerk aus (z. B. kürzere Knicklängen) und werden bei anderen Lastfällen belastet."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-c018",
+     "type": "basic",
+     "front": "Konstruktionsregel für Streben in Fachwerkwänden (Skript F.8)?",
+     "back": "Streben so anordnen, dass die Lasten auf **kürzestem Weg ins Fundament** gelangen: vom Lastangriffspunkt direkt schräg nach unten zum Fußpunkt."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-fachwerk-q001",
+     "type": "numeric",
+     "question": "Beispiel 8: Ein statisch bestimmt gelagertes Fachwerk hat 10 Knoten. Wie viele Stäbe braucht es nach s = 2k − 3?",
+     "answer": 17,
+     "unit": "Stäbe",
+     "tolerance": 0,
+     "explanation": "s = 2 · 10 − 3 = **17**\nBeispiel 8 hat 4 Obergurt-, 4 Untergurt-, 5 Pfosten- und 4 Diagonalstäbe = 17 → statisch bestimmt."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q002",
+     "type": "numeric",
+     "question": "Beispiel 9.1: Fachwerk mit 6 Knoten, statisch bestimmt gelagert. Wie viele Stäbe sind für statische Bestimmtheit nötig?",
+     "answer": 9,
+     "unit": "Stäbe",
+     "tolerance": 0,
+     "explanation": "s = 2 · 6 − 3 = **9** (2 Obergurt, 2 Untergurt, 3 Pfosten, 2 Diagonalen)"
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q003",
+     "type": "mc",
+     "question": "Ein statisch bestimmt gelagertes Fachwerk hat 7 Knoten und 12 Stäbe. Bewertung?",
+     "options": [
+      "statisch bestimmt",
+      "1-fach statisch unbestimmt",
+      "labil / verschieblich",
+      "2-fach statisch unbestimmt"
+     ],
+     "answer": 1,
+     "explanation": "Erforderlich: 2 · 7 − 3 = 11 Stäbe. Vorhanden 12 → ein Stab zu viel → 1-fach statisch unbestimmt."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q004",
+     "type": "mc",
+     "question": "Ein Fachwerk hat 8 Knoten und 12 Stäbe (statisch bestimmt gelagert). Bewertung?",
+     "options": [
+      "statisch bestimmt",
+      "labil / verschieblich",
+      "1-fach statisch unbestimmt"
+     ],
+     "answer": 1,
+     "explanation": "Erforderlich: 2 · 8 − 3 = 13 Stäbe. Vorhanden nur 12 → ein Stab fehlt → labil."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q005",
+     "type": "mc",
+     "question": "Übungsaufgabe G.1: 13 Knoten und 23 Stäbe, Festlager + Loslager. Bewertung?",
+     "options": [
+      "statisch bestimmt",
+      "1-fach statisch unbestimmt",
+      "labil / verschieblich"
+     ],
+     "answer": 0,
+     "explanation": "2 · 13 − 3 = 23 = vorhandene Stäbe → statisch bestimmt."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q006",
+     "type": "mc",
+     "question": "Belasteter Eckknoten: Stab S1 führt nach unten, Stab S2 nach rechts. Die Last F wirkt waagerecht in Richtung von S2. Welcher Stab ist Nullstab?",
+     "options": [
+      "S2 (Regel 1)",
+      "S1 und S2 (Regel 2)",
+      "keiner",
+      "S1 (Regel 1)"
+     ],
+     "answer": 3,
+     "explanation": "Regel 1: Die Last wirkt in Richtung von S2 → der andere Stab S1 ist Nullstab. (ΣV = 0 am Knoten: S1 = 0)"
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q007",
+     "type": "mc",
+     "question": "Unbelasteter Eckknoten mit zwei Stäben: S1 senkrecht, S2 waagerecht. Was gilt?",
+     "options": [
+      "nur S1 ist Nullstab",
+      "nur S2 ist Nullstab",
+      "S1 und S2 sind Nullstäbe (Regel 2)",
+      "keine Aussage möglich"
+     ],
+     "answer": 2,
+     "explanation": "Regel 2: Unbelasteter Knoten mit zwei Stäben, die nicht in einer Linie liegen → beide Nullstäbe."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q008",
+     "type": "mc",
+     "question": "Unbelasteter Knoten: S1 und S2 liegen auf einer Geraden (Gurt), S3 steht senkrecht darauf. Was gilt?",
+     "options": [
+      "S3 ist Nullstab (Regel 3)",
+      "S1 und S2 sind Nullstäbe",
+      "keiner ist Nullstab",
+      "alle drei sind Nullstäbe"
+     ],
+     "answer": 0,
+     "explanation": "Regel 3: Senkrecht zur Gurtlinie wirkt nur S3 → ΣV = 0 liefert S3 = 0. S1 und S2 sind gleich groß."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q009",
+     "type": "mc",
+     "question": "Beispiel 8: Rechter oberer Endknoten mit nur Obergurtstab (waagerecht) und Endpfosten (senkrecht); dort greift F2 senkrecht an. Welcher Stab ist Nullstab?",
+     "options": [
+      "Obergurtstab (Regel 1)",
+      "Endpfosten (Regel 1)",
+      "beide (Regel 2)",
+      "keiner"
+     ],
+     "answer": 0,
+     "explanation": "F2 wirkt in Richtung des Pfostens → der Obergurtstab ist nach Regel 1 Nullstab. Der Pfosten leitet F2 direkt ins Auflager."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q010",
+     "type": "mc",
+     "question": "Beispiel 8 (Parallelträger, F1 am 2. Obergurtknoten, F2 am rechten Endknoten): Welche Nullstäbe findet man mit den Regeln?",
+     "options": [
+      "Nur die beiden Endpfosten",
+      "Alle Diagonalen",
+      "Obergurt und Pfosten am linken oberen Eckknoten (Regel 2), Obergurtstab am rechten Endknoten (Regel 1), Mittelpfosten (Regel 3)",
+      "Die Untergurtstäbe neben den Auflagern"
+     ],
+     "answer": 2,
+     "explanation": "- linker oberer Eckknoten: unbelastet, 2 Stäbe → beide Nullstäbe (Regel 2)\n- rechter oberer Endknoten: F2 in Pfostenrichtung → Obergurtstab = 0 (Regel 1)\n- mittlerer Untergurtknoten: unbelastet, Gurt durchlaufend, nur Pfosten → Pfosten = 0 (Regel 3)\nZusammen 4 Nullstäbe."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q011",
+     "type": "mc",
+     "question": "Übungsaufgabe G.1: Der oberste Knoten wird durch F2 senkrecht belastet und hat nur einen senkrechten Stab nach unten und eine Diagonale. Was folgt?",
+     "options": [
+      "Die Diagonale ist Nullstab (Regel 1)",
+      "Der senkrechte Stab ist Nullstab",
+      "Beide sind Nullstäbe",
+      "Keine Aussage möglich"
+     ],
+     "answer": 0,
+     "explanation": "F2 wirkt in Richtung des senkrechten Stabes → Diagonale = 0 (Regel 1). Danach hat der Obergurtknoten am Diagonalfuß nur noch einen Pfosten als Füllstab → auch dieser Pfosten ist Nullstab (Regel 3)."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q012",
+     "type": "mc",
+     "question": "Übungsaufgabe G.2 (Satteldachbinder): Der rechte obere Endknoten ist unbelastet und hat nur den Obergurtstab und den Endpfosten. Was gilt?",
+     "options": [
+      "Nur der Endpfosten ist Nullstab",
+      "Obergurtstab und Endpfosten sind Nullstäbe (Regel 2)",
+      "Kein Nullstab, weil der Gurt geneigt ist",
+      "Nur der Obergurtstab ist Nullstab"
+     ],
+     "answer": 1,
+     "explanation": "Regel 2 gilt für jeden unbelasteten Knoten mit zwei Stäben, die nicht in einer Linie liegen – die Neigung spielt keine Rolle."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q013",
+     "type": "mc",
+     "question": "Welche Schnittgrößen übertragen die Stäbe eines idealen Fachwerks?",
+     "options": [
+      "Biegemomente",
+      "Querkräfte",
+      "Nur Normalkräfte (Zug/Druck)",
+      "Torsionsmomente"
+     ],
+     "answer": 2,
+     "explanation": "Gelenkige Knoten + Lasten nur in Knoten → M = 0 und V = 0, es bleibt die Normalkraft N."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q014",
+     "type": "mc",
+     "question": "Warum müssen sich die Stabachsen im Knotenpunkt in einem Punkt schneiden?",
+     "options": [
+      "Wegen der Optik",
+      "Sonst entstehen Ausmitten und damit Zusatzmomente in den Stäben",
+      "Damit weniger Stäbe nötig sind",
+      "Wegen des Brandschutzes"
+     ],
+     "answer": 1,
+     "explanation": "Laufen die Achsen nicht durch einen Punkt, entstehen Hebelarme → Biegemomente, die im Fachwerkmodell nicht erfasst sind."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q015",
+     "type": "mc",
+     "question": "Fachwerkwand mit Windlast von rechts auf die obere rechte Ecke. Welche Strebenanordnung ist günstig?",
+     "options": [
+      "Strebe nur im linken Wandfeld – die Last läuft erst durch das ganze Rähm nach links",
+      "Nur Pfosten, keine Streben",
+      "Streben nur in der Wandmitte",
+      "Strebe von der rechten oberen Ecke (Lastangriff) schräg nach unten zum Fundament – kürzester Lastweg"
+     ],
+     "answer": 3,
+     "explanation": "Merke aus F.8: Lasten müssen schnellstmöglich ins Fundament. Die Strebe beginnt dort, wo die Last angreift."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q016",
+     "type": "mc",
+     "question": "Wie nennt man einen senkrechten Füllstab im Fachwerk?",
+     "options": [
+      "Diagonale",
+      "Obergurt",
+      "Pfosten bzw. Ständer",
+      "Strebe"
+     ],
+     "answer": 2,
+     "explanation": "Füllstäbe: Diagonalen/Streben (schräg) und Pfosten/Ständer (senkrecht)."
+    },
+    {
+     "id": "statik-skript-2-fachwerk-q017",
+     "type": "input",
+     "question": "Wie heißt ein Fachwerkstab, der bei der betrachteten Last weder Zug noch Druck erhält?",
+     "answer": "Nullstab",
+     "accept": [
+      "Null-Stab"
+     ],
+     "explanation": "Nullstab: S = 0 für diese Lastkombination."
+    }
+   ]
+  },
+  {
+   "id": "statik-skript-2-stabkraefte",
+   "title": "Stabkräfte: Knotenschnittverfahren",
+   "description": "Rechnerische Ermittlung von Auflagerkräften und Stabkräften in Fachwerken mit Knotenschnitt und Ritterschnitt (Skript F.5–F.6).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-stabkraefte-c001",
+     "type": "basic",
+     "front": "Welche Verfahren gibt es, um Stabkräfte zu ermitteln?",
+     "back": "- zeichnerisch (Kräfteplan, z. B. Cremonaplan)\n- rechnerisch: **Knotenschnittverfahren** (Rundschnitt um jeden Knoten) und **Ritter'sches Schnittverfahren**"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-c002",
+     "type": "basic",
+     "front": "Checkliste Knotenschnittverfahren?",
+     "back": "1. Nullstäbe bestimmen\n2. Auflagerreaktionen ermitteln\n3. In jedem Knoten ΣH = 0 und ΣV = 0\n4. Zug und Druck festlegen: Zug +, Druck −"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-c003",
+     "type": "basic",
+     "front": "Warum gibt es je Knoten nur 2 Gleichungen?",
+     "back": "Alle Kräfte am Knoten gehen durch einen Punkt (**zentrales Kraftsystem**). ΣM ist automatisch erfüllt, es bleiben ΣH = 0 und ΣV = 0."
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-c004",
+     "type": "basic",
+     "front": "An welchem Knoten beginnt man das Knotenschnittverfahren?",
+     "back": "An einem Knoten mit **höchstens 2 unbekannten** Stabkräften – oft ein Auflager- oder Endknoten."
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-c005",
+     "type": "basic",
+     "front": "Wie setzt man unbekannte Stabkräfte an?",
+     "back": "Alle als **Zug** (Pfeil vom Knoten weg).\nErgebnis positiv → Zugstab (+)\nErgebnis negativ → Druckstab (−)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-c006",
+     "type": "basic",
+     "front": "Ritter'sches Schnittverfahren – Prinzip?",
+     "back": "Fachwerk durch **höchstens 3 Stäbe** schneiden (nicht alle durch einen Punkt). ΣM um den Schnittpunkt zweier dieser Stäbe liefert die dritte Stabkraft direkt."
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-c007",
+     "type": "basic",
+     "front": "Fachwerkträger auf zwei Lagern, Last von oben: Kräfte in den Gurten?",
+     "back": "Obergurt: **Druck**\nUntergurt: **Zug**\n(wie Druck- und Zugzone eines Balkens im Feld)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-c008",
+     "type": "basic",
+     "front": "Kragfachwerk an einer Wand, Last am freien Ende: Kräfte in den Gurten?",
+     "back": "Obergurt: **Zug**\nUntergurt: **Druck**\n(wie beim Kragarm über der Einspannung)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-c009",
+     "type": "basic",
+     "front": "Winkel einer Diagonale aus Feldweite a und Höhe h?",
+     "back": "tan α = h / a\nDiagonalenlänge d = √(a² + h²)\nsin α = h / d, cos α = a / d"
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-stabkraefte-q001",
+     "type": "numeric",
+     "question": "Beispiel 9.1: Fachwerk 2 × 5,00 m, Höhe 4,00 m, A Festlager links, B Loslager rechts. F = 10 kN senkrecht am mittleren Obergurtknoten. Wie groß ist A_V?",
+     "answer": 5,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Symmetrisch: A_V = B_V = 10 / 2 = **5 kN**; A_H = 0"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q002",
+     "type": "numeric",
+     "question": "Beispiel 9.1 (2 × 5,00 m, h = 4,00 m, F = 10 kN oben Mitte): Stabkraft der Diagonale vom Auflagerknoten A zum belasteten Obergurtknoten – mit Vorzeichen (Zug +, Druck −)?",
+     "answer": -8.004,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "tan α = 4 / 5 → α = 38,66°; sin α = 0,6247\nKnoten A (Endpfosten ist Nullstab), ΣV = 0: 5 + D · sin α = 0\nD = −5 / 0,6247 = **−8,00 kN** → Druck"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q003",
+     "type": "numeric",
+     "question": "Beispiel 9.1 (wie oben, D = −8,00 kN, cos α = 0,781): Wie groß ist die Untergurtkraft zwischen A und dem mittleren Untergurtknoten?",
+     "answer": 6.25,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten A, ΣH = 0: U + D · cos α = 0\nU = 8,00 · 0,781 = **6,25 kN** → Zug\nKurzform (Ritterschnitt um den belasteten Knoten): U = A_V · 5,00 / 4,00 = 6,25 kN"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q004",
+     "type": "mc",
+     "question": "Beispiel 9.1: Welche Stäbe sind Nullstäbe?",
+     "options": [
+      "Nur der Mittelpfosten",
+      "Beide Obergurtstäbe, beide Endpfosten und der Mittelpfosten",
+      "Die beiden Diagonalen",
+      "Keine"
+     ],
+     "answer": 1,
+     "explanation": "- obere Eckknoten: unbelastet, je 2 Stäbe → Obergurt + Endpfosten = 0 (Regel 2)\n- mittlerer Untergurtknoten: unbelastet, nur Pfosten als Füllstab → Mittelpfosten = 0 (Regel 3)\nEs tragen nur die 2 Diagonalen (Druck) und die 2 Untergurtstäbe (Zug)."
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q005",
+     "type": "numeric",
+     "question": "Variante zu Beispiel 9.1: Felder 2 × 4,00 m, Höhe 3,00 m, F = 24 kN oben Mitte. Betrag der Diagonalkraft?",
+     "answer": 20,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "A_V = 12 kN; Diagonale 5,00 m lang, sin α = 3/5 = 0,6\nΣV am Knoten A: 12 + D · 0,6 = 0 → D = −20 kN → **20 kN Druck**"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q006",
+     "type": "numeric",
+     "question": "Variante zu Beispiel 9.1 (2 × 4,00 m, h = 3,00 m, F = 24 kN, D = −20 kN): Untergurtkraft?",
+     "answer": 16,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣH am Knoten A: U = −D · cos α = 20 · 0,8 = **16 kN** (Zug)\nKontrolle Ritterschnitt: U = 12 · 4,00 / 3,00 = 16 kN ✓"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q007",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.3 (Wandfachwerk): Knoten A (0|0) Festlager, B (0|4,00) Loslager nur horizontal, C (4,00|0), D (4,00|2,00), E (8,00|0). Stäbe: 1 C–E, 2 A–C, 3 C–D, 4 D–E, 5 A–D, 6 B–D, 7 A–B. Lasten senkrecht nach unten: 15 kN in B, 20 kN in D, 5 kN in E. Betrag von B_H?",
+     "answer": 30,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0: B_H · 4,00 = 20 · 4,00 + 5 · 8,00 (15 kN in B: kein Hebelarm um A)\nB_H = 120 / 4 = **30 kN**, wirkt nach links (zieht den Knoten zur Wand)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q008",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.3 (Geometrie und Lasten wie zuvor: 15 kN in B, 20 kN in D, 5 kN in E). Wie groß ist A_V?",
+     "answer": 40,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B nimmt nur horizontal auf → ΣV = 0: A_V = 15 + 20 + 5 = **40 kN**\nΣH = 0: A_H = 30 kN (nach rechts)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q009",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.3: Am Endknoten E (8,00|0) treffen Stab 1 (waagerecht zu C) und Stab 4 (zu D (4,00|2,00)); Last 5 kN nach unten. Stabkraft S4 mit Vorzeichen (Zug +)?",
+     "answer": 11.18,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Stab 4: Länge √(4² + 2²) = 4,472 m; sin α = 0,447, cos α = 0,894\nΣV = 0 in E: −5 + S4 · 0,447 = 0 → S4 = **+11,18 kN** (Zug)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q010",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.3: S4 = 11,18 kN, cos α = 0,894. Stabkraft S1 (C–E) mit Vorzeichen?",
+     "answer": -10,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣH = 0 in E: −S1 − S4 · 0,894 = 0\nS1 = −11,18 · 0,894 = **−10,0 kN** (Druck)\nKnoten C: Gurt durchlaufend, Stab 3 einziger Füllstab → S3 = 0, S2 = S1 = −10 kN"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q011",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.3: Wie groß ist die Stabkraft S6 (B–D), mit Vorzeichen? (B_H = 30 kN nach links, Stab 6 von B (0|4) nach D (4|2))",
+     "answer": 33.54,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten B, ΣH = 0: −30 + S6 · cos α = 0 (cos α = 4 / 4,472 = 0,894)\nS6 = 30 / 0,894 = **+33,54 kN** (Zug)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q012",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.3: Wie groß ist die Stabkraft S5 (A–D), mit Vorzeichen? (S4 = 11,18 kN, S6 = 33,54 kN, Last in D = 20 kN)",
+     "answer": -22.36,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten D, ΣH = 0: S4 − S6 − S5 = 0 (alle Stäbe gleich steil, cos-Anteile kürzen sich)\nS5 = 11,18 − 33,54 = **−22,36 kN** (Druck)\nKontrolle ΣV: −20 − 11,18 · 0,447 + 33,54 · 0,447 + 22,36 · 0,447 = 0 ✓"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q013",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.3: Stabkraft S7 (Wandstab A–B), mit Vorzeichen? (S6 = 33,54 kN, Last in B = 15 kN)",
+     "answer": -30,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten B, ΣV = 0: −15 − S6 · sin α − S7 = 0 (sin α = 0,447)\nS7 = −15 − 15 = **−30 kN** (Druck)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q014",
+     "type": "mc",
+     "question": "Übungsaufgabe G.3: Welcher Stab ist Nullstab?",
+     "options": [
+      "Stab 3 (C–D) – Regel 3 am unbelasteten Knoten C",
+      "Stab 7 (A–B)",
+      "Stab 1 (C–E)",
+      "Stab 6 (B–D)"
+     ],
+     "answer": 0,
+     "explanation": "Knoten C ist unbelastet, die Stäbe 1 und 2 liegen in einer Linie, Stab 3 ist der einzige Füllstab → S3 = 0."
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q015",
+     "type": "mc",
+     "question": "Übungsaufgabe G.3: An welchem Knoten kann man ohne vorherige Auflagerberechnung beginnen?",
+     "options": [
+      "A",
+      "B",
+      "D",
+      "E"
+     ],
+     "answer": 3,
+     "explanation": "E hat nur 2 unbekannte Stabkräfte (S1, S4) und eine bekannte Last."
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q016",
+     "type": "numeric",
+     "question": "Variante zu G.3 (gleiche Geometrie): Lasten 10 kN in B, 30 kN in D, 8 kN in E. Betrag von B_H?",
+     "answer": 46,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "ΣM_A = 0: B_H · 4,00 = 30 · 4,00 + 8 · 8,00 = 184\nB_H = **46 kN**"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q017",
+     "type": "numeric",
+     "question": "Variante zu G.3 (Lasten 10/30/8 kN, B_H = 46 kN): Stabkraft S6 (B–D)?",
+     "answer": 51.43,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten B, ΣH = 0: S6 · 0,894 = 46\nS6 = **+51,43 kN** (Zug)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q018",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.4 (Dachbinder): A (0|0) Festlager, B (2|2), C (4|4), D (4|0), E (6|2), F (8|0) Loslager. Stäbe: 1 A–B, 2 B–C, 3 B–D, 4 A–D, 5 C–D, 6 D–E, 7 D–F, 8 C–E, 9 E–F. Lasten: 10 kN in B, 20 kN in C, 10 kN in E. Stabkraft S1 mit Vorzeichen?",
+     "answer": -28.28,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "A_V = B_V = 40 / 2 = 20 kN, A_H = 0\nKnoten A, ΣV = 0: 20 + S1 · sin 45° = 0\nS1 = −20 / 0,7071 = **−28,28 kN** (Druck)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q019",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.4 (wie oben, S1 = −28,28 kN): Untergurtkraft S4 (A–D)?",
+     "answer": 20,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten A, ΣH = 0: S4 + S1 · cos 45° = 0\nS4 = 28,28 · 0,7071 = **+20 kN** (Zug)\nRitterschnitt durch 2, 3, 4 mit ΣM_B: A_V · 2 − S4 · 2 = 0 → S4 = 20 kN ✓"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q020",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.4: Stabkraft S3 (B–D) mit Vorzeichen? (S1 = −28,28 kN, Last in B = 10 kN)",
+     "answer": -7.07,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten B (alle Stäbe unter 45°):\nΣH: −S1 + S2 + S3 = 0\nΣV: −S1 + S2 − S3 = 10 · √2 = 14,14\nSubtrahiert: 2 · S3 = −14,14 → S3 = **−7,07 kN** (Druck)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q021",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.4: Stabkraft S2 (B–C) mit Vorzeichen? (S1 = −28,28 kN, S3 = −7,07 kN)",
+     "answer": -21.21,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten B, ΣH: −S1 + S2 + S3 = 0\nS2 = S1 − S3 = −28,28 + 7,07 = **−21,21 kN** (Druck)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q022",
+     "type": "numeric",
+     "question": "Übungsaufgabe G.4: Stabkraft im Mittelpfosten S5 (C–D)? (S2 = S8 = −21,21 kN, Last in C = 20 kN)",
+     "answer": 10,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "Knoten C, ΣV = 0: −20 + 2 · 21,21 · sin 45° − S5 = 0\n−20 + 30 − S5 = 0 → S5 = **+10 kN** (Zug)"
+    },
+    {
+     "id": "statik-skript-2-stabkraefte-q023",
+     "type": "numeric",
+     "question": "Variante zu G.4: Spannweite 12,00 m, Firsthöhe 4,00 m (A (0|0), B (3|2), C (6|4), D (6|0), E (9|2), F (12|0)), Lasten 12 kN in B und E, 24 kN in C. Stabkraft S1 (A–B) mit Vorzeichen?",
+     "answer": -43.27,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "A_V = 48 / 2 = 24 kN\ntan α = 2/3 → sin α = 0,5547, cos α = 0,8321\nΣV in A: 24 + S1 · 0,5547 = 0 → S1 = **−43,27 kN** (Druck)\nS4 = 43,27 · 0,8321 = 36,0 kN (Zug)"
+    }
+   ]
+  },
+  {
+   "id": "statik-skript-2-schwerpunkt",
+   "title": "Schwerpunkt zusammengesetzter Querschnitte",
+   "description": "Gesamtschwerpunkt aus Teilflächen, Koordinatensysteme und Schwerpunkt der Bewehrung (Skript G).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-schwerpunkt-c001",
+     "type": "basic",
+     "front": "Formeln für den Gesamtschwerpunkt zusammengesetzter Flächen?",
+     "back": "y_s = Σ(A_i · y_i) / ΣA_i\nz_s = Σ(A_i · z_i) / ΣA_i"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c002",
+     "type": "basic",
+     "front": "Achsen am Querschnitt (Skript)?",
+     "back": "- x-Achse: Stablängsachse\n- y-Achse: waagerecht im Querschnitt\n- z-Achse: senkrecht, **nach unten** positiv"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c003",
+     "type": "basic",
+     "front": "Globales und lokales Koordinatensystem?",
+     "back": "- global: Ursprung des Gesamtsystems\n- lokal: für ein Bauteil, orientiert sich am globalen System\nBeispiel Auto: global an der Vorderachse, das Handschuhfach wird im lokalen System konstruiert."
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c004",
+     "type": "basic",
+     "front": "Checkliste Schwerpunktberechnung?",
+     "back": "1. Geometrie in bekannte Formen zerlegen (Rechteck, Dreieck, Kreis …)\n2. Teilschwerpunkte y_i und z_i bestimmen\n3. Gesamtschwerpunkt mit Σ(A_i · y_i) / ΣA_i berechnen"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c005",
+     "type": "basic",
+     "front": "Wo liegt der Schwerpunkt eines Dreiecks?",
+     "back": "Im Schnittpunkt der Seitenhalbierenden: **h/3** über der Grundseite (2h/3 unter der Spitze)."
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c006",
+     "type": "basic",
+     "front": "Wo liegt der Schwerpunkt eines Querschnitts mit Symmetrieachse?",
+     "back": "Immer **auf der Symmetrieachse** – nur die andere Koordinate muss berechnet werden."
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c007",
+     "type": "basic",
+     "front": "Wie berücksichtigt man Aussparungen (Löcher)?",
+     "back": "Als **negative Fläche**: −A_Loch in ΣA und −A_Loch · z_Loch in Σ(A · z)."
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c008",
+     "type": "basic",
+     "front": "Warum dürfen sich Teilflächen nicht überlappen?",
+     "back": "Jede Fläche darf nur **einmal** gezählt werden – sonst sind ΣA und Σ(A · z) falsch. Deshalb z. B. den Steg nur zwischen den Flanschen ansetzen."
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c009",
+     "type": "basic",
+     "front": "Querschnittsfläche eines Bewehrungsstabes?",
+     "back": "A_s = π · d² / 4\nz. B. Ø14 = 1,54 cm², Ø20 = 3,14 cm², Ø25 = 4,91 cm²"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-c010",
+     "type": "basic",
+     "front": "Abstand Balkenoberkante bis Schwerpunkt der Zugbewehrung – wie heißt das Maß im Stahlbetonbau?",
+     "back": "Im Stahlbetonbau: **statische Nutzhöhe d**.\nBerechnung: z0 = Σ(A_s,i · z_i) / ΣA_s,i",
+     "hint": "Achtung: Im Skript (H.2) heißt dieses Maß z0, und „d = 40 cm“ bemaßt dort die Balkenhöhe."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-schwerpunkt-q001",
+     "type": "numeric",
+     "question": "Beispiel 10: Unsymmetrischer I-Querschnitt. Obergurt 370 × 25 mm, Untergurt 310 × 35 mm, Steg t = 12 mm, Gesamthöhe 440 mm; alle Teile mittig auf einer senkrechten Achse. Ursprung S = rechte obere Ecke, z nach unten. Wie groß ist z_s?",
+     "answer": 230.34,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "- A1 Obergurt: 370 · 25 = 9250 mm², z1 = 12,5\n- A2 Steg: 12 · 380 = 4560 mm², z2 = 25 + 190 = 215\n- A3 Untergurt: 310 · 35 = 10 850 mm², z3 = 440 − 17,5 = 422,5\nΣA = 24 660 mm²\nΣA · z = 115 625 + 980 400 + 4 584 125 = 5 680 150 mm³\nz_s = 5 680 150 / 24 660 = **230,34 mm**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q002",
+     "type": "numeric",
+     "question": "Beispiel 10 (Obergurt 370 mm breit, alle Teile mittig zueinander, S = rechte obere Ecke, y nach links). Wie groß ist y_s?",
+     "answer": 185,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "Der Querschnitt ist symmetrisch zur senkrechten Stegachse → Schwerpunkt auf der Symmetrieachse:\ny_s = 370 / 2 = **185 mm**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q003",
+     "type": "numeric",
+     "question": "Beispiel 10: Gesamtfläche ΣA des I-Querschnitts in cm²? (Obergurt 370 × 25, Steg 12 × 380, Untergurt 310 × 35, Maße in mm)",
+     "answer": 246.6,
+     "unit": "cm²",
+     "tolerance": 0.02,
+     "explanation": "ΣA = 9250 + 4560 + 10 850 = 24 660 mm² = **246,6 cm²** (1 cm² = 100 mm²)"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q004",
+     "type": "numeric",
+     "question": "Übungsaufgabe H.1: Oberflansch 30,00 cm breit, t = 0,6 cm; an beiden Rändern Lippen nach unten (t = 0,4 cm, Höhe inkl. Flansch 5,00 cm); mittig ein Steg t = 0,6 cm, Gesamthöhe 30,00 cm. Teilflächen ohne Überlappung. Abstand des Schwerpunkts von der Oberkante?",
+     "answer": 7.28,
+     "unit": "cm",
+     "tolerance": 0.02,
+     "explanation": "- Flansch: 30 · 0,6 = 18,00 cm², z = 0,30\n- 2 Lippen: 2 · 0,4 · 4,4 = 3,52 cm², z = 0,6 + 2,2 = 2,80\n- Steg: 0,6 · 29,4 = 17,64 cm², z = 0,6 + 14,7 = 15,30\nΣA = 39,16 cm²; ΣA · z = 5,40 + 9,86 + 269,89 = 285,15 cm³\nz_s = 285,15 / 39,16 = **7,28 cm**\ny_s = 15,00 cm (Symmetrie)"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q005",
+     "type": "numeric",
+     "question": "Übungsaufgabe H.1 (wie oben): Gesamtfläche ΣA?",
+     "answer": 39.16,
+     "unit": "cm²",
+     "tolerance": 0.02,
+     "explanation": "18,00 + 3,52 + 17,64 = **39,16 cm²**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q006",
+     "type": "numeric",
+     "question": "Übungsaufgabe H.2: Stahlbetonbalken, Höhe 40 cm. Untere Lage 4 Ø25 mit a1 = 5,0 cm, zweite Lage 2 Ø14 mit a2 = 8,5 cm (jeweils Abstand von der Unterkante). Abstand des Bewehrungsschwerpunkts von der Oberkante (z0)?",
+     "answer": 34.53,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "4 Ø25 = 19,63 cm², z = 40 − 5,0 = 35,0 cm\n2 Ø14 = 3,08 cm², z = 40 − 8,5 = 31,5 cm\nz0 = (19,63 · 35,0 + 3,08 · 31,5) / 22,71 = 784,1 / 22,71 = **34,53 cm**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q007",
+     "type": "numeric",
+     "question": "Übungsaufgabe H.2: Gesamte Bewehrungsfläche aus 4 Ø25 und 2 Ø14?",
+     "answer": 22.71,
+     "unit": "cm²",
+     "tolerance": 0.02,
+     "explanation": "Ø25: π · 2,5² / 4 = 4,91 cm² → 4 Stäbe = 19,63 cm²\nØ14: π · 1,4² / 4 = 1,54 cm² → 2 Stäbe = 3,08 cm²\nSumme = **22,71 cm²**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q008",
+     "type": "numeric",
+     "question": "Unsymmetrischer I-Querschnitt: Obergurt 200 × 20 mm, Steg 10 × 260 mm, Untergurt 300 × 30 mm, Gesamthöhe 310 mm. Abstand des Schwerpunkts von der Oberkante?",
+     "answer": 197.76,
+     "unit": "mm",
+     "tolerance": 0.02,
+     "explanation": "- Obergurt: 4000 mm², z = 10\n- Steg: 2600 mm², z = 20 + 130 = 150\n- Untergurt: 9000 mm², z = 310 − 15 = 295\nz_s = (40 000 + 390 000 + 2 655 000) / 15 600 = **197,76 mm**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q009",
+     "type": "numeric",
+     "question": "Rechteck 30 cm breit, 40 cm hoch, mit einer quadratischen Aussparung 10 × 10 cm, deren Mittelpunkt 10 cm unter der Oberkante liegt (in Breitenmitte). Abstand des Schwerpunkts von der Oberkante?",
+     "answer": 20.91,
+     "unit": "cm",
+     "tolerance": 0.02,
+     "explanation": "Rechteck: 1200 cm², z = 20\nAussparung: −100 cm², z = 10\nz_s = (24 000 − 1000) / 1100 = **20,91 cm** – der Schwerpunkt rutscht vom Loch weg nach unten."
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q010",
+     "type": "numeric",
+     "question": "Balken h = 50 cm: 3 Ø20 mit 5 cm Abstand zur Unterkante und 2 Ø16 mit 9 cm Abstand zur Unterkante. Abstand des Bewehrungsschwerpunkts von der Oberkante?",
+     "answer": 43.8,
+     "unit": "cm",
+     "tolerance": 0.01,
+     "explanation": "3 Ø20 = 9,42 cm², z = 45 cm\n2 Ø16 = 4,02 cm², z = 41 cm\nz0 = (9,42 · 45 + 4,02 · 41) / 13,44 = 588,7 / 13,44 = **43,80 cm**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q011",
+     "type": "numeric",
+     "question": "Plattenbalken: Platte 120 cm breit, 15 cm dick; darunter mittig ein Steg 30 cm breit und 45 cm hoch. Abstand des Schwerpunkts von der Oberkante?",
+     "answer": 20.36,
+     "unit": "cm",
+     "tolerance": 0.02,
+     "explanation": "Platte: 1800 cm², z = 7,5\nSteg: 1350 cm², z = 15 + 22,5 = 37,5\nz_s = (13 500 + 50 625) / 3150 = **20,36 cm**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q012",
+     "type": "numeric",
+     "question": "Variante zu H.1: Oberflansch 24 cm × 0,5 cm, zwei Randlippen t = 0,4 cm mit Höhe inkl. Flansch 4,0 cm, mittiger Steg t = 0,5 cm, Gesamthöhe 20,0 cm. Abstand des Schwerpunkts von der Oberkante?",
+     "answer": 4.45,
+     "unit": "cm",
+     "tolerance": 0.02,
+     "explanation": "- Flansch: 12,00 cm², z = 0,25\n- Lippen: 2 · 0,4 · 3,5 = 2,80 cm², z = 0,5 + 1,75 = 2,25\n- Steg: 0,5 · 19,5 = 9,75 cm², z = 0,5 + 9,75 = 10,25\nz_s = (3,00 + 6,30 + 99,94) / 24,55 = **4,45 cm**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q013",
+     "type": "numeric",
+     "question": "Rechteck b = 4 cm, h = 6 cm; rechts daran ein rechtwinkliges Dreieck (Breite 3 cm, Höhe 6 cm), dessen senkrechte Kathete an der rechten Rechteckkante liegt. Abstand des Gesamtschwerpunkts von der linken Kante?",
+     "answer": 2.82,
+     "unit": "cm",
+     "tolerance": 0.02,
+     "explanation": "Rechteck: 24 cm², y = 2,0\nDreieck: 9 cm², y = 4 + 3/3 = 5,0 (Schwerpunkt 1/3 der Breite von der senkrechten Kathete)\ny_s = (48 + 45) / 33 = **2,82 cm**"
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q014",
+     "type": "mc",
+     "question": "Teilfläche 1: A = 20 cm², z = 2 cm; Teilfläche 2: A = 20 cm², z = 12 cm. Wo liegt z_s?",
+     "options": [
+      "14 cm",
+      "10 cm",
+      "6 cm",
+      "7 cm"
+     ],
+     "answer": 3,
+     "explanation": "z_s = (20 · 2 + 20 · 12) / 40 = 280 / 40 = 7 cm – bei gleichen Flächen genau in der Mitte."
+    },
+    {
+     "id": "statik-skript-2-schwerpunkt-q015",
+     "type": "mc",
+     "question": "In welchem Abstand von der Grundseite liegt der Schwerpunkt eines Dreiecks mit der Höhe h?",
+     "options": [
+      "h/2",
+      "h/3",
+      "2h/3",
+      "h/4"
+     ],
+     "answer": 1,
+     "explanation": "Dreiecksschwerpunkt: h/3 über der Grundseite (Schnittpunkt der Seitenhalbierenden)."
+    }
+   ]
+  },
+  {
+   "id": "statik-skript-2-durchlauftraeger",
+   "title": "Durchlaufträger mit Tabellenbeiwerten",
+   "description": "Auflagerkräfte statisch unbestimmter Durchlaufträger mit gleichen Stützweiten über Tabellenbeiwerte und Superposition (Skript H).",
+   "sources": [
+    "Hauptskript_Lerngebiet_1_26_27_leer.pdf"
+   ],
+   "cards": [
+    {
+     "id": "statik-skript-2-durchlauftraeger-c001",
+     "type": "basic",
+     "front": "Warum rechnet man Durchlaufträger mit Tabellen?",
+     "back": "Sie sind statisch **unbestimmt** (Zweifeldträger n = 1, Dreifeldträger n = 2). Für gleiche Stützweiten liefert das Tabellenbuch Beiwerte (Skript: Schneider, Tafel 4.14)."
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c002",
+     "type": "basic",
+     "front": "Auflagerkraft mit Tabellenbeiwert berechnen?",
+     "back": "- Streckenlast: R = Beiwert · q · l\n- Einzellast: R = Beiwert · F"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c003",
+     "type": "basic",
+     "front": "Zweifeldträger, Gleichlast in beiden Feldern: Beiwerte A / B / C?",
+     "back": "A = 0,375 · q · l\nB = 1,250 · q · l\nC = 0,375 · q · l"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c004",
+     "type": "basic",
+     "front": "Zweifeldträger, Gleichlast nur in Feld 1: Beiwerte A / B / C?",
+     "back": "A = 0,4375 · q · l\nB = 0,625 · q · l\nC = −0,0625 · q · l (abhebend)"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c005",
+     "type": "basic",
+     "front": "Zweifeldträger, Einzellast F in Feldmitte beider Felder: Beiwerte?",
+     "back": "A = C = 0,3125 · F\nB = 1,375 · F"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c006",
+     "type": "basic",
+     "front": "Zweifeldträger, Einzellast F nur in Mitte von Feld 1: Beiwerte?",
+     "back": "A = 0,406 · F\nB = 0,688 · F\nC = −0,094 · F"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c007",
+     "type": "basic",
+     "front": "Dreifeldträger, Gleichlast in allen Feldern: Beiwerte?",
+     "back": "A = D = 0,4 · q · l\nB = C = 1,1 · q · l"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c008",
+     "type": "basic",
+     "front": "Dreifeldträger, Gleichlast in Feld 1 und 2: Beiwerte?",
+     "back": "A = 0,383 · q · l\nB = 1,200 · q · l\nC = 0,450 · q · l\nD = −0,033 · q · l"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c009",
+     "type": "basic",
+     "front": "Dreifeldträger, Einzellasten F in Mitte von Feld 1 und Feld 3: Beiwerte?",
+     "back": "A = D = 0,425 · F\nB = C = 0,575 · F"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c010",
+     "type": "basic",
+     "front": "Vierfeldträger, Gleichlast in allen Feldern: Beiwerte?",
+     "back": "A = E = 0,393 · q · l\nB = D = 1,143 · q · l\nC = 0,929 · q · l"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c011",
+     "type": "basic",
+     "front": "Ein Lastfall steht nicht in der Tafel – was tun?",
+     "back": "**Superposition**: Tafel-Lastfälle addieren, spiegeln oder voneinander abziehen. Beispiel: Einzellast nur in Feld 2 = gespiegelter Fall „nur Feld 1“."
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c012",
+     "type": "basic",
+     "front": "Mehrere Lasten (g, q, F) am Durchlaufträger – wie vorgehen?",
+     "back": "Jeden Lastfall mit seinem eigenen Beiwert rechnen und je Auflager **addieren**: A = A_g + A_q + A_F."
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c013",
+     "type": "basic",
+     "front": "Lasten in kN/m² an einem Durchlaufträger (Deckenplatte) – wie rechnet man?",
+     "back": "Mit einem **1 m breiten Streifen**: kN/m² · 1 m = kN/m. Die Auflagerkräfte ergeben sich dann in kN/m (je m Wandlänge)."
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c014",
+     "type": "basic",
+     "front": "Was bedeutet eine negative Auflagerkraft am Durchlaufträger?",
+     "back": "Das Lager wird **abgehoben** (Zug). Es muss verankert sein oder durch andere Lasten (z. B. Eigenlast) überdrückt werden."
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-c015",
+     "type": "basic",
+     "front": "Warum steht die Verkehrslast q oft nur auf einzelnen Feldern?",
+     "back": "q kann feldweise auftreten. Die ungünstigste Laststellung liefert die größten Auflagerkräfte, z. B. beim Zweifeldträger q nur in Feld 1 → A = 0,4375 · q · l statt 0,375 · q · l."
+    }
+   ],
+   "quiz": [
+    {
+     "id": "statik-skript-2-durchlauftraeger-q001",
+     "type": "numeric",
+     "question": "Beispiel 11: Zweifeldträger, l = 3,00 m je Feld (1-m-Streifen). g = 8 kN/m² auf beiden Feldern, q = 3 kN/m² nur auf Feld 1. Auflagerkraft A?",
+     "answer": 12.94,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "A_g = 0,375 · 8 · 3,00 = 9,00\nA_q = 0,4375 · 3 · 3,00 = 3,94\nA = **12,94 kN/m**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q002",
+     "type": "numeric",
+     "question": "Beispiel 11 (l = 3,00 m, g = 8 kN/m² beide Felder, q = 3 kN/m² Feld 1): Mittelauflager B?",
+     "answer": 35.63,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "B_g = 1,25 · 8 · 3,00 = 30,00\nB_q = 0,625 · 3 · 3,00 = 5,63\nB = **35,63 kN/m**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q003",
+     "type": "numeric",
+     "question": "Beispiel 11 (l = 3,00 m, g = 8 kN/m² beide Felder, q = 3 kN/m² Feld 1): Endauflager C?",
+     "answer": 8.44,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "C_g = 0,375 · 8 · 3,00 = 9,00\nC_q = −0,0625 · 3 · 3,00 = −0,56\nC = **8,44 kN/m**\nProbe: 12,94 + 35,63 + 8,44 = 57,0 = 8 · 6 + 3 · 3 ✓"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q004",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.1: Vierfeldträger, l = 4,50 m je Feld, g = 8,5 kN/m² und q = 2,7 kN/m² auf allen Feldern. Endauflager A?",
+     "answer": 19.8,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "g + q = 11,2 kN/m (1-m-Streifen) – beide Lasten auf allen Feldern, also gemeinsam rechnen.\nA = 0,393 · 11,2 · 4,50 = **19,80 kN/m**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q005",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.1 (Vierfeldträger, l = 4,50 m, g + q = 11,2 kN/m auf allen Feldern): Auflager B?",
+     "answer": 57.6,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "B = 1,143 · 11,2 · 4,50 = **57,60 kN/m** (D ebenso)"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q006",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.1 (Vierfeldträger, l = 4,50 m, g + q = 11,2 kN/m auf allen Feldern): Mittelauflager C?",
+     "answer": 46.8,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "C = 0,929 · 11,2 · 4,50 = **46,80 kN/m**\nProbe: 2 · 19,8 + 2 · 57,6 + 46,8 = 201,6 = 11,2 · 18 ✓"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q007",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.2: Zweifeldträger l = 3,00 m, g = 8 kN/m² auf beiden Feldern, q = 3 kN/m² nur auf Feld 1, zusätzlich F = 45 kN/m in Mitte von Feld 2. Mittelauflager B?",
+     "answer": 66.56,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "Aus Beispiel 11: B_g + B_q = 35,63\nF in Mitte Feld 2 (gespiegelter Fall „nur Feld 1“): B_F = 0,6875 · 45 = 30,94\nB = **66,56 kN/m**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q008",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.2 (wie oben): Endauflager C?",
+     "answer": 26.72,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "C_g + C_q = 9,00 − 0,56 = 8,44\nF in Feld 2 ist für C das „nahe“ Feld: C_F = 0,406 · 45 = 18,28\nC = **26,72 kN/m**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q009",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.2 (wie oben): Endauflager A?",
+     "answer": 8.72,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "A_g + A_q = 12,94\nF im entfernten Feld 2: A_F = −0,094 · 45 = −4,22\nA = **8,72 kN/m**\nProbe: 8,72 + 66,56 + 26,72 = 102 = 48 + 9 + 45 ✓"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q010",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.3: Dreifeldträger l = 4,50 m, g = 8 kN/m² auf allen Feldern, q = 3 kN/m² auf Feld 1 und 2, F = 40 kN/m jeweils in Mitte von Feld 1 und Feld 3. Endauflager A?",
+     "answer": 36.58,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "A_g = 0,4 · 8 · 4,50 = 14,40\nA_q = 0,383 · 3 · 4,50 = 5,18\nA_F = 0,425 · 40 = 17,00\nA = **36,58 kN/m**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q011",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.3 (wie oben): Auflager B?",
+     "answer": 78.8,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "B_g = 1,1 · 8 · 4,50 = 39,60\nB_q = 1,2 · 3 · 4,50 = 16,20\nB_F = 0,575 · 40 = 23,00\nB = **78,80 kN/m**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q012",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.3 (wie oben): Auflager C?",
+     "answer": 68.68,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "C_g = 1,1 · 8 · 4,50 = 39,60\nC_q = 0,45 · 3 · 4,50 = 6,08\nC_F = 0,575 · 40 = 23,00\nC = **68,68 kN/m**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q013",
+     "type": "numeric",
+     "question": "Übungsaufgabe I.3 (wie oben): Endauflager D?",
+     "answer": 30.95,
+     "unit": "kN/m",
+     "tolerance": 0.02,
+     "explanation": "D_g = 0,4 · 8 · 4,50 = 14,40\nD_q = −0,033 · 3 · 4,50 = −0,45\nD_F = 0,425 · 40 = 17,00\nD = **30,95 kN/m**\nProbe: 36,58 + 78,80 + 68,68 + 30,95 ≈ 215 = 108 + 27 + 80 ✓"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q014",
+     "type": "numeric",
+     "question": "Zweifeldträger l = 4,00 m, g = 6 kN/m und q = 4 kN/m auf beiden Feldern. Mittelauflager B?",
+     "answer": 50,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B = 1,25 · (6 + 4) · 4,00 = **50 kN**\n(A = C = 0,375 · 10 · 4 = 15 kN)"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q015",
+     "type": "numeric",
+     "question": "Dreifeldträger l = 5,00 m, Gleichlast g = 7 kN/m auf allen Feldern. Innenauflager B?",
+     "answer": 38.5,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B = 1,1 · 7 · 5,00 = **38,5 kN**\n(A = D = 0,4 · 7 · 5 = 14 kN)"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q016",
+     "type": "numeric",
+     "question": "Zweifeldträger l = 4,00 m, nur q = 5 kN/m auf Feld 1 (kein Eigengewicht angesetzt). Auflagerkraft C – mit Vorzeichen (nach oben +)?",
+     "answer": -1.25,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "C = −0,0625 · 5 · 4,00 = **−1,25 kN** → C wird abgehoben\n(A = 8,75 kN, B = 12,5 kN)"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q017",
+     "type": "numeric",
+     "question": "Zweifeldträger mit je einer Einzellast F = 30 kN in beiden Feldmitten. Mittelauflager B?",
+     "answer": 41.25,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "B = 1,375 · 30 = **41,25 kN**\nA = C = 0,3125 · 30 = 9,38 kN"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q018",
+     "type": "numeric",
+     "question": "Zweifeldträger l = 5,00 m: g = 5 kN/m auf beiden Feldern, q = 2,5 kN/m nur auf Feld 2. Endauflager C (am belasteten Feld 2)?",
+     "answer": 14.84,
+     "unit": "kN",
+     "tolerance": 0.02,
+     "explanation": "C_g = 0,375 · 5 · 5 = 9,38\nq nur in Feld 2 = gespiegelter Fall: C_q = 0,4375 · 2,5 · 5 = 5,47\nC = **14,84 kN**"
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q019",
+     "type": "mc",
+     "question": "Welches Lager eines Zweifeldträgers unter Gleichlast in beiden Feldern erhält die größte Kraft?",
+     "options": [
+      "Mittelauflager B",
+      "Endauflager A",
+      "Endauflager C",
+      "Alle gleich"
+     ],
+     "answer": 0,
+     "explanation": "B = 1,25 · q · l, A = C = 0,375 · q · l. Das Mittelauflager trägt also 62,5 % der Gesamtlast 2 · q · l."
+    },
+    {
+     "id": "statik-skript-2-durchlauftraeger-q020",
+     "type": "mc",
+     "question": "Wie berechnet man am Durchlaufträger die Auflagerkräfte, wenn g, q und F gleichzeitig wirken?",
+     "options": [
+      "Alle Lasten zu einer Gesamtlast addieren und mit einem Beiwert multiplizieren",
+      "Nur den größten Lastfall rechnen",
+      "Jeden Lastfall mit seinen eigenen Beiwerten rechnen und je Lager addieren",
+      "Mit ΣM = 0 um jedes Lager wie beim Einfeldträger"
+     ],
+     "answer": 2,
+     "explanation": "Superposition: Gleichlast und Einzellast haben unterschiedliche Beiwerte, und q steht evtl. nur auf einzelnen Feldern."
+    }
+   ]
+  }
+ ]
+}
