@@ -95,6 +95,7 @@ export default function review(el, route) {
       <p class="caption">Was heißt das auf Deutsch?</p>`;
     if (it.dir === 'de-en') return html`<div class="q">${c.de}</div><p class="caption">Wie heißt das auf Englisch?</p>`;
     return html`<div class="q ${isLong(c.front) ? 'long' : ''}">${md(c.front)}</div>
+      ${revealed ? '' : html`<p class="caption">Antwort im Kopf überlegen – dann aufdecken und ehrlich bewerten.</p>`}
       ${c.hint ? html`<button class="hint-btn" data-hint>💡 Tipp anzeigen</button><p class="caption" data-hinttext hidden>${md(c.hint)}</p>` : ''}`;
   }
 
