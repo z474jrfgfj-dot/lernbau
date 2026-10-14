@@ -126,11 +126,22 @@ def main():
     decks.sort(key=lambda d: (order[d["subject"]], d["unit"]))
     body = json.dumps({"subjects": subjects, "decks": decks}, ensure_ascii=False, sort_keys=True)
     version = hashlib.sha1(body.encode()).hexdigest()[:10]
+    exams = []
+    exams_file = DATA / "exams.json"
+    if exams_file.exists():
+        for e in json.loads(exams_file.read_text("utf-8")):
+            if not (nonempty(e.get("id")) and nonempty(e.get("title")) and re.match(r"^\d{4}-\d{2}-\d{2}$", e.get("date", ""))):
+                warn(f"exams.json: ungültiger Termin {e!r}")
+                continue
+            exams.append(e)
+    body += json.dumps(exams, ensure_ascii=False, sort_keys=True)
+    version = hashlib.sha1(body.encode()).hexdigest()[:10]
     out = {
         "version": version,
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "subjects": subjects,
         "decks": decks,
+        "exams": exams,
     }
     (DATA / "content.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), "utf-8")
 

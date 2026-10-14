@@ -137,7 +137,20 @@ export function addExam(exam) {
   state.examsAt = Date.now();
   save();
 }
+/** Add exams shipped with the app (from the school calendar) unless the user removed them before. */
+export function applyPresetExams(list) {
+  const have = new Set(state.exams.map(e => e.id));
+  const hidden = new Set(state.hiddenExams || []);
+  const add = list.filter(e => !have.has(e.id) && !hidden.has(e.id));
+  if (!add.length) return;
+  state.exams.push(...add.map(e => ({ ...e })));
+  state.exams.sort((a, b) => a.date.localeCompare(b.date));
+  state.examsAt = Date.now();
+  save();
+}
+
 export function removeExam(id) {
+  if (id.startsWith('preset-')) state.hiddenExams = [...new Set([...(state.hiddenExams || []), id])];
   state.exams = state.exams.filter(e => e.id !== id);
   state.examsAt = Date.now();
   save();
@@ -193,6 +206,7 @@ export function merge(incoming) {
   state.quiz.history.push(...(inQ.history || []).filter(h => !seenT.has(h.t)));
   state.quiz.history.sort((a, b) => a.t - b.t);
 
+  state.hiddenExams = [...new Set([...(state.hiddenExams || []), ...(incoming.hiddenExams || [])])];
   // Exams: the most recently edited list wins (so deletions sync too).
   if ((incoming.examsAt || 0) > (state.examsAt || 0)) {
     state.exams = incoming.exams || [];

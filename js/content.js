@@ -39,6 +39,7 @@ export async function load() {
 }
 
 export const version = () => C.version;
+export const presetExams = () => C.exams || [];
 export const subjects = () => C.subjects;
 export const subject = id => subjectById.get(id);
 export const deck = id => deckById.get(id);

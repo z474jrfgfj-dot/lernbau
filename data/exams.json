@@ -1,0 +1,8 @@
+[
+  { "id": "preset-2026-10-19-deutsch",   "subject": "deutsch",                 "title": "Kurzarbeit Deutsch",                 "date": "2026-10-19" },
+  { "id": "preset-2026-10-23-dg",        "subject": "darstellende-geometrie",  "title": "Kurzarbeit Darstellende Geometrie",  "date": "2026-10-23" },
+  { "id": "preset-2026-11-09-baustoffe", "subject": "baustoffe",               "title": "Kurzarbeit Baustoffkunde",           "date": "2026-11-09" },
+  { "id": "preset-2026-11-12-mathe",     "subject": "mathe",                   "title": "Kurzarbeit Mathe (Trigonometrie)",   "date": "2026-11-12" },
+  { "id": "preset-2026-11-17-englisch",  "subject": "englisch",                "title": "Kurzarbeit Englisch",                "date": "2026-11-17" },
+  { "id": "preset-2026-11-18-baurecht",  "subject": "baurecht",                "title": "Kurzarbeit Baurecht",                "date": "2026-11-18" }
+]

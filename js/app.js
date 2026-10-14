@@ -64,6 +64,8 @@ async function boot() {
       <p>${e.message}. Beim ersten Start wird eine Internetverbindung benötigt.</p></div>`);
     return;
   }
+  // Optional call: right after an update one module may still come from the browser cache.
+  store.applyPresetExams?.(content.presetExams?.() || []);
   addEventListener('hashchange', route);
   route();
   sync.init();
