@@ -1,0 +1,32 @@
+{
+  "unit": "bauphysik-2",
+  "subject": "bauphysik",
+  "decks": [
+    {
+      "id": "bauphysik-2-gruende-waermeschutz",
+      "title": "Gründe für den Wärmeschutz",
+      "description": "Behaglichkeit und Gesundheit im Raum sowie baukonstruktive Gründe für guten Wärmeschutz.",
+      "sources": ["Gründe für den Wärmeschutz.pdf"],
+      "cards": [
+        {"id": "bauphysik-2-gruende-waermeschutz-c001", "type": "basic", "front": "Welche zwei Gruppen von **Gründen für den Wärmeschutz** unterscheidet man?", "back": "1. **Menschliches Wohlbefinden / Gesunderhaltung** (Behaglichkeit)\n2. **Baukonstruktive Gründe** (Schutz der Bauteile)"},
+        {"id": "bauphysik-2-gruende-waermeschutz-c002", "type": "basic", "front": "Welche **Raumtemperatur** gilt als behaglich?", "back": "**20 – 22 °C**"},
+        {"id": "bauphysik-2-gruende-waermeschutz-c003", "type": "basic", "front": "Wie warm sollten die **Wandoberflächen** (raumumschließende Bauteile) mindestens sein?", "back": "mindestens ca. **16 – 18 °C**\nSind die Wände kälter, empfindet man den Raum trotz warmer Luft als unbehaglich."},
+        {"id": "bauphysik-2-gruende-waermeschutz-c004", "type": "basic", "front": "Welche **Fußbodentemperatur** ist optimal?", "back": "**22 – 24 °C**"},
+        {"id": "bauphysik-2-gruende-waermeschutz-c005", "type": "basic", "front": "Welche **relative Luftfeuchtigkeit** ist für die Behaglichkeit günstig?", "back": "**50 – 60 %**"},
+        {"id": "bauphysik-2-gruende-waermeschutz-c006", "type": "basic", "front": "Wie stark darf die **Luftbewegung** im Raum höchstens sein, damit es nicht zieht?", "back": "max. **0,2 m/s**"},
+        {"id": "bauphysik-2-gruende-waermeschutz-c007", "type": "basic", "front": "Warum spielt die **Tätigkeit des Menschen** für die Behaglichkeit eine Rolle?", "back": "Bei **sitzender** Tätigkeit fährt der Körper herunter und erzeugt weniger Wärme – man braucht dann eine höhere Raumtemperatur als bei körperlicher Arbeit."},
+        {"id": "bauphysik-2-gruende-waermeschutz-c008", "type": "basic", "front": "Welche Rolle spielt die **Wärmespeicherung** der raumumschließenden Bauteile?", "back": "Speicherfähige Bauteile gleichen Temperaturschwankungen aus und halten die Oberflächentemperaturen gleichmäßig → mehr Behaglichkeit."},
+        {"id": "bauphysik-2-gruende-waermeschutz-c009", "type": "basic", "front": "Nenne einen **baukonstruktiven** Grund für den Wärmeschutz.", "back": "Vermeidung **thermischer Spannungen**: Baustoffe mit **unterschiedlichen Wärmeausdehnungskoeffizienten** dehnen sich bei Temperaturänderung verschieden stark aus → Spannungen und Risse. Guter Wärmeschutz hält die Temperaturschwankungen im Bauteil klein."},
+        {"id": "bauphysik-2-gruende-waermeschutz-c010", "type": "basic", "front": "Beispiel für thermische Spannungen zwischen Bauteilen?", "back": "Eine Stahlbeton-Dachdecke auf Mauerwerk: Die Decke dehnt sich bei Sonneneinstrahlung stärker aus als das Mauerwerk darunter → Risse im Mauerwerk unter dem Deckenauflager. Abhilfe: Dämmung der Decke (und Gleitlager)."}
+      ],
+      "quiz": [
+        {"id": "bauphysik-2-gruende-waermeschutz-q001", "type": "mc", "question": "Welche Raumtemperatur gilt als behaglich?", "options": ["16 – 18 °C", "20 – 22 °C", "24 – 26 °C", "18 – 19 °C"], "answer": 1, "explanation": "Behaglich sind 20 – 22 °C. 16 – 18 °C ist der Richtwert für die Wandoberflächen."},
+        {"id": "bauphysik-2-gruende-waermeschutz-q002", "type": "mc", "question": "Welche relative Luftfeuchtigkeit ist für die Behaglichkeit günstig?", "options": ["20 – 30 %", "30 – 40 %", "50 – 60 %", "70 – 80 %"], "answer": 2, "explanation": "50 – 60 % relative Luftfeuchte. Deutlich höhere Werte fördern Tauwasser und Schimmel."},
+        {"id": "bauphysik-2-gruende-waermeschutz-q003", "type": "numeric", "question": "Wie groß darf die Luftbewegung im Raum höchstens sein, damit sie nicht als Zugluft empfunden wird?", "answer": 0.2, "unit": "m/s", "tolerance": 0.01, "explanation": "Max. **0,2 m/s** Luftbewegung."},
+        {"id": "bauphysik-2-gruende-waermeschutz-q004", "type": "mc", "question": "Die Raumluft hat 21 °C, die Außenwand innen aber nur 13 °C. Was ist die Folge?", "options": ["Der Raum wirkt behaglich, weil die Luft warm ist", "Der Raum wirkt unbehaglich, weil die Wandoberfläche unter ca. 16 – 18 °C liegt", "Die Luftfeuchte sinkt automatisch", "Die Wand speichert dadurch mehr Wärme"], "answer": 1, "explanation": "Für Behaglichkeit sollten die Wandoberflächen mindestens ca. 16 – 18 °C haben. Kalte Wände strahlen Kälte ab – zusätzlich droht Tauwasser."},
+        {"id": "bauphysik-2-gruende-waermeschutz-q005", "type": "mc", "question": "Was ist ein **baukonstruktiver** Grund für den Wärmeschutz?", "options": ["Die Raumtemperatur von 20 – 22 °C halten", "Thermische Spannungen durch unterschiedliche Wärmeausdehnung vermeiden", "Die Luftbewegung unter 0,2 m/s halten", "Eine Fußbodentemperatur von 22 – 24 °C erreichen"], "answer": 1, "explanation": "Die anderen drei gehören zum menschlichen Wohlbefinden. Baukonstruktiv geht es um den Schutz der Bauteile, z. B. vor thermischen Spannungen und Rissen."},
+        {"id": "bauphysik-2-gruende-waermeschutz-q006", "type": "mc", "question": "Welche Fußbodentemperatur ist optimal?", "options": ["14 – 16 °C", "18 – 20 °C", "22 – 24 °C", "28 – 30 °C"], "answer": 2, "explanation": "Optimal sind 22 – 24 °C."}
+      ]
+    }
+  ]
+}
