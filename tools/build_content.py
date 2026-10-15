@@ -57,6 +57,12 @@ def check_question(q, where):
         if not isinstance(acc, list):
             return warn(f"{where}: accept ist keine Liste")
         return True
+    if t == "exercise":
+        fields = q.get("fields")
+        if not (isinstance(fields, list) and 1 <= len(fields) <= 6
+                and all(isinstance(f, dict) and nonempty(f.get("label")) and nonempty(f.get("solution")) for f in fields)):
+            return warn(f"{where}: exercise braucht 1–6 fields mit label und solution")
+        return True
     if t == "numeric":
         a = q.get("answer")
         if not isinstance(a, (int, float)) or isinstance(a, bool):

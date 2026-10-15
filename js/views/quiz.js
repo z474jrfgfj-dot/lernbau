@@ -1,14 +1,16 @@
 // Quiz: practice (instant feedback), exam (timer + grade), mistakes.
 import * as store from '../store.js';
 import * as content from '../content.js';
-import { html, md, $, $$, shuffle, confetti, ring, plural } from '../util.js';
+import { html, md, $, $$, shuffle, confetti, ring, plural, toast } from '../util.js';
 import { icon, scopeFrom, backLink } from '../ui.js';
 
 const MODES = {
   uebung: { title: 'Üben', emoji: '🎯', desc: 'Sofort Feedback mit Erklärung' },
+  uebungen: { title: 'Übungsblatt', emoji: '✍️', desc: 'Situationen selbst analysieren wie auf dem Arbeitsblatt – mit Musterlösung' },
   pruefung: { title: 'Probeprüfung', emoji: '📝', desc: 'Mit Zeitlimit, Auswertung und Note am Ende' },
   fehler: { title: 'Fehler üben', emoji: '🔁', desc: 'Nur Fragen, die du falsch hattest' },
 };
+const isEx = q => q.type === 'exercise';
 const SEC_PER_Q = 90;
 
 // ---------- answer checking ----------
@@ -55,9 +57,86 @@ export function check(q, value) {
 const fmtNum = n => Number(n).toLocaleString('de-DE', { maximumFractionDigits: 4 });
 
 export function solution(q) {
+  if (isEx(q)) return q.fields.map(f => `**${f.label}:** ${f.solution}`).join('\n');
   if (q.type === 'mc') return q.options[q.answer];
   if (q.type === 'numeric') return `${fmtNum(q.answer)}${q.unit ? ' ' + q.unit : ''}`;
   return q.answer;
+}
+
+// ---------- spelling & grammar (LanguageTool public API, free, needs internet) ----------
+
+const LT_URL = 'https://api.languagetool.org/v2/check';
+const LT_SKIP = new Set(['style', 'locale-violation']);
+
+/** Returns per text an array of matches {offset,length,replacement,message}, or null if offline/failed. */
+async function proofread(texts) {
+  const SEP = '\n\n';
+  const joined = texts.join(SEP);
+  if (!joined.trim() || !navigator.onLine) return null;
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 8000);
+    const res = await fetch(LT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ text: joined, language: 'de-DE' }),
+      signal: ctrl.signal,
+    });
+    clearTimeout(timer);
+    if (!res.ok) return null;
+    const data = await res.json();
+    // map global offsets back to the individual fields
+    const starts = [];
+    let pos = 0;
+    for (const t of texts) { starts.push(pos); pos += t.length + SEP.length; }
+    const out = texts.map(() => []);
+    for (const m of data.matches || []) {
+      if (LT_SKIP.has(m.rule?.issueType) || /WHITESPACE|DOUBLE_PUNCTUATION/.test(m.rule?.id || '')) continue;
+      const i = starts.findLastIndex(s => s <= m.offset);
+      if (i < 0 || m.offset + m.length > starts[i] + texts[i].length) continue;
+      const orig = joined.slice(m.offset, m.offset + m.length);
+      out[i].push({ offset: m.offset - starts[i], length: m.length, replacement: bestReplacement(orig, m.replacements || []), message: m.shortMessage || m.message || '' });
+    }
+    return out.map(list => list.sort((a, b) => a.offset - b.offset)
+      .filter((m, k, arr) => k === 0 || m.offset >= arr[k - 1].offset + arr[k - 1].length));
+  } catch {
+    return null;
+  }
+}
+
+// LanguageTool's first suggestion is not always the closest ("eillig" → "billig"); prefer the most similar word.
+function editDistance(a, b) {
+  const dp = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+  for (let j = 1; j <= b.length; j++) dp[0][j] = j;
+  for (let i = 1; i <= a.length; i++)
+    for (let j = 1; j <= b.length; j++)
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return dp[a.length][b.length];
+}
+function bestReplacement(orig, reps) {
+  const cands = reps.slice(0, 6).map((r, k) => r.value).filter(v => v != null);
+  if (!cands.length) return '';
+  const o = orig.toLowerCase();
+  const score = (v, k) => editDistance(o, v.toLowerCase()) + (v[0]?.toLowerCase() === o[0] ? 0 : 0.6) + k * 0.05;
+  return cands.map((v, k) => [score(v, k), v]).sort((x, y) => x[0] - y[0])[0][1];
+}
+
+function proofHtml(text, matches) {
+  if (!text.trim()) return html`<div class="ex-proof empty">Keine Antwort eingegeben.</div>`;
+  if (matches === null || matches === undefined) return html`<div class="ex-proof off">Rechtschreibprüfung gerade nicht erreichbar (offline?).</div>`;
+  if (!matches.length) return html`<div class="ex-proof clean">✓ Rechtschreibung & Grammatik: keine Fehler gefunden</div>`;
+  const parts = [];
+  let pos = 0;
+  for (const m of matches) {
+    parts.push(text.slice(pos, m.offset));
+    parts.push(html`<del>${text.slice(m.offset, m.offset + m.length)}</del>${m.replacement ? html`<ins title="${m.message}">${m.replacement}</ins>` : ''}`);
+    pos = m.offset + m.length;
+  }
+  parts.push(text.slice(pos));
+  const notes = [...new Set(matches.map(m => m.message).filter(Boolean))].slice(0, 4);
+  return html`<div class="ex-proof"><span>Verbessert · ${plural(matches.length, 'Korrektur', 'Korrekturen')}</span>
+    <div class="ex-proof-text">${parts}</div>
+    ${notes.length ? html`<ul>${notes.map(n => html`<li>${n}</li>`)}</ul>` : ''}</div>`;
 }
 
 function grade(pct) {
@@ -73,6 +152,8 @@ function pick(scope, mode, size) {
   const st = store.get().quiz;
   let pool = content.questions(scope);
   if (mode === 'fehler') pool = pool.filter(q => st.wrong[q.id]);
+  else if (mode === 'uebungen') pool = pool.filter(isEx);
+  else pool = pool.filter(q => !isEx(q));   // written exercises need self-checking, not timed/auto-graded
   // Mistakes first, then never seen, then least recently seen; random within ties.
   const rank = q => (st.wrong[q.id] ? 0 : 1e13) + (st.seen[q.id] || 0) + Math.random() * 3.6e6 * 24;
   const chosen = pool.map(q => [rank(q), q]).sort((a, b) => a[0] - b[0]).slice(0, size).map(x => x[1]);
@@ -94,6 +175,9 @@ export default function quiz(el, route) {
   function startScreen() {
     const all = content.questions(scope).length;
     const wrong = content.questions(scope).filter(q => store.get().quiz.wrong[q.id]).length;
+    const exN = content.questions(scope).filter(isEx).length;
+    const off = k => (k === 'fehler' && !wrong) || (k === 'uebungen' && !exN);
+    const note = k => k === 'fehler' ? `${wrong} offen · ` : k === 'uebungen' ? `${plural(exN, 'Übung', 'Übungen')} · ` : '';
     el.innerHTML = String(html`
       ${backLink(backHref)}
       <h1 class="large-title">Quiz</h1>
@@ -101,9 +185,9 @@ export default function quiz(el, route) {
       ${all ? html`
       <h2 class="section-title">Modus</h2>
       <div class="list">
-        ${Object.entries(MODES).map(([k, m]) => html`<button class="row has-icon" data-mode="${k}" ${k === 'fehler' && !wrong ? 'disabled style="opacity:.45"' : ''}>
+        ${Object.entries(MODES).filter(([k]) => k !== 'uebungen' || exN).map(([k, m]) => html`<button class="row has-icon" data-mode="${k}" ${off(k) ? 'disabled style="opacity:.45"' : ''}>
           <span class="icon-tile" style="--tile:var(--fill2)">${m.emoji}</span>
-          <div class="grow"><div class="title">${m.title}</div><div class="sub">${k === 'fehler' ? `${wrong} offen · ` : ''}${m.desc}</div></div>
+          <div class="grow"><div class="title">${m.title}</div><div class="sub">${note(k)}${m.desc}</div></div>
           ${icon.chev}</button>`)}
       </div>
       <h2 class="section-title">Anzahl Fragen</h2>
@@ -157,12 +241,19 @@ export default function quiz(el, route) {
       ${q.type === 'mc' ? html`<div class="options" role="radiogroup">
           ${optOrder.map((oi, k) => html`<button class="opt" role="radio" aria-checked="false" data-opt="${oi}"><span class="k">${k + 1}</span><span>${md(q.options[oi])}</span></button>`)}
         </div>`
+        : isEx(q) ? html`<form class="exercise" data-exform autocomplete="off">
+          ${q.fields.map((f, i) => html`<div class="ex-field">
+            <label for="ex${i}">${f.label}</label>
+            <textarea id="ex${i}" name="f${i}" rows="2" placeholder="${f.hint || 'Deine Antwort …'}" autocapitalize="sentences" spellcheck="true" lang="de"></textarea>
+            <div class="ex-sol" data-sol="${i}" hidden></div>
+          </div>`)}
+        </form>`
         : html`<form class="answer-field" data-form autocomplete="off">
           <input name="a" ${q.type === 'numeric' ? 'inputmode="decimal"' : ''} placeholder="${q.type === 'numeric' ? 'Ergebnis' : 'Antwort'}"
             autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" aria-label="Antwort">
           ${q.unit ? html`<span class="unit">${q.unit}</span>` : ''}
         </form>`}
-      <div class="dock"><button class="btn block" data-submit ${q.type === 'mc' ? 'disabled' : ''}>${mode === 'pruefung' ? (idx + 1 < qs.length ? 'Weiter' : 'Abgeben') : 'Prüfen'}</button></div>
+      <div class="dock">${isEx(q) ? html`<button class="btn block" data-exreveal>Lösung zeigen</button>` : html`<button class="btn block" data-submit ${q.type === 'mc' ? 'disabled' : ''}>${mode === 'pruefung' ? (idx + 1 < qs.length ? 'Weiter' : 'Abgeben') : 'Prüfen'}</button>`}</div>
       <div style="height:200px"></div>
     `);
     if (mode === 'pruefung') tick();
@@ -213,6 +304,56 @@ export default function quiz(el, route) {
     $('[data-next]', fb).focus({ preventScroll: true });
   }
 
+  // ----- written exercises (spell-checked, then self-checked against a model solution) -----
+  let marks = [];
+
+  async function revealExercise() {
+    if (locked) return;
+    const q = qs[idx];
+    locked = true;
+    marks = q.fields.map(() => null);
+    const texts = $$('[data-exform] textarea', el).map(t => { t.readOnly = true; return t.value; });
+    const btn = $('[data-exreveal]', el);
+    if (btn) { btn.disabled = true; btn.textContent = 'Rechtschreibung wird geprüft …'; }
+    const checked = await proofread(texts);
+    if (qs[idx] !== q) return;   // user left meanwhile
+    q.fields.forEach((f, i) => {
+      const box = $(`[data-sol="${i}"]`, el);
+      box.innerHTML = String(html`${proofHtml(texts[i], checked && checked[i])}
+        <div class="ex-model"><span>Musterlösung</span>${md(f.solution)}</div>
+        <div class="ex-mark" role="group" aria-label="Selbstkontrolle ${f.label}">
+          <button type="button" data-mark="${i}" data-val="1">✓ Hatte ich</button>
+          <button type="button" data-mark="${i}" data-val="0">✗ Nicht / falsch</button>
+        </div>`);
+      box.hidden = false;
+    });
+    $('.dock', el).innerHTML = String(html`
+      ${q.explanation ? html`<div class="card expl-card">${md(q.explanation)}</div>` : ''}
+      <p class="caption" style="text-align:center;margin:10px 0">Vergleiche ehrlich – sinngemäß richtig zählt.</p>
+      <button class="btn block green" data-exdone disabled>Weiter</button>`);
+    $('[data-sol="0"]', el)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  function markField(i, val, btn) {
+    marks[i] = val;
+    $$(`[data-mark="${i}"]`, el).forEach(b => b.classList.toggle('on', b === btn));
+    btn.closest('.ex-field').classList.toggle('ok', val === 1);
+    btn.closest('.ex-field').classList.toggle('bad', val === 0);
+    const done = marks.every(m => m !== null);
+    $('[data-exdone]', el).disabled = !done;
+  }
+
+  function finishExercise() {
+    const q = qs[idx];
+    const right = marks.filter(m => m === 1).length;
+    const ok = right / marks.length >= 0.75;
+    const value = q.fields.map((f, i) => `**${f.label}:** ${$(`#ex${i}`, el).value.trim() || '–'}`).join('\n');
+    answers.push({ value, result: ok ? 'right' : 'wrong' });
+    store.recordQuiz(q.id, ok);
+    toast(ok ? `✓ ${right}/${marks.length} – +${store.XP.quizRight} XP` : `${right}/${marks.length} – kommt bei „Fehler üben“ wieder`);
+    nextQ();
+  }
+
   function nextQ() {
     idx++;
     if (idx < qs.length) show(); else finish();
@@ -249,7 +390,7 @@ export default function quiz(el, route) {
           <h2 class="section-title">Zum Nachlesen</h2>
           <div class="list review-list">${wrongOnes.map(({ q, a }) => html`<div class="item">
             <div style="font-weight:600">${md(q.question)}</div>
-            ${a.value !== null && a.value !== '' ? html`<div class="yours">Deine Antwort: ${q.type === 'mc' ? q.options[a.value] : a.value}</div>` : html`<div class="yours">Keine Antwort</div>`}
+            ${a.value !== null && a.value !== '' ? html`<div class="yours">Deine Antwort: ${q.type === 'mc' ? q.options[a.value] : isEx(q) ? html`<br>${md(a.value)}` : a.value}</div>` : html`<div class="yours">Keine Antwort</div>`}
             <div class="right">Richtig: ${md(solution(q))}</div>
             ${q.explanation ? html`<div class="caption" style="margin-top:6px">${md(q.explanation)}</div>` : ''}
           </div>`)}</div>` : ''}
@@ -278,16 +419,21 @@ export default function quiz(el, route) {
       return;
     }
     if ('submit' in t.dataset) return submit();
+    if ('exreveal' in t.dataset) return revealExercise();
+    if (t.dataset.mark !== undefined) return markField(+t.dataset.mark, +t.dataset.val, t);
+    if ('exdone' in t.dataset) return finishExercise();
     if ('next' in t.dataset) return nextQ();
   }
 
   function onSubmit(e) {
     if (e.target.matches('[data-form]')) { e.preventDefault(); locked ? nextQ() : submit(); }
+    if (e.target.matches('[data-exform]')) e.preventDefault();
   }
 
   function onKey(e) {
     if (e.metaKey || e.ctrlKey || e.altKey || !qs.length) return;
-    const inInput = e.target.matches('input');
+    const inInput = e.target.matches('input, textarea');
+    if (isEx(qs[idx] || {})) { if (e.key === 'Escape') { clearInterval(timer); exit(); } return; }
     if (e.key === 'Enter' && !inInput && !e.target.matches('button, a')) {
       e.preventDefault();
       if (locked) nextQ(); else submit();

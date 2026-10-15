@@ -543,6 +543,39 @@ details.cardrow .ans { padding: 0 0 14px 18px; color: var(--label2); font-size: 
 .xp-pop { display: inline-block; font: 800 15px var(--font-round); color: var(--orange); animation: pop .5s cubic-bezier(.3,1.6,.5,1); }
 @keyframes pop { from { transform: scale(.3); opacity: 0; } }
 
+/* Written exercises (Übungsblatt) */
+.exercise { display: grid; gap: 14px; }
+.ex-field {
+  background: var(--bg-elev); border-radius: 18px; padding: 12px 14px;
+  box-shadow: inset 0 0 0 2px var(--sep); transition: box-shadow .2s, background .2s;
+}
+.ex-field.ok { box-shadow: inset 0 0 0 2px var(--green); background: color-mix(in srgb, var(--green) 8%, var(--bg-elev)); }
+.ex-field.bad { box-shadow: inset 0 0 0 2px var(--red); background: color-mix(in srgb, var(--red) 6%, var(--bg-elev)); }
+.ex-field label { display: block; font: 700 15px var(--font-round); margin-bottom: 6px; }
+.ex-field textarea {
+  width: 100%; resize: vertical; min-height: 48px; border: 0; outline: none;
+  background: var(--fill2); border-radius: 12px; padding: 10px 12px; font-size: 16px; line-height: 1.4;
+}
+.ex-field textarea:focus { box-shadow: inset 0 0 0 2px var(--accent); }
+.ex-field textarea[readonly] { opacity: .85; }
+.ex-proof { margin-top: 10px; padding: 10px 12px; border-radius: 12px; font-size: 15px; line-height: 1.5;
+  background: color-mix(in srgb, var(--orange) 12%, transparent); }
+.ex-proof > span { display: block; font: 700 12px var(--font-round); text-transform: uppercase; letter-spacing: .04em; color: var(--orange); margin-bottom: 2px; }
+.ex-proof del { color: var(--red); text-decoration-thickness: 2px; }
+.ex-proof ins { color: var(--green-d); text-decoration: none; font-weight: 700; background: color-mix(in srgb, var(--green) 18%, transparent); border-radius: 4px; padding: 0 2px; margin-left: 2px; }
+.ex-proof ul { margin: 6px 0 0; font-size: 13px; color: var(--label2); }
+.ex-proof.clean { background: color-mix(in srgb, var(--green) 12%, transparent); color: var(--green-d); font-weight: 600; }
+.ex-proof.off, .ex-proof.empty { background: var(--fill2); color: var(--label2); }
+.ex-model { margin-top: 10px; padding: 10px 12px; border-radius: 12px; font-size: 15px; line-height: 1.45;
+  background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.ex-model span { display: block; font: 700 12px var(--font-round); text-transform: uppercase; letter-spacing: .04em; color: var(--accent); margin-bottom: 2px; }
+.ex-mark { display: flex; gap: 8px; margin-top: 10px; }
+.ex-mark button { flex: 1; padding: 9px 8px; border-radius: 12px; font-weight: 600; font-size: 15px;
+  background: var(--fill2); color: var(--label2); }
+.ex-mark button[data-val="1"].on { background: var(--green); color: #fff; }
+.ex-mark button[data-val="0"].on { background: var(--red); color: #fff; }
+.expl-card { font-size: 15px; color: var(--label2); line-height: 1.5; }
+
 .timer { font: 700 15px var(--font-round); color: var(--label2); font-variant-numeric: tabular-nums; }
 .timer.low { color: var(--red); }
 
