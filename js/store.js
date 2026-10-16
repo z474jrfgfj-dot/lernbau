@@ -137,13 +137,21 @@ export function addExam(exam) {
   state.examsAt = Date.now();
   save();
 }
-/** Add exams shipped with the app (from the school calendar) unless the user removed them before. */
+/** Add exams shipped with the app (from the school calendar) unless the user removed them before;
+ *  presets already on the device follow changes (e.g. a postponed date). */
 export function applyPresetExams(list) {
-  const have = new Set(state.exams.map(e => e.id));
+  const byId = new Map(state.exams.map(e => [e.id, e]));
   const hidden = new Set(state.hiddenExams || []);
-  const add = list.filter(e => !have.has(e.id) && !hidden.has(e.id));
-  if (!add.length) return;
-  state.exams.push(...add.map(e => ({ ...e })));
+  let changed = false;
+  for (const p of list) {
+    if (hidden.has(p.id)) continue;
+    const mine = byId.get(p.id);
+    if (!mine) { state.exams.push({ ...p }); changed = true; continue; }
+    for (const k of ['date', 'title', 'subject']) {
+      if (mine[k] !== p[k]) { mine[k] = p[k]; changed = true; }
+    }
+  }
+  if (!changed) return;
   state.exams.sort((a, b) => a.date.localeCompare(b.date));
   state.examsAt = Date.now();
   save();
