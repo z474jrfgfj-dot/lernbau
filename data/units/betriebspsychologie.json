@@ -1,0 +1,107 @@
+{
+  "unit": "betriebspsychologie",
+  "subject": "betriebspsychologie",
+  "decks": [
+    {
+      "id": "bp-nutzen",
+      "title": "Nutzen der Ausbildung",
+      "description": "Was die betriebliche Ausbildung dem Unternehmen, der Gesellschaft und dem Auszubildenden bringt.",
+      "sources": ["01_Nutzen Ausbildung.pdf"],
+      "cards": [
+        {"id": "bp-nutzen-c001", "type": "basic", "front": "Nutzen der Ausbildung für das **Unternehmen**? (mind. 4)", "back": "- Fachkräfte ans Unternehmen binden\n- günstige Arbeitskräfte\n- Kostenersparnis bei der Personalsuche\n- Fachkräfte nach eigenen Wünschen ausbilden\n- neue Ideen und Perspektiven\n- weniger Fehlbesetzungen"},
+        {"id": "bp-nutzen-c002", "type": "basic", "front": "Nutzen der Ausbildung für die **Gesellschaft**? (mind. 4)", "back": "- Fachkräftesicherung\n- Integration\n- weniger Arbeitslosigkeit\n- Wissensweitergabe zwischen Generationen\n- wirtschaftliche Stabilität\n- mehr Steuerzahler und Arbeitsplätze"},
+        {"id": "bp-nutzen-c003", "type": "basic", "front": "Nutzen der Ausbildung für den **Auszubildenden**? (mind. 4)", "back": "- eigenes Einkommen\n- soziale Fähigkeiten verbessern\n- Theorie direkt im Betrieb anwenden\n- gute Karrierechancen\n- rechtliche Sicherheit und Schutz\n- hohe Übernahmechancen"},
+        {"id": "bp-nutzen-c004", "type": "basic", "front": "Was ist das **duale** Ausbildungssystem?", "back": "Ausbildung an zwei Lernorten: **Betrieb** (Praxis) und **Berufsschule** (Theorie)."}
+      ],
+      "quiz": [
+        {"id": "bp-nutzen-q001", "type": "mc", "question": "Welcher Punkt ist ein Nutzen für das **Unternehmen**?", "options": ["Reduzierung der Arbeitslosigkeit", "Kostenersparnis bei der Personalsuche", "Eigenes Einkommen", "Integration"], "answer": 1, "explanation": "Wer selbst ausbildet, muss weniger Fachkräfte teuer suchen."},
+        {"id": "bp-nutzen-q002", "type": "mc", "question": "Welcher Punkt ist ein Nutzen für die **Gesellschaft**?", "options": ["Fachkräftesicherung", "Günstige Arbeitskräfte", "Hohe Übernahmechancen", "Neue Ideen im Betrieb"], "answer": 0, "explanation": "Fachkräftesicherung nützt der ganzen Volkswirtschaft."},
+        {"id": "bp-nutzen-q003", "type": "mc", "question": "Welcher Punkt ist ein Nutzen für den **Auszubildenden**?", "options": ["Weniger Fehlbesetzungen", "Mehr Steuerzahler", "Theorie aus der Berufsschule direkt im Betrieb anwenden", "Fachkräfte binden"], "answer": 2, "explanation": "Der Azubi verbindet Theorie und Praxis."},
+        {"id": "bp-nutzen-q004", "type": "exercise", "question": "**Arbeitsblatt:** Welchen Nutzen hat die Berufsausbildung? Nenne je **drei** Punkte.", "fields": [{"label": "Für das Unternehmen", "solution": "z. B. Fachkräfte binden, Kostenersparnis bei der Personalsuche, nach eigenen Wünschen ausbilden, neue Ideen, weniger Fehlbesetzungen."}, {"label": "Für die Gesellschaft", "solution": "z. B. Fachkräftesicherung, Integration, weniger Arbeitslosigkeit, Wissensweitergabe, wirtschaftliche Stabilität."}, {"label": "Für den Auszubildenden", "solution": "z. B. eigenes Einkommen, soziale Fähigkeiten, Theorie im Betrieb anwenden, Karrierechancen, rechtliche Sicherheit, Übernahmechancen."}], "explanation": ""}
+      ]
+    },
+    {
+      "id": "bp-gesetze",
+      "title": "Gesetze in der Ausbildung",
+      "description": "Welches Gesetz bzw. welche Verordnung was in der Ausbildung regelt – „das muss man wissen, den Rest kann man nachschlagen“.",
+      "sources": ["Gesetze in der Ausbildung.pdf"],
+      "cards": [
+        {"id": "bp-gesetze-c001", "type": "basic", "front": "**Grundgesetz (GG)** – was regelt es in Bezug auf die Ausbildung?", "back": "Die **Grundrechte**: Menschenwürde, Gleichheit vor dem Gesetz, Religionsfreiheit, **freie Berufswahl**, Versammlungsfreiheit."},
+        {"id": "bp-gesetze-c002", "type": "basic", "front": "**Berufsbildungsgesetz (BBiG)** – was regelt es?", "back": "Rechte und Pflichten in der Ausbildung: **Vergütung, Kündigung, Zeugnis, Probezeit**."},
+        {"id": "bp-gesetze-c003", "type": "basic", "front": "**Handwerksordnung (HwO)** – was regelt sie?", "back": "Berufsbildung im Handwerk: Berechtigung zum Einstellen und Ausbilden, Prüfungswesen, Ausbildungsordnung, Änderung der Ausbildungszeit."},
+        {"id": "bp-gesetze-c004", "type": "basic", "front": "**Jugendarbeitsschutzgesetz (JArbSchG)** – was regelt es?", "back": "Arbeitsbedingungen und Beschäftigung **Jugendlicher** unter 18 (Arbeitszeit, Pausen, Urlaub, Berufsschulzeiten, ärztliche Untersuchung).", "hint": "Kam im Unterricht noch nicht dran – Inhalte ergänzt."},
+        {"id": "bp-gesetze-c005", "type": "basic", "front": "**Jugendschutzgesetz (JuSchG)** – was regelt es?", "back": "Schutz Jugendlicher in der **Öffentlichkeit** und vor Medien (z. B. Alkohol, Tabak, Gaststätten, Altersfreigaben).", "hint": "Kam im Unterricht noch nicht dran – Inhalte ergänzt."},
+        {"id": "bp-gesetze-c006", "type": "basic", "front": "**Arbeitszeitgesetz (ArbZG)** – was regelt es?", "back": "Arbeitszeiten für **Erwachsene**: Arbeits-, Pausen- und Ruhezeiten, Schichtarbeit."},
+        {"id": "bp-gesetze-c007", "type": "basic", "front": "**Ausbildungsverordnung (AVO)** – was regelt sie?", "back": "Für jeden Ausbildungsberuf: **Berufsbezeichnung, Ausbildungsdauer, Ausbildungsrahmenplan** (zeitliche und inhaltliche Gliederung), **Prüfungsanforderungen**."},
+        {"id": "bp-gesetze-c008", "type": "basic", "front": "**Prüfungsordnung (PO)** – was regelt sie?", "back": "Rahmenbedingungen der Gesellenprüfung: Prüfungsausschüsse, Durchführung, Bewertung, Wiederholung."},
+        {"id": "bp-gesetze-c009", "type": "basic", "front": "**Ausbildungsvertrag** – was regelt er?", "back": "Rechte und Pflichten zwischen Azubi und Betrieb: Ausbildungsdauer, Probezeit, Urlaubsanspruch, Vergütung, Berichtsheft."}
+      ],
+      "quiz": [
+        {"id": "bp-gesetze-q001", "type": "mc", "question": "Wo sind **Vergütung, Kündigung, Zeugnis und Probezeit** der Ausbildung geregelt?", "options": ["Grundgesetz", "Berufsbildungsgesetz (BBiG)", "Arbeitszeitgesetz", "Jugendschutzgesetz"], "answer": 1, "explanation": "BBiG = Rechte und Pflichten in der Ausbildung."},
+        {"id": "bp-gesetze-q002", "type": "mc", "question": "Welches Gesetz garantiert die **freie Berufswahl**?", "options": ["Grundgesetz", "Handwerksordnung", "Prüfungsordnung", "BBiG"], "answer": 0, "explanation": "Art. 12 GG – Grundrecht."},
+        {"id": "bp-gesetze-q003", "type": "mc", "question": "Wo steht der **Ausbildungsrahmenplan** eines Berufs?", "options": ["Im Ausbildungsvertrag", "In der Ausbildungsverordnung", "Im Arbeitszeitgesetz", "Im Grundgesetz"], "answer": 1, "explanation": "Die AVO regelt Dauer, Rahmenplan und Prüfungsanforderungen."},
+        {"id": "bp-gesetze-q004", "type": "mc", "question": "Welches Gesetz regelt Arbeits-, Pausen- und Ruhezeiten für **Erwachsene**?", "options": ["JArbSchG", "ArbZG", "JuSchG", "HwO"], "answer": 1, "explanation": "Arbeitszeitgesetz (ArbZG). Für Jugendliche gilt das JArbSchG."},
+        {"id": "bp-gesetze-q005", "type": "mc", "question": "Wo werden Prüfungsausschüsse und Wiederholung der Gesellenprüfung geregelt?", "options": ["Prüfungsordnung", "Grundgesetz", "Jugendschutzgesetz", "Ausbildungsvertrag"], "answer": 0, "explanation": "Prüfungsordnung (PO)."},
+        {"id": "bp-gesetze-q006", "type": "mc", "question": "Wer ist für die Ausbildung im **Handwerk** zusätzlich zuständig?", "options": ["Handwerksordnung (HwO)", "Arbeitszeitgesetz", "Jugendschutzgesetz", "Strafgesetzbuch"], "answer": 0, "explanation": "HwO: Einstellen, Ausbilden, Prüfungswesen im Handwerk."},
+        {"id": "bp-gesetze-q007", "type": "mc", "question": "Ein 16-jähriger Azubi soll bis 22 Uhr arbeiten. Welches Gesetz ist entscheidend?", "options": ["Arbeitszeitgesetz", "Jugendarbeitsschutzgesetz", "Grundgesetz", "Prüfungsordnung"], "answer": 1, "explanation": "Für Jugendliche unter 18 gilt das JArbSchG."},
+        {"id": "bp-gesetze-q008", "type": "exercise", "question": "**Arbeitsblatt:** Ergänze für jedes Gesetz, was es regelt.", "fields": [{"label": "BBiG", "solution": "Rechte und Pflichten in der Ausbildung (Vergütung, Kündigung, Zeugnis, Probezeit)."}, {"label": "Ausbildungsverordnung", "solution": "Berufsbezeichnung, Dauer, Ausbildungsrahmenplan, Prüfungsanforderungen eines Berufs."}, {"label": "ArbZG", "solution": "Arbeits-, Pausen- und Ruhezeiten für Erwachsene."}, {"label": "Ausbildungsvertrag", "solution": "Rechte und Pflichten zwischen Azubi und Betrieb (Dauer, Probezeit, Urlaub, Vergütung, Berichtsheft)."}], "explanation": ""}
+      ]
+    },
+    {
+      "id": "bp-unterweisung",
+      "title": "Unterweisung planen & durchführen",
+      "description": "Ablauf einer Unterweisung mit Punkten, Methoden, didaktischen Prinzipien, Lernbereichen und Kontrolle.",
+      "sources": ["Pädagogik Unterweisung.pdf"],
+      "cards": [
+        {"id": "bp-unterweisung-c001", "type": "basic", "front": "Nenne die **vier Phasen** einer Unterweisung (mit Punkten im Bewertungsbogen).", "back": "1. **Begrüßung** (10)\n2. **Einstieg** (30)\n3. **Erarbeitung** (40)\n4. **Kontrolle** (20)"},
+        {"id": "bp-unterweisung-c002", "type": "basic", "front": "Was gehört zur **Begrüßung**?", "back": "Vorstellung, Anrede, Einstiegsgespräch („Icebreaker“)."},
+        {"id": "bp-unterweisung-c003", "type": "basic", "front": "Womit kann man den **Einstieg** gestalten?", "back": "Verbal, Film, Muster oder sonstiges Anschauungsmaterial – und Wahl der Lernmethode."},
+        {"id": "bp-unterweisung-c004", "type": "basic", "front": "Ablauf der **modifizierten Vier-Stufen-Methode**?", "back": "1. Einstieg, Hinführung, Zielsetzung, Planung\n2. **Vormachen und Erklären**\n3. **Nachmachen und Erklären lassen** + Kontrolle"},
+        {"id": "bp-unterweisung-c005", "type": "basic", "front": "Ablauf der **explorativen Methode**?", "back": "1. Einstieg, Hinführung, Zielsetzung, Planung\n2. Selbst erarbeiten: **Leittext, Videoclip, Stationenlernen**\n3. Kontrolle"},
+        {"id": "bp-unterweisung-c006", "type": "basic", "front": "Woran muss man in der **Erarbeitung** immer denken?", "back": "Hinweis auf **Sicherheitsvorschriften** und **persönliche Schutzausrüstung (PSA)**."},
+        {"id": "bp-unterweisung-c007", "type": "basic", "front": "Nenne die **didaktischen Prinzipien**.", "back": "Anschaulichkeit, entwicklungsgemäß, Praxisnähe, Aktivität, verknüpfend, erfolgssichernd, vom Leichten zum Schweren."},
+        {"id": "bp-unterweisung-c008", "type": "basic", "front": "Welche drei **Lernbereiche** gibt es?", "back": "- **Affektiv** – Gefühle, Einstellungen\n- **Psychomotorisch** – aktive, körperliche Tätigkeit\n- **Kognitiv** – geistige Leistungen, Wissen"},
+        {"id": "bp-unterweisung-c009", "type": "basic", "front": "Wie kann man in der **Kontrolle** prüfen?", "back": "Verbal (Abfrage), schriftlich (Aufgabe), spielerisch (Quiz, Memory, Zuordnung). Schwierigkeitsgrad: niedrig, angemessen, hoch, Transfer."},
+        {"id": "bp-unterweisung-c010", "type": "basic", "front": "**Notenschlüssel** des Bewertungsbogens (100 Punkte)?", "back": "100–92 = 1 · 91–81 = 2 · 80–67 = 3 · 66–50 = 4 · 49–30 = 5 · 29–0 = 6"}
+      ],
+      "quiz": [
+        {"id": "bp-unterweisung-q001", "type": "mc", "question": "Welche Phase hat im Bewertungsbogen die **meisten Punkte**?", "options": ["Begrüßung", "Einstieg", "Erarbeitung", "Kontrolle"], "answer": 2, "explanation": "Erarbeitung = 40 Punkte."},
+        {"id": "bp-unterweisung-q002", "type": "mc", "question": "Bei welcher Methode macht der Ausbilder **vor** und der Azubi **nach**?", "options": ["Explorative Methode", "Modifizierte Vier-Stufen-Methode", "Leittextmethode", "Frontalunterricht"], "answer": 1, "explanation": "Vier-Stufen-Methode: Vormachen und Erklären, Nachmachen und Erklären lassen."},
+        {"id": "bp-unterweisung-q003", "type": "mc", "question": "Ein Azubi erarbeitet sich das Thema selbst mit Leittext und Stationen. Welche Methode?", "options": ["Explorative Methode", "Vier-Stufen-Methode", "Vortrag", "Demonstration"], "answer": 0, "explanation": "Explorativ = selbst erkunden."},
+        {"id": "bp-unterweisung-q004", "type": "mc", "question": "Das Mauern einer Ecke trainieren gehört zum Lernbereich …", "options": ["affektiv", "kognitiv", "psychomotorisch", "sozial"], "answer": 2, "explanation": "Aktive körperliche Tätigkeit = psychomotorisch."},
+        {"id": "bp-unterweisung-q005", "type": "mc", "question": "Formeln für die Mengenberechnung verstehen gehört zum Lernbereich …", "options": ["affektiv", "kognitiv", "psychomotorisch", "emotional"], "answer": 1, "explanation": "Geistige Leistung = kognitiv."},
+        {"id": "bp-unterweisung-q006", "type": "mc", "question": "Was ist **kein** didaktisches Prinzip?", "options": ["Anschaulichkeit", "Vom Leichten zum Schweren", "Praxisnähe", "Vom Schweren zum Leichten"], "answer": 3, "explanation": "Richtig ist: vom Leichten zum Schweren."},
+        {"id": "bp-unterweisung-q007", "type": "mc", "question": "Mit 78 von 100 Punkten erhält man die Note …", "options": ["2", "3", "4", "1"], "answer": 1, "explanation": "80–67 Punkte = Note 3."},
+        {"id": "bp-unterweisung-q008", "type": "exercise", "question": "Plane eine kurze Unterweisung „**Einen Akkuschrauber sicher benutzen**“ nach der modifizierten Vier-Stufen-Methode.", "fields": [{"label": "Begrüßung / Einstieg", "solution": "Begrüßen, Icebreaker, Ziel nennen; Gerät zeigen (Anschauungsmaterial)."}, {"label": "Vormachen und Erklären", "solution": "Akku einsetzen, Bit wechseln, Drehmoment/Drehrichtung einstellen, Schraube setzen – jeden Schritt erklären; Hinweis auf Sicherheit (Schutzbrille, fester Stand)."}, {"label": "Nachmachen und Erklären lassen", "solution": "Azubi macht es selbst nach und erklärt dabei die Schritte."}, {"label": "Kontrolle", "solution": "Fragen stellen oder eine kleine Aufgabe (z. B. drei Schrauben setzen) prüfen und Feedback geben."}], "explanation": "Übungsbeispiel – andere sinnvolle Lösungen sind möglich."}
+      ]
+    },
+    {
+      "id": "bp-ausbildungsverordnung",
+      "title": "Ausbildungsverordnung Bautechnischer Konstrukteur",
+      "description": "Die neue Ausbildungsverordnung (2025) als Beispiel einer AVO: Eckdaten, Struktur und Prüfungen.",
+      "sources": ["VO_Bautechn_Konstr_2025.pdf"],
+      "cards": [
+        {"id": "bp-ausbildungsverordnung-c001", "type": "basic", "front": "Welcher Beruf ersetzt ab **1.8.2026** den Bauzeichner?", "back": "**Bautechnische/r Konstrukteur/in** (Verordnung vom 3.9.2025)."},
+        {"id": "bp-ausbildungsverordnung-c002", "type": "basic", "front": "Wie lange dauert die Ausbildung zum Bautechnischen Konstrukteur?", "back": "**3 Jahre** (§ 2)."},
+        {"id": "bp-ausbildungsverordnung-c003", "type": "basic", "front": "Auf welcher Grundlage wurde die Verordnung erlassen?", "back": "**§ 4 Abs. 1 und § 5 BBiG** – vom Bundesministerium für Wirtschaft und Energie."},
+        {"id": "bp-ausbildungsverordnung-c004", "type": "basic", "front": "Welche drei **Fachrichtungen** gibt es?", "back": "1. Architektur\n2. Ingenieurbau\n3. Tief-, Verkehrswege- und Landschaftsbau"},
+        {"id": "bp-ausbildungsverordnung-c005", "type": "basic", "front": "Was ist das Ziel der Ausbildung (berufliche Handlungsfähigkeit)?", "back": "Selbstständiges **Planen, Durchführen und Kontrollieren** (§ 1 Abs. 3 BBiG)."},
+        {"id": "bp-ausbildungsverordnung-c006", "type": "basic", "front": "Was muss der Ausbildende spätestens zu Beginn erstellen?", "back": "Einen individuellen **Ausbildungsplan** (§ 7)."},
+        {"id": "bp-ausbildungsverordnung-c007", "type": "basic", "front": "Wie viel **überbetriebliche Ausbildung** gibt es?", "back": "**6 Wochen** im 1. Ausbildungsjahr (§ 6)."},
+        {"id": "bp-ausbildungsverordnung-c008", "type": "basic", "front": "Wann und wie ist die **Zwischenprüfung**?", "back": "Im **4. Ausbildungshalbjahr**, Prüfungsbereich „Technische Zeichnung“, 330 min (240 min Arbeitsaufgabe = 60 %, 90 min schriftlich = 40 %)."},
+        {"id": "bp-ausbildungsverordnung-c009", "type": "basic", "front": "Prüfungsbereiche und Gewichtung der **Abschlussprüfung**?", "back": "- Erstellen von Dokumenten (betrieblicher Auftrag) – **50 %**\n- Anwenden von Planungs- und Konstruktionsregeln – **25 %**\n- Anwenden des digitalen Informationsmodells – **15 %**\n- Wirtschafts- und Sozialkunde – **10 %**"},
+        {"id": "bp-ausbildungsverordnung-c010", "type": "basic", "front": "Wann ist die Abschlussprüfung **bestanden**?", "back": "Gesamtergebnis mind. „ausreichend“, in mind. **drei** Prüfungsbereichen mind. „ausreichend“, in **keinem** „ungenügend“."},
+        {"id": "bp-ausbildungsverordnung-c011", "type": "basic", "front": "Was gilt für die **mündliche Ergänzungsprüfung**?", "back": "In **einem** schriftlichen Prüfungsbereich (nicht beim betrieblichen Auftrag), wenn schlechter als „ausreichend“ und ausschlaggebend; ca. 15 min; Gewichtung bisher : mündlich = **2 : 1**."}
+      ],
+      "quiz": [
+        {"id": "bp-ausbildungsverordnung-q001", "type": "mc", "question": "Wie lange dauert die Ausbildung zum Bautechnischen Konstrukteur?", "options": ["2 Jahre", "2,5 Jahre", "3 Jahre", "3,5 Jahre"], "answer": 2, "explanation": "§ 2: drei Jahre."},
+        {"id": "bp-ausbildungsverordnung-q002", "type": "mc", "question": "Welcher Prüfungsbereich zählt in der Abschlussprüfung am meisten?", "options": ["WiSo", "Digitales Informationsmodell", "Erstellen von Dokumenten (betrieblicher Auftrag)", "Planungs- und Konstruktionsregeln"], "answer": 2, "explanation": "50 % – Erstellen von Dokumenten."},
+        {"id": "bp-ausbildungsverordnung-q003", "type": "mc", "question": "Wie viel zählt **Wirtschafts- und Sozialkunde** in der Abschlussprüfung?", "options": ["10 %", "15 %", "25 %", "50 %"], "answer": 0, "explanation": "WiSo = 10 %."},
+        {"id": "bp-ausbildungsverordnung-q004", "type": "mc", "question": "Wann findet die Zwischenprüfung statt?", "options": ["Im 2. Ausbildungshalbjahr", "Im 4. Ausbildungshalbjahr", "Am Ende des 3. Jahres", "Vor der Probezeit"], "answer": 1, "explanation": "Im 4. Ausbildungshalbjahr."},
+        {"id": "bp-ausbildungsverordnung-q005", "type": "mc", "question": "Ab wann gilt die neue Verordnung?", "options": ["1.1.2025", "3.9.2025", "1.8.2026", "1.9.2027"], "answer": 2, "explanation": "In Kraft ab 1.8.2026, die Bauzeichner-VO von 2002 läuft am 31.7.2026 aus."},
+        {"id": "bp-ausbildungsverordnung-q006", "type": "mc", "question": "Welche Fachrichtung gibt es **nicht**?", "options": ["Architektur", "Ingenieurbau", "Tief-, Verkehrswege- und Landschaftsbau", "Haustechnik"], "answer": 3, "explanation": "Drei Fachrichtungen: Architektur, Ingenieurbau, Tief-/Verkehrswege-/Landschaftsbau."},
+        {"id": "bp-ausbildungsverordnung-q007", "type": "mc", "question": "Wie werden bisheriges Ergebnis und mündliche Ergänzungsprüfung gewichtet?", "options": ["1 : 1", "2 : 1", "3 : 1", "1 : 2"], "answer": 1, "explanation": "Bisheriges Ergebnis : mündlich = 2 : 1."}
+      ]
+    }
+  ]
+}

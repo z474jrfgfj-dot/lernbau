@@ -3,14 +3,69 @@ import * as store from '../store.js';
 import * as content from '../content.js';
 import { html, md, $, $$, shuffle, confetti, ring, plural, toast } from '../util.js';
 import { icon, scopeFrom, backLink } from '../ui.js';
+import * as speech from '../speech.js';
 
 const MODES = {
+  vokabeln: { title: 'Vokabeltrainer', emoji: '🔤', desc: 'Übersetzung eintippen – Deutsch ↔ Englisch, wird automatisch geprüft' },
   uebung: { title: 'Üben', emoji: '🎯', desc: 'Sofort Feedback mit Erklärung' },
   uebungen: { title: 'Übungsblatt', emoji: '✍️', desc: 'Situationen selbst analysieren wie auf dem Arbeitsblatt – mit Musterlösung' },
   pruefung: { title: 'Probeprüfung', emoji: '📝', desc: 'Mit Zeitlimit, Auswertung und Note am Ende' },
   fehler: { title: 'Fehler üben', emoji: '🔁', desc: 'Nur Fragen, die du falsch hattest' },
 };
 const isEx = q => q.type === 'exercise';
+const isVocab = q => q.type === 'vocab';
+const isOk = r => r === 'right' || r === 'typo';
+
+/** Vocabulary cards of a scope as typed translation questions (direction follows the vocab setting). */
+function vocabQuestions(scope) {
+  return content.items(scope).filter(it => it.dir).map(it => {
+    const c = it.card;
+    const toDe = it.dir === 'en-de';
+    return {
+      id: `v:${it.id}`, type: 'vocab', dir: it.dir, deck: it.deck, subject: it.subject, card: c,
+      question: toDe ? `Was heißt **${c.en}** auf Deutsch?` : `Wie heißt **${c.de}** auf Englisch?${/\s[–—-]\s/.test(c.en) ? ' *(alle Verbformen)*' : ''}`,
+      answer: toDe ? c.de : c.en,
+      explanation: [c.example && `*${c.example}*${c.exampleDe ? ` – ${c.exampleDe}` : ''}`, c.note].filter(Boolean).join('\n'),
+    };
+  });
+}
+
+// ---------- vocabulary answer checking ----------
+const ARTICLE = /^(der|die|das|den|dem|des|ein|eine|einen|to|the|a|an)\s+/;
+const vclean = s => norm(s).replace(ARTICLE, '').replace(/[.!?"]/g, '')
+  .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').trim();   // "geruest" = "Gerüst"
+const close = (a, b) => a === b ? 'right' : (b.length >= 5 && lev(a, b) <= 1 ? 'typo' : null);
+
+function vocabAlternatives(target) {
+  const t = String(target);
+  const parens = [...t.matchAll(/\(([^)]*)\)/g)].map(m => m[1]);
+  return [...t.replace(/\([^)]*\)/g, ' ').split(/\s*[\/;,]\s*/), ...parens.flatMap(p => p.split(/\s*[\/;,]\s*/))]
+    .map(vclean).filter(Boolean);
+}
+
+/** 'right' | 'typo' | 'partial' | 'wrong' – articles optional, any listed meaning counts, verbs need all forms. */
+export function checkVocab(target, value) {
+  const v = vclean(value);
+  if (!v) return 'wrong';
+  if (/\s[–—-]\s/.test(target)) {
+    const slots = String(target).split(/\s[–—-]\s/).map(s => s.split('/').map(vclean));
+    const typed = v.split(/\s*[–—,;/-]\s*|\s+/).filter(Boolean);
+    if (typed.length === slots.length) {
+      const res = slots.map((alts, i) => alts.map(a => close(typed[i], a)).find(Boolean) || null);
+      if (res.every(r => r === 'right')) return 'right';
+      if (res.every(Boolean)) return 'typo';
+    }
+    if (typed.length === 1 && slots[0].some(a => close(v, a))) return 'partial';
+    return 'wrong';
+  }
+  let best = 'wrong';
+  for (const a of vocabAlternatives(target)) {
+    const r = close(v, a);
+    if (r === 'right') return 'right';
+    if (r === 'typo') best = 'typo';
+  }
+  return best;
+}
 const SEC_PER_Q = 90;
 
 // ---------- answer checking ----------
@@ -39,6 +94,7 @@ export function parseNum(s) {
 
 /** returns 'right' | 'typo' | 'wrong' */
 export function check(q, value) {
+  if (isVocab(q)) return checkVocab(q.answer, value);
   if (q.type === 'mc') return value === q.answer ? 'right' : 'wrong';
   if (q.type === 'numeric') {
     const n = parseNum(value);
@@ -150,8 +206,9 @@ function grade(pct) {
 
 function pick(scope, mode, size) {
   const st = store.get().quiz;
-  let pool = content.questions(scope);
-  if (mode === 'fehler') pool = pool.filter(q => st.wrong[q.id]);
+  let pool = mode === 'vokabeln' ? vocabQuestions(scope) : content.questions(scope);
+  if (mode === 'vokabeln') { /* all vocab questions */ }
+  else if (mode === 'fehler') pool = pool.filter(q => st.wrong[q.id]);
   else if (mode === 'uebungen') pool = pool.filter(isEx);
   else pool = pool.filter(q => !isEx(q));   // written exercises need self-checking, not timed/auto-graded
   // Mistakes first, then never seen, then least recently seen; random within ties.
@@ -176,8 +233,11 @@ export default function quiz(el, route) {
     const all = content.questions(scope).length;
     const wrong = content.questions(scope).filter(q => store.get().quiz.wrong[q.id]).length;
     const exN = content.questions(scope).filter(isEx).length;
+    const vocN = content.items(scope).filter(it => it.dir === 'en-de').length;
     const off = k => (k === 'fehler' && !wrong) || (k === 'uebungen' && !exN);
-    const note = k => k === 'fehler' ? `${wrong} offen · ` : k === 'uebungen' ? `${plural(exN, 'Übung', 'Übungen')} · ` : '';
+    const note = k => k === 'fehler' ? `${wrong} offen · ` : k === 'uebungen' ? `${plural(exN, 'Übung', 'Übungen')} · `
+      : k === 'vokabeln' ? `${plural(vocN, 'Vokabel', 'Vokabeln')} · ` : '';
+    const dir = store.settings().vocabDir;
     el.innerHTML = String(html`
       ${backLink(backHref)}
       <h1 class="large-title">Quiz</h1>
@@ -185,11 +245,15 @@ export default function quiz(el, route) {
       ${all ? html`
       <h2 class="section-title">Modus</h2>
       <div class="list">
-        ${Object.entries(MODES).filter(([k]) => k !== 'uebungen' || exN).map(([k, m]) => html`<button class="row has-icon" data-mode="${k}" ${off(k) ? 'disabled style="opacity:.45"' : ''}>
+        ${Object.entries(MODES).filter(([k]) => (k !== 'uebungen' || exN) && (k !== 'vokabeln' || vocN)).map(([k, m]) => html`<button class="row has-icon" data-mode="${k}" ${off(k) ? 'disabled style="opacity:.45"' : ''}>
           <span class="icon-tile" style="--tile:var(--fill2)">${m.emoji}</span>
           <div class="grow"><div class="title">${m.title}</div><div class="sub">${note(k)}${m.desc}</div></div>
           ${icon.chev}</button>`)}
       </div>
+      ${vocN ? html`<h2 class="section-title">Vokabel-Richtung</h2>
+      <div class="segmented" data-dirseg>
+        ${[['both', 'Beide'], ['de-en', 'Deutsch → Englisch'], ['en-de', 'Englisch → Deutsch']].map(([v, l]) => html`<button class="${dir === v ? 'on' : ''}" data-dir="${v}">${l}</button>`)}
+      </div>` : ''}
       <h2 class="section-title">Anzahl Fragen</h2>
       <div class="segmented" data-size>
         ${[5, 10, 20, 40].map(n => html`<button class="${n === size ? 'on' : ''}" data-n="${n}">${n}</button>`)}
@@ -237,7 +301,7 @@ export default function quiz(el, route) {
         ${mode === 'pruefung' ? html`<span class="timer">–:––</span>` : html`<span class="count">${idx + 1}/${qs.length}</span>`}
       </div>
       <p class="caption" style="margin-top:8px">${q.subject.icon} ${q.deck.title}${mode === 'pruefung' ? ` · Frage ${idx + 1} von ${qs.length}` : ''}</p>
-      <div class="qtext ${long ? 'long' : ''}">${md(q.question)}</div>
+      <div class="qtext ${long ? 'long' : ''}">${md(q.question)}${isVocab(q) && q.dir === 'en-de' ? html` <button type="button" class="icon-btn speak" data-speak="${q.card.en}" aria-label="Vorlesen">${icon.speaker}</button>` : ''}</div>
       ${q.type === 'mc' ? html`<div class="options" role="radiogroup">
           ${optOrder.map((oi, k) => html`<button class="opt" role="radio" aria-checked="false" data-opt="${oi}"><span class="k">${k + 1}</span><span>${md(q.options[oi])}</span></button>`)}
         </div>`
@@ -249,7 +313,7 @@ export default function quiz(el, route) {
           </div>`)}
         </form>`
         : html`<form class="answer-field" data-form autocomplete="off">
-          <input name="a" ${q.type === 'numeric' ? 'inputmode="decimal"' : ''} placeholder="${q.type === 'numeric' ? 'Ergebnis' : 'Antwort'}"
+          <input name="a" ${q.type === 'numeric' ? 'inputmode="decimal"' : ''} placeholder="${q.type === 'numeric' ? 'Ergebnis' : isVocab(q) ? (q.dir === 'en-de' ? 'Auf Deutsch …' : 'In English …') : 'Antwort'}"
             autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" aria-label="Antwort">
           ${q.unit ? html`<span class="unit">${q.unit}</span>` : ''}
         </form>`}
@@ -276,7 +340,7 @@ export default function quiz(el, route) {
     answers.push({ value, result });
     if (mode === 'pruefung') { idx++; return idx < qs.length ? show() : finish(); }
     locked = true;
-    const ok = result !== 'wrong';
+    const ok = isOk(result);
     store.recordQuiz(q.id, ok);
     if (q.type === 'mc') {
       $('.options', el).classList.add('locked');
@@ -294,7 +358,7 @@ export default function quiz(el, route) {
     const fb = document.createElement('div');
     fb.className = `feedback ${ok ? 'ok' : 'bad'}`;
     fb.innerHTML = String(html`<div>
-      <h3>${ok ? (result === 'typo' ? '✓ Fast richtig – Tippfehler' : '✓ Richtig!') : '✗ Leider falsch'}
+      <h3>${ok ? (result === 'typo' ? '✓ Fast richtig – Tippfehler' : '✓ Richtig!') : result === 'partial' ? '◐ Teilweise – alle Formen nötig' : '✗ Leider falsch'}
         <span class="xp-pop">+${ok ? store.XP.quizRight : store.XP.quizWrong} XP</span></h3>
       ${!ok || result === 'typo' ? html`<p class="sol">Lösung: ${md(solution(q))}</p>` : ''}
       ${q.explanation ? html`<div class="expl">${md(q.explanation)}</div>` : ''}
@@ -314,12 +378,12 @@ export default function quiz(el, route) {
     marks = q.fields.map(() => null);
     const texts = $$('[data-exform] textarea', el).map(t => { t.readOnly = true; return t.value; });
     const btn = $('[data-exreveal]', el);
-    if (btn) { btn.disabled = true; btn.textContent = 'Rechtschreibung wird geprüft …'; }
-    const checked = await proofread(texts);
+    if (btn && !q.noSpell) { btn.disabled = true; btn.textContent = 'Rechtschreibung wird geprüft …'; }
+    const checked = q.noSpell ? null : await proofread(texts);   // noSpell: formulas, shortcuts …
     if (qs[idx] !== q) return;   // user left meanwhile
     q.fields.forEach((f, i) => {
       const box = $(`[data-sol="${i}"]`, el);
-      box.innerHTML = String(html`${proofHtml(texts[i], checked && checked[i])}
+      box.innerHTML = String(html`${q.noSpell ? '' : proofHtml(texts[i], checked && checked[i])}
         <div class="ex-model"><span>Musterlösung</span>${md(f.solution)}</div>
         <div class="ex-mark" role="group" aria-label="Selbstkontrolle ${f.label}">
           <button type="button" data-mark="${i}" data-val="1">✓ Hatte ich</button>
@@ -361,14 +425,14 @@ export default function quiz(el, route) {
 
   function finish() {
     clearInterval(timer);
-    if (mode === 'pruefung') qs.forEach((q, i) => store.recordQuiz(q.id, answers[i]?.result !== 'wrong'));
-    const right = answers.filter(a => a.result !== 'wrong').length;
+    if (mode === 'pruefung') qs.forEach((q, i) => store.recordQuiz(q.id, isOk(answers[i]?.result)));
+    const right = answers.filter(a => isOk(a.result)).length;
     const pct = Math.round((right / qs.length) * 100);
     store.recordQuizResult({ scope, mode, n: qs.length, right });
     if (right === qs.length && qs.length >= 5) store.bonusXp(10);
     const xp = store.get().xp - xp0;
     const [note, noteColor] = grade(pct);
-    const wrongOnes = qs.map((q, i) => ({ q, a: answers[i] })).filter(x => x.a?.result === 'wrong');
+    const wrongOnes = qs.map((q, i) => ({ q, a: answers[i] })).filter(x => !isOk(x.a?.result));
     el.innerHTML = String(html`
       <div class="summary">
         ${mode === 'pruefung'
@@ -382,8 +446,8 @@ export default function quiz(el, route) {
           <div class="tile" style="--tc:var(--red)"><div class="h">Falsch</div><b>${qs.length - right}</b></div>
         </div>
         <div class="btn-row" style="flex-direction:column">
-          ${wrongOnes.length ? html`<button class="btn red block" data-mode="fehler">Fehler üben (${wrongOnes.length})</button>` : ''}
-          <button class="btn block ${wrongOnes.length ? 'secondary' : ''}" data-mode="${mode === 'fehler' ? 'uebung' : mode}">Neue Runde</button>
+          ${wrongOnes.length && mode !== 'vokabeln' ? html`<button class="btn red block" data-mode="fehler">Fehler üben (${wrongOnes.length})</button>` : ''}
+          <button class="btn block ${wrongOnes.length ? 'secondary' : ''}" data-mode="${mode === 'fehler' ? 'uebung' : mode}">${mode === 'vokabeln' && wrongOnes.length ? 'Neue Runde – Fehler zuerst' : 'Neue Runde'}</button>
           <button class="btn plain block" data-close>Fertig</button>
         </div>
         ${wrongOnes.length ? html`
@@ -407,6 +471,11 @@ export default function quiz(el, route) {
       return exit();
     }
     if (t.dataset.mode && !t.disabled) return start(t.dataset.mode);
+    if (t.dataset.dir) {
+      store.setSetting('vocabDir', t.dataset.dir);
+      $$('[data-dir]', el).forEach(b => b.classList.toggle('on', b === t));
+      return;
+    }
     if (t.dataset.n) {
       size = +t.dataset.n;
       store.setSetting('quizSize', size);
@@ -418,6 +487,7 @@ export default function quiz(el, route) {
       $('[data-submit]', el).disabled = false;
       return;
     }
+    if (t.dataset.speak) return speech.speak(t.dataset.speak);
     if ('submit' in t.dataset) return submit();
     if ('exreveal' in t.dataset) return revealExercise();
     if (t.dataset.mark !== undefined) return markField(+t.dataset.mark, +t.dataset.val, t);

@@ -7,5 +7,9 @@
   { "id": "vermessung",      "name": "Vermessung",      "icon": "🧭", "color": "#34C759", "teacher": "" },
   { "id": "mathe",           "name": "Mathe",           "icon": "➗", "color": "#AF52DE", "teacher": "Hinte" },
   { "id": "deutsch",         "name": "Deutsch",         "icon": "💬", "color": "#FF2D55", "teacher": "Schnabel" },
-  { "id": "wiso",            "name": "WiSo / ReSo",     "icon": "⚖️", "color": "#30B0C7", "teacher": "Frank" }
+  { "id": "wiso",            "name": "WiSo / ReSo",     "icon": "⚖️", "color": "#30B0C7", "teacher": "Frank" },
+  { "id": "baurecht",        "name": "Baurecht",        "icon": "🏛️", "color": "#8E6E53", "teacher": "Carl" },
+  { "id": "betriebspsychologie", "name": "Betriebspsychologie", "icon": "🧑‍🏫", "color": "#FF6482", "teacher": "Erhardt" },
+  { "id": "cad",             "name": "CAD",             "icon": "💻", "color": "#00A0A8", "teacher": "Sumereder" },
+  { "id": "edv",             "name": "EDV",             "icon": "📊", "color": "#2E9E58", "teacher": "Reith" }
 ]

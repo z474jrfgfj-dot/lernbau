@@ -1,0 +1,30 @@
+{
+  "unit": "edv",
+  "subject": "edv",
+  "decks": [
+    {
+      "id": "edv-excel",
+      "title": "Excel-Grundlagen",
+      "description": "Auswahlfeld (Dropdown) per Datenüberprüfung und bedingte Funktionen SUMMEWENN(S) / MITTELWERTWENN(S).",
+      "sources": ["Grundlagen Excel.pdf"],
+      "cards": [
+        {"id": "edv-excel-c001", "type": "basic", "front": "Wie legt man in Excel ein **Auswahlfeld (Dropdown-Liste)** an?", "back": "**Daten > Datenüberprüfung > Zulassen: Liste**, dann die erlaubten Einträge oder den Zellbereich angeben."},
+        {"id": "edv-excel-c002", "type": "basic", "front": "Unterschied **SUMMEWENN** und **SUMMEWENNS**?", "back": "**SUMMEWENN**: nur **eine** Bedingung.\n**SUMMEWENNS**: beliebig **viele** Bedingungen."},
+        {"id": "edv-excel-c003", "type": "basic", "front": "Unterschied **MITTELWERTWENN** und **MITTELWERTWENNS**?", "back": "Genauso: -WENN = **eine** Bedingung, -WENNS = **mehrere** Bedingungen."},
+        {"id": "edv-excel-c004", "type": "basic", "front": "Aufbau von **SUMMEWENN**?", "back": "=SUMMEWENN(Bereich; Suchkriterium; [Summe_Bereich])"},
+        {"id": "edv-excel-c005", "type": "basic", "front": "Aufbau von **SUMMEWENNS**?", "back": "=SUMMEWENNS(Summe_Bereich; Kriterien_Bereich1; Kriterium1; Kriterien_Bereich2; Kriterium2; …)"},
+        {"id": "edv-excel-c006", "type": "basic", "front": "Wo steht der zu summierende Bereich bei -WENN und bei -WENNS?", "back": "Bei **-WENN hinten**, bei **-WENNS vorne**."}
+      ],
+      "quiz": [
+        {"id": "edv-excel-q001", "type": "mc", "question": "Wie viele Bedingungen erlaubt **SUMMEWENN**?", "options": ["Eine", "Zwei", "Drei", "Beliebig viele"], "answer": 0, "explanation": "Für mehrere Bedingungen braucht man SUMMEWENNS."},
+        {"id": "edv-excel-q002", "type": "mc", "question": "Wo findet man das Dropdown-Auswahlfeld?", "options": ["Einfügen > Diagramm", "Daten > Datenüberprüfung > Liste", "Start > Bedingte Formatierung", "Formeln > Namens-Manager"], "answer": 1, "explanation": "Daten > Datenüberprüfung > Zulassen: Liste."},
+        {"id": "edv-excel-q003", "type": "mc", "question": "Summe aller Kosten, bei denen Gewerk = „Maurer“ **und** Monat = „Mai“ ist. Welche Funktion?", "options": ["SUMME", "SUMMEWENN", "SUMMEWENNS", "MITTELWERTWENN"], "answer": 2, "explanation": "Zwei Bedingungen → SUMMEWENNS."},
+        {"id": "edv-excel-q004", "type": "mc", "question": "Durchschnittliche Stunden aller Einträge mit Bauteil = „Wand“?", "options": ["MITTELWERTWENN", "SUMMEWENNS", "MITTELWERT", "ZÄHLENWENN"], "answer": 0, "explanation": "Ein Kriterium, Mittelwert → MITTELWERTWENN."},
+        {"id": "edv-excel-q005", "type": "mc", "question": "Welche Formel ist richtig aufgebaut? Gewerke in A2:A20, Kosten in C2:C20, gesucht: Summe für „Maurer“.", "options": ["=SUMMEWENN(C2:C20;\"Maurer\";A2:A20)", "=SUMMEWENN(A2:A20;\"Maurer\";C2:C20)", "=SUMMEWENNS(A2:A20;\"Maurer\";C2:C20)", "=SUMME(A2:A20;\"Maurer\")"], "answer": 1, "explanation": "SUMMEWENN(Bereich; Kriterium; Summe_Bereich) – Summenbereich hinten."},
+        {"id": "edv-excel-q006", "type": "mc", "question": "Gleiche Daten, aber mit SUMMEWENNS. Welche Formel ist richtig?", "options": ["=SUMMEWENNS(C2:C20;A2:A20;\"Maurer\")", "=SUMMEWENNS(A2:A20;\"Maurer\";C2:C20)", "=SUMMEWENNS(\"Maurer\";A2:A20;C2:C20)", "=SUMMEWENNS(C2:C20;\"Maurer\")"], "answer": 0, "explanation": "Bei -WENNS steht der Summenbereich vorne."},
+        {"id": "edv-excel-q007", "type": "input", "question": "Wie heißt die Funktion für den Durchschnitt mit **mehreren** Bedingungen?", "answer": "MITTELWERTWENNS", "accept": ["=MITTELWERTWENNS", "mittelwertwenns"], "explanation": "MITTELWERTWENNS."},
+        {"id": "edv-excel-q008", "type": "exercise", "question": "Schreibe die Formeln. Gewerke stehen in **A2:A20**, Monate in **B2:B20**, Kosten in **C2:C20**.\na) Summe aller Kosten des Gewerks „Maurer“\nb) Summe der Maurer-Kosten im Monat „Mai“", "fields": [{"label": "a) eine Bedingung", "solution": "=SUMMEWENN(A2:A20;\"Maurer\";C2:C20)"}, {"label": "b) zwei Bedingungen", "solution": "=SUMMEWENNS(C2:C20;A2:A20;\"Maurer\";B2:B20;\"Mai\")"}], "explanation": "Merke: Bei SUMMEWENNS steht der Summenbereich vorne.", "noSpell": true}
+      ]
+    }
+  ]
+}

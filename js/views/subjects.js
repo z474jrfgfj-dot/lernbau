@@ -66,6 +66,7 @@ export function subjectView(el, { args }) {
           ? html`<a class="btn green" href="#/lernen/subject/${s.id}">Lernen</a>`
           : html`<a class="btn green" href="#/lernen/subject/${s.id}?extra=1" ${st.fresh ? '' : 'aria-disabled="true"'}>${st.fresh ? 'Neue Karten' : 'Alles gelernt ✓'}</a>`}
         ${qn ? html`<a class="btn" href="#/quiz/subject/${s.id}">Quiz</a>` : ''}
+        ${s.decks.some(d => d.cards.some(c => c.type === 'vocab')) ? html`<a class="btn orange" href="#/quiz/subject/${s.id}?mode=vokabeln">Vokabeln</a>` : ''}
       </div>
     </div>
 
@@ -104,6 +105,7 @@ export function deckView(el, { args }) {
       <div class="btn-row">
         ${d.cards.length ? html`<a class="btn green" href="#/lernen/deck/${d.id}${st.due ? '' : '?extra=1'}">${st.due ? 'Lernen' : 'Neue Karten'}</a>` : ''}
         ${d.quiz.length ? html`<a class="btn" href="#/quiz/deck/${d.id}">Quiz (${d.quiz.length})</a>` : ''}
+        ${d.cards.some(c => c.type === 'vocab') ? html`<a class="btn orange" href="#/quiz/deck/${d.id}?mode=vokabeln">Vokabeln</a>` : ''}
       </div>
       ${d.sources?.length ? html`<p class="caption" style="margin-top:12px">Quelle: ${d.sources.join(', ')}</p>` : ''}
     </div>

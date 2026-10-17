@@ -1,0 +1,113 @@
+{
+  "unit": "cad",
+  "subject": "cad",
+  "decks": [
+    {
+      "id": "cad-bim",
+      "title": "BIM & Arbeitsweise in ArchiCAD",
+      "description": "Was BIM ist, warum man damit plant und wie ArchiCAD das Gebäudemodell aufbaut.",
+      "sources": ["1_ArchiCAD28_Skript_S1-25.pdf"],
+      "cards": [
+        {"id": "cad-bim-c001", "type": "basic", "front": "Was ist **BIM**?", "back": "**Building Information Modeling** – keine Software, sondern eine **Planungs- und Arbeitsmethode**: ein digitales Gebäudemodell aus 3D-Bauteilen, die Eigenschaften wie Material, Abmessung und Kosten tragen."},
+        {"id": "cad-bim-c002", "type": "basic", "front": "Vorteile von BIM?", "back": "- leichterer Informationsaustausch zwischen Planern, Firmen und Bauherren\n- Änderungen werden automatisch in Schnitte, Ansichten und Listen übernommen\n- die EU-Staaten fordern BIM für öffentliche Bauprojekte"},
+        {"id": "cad-bim-c003", "type": "basic", "front": "Grundsatz in ArchiCAD: Wie wird das Gebäude erstellt?", "back": "So **modelliert, wie es gebaut wird** (Wände, Decken, Dächer …). Grundrisse, Schnitte, Ansichten, Mengen und Listen werden aus dem **virtuellen Gebäudemodell erzeugt** – nicht separat in 2D gezeichnet."},
+        {"id": "cad-bim-c004", "type": "basic", "front": "Was sollte man vor Projektbeginn festlegen?", "back": "Den **Detaillierungsgrad** (z. B. Wettbewerb vs. Massenermittlung) – trotzdem immer exakt arbeiten."},
+        {"id": "cad-bim-c005", "type": "basic", "front": "Wie werden Bauteile zusammengefügt – und wozu dienen 2D-Elemente?", "back": "**Geschossweise**. 2D-Elemente (Bemaßung, Etiketten, Schraffuren, Linien) ergänzen die Dokumentation."},
+        {"id": "cad-bim-c006", "type": "basic", "front": "Was ist **openBIM / IFC**?", "back": "Herstellerunabhängiger Austausch von BIM-Modellen; **IFC** ist das offene Austauschformat zwischen verschiedenen Programmen."}
+      ],
+      "quiz": [
+        {"id": "cad-bim-q001", "type": "mc", "question": "Was ist BIM?", "options": ["Ein CAD-Programm von Graphisoft", "Eine Planungs- und Arbeitsmethode mit digitalem Gebäudemodell", "Ein Dateiformat für Pläne", "Eine DIN-Norm für Linien"], "answer": 1, "explanation": "BIM ist eine Methode, keine Software."},
+        {"id": "cad-bim-q002", "type": "mc", "question": "Woraus entsteht in ArchiCAD der Schnitt?", "options": ["Er wird separat in 2D gezeichnet", "Er wird aus dem 3D-Gebäudemodell erzeugt", "Er wird aus einem PDF importiert", "Er muss nach jeder Änderung neu gezeichnet werden"], "answer": 1, "explanation": "Alle Pläne werden aus dem virtuellen Gebäudemodell generiert."},
+        {"id": "cad-bim-q003", "type": "mc", "question": "Ein Fenster wird im Grundriss verschoben. Was passiert in Ansicht und Schnitt?", "options": ["Nichts – man muss es dort auch ändern", "Es wird automatisch mit aktualisiert", "Der Schnitt wird gelöscht", "Nur die Ansicht ändert sich"], "answer": 1, "explanation": "Vorteil von BIM: eine Änderung wirkt überall."},
+        {"id": "cad-bim-q004", "type": "input", "question": "Wofür steht die Abkürzung BIM? (englisch)", "answer": "Building Information Modeling", "accept": ["building information modelling", "Building Information Model", "building information modelling"], "explanation": "Building Information Modeling / Model."}
+      ]
+    },
+    {
+      "id": "cad-bedienung",
+      "title": "ArchiCAD-Oberfläche & Bedienung",
+      "description": "Navigator, Raster, Navigation, Tastaturkürzel, Cursorformen und Auswahlwerkzeuge.",
+      "sources": ["1_ArchiCAD28_Skript_S1-25.pdf"],
+      "cards": [
+        {"id": "cad-bedienung-c001", "type": "basic", "front": "Welche vier Reiter hat der **Navigator**?", "back": "1. **Projekt-Mappe** – rohes Modell mit allen Sichten\n2. **Ausschnitt-Mappe** – vordefinierte Darstellungen\n3. **Layoutbuch** – Pläne mit fester Größe\n4. **Publisher-Set** – viele Layouts auf einmal exportieren/drucken"},
+        {"id": "cad-bedienung-c002", "type": "basic", "front": "Was ist ein **Ausschnitt** (Ausschnitt-Mappe)?", "back": "Eine vordefinierte **Darstellung** eines Modellteils: sichtbare Ebenen, Maßstab, Stift-Set, Bemaßung, Modelldarstellung – keine neuen Infos, nur eine andere Anzeige desselben Modells."},
+        {"id": "cad-bedienung-c003", "type": "basic", "front": "Was ist ein **Layout**?", "back": "Ein Plan mit fester Größe (z. B. DIN A0), befüllt mit Ausschnitten, Plankopf und Beschriftung (im Layoutbuch)."},
+        {"id": "cad-bedienung-c004", "type": "basic", "front": "Konstruktionsraster und **Rasterfang** – was gilt?", "back": "Das Raster (grau, Standard 1 m × 1 m) dient der Orientierung. Der **Rasterfang** fängt nur Rasterpunkte und wird normalerweise **ausgeschaltet** gelassen."},
+        {"id": "cad-bedienung-c005", "type": "basic", "front": "Wie zoomt und verschiebt man?", "back": "Zoomen: **Mausrad drehen**. Verschieben: **Mausrad gedrückt halten** (Hand). Empfohlen: Drei-Tasten-Maus statt Touchpad."},
+        {"id": "cad-bedienung-c006", "type": "basic", "front": "Shortcut: **3D-Fenster** / **Grundriss (2D)** (Mac)?", "back": "**Cmd+3** = 3D-Fenster, **Cmd+2** = Grundriss. (Windows: Strg+3 / Strg+2)"},
+        {"id": "cad-bedienung-c007", "type": "basic", "front": "Shortcut: **Optimieren / alles zeigen** (Mac)?", "back": "**Cmd+0** (Windows: Strg+0)."},
+        {"id": "cad-bedienung-c008", "type": "basic", "front": "Wie kommt man schnell zum **Pfeil-Werkzeug**?", "back": "Taste **P** oder mehrfach **Esc**."},
+        {"id": "cad-bedienung-c009", "type": "basic", "front": "Was macht die **Tab-Taste** bei der Auswahl?", "back": "Schaltet bei **übereinanderliegenden Elementen** durch, um das gewünschte zu wählen (Schnellauswahl muss aktiv sein)."},
+        {"id": "cad-bedienung-c010", "type": "basic", "front": "Was macht die **Leertaste** (gedrückt halten)?", "back": "Schaltet die **Schnellauswahl** temporär aus bzw. macht den Cursor zum **Zauberstab**, wenn ein Werkzeug aktiv ist."},
+        {"id": "cad-bedienung-c011", "type": "basic", "front": "Was macht die Taste **C** beim Wandzeichnen?", "back": "Wechselt die Lage der **Referenzlinie** (außen/mitte/innen)."},
+        {"id": "cad-bedienung-c012", "type": "basic", "front": "Was ist der **Zauberstab**?", "back": "Zeichnet die Form eines vorhandenen Elements nach und erzeugt daraus ein neues (z. B. Decke aus Wandumriss). Werkzeug wählen + **Leertaste** halten."},
+        {"id": "cad-bedienung-c013", "type": "basic", "front": "Wie wählt man **alle Elemente eines Typs** (z. B. alle Wände)?", "back": "Werkzeug (z. B. Wand) aktivieren und **Cmd/Strg+A** drücken."},
+        {"id": "cad-bedienung-c014", "type": "basic", "front": "Markierungsrahmen: dünner vs. dicker Rahmen?", "back": "**Dünner** Rahmen = ein Geschoss, **dicker** Rahmen = alle Geschosse."},
+        {"id": "cad-bedienung-c015", "type": "basic", "front": "Was bedeutet der **dicke Mercedesstern** am Cursor?", "back": "Der Cursor steht auf der **Referenzlinie einer Wand** bzw. Referenzachse eines Unterzugs."},
+        {"id": "cad-bedienung-c016", "type": "basic", "front": "Was bedeutet der **schwarze Bleistift** am Cursor?", "back": "Der Cursor steht an einem **Knotenpunkt / Fangpunkt** eines Bauteils."},
+        {"id": "cad-bedienung-c017", "type": "basic", "front": "Wo legt man in den Werkzeug-Einstellungen die **Ebene** fest?", "back": "Ganz **unten** im Einstellungsdialog. Ebenen trennen und ordnen die Elemente logisch."}
+      ],
+      "quiz": [
+        {"id": "cad-bedienung-q001", "type": "mc", "question": "Welcher Navigator-Reiter enthält die **fertigen Pläne** mit Plankopf?", "options": ["Projekt-Mappe", "Ausschnitt-Mappe", "Layoutbuch", "Publisher-Set"], "answer": 2, "explanation": "Layouts = Pläne fester Größe im Layoutbuch."},
+        {"id": "cad-bedienung-q002", "type": "mc", "question": "Womit exportiert man **viele Layouts auf einmal** als PDF?", "options": ["Publisher-Set", "Projekt-Mappe", "Zauberstab", "Rasterfang"], "answer": 0, "explanation": "Publisher-Set."},
+        {"id": "cad-bedienung-q003", "type": "mc", "question": "Wie öffnet man auf dem Mac das 3D-Fenster?", "options": ["Cmd+2", "Cmd+3", "Cmd+0", "Cmd+A"], "answer": 1, "explanation": "Cmd+3 = 3D, Cmd+2 = Grundriss, Cmd+0 = Optimieren."},
+        {"id": "cad-bedienung-q004", "type": "mc", "question": "Der Rasterfang sollte normalerweise …", "options": ["immer an sein", "ausgeschaltet sein", "auf 10 cm stehen", "nur in 3D aktiv sein"], "answer": 1, "explanation": "Er fängt nur Rasterpunkte und stört beim freien Konstruieren."},
+        {"id": "cad-bedienung-q005", "type": "mc", "question": "Zwei Elemente liegen übereinander. Wie wählt man das untere?", "options": ["Doppelklick", "Mit der Tab-Taste durchschalten", "Mit Cmd+0", "Gar nicht"], "answer": 1, "explanation": "Tab schaltet durch übereinanderliegende Elemente."},
+        {"id": "cad-bedienung-q006", "type": "mc", "question": "Welche Taste wechselt beim Wandzeichnen die Referenzlinie?", "options": ["R", "W", "C", "Tab"], "answer": 2, "explanation": "C wie „Change“."},
+        {"id": "cad-bedienung-q007", "type": "mc", "question": "Markierungsrahmen über **alle Geschosse** – welcher Rahmen?", "options": ["Dünner Rahmen", "Dicker Rahmen", "Gestrichelter Kreis", "Polygon"], "answer": 1, "explanation": "Dick = alle Geschosse, dünn = ein Geschoss."},
+        {"id": "cad-bedienung-q008", "type": "exercise", "question": "Nenne die **Mac-Tastaturkürzel** in ArchiCAD.", "fields": [{"label": "3D-Fenster", "solution": "Cmd+3"}, {"label": "Grundriss", "solution": "Cmd+2"}, {"label": "Alles zeigen (Optimieren)", "solution": "Cmd+0"}, {"label": "Pfeil-Werkzeug", "solution": "P (oder mehrfach Esc)"}], "explanation": "", "noSpell": true}
+      ]
+    },
+    {
+      "id": "cad-projekt",
+      "title": "Projekt anlegen, Geschosse & Dateiformate",
+      "description": "Vorlagen, Projektpräferenzen, Geschossdefinition, Speichern, Dateiformate, Referenzlinie und das Beispielprojekt Quinta Monroy.",
+      "sources": ["1_ArchiCAD28_Skript_S1-25.pdf"],
+      "cards": [
+        {"id": "cad-projekt-c001", "type": "basic", "front": "Vorlage **„Geschoss OK FF“** – was bedeutet das?", "back": "Die Unterkante jedes Geschosses = **Oberkante Fertigfußboden** (OKFF = ±0,00). Im Kurs verwendet."},
+        {"id": "cad-projekt-c002", "type": "basic", "front": "Vorlage **„Geschoss OK RD“** – was bedeutet das?", "back": "Die Unterkante jedes Geschosses = **Oberkante Rohdecke**."},
+        {"id": "cad-projekt-c003", "type": "basic", "front": "Was muss man in den **Projektpräferenzen** vor Beginn prüfen?", "back": "Vor allem die **Arbeitseinheiten** (Standard: Meter) – gelten für das ganze Projekt."},
+        {"id": "cad-projekt-c004", "type": "basic", "front": "Was gehört zu einem **Geschoss** in ArchiCAD?", "back": "Alle Bauteile von **UK Rohdecke unter** bis **UK Rohdecke über** dem Geschoss. Dachgeschoss: bis OK First. Fundamente am besten als eigenes Geschoss."},
+        {"id": "cad-projekt-c005", "type": "basic", "front": "Wo beginnen und enden Wände?", "back": "Auf **OK Rohdecke** (z. B. −0,15 bis −0,15 im Geschoss darüber); im obersten Geschoss bis OK First oder darüber."},
+        {"id": "cad-projekt-c006", "type": "basic", "front": "Geschosshöhen im Kurs?", "back": "Fundamente 1,50 m · EG 2,95 m · OG 2,95 m · DG 3,20 m (Planung > Geschosseinstellungen)."},
+        {"id": "cad-projekt-c007", "type": "basic", "front": "Dateiformat **.pln**?", "back": "**Solo-Projekt** – Standardformat für die Arbeit am eigenen Rechner (Bibliotheken nur verknüpft, klein). Immer damit weiterarbeiten."},
+        {"id": "cad-projekt-c008", "type": "basic", "front": "Dateiformat **.pla**?", "back": "**Archiv-Projekt** – enthält die Bibliothekselemente; zum Archivieren und zum Öffnen auf anderen Rechnern."},
+        {"id": "cad-projekt-c009", "type": "basic", "front": "Dateiformat **.bpn**?", "back": "**Backup** – der vorherige, beim Sichern überschriebene Stand; nur zur Wiederherstellung."},
+        {"id": "cad-projekt-c010", "type": "basic", "front": "Dateiformat **.lck**?", "back": "**Lock-Datei** – verhindert gleichzeitiges Bearbeiten (zweites Öffnen nur lesend); wird automatisch erstellt und gelöscht."},
+        {"id": "cad-projekt-c011", "type": "basic", "front": "Was ist die **Referenzlinie** einer Wand?", "back": "Linie (aktiviert dicke blaue Linie), die Lage und Richtung der Wand bestimmt. Referenzlinien sollen sich **immer treffen** (saubere Verschneidung); sie bestimmen innen/außen und Fangpunkte."},
+        {"id": "cad-projekt-c012", "type": "basic", "front": "Was ist **Quinta Monroy**?", "back": "Social-Housing-Projekt in Iquique (Chile) von **Alejandro Aravena / ELEMENTAL**: Prinzip **„Incremental Housing“** – Bewohner erweitern 30 m² selbst auf 72 m². Beispielprojekt im Kurs."}
+      ],
+      "quiz": [
+        {"id": "cad-projekt-q001", "type": "mc", "question": "Mit welchem Dateiformat arbeitet man normalerweise weiter?", "options": [".pla", ".pln", ".bpn", ".lck"], "answer": 1, "explanation": ".pln = Solo-Projekt."},
+        {"id": "cad-projekt-q002", "type": "mc", "question": "Welches Format nimmt man, um ein Projekt auf einem **anderen Rechner** zu öffnen oder zu archivieren?", "options": [".pln", ".pla", ".bpn", ".dwg"], "answer": 1, "explanation": ".pla enthält die Bibliothekselemente."},
+        {"id": "cad-projekt-q003", "type": "mc", "question": "Was ist eine **.bpn**-Datei?", "options": ["Backup des vorherigen Stands", "Archiv mit Bibliotheken", "Sperrdatei", "PDF-Export"], "answer": 0, "explanation": "Backup-Datei."},
+        {"id": "cad-projekt-q004", "type": "mc", "question": "Was gehört zu einem Geschoss?", "options": ["OK Rohdecke bis OK Rohdecke", "UK Rohdecke unter bis UK Rohdecke über dem Geschoss", "OKFF bis Decke", "Nur die Wände"], "answer": 1, "explanation": "UK Rohdecke unter bis UK Rohdecke über."},
+        {"id": "cad-projekt-q005", "type": "mc", "question": "Welche Geschosshöhe hat das EG im Kurs?", "options": ["2,50 m", "2,75 m", "2,95 m", "3,20 m"], "answer": 2, "explanation": "EG und OG 2,95 m, DG 3,20 m."},
+        {"id": "cad-projekt-q006", "type": "mc", "question": "„Incremental Housing“ bei Quinta Monroy bedeutet …", "options": ["Häuser werden komplett fertig übergeben", "Bewohner erweitern ihre Wohnung selbst", "Häuser werden jährlich abgerissen", "Nur Hochhäuser werden gebaut"], "answer": 1, "explanation": "30 m² werden von den Bewohnern auf 72 m² erweitert."},
+        {"id": "cad-projekt-q007", "type": "exercise", "question": "Erkläre die vier ArchiCAD-Dateiformate.", "fields": [{"label": ".pln", "solution": "Solo-Projekt, Standard zum Arbeiten"}, {"label": ".pla", "solution": "Archiv-Projekt inkl. Bibliotheken, zum Archivieren/Weitergeben"}, {"label": ".bpn", "solution": "Backup des vorherigen Stands"}, {"label": ".lck", "solution": "Lock-Datei gegen gleichzeitiges Bearbeiten"}], "explanation": ""}
+      ]
+    },
+    {
+      "id": "cad-technik",
+      "title": "Technische Entwicklungen im Bauwesen",
+      "description": "Inhalte deiner Gruppenpräsentation (Thema 9) und die Themen des Einstiegsprojekts.",
+      "sources": ["Technische Entwicklung im Bauwesen-9_Zinn_Federlein_Henz.pdf", "Einstiegsprojekt- Kurzpräsentationen.pdf"],
+      "cards": [
+        {"id": "cad-technik-c001", "type": "basic", "front": "Was macht ein **3D-Laserscanner**?", "back": "Erfasst Gebäude/Baustellen präzise mit Millionen Messpunkten → **Punktwolke**, die in CAD/BIM weiterbearbeitet wird (z. B. Bestandsaufnahme)."},
+        {"id": "cad-technik-c002", "type": "basic", "front": "Wofür werden **Drohnen** im Bauwesen genutzt?", "back": "Luftaufnahmen großer Flächen, Vermessung (**Orthofotos**, 3D-Modelle), Dokumentation und Kontrolle des **Baufortschritts**."},
+        {"id": "cad-technik-c003", "type": "basic", "front": "Was bringen **3D-Druck und Vorfertigung**?", "back": "3D-Betondruck Schicht für Schicht; Vorfertigung von Wänden, Decken, Treppen in Werkhallen → **kürzere Bauzeiten, bessere Planbarkeit, höhere Qualität, weniger Wetterabhängigkeit**."},
+        {"id": "cad-technik-c004", "type": "basic", "front": "Beispiele für **Robotik** auf der Baustelle?", "back": "Vermessung, Bohren, **Mauerroboter**, autonomer Materialtransport, ferngesteuerter Abbruchroboter. Planung, Kontrolle und Entscheidungen bleiben beim Menschen."},
+        {"id": "cad-technik-c005", "type": "basic", "front": "Wie hilft **KI** im Bauwesen?", "back": "Planung und Auswertung, **Kollisionserkennung** im BIM-Modell (z. B. TGA-Leitung vs. Tragwerk), Analyse von Kosten/Terminen/Baufortschritt, Dokumentation. Ergebnisse müssen **fachlich geprüft** werden."},
+        {"id": "cad-technik-c006", "type": "basic", "front": "Was bedeuten diese Entwicklungen für **Techniker**?", "back": "Weniger Handarbeit, mehr digitale Planung; CAD/BIM und Vermessungsdaten werden wichtiger; Teamarbeit mit digitalen Tools; Verantwortung für nachhaltiges, sicheres Bauen."},
+        {"id": "cad-technik-c007", "type": "basic", "front": "Was ist der Unterschied zwischen **Eingabeplan** und **Werkplan** (HOAI)?", "back": "**Eingabeplan** = Genehmigungsplanung (für den Bauantrag), **Werkplan** = Ausführungsplanung (für die Baustelle)."},
+        {"id": "cad-technik-c008", "type": "basic", "front": "Warum „achtelt“ Mauerwerk?", "back": "**Achtelmeter-Maßsystem** (DIN 4172): Steinmaße und Fugen ergeben Vielfache von 12,5 cm (1 am = 1/8 m); Außen-, Öffnungs- und Vorsprungsmaße (A/O/V) werden danach geplant."}
+      ],
+      "quiz": [
+        {"id": "cad-technik-q001", "type": "mc", "question": "Was entsteht beim 3D-Laserscan?", "options": ["Ein Orthofoto", "Eine Punktwolke", "Ein Leistungsverzeichnis", "Ein Bebauungsplan"], "answer": 1, "explanation": "Millionen Messpunkte = Punktwolke."},
+        {"id": "cad-technik-q002", "type": "mc", "question": "Welche Technik erkennt **Kollisionen** zwischen Leitungen und Tragwerk im Modell?", "options": ["Rasterfang", "KI / Kollisionsprüfung im BIM-Modell", "Drohnenflug", "Mauerroboter"], "answer": 1, "explanation": "Kollisionserkennung im BIM-Modell, zunehmend KI-gestützt."},
+        {"id": "cad-technik-q003", "type": "mc", "question": "Was ist **kein** Vorteil der Vorfertigung?", "options": ["Kürzere Bauzeit", "Höhere Qualität", "Weniger Wetterabhängigkeit", "Mehr Handarbeit auf der Baustelle"], "answer": 3, "explanation": "Vorfertigung verlagert Arbeit in die Werkhalle."},
+        {"id": "cad-technik-q004", "type": "mc", "question": "Der Eingabeplan entspricht in der HOAI der …", "options": ["Ausführungsplanung", "Genehmigungsplanung", "Objektbetreuung", "Grundlagenermittlung"], "answer": 1, "explanation": "Eingabeplan = Genehmigungsplanung."},
+        {"id": "cad-technik-q005", "type": "mc", "question": "Wie viel ist ein Achtelmeter (1 am)?", "options": ["10 cm", "12,5 cm", "25 cm", "8 cm"], "answer": 1, "explanation": "1/8 m = 12,5 cm."}
+      ]
+    }
+  ]
+}
