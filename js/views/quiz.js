@@ -25,6 +25,7 @@ function vocabQuestions(scope) {
       id: `v:${it.id}`, type: 'vocab', dir: it.dir, deck: it.deck, subject: it.subject, card: c,
       question: toDe ? `Was heißt **${c.en}** auf Deutsch?` : `Wie heißt **${c.de}** auf Englisch?${/\s[–—-]\s/.test(c.en) ? ' *(alle Verbformen)*' : ''}`,
       answer: toDe ? c.de : c.en,
+      accept: [...((toDe ? c.deAlt : c.enAlt) || []), ...store.vocabAccepted(`v:${it.id}`)],
       explanation: [c.example && `*${c.example}*${c.exampleDe ? ` – ${c.exampleDe}` : ''}`, c.note].filter(Boolean).join('\n'),
     };
   });
@@ -44,7 +45,7 @@ function vocabAlternatives(target) {
 }
 
 /** 'right' | 'typo' | 'partial' | 'wrong' – articles optional, any listed meaning counts, verbs need all forms. */
-export function checkVocab(target, value) {
+export function checkVocab(target, value, extra = []) {
   const v = vclean(value);
   if (!v) return 'wrong';
   if (/\s[–—-]\s/.test(target)) {
@@ -59,7 +60,7 @@ export function checkVocab(target, value) {
     return 'wrong';
   }
   let best = 'wrong';
-  for (const a of vocabAlternatives(target)) {
+  for (const a of [...vocabAlternatives(target), ...extra.map(vclean)]) {
     const r = close(v, a);
     if (r === 'right') return 'right';
     if (r === 'typo') best = 'typo';
@@ -94,7 +95,7 @@ export function parseNum(s) {
 
 /** returns 'right' | 'typo' | 'wrong' */
 export function check(q, value) {
-  if (isVocab(q)) return checkVocab(q.answer, value);
+  if (isVocab(q)) return checkVocab(q.answer, value, q.accept || []);
   if (q.type === 'mc') return value === q.answer ? 'right' : 'wrong';
   if (q.type === 'numeric') {
     const n = parseNum(value);
@@ -385,7 +386,9 @@ export default function quiz(el, route) {
       <h3>${ok ? (result === 'typo' ? '✓ Fast richtig – Tippfehler' : '✓ Richtig!') : result === 'partial' ? '◐ Teilweise – alle Formen nötig' : '✗ Leider falsch'}
         <span class="xp-pop">+${ok ? store.XP.quizRight : store.XP.quizWrong} XP</span></h3>
       ${!ok || result === 'typo' ? html`<p class="sol">Lösung: ${md(solution(q))}</p>` : ''}
+      ${isVocab(q) && q.accept?.length ? html`<p class="also">Auch richtig: ${[...new Set(q.accept)].join(' · ')}</p>` : ''}
       ${q.explanation ? html`<div class="expl">${md(q.explanation)}</div>` : ''}
+      ${isVocab(q) && !ok ? html`<button class="btn plain block" data-override>Meine Antwort war richtig</button>` : ''}
       <button class="btn block ${ok ? 'green' : 'red'}" data-next>${idx + 1 < qs.length ? 'Weiter' : 'Ergebnis'}</button>
     </div>`);
     el.appendChild(fb);
@@ -439,6 +442,18 @@ export default function quiz(el, route) {
     answers.push({ value, result: ok ? 'right' : 'wrong' });
     store.recordQuiz(q.id, ok);
     toast(ok ? `✓ ${right}/${marks.length} – +${store.XP.quizRight} XP` : `${right}/${marks.length} – kommt bei „Fehler üben“ wieder`);
+    nextQ();
+  }
+
+  /** The learner says the typed answer is also right: count it and remember it for this word. */
+  function overrideVocab() {
+    const q = qs[idx];
+    const a = answers[answers.length - 1];
+    if (!a || isOk(a.result)) return;
+    store.addVocabAccepted(q.id, String(a.value).trim());
+    store.recordQuiz(q.id, true);
+    a.result = 'right';
+    toast(`„${String(a.value).trim()}“ zählt ab jetzt als richtig ✓`);
     nextQ();
   }
 
@@ -521,6 +536,7 @@ export default function quiz(el, route) {
     if ('exreveal' in t.dataset) return revealExercise();
     if (t.dataset.mark !== undefined) return markField(+t.dataset.mark, +t.dataset.val, t);
     if ('exdone' in t.dataset) return finishExercise();
+    if ('override' in t.dataset) return overrideVocab();
     if ('next' in t.dataset) return nextQ();
   }
 

@@ -538,6 +538,8 @@ details.cardrow .ans { padding: 0 0 14px 18px; color: var(--label2); font-size: 
 :root[data-theme="dark"] .feedback.ok h3 { color: var(--green); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .feedback.ok h3 { color: var(--green); } }
 .feedback .sol { margin-top: 6px; font-weight: 600; }
+.feedback .also { margin-top: 6px; font-size: 15px; color: var(--label2); }
+.feedback .btn.plain { margin-top: 10px; }
 .feedback .expl { margin-top: 8px; font-size: 15px; color: var(--label2); line-height: 1.5; }
 .feedback .btn { margin-top: 14px; }
 .xp-pop { display: inline-block; font: 800 15px var(--font-round); color: var(--orange); animation: pop .5s cubic-bezier(.3,1.6,.5,1); }

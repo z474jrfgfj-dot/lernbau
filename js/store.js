@@ -104,6 +104,15 @@ export function recordQuiz(qid, correct) {
   save();
 }
 
+/** Answers the learner marked as correct for a vocab question (per question id). */
+export function vocabAccepted(qid) { return state.vocabAccept?.[qid] || []; }
+export function addVocabAccepted(qid, value) {
+  if (!value) return;
+  state.vocabAccept ||= {};
+  state.vocabAccept[qid] = [...new Set([...(state.vocabAccept[qid] || []), value])];
+  save();
+}
+
 export function recordQuizResult(entry) {
   state.quiz.history.push({ t: Date.now(), ...entry });
   if (state.quiz.history.length > 300) state.quiz.history.splice(0, state.quiz.history.length - 300);
@@ -216,6 +225,10 @@ export function merge(incoming) {
   state.quiz.history.sort((a, b) => a.t - b.t);
 
   state.hiddenExams = [...new Set([...(state.hiddenExams || []), ...(incoming.hiddenExams || [])])];
+  for (const [q, vals] of Object.entries(incoming.vocabAccept || {})) {
+    state.vocabAccept ||= {};
+    state.vocabAccept[q] = [...new Set([...(state.vocabAccept[q] || []), ...vals])];
+  }
   // Exams: the most recently edited list wins (so deletions sync too).
   if ((incoming.examsAt || 0) > (state.examsAt || 0)) {
     state.exams = incoming.exams || [];
