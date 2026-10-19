@@ -8,6 +8,7 @@ const DEFAULT_SETTINGS = {
   newPerDay: 15,        // new cards per day
   sessionSize: 20,      // cards per session
   quizSize: 10,         // questions per quiz
+  vocabSize: 20,        // vocab trainer: words per round (0 = all)
   vocabDir: 'both',     // both | en-de | de-en
   retention: 0.9,       // FSRS desired retention
   theme: 'auto',        // auto | light | dark

@@ -225,6 +225,7 @@ export default function quiz(el, route) {
   const backHref = scope.type === 'all' ? '#/heute' : scope.type === 'subject' ? `#/fach/${scope.id}` : `#/deck/${scope.id}`;
   let mode = MODES[route.query.mode] ? route.query.mode : null;
   let size = store.settings().quizSize;
+  let started = false;   // vocab trainer: setup screen shown once, then rounds start directly
   let qs = [], idx = 0, answers = [], locked = false, timer = null, deadline = 0, xp0 = 0, optOrder = [];
 
   const exit = () => { location.hash = backHref; };
@@ -263,9 +264,32 @@ export default function quiz(el, route) {
     `);
   }
 
+  function vocabSetup() {
+    const vocN = content.items(scope).filter(it => it.dir === 'en-de').length;
+    const dir = store.settings().vocabDir;
+    const vs = store.settings().vocabSize;
+    el.innerHTML = String(html`
+      ${backLink(backHref)}
+      <h1 class="large-title">🔤 Vokabeltrainer</h1>
+      <p class="subtitle">${label} · ${plural(vocN, 'Vokabel', 'Vokabeln')}</p>
+      <h2 class="section-title">Richtung</h2>
+      <div class="segmented">
+        ${[['both', 'Beide'], ['de-en', 'Deutsch → Englisch'], ['en-de', 'Englisch → Deutsch']].map(([v, l]) => html`<button class="${dir === v ? 'on' : ''}" data-dir="${v}">${l}</button>`)}
+      </div>
+      <h2 class="section-title">Wie viele Vokabeln?</h2>
+      <div class="segmented">
+        ${[[10, '10'], [20, '20'], [30, '30'], [50, '50'], [0, 'Alle']].map(([v, l]) => html`<button class="${vs === v ? 'on' : ''}" data-vsize="${v}">${l}</button>`)}
+      </div>
+      <p class="footnote">Bei „Beide“ zählt jede Richtung als eigene Abfrage. Falsche Vokabeln kommen in der nächsten Runde zuerst.</p>
+      <div class="btn-row"><button class="btn green block" data-mode="vokabeln" data-go="1">Los geht's</button></div>
+    `);
+  }
+
   function start(m) {
+    if (m === 'vokabeln' && !started) { started = true; return vocabSetup(); }
     mode = m;
-    qs = pick(scope, mode, size);
+    const n = mode === 'vokabeln' ? (store.settings().vocabSize || Infinity) : size;
+    qs = pick(scope, mode, n);
     if (!qs.length) { mode = null; return startScreen(); }
     idx = 0; answers = []; xp0 = store.get().xp;
     if (mode === 'pruefung') {
@@ -471,6 +495,11 @@ export default function quiz(el, route) {
       return exit();
     }
     if (t.dataset.mode && !t.disabled) return start(t.dataset.mode);
+    if (t.dataset.vsize !== undefined) {
+      store.setSetting('vocabSize', +t.dataset.vsize);
+      $$('[data-vsize]', el).forEach(b => b.classList.toggle('on', b === t));
+      return;
+    }
     if (t.dataset.dir) {
       store.setSetting('vocabDir', t.dataset.dir);
       $$('[data-dir]', el).forEach(b => b.classList.toggle('on', b === t));

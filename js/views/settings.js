@@ -9,6 +9,7 @@ const OPTIONS = {
   dailyGoal: [[20, '20 XP · locker'], [30, '30 XP'], [50, '50 XP · normal'], [80, '80 XP · ehrgeizig'], [120, '120 XP · Prüfungsphase']],
   newPerDay: [[5, '5'], [10, '10'], [15, '15'], [20, '20'], [30, '30'], [50, '50']],
   sessionSize: [[10, '10 Karten'], [20, '20 Karten'], [30, '30 Karten'], [50, '50 Karten'], [100, '100 Karten']],
+  vocabSize: [[10, '10'], [20, '20'], [30, '30'], [50, '50'], [0, 'Alle']],
   vocabDir: [['both', 'Beide Richtungen'], ['en-de', 'Englisch → Deutsch'], ['de-en', 'Deutsch → Englisch']],
   retention: [[0.85, '85 % · weniger Wiederholungen'], [0.9, '90 % · empfohlen'], [0.95, '95 % · vor Prüfungen']],
   theme: [['auto', 'Automatisch'], ['light', 'Hell'], ['dark', 'Dunkel']],
@@ -128,6 +129,7 @@ export default function settingsView(el, route) {
         <label class="row"><span class="grow">Neue Karten pro Tag</span>${select('newPerDay')}</label>
         <label class="row"><span class="grow">Rundengröße</span>${select('sessionSize')}</label>
         <label class="row"><span class="grow">Vokabeln abfragen</span>${select('vocabDir')}</label>
+        <label class="row"><span class="grow">Vokabeln pro Runde</span>${select('vocabSize')}</label>
         <label class="row"><span class="grow">Behaltensrate</span>${select('retention')}</label>
       </div>
       <p class="footnote">Die Wiederholungen plant der FSRS-Algorithmus: Karten, die du gut kannst, kommen seltener, schwierige öfter. Höhere Behaltensrate = mehr Wiederholungen.</p>
