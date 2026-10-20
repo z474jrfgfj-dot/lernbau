@@ -1,0 +1,56 @@
+{
+  "unit": "baukonstruktion-3",
+  "subject": "baukonstruktion",
+  "decks": [
+    {
+      "id": "baukonstruktion-3-baugrund",
+      "title": "Baugrunduntersuchung (LF 1.1)",
+      "description": "Tragfähigkeit, Bodenproben und ihre Güteklassen, Untersuchungsmethoden und Normen.",
+      "sources": ["1. Bk-LF1.1 Bodenuntersuchung_PP - Skipt.pdf", "FST1-Bk-LF1.1 Informationsmaterial_Bodenproben.pdf"],
+      "cards": [
+        {"id": "baukonstruktion-3-baugrund-c001", "type": "basic", "front": "Wovon hängt die **Tragfähigkeit** des Baugrunds ab?", "back": "Bodenart und Lagerungsdichte, Wassergehalt und Grundwasser, Schichtung und Verdichtung."},
+        {"id": "baukonstruktion-3-baugrund-c002", "type": "basic", "front": "Was liefert eine Baugrunduntersuchung?", "back": "Bodenarten/-schichten, Tragfähigkeit und Setzungsverhalten, Grundwasserstand, geeignete Gründungsart."},
+        {"id": "baukonstruktion-3-baugrund-c003", "type": "basic", "front": "Was ist eine **gestörte** Bodenprobe – und wofür reicht sie?", "back": "Boden aufgelockert, Wassergehalt verändert → z. B. **Korngrößenbestimmung**. Aus Bohrungen ohne Kern (Dreh-, Schlag-, Greiferbohrung): bei jedem Schichtwechsel, mind. jeden Meter eine Probe."},
+        {"id": "baukonstruktion-3-baugrund-c004", "type": "basic", "front": "Was ist eine **ungestörte** Bodenprobe – und wofür braucht man sie?", "back": "Natürliche Lagerung und Wassergehalt bleiben erhalten → **Festigkeits- und Setzungsversuche**. Aus Kernbohrungen (z. B. Rammkern); Ergebnis im **Schichtenverzeichnis**."},
+        {"id": "baukonstruktion-3-baugrund-c005", "type": "basic", "front": "Was ist eine **Sonderprobe** (DIN 4021)?", "back": "Mit besonderem Gerät für möglichst hohe Güteklasse entnommen, z. B. **Ausstechzylinder** oder von Hand freigelegte Blöcke aus einem Schurf."},
+        {"id": "baukonstruktion-3-baugrund-c006", "type": "basic", "front": "Welche **Güteklassen** gibt es bei Bodenproben?", "back": "1 = ungestört … 5 = sehr stark gestört."},
+        {"id": "baukonstruktion-3-baugrund-c007", "type": "basic", "front": "Was ist ein **Schurf** – und was muss man beachten?", "back": "Oberflächennahe Aufgrabung (mind. 1 × 1 m); **ab 1,25 m Tiefe verbauen!**"},
+        {"id": "baukonstruktion-3-baugrund-c008", "type": "basic", "front": "Wozu dient eine **Rammsondierung**?", "back": "Bestimmt die **Lagerungsdichte** über die Schlagzahl (leicht/schwer, ca. 5 – 6 m tief)."},
+        {"id": "baukonstruktion-3-baugrund-c009", "type": "basic", "front": "Wozu dient der **Plattendruckversuch**?", "back": "Prüft das **Trag- und Verformungsverhalten** des Bodens."},
+        {"id": "baukonstruktion-3-baugrund-c010", "type": "basic", "front": "Welche Normen gehören zur Baugrunduntersuchung?", "back": "DIN 4020 (geotechnische Untersuchungen), DIN 4021 (Schürfe, Bohrungen, Proben), DIN 4022 / DIN EN ISO 14688 (Boden benennen), DIN 18196 (Bodenklassifikation)."}
+      ],
+      "quiz": [
+        {"id": "baukonstruktion-3-baugrund-q001", "type": "mc", "question": "Für Setzungsversuche im Labor braucht man eine …", "options": ["gestörte Probe", "ungestörte Probe", "Wasserprobe", "Rammsondierung"], "answer": 1, "explanation": "Festigkeits- und Setzungsversuche brauchen die natürliche Lagerung → ungestörte Probe."},
+        {"id": "baukonstruktion-3-baugrund-q002", "type": "mc", "question": "Ab welcher Tiefe muss ein Schurf verbaut werden?", "options": ["0,80 m", "1,00 m", "1,25 m", "2,00 m"], "answer": 2, "explanation": "Ab 1,25 m Tiefe verbauen."},
+        {"id": "baukonstruktion-3-baugrund-q003", "type": "mc", "question": "Güteklasse 1 bedeutet …", "options": ["sehr stark gestört", "ungestört", "nur Wasser", "keine Probe möglich"], "answer": 1, "explanation": "1 = ungestört … 5 = sehr stark gestört."},
+        {"id": "baukonstruktion-3-baugrund-q004", "type": "mc", "question": "Womit bestimmt man die **Lagerungsdichte** über die Schlagzahl?", "options": ["Plattendruckversuch", "Rammsondierung", "Schurf", "Korngrößenanalyse"], "answer": 1, "explanation": "Rammsondierung."},
+        {"id": "baukonstruktion-3-baugrund-q005", "type": "mc", "question": "Welche Norm regelt Schürfe, Bohrungen und Proben?", "options": ["DIN 4020", "DIN 4021", "DIN 18196", "DIN 4172"], "answer": 1, "explanation": "DIN 4021."},
+        {"id": "baukonstruktion-3-baugrund-q006", "type": "mc", "question": "Wo werden die Ergebnisse einer Kernbohrung dokumentiert?", "options": ["Im Bautagebuch", "Im Schichtenverzeichnis", "Im Leistungsverzeichnis", "Im Lageplan"], "answer": 1, "explanation": "Schichtenverzeichnis."}
+      ]
+    },
+    {
+      "id": "baukonstruktion-3-massordnung",
+      "title": "Maßordnung – Arbeitsblatt 1 (Übungen)",
+      "description": "Ergänzt das Deck „Steinformate und Maßordnung“: Achtelmeter, Tabelle Nennmaße, Mauerdicken und Mauerhöhen.",
+      "sources": ["FST1-Bk-LF1.1_Maßordnung_AB1.pdf"],
+      "cards": [
+        {"id": "baukonstruktion-3-massordnung-c001", "type": "basic", "front": "Was ist das Richtmaß der Maßordnung (DIN 4172)?", "back": "Der **Achtelmeter**: 1 am = **12,5 cm**."},
+        {"id": "baukonstruktion-3-massordnung-c002", "type": "basic", "front": "Was sind **Baurichtmaße**?", "back": "Planungsmaße als Vielfache von 12,5 cm: 12,5 · 25 · 37,5 · 50 … 100 cm."},
+        {"id": "baukonstruktion-3-massordnung-c003", "type": "basic", "front": "Wie werden **Mauerdicken** angegeben?", "back": "Als Mauer-**Außenmaße**, in cm oder am: 24 cm = „2er-Mauer“."},
+        {"id": "baukonstruktion-3-massordnung-c004", "type": "basic", "front": "Wie berechnet man die **Mauerhöhe**?", "back": "Schichthöhe × Anzahl Schichten; Schichthöhe = Steinhöhe + Lagerfuge.\nSchichthöhen: DF 6,25 cm · NF 8,33 cm · 2DF/3DF 12,5 cm · Großformat 25 cm"}
+      ],
+      "quiz": [
+        {"id": "baukonstruktion-3-massordnung-q001", "type": "numeric", "question": "Nische mit **4 am**: Nennmaß (Öffnungsmaß)?", "answer": 51.0, "unit": "cm", "tolerance": 0.003, "explanation": "l = 4 · 12,5 + 1 = **51 cm**"},
+        {"id": "baukonstruktion-3-massordnung-q002", "type": "numeric", "question": "Pfeiler mit **3 am**: Nennmaß (Außenmaß)?", "answer": 36.5, "unit": "cm", "tolerance": 0.003, "explanation": "l = 3 · 12,5 − 1 = **36,5 cm**"},
+        {"id": "baukonstruktion-3-massordnung-q003", "type": "numeric", "question": "Mauervorsprung mit **2 am**: Nennmaß?", "answer": 25.0, "unit": "cm", "tolerance": 0.003, "explanation": "Vorsprungsmaß: l = 2 · 12,5 = **25 cm**"},
+        {"id": "baukonstruktion-3-massordnung-q004", "type": "numeric", "question": "Fensteröffnung mit **12 am**: Nennmaß?", "answer": 151.0, "unit": "cm", "tolerance": 0.003, "explanation": "l = 12 · 12,5 + 1 = **151 cm**"},
+        {"id": "baukonstruktion-3-massordnung-q005", "type": "numeric", "question": "Vorlage mit **6 am**: Nennmaß?", "answer": 75.0, "unit": "cm", "tolerance": 0.003, "explanation": "Vorlagenmaß = Baurichtmaß: 6 · 12,5 = **75 cm**"},
+        {"id": "baukonstruktion-3-massordnung-q006", "type": "numeric", "question": "Wie hoch ist eine Mauer aus **30 Schichten NF**?", "answer": 250.0, "unit": "cm", "tolerance": 0.005, "explanation": "NF: 3 Schichten je 25 cm → Schichthöhe 8,33 cm\n30 · 8,33 ≈ **250 cm** = 2,50 m"},
+        {"id": "baukonstruktion-3-massordnung-q007", "type": "numeric", "question": "Wie viele Schichten **2DF** braucht eine 3,25 m hohe Mauer?", "answer": 26, "unit": "Schichten", "tolerance": 0.001, "explanation": "Schichthöhe 2DF = 12,5 cm → 325 : 12,5 = **26 Schichten**"},
+        {"id": "baukonstruktion-3-massordnung-q008", "type": "mc", "question": "Wie viel ist 1 am?", "options": ["10 cm", "11,5 cm", "12,5 cm", "25 cm"], "answer": 2, "explanation": "1 Achtelmeter = 12,5 cm."},
+        {"id": "baukonstruktion-3-massordnung-q009", "type": "mc", "question": "Welche Formel gilt für ein **Öffnungsmaß**?", "options": ["n · 12,5 cm", "n · 12,5 cm − 1 cm", "n · 12,5 cm + 1 cm", "n · 11,5 cm"], "answer": 2, "explanation": "Öffnungen: eine Fuge weniger → + 1 cm."},
+        {"id": "baukonstruktion-3-massordnung-q010", "type": "mc", "question": "Eine „2er-Mauer“ ist wie dick?", "options": ["11,5 cm", "24 cm", "25 cm", "36,5 cm"], "answer": 1, "explanation": "2 · 12,5 − 1 = 24 cm."}
+      ]
+    }
+  ]
+}

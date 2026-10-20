@@ -1,0 +1,31 @@
+{
+  "unit": "cad-2",
+  "subject": "cad",
+  "decks": [
+    {
+      "id": "cad-2-modell",
+      "title": "3D-Gebäudemodell erstellen (Skript S. 26–50)",
+      "description": "Außen- und Innenwände, Abstandshilfe, Pipette, Decken, Bodenplatte, Schnitte/Ansichten und Pultdach.",
+      "sources": ["2_ArchiCAD28_Skript_S26-50.pdf"],
+      "cards": [
+        {"id": "cad-2-modell-c001", "type": "basic", "front": "Von wo bis wo konstruiert man **Außenwände**?", "back": "Immer von **OK Rohdecke bis OK Rohdecke** – im EG z. B. von −0,15 unter EG bis −0,15 unter 1. OG (die Decke liegt auf der Wand)."},
+        {"id": "cad-2-modell-c002", "type": "basic", "front": "Von wo bis wo konstruiert man **Innenwände** (nichttragend)?", "back": "Meist von **OK Rohboden bis UK Rohdecke** – im Kurs Oberkante −0,35 unter dem 1. OG (Bodenaufbau 15 cm + Decke 20 cm)."},
+        {"id": "cad-2-modell-c003", "type": "basic", "front": "In welcher Reihenfolge zeichnet man die Wände?", "back": "Erst Außen- und Innenwände im **EG**, dann in Ober- und Dachgeschoss."},
+        {"id": "cad-2-modell-c004", "type": "basic", "front": "Wie übernimmt man die Einstellungen eines vorhandenen Elements?", "back": "Mit der **Pipette** (Alt-Taste): Werkzeug-Einstellungen eines Elements aufnehmen."},
+        {"id": "cad-2-modell-c005", "type": "basic", "front": "Wie platziert man eine Wand mit genauem Abstand?", "back": "Mit der **Abstandshilfe**: Maus auf die Bezugskante legen, Abstand über die Tastatur eintippen, Enter."},
+        {"id": "cad-2-modell-c006", "type": "basic", "front": "Wofür eine **Transparentpause**?", "back": "Das darunterliegende Geschoss wird durchscheinend angezeigt – als Hilfe beim Zeichnen im Geschoss darüber."},
+        {"id": "cad-2-modell-c007", "type": "basic", "front": "Warum zieht man die **Bodenplatte von der Freifläche ab**?", "back": "Grundsatz: so modellieren, wie gebaut wird – das Gebäude wird in den Boden gegründet, also muss das Erdreich ausgehoben werden. Dazu **Solid-Element-Operationen**: Freifläche = **Ziel**, Bodenplatte = **Operator**, Operation **Abzug**."},
+        {"id": "cad-2-modell-c008", "type": "basic", "front": "Wie erstellt man einen **Schnitt**?", "back": "Im Grundriss des EG das **Schnitt-Werkzeug** wählen, Referenz-ID (z. B. A) und Name „Schnitt A-A“ vergeben, dann Startpunkt und Endpunkt der Schnittlinie klicken. Traditionell mit Großbuchstaben benennen."},
+        {"id": "cad-2-modell-c009", "type": "basic", "front": "Pultdach im Kurs – wichtige Einstellungen?", "back": "Dach-Werkzeug im **Dachgeschoss**: Aufsetzlinie **2,40 m** über DG, Dicke **0,345 m**, Geometriemethode **Einzeldach**, Neigung **3°**, Ebene „Dachaufbau“, Konstruktionsmethode **Rechteckig**."}
+      ],
+      "quiz": [
+        {"id": "cad-2-modell-q001", "type": "mc", "question": "Außenwände konstruiert man von …", "options": ["OK Fertigfußboden bis UK Decke", "OK Rohdecke bis OK Rohdecke", "UK Fundament bis First", "OK Rohboden bis UK Rohdecke"], "answer": 1, "explanation": "Außenwände: OK Rohdecke bis OK Rohdecke."},
+        {"id": "cad-2-modell-q002", "type": "mc", "question": "Nichttragende Innenwände konstruiert man meist von …", "options": ["OK Rohdecke bis OK Rohdecke", "OK Rohboden bis UK Rohdecke", "OK FF bis OK FF", "UK Bodenplatte bis First"], "answer": 1, "explanation": "Innenwände: OK Rohboden bis UK Rohdecke."},
+        {"id": "cad-2-modell-q003", "type": "mc", "question": "Mit welchem Werkzeug übernimmt man Einstellungen eines bestehenden Elements?", "options": ["Zauberstab", "Pipette (Alt)", "Rasterfang", "Markierungsrahmen"], "answer": 1, "explanation": "Pipette mit der Alt-Taste."},
+        {"id": "cad-2-modell-q004", "type": "mc", "question": "Bodenplatte von der Freifläche abziehen – welche Rolle hat die Bodenplatte?", "options": ["Ziel", "Operator", "Layout", "Ausschnitt"], "answer": 1, "explanation": "Freifläche = Ziel, Bodenplatte = Operator, Operation = Abzug."},
+        {"id": "cad-2-modell-q005", "type": "mc", "question": "Welche Dachneigung hat das Pultdach im Kurs?", "options": ["3°", "15°", "30°", "45°"], "answer": 0, "explanation": "3° – ein flach geneigtes Pultdach."},
+        {"id": "cad-2-modell-q006", "type": "mc", "question": "Wie benennt man Schnitte traditionell?", "options": ["Mit Zahlen 1-1", "Mit Großbuchstaben A-A", "Mit dem Geschossnamen", "Gar nicht"], "answer": 1, "explanation": "Referenz-ID A → „Schnitt A-A“."}
+      ]
+    }
+  ]
+}

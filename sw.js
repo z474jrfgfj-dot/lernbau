@@ -1,5 +1,5 @@
 // Service worker: network-first (fresh content when online), cache fallback (works offline).
-const CACHE = 'lernbau-v10';
+const CACHE = 'lernbau-v11';
 const ASSETS = [
   './',
   'index.html',

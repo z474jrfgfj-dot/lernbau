@@ -1,0 +1,26 @@
+{
+  "unit": "baustoffe-3",
+  "subject": "baustoffe",
+  "decks": [
+    {
+      "id": "baustoffe-3-waermedehnung",
+      "title": "Wärmedehnung",
+      "description": "Längenänderung durch Temperatur, Dehnfugen und warum Stahlbeton funktioniert.",
+      "sources": ["Wärmedehnung.pdf"],
+      "cards": [
+        {"id": "baustoffe-3-waermedehnung-c001", "type": "basic", "front": "Was passiert mit einem Baustoff, der erwärmt wird?", "back": "Er **dehnt sich aus** (beim Abkühlen zieht er sich zusammen). Das muss beim Bauen berücksichtigt werden → **Dehnfugen**."},
+        {"id": "baustoffe-3-waermedehnung-c002", "type": "basic", "front": "Wo braucht man Dehnfugen? (Beispiele)", "back": "Brücken, Bordsteine, Böden, Rinnen, Putz …"},
+        {"id": "baustoffe-3-waermedehnung-c003", "type": "basic", "front": "Wann funktionieren **Verbundbaustoffe**?", "back": "Nur wenn die Wärmeausdehnungskoeffizienten **annähernd gleich** sind – z. B. **Stahlbeton** (Stahl und Beton)."},
+        {"id": "baustoffe-3-waermedehnung-c004", "type": "basic", "front": "Formel für die **Längenänderung**?", "back": "ΔL = ΔT · α · L₀\nΔL = Längenänderung, ΔT = Temperaturdifferenz (Endtemp. − Anfangstemp.), α = Wärmeausdehnungskoeffizient, L₀ = Ausgangslänge"},
+        {"id": "baustoffe-3-waermedehnung-c005", "type": "basic", "front": "Wärmeausdehnungskoeffizient von **Stahl** und **Beton**?", "back": "Stahl ≈ **0,012 mm/(m·K)**\nBeton ≈ **0,010 mm/(m·K)**"}
+      ],
+      "quiz": [
+        {"id": "baustoffe-3-waermedehnung-q001", "type": "numeric", "question": "Ein Stahlrohr (L₀ = 4,25 m) wird von 20 °C auf 67 °C erwärmt (α = 0,012 mm/(m·K)). Wie groß ist die Längenänderung?", "answer": 2.4, "unit": "mm", "tolerance": 0.01, "explanation": "ΔT = 67 − 20 = 47 K\nΔL = 47 · 0,012 · 4,25 ≈ **2,40 mm** (Beispiel vom Blatt; dort 2,39 mm)."},
+        {"id": "baustoffe-3-waermedehnung-q002", "type": "numeric", "question": "Eine 8 m lange Betonplatte erwärmt sich um 40 K (α = 0,010 mm/(m·K)). Längenänderung?", "answer": 3.2, "unit": "mm", "tolerance": 0.01, "explanation": "ΔL = 40 · 0,010 · 8 = **3,2 mm**"},
+        {"id": "baustoffe-3-waermedehnung-q003", "type": "numeric", "question": "Ein 12 m langer Stahlträger: Winter −10 °C, Sommer 35 °C (α = 0,012 mm/(m·K)). Längenänderung?", "answer": 6.48, "unit": "mm", "tolerance": 0.01, "explanation": "ΔT = 35 − (−10) = 45 K\nΔL = 45 · 0,012 · 12 = **6,48 mm**"},
+        {"id": "baustoffe-3-waermedehnung-q004", "type": "numeric", "question": "Eine Brücke aus Stahlbeton ist 50 m lang; Temperaturbereich −20 °C bis 40 °C, α = 0,010 mm/(m·K). Wie viel muss die Dehnfuge aufnehmen?", "answer": 30.0, "unit": "mm", "tolerance": 0.01, "explanation": "ΔT = 60 K → ΔL = 60 · 0,010 · 50 = **30 mm**"},
+        {"id": "baustoffe-3-waermedehnung-q005", "type": "mc", "question": "Warum funktioniert Stahlbeton trotz Temperaturschwankungen?", "options": ["Beton dehnt sich gar nicht aus", "Stahl und Beton haben fast den gleichen Wärmeausdehnungskoeffizienten", "Der Stahl schmilzt bei Hitze", "Wegen der Dehnfugen im Stahl"], "answer": 1, "explanation": "α Stahl ≈ 0,012, α Beton ≈ 0,010 mm/(m·K) – sie dehnen sich fast gleich."}
+      ]
+    }
+  ]
+}

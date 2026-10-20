@@ -1,0 +1,48 @@
+{
+  "unit": "betriebspsychologie-2",
+  "subject": "betriebspsychologie",
+  "decks": [
+    {
+      "id": "bp-2-bildungssystem",
+      "title": "Das Bildungssystem in Deutschland",
+      "description": "Prinzipien des Bildungssystems, duales System, Berichtsheft, Ausbildungsordnung und Rahmenlehrplan.",
+      "sources": ["1) Das Bildungssystem in Deutschland.pdf", "2) Das Bildungssystem in Deutschland.pdf"],
+      "cards": [
+        {"id": "bp-2-bildungssystem-c001", "type": "basic", "front": "Nenne die vier **Prinzipien** des deutschen Bildungssystems.", "back": "- **Chancengleichheit** – Bildung für jeden möglich\n- **Durchlässigkeit** – Bildungsweg variabel und offen\n- **Transparenz** – Abschlüsse nachvollziehbar, gesetzlich geregelt\n- **Gleichwertigkeit** – Abschlüsse gleichermaßen anerkannt"},
+        {"id": "bp-2-bildungssystem-c002", "type": "basic", "front": "Lernorte im **dualen System**?", "back": "**Betrieb** (praktische Fähigkeiten, dazu überbetriebliche Ausbildung der HWK) + **Berufsschule** (Theorie, Allgemeinbildung)."},
+        {"id": "bp-2-bildungssystem-c003", "type": "basic", "front": "Pflichten rund ums **Berichtsheft**?", "back": "Der Azubi muss es **führen und vorlegen**; der Ausbilder gibt ihm Zeit dafür **in der Arbeitszeit** und kontrolliert es regelmäßig."},
+        {"id": "bp-2-bildungssystem-c004", "type": "basic", "front": "Wer erlässt die **Ausbildungsordnung** – und was folgt daraus?", "back": "Das **Bundesministerium für Wirtschaft**; sie enthält den Ausbildungsrahmenplan → daraus der **betriebliche Ausbildungsplan**."},
+        {"id": "bp-2-bildungssystem-c005", "type": "basic", "front": "Wer erlässt den **Rahmenlehrplan** – und was folgt daraus?", "back": "Die **Kultusministerkonferenz / Kultusministerium**; daraus entstehen Stundenplan und didaktische Jahresplanung der Berufsschule."},
+        {"id": "bp-2-bildungssystem-c006", "type": "basic", "front": "Wie kann man einen Ausbildungsabschnitt im **EU-Ausland** machen?", "back": "Über das Programm **Erasmus+**."}
+      ],
+      "quiz": [
+        {"id": "bp-2-bildungssystem-q001", "type": "mc", "question": "„Jeder kann jeden Abschluss erreichen, Wechsel zwischen Bildungswegen sind möglich.“ Welches Prinzip?", "options": ["Transparenz", "Durchlässigkeit", "Gleichwertigkeit", "Chancengleichheit"], "answer": 1, "explanation": "Durchlässigkeit = Bildungsweg variabel und offen."},
+        {"id": "bp-2-bildungssystem-q002", "type": "mc", "question": "Wer gibt die Zeit zum Führen des Berichtshefts?", "options": ["Der Azubi in der Freizeit", "Der Ausbilder – in der Arbeitszeit", "Die Berufsschule", "Die IHK"], "answer": 1, "explanation": "Das Berichtsheft wird während der Arbeitszeit geführt."},
+        {"id": "bp-2-bildungssystem-q003", "type": "mc", "question": "Aus dem **Rahmenlehrplan** entsteht …", "options": ["der betriebliche Ausbildungsplan", "die didaktische Jahresplanung der Berufsschule", "der Ausbildungsvertrag", "die Prüfungsordnung"], "answer": 1, "explanation": "Rahmenlehrplan → Berufsschule; Ausbildungsordnung → Betrieb."},
+        {"id": "bp-2-bildungssystem-q004", "type": "mc", "question": "Wer erlässt die Ausbildungsordnung?", "options": ["Kultusministerium", "Bundesministerium für Wirtschaft", "Handwerkskammer", "Berufsschule"], "answer": 1, "explanation": "Bundesministerium (für Wirtschaft)."}
+      ]
+    },
+    {
+      "id": "bp-2-ausbildungspersonen",
+      "title": "Ausbildungspersonen & Eignung",
+      "description": "Ausbildender, Ausbilder, Ausbildungsbeauftragter und die Eignungsvoraussetzungen nach BBiG/HwO.",
+      "sources": ["Ausbildungspersonen.pdf", "Ausbildungspersonen Gruppenarbeit.pdf", "Eignungsvoraussetzungen.pdf"],
+      "cards": [
+        {"id": "bp-2-ausbildungspersonen-c001", "type": "basic", "front": "Aufgaben des **Ausbildenden** (Betrieb/Chef)?", "back": "Schließt den **Ausbildungsvertrag**, letzte Instanz bei der Bewerberauswahl, strategische und betriebswirtschaftliche Verantwortung, Weisungsrecht."},
+        {"id": "bp-2-ausbildungspersonen-c002", "type": "basic", "front": "Aufgaben des **Ausbilders**?", "back": "Erstellt den **Ausbildungsplan**, überwacht den Verlauf, wählt Bewerber und Ausbildungsbeauftragte aus, Ansprechpartner für die Azubis."},
+        {"id": "bp-2-ausbildungspersonen-c003", "type": "basic", "front": "Aufgaben des **Ausbildungsbeauftragten**?", "back": "Unterstützt im Arbeitsalltag: praxisbezogene Unterweisung, Arbeitsaufträge, Berichtsheft durchsehen, Beurteilung, Arbeitssicherheit."},
+        {"id": "bp-2-ausbildungspersonen-c004", "type": "basic", "front": "Wer ist **persönlich ungeeignet** zum Ausbilden? (§ 29 BBiG / § 22a HwO)", "back": "Wer Kinder und Jugendliche nicht beschäftigen darf (§ 25 JArbSchG) oder wiederholt bzw. schwer gegen BBiG/HwO verstoßen hat."},
+        {"id": "bp-2-ausbildungspersonen-c005", "type": "basic", "front": "Wer ist **fachlich geeignet**? (§ 30 BBiG)", "back": "Wer die beruflichen sowie berufs- und arbeitspädagogischen Kenntnisse und Fertigkeiten hat (z. B. **AEVO**-Prüfung)."},
+        {"id": "bp-2-ausbildungspersonen-c006", "type": "basic", "front": "Wann ist eine **Ausbildungsstätte** geeignet? (§ 27 BBiG / § 21 HwO)", "back": "Nach Art und Einrichtung geeignet; Zahl der Azubis angemessen zur Zahl der Fachkräfte; Inhalte der Ausbildungsordnung voll vermittelbar."}
+      ],
+      "quiz": [
+        {"id": "bp-2-ausbildungspersonen-q001", "type": "mc", "question": "Wer schließt den Ausbildungsvertrag?", "options": ["Ausbilder", "Ausbildender", "Ausbildungsbeauftragter", "Berufsschule"], "answer": 1, "explanation": "Der Ausbildende (der Betrieb)."},
+        {"id": "bp-2-ausbildungspersonen-q002", "type": "mc", "question": "Wer erstellt den Ausbildungsplan?", "options": ["Ausbildender", "Ausbilder", "Azubi", "Kammer"], "answer": 1, "explanation": "Der Ausbilder."},
+        {"id": "bp-2-ausbildungspersonen-q003", "type": "mc", "question": "Ein Geselle zeigt dem Azubi im Alltag, wie man eine Schalung baut, und sieht das Berichtsheft durch. Seine Rolle?", "options": ["Ausbildender", "Ausbilder", "Ausbildungsbeauftragter", "Prüfer"], "answer": 2, "explanation": "Praxisnahe Unterstützung im Alltag = Ausbildungsbeauftragter."},
+        {"id": "bp-2-ausbildungspersonen-q004", "type": "mc", "question": "Welcher Paragraf regelt die **fachliche** Eignung?", "options": ["§ 27 BBiG", "§ 29 BBiG", "§ 30 BBiG", "§ 25 JArbSchG"], "answer": 2, "explanation": "§ 30 BBiG – fachliche Eignung."},
+        {"id": "bp-2-ausbildungspersonen-q005", "type": "mc", "question": "Wer ist **persönlich ungeeignet**?", "options": ["Wer keinen Meister hat", "Wer Jugendliche nicht beschäftigen darf (§ 25 JArbSchG)", "Wer jünger als 30 ist", "Wer kein Abitur hat"], "answer": 1, "explanation": "§ 29 BBiG verweist auf § 25 JArbSchG."},
+        {"id": "bp-2-ausbildungspersonen-q006", "type": "exercise", "question": "Ordne die Aufgaben zu: **Ausbildender**, **Ausbilder** oder **Ausbildungsbeauftragter**?\na) Ausbildungsvertrag unterschreiben\nb) Ausbildungsplan erstellen\nc) Berichtsheft wöchentlich durchsehen", "fields": [{"label": "a) Vertrag", "solution": "Ausbildender (Betrieb/Chef)"}, {"label": "b) Ausbildungsplan", "solution": "Ausbilder"}, {"label": "c) Berichtsheft", "solution": "Ausbildungsbeauftragter"}], "explanation": ""}
+      ]
+    }
+  ]
+}

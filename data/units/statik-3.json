@@ -1,0 +1,29 @@
+{
+  "unit": "statik-3",
+  "subject": "statik",
+  "decks": [
+    {
+      "id": "statik-3-streckenlasten",
+      "title": "Streckenlasten (Blatt)",
+      "description": "Konstante, dreiecks- und trapezförmige Streckenlasten durch eine Resultierende ersetzen.",
+      "sources": ["Streckenlasten.pdf"],
+      "cards": [
+        {"id": "statik-3-streckenlasten-c001", "type": "basic", "front": "Was ist eine **Streckenlast** (Linienlast)?", "back": "Eine Last, die kontinuierlich über eine Strecke am statischen System (z. B. Balken) angreift. Einheit: Kraft je Länge, z. B. **kN/m**.\nBsp.: Eigengewicht eines Balkens, Schnee, Wind."},
+        {"id": "statik-3-streckenlasten-c002", "type": "basic", "front": "**Konstante** Streckenlast: Resultierende und Angriffspunkt?", "back": "R = q · l\nAngriff in der **Mitte** (l/2)."},
+        {"id": "statik-3-streckenlasten-c003", "type": "basic", "front": "**Dreiecksförmige** Streckenlast: Resultierende und Angriffspunkt?", "back": "R = ½ · q₀ · l\nAngriff im **Schwerpunkt**: ⅓ l von der hohen Seite (⅔ l von der Spitze)."},
+        {"id": "statik-3-streckenlasten-c004", "type": "basic", "front": "**Trapezförmige** Streckenlast: wie zerlegt man sie?", "back": "In ein **Rechteck** und ein **Dreieck**:\n- R₂ = q₀ · l (Rechteck, in der Mitte)\n- R₁ = ½ · (q₁ − q₀) · l (Dreieck, ⅓ l von der hohen Seite)"}
+      ],
+      "quiz": [
+        {"id": "statik-3-streckenlasten-q001", "type": "numeric", "question": "Ein Balken (l = 4,50 m) trägt eine konstante Streckenlast q = 6 kN/m. Wie groß ist die Resultierende R?", "answer": 27, "unit": "kN", "tolerance": 0.01, "explanation": "R = q · l = 6 kN/m · 4,50 m = **27 kN**, Angriff bei 2,25 m."},
+        {"id": "statik-3-streckenlasten-q002", "type": "numeric", "question": "Konstante Streckenlast q = 3,5 kN/m auf l = 6,00 m. In welchem Abstand vom Auflager greift die Resultierende an?", "answer": 3, "unit": "m", "tolerance": 0.01, "explanation": "Bei konstanter Last in der Mitte: l / 2 = **3,00 m** (R = 21 kN)."},
+        {"id": "statik-3-streckenlasten-q003", "type": "numeric", "question": "Eine dreiecksförmige Streckenlast steigt auf l = 6 m von 0 auf q₀ = 4 kN/m. Wie groß ist R?", "answer": 12, "unit": "kN", "tolerance": 0.01, "explanation": "R = ½ · q₀ · l = ½ · 4 · 6 = **12 kN**"},
+        {"id": "statik-3-streckenlasten-q004", "type": "numeric", "question": "Dreieckslast auf l = 6 m (0 → 4 kN/m). Wie weit vom **hohen** Ende greift R an?", "answer": 2, "unit": "m", "tolerance": 0.01, "explanation": "⅓ · l = ⅓ · 6 m = **2,00 m** vom hohen Ende (4 m von der Spitze)."},
+        {"id": "statik-3-streckenlasten-q005", "type": "numeric", "question": "Trapezlast auf l = 5 m: links q₀ = 2 kN/m, rechts q₁ = 6 kN/m. Wie groß ist die Rechteck-Resultierende R₂?", "answer": 10, "unit": "kN", "tolerance": 0.01, "explanation": "R₂ = q₀ · l = 2 · 5 = **10 kN** (in der Mitte)."},
+        {"id": "statik-3-streckenlasten-q006", "type": "numeric", "question": "Trapezlast auf l = 5 m: q₀ = 2 kN/m, q₁ = 6 kN/m. Wie groß ist die Dreiecks-Resultierende R₁?", "answer": 10, "unit": "kN", "tolerance": 0.01, "explanation": "R₁ = ½ · (q₁ − q₀) · l = ½ · 4 · 5 = **10 kN** (⅓ l = 1,67 m vom hohen Ende)."},
+        {"id": "statik-3-streckenlasten-q007", "type": "numeric", "question": "Trapezlast auf l = 5 m: q₀ = 2 kN/m, q₁ = 6 kN/m. Gesamtlast?", "answer": 20, "unit": "kN", "tolerance": 0.01, "explanation": "R = R₁ + R₂ = 10 + 10 = **20 kN** (= mittlere Last 4 kN/m · 5 m)."},
+        {"id": "statik-3-streckenlasten-q008", "type": "mc", "question": "Wo greift die Resultierende einer **Dreieckslast** an?", "options": ["In der Mitte", "⅓ l von der hohen Seite", "⅓ l von der Spitze", "Am hohen Ende"], "answer": 1, "explanation": "Im Schwerpunkt des Dreiecks: ⅓ l von der hohen Seite."},
+        {"id": "statik-3-streckenlasten-q009", "type": "mc", "question": "Welche Einheit hat eine Streckenlast?", "options": ["kN", "kN/m", "kN/m²", "kNm"], "answer": 1, "explanation": "Kraft je Länge: kN/m. (kN/m² wäre eine Flächenlast.)"}
+      ]
+    }
+  ]
+}

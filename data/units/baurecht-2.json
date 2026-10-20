@@ -1,0 +1,30 @@
+{
+  "unit": "baurecht-2",
+  "subject": "baurecht",
+  "decks": [
+    {
+      "id": "baurecht-2-fnp",
+      "title": "Bauleitplanung & Flächennutzungsplan (Blatt 3 + 4)",
+      "description": "Leitsätze und Grundsätze der Bauleitplanung, die Prüfungsfrage zu den zwei Bauleitplänen und der Flächennutzungsplan im Detail.",
+      "sources": ["Bauplanungsrecht 3.pdf", "Bauplanungsrecht 4.pdf"],
+      "cards": [
+        {"id": "baurecht-2-fnp-c001", "type": "basic", "front": "⚠️ **Prüfungsfrage:** Welche zwei Arten von Bauleitplänen gibt es?", "back": "- **vorbereitender** Bauleitplan = **Flächennutzungsplan**\n- **verbindlicher** Bauleitplan = **Bebauungsplan**", "hint": "Auf dem Blatt: auswendig wissen!"},
+        {"id": "baurecht-2-fnp-c002", "type": "basic", "front": "Nenne die **Leitsätze** der Bauleitplanung (mind. 4).", "back": "Nachhaltige städtebauliche Entwicklung, sozial gerechte Bodennutzung, menschenwürdige Umwelt, Schutz der natürlichen Lebensgrundlagen, sparsamer Umgang mit Grund und Boden, Bodenversiegelung begrenzen."},
+        {"id": "baurecht-2-fnp-c003", "type": "basic", "front": "Wie läuft Bauleitplanung grundsätzlich ab?", "back": "Als mehrphasiger Prozess zum Ausgleich der Interessen: Lage erfassen, künftige Entwicklung abschätzen, **Bürger und Träger öffentlicher Belange beteiligen**, abwägen."},
+        {"id": "baurecht-2-fnp-c004", "type": "basic", "front": "Für welches Gebiet gilt der **Flächennutzungsplan**?", "back": "Für das **ganze Gemeindegebiet** – er stellt nur die **Grundzüge** der Bodennutzung in unverbindlicher Form dar."},
+        {"id": "baurecht-2-fnp-c005", "type": "basic", "front": "Für welchen Zeitraum plant der Flächennutzungsplan etwa?", "back": "Etwa **10 – 15 Jahre**."},
+        {"id": "baurecht-2-fnp-c006", "type": "basic", "front": "Was wird im FNP **dargestellt**? (§ 5 Abs. 2 BauGB, Beispiele)", "back": "Bauflächen, Flächen für den Gemeinbedarf, Verkehrsflächen, Ver- und Entsorgungsflächen, Grünflächen, Immissionsschutzflächen, Wasserflächen, Ausgleichsflächen …"},
+        {"id": "baurecht-2-fnp-c007", "type": "basic", "front": "Was wird im FNP **gekennzeichnet**?", "back": "Bergbau- und Abbauflächen, Altlastenflächen, Ensembles (Denkmalschutz)."},
+        {"id": "baurecht-2-fnp-c008", "type": "basic", "front": "Welche **Bindungswirkung** hat der FNP für Bauvorhaben?", "back": "Nur eine **mittelbare** – direkt verbindlich für den Bürger ist erst der Bebauungsplan."}
+      ],
+      "quiz": [
+        {"id": "baurecht-2-fnp-q001", "type": "mc", "question": "⚠️ Prüfungsfrage: Wie heißt der **verbindliche** Bauleitplan?", "options": ["Flächennutzungsplan", "Bebauungsplan", "Regionalplan", "Lageplan"], "answer": 1, "explanation": "Verbindlich = Bebauungsplan, vorbereitend = Flächennutzungsplan."},
+        {"id": "baurecht-2-fnp-q002", "type": "mc", "question": "Für welches Gebiet gilt der Flächennutzungsplan?", "options": ["Für ein einzelnes Grundstück", "Für ein Baugebiet", "Für das ganze Gemeindegebiet", "Für ganz Bayern"], "answer": 2, "explanation": "Der FNP umfasst das gesamte Gemeindegebiet."},
+        {"id": "baurecht-2-fnp-q003", "type": "mc", "question": "Welcher Planungszeitraum ist für einen FNP typisch?", "options": ["1 – 2 Jahre", "3 – 5 Jahre", "10 – 15 Jahre", "50 Jahre"], "answer": 2, "explanation": "Etwa 10 – 15 Jahre."},
+        {"id": "baurecht-2-fnp-q004", "type": "mc", "question": "Was ist **kein** Leitsatz der Bauleitplanung?", "options": ["Sparsamer Umgang mit Boden", "Bodenversiegelung begrenzen", "Möglichst viel Fläche versiegeln", "Schutz der natürlichen Lebensgrundlagen"], "answer": 2, "explanation": "Versiegelung soll begrenzt werden."},
+        {"id": "baurecht-2-fnp-q005", "type": "mc", "question": "Welche Wirkung hat der FNP für ein einzelnes Bauvorhaben?", "options": ["Unmittelbar verbindlich", "Nur mittelbar", "Gar keine", "Er ersetzt die Baugenehmigung"], "answer": 1, "explanation": "Mittelbare Bindungswirkung – verbindlich ist der B-Plan."},
+        {"id": "baurecht-2-fnp-q006", "type": "exercise", "question": "⚠️ **Prüfungsfrage (auswendig):** Nenne die zwei Arten der Bauleitpläne mit ihrer Bezeichnung.", "fields": [{"label": "Vorbereitender Bauleitplan", "solution": "Flächennutzungsplan"}, {"label": "Verbindlicher Bauleitplan", "solution": "Bebauungsplan"}], "explanation": ""}
+      ]
+    }
+  ]
+}

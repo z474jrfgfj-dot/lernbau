@@ -1,0 +1,112 @@
+{
+  "unit": "englisch-2",
+  "subject": "englisch",
+  "decks": [
+    {
+      "id": "englisch-2-site-plan",
+      "title": "The site plan (Book p. 8–9)",
+      "description": "Teile der Baustelle auf dem Baustellenplan zuordnen und beschreiben, wo etwas liegt.",
+      "sources": ["The site plan.pdf", "Englisch Buch - Construction Milestone.pdf"],
+      "cards": [
+        {"id": "englisch-2-site-plan-c001", "type": "basic", "front": "Phrases to say **where something is** on a site plan?", "back": "You can see … / You can find … / There is … / There are …\n+ in front of, behind, beside, on the left of / on the right of, opposite, between … and …"},
+        {"id": "englisch-2-site-plan-c002", "type": "basic", "front": "*in front of* / *behind* / *beside* / *opposite*?", "back": "vor / hinter / neben / gegenüber"}
+      ],
+      "quiz": [
+        {"id": "englisch-2-site-plan-q001", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Baubüro**?", "options": ["site office", "workshop", "skip", "storage area"], "answer": 0, "explanation": "Baubüro = site office"},
+        {"id": "englisch-2-site-plan-q002", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Werkstatt**?", "options": ["building pit", "workshop", "recreation room", "site access road"], "answer": 1, "explanation": "Werkstatt = workshop"},
+        {"id": "englisch-2-site-plan-q003", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Baugrube**?", "options": ["storeroom", "area for steel fabrication", "building pit", "area for doing woodwork"], "answer": 2, "explanation": "Baugrube = building pit"},
+        {"id": "englisch-2-site-plan-q004", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Lagerraum**?", "options": ["skip", "storage area", "site office", "storeroom"], "answer": 3, "explanation": "Lagerraum = storeroom"},
+        {"id": "englisch-2-site-plan-q005", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Abfallcontainer**?", "options": ["skip", "recreation room", "site access road", "workshop"], "answer": 0, "explanation": "Abfallcontainer = skip"},
+        {"id": "englisch-2-site-plan-q006", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Aufenthaltsraum**?", "options": ["area for steel fabrication", "recreation room", "area for doing woodwork", "building pit"], "answer": 1, "explanation": "Aufenthaltsraum = recreation room"},
+        {"id": "englisch-2-site-plan-q007", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Stahlbearbeitungsplatz**?", "options": ["storage area", "site office", "area for steel fabrication", "storeroom"], "answer": 2, "explanation": "Stahlbearbeitungsplatz = area for steel fabrication"},
+        {"id": "englisch-2-site-plan-q008", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Lagerplatz**?", "options": ["site access road", "workshop", "skip", "storage area"], "answer": 3, "explanation": "Lagerplatz = storage area"},
+        {"id": "englisch-2-site-plan-q009", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Baustellenzufahrtsweg**?", "options": ["site access road", "area for doing woodwork", "building pit", "recreation room"], "answer": 0, "explanation": "Baustellenzufahrtsweg = site access road"},
+        {"id": "englisch-2-site-plan-q010", "type": "mc", "question": "**The site plan – Exercise 1:** Which part of the site is the **Holzbearbeitungsplatz**?", "options": ["site office", "area for doing woodwork", "storeroom", "area for steel fabrication"], "answer": 1, "explanation": "Holzbearbeitungsplatz = area for doing woodwork"},
+        {"id": "englisch-2-site-plan-q011", "type": "mc", "question": "Choose the right phrase: *You can see the recreation room ___ the site office and the storeroom.*", "options": ["in front of", "between", "behind", "opposite of"], "answer": 1, "explanation": "between … and …"},
+        {"id": "englisch-2-site-plan-q012", "type": "mc", "question": "Which phrase describes a position **gegenüber**?", "options": ["beside", "behind", "opposite", "in front of"], "answer": 2, "explanation": "opposite = gegenüber"},
+        {"id": "englisch-2-site-plan-q013", "type": "mc", "question": "Which phrase means **neben**?", "options": ["beside", "between", "behind", "opposite"], "answer": 0, "explanation": "beside = neben"},
+        {"id": "englisch-2-site-plan-q014", "type": "exercise", "question": "**Book p. 8, Exercise 3:** Complete the description with words from the page.\n*The (1) is situated in a village. There is some (2) behind the crane. A (3) probably put it there. A (4) leads down to the site from the road. There are a lot of (5) in front of the crane and around the site. They are waiting for the (6) to start the next part of the building.*", "fields": [{"label": "1", "solution": "construction site"}, {"label": "2", "solution": "soil"}, {"label": "3", "solution": "dumper truck"}, {"label": "4", "solution": "ramp"}, {"label": "5", "solution": "wood"}, {"label": "6", "solution": "construction workers"}], "explanation": "Lösung wie auf deinem Blatt."}
+      ]
+    },
+    {
+      "id": "englisch-2-comparatives",
+      "title": "Comparatives & Superlatives",
+      "description": "Steigerung von Adjektiven: older/more expensive, than, not as … as, the oldest/the most expensive.",
+      "sources": ["AB comparatives - Online Unterricht.pdf"],
+      "cards": [
+        {"id": "englisch-2-comparatives-c001", "type": "basic", "front": "Wie bildet man den **Komparativ** bei kurzen Adjektiven (1 Silbe)?", "back": "Mit **-er**: old → older, cheap → cheaper\nDoppelkonsonant: big → bigger, hot → hotter, thin → thinner\n-e: nice → nicer"},
+        {"id": "englisch-2-comparatives-c002", "type": "basic", "front": "Komparativ bei Adjektiven auf **-y**?", "back": "-y → **-ier**: easy → easier, heavy → heavier, early → earlier"},
+        {"id": "englisch-2-comparatives-c003", "type": "basic", "front": "Komparativ bei **langen** Adjektiven (2+ Silben)?", "back": "Mit **more**: careful → more careful, expensive → more expensive, interesting → more interesting"},
+        {"id": "englisch-2-comparatives-c004", "type": "basic", "front": "Unregelmäßige Steigerung von **good, bad, far**?", "back": "good → better → the best\nbad → worse → the worst\nfar → further → the furthest"},
+        {"id": "englisch-2-comparatives-c005", "type": "basic", "front": "Wie bildet man den **Superlativ**?", "back": "the + **-est** (the oldest, the biggest, the easiest) bzw. **the most** + langes Adjektiv (the most expensive)."},
+        {"id": "englisch-2-comparatives-c006", "type": "basic", "front": "Welches Wort folgt nach dem Komparativ beim Vergleich?", "back": "**than**: older than, more expensive than. (Nicht: older as)"},
+        {"id": "englisch-2-comparatives-c007", "type": "basic", "front": "Was bedeutet **not as … as**?", "back": "„nicht so … wie“: Rome is not as old as Athens. (= Athens is older)"},
+        {"id": "englisch-2-comparatives-c008", "type": "basic", "front": "**a bit** / **much** + Komparativ?", "back": "a bit bigger = etwas größer · much bigger = viel größer"}
+      ],
+      "quiz": [
+        {"id": "englisch-2-comparatives-q001", "type": "input", "question": "Comparative of **old**?", "answer": "older", "accept": [], "explanation": "old → **older** → the oldest"},
+        {"id": "englisch-2-comparatives-q002", "type": "input", "question": "Comparative of **cheap**?", "answer": "cheaper", "accept": [], "explanation": "cheap → **cheaper** → the cheapest"},
+        {"id": "englisch-2-comparatives-q003", "type": "input", "question": "Comparative of **big**?", "answer": "bigger", "accept": [], "explanation": "big → **bigger** → the biggest"},
+        {"id": "englisch-2-comparatives-q004", "type": "input", "question": "Comparative of **hot**?", "answer": "hotter", "accept": [], "explanation": "hot → **hotter** → the hottest"},
+        {"id": "englisch-2-comparatives-q005", "type": "input", "question": "Comparative of **easy**?", "answer": "easier", "accept": [], "explanation": "easy → **easier** → the easiest"},
+        {"id": "englisch-2-comparatives-q006", "type": "input", "question": "Comparative of **heavy**?", "answer": "heavier", "accept": [], "explanation": "heavy → **heavier** → the heaviest"},
+        {"id": "englisch-2-comparatives-q007", "type": "input", "question": "Comparative of **strong**?", "answer": "stronger", "accept": [], "explanation": "strong → **stronger** → the strongest"},
+        {"id": "englisch-2-comparatives-q008", "type": "input", "question": "Comparative of **large**?", "answer": "larger", "accept": [], "explanation": "large → **larger** → the largest"},
+        {"id": "englisch-2-comparatives-q009", "type": "input", "question": "Comparative of **modern**?", "answer": "more modern", "accept": [], "explanation": "modern → **more modern** → the most modern"},
+        {"id": "englisch-2-comparatives-q010", "type": "input", "question": "Comparative of **important**?", "answer": "more important", "accept": [], "explanation": "important → **more important** → the most important"},
+        {"id": "englisch-2-comparatives-q011", "type": "input", "question": "Comparative of **expensive**?", "answer": "more expensive", "accept": [], "explanation": "expensive → **more expensive** → the most expensive"},
+        {"id": "englisch-2-comparatives-q012", "type": "input", "question": "Comparative of **careful**?", "answer": "more careful", "accept": [], "explanation": "careful → **more careful** → the most careful"},
+        {"id": "englisch-2-comparatives-q013", "type": "input", "question": "Comparative of **dangerous**?", "answer": "more dangerous", "accept": [], "explanation": "dangerous → **more dangerous** → the most dangerous"},
+        {"id": "englisch-2-comparatives-q014", "type": "input", "question": "Comparative of **good**?", "answer": "better", "accept": [], "explanation": "good → **better** → the best"},
+        {"id": "englisch-2-comparatives-q015", "type": "input", "question": "Superlative of **good**?", "answer": "the best", "accept": ["best"], "explanation": "good → better → **the best**"},
+        {"id": "englisch-2-comparatives-q016", "type": "input", "question": "Superlative of **bad**?", "answer": "the worst", "accept": ["worst"], "explanation": "bad → worse → **the worst**"},
+        {"id": "englisch-2-comparatives-q017", "type": "input", "question": "Superlative of **far**?", "answer": "the furthest", "accept": ["furthest"], "explanation": "far → further → **the furthest**"},
+        {"id": "englisch-2-comparatives-q018", "type": "input", "question": "Superlative of **thin**?", "answer": "the thinnest", "accept": ["thinnest"], "explanation": "thin → thinner → **the thinnest**"},
+        {"id": "englisch-2-comparatives-q019", "type": "input", "question": "Superlative of **early**?", "answer": "the earliest", "accept": ["earliest"], "explanation": "early → earlier → **the earliest**"},
+        {"id": "englisch-2-comparatives-q020", "type": "input", "question": "Superlative of **pretty**?", "answer": "the prettiest", "accept": ["prettiest"], "explanation": "pretty → prettier → **the prettiest**"},
+        {"id": "englisch-2-comparatives-q021", "type": "mc", "question": "*Is it ___ to go by car or by train?*", "options": ["more cheap", "cheaper", "cheapest", "more cheaper"], "answer": 1, "explanation": "Short word → -er: cheaper (not more cheap)."},
+        {"id": "englisch-2-comparatives-q022", "type": "mc", "question": "*Athens is ___ Rome.*", "options": ["older as", "older than", "more old than", "oldest than"], "answer": 1, "explanation": "Comparative + **than**."},
+        {"id": "englisch-2-comparatives-q023", "type": "mc", "question": "*Rome is not ___ Athens.*", "options": ["as old as", "so old than", "older as", "as older as"], "answer": 0, "explanation": "not as … as"},
+        {"id": "englisch-2-comparatives-q024", "type": "mc", "question": "*Box C is ___ bigger than Box D* (a big difference).", "options": ["much", "very", "more", "most"], "answer": 0, "explanation": "much bigger = viel größer; a bit bigger = etwas größer."},
+        {"id": "englisch-2-comparatives-q025", "type": "mc", "question": "*It's the ___ building in the town.*", "options": ["older", "oldest", "most old", "more older"], "answer": 1, "explanation": "Superlative with the: the oldest."},
+        {"id": "englisch-2-comparatives-q026", "type": "mc", "question": "Opposite of **colder**?", "options": ["hotter", "warmer", "older", "cooler"], "answer": 1, "explanation": "colder ↔ warmer"},
+        {"id": "englisch-2-comparatives-q027", "type": "mc", "question": "*Helen's car isn't very big. She wants a ___ one.*", "options": ["biger", "bigger", "more big", "biggest"], "answer": 1, "explanation": "big → bigger (Doppelkonsonant)."}
+      ]
+    },
+    {
+      "id": "englisch-2-vokabeltest",
+      "title": "Vokabeltest Baustelle (Unterricht)",
+      "description": "Die Wörter aus dem Vokabeltest vom 20.10. – mit Markierung, welche im Test falsch waren.",
+      "sources": ["Vokabeltest Englisch Baustelle - Unterricht.pdf"],
+      "cards": [
+        {"id": "englisch-2-vokabeltest-c001", "type": "basic", "front": "**bucket**", "back": "der Eimer", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c002", "type": "basic", "front": "**steel rod mat**", "back": "die Baustahlmatte", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c003", "type": "basic", "front": "**railing**", "back": "das Geländer\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c004", "type": "basic", "front": "**table saw**", "back": "die Tischkreissäge\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c005", "type": "basic", "front": "**gravel**", "back": "der Kies", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c006", "type": "basic", "front": "**tool store**", "back": "das Werkzeuglager\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c007", "type": "basic", "front": "**building**", "back": "das Gebäude", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c008", "type": "basic", "front": "**construction fence**", "back": "der Bauzaun", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c009", "type": "basic", "front": "**plaster**", "back": "der Putz\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c010", "type": "basic", "front": "**chimney**", "back": "der Schornstein / der Kamin\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c011", "type": "basic", "front": "**shutters**", "back": "die Fensterläden\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c012", "type": "basic", "front": "**hipped roof**", "back": "das Walmdach\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c013", "type": "basic", "front": "**skylight**", "back": "das Dachfenster\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c014", "type": "basic", "front": "**steel beam**", "back": "der Stahlträger\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c015", "type": "basic", "front": "**scaffolding**", "back": "das Gerüst\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c016", "type": "basic", "front": "**lifting chain**", "back": "das Gehänge / die Anschlagkette\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c017", "type": "basic", "front": "**gutter**", "back": "die Dachrinne\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c018", "type": "basic", "front": "**concrete**", "back": "der Beton\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c019", "type": "basic", "front": "**reinforced concrete**", "back": "der Stahlbeton\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c020", "type": "basic", "front": "**rebar**", "back": "der Bewehrungsstahl\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c021", "type": "basic", "front": "**topsoil**", "back": "der Mutterboden", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c022", "type": "basic", "front": "**foundation**", "back": "das Fundament\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c023", "type": "basic", "front": "**column**", "back": "die Säule / die Stütze\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
+        {"id": "englisch-2-vokabeltest-c024", "type": "basic", "front": "**batter boards**", "back": "das Schnurgerüst\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."}
+      ],
+      "quiz": [
+
+      ]
+    }
+  ]
+}

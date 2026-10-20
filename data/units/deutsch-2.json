@@ -1,0 +1,32 @@
+{
+  "unit": "deutsch-2",
+  "subject": "deutsch",
+  "decks": [
+    {
+      "id": "deutsch-2-eselsbruecken",
+      "title": "Eselsbrücken & typische Fehler",
+      "description": "Merkhilfen zu den 4 Seiten und den 5 Axiomen und die Punkte, die im Abschlusstest noch gewackelt haben.",
+      "sources": ["Übungsblätter - selber erstellt"],
+      "cards": [
+        {"id": "deutsch-2-eselsbruecken-c001", "type": "basic", "front": "Eselsbrücke für die Reihenfolge der **4 Seiten** (S – S – B – A)?", "back": "„**S**onntags **S**pielen **B**askets **A**uswärts“\nSachinhalt – Selbstoffenbarung – Beziehung – Appell"},
+        {"id": "deutsch-2-eselsbruecken-c002", "type": "basic", "front": "Was steckt hinter **„Es – Ich – Du – Mach“**?", "back": "Die 4 Seiten als Kurzform:\n- **Es** = Sachinhalt (worüber?)\n- **Ich** = Selbstoffenbarung (was zeige ich von mir?)\n- **Du** = Beziehung (was halte ich von dir?)\n- **Mach** = Appell (was sollst du tun?)"},
+        {"id": "deutsch-2-eselsbruecken-c003", "type": "basic", "front": "Bild zum Vier-Seiten-Modell?", "back": "Jede Nachricht ist ein Würfel mit 4 Seiten – der Sender hat **4 Schnäbel**, der Empfänger **4 Ohren**. Missverständnis = falsches Ohr auf."},
+        {"id": "deutsch-2-eselsbruecken-c004", "type": "basic", "front": "Die 5 Axiome an der **Hand** – Daumen?", "back": "**1. Man kann nicht nicht kommunizieren** – Daumen hoch sagt auch ohne Worte etwas."},
+        {"id": "deutsch-2-eselsbruecken-c005", "type": "basic", "front": "Die 5 Axiome an der Hand – **Zeigefinger**?", "back": "**2. Inhalts- und Beziehungsaspekt** – ich zeige auf die Sache, aber der Ton bestimmt, wie es ankommt."},
+        {"id": "deutsch-2-eselsbruecken-c006", "type": "basic", "front": "Die 5 Axiome an der Hand – **Mittelfinger**?", "back": "**3. Interpunktion** – beim Streit zeigt jeder auf den anderen: „Du hast angefangen!“"},
+        {"id": "deutsch-2-eselsbruecken-c007", "type": "basic", "front": "Die 5 Axiome an der Hand – **Ringfinger**?", "back": "**4. Digital und analog** – Ring = Symbol ohne Worte (analog), „Ja, ich will“ = Worte (digital)."},
+        {"id": "deutsch-2-eselsbruecken-c008", "type": "basic", "front": "Die 5 Axiome an der Hand – **kleiner Finger**?", "back": "**5. Symmetrisch oder komplementär** – klein neben groß = ungleich (komplementär), gleich groß = symmetrisch."},
+        {"id": "deutsch-2-eselsbruecken-c009", "type": "basic", "front": "Typischer Fehler: **Selbstoffenbarung** vs. **Beziehung** – wie unterscheidet man sie?", "back": "Selbstoffenbarung = **„Ich bin …“ + Gefühl** des Sprechers.\nBeziehung = **„Du bist …“** – was der Sprecher vom anderen hält."},
+        {"id": "deutsch-2-eselsbruecken-c010", "type": "basic", "front": "Wie hängen Watzlawick und Schulz von Thun zusammen?", "back": "Watzlawicks **Axiom 2** (Inhalt + Beziehung) ist die Grundlage. Schulz von Thun übernimmt **Sachinhalt + Beziehung** und ergänzt **Selbstoffenbarung + Appell**."}
+      ],
+      "quiz": [
+        {"id": "deutsch-2-eselsbruecken-q001", "type": "mc", "question": "„Ich bin total gestresst.“ – welche Seite?", "options": ["Sachinhalt", "Selbstoffenbarung", "Beziehung", "Appell"], "answer": 1, "explanation": "„Ich bin …“ + Gefühl = Selbstoffenbarung."},
+        {"id": "deutsch-2-eselsbruecken-q002", "type": "mc", "question": "„Du bist wieder mal unzuverlässig.“ – welche Seite?", "options": ["Selbstoffenbarung", "Beziehung", "Appell", "Sachinhalt"], "answer": 1, "explanation": "„Du bist …“ = Beziehung."},
+        {"id": "deutsch-2-eselsbruecken-q003", "type": "mc", "question": "Welcher Finger steht in der Eselsbrücke für die **Interpunktion**?", "options": ["Daumen", "Zeigefinger", "Mittelfinger", "Ringfinger"], "answer": 2, "explanation": "Mittelfinger = Streitfinger."},
+        {"id": "deutsch-2-eselsbruecken-q004", "type": "mc", "question": "Wofür steht **„Mach“** in „Es – Ich – Du – Mach“?", "options": ["Sachinhalt", "Selbstoffenbarung", "Beziehung", "Appell"], "answer": 3, "explanation": "Mach = Appell."},
+        {"id": "deutsch-2-eselsbruecken-q005", "type": "mc", "question": "Welches Axiom ist die Grundlage für das Vier-Seiten-Modell?", "options": ["Axiom 1", "Axiom 2", "Axiom 4", "Axiom 5"], "answer": 1, "explanation": "Axiom 2: Inhalts- und Beziehungsaspekt."},
+        {"id": "deutsch-2-eselsbruecken-q006", "type": "exercise", "question": "Nenne die **Namen der 5 Axiome** in der richtigen Reihenfolge.", "fields": [{"label": "1", "solution": "Man kann nicht nicht kommunizieren"}, {"label": "2", "solution": "Inhalts- und Beziehungsaspekt"}, {"label": "3", "solution": "Interpunktion"}, {"label": "4", "solution": "Digitale und analoge Kommunikation"}, {"label": "5", "solution": "Symmetrisch oder komplementär"}], "explanation": "Im Abschlusstest noch unsicher – Eselsbrücke Hand: Daumen, Zeigefinger, Mittelfinger, Ringfinger, kleiner Finger."}
+      ]
+    }
+  ]
+}
