@@ -6,7 +6,7 @@
       "id": "englisch-vocab-m1",
       "title": "Vocab list – Module 1: The construction site",
       "description": "Die Vokabelliste von Herrn Finck (63 Wörter): Baustelle, Baustelleneinrichtung, Arbeitsschutz.",
-      "sources": ["Vocab list.pdf"],
+      "sources": ["Vokabel Liste.pdf"],
       "cards": [
         {"id": "englisch-vocab-m1-c001", "type": "vocab", "en": "construction site", "de": "die Baustelle", "example": "Yesterday I wasn't on a construction site.", "exampleDe": "Gestern war ich nicht auf einer Baustelle.", "note": "Dein Satz vom Blatt, sprachlich korrigiert.", "deAlt": ["der Bauplatz"], "enAlt": ["building site", "site"]},
         {"id": "englisch-vocab-m1-c002", "type": "vocab", "en": "location", "de": "die Lage", "example": "The construction site was in Würzburg.", "exampleDe": "Die Baustelle war in Würzburg.", "note": "Dein Satz vom Blatt, sprachlich korrigiert.", "deAlt": ["der Standort", "der Ort", "die Position"], "enAlt": ["position", "site"]},

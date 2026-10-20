@@ -6,7 +6,7 @@
       "id": "baustoffe-2-aufgaben",
       "title": "Übungsblatt: Spannung, Dichte & Wärmedehnung",
       "description": "Bruchspannung, Masse und Stück pro Tonne von Pflastersteinen, Rohdichte von Bohrkernen, Schüttdichte, Dehnfuge und Stützendurchmesser.",
-      "sources": ["Aufgaben Bauphysik II.pdf", "Aufgaben + Info Masse Dichte Spannung  I.pdf"],
+      "sources": ["Aufgaben Bauphysik II.pdf", "Aufgaben - Info Masse Dichte Spannung  I.pdf"],
       "cards": [
         {"id": "baustoffe-2-aufgaben-c001", "type": "basic", "front": "Welche Würfelgröße hat der **Normprüfkörper** für die Betondruckfestigkeit?", "back": "Würfel mit **150 mm** Kantenlänge (bzw. Zylinder Ø 150 / 300 mm).\nEin 20-cm-Würfel ist **keine Normprüfung** – das Ergebnis lässt sich nicht direkt einer Festigkeitsklasse zuordnen."},
         {"id": "baustoffe-2-aufgaben-c002", "type": "basic", "front": "Wie berechnet man die **Längenänderung** durch Temperatur?", "back": "Δl = α · l · ΔT\nα = Wärmeausdehnungskoeffizient (z. B. in mm/(m·K)), l = Länge, ΔT = Temperaturunterschied"},

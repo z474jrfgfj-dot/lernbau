@@ -8,6 +8,7 @@ import hashlib
 import json
 import re
 import sys
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -16,6 +17,11 @@ DATA = ROOT / "data"
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 
 warnings = []
+
+# Local Goodnotes export (only on Max' Mac). Sheets deleted in Goodnotes land in "gelöscht/" and must not be in the app.
+GOODNOTES = Path.home() / "Documents/Bautechniker/Arbeitsblätter (Goodnotes)"
+TRASH = "gelöscht"
+NON_FILE_SOURCES = {"Ergänzung"}  # sources that are no Goodnotes sheet
 
 
 def warn(msg):
@@ -74,6 +80,20 @@ def check_question(q, where):
     return warn(f"{where}: unbekannter Fragetyp {t!r}")
 
 
+def check_sources(decks):
+    """Warn about decks whose source sheet is no longer in Goodnotes (skipped when the folder is not on this machine)."""
+    if not GOODNOTES.is_dir():
+        return
+    present = set()
+    for p in GOODNOTES.rglob("*"):
+        if TRASH not in p.relative_to(GOODNOTES).parts and not p.name.endswith(".alt"):
+            present.add(unicodedata.normalize("NFC", p.name))  # macOS stores names decomposed (NFD)
+    for d in decks:
+        for s in d["sources"]:
+            if unicodedata.normalize("NFC", s) not in present and s not in NON_FILE_SOURCES:
+                warn(f"{d['id']}: Quelle {s!r} ist nicht mehr in Goodnotes – Inhalte entfernen oder Quelle anpassen")
+
+
 def main():
     subjects = json.loads((DATA / "subjects.json").read_text("utf-8"))
     subject_ids = {s["id"] for s in subjects}
@@ -129,6 +149,7 @@ def main():
                 "quiz": quiz,
             })
 
+    check_sources(decks)
     decks.sort(key=lambda d: (order[d["subject"]], d["unit"]))
     body = json.dumps({"subjects": subjects, "decks": decks}, ensure_ascii=False, sort_keys=True)
     version = hashlib.sha1(body.encode()).hexdigest()[:10]

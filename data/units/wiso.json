@@ -133,7 +133,7 @@
       "id": "wiso-geschaeftsfaehigkeit",
       "title": "Rechts- und Geschäftsfähigkeit",
       "description": "Wann Menschen und Gesellschaften rechtsfähig sind, die drei Stufen der Geschäftsfähigkeit und die Fälle vom Blatt. Ein Teil davon kam im Unterricht noch nicht dran – Lösungen nach BGB.",
-      "sources": ["AB_Rechtsf+Geschäftsf.pdf"],
+      "sources": ["AB_Rechtsf-Geschäftsf.pdf"],
       "cards": [
         {"id": "wiso-geschaeftsfaehigkeit-c001", "type": "basic", "front": "Was ist **Rechtsfähigkeit**?", "back": "Die Fähigkeit, **Träger von Rechten und Pflichten** zu sein."},
         {"id": "wiso-geschaeftsfaehigkeit-c002", "type": "basic", "front": "Wann **beginnt** und **endet** die Rechtsfähigkeit eines Menschen?", "back": "Beginnt mit der **Vollendung der Geburt** (§ 1 BGB), endet mit dem **Tod**."},
