@@ -1,0 +1,58 @@
+{
+  "unit": "baukonstruktion-4",
+  "subject": "baukonstruktion",
+  "decks": [
+    {
+      "id": "baukonstruktion-4-bodenarten",
+      "title": "Bodenarten & Bodenklassen (LF 1.2)",
+      "description": "Bindige und nichtbindige Böden, Korngrößen, Prüfverfahren und Bodenklassen nach DIN 18300 (alt).",
+      "sources": ["1.FST1-Bk-LF1.2 Bodenklassen_PP_Skript_pdf.pdf"],
+      "cards": [
+        {"id": "baukonstruktion-4-bodenarten-c001", "type": "basic", "front": "Woraus bestehen **Böden**?", "back": "Aus **Bodenkörnern** (Verwitterung/Ablagerung von Gestein), **Hohlräumen** (Poren, ganz oder teilweise mit Wasser gefüllt) und **organischen Bestandteilen** (Humus)."},
+        {"id": "baukonstruktion-4-bodenarten-c002", "type": "basic", "front": "Nutzung von Boden im Bau?", "back": "Als **Baugrund** (trägt Bauwerkslasten) und als **Baustoff** (Schüttmaterial für Erdbauwerke)."},
+        {"id": "baukonstruktion-4-bodenarten-c003", "type": "basic", "front": "Adhäsion und Kohäsion?", "back": "**Adhäsion:** Anziehung zwischen Teilchen unterschiedlicher Art.\n**Kohäsion:** Anziehung zwischen Teilchen gleicher Art."},
+        {"id": "baukonstruktion-4-bodenarten-c004", "type": "basic", "front": "**Nichtbindige** und **bindige** Böden – Korngröße und Kräfte?", "back": "Nichtbindig: Körner **> 0,063 mm**, nur Reibungskräfte, Körner liegen lose (Schüttkegel).\nBindig: **< 0,063 mm**, Reibung + Haftkräfte (Kohäsion), Körner kleben aneinander."},
+        {"id": "baukonstruktion-4-bodenarten-c005", "type": "basic", "front": "Verhalten bei **Wasser**: nichtbindig vs. bindig?", "back": "Nichtbindig: Wasser sickert durch, Gefahr der Ausspülung von Feinteilen (hydraulischer Grundbruch).\nBindig: Wasser schiebt sich zwischen die Teilchen, Kohäsion wird aufgelöst → Boden gibt nach, Setzungen, Grundbruch."},
+        {"id": "baukonstruktion-4-bodenarten-c006", "type": "basic", "front": "Verhalten bei **Frost**: nichtbindig vs. bindig? Frostsichere Tiefe?", "back": "Nichtbindig: genug Porenraum → keine Frosthebung.\nBindig: gefrierendes Wasser hebt den Boden.\nFrostsichere Gründung: **0,80 – 1,20 m** tief."},
+        {"id": "baukonstruktion-4-bodenarten-c007", "type": "basic", "front": "**Tragfähigkeit**: nichtbindig vs. bindig?", "back": "Nichtbindig: in der Regel ausreichend (auch bei Wasser), Setzungen treten **sofort** auf.\nBindig: trocken sehr gut, feucht schlechter; **jahrelange** Setzungen."},
+        {"id": "baukonstruktion-4-bodenarten-c008", "type": "basic", "front": "Korngrößen nach DIN 4022: Kies, Sand, Schluff, Ton?", "back": "Kies 2 – 60 mm (fein 2–6, mittel 6–20, grob 20–60) · Sand 0,06 – 2 mm · Schluff 0,002 – 0,06 mm · Ton < 0,002 mm · Steine > 60 mm\n(Neuere Norm DIN EN ISO 14688: Kies bis 63 mm, Sand ab 0,063 mm.)"},
+        {"id": "baukonstruktion-4-bodenarten-c009", "type": "basic", "front": "Wie trennt man die Korngruppen im Labor?", "back": "**Siebversuch** für Siebkorn (> 0,06 mm) und **Schlämmanalyse** für Schlämmkorn (< 0,06 mm, über die Sinkgeschwindigkeit). Ergebnis: Körnungskurve; Benennung über das Dreiecksnetz."},
+        {"id": "baukonstruktion-4-bodenarten-c010", "type": "basic", "front": "Was ermittelt der **Proctorversuch**?", "back": "Den **optimalen Wassergehalt** und die maximale Trockendichte: Boden mit definierter Arbeit (Fallgewicht) verdichten, Trockendichte bei 5 Wassergehalten → Proctorkurve."},
+        {"id": "baukonstruktion-4-bodenarten-c011", "type": "basic", "front": "**Plattendruckversuch** (DIN 18134)?", "back": "Runde Lastplatte **Ø 300 mm** wird stufenweise be- und entlastet; Spannung und Setzung ergeben die Druck-Setzungs-Linie."},
+        {"id": "baukonstruktion-4-bodenarten-c012", "type": "basic", "front": "Bodenklassen nach DIN 18300 (alt) 1 – 7?", "back": "1 Oberboden · 2 fließende Bodenarten · 3 leicht lösbare · 4 mittelschwer lösbare · 5 schwer lösbare Bodenarten · 6 leicht lösbarer Fels · 7 schwer lösbarer Fels"},
+        {"id": "baukonstruktion-4-bodenarten-c013", "type": "basic", "front": "Böschungswinkel nach UVV für Klasse 3 – 4, 5, 6 – 7?", "back": "Klasse 3/4: **45°** · Klasse 5: **60°** · Klasse 6/7: **80°** (für Klasse 1 und 2 keine Böschungswinkel festgelegt)"}
+      ],
+      "quiz": [
+        {"id": "baukonstruktion-4-bodenarten-q001", "type": "mc", "question": "Ab welcher Korngröße spricht man von **nichtbindigen** Böden?", "options": ["> 0,002 mm", "> 0,063 mm", "> 2 mm", "> 60 mm"], "answer": 1, "explanation": "Nichtbindig > 0,063 mm, bindig < 0,063 mm."},
+        {"id": "baukonstruktion-4-bodenarten-q002", "type": "mc", "question": "Welcher Boden hat **jahrelange** Setzungen?", "options": ["Kies", "Sand", "bindiger Boden (Ton, Schluff)", "Fels"], "answer": 2, "explanation": "Bindige Böden setzen sich langsam über Jahre."},
+        {"id": "baukonstruktion-4-bodenarten-q003", "type": "mc", "question": "Bei welchem Boden gibt es **Frosthebungen**?", "options": ["nichtbindig", "bindig", "Fels", "bei keinem"], "answer": 1, "explanation": "Im bindigen Boden fehlt Porenraum für das gefrierende Wasser."},
+        {"id": "baukonstruktion-4-bodenarten-q004", "type": "mc", "question": "Wie tief muss eine Gründung etwa liegen, um frostsicher zu sein?", "options": ["0,30 – 0,50 m", "0,80 – 1,20 m", "2,00 – 2,50 m", "egal"], "answer": 1, "explanation": "Frostzone 0,80 – 1,20 m."},
+        {"id": "baukonstruktion-4-bodenarten-q005", "type": "mc", "question": "Wie bestimmt man den Anteil an **Schlämmkorn**?", "options": ["Siebversuch", "Schlämmanalyse (Sinkgeschwindigkeit)", "Plattendruckversuch", "Proctorversuch"], "answer": 1, "explanation": "Feine Teile < 0,06 mm passen nicht mehr durchs Sieb."},
+        {"id": "baukonstruktion-4-bodenarten-q006", "type": "mc", "question": "Was ermittelt der **Proctorversuch**?", "options": ["den Grundwasserstand", "den optimalen Wassergehalt für die Verdichtung", "die Bodenklasse", "die Frosttiefe"], "answer": 1, "explanation": "Optimaler Wassergehalt + maximale Trockendichte."},
+        {"id": "baukonstruktion-4-bodenarten-q007", "type": "mc", "question": "Welcher Böschungswinkel gilt für **Bodenklasse 5** (schwer lösbar)?", "options": ["45°", "60°", "80°", "90°"], "answer": 1, "explanation": "Klasse 5: 60°."},
+        {"id": "baukonstruktion-4-bodenarten-q008", "type": "mc", "question": "Bodenklasse 1 ist …", "options": ["Fels", "Oberboden (Mutterboden)", "fließender Boden", "Sand"], "answer": 1, "explanation": "Oberste Schicht mit Humus."},
+        {"id": "baukonstruktion-4-bodenarten-q009", "type": "mc", "question": "Welchen Durchmesser hat die Platte beim Plattendruckversuch?", "options": ["150 mm", "300 mm", "600 mm", "1000 mm"], "answer": 1, "explanation": "DIN 18134: Ø 300 mm."}
+      ]
+    },
+    {
+      "id": "baukonstruktion-4-hoehenmasse",
+      "title": "Höhenmaße im Bau",
+      "description": "Höhenkoten, Maßlinien und Fußbodenaufbauten in Schnitten berechnen.",
+      "sources": ["Höhenmaße im Bau.pdf", "DG 2.pdf", "Maßangaben zur Höhenbemaßung-.pdf"],
+      "cards": [
+        {"id": "baukonstruktion-4-hoehenmasse-c001", "type": "basic", "front": "In welcher Einheit stehen **Höhenkoten** und **Maßlinien** im Schnitt?", "back": "Höhenkoten in **m mit Vorzeichen** (±0,00 = OKFF EG), Maßlinien in **cm**."},
+        {"id": "baukonstruktion-4-hoehenmasse-c002", "type": "basic", "front": "Was bedeutet ±0,00 ≙ 751,26?", "back": "Die Oberkante Fertigfußboden im EG liegt auf **751,26 m über NN**. Alle anderen Koten beziehen sich darauf."},
+        {"id": "baukonstruktion-4-hoehenmasse-c003", "type": "basic", "front": "Wie berechnet man den **Fußbodenaufbau**?", "back": "Fußbodenaufbau = OKFF − OK Rohdecke (Fertigmaß minus Rohbaumaß)."},
+        {"id": "baukonstruktion-4-hoehenmasse-c004", "type": "basic", "front": "Fertigmaß vs. Rohbaumaß bei Höhen?", "back": "Fertigmaß = OK **Fertigfußboden** (OKFF), Rohbaumaß = OK **Rohdecke**. Im Schnitt werden beide angegeben."}
+      ],
+      "quiz": [
+        {"id": "baukonstruktion-4-hoehenmasse-q001", "type": "numeric", "question": "±0,00 ≙ 751,26 m ü. NN. Eine Hochspannungsleitung liegt auf +756,96 m ü. NN. Welche relative Höhenkote hat sie?", "answer": 5.7, "unit": "m", "tolerance": 0.002, "explanation": "756,96 − 751,26 = **+5,70 m**"},
+        {"id": "baukonstruktion-4-hoehenmasse-q002", "type": "numeric", "question": "±0,00 ≙ 751,26 m ü. NN. Die Kanalsohle liegt auf +748,68 m ü. NN. Relative Höhenkote?", "answer": -2.58, "unit": "m", "tolerance": 0.002, "explanation": "748,68 − 751,26 = **−2,58 m**"},
+        {"id": "baukonstruktion-4-hoehenmasse-q003", "type": "numeric", "question": "Dachgeschoss: OKFF +2,87, OK Rohdecke +2,65. Wie dick ist der Fußbodenaufbau?", "answer": 22, "unit": "cm", "tolerance": 0.01, "explanation": "2,87 − 2,65 = 0,22 m = **22 cm**\n(Auf deinem Blatt steht unten 21 cm, links im Schnitt 22 – richtig sind 22 cm.)"},
+        {"id": "baukonstruktion-4-hoehenmasse-q004", "type": "numeric", "question": "Erdgeschoss: OKFF ±0,00, OK Rohdecke −0,12. Fußbodenaufbau?", "answer": 12, "unit": "cm", "tolerance": 0.01, "explanation": "0,00 − (−0,12) = **12 cm**"},
+        {"id": "baukonstruktion-4-hoehenmasse-q005", "type": "numeric", "question": "Keller: OKFF −2,82, OK Rohboden −2,88. Fußbodenaufbau?", "answer": 6, "unit": "cm", "tolerance": 0.01, "explanation": "−2,82 − (−2,88) = 0,06 m = **6 cm**"},
+        {"id": "baukonstruktion-4-hoehenmasse-q006", "type": "mc", "question": "Wie wird eine Höhe von 3,08 m an der **Maßlinie** eingetragen?", "options": ["3,08", "308", "+3,08", "3080"], "answer": 1, "explanation": "Maßlinien in cm: 308."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "unit": "baurecht-3",
+  "subject": "baurecht",
+  "decks": [
+    {
+      "id": "baurecht-3-bebauungsplan",
+      "title": "Bebauungsplan (Blatt 5) ⚠️ auswendig",
+      "description": "Zweck und Arten des Bebauungsplans nach § 8 BauGB und seine Festsetzungen.",
+      "sources": ["Bauplanungsrecht 5.pdf"],
+      "cards": [
+        {"id": "baurecht-3-bebauungsplan-c001", "type": "basic", "front": "⚠️ Was ist der **Bebauungsplan**?", "back": "Der **verbindliche** Bauleitplan (§ 8 BauGB). Er enthält die rechtsverbindlichen Festsetzungen für die städtebauliche Ordnung und legt die Bedingungen für die Bebauung der Grundstücke fest.", "hint": "Auf dem Blatt: auswendig wissen!"},
+        {"id": "baurecht-3-bebauungsplan-c002", "type": "basic", "front": "⚠️ Die **4 Arten** des Bebauungsplans (§ 8 BauGB)?", "back": "1. aus dem FNP **entwickelt** – Normalfall (Abs. 2)\n2. **selbstständiger** B-Plan – z. B. sehr kleine Gemeinden (Abs. 2)\n3. **Parallelverfahren** – FNP und B-Plan gleichzeitig (Abs. 3)\n4. **vorzeitiger** B-Plan – bei dringenden Gründen (Abs. 4)"},
+        {"id": "baurecht-3-bebauungsplan-c003", "type": "basic", "front": "⚠️ Welche B-Pläne brauchen eine **Genehmigung** der höheren Verwaltungsbehörde?", "back": "Der selbstständige, der aus dem Parallelverfahren und der vorzeitige Bebauungsplan (also alle außer dem Normalfall)."},
+        {"id": "baurecht-3-bebauungsplan-c004", "type": "basic", "front": "Wofür ist der B-Plan Rechtsgrundlage? (Beispiele)", "back": "Zulässigkeit von Vorhaben, Teilungsgenehmigung, Vorkaufsrecht, Umlegung, Enteignung, Erschließung, Sanierungsmaßnahmen, Erhaltungssatzung, städtebauliche Gebote."},
+        {"id": "baurecht-3-bebauungsplan-c005", "type": "basic", "front": "Was heißt **Gebot der planerischen Zurückhaltung**?", "back": "Der B-Plan darf nur so viel festsetzen, wie für eine geordnete städtebauliche Entwicklung erforderlich ist."},
+        {"id": "baurecht-3-bebauungsplan-c006", "type": "basic", "front": "Wodurch wird das **Maß der baulichen Nutzung** bestimmt?", "back": "GRZ (Grundflächenzahl), GFZ (Geschossflächenzahl), BMZ (Baumassenzahl), Zahl der Geschosse, Höhe der baulichen Anlage (BauNVO §§ 16–21)."},
+        {"id": "baurecht-3-bebauungsplan-c007", "type": "basic", "front": "Festsetzungen eines B-Plans (Auswahl)?", "back": "Art der baulichen Nutzung (BauNVO §§ 2–15), Maß der Nutzung, **Bauweise** (offen/geschlossen, § 22), **überbaubare Grundstücksfläche** (Baulinien/Baugrenzen, § 23), Stellung (z. B. Firstrichtung), Verkehrsflächen, Gemeinschaftsanlagen, Immissionsschutz, Pflanzflächen, Höhenlage, Geltungsbereich."},
+        {"id": "baurecht-3-bebauungsplan-c008", "type": "basic", "front": "Beispiel: Der FNP sieht Wohnbaufläche vor – was kann der B-Plan daraus machen?", "back": "Er kann differenzieren (z. B. WS, WR oder WA). Ein Gewerbegebiet ginge nur mit Änderung des FNP – z. B. im Parallelverfahren."}
+      ],
+      "quiz": [
+        {"id": "baurecht-3-bebauungsplan-q001", "type": "mc", "question": "⚠️ Welche Art des Bebauungsplans ist der **Normalfall**?", "options": ["selbstständiger B-Plan", "aus dem FNP entwickelter B-Plan", "vorzeitiger B-Plan", "Parallelverfahren"], "answer": 1, "explanation": "§ 8 Abs. 2 BauGB: aus dem Flächennutzungsplan entwickelt."},
+        {"id": "baurecht-3-bebauungsplan-q002", "type": "mc", "question": "⚠️ FNP und B-Plan werden **gleichzeitig** aufgestellt. Wie heißt das?", "options": ["vorzeitiger B-Plan", "Parallelverfahren", "selbstständiger B-Plan", "Umlegung"], "answer": 1, "explanation": "§ 8 Abs. 3 BauGB."},
+        {"id": "baurecht-3-bebauungsplan-q003", "type": "mc", "question": "Eine sehr kleine Gemeinde hat keinen FNP, der B-Plan reicht zur Ordnung aus. Das ist ein …", "options": ["selbstständiger B-Plan", "vorzeitiger B-Plan", "Parallelverfahren", "Normalfall"], "answer": 0, "explanation": "§ 8 Abs. 2 BauGB."},
+        {"id": "baurecht-3-bebauungsplan-q004", "type": "mc", "question": "Welcher B-Plan braucht **keine** Genehmigung der höheren Verwaltungsbehörde?", "options": ["der aus dem FNP entwickelte", "der selbstständige", "der vorzeitige", "der aus dem Parallelverfahren"], "answer": 0, "explanation": "Nur der Normalfall ist genehmigungsfrei."},
+        {"id": "baurecht-3-bebauungsplan-q005", "type": "mc", "question": "Womit begrenzt man die **überbaubare Grundstücksfläche**?", "options": ["GRZ und GFZ", "Baulinien und Baugrenzen", "Firstrichtung", "Verkehrsflächen"], "answer": 1, "explanation": "BauNVO § 23."},
+        {"id": "baurecht-3-bebauungsplan-q006", "type": "mc", "question": "Was gehört **nicht** zum Maß der baulichen Nutzung?", "options": ["GRZ", "Zahl der Geschosse", "Firstrichtung", "Höhe der baulichen Anlage"], "answer": 2, "explanation": "Die Firstrichtung gehört zur Stellung der baulichen Anlage."},
+        {"id": "baurecht-3-bebauungsplan-q007", "type": "exercise", "question": "⚠️ **Auswendig:** Nenne die vier Arten des Bebauungsplans mit Absatz in § 8 BauGB.", "fields": [{"label": "1", "solution": "aus dem FNP entwickelter B-Plan (Normalfall), Abs. 2"}, {"label": "2", "solution": "selbstständiger B-Plan, Abs. 2"}, {"label": "3", "solution": "Parallelverfahren, Abs. 3"}, {"label": "4", "solution": "vorzeitiger B-Plan, Abs. 4"}], "explanation": ""}
+      ]
+    }
+  ]
+}

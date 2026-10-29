@@ -8,6 +8,7 @@
       "description": "Lückentext zur Baustellenbeschreibung aus dem Englisch-Buch.",
       "sources": ["Englisch Buch - Construction Milestone.pdf"],
       "cards": [
+
       ],
       "quiz": [
         {"id": "englisch-2-site-plan-q014", "type": "exercise", "question": "**Book p. 8, Exercise 3:** Complete the description with words from the page.\n*The (1) is situated in a village. There is some (2) behind the crane. A (3) probably put it there. A (4) leads down to the site from the road. There are a lot of (5) in front of the crane and around the site. They are waiting for the (6) to start the next part of the building.*", "fields": [{"label": "1", "solution": "construction site"}, {"label": "2", "solution": "soil"}, {"label": "3", "solution": "dumper truck"}, {"label": "4", "solution": "ramp"}, {"label": "5", "solution": "wood"}, {"label": "6", "solution": "construction workers"}], "explanation": "Lösung wie auf deinem Blatt."}
@@ -17,7 +18,7 @@
       "id": "englisch-2-comparatives",
       "title": "Comparatives & Superlatives",
       "description": "Steigerung von Adjektiven: older/more expensive, than, not as … as, the oldest/the most expensive.",
-      "sources": ["AB comparatives - Online Unterricht.pdf"],
+      "sources": ["AB comparatives - Online Unterricht.pdf", "AB comparatives - korrigiert.pdf"],
       "cards": [
         {"id": "englisch-2-comparatives-c001", "type": "basic", "front": "Wie bildet man den **Komparativ** bei kurzen Adjektiven (1 Silbe)?", "back": "Mit **-er**: old → older, cheap → cheaper\nDoppelkonsonant: big → bigger, hot → hotter, thin → thinner\n-e: nice → nicer"},
         {"id": "englisch-2-comparatives-c002", "type": "basic", "front": "Komparativ bei Adjektiven auf **-y**?", "back": "-y → **-ier**: easy → easier, heavy → heavier, early → earlier"},
@@ -26,7 +27,10 @@
         {"id": "englisch-2-comparatives-c005", "type": "basic", "front": "Wie bildet man den **Superlativ**?", "back": "the + **-est** (the oldest, the biggest, the easiest) bzw. **the most** + langes Adjektiv (the most expensive)."},
         {"id": "englisch-2-comparatives-c006", "type": "basic", "front": "Welches Wort folgt nach dem Komparativ beim Vergleich?", "back": "**than**: older than, more expensive than. (Nicht: older as)"},
         {"id": "englisch-2-comparatives-c007", "type": "basic", "front": "Was bedeutet **not as … as**?", "back": "„nicht so … wie“: Rome is not as old as Athens. (= Athens is older)"},
-        {"id": "englisch-2-comparatives-c008", "type": "basic", "front": "**a bit** / **much** + Komparativ?", "back": "a bit bigger = etwas größer · much bigger = viel größer"}
+        {"id": "englisch-2-comparatives-c008", "type": "basic", "front": "**a bit** / **much** + Komparativ?", "back": "a bit bigger = etwas größer · much bigger = viel größer"},
+        {"id": "englisch-2-comparatives-c009", "type": "basic", "front": "Typische Fehler aus deiner **Korrektur** (comparatives)?", "back": "slower (nicht *slover*) · **more modern** (nicht *moderner*) · larger · nicer (nicht *niccer*) · **more polite** · **worse** (nicht *badder*) · **more intelligent** (nicht *intelligenter*) · a **better** driver"},
+        {"id": "englisch-2-comparatives-c010", "type": "basic", "front": "than + Pronomen: *older than she* oder *older than her*?", "back": "Im normalen Englisch: **than + me/him/her/us/them** – „She's older than **her**.“ / „They run faster than **him**.“"},
+        {"id": "englisch-2-comparatives-c011", "type": "basic", "front": "*a bit* oder *much* younger?", "back": "Großer Unterschied → **much**: „He is **much** younger than his father.“ „I feel **much** better than yesterday.“"}
       ],
       "quiz": [
         {"id": "englisch-2-comparatives-q001", "type": "input", "question": "Comparative of **old**?", "answer": "older", "accept": [], "explanation": "old → **older** → the oldest"},
@@ -55,7 +59,12 @@
         {"id": "englisch-2-comparatives-q024", "type": "mc", "question": "*Box C is ___ bigger than Box D* (a big difference).", "options": ["much", "very", "more", "most"], "answer": 0, "explanation": "much bigger = viel größer; a bit bigger = etwas größer."},
         {"id": "englisch-2-comparatives-q025", "type": "mc", "question": "*It's the ___ building in the town.*", "options": ["older", "oldest", "most old", "more older"], "answer": 1, "explanation": "Superlative with the: the oldest."},
         {"id": "englisch-2-comparatives-q026", "type": "mc", "question": "Opposite of **colder**?", "options": ["hotter", "warmer", "older", "cooler"], "answer": 1, "explanation": "colder ↔ warmer"},
-        {"id": "englisch-2-comparatives-q027", "type": "mc", "question": "*Helen's car isn't very big. She wants a ___ one.*", "options": ["biger", "bigger", "more big", "biggest"], "answer": 1, "explanation": "big → bigger (Doppelkonsonant)."}
+        {"id": "englisch-2-comparatives-q027", "type": "mc", "question": "*Helen's car isn't very big. She wants a ___ one.*", "options": ["biger", "bigger", "more big", "biggest"], "answer": 1, "explanation": "big → bigger (Doppelkonsonant)."},
+        {"id": "englisch-2-comparatives-q028", "type": "mc", "question": "Comparative of **bad**?", "options": ["badder", "worse", "more bad", "worst"], "answer": 1, "explanation": "bad → worse → the worst"},
+        {"id": "englisch-2-comparatives-q029", "type": "mc", "question": "Comparative of **intelligent**?", "options": ["intelligenter", "more intelligent", "most intelligent", "intelligentest"], "answer": 1, "explanation": "more intelligent"},
+        {"id": "englisch-2-comparatives-q030", "type": "mc", "question": "*My brother is older than ___.*", "options": ["she", "her", "hers", "herself"], "answer": 1, "explanation": "than + Objektpronomen: than her"},
+        {"id": "englisch-2-comparatives-q031", "type": "mc", "question": "Comparative of **slow**?", "options": ["slover", "slower", "more slow", "slowlier"], "answer": 1, "explanation": "slow → slower"},
+        {"id": "englisch-2-comparatives-q032", "type": "mc", "question": "*He is ___ younger than his father* (big difference).", "options": ["a bit", "much", "more", "most"], "answer": 1, "explanation": "much younger"}
       ]
     },
     {

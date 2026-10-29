@@ -15,7 +15,8 @@
         {"id": "baurecht-2-fnp-c005", "type": "basic", "front": "Für welchen Zeitraum plant der Flächennutzungsplan etwa?", "back": "Etwa **10 – 15 Jahre**."},
         {"id": "baurecht-2-fnp-c006", "type": "basic", "front": "Was wird im FNP **dargestellt**? (§ 5 Abs. 2 BauGB, Beispiele)", "back": "Bauflächen, Flächen für den Gemeinbedarf, Verkehrsflächen, Ver- und Entsorgungsflächen, Grünflächen, Immissionsschutzflächen, Wasserflächen, Ausgleichsflächen …"},
         {"id": "baurecht-2-fnp-c007", "type": "basic", "front": "Was wird im FNP **gekennzeichnet**?", "back": "Bergbau- und Abbauflächen, Altlastenflächen, Ensembles (Denkmalschutz)."},
-        {"id": "baurecht-2-fnp-c008", "type": "basic", "front": "Welche **Bindungswirkung** hat der FNP für Bauvorhaben?", "back": "Nur eine **mittelbare** – direkt verbindlich für den Bürger ist erst der Bebauungsplan."}
+        {"id": "baurecht-2-fnp-c008", "type": "basic", "front": "Welche **Bindungswirkung** hat der FNP für Bauvorhaben?", "back": "Nur eine **mittelbare** – direkt verbindlich für den Bürger ist erst der Bebauungsplan."},
+        {"id": "baurecht-2-fnp-c009", "type": "basic", "front": "⚠️ In welchem **Maßstab** wird der Flächennutzungsplan gezeichnet?", "back": "M **1 : 10 000** oder **1 : 5 000** (auf dem Blatt als „Wichtig“ markiert)."}
       ],
       "quiz": [
         {"id": "baurecht-2-fnp-q001", "type": "mc", "question": "⚠️ Prüfungsfrage: Wie heißt der **verbindliche** Bauleitplan?", "options": ["Flächennutzungsplan", "Bebauungsplan", "Regionalplan", "Lageplan"], "answer": 1, "explanation": "Verbindlich = Bebauungsplan, vorbereitend = Flächennutzungsplan."},
@@ -23,7 +24,8 @@
         {"id": "baurecht-2-fnp-q003", "type": "mc", "question": "Welcher Planungszeitraum ist für einen FNP typisch?", "options": ["1 – 2 Jahre", "3 – 5 Jahre", "10 – 15 Jahre", "50 Jahre"], "answer": 2, "explanation": "Etwa 10 – 15 Jahre."},
         {"id": "baurecht-2-fnp-q004", "type": "mc", "question": "Was ist **kein** Leitsatz der Bauleitplanung?", "options": ["Sparsamer Umgang mit Boden", "Bodenversiegelung begrenzen", "Möglichst viel Fläche versiegeln", "Schutz der natürlichen Lebensgrundlagen"], "answer": 2, "explanation": "Versiegelung soll begrenzt werden."},
         {"id": "baurecht-2-fnp-q005", "type": "mc", "question": "Welche Wirkung hat der FNP für ein einzelnes Bauvorhaben?", "options": ["Unmittelbar verbindlich", "Nur mittelbar", "Gar keine", "Er ersetzt die Baugenehmigung"], "answer": 1, "explanation": "Mittelbare Bindungswirkung – verbindlich ist der B-Plan."},
-        {"id": "baurecht-2-fnp-q006", "type": "exercise", "question": "⚠️ **Prüfungsfrage (auswendig):** Nenne die zwei Arten der Bauleitpläne mit ihrer Bezeichnung.", "fields": [{"label": "Vorbereitender Bauleitplan", "solution": "Flächennutzungsplan"}, {"label": "Verbindlicher Bauleitplan", "solution": "Bebauungsplan"}], "explanation": ""}
+        {"id": "baurecht-2-fnp-q006", "type": "exercise", "question": "⚠️ **Prüfungsfrage (auswendig):** Nenne die zwei Arten der Bauleitpläne mit ihrer Bezeichnung.", "fields": [{"label": "Vorbereitender Bauleitplan", "solution": "Flächennutzungsplan"}, {"label": "Verbindlicher Bauleitplan", "solution": "Bebauungsplan"}], "explanation": ""},
+        {"id": "baurecht-2-fnp-q007", "type": "mc", "question": "In welchem Maßstab wird ein FNP üblicherweise dargestellt?", "options": ["1 : 100", "1 : 1 000", "1 : 5 000 / 1 : 10 000", "1 : 100 000"], "answer": 2, "explanation": "FNP: 1 : 10 000 bzw. 1 : 5 000."}
       ]
     }
   ]

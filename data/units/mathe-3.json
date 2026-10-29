@@ -1,0 +1,64 @@
+{
+  "unit": "mathe-3",
+  "subject": "mathe",
+  "decks": [
+    {
+      "id": "mathe-3-binomisch",
+      "title": "Binomische Formeln",
+      "description": "Die drei binomischen Formeln ausmultiplizieren und rückwärts als Produkt schreiben.",
+      "sources": ["3_Binomische Formeln.pdf", "Hefteintrag Binomische Formel.pdf"],
+      "cards": [
+        {"id": "mathe-3-binomisch-c001", "type": "basic", "front": "Was ist ein **Binom**?", "back": "Eine Summe oder Differenz aus 2 Gliedern, z. B. a + b oder a − b."},
+        {"id": "mathe-3-binomisch-c002", "type": "basic", "front": "**1. binomische Formel**?", "back": "(a + b)² = a² + **2ab** + b²"},
+        {"id": "mathe-3-binomisch-c003", "type": "basic", "front": "**2. binomische Formel**?", "back": "(a − b)² = a² − **2ab** + b²"},
+        {"id": "mathe-3-binomisch-c004", "type": "basic", "front": "**3. binomische Formel**?", "back": "(a + b)(a − b) = a² − b²"},
+        {"id": "mathe-3-binomisch-c005", "type": "basic", "front": "Typischer Fehler bei (a + b)²?", "back": "Das **Mittelglied 2ab vergessen**: (a + 4)² ist nicht a² + 16, sondern a² + 8a + 16."}
+      ],
+      "quiz": [
+        {"id": "mathe-3-binomisch-q001", "type": "mc", "question": "Löse ohne Hilfsmittel: **(a + 4)²** = ?", "options": ["a² + 8a + 16", "a² + 16", "a² + 4a + 16", "a² + 8a + 8"], "answer": 0, "explanation": "1. binomische Formel: **a² + 8a + 16**"},
+        {"id": "mathe-3-binomisch-q002", "type": "mc", "question": "Löse ohne Hilfsmittel: **(5 + a)²** = ?", "options": ["a² + 25", "a² + 5a + 25", "a² + 10a + 25", "a² + 10a + 10"], "answer": 2, "explanation": "1. binomische Formel: **a² + 10a + 25**"},
+        {"id": "mathe-3-binomisch-q003", "type": "mc", "question": "Löse ohne Hilfsmittel: **(x + 10)²** = ?", "options": ["x² + 100", "x² + 10x + 100", "x² + 20x + 100", "x² + 20x + 20"], "answer": 2, "explanation": "1. binomische Formel: **x² + 20x + 100**"},
+        {"id": "mathe-3-binomisch-q004", "type": "mc", "question": "Löse ohne Hilfsmittel: **(2x + y)²** = ?", "options": ["4x² + 4xy + y²", "2x² + 2xy + y²", "4x² + 2xy + y²", "4x² + y²"], "answer": 0, "explanation": "1. binomische Formel: **4x² + 4xy + y²**"},
+        {"id": "mathe-3-binomisch-q005", "type": "mc", "question": "Löse ohne Hilfsmittel: **(8a + 1)²** = ?", "options": ["64a² + 1", "8a² + 16a + 1", "64a² + 16a + 1", "64a² + 8a + 1"], "answer": 2, "explanation": "1. binomische Formel: **64a² + 16a + 1**"},
+        {"id": "mathe-3-binomisch-q006", "type": "mc", "question": "Löse ohne Hilfsmittel: **(2a + 3)²** = ?", "options": ["4a² + 9", "4a² + 6a + 9", "2a² + 12a + 9", "4a² + 12a + 9"], "answer": 3, "explanation": "1. binomische Formel: **4a² + 12a + 9**"},
+        {"id": "mathe-3-binomisch-q007", "type": "mc", "question": "Löse ohne Hilfsmittel: **(a − 5)²** = ?", "options": ["a² − 25", "a² + 10a + 25", "a² − 10a − 25", "a² − 10a + 25"], "answer": 3, "explanation": "2. binomische Formel: **a² − 10a + 25**"},
+        {"id": "mathe-3-binomisch-q008", "type": "mc", "question": "Löse ohne Hilfsmittel: **(a − 3)²** = ?", "options": ["a² − 6a + 9", "a² − 9", "a² − 6a − 9", "a² + 6a + 9"], "answer": 0, "explanation": "2. binomische Formel: **a² − 6a + 9**"},
+        {"id": "mathe-3-binomisch-q009", "type": "mc", "question": "Löse ohne Hilfsmittel: **(4 − b)²** = ?", "options": ["16 − 8b + b²", "16 − b²", "16 + 8b + b²", "16 − 4b + b²"], "answer": 0, "explanation": "2. binomische Formel: **16 − 8b + b²**"},
+        {"id": "mathe-3-binomisch-q010", "type": "mc", "question": "Löse ohne Hilfsmittel: **(2a − 5)²** = ?", "options": ["4a² − 20a + 25", "4a² − 25", "4a² − 10a + 25", "2a² − 20a + 25"], "answer": 0, "explanation": "2. binomische Formel: **4a² − 20a + 25**"},
+        {"id": "mathe-3-binomisch-q011", "type": "mc", "question": "Löse ohne Hilfsmittel: **(3x − 2)²** = ?", "options": ["9x² − 4", "9x² − 6x + 4", "3x² − 12x + 4", "9x² − 12x + 4"], "answer": 3, "explanation": "2. binomische Formel: **9x² − 12x + 4**"},
+        {"id": "mathe-3-binomisch-q012", "type": "mc", "question": "Löse ohne Hilfsmittel: **(a − 2)(a + 2)** = ?", "options": ["a² + 4", "a² − 4", "a² − 4a + 4", "a² + 4a − 4"], "answer": 1, "explanation": "3. binomische Formel: **a² − 4**"},
+        {"id": "mathe-3-binomisch-q013", "type": "mc", "question": "Löse ohne Hilfsmittel: **(a + 2b)(a − 2b)** = ?", "options": ["a² − 2b²", "a² + 4b²", "a² − 4b²", "a² − 4ab + 4b²"], "answer": 2, "explanation": "3. binomische Formel: **a² − 4b²**"},
+        {"id": "mathe-3-binomisch-q014", "type": "mc", "question": "Löse ohne Hilfsmittel: **(x − 5y)(x + 5y)** = ?", "options": ["x² − 25y²", "x² − 5y²", "x² + 25y²", "x² − 10xy + 25y²"], "answer": 0, "explanation": "3. binomische Formel: **x² − 25y²**"},
+        {"id": "mathe-3-binomisch-q015", "type": "mc", "question": "Löse ohne Hilfsmittel: **(3s − 5)(3s + 5)** = ?", "options": ["3s² − 25", "9s² + 25", "9s² − 30s + 25", "9s² − 25"], "answer": 3, "explanation": "3. binomische Formel: **9s² − 25**"},
+        {"id": "mathe-3-binomisch-q016", "type": "mc", "question": "Löse ohne Hilfsmittel: **(a + 1)(a − 1)** = ?", "options": ["a² + 1", "a² − 2a + 1", "a² − 1", "a − 1"], "answer": 2, "explanation": "3. binomische Formel: **a² − 1**"},
+        {"id": "mathe-3-binomisch-q017", "type": "mc", "question": "Schreibe als Produkt (ausklammern): **9x² + 12xy + 4y²** = ?", "options": ["(9x + 4y)²", "(3x + 4y)²", "(3x − 2y)²", "(3x + 2y)²"], "answer": 3, "explanation": "Rückwärts angewendete binomische Formel: **(3x + 2y)²**"},
+        {"id": "mathe-3-binomisch-q018", "type": "mc", "question": "Schreibe als Produkt (ausklammern): **x² − 2x + 1** = ?", "options": ["(x + 1)²", "(x − 1)²", "(x − 1)(x + 1)", "(x − 2)²"], "answer": 1, "explanation": "Rückwärts angewendete binomische Formel: **(x − 1)²**"},
+        {"id": "mathe-3-binomisch-q019", "type": "mc", "question": "Schreibe als Produkt (ausklammern): **9x² − 25** = ?", "options": ["(3x − 5)²", "(9x − 25)(9x + 25)", "(3x + 5)²", "(3x − 5)(3x + 5)"], "answer": 3, "explanation": "Rückwärts angewendete binomische Formel: **(3x − 5)(3x + 5)**"},
+        {"id": "mathe-3-binomisch-q020", "type": "mc", "question": "Schreibe als Produkt (ausklammern): **x² + 0,25 − x** = ?", "options": ["(x + 0,5)²", "(x − 0,5)²", "(x − 0,25)²", "(x − 0,5)(x + 0,5)"], "answer": 1, "explanation": "Rückwärts angewendete binomische Formel: **(x − 0,5)²**"}
+      ]
+    },
+    {
+      "id": "mathe-3-quadratische-ergaenzung",
+      "title": "Quadratische Ergänzung",
+      "description": "Terme der Form ax² + bx + c in die Scheitelform bringen – zuerst halbieren, dann quadrieren.",
+      "sources": ["4_Quadratische_Ergaenzung.pdf", "Hefteintrag Binomische Formel.pdf"],
+      "cards": [
+        {"id": "mathe-3-quadratische-ergaenzung-c001", "type": "basic", "front": "Wofür braucht man die **quadratische Ergänzung**?", "back": "Um einen Term, der keine fertige binomische Formel ist, trotzdem teilweise als Quadrat (Produkt) zu schreiben."},
+        {"id": "mathe-3-quadratische-ergaenzung-c002", "type": "basic", "front": "Merksatz quadratische Ergänzung?", "back": "**„Zuerst halbieren, dann quadrieren“** – die Hälfte des Faktors vor x quadrieren, in der Klammer addieren und außerhalb wieder abziehen."},
+        {"id": "mathe-3-quadratische-ergaenzung-c003", "type": "basic", "front": "Beispiel: a² + 6a + 7", "back": "= (a² + 6a **+ 3²**) + 7 **− 9** = **(a + 3)² − 2**"},
+        {"id": "mathe-3-quadratische-ergaenzung-c004", "type": "basic", "front": "Beispiel: x² − x + 5", "back": "= (x² − x + (½)²) + 5 − ¼ = **(x − ½)² + 4,75**"},
+        {"id": "mathe-3-quadratische-ergaenzung-c005", "type": "basic", "front": "Was tun, wenn vor x² ein Faktor steht (z. B. 3x² − 9x + 4)?", "back": "Den Faktor zuerst ausklammern: 3(x² − 3x) + 4, dann in der Klammer ergänzen → 3(x − 3/2)² − 2,75."}
+      ],
+      "quiz": [
+        {"id": "mathe-3-quadratische-ergaenzung-q001", "type": "mc", "question": "Quadratische Ergänzung: **x² + 10x + 25** = ?", "options": ["(x − 5)²", "(x + 5)²", "(x + 10)²", "(x + 5)² + 25"], "answer": 1, "explanation": "Merke: zuerst halbieren, dann quadrieren.\n**(x + 5)²** (Lösung vom Übungsblatt, nachgerechnet)"},
+        {"id": "mathe-3-quadratische-ergaenzung-q002", "type": "mc", "question": "Quadratische Ergänzung: **x² − 4x** = ?", "options": ["(x + 2)² − 4", "(x − 2)² + 4", "(x − 4)² − 16", "(x − 2)² − 4"], "answer": 3, "explanation": "Merke: zuerst halbieren, dann quadrieren.\n**(x − 2)² − 4** (Lösung vom Übungsblatt, nachgerechnet)"},
+        {"id": "mathe-3-quadratische-ergaenzung-q003", "type": "mc", "question": "Quadratische Ergänzung: **x² − 2x − 3** = ?", "options": ["(x − 1)² − 3", "(x + 1)² − 4", "(x − 2)² − 7", "(x − 1)² − 4"], "answer": 3, "explanation": "Merke: zuerst halbieren, dann quadrieren.\n**(x − 1)² − 4** (Lösung vom Übungsblatt, nachgerechnet)"},
+        {"id": "mathe-3-quadratische-ergaenzung-q004", "type": "mc", "question": "Quadratische Ergänzung: **x² + 3x + 1** = ?", "options": ["(x + 3)² − 8", "(x + 1,5)² − 1,25", "(x + 1,5)² + 1,25", "(x − 1,5)² − 1,25"], "answer": 1, "explanation": "Merke: zuerst halbieren, dann quadrieren.\n**(x + 1,5)² − 1,25** (Lösung vom Übungsblatt, nachgerechnet)"},
+        {"id": "mathe-3-quadratische-ergaenzung-q005", "type": "mc", "question": "Quadratische Ergänzung: **x² + x + 4** = ?", "options": ["(x + ½)² + 4¼", "(x + 1)² + 3", "(x − ½)² + 3¾", "(x + ½)² + 3¾"], "answer": 3, "explanation": "Merke: zuerst halbieren, dann quadrieren.\n**(x + ½)² + 3¾** (Lösung vom Übungsblatt, nachgerechnet)"},
+        {"id": "mathe-3-quadratische-ergaenzung-q006", "type": "mc", "question": "Quadratische Ergänzung: **x² − ½x − 1** = ?", "options": ["(x − ½)² − 1¼", "(x + ¼)² − 1 1/16", "(x − ¼)² − 1 1/16", "(x − ¼)² − 15/16"], "answer": 2, "explanation": "Merke: zuerst halbieren, dann quadrieren.\n**(x − ¼)² − 1 1/16** (Lösung vom Übungsblatt, nachgerechnet)"},
+        {"id": "mathe-3-quadratische-ergaenzung-q007", "type": "mc", "question": "Quadratische Ergänzung: **3x² − 9x + 4** = ?", "options": ["3(x − 3/2)² + 4", "(3x − 3/2)² − 2,75", "3(x − 3/2)² − 2,75", "3(x − 9/2)² − 2,75"], "answer": 2, "explanation": "Merke: zuerst halbieren, dann quadrieren.\n**3(x − 3/2)² − 2,75** (Lösung vom Übungsblatt, nachgerechnet)"},
+        {"id": "mathe-3-quadratische-ergaenzung-q008", "type": "mc", "question": "Quadratische Ergänzung: **½x² − 5x + 11** = ?", "options": ["½(x − 5)² + 11", "½(x − 5)² − 3/2", "½(x − 10)² − 39", "(½x − 5)² − 3/2"], "answer": 1, "explanation": "Merke: zuerst halbieren, dann quadrieren.\n**½(x − 5)² − 3/2** (Lösung vom Übungsblatt, nachgerechnet)"}
+      ]
+    }
+  ]
+}

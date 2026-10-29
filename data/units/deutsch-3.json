@@ -1,0 +1,52 @@
+{
+  "unit": "deutsch-3",
+  "subject": "deutsch",
+  "decks": [
+    {
+      "id": "deutsch-3-ich-botschaften",
+      "title": "Ich-Botschaften & Aktives Zuhören",
+      "description": "Du-/Sie-Botschaften vs. Ich-Botschaften, Kriterien und Aufbau, INA-Regel beim Aktiven Zuhören.",
+      "sources": ["3.1 Ich-Botschaften.pdf", "3.2 Ich-Botschaften_Übung_Gruppenarbeit (1).pdf"],
+      "cards": [
+        {"id": "deutsch-3-ich-botschaften-c001", "type": "basic", "front": "Was sind **Du-/Sie-Botschaften** – und warum sind sie problematisch?", "back": "Aussagen, wie der Sender den Empfänger sieht → enthalten immer eine **Bewertung**. Wirken oft verletzend, werden als Tadel/Kritik empfunden und provozieren Widerstand."},
+        {"id": "deutsch-3-ich-botschaften-c002", "type": "basic", "front": "Was ist eine **Ich-Botschaft**?", "back": "Eine Äußerung über die **eigene Person**: eigene Wahrnehmung, Gefühle, Bedürfnisse. Der Sender spricht für sich, wie er die Situation erlebt."},
+        {"id": "deutsch-3-ich-botschaften-c003", "type": "basic", "front": "Die **3 Kriterien** einer Ich-Botschaft?", "back": "1. **Keine Interpretation/Diagnose** des Verhaltens (Gegenüber kann sich ändern)\n2. **Kein Sarkasmus/Ironie** (Selbstachtung bleibt)\n3. **Keine Vorwürfe und Urteile** (Beziehung bleibt heil)"},
+        {"id": "deutsch-3-ich-botschaften-c004", "type": "basic", "front": "**Aufbau** einer Ich-Botschaft?", "back": "1. **Verhaltensaussage** – sachlich, vorwurfsfrei beschreiben\n2. **Gefühlsaussage** – ehrliche Empfindung\n3. **Wirkungsaussage** – konkrete Folgen, ggf. Wunsch\n(Gefühl und Wirkung dürfen die Reihenfolge tauschen.)"},
+        {"id": "deutsch-3-ich-botschaften-c005", "type": "basic", "front": "Ist „Ich bekomme mit, dass Sie häufig unpünktlich sind.“ eine Ich-Botschaft?", "back": "**Nein.** Nur mit „Ich“ anzufangen reicht nicht – inhaltlich bleibt es ein Vorwurf (Du-/Sie-Botschaft)."},
+        {"id": "deutsch-3-ich-botschaften-c006", "type": "basic", "front": "Die **INA-Regel** beim Aktiven Zuhören?", "back": "**I**nteresse zeigen – **N**achfragen – **A**ufgreifen"},
+        {"id": "deutsch-3-ich-botschaften-c007", "type": "basic", "front": "Wie zeigt man **Interesse**?", "back": "Verbal und nonverbal: zuwenden, Blickkontakt, Pausen aushalten, nicken, „Mm-hmm“, „Erzählen Sie mal …“; Ablenkungen (Handy, Unterschriftenmappe) vermeiden."},
+        {"id": "deutsch-3-ich-botschaften-c008", "type": "basic", "front": "Welche Fragen beim **Nachfragen**?", "back": "**Offene** Fragen (viele Infos, komplexe Antworten) und **geschlossene** Fragen (lenken in eine Richtung). **Keine rhetorischen** Fragen."},
+        {"id": "deutsch-3-ich-botschaften-c009", "type": "basic", "front": "Drei Möglichkeiten beim **Aufgreifen**?", "back": "1. **Wörtlich wiederholen** (wichtige Nachricht)\n2. **Paraphrasieren** (mit eigenen Worten)\n3. **Emotionale Seite** in Worte fassen – mit Feingefühl"}
+      ],
+      "quiz": [
+        {"id": "deutsch-3-ich-botschaften-q001", "type": "mc", "question": "„Müssen Sie immer dazwischenquatschen?“ – was ist das?", "options": ["Ich-Botschaft", "Du-/Sie-Botschaft mit Vorwurf", "Aktives Zuhören", "Paraphrasieren"], "answer": 1, "explanation": "Bewertet den anderen und provoziert Widerstand."},
+        {"id": "deutsch-3-ich-botschaften-q002", "type": "mc", "question": "Welcher Teil fehlt? „Im letzten Monat war ich fast nur in der Frühschicht. **…** Dadurch kann ich meine Frau morgens nicht entlasten.“", "options": ["Verhaltensaussage", "Gefühlsaussage", "Wirkungsaussage", "Appell"], "answer": 1, "explanation": "Es fehlt die Gefühlsaussage, z. B. „Ich ärgere mich darüber und fühle mich benachteiligt.“"},
+        {"id": "deutsch-3-ich-botschaften-q003", "type": "mc", "question": "Was gehört **nicht** zu den Kriterien einer Ich-Botschaft?", "options": ["keine Interpretation", "kein Sarkasmus", "keine Vorwürfe", "immer mit „Ich“ beginnen"], "answer": 3, "explanation": "Mit „Ich“ zu beginnen macht noch keine Ich-Botschaft."},
+        {"id": "deutsch-3-ich-botschaften-q004", "type": "mc", "question": "Wofür steht das **N** in der INA-Regel?", "options": ["Nicken", "Nachfragen", "Nachdenken", "Notieren"], "answer": 1, "explanation": "Interesse zeigen – Nachfragen – Aufgreifen."},
+        {"id": "deutsch-3-ich-botschaften-q005", "type": "mc", "question": "Welche Fragen soll man beim Aktiven Zuhören **nicht** stellen?", "options": ["offene", "geschlossene", "rhetorische", "Verständnisfragen"], "answer": 2, "explanation": "Rhetorische Fragen sind keine echten Fragen."},
+        {"id": "deutsch-3-ich-botschaften-q006", "type": "mc", "question": "„Wenn ich Sie richtig verstehe, meinen Sie …“ – was ist das?", "options": ["Interesse zeigen", "Paraphrasieren (Aufgreifen)", "geschlossene Frage", "Du-Botschaft"], "answer": 1, "explanation": "Mit eigenen Worten zusammenfassen."},
+        {"id": "deutsch-3-ich-botschaften-q007", "type": "exercise", "question": "**Situation 1:** Der Chef kritisiert deine Arbeit vor allen Kollegen, ohne vorher mit dir zu sprechen. Formuliere eine Ich-Botschaft (Verhalten – Gefühl – Wirkung/Wunsch).", "fields": [{"label": "Verhalten", "solution": "Sie haben meine Arbeit heute vor allen Kollegen kritisiert."}, {"label": "Gefühl", "solution": "Dabei habe ich mich unwohl und bloßgestellt gefühlt."}, {"label": "Wirkung / Wunsch", "solution": "Ich wünsche mir, dass wir so etwas künftig vorher unter vier Augen besprechen."}], "explanation": ""},
+        {"id": "deutsch-3-ich-botschaften-q008", "type": "exercise", "question": "**Situation 3:** Dein Mitbewohner lässt ständig schmutziges Geschirr stehen. Formuliere eine Ich-Botschaft.", "fields": [{"label": "Verhalten", "solution": "In der Küche steht oft lange schmutziges Geschirr."}, {"label": "Gefühl", "solution": "Darüber ärgere ich mich."}, {"label": "Wirkung / Wunsch", "solution": "Mir fehlt der Platz und ich räume oft hinterher – ich wünsche mir, dass wir das Geschirr direkt nach dem Essen wegräumen."}], "explanation": ""}
+      ]
+    },
+    {
+      "id": "deutsch-3-feedback",
+      "title": "Feedback geben & annehmen",
+      "description": "Regeln für wirkungsvolles Feedback und wie man Feedback annimmt.",
+      "sources": ["4.1 Feedback_geben-annehmen.pdf", "4.2 Feedback_Übung.pdf"],
+      "cards": [
+        {"id": "deutsch-3-feedback-c001", "type": "basic", "front": "Die 6 Regeln für **Feedback geben**?", "back": "1. **Beschreiben, nicht bewerten**\n2. **Konstruktiv und positiv** (mit Positivem beginnen)\n3. **Klar und präzise** (konkrete Beispiele)\n4. **Nutzen** – nur was der andere ändern kann, nicht die Persönlichkeit\n5. **Empathie und Respekt**\n6. **Regelmäßig** – lieber öfter und weniger auf einmal"},
+        {"id": "deutsch-3-feedback-c002", "type": "basic", "front": "Die 4 Regeln für **Feedback annehmen**?", "back": "1. **Ausreden lassen**\n2. **Keine Rechtfertigung** – es ist eine subjektive Wahrnehmung\n3. **Fragen stellen** (Verständnisfragen)\n4. **Dankbar sein**"},
+        {"id": "deutsch-3-feedback-c003", "type": "basic", "front": "Vage vs. präzises Feedback – Beispiel?", "back": "Vage: „Sie machen das gut!“\nPräzise: „Ihre Präsentation war sehr gut strukturiert und die wichtigsten Punkte klar hervorgehoben.“"}
+      ],
+      "quiz": [
+        {"id": "deutsch-3-feedback-q001", "type": "mc", "question": "„Deine Präsentation war richtig schlecht.“ ist …", "options": ["konstruktiv", "destruktiv"], "answer": 1, "explanation": "Unsachlich und zu allgemein – besser konkret sagen, was verbessert werden kann."},
+        {"id": "deutsch-3-feedback-q002", "type": "mc", "question": "„Deine Skizze ist verständlich und beinhaltet die notwendigen Informationen.“ ist …", "options": ["konstruktiv", "destruktiv"], "answer": 0, "explanation": "Beschreibt sachlich und konkret."},
+        {"id": "deutsch-3-feedback-q003", "type": "mc", "question": "„Kein Mensch versteht etwas, wenn du so redest.“ ist …", "options": ["konstruktiv", "destruktiv"], "answer": 1, "explanation": "Übertrieben („kein Mensch“), unfreundlich und ungenau („so“)."},
+        {"id": "deutsch-3-feedback-q004", "type": "mc", "question": "Was solltest du tun, wenn du Feedback **bekommst**?", "options": ["Sofort rechtfertigen", "Ausreden lassen und nachfragen", "Das Gegenüber auch kritisieren", "Das Gespräch beenden"], "answer": 1, "explanation": "Ausreden lassen, keine Rechtfertigung, Fragen stellen, dankbar sein."},
+        {"id": "deutsch-3-feedback-q005", "type": "mc", "question": "Welche Feedback-Regel wird verletzt? „Du bist halt einfach zu schüchtern.“", "options": ["Regelmäßigkeit", "Nutzen – nicht die Persönlichkeit kritisieren", "Klarheit", "Positiv beginnen"], "answer": 1, "explanation": "Kritisiert die Persönlichkeit statt ein veränderbares Verhalten."},
+        {"id": "deutsch-3-feedback-q006", "type": "exercise", "question": "Formuliere die destruktive Aussage konstruktiv: „Kein Mensch versteht etwas, wenn du so redest.“", "fields": [{"label": "Bessere Formulierung", "solution": "Ich konnte dir an einigen Stellen nicht folgen, weil du sehr schnell gesprochen hast. Wenn du langsamer sprichst und kurze Pausen machst, kann ich besser mitkommen."}], "explanation": ""}
+      ]
+    }
+  ]
+}

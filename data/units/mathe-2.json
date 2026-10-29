@@ -6,7 +6,7 @@
       "id": "mathe-2-trig2",
       "title": "Kurzarbeit: Trigonometrie Übungsaufgaben 2",
       "description": "Die 11 Sachaufgaben vom Übungsblatt 2 (schiefer Turm bis Vorwärtseinschneiden) – mit Rechenweg, abgeglichen mit dem Lösungsblatt.",
-      "sources": ["Trigonometrie Aufgaben zum Üben_2_2026_27.pdf", "Loesung_Trigonometrie_2.pdf"],
+      "sources": ["Trigonometrie Aufgaben zum Üben_2_2026_27.pdf", "Lösung Trigonometrie 2.pdf"],
       "cards": [
         {"id": "mathe-2-trig2-c001", "type": "basic", "front": "Welcher Satz, wenn **1 Seite + 2 Winkel** gegeben sind?", "back": "**Sinussatz**: a / sin α = b / sin β = c / sin γ"},
         {"id": "mathe-2-trig2-c002", "type": "basic", "front": "Welcher Satz, wenn **2 Seiten + eingeschlossener Winkel** oder **3 Seiten** gegeben sind?", "back": "**Kosinussatz**: c² = a² + b² − 2ab · cos γ"},
@@ -34,7 +34,7 @@
       "id": "mathe-2-terme",
       "title": "Terme & Klammern",
       "description": "Terme vereinfachen, Klammern auflösen, ausmultiplizieren und ausklammern – ohne Hilfsmittel.",
-      "sources": ["1_Terme.pdf", "2_Klammern.pdf", "1_Rechnen mit Termen und Klammern.pdf"],
+      "sources": ["1_Terme.pdf", "2_Klammern.pdf", "Rechnen mit Termen und Klammern.pdf"],
       "cards": [
         {"id": "mathe-2-terme-c001", "type": "basic", "front": "Was ist ein **Koeffizient**?", "back": "Die Zahl vor der Variablen, z. B. 7 in 7x."},
         {"id": "mathe-2-terme-c002", "type": "basic", "front": "Welche Terme darf man **addieren/subtrahieren**?", "back": "Nur **gleichartige** Terme: gleiche Variable(n) mit gleicher Hochzahl. Dann die Koeffizienten zusammenrechnen (3x² + 5x² = 8x², aber 3x² + 5x bleibt)."},

@@ -1,0 +1,38 @@
+{
+  "unit": "vermessung-2",
+  "subject": "vermessung",
+  "decks": [
+    {
+      "id": "vermessung-2-einheiten-koordinaten",
+      "title": "Grad & Gon, Richtungswinkel, Gauß-Krüger",
+      "description": "Winkeleinheiten der Geodäsie, Umrechnungen, Strecke aus Koordinaten und Gauß-Krüger-Koordinaten.",
+      "sources": ["Maßeinheiten in der Vermessung.pdf", "Der Richtungswinkel.pdf", "Gauß-Krüger Koordinaten.pdf"],
+      "cards": [
+        {"id": "vermessung-2-einheiten-koordinaten-c001", "type": "basic", "front": "Mathematik vs. Geodäsie: Winkeleinheit, Vollkreis, Drehsinn?", "back": "Mathematik: **Grad**, 360°, **linksläufig** (gegen den Uhrzeigersinn).\nGeodäsie: **Gon**, 400 gon, **rechtsläufig** (im Uhrzeigersinn)."},
+        {"id": "vermessung-2-einheiten-koordinaten-c002", "type": "basic", "front": "Achsen in der Geodäsie?", "back": "**x = Hochwert** (Nordrichtung, Nullrichtung), **y = Rechtswert**. Koordinaten werden als (y/x) angegeben."},
+        {"id": "vermessung-2-einheiten-koordinaten-c003", "type": "basic", "front": "Umrechnung Grad → Gon?", "back": "α_gon = α° / 0,9  (90° = 100 gon, 180° = 200 gon)"},
+        {"id": "vermessung-2-einheiten-koordinaten-c004", "type": "basic", "front": "Wie viel ist 1 rad (Radiant) in Grad und Gon?", "back": "1 rad = 57,2958° = 63,6620 gon"},
+        {"id": "vermessung-2-einheiten-koordinaten-c005", "type": "basic", "front": "Formel für das **Bogenmaß** (Querabweichung)?", "back": "b = α · r / ρ  mit ρ = 63,6620 gon (bzw. 57,2958°)"},
+        {"id": "vermessung-2-einheiten-koordinaten-c006", "type": "basic", "front": "Sexagesimale Teilung des Grads?", "back": "1° = 60′ (Minuten), 1′ = 60″ (Sekunden)"},
+        {"id": "vermessung-2-einheiten-koordinaten-c007", "type": "basic", "front": "Was ist der **Richtungswinkel** t?", "back": "Der Winkel von der Nullrichtung (Nord = x-Achse) im Uhrzeigersinn zur Strecke vom **Ausgangspunkt** zum **Zielpunkt**, z. B. t_A^B."},
+        {"id": "vermessung-2-einheiten-koordinaten-c008", "type": "basic", "front": "Strecke aus Koordinaten?", "back": "Δy = y_B − y_A, Δx = x_B − x_A\ns = √(Δx² + Δy²)"},
+        {"id": "vermessung-2-einheiten-koordinaten-c009", "type": "basic", "front": "Gauß-Krüger: Wie ist der **Rechtswert** aufgebaut?", "back": "Erste Ziffer = **Kennzahl** (Meridianziffer = Mittelmeridian / 3, z. B. 12° → 4). Der Mittelmeridian hat den Wert **500 000 m**, damit es keine negativen Koordinaten gibt. Östlich: + Abstand, westlich: − Abstand."},
+        {"id": "vermessung-2-einheiten-koordinaten-c010", "type": "basic", "front": "Gauß-Krüger: Was ist der **Hochwert**?", "back": "Der Abstand des Punktes vom **Äquator** (in m)."}
+      ],
+      "quiz": [
+        {"id": "vermessung-2-einheiten-koordinaten-q001", "type": "numeric", "question": "Querabweichung: Ein Instrument misst auf 0,01 gon genau. Wie groß ist die Querabweichung in 100 m Entfernung?", "answer": 1.57, "unit": "cm", "tolerance": 0.01, "explanation": "b = 0,01 gon · 100 m / 63,6620 gon = 0.0157 m ≈ **1,6 cm** → mehr als 1 cm, Instrument reicht **nicht**."},
+        {"id": "vermessung-2-einheiten-koordinaten-q002", "type": "numeric", "question": "Und mit 0,001 gon Genauigkeit?", "answer": 1.57, "unit": "mm", "tolerance": 0.01, "explanation": "b = 0,001 · 100 / 63,6620 = 0.00157 m ≈ **1,6 mm** → dieses Instrument nehmen."},
+        {"id": "vermessung-2-einheiten-koordinaten-q003", "type": "numeric", "question": "Rechne 65° 52′ 38″ in dezimal geteilte Grad um.", "answer": 65.8772, "unit": "°", "tolerance": 0.0005, "explanation": "65 + 52/60 + 38/3600 = **65.8772°** (≈ 65,88°)"},
+        {"id": "vermessung-2-einheiten-koordinaten-q004", "type": "input", "question": "Rechne 58,3325° in Grad, Minuten, Sekunden um (Schreibweise 58° 19′ 57″).", "answer": "58° 19′ 57″", "accept": ["58°19′57″", "58° 19' 57\"", "58°19'57\"", "58 19 57", "58° 19' 57''"], "explanation": "0,3325 · 60 = 19,95 → **19′**; 0,95 · 60 = **57″** → 58° 19′ 57″"},
+        {"id": "vermessung-2-einheiten-koordinaten-q005", "type": "numeric", "question": "Wie viel gon sind 45°?", "answer": 50, "unit": "gon", "tolerance": 0.001, "explanation": "45 / 0,9 = **50 gon**"},
+        {"id": "vermessung-2-einheiten-koordinaten-q006", "type": "numeric", "question": "Wie viel gon sind 270°?", "answer": 300, "unit": "gon", "tolerance": 0.001, "explanation": "270 / 0,9 = **300 gon**"},
+        {"id": "vermessung-2-einheiten-koordinaten-q007", "type": "numeric", "question": "A (y = 100,00 / x = 200,00), B (y = 160,00 / x = 280,00). Strecke s_AB?", "answer": 100, "unit": "m", "tolerance": 0.001, "explanation": "Δy = 60, Δx = 80 → s = √(80² + 60²) = **100 m**"},
+        {"id": "vermessung-2-einheiten-koordinaten-q008", "type": "numeric", "question": "Ein Punkt liegt 22 433,15 m **östlich** des Mittelmeridians 12°. Rechtswert (ohne Kennzahl)?", "answer": 522433.15, "unit": "m", "tolerance": 1e-06, "explanation": "500 000 + 22 433,15 = 522 433,15 → mit Kennzahl 4: **4 522 433,15 m**"},
+        {"id": "vermessung-2-einheiten-koordinaten-q009", "type": "numeric", "question": "Ein Punkt hat den Rechtswert 5 455 328,62 m. Wie weit liegt er **westlich** des Mittelmeridians?", "answer": 44671.38, "unit": "m", "tolerance": 1e-06, "explanation": "500 000 − 455 328,62 = **44 671,38 m** westlich des 15°-Meridians (Kennzahl 5)."},
+        {"id": "vermessung-2-einheiten-koordinaten-q010", "type": "mc", "question": "Welche Kennzahl hat der Mittelmeridian **9°**?", "options": ["2", "3", "4", "9"], "answer": 1, "explanation": "Kennzahl = 9 / 3 = 3."},
+        {"id": "vermessung-2-einheiten-koordinaten-q011", "type": "mc", "question": "Warum hat der Mittelmeridian den Wert 500 000 m?", "options": ["Weil die Erde 500 km breit ist", "Damit es keine negativen Koordinaten gibt", "Wegen der Höhe über NN", "Zufall"], "answer": 1, "explanation": "Westlich liegende Punkte bekommen so trotzdem positive Werte."},
+        {"id": "vermessung-2-einheiten-koordinaten-q012", "type": "mc", "question": "Welche Achse ist in der Geodäsie die **Nullrichtung**?", "options": ["y-Achse (Ost)", "x-Achse (Nord)", "die Äquatorlinie", "die Lotrichtung"], "answer": 1, "explanation": "x = Hochwert = Nord."}
+      ]
+    }
+  ]
+}

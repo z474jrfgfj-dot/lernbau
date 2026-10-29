@@ -1,0 +1,36 @@
+{
+  "unit": "bauphysik-3",
+  "subject": "bauphysik",
+  "decks": [
+    {
+      "id": "bauphysik-3-waermeuebertragung",
+      "title": "Wärmeschutztechnische Grundlagen & Wärmeübertragung",
+      "description": "Geschichte des Wärmeschutzes, Wärmemenge, Heizwert, Temperatur, Wärmekapazität und die drei Arten der Wärmeübertragung.",
+      "sources": ["02a_arbeitsauftragWaermeuebertragung.pdf", "02b_waermeschutztechnischeGrundlagen.pdf"],
+      "cards": [
+        {"id": "bauphysik-3-waermeuebertragung-c001", "type": "basic", "front": "Die **drei Arten der Wärmeübertragung**?", "back": "**Wärmeleitung**, **Wärmeströmung (Konvektion)**, **Wärmestrahlung**"},
+        {"id": "bauphysik-3-waermeuebertragung-c002", "type": "basic", "front": "**Wärmeleitung** – wie funktioniert sie? 2 Beispiele", "back": "Wärme wird durch Stöße benachbarter Moleküle weitergegeben, die Moleküle bleiben an ihrem Ort. Nur in Materie, nicht im Vakuum.\nBsp.: Löffel im heißen Tee wird am Griff warm; Wärmeverlust über eine Außenwand."},
+        {"id": "bauphysik-3-waermeuebertragung-c003", "type": "basic", "front": "**Konvektion** – wie funktioniert sie? 2 Beispiele", "back": "Wärme wird von strömender Flüssigkeit oder Gas mitgetragen – die Teilchen verlassen ihren Ort.\nBsp.: warme Luft steigt über dem Heizkörper auf; Warmwasserheizung."},
+        {"id": "bauphysik-3-waermeuebertragung-c004", "type": "basic", "front": "**Wärmestrahlung** – wie funktioniert sie? 2 Beispiele", "back": "Elektromagnetische Wellen (Infrarot), braucht keinen Stoff – geht auch im Vakuum.\nBsp.: Sonne erwärmt die Erde; Kachelofen/Lagerfeuer wärmt die Haut."},
+        {"id": "bauphysik-3-waermeuebertragung-c005", "type": "basic", "front": "Welche Körper nehmen Wärmestrahlung besonders gut auf?", "back": "**Dunkle und raue** Oberflächen absorbieren mehr als helle und glatte (genutzt bei Sonnenkollektoren). Reflexion nutzt man bei Sonnen- und Wärmeschutzglas."},
+        {"id": "bauphysik-3-waermeuebertragung-c006", "type": "basic", "front": "Welche Übertragungsart gibt es in Festkörpern, Flüssigkeiten/Gasen, im Vakuum?", "back": "Festkörper: nur **Leitung** · Flüssigkeiten/Gase: Leitung + **Konvektion** · Vakuum: nur **Strahlung**"},
+        {"id": "bauphysik-3-waermeuebertragung-c007", "type": "basic", "front": "Geschichte des Wärmeschutzes in Stichworten?", "back": "Bis 1976 DIN 4108 nur hygienischer Mindestschutz → Ölkrise: **EnEG + WSVO 1976** → WSVO 1995 (bis 30 % Einsparung) → **EnEV** 2002–2016 → seit 1.11.2020 **GEG**. Ziel: CO₂ bis 2030 um ca. 55 % gegenüber 1990 senken."},
+        {"id": "bauphysik-3-waermeuebertragung-c008", "type": "basic", "front": "Was ist die **Wärmemenge** Q, Einheit?", "back": "Summe der Bewegungsenergie aller Moleküle eines Stoffes. Einheit Ws = J (1 Ws = 1 Nm = 1 J); abgerechnet wird in kWh."},
+        {"id": "bauphysik-3-waermeuebertragung-c009", "type": "basic", "front": "Was ist der **Heizwert** H?", "back": "Nutzbare Energie bei vollständiger Verbrennung: H = Q/m (fest, flüssig) bzw. Q/V (Gas). Bsp.: Heizöl leicht 10,08 kWh/kg, Steinkohle 8,26 kWh/kg, Erdgas 10,42 kWh/m³, Pellets 4,9 kWh/kg."},
+        {"id": "bauphysik-3-waermeuebertragung-c010", "type": "basic", "front": "Was ist die **spezifische Wärmekapazität** c?", "back": "Wärmemenge, um 1 kg eines Stoffes um 1 K zu erwärmen, in J/(kg·K). Wasser ca. 4200, Holz 2100, Luft 1000, Bau-/Dämmstoffe (anorganisch) ca. 1000."},
+        {"id": "bauphysik-3-waermeuebertragung-c011", "type": "basic", "front": "Was ist die **Wärmeleitfähigkeit** λ?", "back": "Wärmemenge pro Sekunde durch 1 m² eines 1 m dicken Stoffes bei 1 K Temperaturunterschied – die wichtigste Kenngröße für Dämmstoffe."},
+        {"id": "bauphysik-3-waermeuebertragung-c012", "type": "basic", "front": "Temperatur: Celsius und Kelvin?", "back": "θ in °C, T in K; 0 K = −273 °C (absoluter Nullpunkt). **Temperaturunterschiede immer in K.**"}
+      ],
+      "quiz": [
+        {"id": "bauphysik-3-waermeuebertragung-q001", "type": "mc", "question": "Ein Löffel im heißen Tee wird am Griff warm. Welche Wärmeübertragung?", "options": ["Wärmeleitung", "Konvektion", "Wärmestrahlung", "Verdunstung"], "answer": 0, "explanation": "Wärme wandert durch das Metall von Molekül zu Molekül."},
+        {"id": "bauphysik-3-waermeuebertragung-q002", "type": "mc", "question": "Über dem Heizkörper steigt warme Luft auf. Welche Wärmeübertragung?", "options": ["Wärmeleitung", "Konvektion", "Wärmestrahlung", "Kondensation"], "answer": 1, "explanation": "Strömende Luft trägt die Wärme mit."},
+        {"id": "bauphysik-3-waermeuebertragung-q003", "type": "mc", "question": "Welche Wärmeübertragung funktioniert auch im **Vakuum**?", "options": ["Wärmeleitung", "Konvektion", "Wärmestrahlung", "Keine"], "answer": 2, "explanation": "Strahlung braucht keinen Stoff (Sonne → Erde)."},
+        {"id": "bauphysik-3-waermeuebertragung-q004", "type": "mc", "question": "Seit wann gilt das **GEG**?", "options": ["1976", "1995", "2002", "1. November 2020"], "answer": 3, "explanation": "Das GEG hat zum 1.11.2020 die EnEV abgelöst."},
+        {"id": "bauphysik-3-waermeuebertragung-q005", "type": "mc", "question": "Was war der Auslöser für EnEG und WSVO 1976?", "options": ["Die Wiedervereinigung", "Die Ölkrise", "Das Kyoto-Protokoll", "Der Klimagipfel in Rio"], "answer": 1, "explanation": "Ölkrise → erstmals Energiesparen per Gesetz."},
+        {"id": "bauphysik-3-waermeuebertragung-q006", "type": "mc", "question": "Welcher Stoff hat die größte spezifische Wärmekapazität?", "options": ["Luft", "Aluminium", "Wasser", "Holz"], "answer": 2, "explanation": "Wasser ca. 4200 J/(kg·K) – deshalb Warmwasserheizungen."},
+        {"id": "bauphysik-3-waermeuebertragung-q007", "type": "mc", "question": "Welche Oberfläche erwärmt sich in der Sonne am stärksten?", "options": ["hell und glatt", "hell und rau", "dunkel und rau", "spiegelnd"], "answer": 2, "explanation": "Dunkle, raue Flächen absorbieren am meisten Strahlung."},
+        {"id": "bauphysik-3-waermeuebertragung-q008", "type": "exercise", "question": "**Arbeitsauftrag:** Definiere die drei Arten der Wärmeübertragung mit je einem Beispiel.", "fields": [{"label": "Wärmeleitung", "solution": "Stöße benachbarter Moleküle, Teilchen bleiben am Ort, nur in Materie – z. B. Wärmeverlust über die Außenwand"}, {"label": "Konvektion", "solution": "Strömendes Gas/Flüssigkeit trägt die Wärme mit – z. B. warme Luft über dem Heizkörper"}, {"label": "Wärmestrahlung", "solution": "Infrarot-Wellen, auch im Vakuum – z. B. Sonne erwärmt die Erde"}], "explanation": ""}
+      ]
+    }
+  ]
+}
