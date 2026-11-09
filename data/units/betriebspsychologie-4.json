@@ -1,0 +1,34 @@
+{
+  "unit": "betriebspsychologie-4",
+  "subject": "betriebspsychologie",
+  "decks": [
+    {
+      "id": "bp-4-auswahl-ausbilder",
+      "title": "Akquise, Bewerbungen, EQ & Rollen des Ausbilders",
+      "description": "Wie ein Betrieb Azubis findet, worauf man bei Bewerbungen achtet, die Einstiegsqualifizierung und die sechs Rollen des Ausbilders.",
+      "sources": ["Ausbildungsplatzaquise.pdf", "Bewerbungenauswerten.pdf", "Gruppenarbeit EQ.pdf", "Rollen des Ausbilders.pdf"],
+      "cards": [
+        {"id": "bp-4-auswahl-ausbilder-c001", "type": "basic", "front": "Wie wirbt ein Betrieb **selbst** um Azubis? (4)", "back": "Eigene **Anzeigen** (Website, Jobportale, Zeitung) · **Praktikum & Schnuppertage** · **Messen & Schulbesuche** · **Social Media** mit aktuellen Azubis"},
+        {"id": "bp-4-auswahl-ausbilder-c002", "type": "basic", "front": "Mit welchen **Partnern** kann ein Betrieb Azubis finden? (4)", "back": "**Agentur für Arbeit** · **Kammern & Innungen** (IHK/HWK, Lehrstellenbörsen) · **Schulen** · **Online-Ausbildungsbörsen**"},
+        {"id": "bp-4-auswahl-ausbilder-c003", "type": "basic", "front": "Worauf achtet man im **Anschreiben** – und was verrät es?", "back": "Rechtschreibung (sprachliche Kompetenz), Begründung der Bewerbung (Motivation), Sorgfalt und Wortwahl (nimmt die Bewerbung ernst)."},
+        {"id": "bp-4-auswahl-ausbilder-c004", "type": "basic", "front": "Worauf achtet man im **Lebenslauf**?", "back": "Vollständigkeit ohne Lücken (hat nichts zu verbergen), Hobbys (Neigung zum Beruf), Ehrenämter (Engagement, Führungserfahrung)."},
+        {"id": "bp-4-auswahl-ausbilder-c005", "type": "basic", "front": "Worauf achtet man beim **Foto** und bei den **Zeugnissen**?", "back": "Foto: professionell, ordentlich, freundlich (→ späteres Kundenverhalten).\nZeugnisse: aktuelle Bewertungen, Noten in bestimmten Fächern, Aussagen zum Verhalten; dazu Praktikumsnachweise, Referenzen, Zusatzqualifikationen."},
+        {"id": "bp-4-auswahl-ausbilder-c006", "type": "basic", "front": "Warum braucht das **Vorstellungsgespräch** einen Leitfaden?", "back": "Es filtert die Infos aus den Unterlagen – nur ein **Leitfaden bzw. strukturiertes Gespräch** führt zu einem verwertbaren Ergebnis."},
+        {"id": "bp-4-auswahl-ausbilder-c007", "type": "basic", "front": "Was ist die **Einstiegsqualifizierung (EQ)**?", "back": "Ein **Langzeitpraktikum** (meist **4 – 12 Monate**) im Betrieb als Brücke von der Schule in die Ausbildung – für Jugendliche ohne Ausbildungsplatz, die die Vollzeitschulpflicht erfüllt haben (keine feste Altersgrenze)."},
+        {"id": "bp-4-auswahl-ausbilder-c008", "type": "basic", "front": "EQ: Wer bezahlt?", "back": "Die **Agentur für Arbeit/das Jobcenter fördern den Betrieb**, der Betrieb zahlt dem Jugendlichen eine Vergütung. Für den Jugendlichen kostenlos; die Förderung muss beantragt werden."},
+        {"id": "bp-4-auswahl-ausbilder-c009", "type": "basic", "front": "EQ: Abschluss und Vorteile?", "back": "Betriebliches Zeugnis, auf Antrag **Kammerzertifikat**; Ziel: Übergang in eine reguläre Ausbildung.\nJugendliche: Berufserfahrung, bessere Chancen. Betriebe: künftige Azubis kennenlernen, finanzielle Unterstützung."},
+        {"id": "bp-4-auswahl-ausbilder-c010", "type": "basic", "front": "Die **sechs Rollen** des Ausbilders?", "back": "**Vorgesetzter** (organisiert, kontrolliert, gibt Aufgaben) · **Fachmann** (Fachwissen, Praxis) · **Vorbild** (Verhalten, Zuverlässigkeit) · **Lernbegleiter** (unterstützt, gibt Feedback) · **Vermittler** (zwischen Azubi, Kollegen, Betrieb; bei Konflikten) · **Erzieher** (persönliche und soziale Entwicklung)"}
+      ],
+      "quiz": [
+        {"id": "bp-4-auswahl-ausbilder-q001", "type": "mc", "question": "Wie lange dauert eine **Einstiegsqualifizierung** in der Regel?", "options": ["1 – 2 Wochen", "4 – 12 Monate", "2 Jahre", "3,5 Jahre"], "answer": 1, "explanation": "4 – 12 Monate im Betrieb."},
+        {"id": "bp-4-auswahl-ausbilder-q002", "type": "mc", "question": "Wer fördert bei der EQ den Betrieb?", "options": ["Die Berufsschule", "Agentur für Arbeit / Jobcenter", "Die Eltern", "Der Jugendliche selbst"], "answer": 1, "explanation": "Der Betrieb wird gefördert und zahlt die Vergütung."},
+        {"id": "bp-4-auswahl-ausbilder-q003", "type": "mc", "question": "Was gibt es nach erfolgreicher EQ auf Antrag?", "options": ["Gesellenbrief", "Kammerzertifikat", "Meistertitel", "Abitur"], "answer": 1, "explanation": "Betriebliches Zeugnis + auf Antrag Kammerzertifikat."},
+        {"id": "bp-4-auswahl-ausbilder-q004", "type": "mc", "question": "Der Ausbilder kommt pünktlich und arbeitet zuverlässig – welche Rolle?", "options": ["Fachmann", "Vorbild", "Vermittler", "Vorgesetzter"], "answer": 1, "explanation": "Vorbild: Orientierung für das Verhalten."},
+        {"id": "bp-4-auswahl-ausbilder-q005", "type": "mc", "question": "Der Ausbilder schlichtet einen Konflikt zwischen Azubi und Kollegen – welche Rolle?", "options": ["Erzieher", "Vermittler", "Lernbegleiter", "Fachmann"], "answer": 1, "explanation": "Vermittler."},
+        {"id": "bp-4-auswahl-ausbilder-q006", "type": "mc", "question": "Was verrät eine sorgfältige **Begründung** im Anschreiben?", "options": ["Führungserfahrung", "Motivation", "Kundenverhalten", "Teamfähigkeit"], "answer": 1, "explanation": "Begründung → Aufschluss über die Motivation."},
+        {"id": "bp-4-auswahl-ausbilder-q007", "type": "mc", "question": "Was ist **kein** Partner bei der Ausbildungsplatzakquise?", "options": ["Agentur für Arbeit", "Handwerkskammer", "Finanzamt", "Schulen"], "answer": 2, "explanation": "Partner: Agentur für Arbeit, Kammern/Innungen, Schulen, Ausbildungsbörsen."},
+        {"id": "bp-4-auswahl-ausbilder-q008", "type": "exercise", "question": "**Gruppe 2 (Vor der Ausbildung 2):** Nenne je zwei Möglichkeiten der aktiven Nachwuchsanwerbung.", "fields": [{"label": "Unternehmen selbst", "solution": "z. B. eigene Anzeigen (Website, Jobportale), Praktikum/Schnuppertage, Ausbildungsmessen, Social Media"}, {"label": "Mit Partnern", "solution": "z. B. Agentur für Arbeit, IHK/HWK (Lehrstellenbörse), Schulen, Online-Ausbildungsbörsen"}], "explanation": ""}
+      ]
+    }
+  ]
+}

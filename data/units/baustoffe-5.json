@@ -1,0 +1,40 @@
+{
+  "unit": "baustoffe-5",
+  "subject": "baustoffe",
+  "decks": [
+    {
+      "id": "baustoffe-5-gesteinsarten",
+      "title": "Gesteinsarten – Übersicht & Metamorphe Gesteine",
+      "description": "Rohdichte, Druckfestigkeit, Eigenschaften und Verwendung der wichtigsten Natursteine (markierte Stellen) und Umwandlungsgesteine.",
+      "sources": ["Gessteinsarten Zusammenfassung.pdf", "Metamorphe Gesteine.pdf"],
+      "cards": [
+        {"id": "baustoffe-5-gesteinsarten-c001", "type": "basic", "front": "Hinweis auf dem Blatt „Gesteinsarten“?", "back": "**Chemische Formeln nicht wichtig.**"},
+        {"id": "baustoffe-5-gesteinsarten-c002", "type": "basic", "front": "Hauptminerale von **Granit**?", "back": "**Quarz, Feldspat, Glimmer**"},
+        {"id": "baustoffe-5-gesteinsarten-c003", "type": "basic", "front": "**Granit**: Rohdichte, Druckfestigkeit, Eigenschaften, Verwendung?", "back": "ρ **2,6 – 2,8 g/cm³**, Druckfestigkeit **160 – 240 N/mm²**\nsehr hart, schwer bearbeitbar, hoher Widerstand gegen Abnutzung, wetterbeständig\nPflaster- und Bordsteine, Splitt, Schotter, Fußbodenbelag\nVorkommen: Bayer. Wald, Fichtelgebirge, Odenwald … (dazu Indien, Türkei, China)"},
+        {"id": "baustoffe-5-gesteinsarten-c004", "type": "basic", "front": "**Basalt**: Rohdichte, Druckfestigkeit, Eigenschaften?", "back": "ρ **2,9 – 3,0 g/cm³**, Druckfestigkeit **250 – 400 N/mm²**\nsehr hart und zäh, sehr wetterbeständig, schlecht bearbeitbar → Splitt und Schotter"},
+        {"id": "baustoffe-5-gesteinsarten-c005", "type": "basic", "front": "**Diorit/Gabbro** und **Porphyr** – Werte?", "back": "Diorit/Gabbro: ρ 2,8 – 3,0, 200 – 250 N/mm², hart, polierbar\nPorphyr (Ganggestein): ρ 2,5 – 2,8, 180 – 300 N/mm², hart, sehr zäh"},
+        {"id": "baustoffe-5-gesteinsarten-c006", "type": "basic", "front": "**Bimsstein** und **Trass** – Eigenschaften und Verwendung?", "back": "Bimsstein: ρ 0,7 – 1,0, nur 2,5 – 5 N/mm², rau, sehr leicht, wärmedämmend → Bims-/Schwemmsteine, Wärmedämmung\nTrass: hellgelb → **Trasszement**"},
+        {"id": "baustoffe-5-gesteinsarten-c007", "type": "basic", "front": "Druckfestigkeit von **Sandstein** je nach Bindemittel?", "back": "**kieselig** (Quarz) 120 – 150 N/mm² – hart, wetterfest\n**eisenschüssig** 100 – 130 N/mm²\n**kalkig** 60 – 100 N/mm² – wenig fest, säureempfindlich\n**tonig/mergelig** 40 – 60 N/mm² – weich, minderwertig"},
+        {"id": "baustoffe-5-gesteinsarten-c008", "type": "basic", "front": "**Sand und Kies** laut Tabelle?", "back": "Quarzkörner, unverkittetes Lockergestein; Schüttdichte 1,7 – 2,1; hart, wetterfest → Frostschutzschicht, Kiestragschicht, Betonzuschlag"},
+        {"id": "baustoffe-5-gesteinsarten-c009", "type": "basic", "front": "**Ton** und **Schluff** – Korngröße und Verhalten?", "back": "Ton < 0,002 mm: feucht plastisch, trocken fest, nass weich formbar, hitzebeständig → Tonware\nSchluff 0,002 – 0,06 mm: verhält sich wie Ton"},
+        {"id": "baustoffe-5-gesteinsarten-c010", "type": "basic", "front": "Wie entstehen **metamorphe Gesteine**?", "back": "Vorhandene Erstarrungs- oder Ablagerungsgesteine werden durch erneuten **hohen Druck und hohe Temperatur** umgewandelt – die Minerale ordnen sich neu (neues Gefüge)."},
+        {"id": "baustoffe-5-gesteinsarten-c011", "type": "basic", "front": "Zusammenhang **Granit → Gneis**?", "back": "Gneis ist umgewandelter Granit, v. a. durch **Druck**: Feldspat, Quarz und Glimmer richten sich in **parallelen Lagen** aus → schiefrig, in Platten spaltbar. Granit hat ein richtungsloses, grobkörniges Gefüge."},
+        {"id": "baustoffe-5-gesteinsarten-c012", "type": "basic", "front": "Zusammenhang **Hornblende ↔ Asbest**?", "back": "Gleiche Mineralart (Amphibol). **Hornblende**: hart, spröde, dunkelgrün. **Asbest**: die faserige, weiße, biegsame Form – säure- und feuerfest, wärmedämmend."},
+        {"id": "baustoffe-5-gesteinsarten-c013", "type": "basic", "front": "Zusammenhang **Kalkstein → Marmor**?", "back": "Kalkstein (Kalkspat/Calcit, oft aus Schalen im Meer) oder Dolomit rekristallisiert tief in der Erdkruste unter extremem Druck und Hitze → dichtes Mosaik aus Calcit-/Dolomitkristallen = **Marmor**."}
+      ],
+      "quiz": [
+        {"id": "baustoffe-5-gesteinsarten-q001", "type": "mc", "question": "Welche Druckfestigkeit hat **Granit**?", "options": ["20 – 30 N/mm²", "60 – 100 N/mm²", "160 – 240 N/mm²", "250 – 400 N/mm²"], "answer": 2, "explanation": "Granit 160 – 240 N/mm²."},
+        {"id": "baustoffe-5-gesteinsarten-q002", "type": "mc", "question": "Welches Gestein hat die höchste Druckfestigkeit?", "options": ["Granit", "Basalt", "Sandstein (kieselig)", "Tuff"], "answer": 1, "explanation": "Basalt 250 – 400 N/mm²."},
+        {"id": "baustoffe-5-gesteinsarten-q003", "type": "mc", "question": "Welche Rohdichte hat **Basalt**?", "options": ["0,7 – 1,0 g/cm³", "2,0 – 2,7 g/cm³", "2,6 – 2,8 g/cm³", "2,9 – 3,0 g/cm³"], "answer": 3, "explanation": "Basalt ist das dichteste der Tabelle: 2,9 – 3,0."},
+        {"id": "baustoffe-5-gesteinsarten-q004", "type": "mc", "question": "Welcher Sandstein ist am festesten?", "options": ["toniger", "kalkiger", "kieseliger", "mergeliger"], "answer": 2, "explanation": "Kieselig (Quarz) 120 – 150 N/mm²."},
+        {"id": "baustoffe-5-gesteinsarten-q005", "type": "mc", "question": "Toniger Sandstein hat eine Druckfestigkeit von …", "options": ["40 – 60 N/mm²", "60 – 100 N/mm²", "120 – 150 N/mm²", "160 – 240 N/mm²"], "answer": 0, "explanation": "Tonig/mergelig: weich, minderwertig."},
+        {"id": "baustoffe-5-gesteinsarten-q006", "type": "mc", "question": "Wofür verwendet man **Bimsstein**?", "options": ["Bordsteine", "Splitt und Schotter", "Wärmedämmende Mauersteine", "Fußbodenbelag"], "answer": 2, "explanation": "Leicht und wärmedämmend → Bims-/Schwemmsteine."},
+        {"id": "baustoffe-5-gesteinsarten-q007", "type": "mc", "question": "Woraus wird **Trasszement** hergestellt?", "options": ["Granit", "Trass", "Marmor", "Kieselgur"], "answer": 1, "explanation": "Trass (vulkanisches Auswurfgestein)."},
+        {"id": "baustoffe-5-gesteinsarten-q008", "type": "mc", "question": "Was passiert bei der Umwandlung von Granit zu Gneis mit den Mineralen?", "options": ["Sie schmelzen komplett", "Sie richten sich in parallelen Lagen aus", "Sie lösen sich in Wasser", "Nichts"], "answer": 1, "explanation": "Durch Druck → schiefriges, plattig spaltbares Gefüge."},
+        {"id": "baustoffe-5-gesteinsarten-q009", "type": "mc", "question": "Asbest ist die faserige Form von …", "options": ["Quarz", "Hornblende", "Kalkspat", "Glimmer"], "answer": 1, "explanation": "Gleiche Mineralart (Amphibol)."},
+        {"id": "baustoffe-5-gesteinsarten-q010", "type": "mc", "question": "Aus welchem Gestein entsteht Marmor?", "options": ["Granit", "Basalt", "Kalkstein/Dolomit", "Sandstein"], "answer": 2, "explanation": "Kalkstein → Marmor."},
+        {"id": "baustoffe-5-gesteinsarten-q011", "type": "exercise", "question": "**Metamorphe Gesteine:** Erkläre die Zusammenhänge.", "fields": [{"label": "Granit – Gneis", "solution": "Gneis entsteht aus Granit durch hohen Druck; die Minerale richten sich parallel aus (schiefrig)."}, {"label": "Kalkstein – Marmor", "solution": "Marmor entsteht aus Kalkstein durch Druck und Hitze, die Calcitkristalle rekristallisieren."}, {"label": "Hornblende – Asbest", "solution": "Gleiche Mineralart (Amphibol); Asbest ist die faserige, biegsame Form der Hornblende."}], "explanation": ""}
+      ]
+    }
+  ]
+}
