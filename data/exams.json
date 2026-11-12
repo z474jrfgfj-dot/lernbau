@@ -1,8 +1,17 @@
 [
   { "id": "preset-2026-10-19-deutsch",   "subject": "deutsch",                 "title": "Kurzarbeit Deutsch",                 "date": "2026-10-19" },
   { "id": "preset-2026-10-23-dg",        "subject": "darstellende-geometrie",  "title": "Kurzarbeit Darstellende Geometrie",  "date": "2026-10-23" },
-  { "id": "preset-2026-11-09-baustoffe", "subject": "baustoffe",               "title": "Kurzarbeit Baustoffkunde",           "date": "2026-11-09" },
+  { "id": "preset-2026-11-09-baustoffe", "subject": "baustoffe",               "title": "Kurzarbeit Baustoffkunde",           "date": "2026-11-11" },
   { "id": "preset-2026-11-12-mathe",     "subject": "mathe",                   "title": "Kurzarbeit Mathe (Trigonometrie)",   "date": "2026-10-22" },
+  { "id": "preset-2026-11-16-bp",        "subject": "betriebspsychologie",     "title": "Kurzarbeit Betriebspsychologie",     "date": "2026-11-16" },
   { "id": "preset-2026-11-17-englisch",  "subject": "englisch",                "title": "Kurzarbeit Englisch",                "date": "2026-11-17" },
-  { "id": "preset-2026-11-18-baurecht",  "subject": "baurecht",                "title": "Kurzarbeit Baurecht",                "date": "2026-11-18" }
+  { "id": "preset-2026-11-18-baurecht",  "subject": "baurecht",                "title": "Kurzarbeit Baurecht",                "date": "2026-11-18" },
+  { "id": "preset-2026-11-23-wiso",      "subject": "wiso",                    "title": "Kurzarbeit WiSo / ReSo (PuG)",       "date": "2026-11-23" },
+  { "id": "preset-2026-11-24-statik",    "subject": "statik",                  "title": "Kurzarbeit Statik",                  "date": "2026-11-24" },
+  { "id": "preset-2026-11-25-vermessung","subject": "vermessung",              "title": "Kurzarbeit Vermessung",              "date": "2026-11-25" },
+  { "id": "preset-2026-12-07-bk",        "subject": "baukonstruktion",         "title": "Kurzarbeit Baukonstruktion",         "date": "2026-12-07" },
+  { "id": "preset-2026-12-23-baurecht-sa","subject": "baurecht",               "title": "Schulaufgabe Baurecht",              "date": "2026-12-23" },
+  { "id": "preset-2027-01-14-mathe-sa",  "subject": "mathe",                   "title": "Schulaufgabe Mathe",                 "date": "2027-01-14" },
+  { "id": "preset-2027-01-25-baustoffe-sa","subject": "baustoffe",             "title": "Schulaufgabe Baustoffkunde",         "date": "2027-01-25" },
+  { "id": "preset-2027-01-26-englisch-sa","subject": "englisch",               "title": "Schulaufgabe Englisch",              "date": "2027-01-26" }
 ]
