@@ -1,0 +1,33 @@
+{
+  "unit": "baurecht-4",
+  "subject": "baurecht",
+  "decks": [
+    {
+      "id": "baurecht-4-kurzarbeit",
+      "title": "Kurzarbeit 18.11.: Baugebiete, Baulinie/Baugrenze, Nutzungsschablone",
+      "description": "Stoffliste der Kurzarbeit, die Baugebiete der BauNVO, Baulinie und Baugrenze, Zulässigkeit (z. B. Tankstelle im WA) und das Beispiel Estenfeld.",
+      "sources": ["Stoff Kurzarbeit Baurecht.pdf", "Nutzungsschablonen_Satzung_05_2102_212013.pdf", "BPlan Ausschnitt Estenfeld.pdf", "Bebauungsplan_Satzung_05_2102_212013_gesamt.pdf", "Legende_Bebauungsplan_Satzung_05_2102_213013.pdf"],
+      "cards": [
+        {"id": "baurecht-4-kurzarbeit-c001", "type": "basic", "front": "⚠️ **Stoff der Kurzarbeit Baurecht** (18.11.)?", "back": "Flächennutzungsplan · Bebauungsplan (Normalfall + Sonderfälle) · BGB, BauNVO, PlanZV · Baugrenze, Baulinie · privates Baurecht · Gesetze, Verordnungen, Satzungen · Rechtsansprüche von Bauherren (z. B. Tankstelle im allgemeinen Wohngebiet) · einzelne Gebiete der BauNVO"},
+        {"id": "baurecht-4-kurzarbeit-c002", "type": "basic", "front": "Wofür stehen BauNVO und PlanZV?", "back": "**BauNVO** = Baunutzungsverordnung (Art und Maß der baulichen Nutzung, Baugebiete, Bauweise).\n**PlanZV** = Planzeichenverordnung (einheitliche Zeichen in Bauleitplänen)."},
+        {"id": "baurecht-4-kurzarbeit-c003", "type": "basic", "front": "Die **Wohngebiete** der BauNVO? *(aus dem Gesetz ergänzt)*", "back": "**WS** Kleinsiedlungsgebiet (§ 2) · **WR** reines Wohngebiet (§ 3) · **WA** allgemeines Wohngebiet (§ 4) · **WB** besonderes Wohngebiet (§ 4a)"},
+        {"id": "baurecht-4-kurzarbeit-c004", "type": "basic", "front": "Die **gemischten** Baugebiete der BauNVO? *(aus dem Gesetz ergänzt)*", "back": "**MD** Dorfgebiet (§ 5) · **MDW** dörfliches Wohngebiet (§ 5a) · **MI** Mischgebiet (§ 6) · **MU** urbanes Gebiet (§ 6a) · **MK** Kerngebiet (§ 7)"},
+        {"id": "baurecht-4-kurzarbeit-c005", "type": "basic", "front": "**Gewerbliche** und **Sonder**-Baugebiete? *(aus dem Gesetz ergänzt)*", "back": "**GE** Gewerbegebiet (§ 8) · **GI** Industriegebiet (§ 9) · **SO** Sondergebiete (§§ 10, 11, z. B. Wochenendhaus-, Einkaufszentrum-Gebiet)"},
+        {"id": "baurecht-4-kurzarbeit-c006", "type": "basic", "front": "**Baulinie** vs. **Baugrenze** (§ 23 BauNVO)?", "back": "**Baulinie:** Es **muss auf** der Linie gebaut werden.\n**Baugrenze:** Gebäude dürfen sie **nicht überschreiten** (dahinter bleiben ist erlaubt).\nBeide begrenzen die überbaubare Grundstücksfläche."},
+        {"id": "baurecht-4-kurzarbeit-c007", "type": "basic", "front": "Allgemein zulässig vs. ausnahmsweise zulässig – Folge für den Bauherrn? *(aus dem Gesetz ergänzt)*", "back": "**Allgemein zulässig** (Abs. 2 der Gebietsvorschrift) und B-Plan eingehalten → **Rechtsanspruch** auf die Baugenehmigung.\n**Ausnahmsweise zulässig** (Abs. 3) → die Behörde **kann** zulassen (Ermessen, § 31 Abs. 1 BauGB) – kein Anspruch."},
+        {"id": "baurecht-4-kurzarbeit-c008", "type": "basic", "front": "**Tankstelle im allgemeinen Wohngebiet (WA)** – zulässig? *(aus dem Gesetz ergänzt)*", "back": "Nur **ausnahmsweise** (§ 4 Abs. 3 Nr. 5 BauNVO) → kein Rechtsanspruch, die Behörde entscheidet nach Ermessen. Im **reinen** Wohngebiet (WR) sind Tankstellen nicht vorgesehen."},
+        {"id": "baurecht-4-kurzarbeit-c009", "type": "basic", "front": "Was steht in der **Nutzungsschablone** WA II / III (Beispiel Estenfeld)?", "back": "**WA** = allgemeines Wohngebiet (Art der Nutzung), **II / III** = Zahl der Vollgeschosse – im Hang talseits (S) 3, bergseits (N) 2 sichtbar. Weitere Felder üblich: GRZ, GFZ, Bauweise, Dachform."}
+      ],
+      "quiz": [
+        {"id": "baurecht-4-kurzarbeit-q001", "type": "mc", "question": "Was bedeutet **WA**?", "options": ["reines Wohngebiet", "allgemeines Wohngebiet", "Wochenendhausgebiet", "Wohnanlage"], "answer": 1, "explanation": "WA = allgemeines Wohngebiet (§ 4 BauNVO)."},
+        {"id": "baurecht-4-kurzarbeit-q002", "type": "mc", "question": "Was bedeutet **MI**?", "options": ["Mischgebiet", "Industriegebiet", "Kerngebiet", "Dorfgebiet"], "answer": 0, "explanation": "MI = Mischgebiet (§ 6), GI = Industriegebiet."},
+        {"id": "baurecht-4-kurzarbeit-q003", "type": "mc", "question": "An eine **Baulinie** muss man …", "options": ["mindestens 3 m Abstand halten", "genau darauf bauen", "nicht heranbauen", "eine Mauer setzen"], "answer": 1, "explanation": "Baulinie = muss darauf gebaut werden; Baugrenze = darf nicht überschritten werden."},
+        {"id": "baurecht-4-kurzarbeit-q004", "type": "mc", "question": "Eine **Baugrenze** …", "options": ["muss genau eingehalten werden", "darf nicht überschritten werden", "gilt nur für Garagen", "steht nur im FNP"], "answer": 1, "explanation": "Zurückbleiben ist erlaubt, überschreiten nicht."},
+        {"id": "baurecht-4-kurzarbeit-q005", "type": "mc", "question": "Ein Bauherr will im **WA** eine Tankstelle bauen. Hat er einen Rechtsanspruch?", "options": ["Ja, immer", "Nein – Tankstellen sind dort nur ausnahmsweise zulässig (Ermessen)", "Ja, wenn der Nachbar zustimmt", "Nein, Tankstellen sind nur im WR erlaubt"], "answer": 1, "explanation": "§ 4 Abs. 3 Nr. 5 BauNVO: ausnahmsweise → Ermessen der Behörde."},
+        {"id": "baurecht-4-kurzarbeit-q006", "type": "mc", "question": "Welche Verordnung regelt die **Planzeichen** im Bebauungsplan?", "options": ["BauNVO", "PlanZV", "BayBO", "BGB"], "answer": 1, "explanation": "Planzeichenverordnung."},
+        {"id": "baurecht-4-kurzarbeit-q007", "type": "mc", "question": "Welches Gebiet ist **kein** Baugebiet der BauNVO?", "options": ["GE", "MU", "WR", "FN"], "answer": 3, "explanation": "FN gibt es nicht. GE = Gewerbe, MU = urbanes Gebiet, WR = reines Wohngebiet."},
+        {"id": "baurecht-4-kurzarbeit-q008", "type": "exercise", "question": "Nenne zu den Kürzeln die Baugebiete: WR, WA, MI, GE, GI.", "fields": [{"label": "WR", "solution": "reines Wohngebiet"}, {"label": "WA", "solution": "allgemeines Wohngebiet"}, {"label": "MI", "solution": "Mischgebiet"}, {"label": "GE", "solution": "Gewerbegebiet"}, {"label": "GI", "solution": "Industriegebiet"}], "explanation": ""}
+      ]
+    }
+  ]
+}

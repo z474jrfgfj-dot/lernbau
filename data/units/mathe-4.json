@@ -1,0 +1,51 @@
+{
+  "unit": "mathe-4",
+  "subject": "mathe",
+  "decks": [
+    {
+      "id": "mathe-4-brueche",
+      "title": "Bruchrechnen & Bruchterme",
+      "description": "Brucharten, Erweitern und Kürzen, Bruchterme kürzen (Faktoren bilden) und gleichnamige Bruchterme addieren/subtrahieren – ohne Hilfsmittel.",
+      "sources": ["5_Bruchrechnen_2026_27.pdf", "5a_Bruchterme_addieren_subtrahieren.pdf"],
+      "cards": [
+        {"id": "mathe-4-brueche-c001", "type": "basic", "front": "Echter, unechter und gemischter Bruch?", "back": "**Echt:** Zähler < Nenner (2/3)\n**Unecht:** Zähler ≥ Nenner (3/2, 5/5)\n**Gemischt:** ganze Zahl + Bruch (1 2/3 = 5/3)"},
+        {"id": "mathe-4-brueche-c002", "type": "basic", "front": "Was ist ein **Bruchterm**?", "back": "Ein Bruch mit Variable, z. B. x/3 oder ½a²."},
+        {"id": "mathe-4-brueche-c003", "type": "basic", "front": "**Erweitern** und **Kürzen**?", "back": "Erweitern: Zähler **und** Nenner mit derselben Zahl (≠ 0) **multiplizieren**.\nKürzen: Zähler **und** Nenner durch dieselbe Zahl **dividieren**.\nDer Wert des Bruchs ändert sich nicht."},
+        {"id": "mathe-4-brueche-c004", "type": "basic", "front": "Wie kürzt man **Summen** in Bruchtermen?", "back": "Erst **Faktoren bilden** (ausklammern, binomische Formeln), dann gleiche Faktoren kürzen. Aus Summen darf man nicht kürzen!\nz. B. (4x + ax)/(4 + a) = x(4 + a)/(4 + a) = x"},
+        {"id": "mathe-4-brueche-c005", "type": "basic", "front": "Gleichnamige Brüche addieren/subtrahieren?", "back": "Gleicher Nenner → **Zähler addieren/subtrahieren, Nenner bleibt**: a/c + b/c = (a + b)/c\nBeim Minus vor einem Bruch: **ganzen Zähler in Klammern** setzen (Vorzeichen drehen)."},
+        {"id": "mathe-4-brueche-c006", "type": "basic", "front": "Trick bei Nennern (a − b) und (b − a)?", "back": "b − a = −(a − b) → 4x/(b − a) = −4x/(a − b). Dann sind die Brüche gleichnamig."}
+      ],
+      "quiz": [
+        {"id": "mathe-4-brueche-q001", "type": "numeric", "question": "Womit wurde erweitert? **3/4 = 6/8**", "answer": 2, "unit": "", "tolerance": 0.0001, "explanation": "4 · 2 = 8 → erweitert mit **2**"},
+        {"id": "mathe-4-brueche-q002", "type": "numeric", "question": "Womit wurde erweitert? **1/7 = 3/21**", "answer": 3, "unit": "", "tolerance": 0.0001, "explanation": "7 · 3 = 21 → erweitert mit **3**"},
+        {"id": "mathe-4-brueche-q003", "type": "numeric", "question": "Womit wurde erweitert? **7/8 = 49/56**", "answer": 7, "unit": "", "tolerance": 0.0001, "explanation": "8 · 7 = 56 → erweitert mit **7**"},
+        {"id": "mathe-4-brueche-q004", "type": "numeric", "question": "Womit wurde erweitert? **5/7 = 20/28**", "answer": 4, "unit": "", "tolerance": 0.0001, "explanation": "7 · 4 = 28 → erweitert mit **4**"},
+        {"id": "mathe-4-brueche-q005", "type": "numeric", "question": "Womit wurde erweitert? **4/11 = 48/132**", "answer": 12, "unit": "", "tolerance": 0.0001, "explanation": "11 · 12 = 132 → erweitert mit **12**"},
+        {"id": "mathe-4-brueche-q006", "type": "numeric", "question": "Durch welche Zahl wurde gekürzt? **18/24 = 9/12**", "answer": 2, "unit": "", "tolerance": 0.0001, "explanation": "18 : 2 = 9, 24 : 2 = 12 → gekürzt mit **2**"},
+        {"id": "mathe-4-brueche-q007", "type": "numeric", "question": "Durch welche Zahl wurde gekürzt? **25/120 = 5/24**", "answer": 5, "unit": "", "tolerance": 0.0001, "explanation": "25 : 5 = 5, 120 : 5 = 24 → gekürzt mit **5**"},
+        {"id": "mathe-4-brueche-q008", "type": "numeric", "question": "Durch welche Zahl wurde gekürzt? **13/26 = 1/2**", "answer": 13, "unit": "", "tolerance": 0.0001, "explanation": "13 : 13 = 1, 26 : 13 = 2 → gekürzt mit **13**"},
+        {"id": "mathe-4-brueche-q009", "type": "numeric", "question": "Durch welche Zahl wurde gekürzt? **20/36 = 5/9**", "answer": 4, "unit": "", "tolerance": 0.0001, "explanation": "20 : 4 = 5, 36 : 4 = 9 → gekürzt mit **4**"},
+        {"id": "mathe-4-brueche-q010", "type": "numeric", "question": "Durch welche Zahl wurde gekürzt? **42/54 = 7/9**", "answer": 6, "unit": "", "tolerance": 0.0001, "explanation": "42 : 6 = 7, 54 : 6 = 9 → gekürzt mit **6**"},
+        {"id": "mathe-4-brueche-q011", "type": "mc", "question": "Kürze so weit wie möglich: **6/9**", "options": ["3/9", "3/2", "2/3", "3/3"], "answer": 2, "explanation": "ggT(6, 9) = 3 → **2/3**"},
+        {"id": "mathe-4-brueche-q012", "type": "mc", "question": "Kürze so weit wie möglich: **15/25**", "options": ["15/25", "5/3", "4/5", "3/5"], "answer": 3, "explanation": "ggT(15, 25) = 5 → **3/5**"},
+        {"id": "mathe-4-brueche-q013", "type": "mc", "question": "Kürze so weit wie möglich: **24/30**", "options": ["4/5", "12/15", "5/4", "5/5"], "answer": 0, "explanation": "ggT(24, 30) = 6 → **4/5**"},
+        {"id": "mathe-4-brueche-q014", "type": "mc", "question": "Kürze so weit wie möglich: **16/12**", "options": ["8/6", "4/3", "3/4", "5/3"], "answer": 1, "explanation": "ggT(16, 12) = 4 → **4/3**"},
+        {"id": "mathe-4-brueche-q015", "type": "mc", "question": "Kürze so weit wie möglich: **50/80**", "options": ["25/40", "5/8", "8/5", "6/8"], "answer": 1, "explanation": "ggT(50, 80) = 10 → **5/8**"},
+        {"id": "mathe-4-brueche-q016", "type": "mc", "question": "Vereinfache so weit wie möglich: **12ab²c³ / (4abc)**", "options": ["3abc²", "3bc³", "8bc²", "3bc²"], "answer": 3, "explanation": "**3bc²** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q017", "type": "mc", "question": "Vereinfache so weit wie möglich: **9uv³w² / (12u²vw⁴)**", "options": ["3v / (4uw²)", "3v² / (4uw²)", "3v² / (4u²w²)", "3uv² / (4w²)"], "answer": 1, "explanation": "**3v² / (4uw²)** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q018", "type": "mc", "question": "Vereinfache so weit wie möglich: **(a² + ab) / (ab + b²)**", "options": ["1", "a² / b²", "a / b", "(a + 1) / (b + 1)"], "answer": 2, "explanation": "**a / b** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q019", "type": "mc", "question": "Vereinfache so weit wie möglich: **(5x − 10) / (10x − 15)**", "options": ["(x − 2) / (2x − 3)", "1/2", "(x − 2) / (2x − 15)", "(x − 10) / (2x − 15)"], "answer": 0, "explanation": "**(x − 2) / (2x − 3)** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q020", "type": "mc", "question": "Vereinfache so weit wie möglich: **(63a − 49b) / (81a − 63b)**", "options": ["7a / 9b", "(9a − 7b) / 9", "49/63", "7/9"], "answer": 3, "explanation": "**7/9** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q021", "type": "mc", "question": "Vereinfache so weit wie möglich: **(x + 1) / (x² − 1)**", "options": ["1 / (x + 1)", "x / (x − 1)", "1 / x", "1 / (x − 1)"], "answer": 3, "explanation": "**1 / (x − 1)** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q022", "type": "mc", "question": "Vereinfache so weit wie möglich: **(4a² − 9b²) / (4a + 6b)**", "options": ["(2a + 3b) / 2", "a − b", "(2a − 3b) / 2", "(4a − 9b) / 2"], "answer": 2, "explanation": "**(2a − 3b) / 2** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q023", "type": "mc", "question": "Vereinfache so weit wie möglich: **(2x + 2y) / (x² + 2xy + y²)**", "options": ["2 / (x + y)", "2 / (x − y)", "1 / (x + y)", "2(x + y)"], "answer": 0, "explanation": "**2 / (x + y)** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q024", "type": "mc", "question": "Vereinfache so weit wie möglich: **(2a² − 4ab + 2b²) / (2a² − 2b²)**", "options": ["(a + b) / (a − b)", "a − b", "(a − b) / (a + b)", "(a − b)² / (a + b)"], "answer": 2, "explanation": "**(a − b) / (a + b)** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q025", "type": "mc", "question": "Vereinfache so weit wie möglich: **4a/x² + 15a/x² − 8a/x²**", "options": ["27a / x²", "11a / 3x²", "11a / x²", "11a / x⁶"], "answer": 2, "explanation": "**11a / x²** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q026", "type": "mc", "question": "Vereinfache so weit wie möglich: **(3xy + b)/4a − (xy − 2b)/4a + 3b/4a**", "options": ["(xy + 3b) / (2a)", "(2xy + 2b) / (4a)", "(4xy + 6b) / (4a)", "(xy + b) / (2a)"], "answer": 0, "explanation": "**(xy + 3b) / (2a)** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q027", "type": "mc", "question": "Vereinfache so weit wie möglich: **(ax + ay)/(x + y) − (bx + by)/(x + y)**", "options": ["a + b", "(a − b)/(x + y)", "1", "a − b"], "answer": 3, "explanation": "**a − b** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q028", "type": "mc", "question": "Vereinfache so weit wie möglich: **(ax + ay)/(a + b) + (bx + by)/(a + b)**", "options": ["a + b", "(x + y)/(a + b)", "xy", "x + y"], "answer": 3, "explanation": "**x + y** (Faktoren bilden, dann kürzen)"},
+        {"id": "mathe-4-brueche-q029", "type": "mc", "question": "Vereinfache so weit wie möglich: **5x/(a − b) + 4x/(b − a)**", "options": ["9x / (a − b)", "x / (b − a)", "x / (a − b)", "9x / 0"], "answer": 2, "explanation": "**x / (a − b)** (Faktoren bilden, dann kürzen)"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "unit": "vermessung-3",
+  "subject": "vermessung",
+  "decks": [
+    {
+      "id": "vermessung-3-hoehenrost-richtungswinkel",
+      "title": "Höhenrost & Richtungswinkel rechnen",
+      "description": "Höhenlinien im Höhenrost interpolieren, Strecken und Richtungswinkel (gon) aus Koordinaten mit Quadranten-Regel.",
+      "sources": ["Hoehenrost_ausgefuellt.pdf", "Der Richtungswinkel.pdf"],
+      "cards": [
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-c001", "type": "basic", "front": "Was ist ein **Höhenrost**?", "back": "Im festen Raster (z. B. 10 m) gemessene Punkthöhen. Zwischen den Punkten werden die **Höhenlinien interpoliert** (linear: Höhendifferenz anteilig auf die Strecke verteilen)."},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-c002", "type": "basic", "front": "Wie **interpoliert** man eine Höhenlinie zwischen zwei Rasterpunkten?", "back": "Abstand = (H_Linie − H₁) / (H₂ − H₁) · Rasterweite"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-c003", "type": "basic", "front": "Formel **Richtungswinkel** t von A nach B?", "back": "t = arctan(Δy / Δx) mit Δy = y_B − y_A, Δx = x_B − x_A – danach Quadrant prüfen!"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-c004", "type": "basic", "front": "Quadranten-Korrektur beim Richtungswinkel (gon)?", "back": "Δy +, Δx + → **I.** keine Korrektur\nΔy +, Δx − → **II.** +200 gon\nΔy −, Δx − → **III.** +200 gon\nΔy −, Δx + → **IV.** +400 gon"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-c005", "type": "basic", "front": "Strecke aus Koordinaten?", "back": "s = √(Δx² + Δy²)"}
+      ],
+      "quiz": [
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q001", "type": "numeric", "question": "Koordinatenliste (y/x): Punkt 224 (299986,283 / 300010,619), Punkt 04 (300000,000 / 300165,382). Strecke s_224,04?", "answer": 155.37, "unit": "m", "tolerance": 0.0005, "explanation": "Δy = 13,717, Δx = 154,763\ns = √(Δx² + Δy²) = **155,37 m**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q002", "type": "numeric", "question": "Koordinatenliste (y/x): Punkt 224 (299986,283 / 300010,619), Punkt 03 (300000,000 / 300000,000). Strecke s_224,03?", "answer": 17.35, "unit": "m", "tolerance": 0.0005, "explanation": "Δy = 13,717, Δx = -10,619\ns = √(Δx² + Δy²) = **17,35 m**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q003", "type": "numeric", "question": "Koordinatenliste (y/x): Punkt 224 (299986,283 / 300010,619), Punkt 51 (300000,457 / 300045,941). Strecke s_224,51?", "answer": 38.06, "unit": "m", "tolerance": 0.0005, "explanation": "Δy = 14,174, Δx = 35,322\ns = √(Δx² + Δy²) = **38,06 m**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q004", "type": "numeric", "question": "Koordinatenliste (y/x): Punkt 50 (299985,346 / 300014,371), Punkt 51 (300000,457 / 300045,941). Strecke s_50,51?", "answer": 35.0, "unit": "m", "tolerance": 0.0005, "explanation": "Δy = 15,111, Δx = 31,570\ns = √(Δx² + Δy²) = **35,00 m**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q005", "type": "numeric", "question": "Koordinatenliste (y/x): Punkt 51 (300000,457 / 300045,941), Punkt 53 (299982,417 / 300054,576). Strecke s_51,53?", "answer": 20.0, "unit": "m", "tolerance": 0.0005, "explanation": "Δy = -18,040, Δx = 8,635\ns = √(Δx² + Δy²) = **20,00 m**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q006", "type": "numeric", "question": "Richtungswinkel t von Punkt 224 nach Punkt 04? (Koordinaten wie in der Liste; Ergebnis in gon, 0 – 400)", "answer": 5.63, "unit": "gon", "tolerance": 0.0005, "explanation": "Δy = +13,717, Δx = +154,763 → **I. Quadrant**\narctan(Δy/Δx) = 5,63 gon → keine Korrektur → **t = 5,63 gon**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q007", "type": "numeric", "question": "Richtungswinkel t von Punkt 224 nach Punkt 03? (Koordinaten wie in der Liste; Ergebnis in gon, 0 – 400)", "answer": 141.94, "unit": "gon", "tolerance": 0.0005, "explanation": "Δy = +13,717, Δx = -10,619 → **II. Quadrant**\narctan(Δy/Δx) = -58,06 gon → +200 gon → **t = 141,94 gon**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q008", "type": "numeric", "question": "Richtungswinkel t von Punkt 224 nach Punkt 50? (Koordinaten wie in der Liste; Ergebnis in gon, 0 – 400)", "answer": 384.42, "unit": "gon", "tolerance": 0.0005, "explanation": "Δy = -0,937, Δx = +3,752 → **IV. Quadrant**\narctan(Δy/Δx) = -15,58 gon → +400 gon → **t = 384,42 gon**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q009", "type": "numeric", "question": "Richtungswinkel t von Punkt 224 nach Punkt 54? (Koordinaten wie in der Liste; Ergebnis in gon, 0 – 400)", "answer": 336.82, "unit": "gon", "tolerance": 0.0005, "explanation": "Δy = -18,977, Δx = +12,387 → **IV. Quadrant**\narctan(Δy/Δx) = -63,18 gon → +400 gon → **t = 336,82 gon**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q010", "type": "numeric", "question": "Richtungswinkel t von Punkt 224 nach Punkt 53? (Koordinaten wie in der Liste; Ergebnis in gon, 0 – 400)", "answer": 394.42, "unit": "gon", "tolerance": 0.0005, "explanation": "Δy = -3,866, Δx = +43,957 → **IV. Quadrant**\narctan(Δy/Δx) = -5,58 gon → +400 gon → **t = 394,42 gon**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q011", "type": "numeric", "question": "Höhenrost (10-m-Raster): A1 = 234,72 m, A2 = 235,31 m ü. NN. In welchem Abstand von A1 schneidet die Höhenlinie **235,00 m**?", "answer": 4.75, "unit": "m", "tolerance": 0.005, "explanation": "Interpolieren: (235,00 − 234,72) / (235,31 − 234,72) · 10 m = 0,28 / 0,59 · 10 = **4,75 m**"},
+        {"id": "vermessung-3-hoehenrost-richtungswinkel-q012", "type": "numeric", "question": "Höhenrost: A3 = 235,82 m, A4 = 236,61 m ü. NN (10 m). Abstand der Höhenlinie **236,00 m** von A3?", "answer": 2.28, "unit": "m", "tolerance": 0.005, "explanation": "(236,00 − 235,82) / (236,61 − 235,82) · 10 = 0,18 / 0,79 · 10 = **2,28 m**"}
+      ]
+    }
+  ]
+}

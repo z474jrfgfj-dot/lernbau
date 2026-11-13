@@ -1,0 +1,32 @@
+{
+  "unit": "bauphysik-4",
+  "subject": "bauphysik",
+  "decks": [
+    {
+      "id": "bauphysik-4-r-wert",
+      "title": "Wärmedurchlasswiderstand R & Wärmeleitung im Detail",
+      "description": "R = d/λ, mehrschichtige Bauteile, Mindestwärmeschutz nach DIN 4108 und der Hefteintrag Wärmeübertragung.",
+      "sources": ["Gründe für den Wärmeschutz.pdf", "Hefteintrag_Wärmeuebertragung.pdf"],
+      "cards": [
+        {"id": "bauphysik-4-r-wert-c001", "type": "basic", "front": "⚠️ Formel und Einheit des **Wärmedurchlasswiderstands** R?", "back": "R = d / λ  in **m²·K/W**\nd = Schichtdicke in **m**, λ = Wärmeleitfähigkeit in W/(m·K)", "hint": "Auf dem Blatt als „wichtig“ markiert."},
+        {"id": "bauphysik-4-r-wert-c002", "type": "basic", "front": "R bei **mehrschichtigen** Bauteilen?", "back": "R = d₁/λ₁ + d₂/λ₂ + … + dₙ/λₙ (die Widerstände der Schichten werden addiert)"},
+        {"id": "bauphysik-4-r-wert-c003", "type": "basic", "front": "Merksatz zum R-Wert?", "back": "**Je größer der R-Wert, desto größer die Wärmedämmfähigkeit** des Bauteils."},
+        {"id": "bauphysik-4-r-wert-c004", "type": "basic", "front": "Mindestwärmeschutz einer Außenwand nach **DIN 4108**?", "back": "R ≥ **1,20 m²·K/W** – sonst nicht erfüllt."},
+        {"id": "bauphysik-4-r-wert-c005", "type": "basic", "front": "Wärmeleitfähigkeit λ: Kupfer vs. Dämmstoff?", "back": "Kupfer ≈ **380** W/(m·K) – leitet sehr gut; Luft/Dämmstoffe ≈ **0,03 – 0,04** – leiten sehr schlecht."},
+        {"id": "bauphysik-4-r-wert-c006", "type": "basic", "front": "Freie und erzwungene **Konvektion**?", "back": "**Frei:** warme Luft/Wasser steigt von selbst auf (geringere Dichte) → Kreisströmung.\n**Erzwungen:** Pumpe oder Ventilator treibt die Strömung an – überträgt deutlich mehr Wärme (z. B. Umwälzpumpe der Heizung)."},
+        {"id": "bauphysik-4-r-wert-c007", "type": "basic", "front": "Was sind **Wärmebrücken** und warum sind sie schlecht?", "back": "Stellen, an denen mehr Wärme abfließt (z. B. Betondecke, Fensteranschluss) → Wärmeverlust und **Schimmelgefahr**. Aufspüren mit Thermografie (Wärmebildkamera)."},
+        {"id": "bauphysik-4-r-wert-c008", "type": "basic", "front": "Wie hilft **Wärmeschutzverglasung**?", "back": "Eine Metallbeschichtung **reflektiert** Wärmestrahlung zurück in den Raum."}
+      ],
+      "quiz": [
+        {"id": "bauphysik-4-r-wert-q001", "type": "numeric", "question": "Außenwand aus Leichtbeton: λ = 0,36 W/(m·K), d = 20 cm. Wie groß ist R?", "answer": 0.56, "unit": "m²·K/W", "tolerance": 0.01, "explanation": "R = 0,20 / 0,36 = **0.56 m²·K/W** (Beispiel vom Blatt)"},
+        {"id": "bauphysik-4-r-wert-q002", "type": "numeric", "question": "Außenwand aus Kalksandstein (λ = 0,70 W/(m·K)), d = 24 cm. Wie groß ist R?", "answer": 0.34, "unit": "m²·K/W", "tolerance": 0.01, "explanation": "R = 0,24 / 0,70 = **0.34 m²·K/W**"},
+        {"id": "bauphysik-4-r-wert-q003", "type": "numeric", "question": "Wand innen → außen: Gipsputz 1,5 cm (λ 0,51), Hochlochziegel 24 cm (λ 0,21), Kalkzementputz 2 cm (λ 1,0). Gesamt-R?", "answer": 1.19, "unit": "m²·K/W", "tolerance": 0.01, "explanation": "R = 0,015/0,51 + 0,24/0,21 + 0,02/1,0 = 0,029 + 1,143 + 0,020 = **1.19 m²·K/W**\n→ kleiner als 1,20 → Mindestwärmeschutz **nicht erfüllt** (Beispiel vom Blatt)."},
+        {"id": "bauphysik-4-r-wert-q004", "type": "numeric", "question": "Wie dick müsste der Hochlochziegel (λ 0,21) in der Wand oben mindestens sein, damit R = 1,20 m²·K/W erreicht wird? (Putze gleich)", "answer": 24.2, "unit": "cm", "tolerance": 0.01, "explanation": "d = (1,20 − 0,029 − 0,020) · 0,21 = 0.2416 m ≈ **24.2 cm**"},
+        {"id": "bauphysik-4-r-wert-q005", "type": "numeric", "question": "Eigene Übung: Putz 1,5 cm (λ 0,70), Holz 17,5 cm (λ 0,16), Dämmung 10 cm (λ 0,035), Putz 0,8 cm (λ 0,70). Gesamt-R?", "answer": 3.98, "unit": "m²·K/W", "tolerance": 0.01, "explanation": "0,021 + 1,094 + 2,857 + 0,011 = **3.98 m²·K/W** – die Dämmung macht den Großteil aus."},
+        {"id": "bauphysik-4-r-wert-q006", "type": "mc", "question": "Welche Einheit hat R?", "options": ["W/(m·K)", "m²·K/W", "W/(m²·K)", "J/(kg·K)"], "answer": 1, "explanation": "R in m²·K/W (λ in W/(m·K))."},
+        {"id": "bauphysik-4-r-wert-q007", "type": "mc", "question": "Eine Schicht wird doppelt so dick. Was passiert mit ihrem R-Wert?", "options": ["halbiert sich", "bleibt gleich", "verdoppelt sich", "vervierfacht sich"], "answer": 2, "explanation": "R = d/λ – proportional zur Dicke."},
+        {"id": "bauphysik-4-r-wert-q008", "type": "mc", "question": "Wärmeströmung durch eine Umwälzpumpe heißt …", "options": ["freie Konvektion", "erzwungene Konvektion", "Wärmeleitung", "Wärmestrahlung"], "answer": 1, "explanation": "Angetrieben durch Pumpe/Ventilator = erzwungen."}
+      ]
+    }
+  ]
+}

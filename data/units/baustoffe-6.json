@@ -1,0 +1,24 @@
+{
+  "unit": "baustoffe-6",
+  "subject": "baustoffe",
+  "decks": [
+    {
+      "id": "baustoffe-6-kuenstliche-steine",
+      "title": "Verwendung von künstlichen Steinen",
+      "description": "Arten künstlicher Mauersteine, Vergleich mit Naturstein und verbaute Mengen in Deutschland.",
+      "sources": ["4. Verwendung von künstlichen Steinen.pdf"],
+      "cards": [
+        {"id": "baustoffe-6-kuenstliche-steine-c001", "type": "basic", "front": "Welche **künstlichen Steine** gibt es? (4)", "back": "**KS-Steine** (Kalksandstein), **Porenbetonsteine**, **Ziegel**, **Betonsteine**"},
+        {"id": "baustoffe-6-kuenstliche-steine-c002", "type": "basic", "front": "Naturstein vs. künstliche Steine – der Unterschied?", "back": "Naturstein ist ein **Naturprodukt**. Künstliche Steine sind ein **homogenes Baumaterial**, das für seinen Verwendungszweck **optimiert** ist."},
+        {"id": "baustoffe-6-kuenstliche-steine-c003", "type": "basic", "front": "Wofür werden künstliche Steine optimiert?", "back": "Dichte · Wasseraufnahme (Außenwand) · Format (Baufortschritt) · Druckfestigkeit (Industriebau) · Wärmedämmung/-speicherung und Schallschutz (Wohnungsbau) · Fertigteilbauwerke"},
+        {"id": "baustoffe-6-kuenstliche-steine-c004", "type": "basic", "front": "Meistverbaute Mauersteine in Deutschland (Menge)?", "back": "**Ziegel** ≈ 3 Mio. m³ · **Kalksandstein** ≈ 2,4 Mio. m³ · **Porenbeton** ≈ 1,57 Mio. m³"}
+      ],
+      "quiz": [
+        {"id": "baustoffe-6-kuenstliche-steine-q001", "type": "mc", "question": "Welcher Mauerstein wird in Deutschland am meisten verbaut?", "options": ["Kalksandstein", "Ziegel", "Porenbeton", "Betonstein"], "answer": 1, "explanation": "Ziegel ≈ 3 Mio. m³, vor KS (2,4) und Porenbeton (1,57)."},
+        {"id": "baustoffe-6-kuenstliche-steine-q002", "type": "mc", "question": "Wofür steht **KS**?", "options": ["Klinkerstein", "Kalksandstein", "Kunststein", "Kiesstein"], "answer": 1, "explanation": "KS = Kalksandstein."},
+        {"id": "baustoffe-6-kuenstliche-steine-q003", "type": "mc", "question": "Warum nimmt man für Wohnhäuser oft künstliche Steine?", "options": ["Sie sind Naturprodukte", "Sie sind für Wärmedämmung, Schallschutz usw. optimiert und gleichmäßig", "Sie sind immer billiger als Holz", "Sie brauchen keinen Mörtel"], "answer": 1, "explanation": "Homogen und für den Zweck optimiert."},
+        {"id": "baustoffe-6-kuenstliche-steine-q004", "type": "mc", "question": "Welche Eigenschaft ist bei Steinen für die **Außenwand** besonders wichtig?", "options": ["Wasseraufnahme", "Farbe", "Geruch", "Magnetismus"], "answer": 0, "explanation": "Laut Hefteintrag: Wasseraufnahme → Außenwand."}
+      ]
+    }
+  ]
+}

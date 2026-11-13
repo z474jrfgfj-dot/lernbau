@@ -1,0 +1,52 @@
+{
+  "unit": "englisch-3",
+  "subject": "englisch",
+  "decks": [
+    {
+      "id": "englisch-3-safety",
+      "title": "Safety on the construction site (Prüfungsstoff Modul 1)",
+      "description": "Schutzkleidung, Sicherheitszeichen, Unfälle vermeiden, Lückentext Baustellenplan und Word bank – laut Notiz Prüfungsstoff.",
+      "sources": ["Prüfung.pdf", "Englisch Buch - Construction Milestone.pdf"],
+      "cards": [
+        {"id": "englisch-3-safety-c001", "type": "basic", "front": "⚠️ Was kommt laut deiner Notiz in die Englisch-Prüfung?", "back": "- Vokabeln aus dem Foto\n- Aufgaben aus Modul 1\n- Lückentexte und Definitionen\n- Sachen beschreiben (Baustelle, Sicherheit)"},
+        {"id": "englisch-3-safety-c002", "type": "basic", "front": "**safety boots**", "back": "Sicherheitsschuhe", "hint": "PPE – persönliche Schutzausrüstung"},
+        {"id": "englisch-3-safety-c003", "type": "basic", "front": "**safety glasses**", "back": "Schutzbrille", "hint": "PPE – persönliche Schutzausrüstung"},
+        {"id": "englisch-3-safety-c004", "type": "basic", "front": "**protective gloves**", "back": "Schutzhandschuhe", "hint": "PPE – persönliche Schutzausrüstung"},
+        {"id": "englisch-3-safety-c005", "type": "basic", "front": "**safety helmet**", "back": "Schutzhelm", "hint": "PPE – persönliche Schutzausrüstung"},
+        {"id": "englisch-3-safety-c006", "type": "basic", "front": "**ear muffs**", "back": "Gehörschutz (Kapselgehörschutz)", "hint": "PPE – persönliche Schutzausrüstung"},
+        {"id": "englisch-3-safety-c007", "type": "basic", "front": "**high-visibility jacket**", "back": "Warnweste", "hint": "PPE – persönliche Schutzausrüstung"},
+        {"id": "englisch-3-safety-c008", "type": "basic", "front": "**building trades association**", "back": "Berufsgenossenschaft Bau", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c009", "type": "basic", "front": "**enclosure**", "back": "Umgrenzung", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c010", "type": "basic", "front": "**excavation soil**", "back": "Erdaushub", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c011", "type": "basic", "front": "**form board**", "back": "Schalbrett", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c012", "type": "basic", "front": "**formwork**", "back": "(Ver-)Schalung", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c013", "type": "basic", "front": "**load-bearing**", "back": "tragfähig", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c014", "type": "basic", "front": "**to pave**", "back": "befestigen", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c015", "type": "basic", "front": "**protective clothing**", "back": "Schutzkleidung", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c016", "type": "basic", "front": "**safety sign**", "back": "Sicherheitsschild / -hinweis", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c017", "type": "basic", "front": "**site facilities**", "back": "Baustelleneinrichtungen", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c018", "type": "basic", "front": "**structural steel**", "back": "Baustahl", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c019", "type": "basic", "front": "**supply pipe**", "back": "Versorgungsleitung", "hint": "Word bank Modul 1"},
+        {"id": "englisch-3-safety-c020", "type": "basic", "front": "Why do accidents often happen on a construction site?", "back": "When materials and equipment are **left lying around**, when people **ignore safety signs** and when workers **do not wear protective clothing**."},
+        {"id": "englisch-3-safety-c021", "type": "basic", "front": "What must the safety training include? (5)", "back": "call attention to risks · safety rules for the construction site · call for protective clothing · regular inspection of tools before use · no alcohol before and during work (+ first aid)"}
+      ],
+      "quiz": [
+        {"id": "englisch-3-safety-q001", "type": "mc", "question": "**Safety first:** Which instruction matches the **blue sign with ear muffs**?", "options": ["Wear safety glasses.", "Ear protection must be worn.", "You mustn't smoke here!", "You should wear a safety helmet."], "answer": 1, "explanation": "Sign 1: *Ear protection must be worn.*"},
+        {"id": "englisch-3-safety-q002", "type": "mc", "question": "**Safety first:** Which instruction matches the **yellow triangle with a lightning bolt**?", "options": ["Danger of slipping!", "You should wear a safety helmet.", "Wear safety glasses.", "Warning! Electrical hazard."], "answer": 3, "explanation": "Sign 2: *Warning! Electrical hazard.*"},
+        {"id": "englisch-3-safety-q003", "type": "mc", "question": "**Safety first:** Which instruction matches the **blue sign with a boot**?", "options": ["You should wear a safety helmet.", "Warning! Electrical hazard.", "Safety boots should be worn here!", "Warning! Inflammable."], "answer": 2, "explanation": "Sign 3: *Safety boots should be worn here!*"},
+        {"id": "englisch-3-safety-q004", "type": "mc", "question": "**Safety first:** Which instruction matches the **yellow triangle with a flame**?", "options": ["Ear protection must be worn.", "You mustn't smoke here!", "Warning! Inflammable.", "Warning! Electrical hazard."], "answer": 2, "explanation": "Sign 4: *Warning! Inflammable.*"},
+        {"id": "englisch-3-safety-q005", "type": "mc", "question": "**Safety first:** Which instruction matches the **red circle with a crossed-out cigarette**?", "options": ["Ear protection must be worn.", "Danger of slipping!", "Warning! Electrical hazard.", "You mustn't smoke here!"], "answer": 3, "explanation": "Sign 5: *You mustn't smoke here!*"},
+        {"id": "englisch-3-safety-q006", "type": "mc", "question": "**Safety first:** Which instruction matches the **blue sign with goggles**?", "options": ["You mustn't smoke here!", "Wear safety glasses.", "Danger of slipping!", "Warning! Electrical hazard."], "answer": 1, "explanation": "Sign 6: *Wear safety glasses.*"},
+        {"id": "englisch-3-safety-q007", "type": "mc", "question": "**Safety first:** Which instruction matches the **yellow triangle with a slipping person**?", "options": ["Safety boots should be worn here!", "Danger of slipping!", "Warning! Electrical hazard.", "You mustn't smoke here!"], "answer": 1, "explanation": "Sign 7: *Danger of slipping!*"},
+        {"id": "englisch-3-safety-q008", "type": "mc", "question": "**Safety first:** Which instruction matches the **blue sign with a helmet**?", "options": ["Wear safety glasses.", "You should wear a safety helmet.", "Danger of slipping!", "Safety boots should be worn here!"], "answer": 1, "explanation": "Sign 8: *You should wear a safety helmet.*"},
+        {"id": "englisch-3-safety-q009", "type": "mc", "question": "*Julian dropped a piece of wood on his foot and broke his toes.* Why?", "options": ["He didn't wear ear muffs.", "He didn't wear safety boots.", "He didn't wear gloves.", "He didn't wear a helmet."], "answer": 1, "explanation": "because he didn't wear safety boots"},
+        {"id": "englisch-3-safety-q010", "type": "mc", "question": "*Sarah got a splinter in her eye when she was cutting form boards.* Why?", "options": ["She didn't wear safety glasses.", "She didn't wear safety boots.", "She didn't wear a jacket.", "She didn't wear ear muffs."], "answer": 0, "explanation": "because she didn't wear safety glasses"},
+        {"id": "englisch-3-safety-q011", "type": "mc", "question": "*Thomas cut his finger on a piece of steel.* Why?", "options": ["He didn't wear a helmet.", "He didn't wear protective gloves.", "He didn't wear glasses.", "He didn't wear boots."], "answer": 1, "explanation": "because he didn't wear protective gloves"},
+        {"id": "englisch-3-safety-q012", "type": "mc", "question": "*Tim could not hear anything after a day on the construction site.* Why?", "options": ["He didn't wear ear muffs.", "He didn't wear gloves.", "He didn't wear a helmet.", "He didn't wear boots."], "answer": 0, "explanation": "because he didn't wear ear muffs"},
+        {"id": "englisch-3-safety-q013", "type": "mc", "question": "*Sandy was taken to hospital when a stone fell on her head.* Why?", "options": ["She didn't wear glasses.", "She didn't wear a safety helmet.", "She didn't wear gloves.", "She didn't wear boots."], "answer": 1, "explanation": "because she didn't wear a safety helmet"},
+        {"id": "englisch-3-safety-q014", "type": "exercise", "question": "**Book p. 10, Ex. 6:** Complete the text (dry · construction workers · storage areas · construction site · prefabricated elements).\n*The architect draws up the site plan. This plan shows the location and enclosure of the (1). … the recreation room for the (2). … When work begins on the site, it is important to have (3) for the excavation soil as well as for the building materials: wood, structural steel, bricks, formwork and (4). Storage areas also have to be (5) and load-bearing.*", "fields": [{"label": "1", "solution": "construction site"}, {"label": "2", "solution": "construction workers"}, {"label": "3", "solution": "storage areas"}, {"label": "4", "solution": "prefabricated elements"}, {"label": "5", "solution": "dry"}], "explanation": "Achtung: Auf deinem Lösungsblatt sind (3) und (4) vertauscht – „storage areas for the excavation soil“ und „formwork and prefabricated elements“."},
+        {"id": "englisch-3-safety-q015", "type": "exercise", "question": "**Preventing accidents (auf Deutsch beantworten):** Wo passieren die meisten Arbeitsunfälle, warum ist eine regelmäßige Unterweisung wichtig, und was sagt sie zu Geräten und Alkohol?", "fields": [{"label": "Wo?", "solution": "Auf dem Bau – im Vergleich zu anderen Berufen eine der höchsten Unfallzahlen."}, {"label": "Warum Unterweisung?", "solution": "Um Unfälle zu vermeiden – der Arbeitgeber muss sie dokumentieren."}, {"label": "Geräte", "solution": "Werkzeuge/Arbeitsmittel vor dem Gebrauch regelmäßig prüfen."}, {"label": "Alkohol", "solution": "Kein Alkohol vor und während der Arbeit."}], "explanation": ""}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "unit": "cad-3",
+  "subject": "cad",
+  "decks": [
+    {
+      "id": "cad-3-fenster-treppen",
+      "title": "Fenster, Türen, Treppen & Geländer (Skript S. 51–71)",
+      "description": "Fenster und Türen einstellen und platzieren, Modelldarstellung, Treppen-Werkzeug, Treppendurchbruch und Geländer.",
+      "sources": ["3_ArchiCAD28_Skript_S51-71.pdf"],
+      "cards": [
+        {"id": "cad-3-fenster-treppen-c001", "type": "basic", "front": "Wo findet man das 1-Flügelfenster in Archicad?", "back": "Fenster-Werkzeug → Bibliotheken-Browser → **2.01 Rechteckfenster** → 1-Flügelfenster."},
+        {"id": "cad-3-fenster-treppen-c002", "type": "basic", "front": "Wie legt man ein Fenster in die **richtige Wand** bzw. Außenseite?", "back": "An Gebäudeecken mit der **Tab-Taste** zwischen den Wänden wechseln. Das **Sonnensymbol** zeigt die Außenseite – es muss außen liegen (ggf. mit Tab umschalten)."},
+        {"id": "cad-3-fenster-treppen-c003", "type": "basic", "front": "Wie platziert man ein Fenster mit genauem Abstand?", "back": "Mit den **Abstandshilfen**: Cursor auf die Wand, mit **Tab** zur gewünschten Abstandshilfe, Wert eintippen (z. B. 2,425), Enter."},
+        {"id": "cad-3-fenster-treppen-c004", "type": "basic", "front": "Wie wurden Fassade, Unterzug und Stützen ins Modell geholt?", "back": "Über die **Variantenplanung**: in der Schnell-Optionen-Leiste von „Nur Hauptmodell“ zu „01 Fassade, Unterzug, Stützen“ wechseln."},
+        {"id": "cad-3-fenster-treppen-c005", "type": "basic", "front": "Was regelt die **Modelldarstellung**?", "back": "Wie detailliert Bauteile und Objekte (Grundriss, Schnitt, 3D) dargestellt werden – z. B. **00 Arbeitseinstellung** (3D) oder **40 Beispiel Genehmigung** (einfachere Grundrissdarstellung ohne Fensterstempel)."},
+        {"id": "cad-3-fenster-treppen-c006", "type": "basic", "front": "Was muss man bei **bodentiefen Fenstern und Türen** nachträglich machen?", "back": "Den **Bodenaufbau** bis an das Fenster/die Tür heranziehen (Geometriemethode Rechteckig) – auch bei Innentüren."},
+        {"id": "cad-3-fenster-treppen-c007", "type": "basic", "front": "Treppe vom OG ins DG – welcher Favorit?", "back": "Treppen-Werkzeug → Favorit **„Falt, Holz“** im Ordner Treppen; Laufbreite anpassen, dann zeichnen."},
+        {"id": "cad-3-fenster-treppen-c008", "type": "basic", "front": "Warum sieht die Treppe in OG und DG unterschiedlich aus?", "back": "Die Grundrissdarstellung ist **geschossabhängig** – im oberen Geschoss als **Aufsicht**, im unteren mit Beschriftung (wie im Technischen Zeichnen üblich)."},
+        {"id": "cad-3-fenster-treppen-c009", "type": "basic", "front": "Was ist nach dem Einsetzen der Treppe noch zu tun?", "back": "**Treppendurchbruch** in der Rohdecke erstellen, dann mit dem **Geländer-Werkzeug** Geländer setzen (assoziativ zu Treppe, Decke, Wand, Dach)."}
+      ],
+      "quiz": [
+        {"id": "cad-3-fenster-treppen-q001", "type": "mc", "question": "Welche Taste wechselt beim Fenster-Platzieren die Wand bzw. die Außenseite?", "options": ["Shift", "Tab", "Alt", "Esc"], "answer": 1, "explanation": "Tab – das Sonnensymbol zeigt außen."},
+        {"id": "cad-3-fenster-treppen-q002", "type": "mc", "question": "Was zeigt das **Sonnensymbol** beim Platzieren eines Fensters?", "options": ["die Himmelsrichtung Süd", "die Außenseite des Fensters", "die Öffnungsrichtung", "die Brüstungshöhe"], "answer": 1, "explanation": "Es muss auf der Außenseite des Gebäudes liegen."},
+        {"id": "cad-3-fenster-treppen-q003", "type": "mc", "question": "Welche Modelldarstellung eignet sich für einen einfachen Genehmigungsgrundriss?", "options": ["00 Arbeitseinstellung", "40 Beispiel Genehmigung", "Nur Hauptmodell", "01 Fassade"], "answer": 1, "explanation": "40 Beispiel Genehmigung zeigt Fenster ohne Ausführungsdetails."},
+        {"id": "cad-3-fenster-treppen-q004", "type": "mc", "question": "Womit wurden Fassadenlattung, Unterzug und Stützen eingeblendet?", "options": ["Teilbild", "Variante „01 Fassade, Unterzug, Stützen“", "Ebenenkombination", "Hotlink"], "answer": 1, "explanation": "Variantenplanung in der Schnell-Optionen-Leiste."},
+        {"id": "cad-3-fenster-treppen-q005", "type": "mc", "question": "Welcher Treppen-Favorit wird im Kurs verwendet?", "options": ["Gerade, Beton", "Falt, Holz", "Wendel, Stahl", "Podest, Stein"], "answer": 1, "explanation": "Favorit „Falt, Holz“."}
+      ]
+    }
+  ]
+}

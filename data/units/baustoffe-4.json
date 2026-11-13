@@ -6,7 +6,7 @@
       "id": "baustoffe-4-naturstein",
       "title": "Natursteine",
       "description": "Erstarrungs-, Ablagerungs- und Umwandlungsgesteine, wichtige Minerale und der Fragenkatalog Naturstein.",
-      "sources": ["Skript Natursteinarten.pdf", "BSTK Natursteine.docx.pdf", "Hndout Tiefengestein.pdf", "Handout Ganggestein Ergussgestein.pdf", "Handout Ablagerungsgesteine.pdf", "Handout Baustofftechnologie.pdf", "Ton - Steinkohle.pdf", "Fragen zum Thema Naturstein 2023.pdf"],
+      "sources": ["Skript Natursteinarten.pdf", "BSTK Natursteine.docx.pdf", "Handout Ganggestein Ergussgestein.pdf", "Handout Ablagerungsgesteine.pdf", "Ton - Steinkohle.pdf", "Fragen zum Thema Naturstein 2023.pdf"],
       "cards": [
         {"id": "baustoffe-4-naturstein-c001", "type": "basic", "front": "Was sind **Natursteine**?", "back": "Abgekühlte und erstarrte Magmamassen sowie die Verwitterungs- und Umwandlungsprodukte des Urgesteins."},
         {"id": "baustoffe-4-naturstein-c002", "type": "basic", "front": "Unterschied **Mineral** und **Gestein**?", "back": "Ein Mineral ist eine anorganische, chemisch einheitliche Verbindung (meist Kristall). Gesteine sind Anhäufungen von Mineralen (heterogen); Mineralbestand und Gefüge bestimmen ihre Eigenschaften."},
