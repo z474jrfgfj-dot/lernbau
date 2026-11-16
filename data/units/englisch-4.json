@@ -1,0 +1,57 @@
+{
+  "unit": "englisch-4",
+  "subject": "englisch",
+  "decks": [
+    {
+      "id": "englisch-4-baustelle",
+      "title": "Vokabeln Baustelle (Foto + Vokabeltest)",
+      "description": "Die Wörter vom Baustellen-Foto und aus dem Vokabeltest – im Vokabeltrainer zum Eintippen. ★ = im Test falsch.",
+      "sources": ["Baustelle.pdf", "Vokabeltest Englisch Baustelle - Unterricht.pdf"],
+      "cards": [
+        {"id": "englisch-4-baustelle-c001", "type": "vocab", "en": "bucket", "de": "der Eimer"},
+        {"id": "englisch-4-baustelle-c002", "type": "vocab", "en": "steel rod mat", "de": "die Baustahlmatte", "deAlt": ["die Bewehrungsmatte", "die Betonstahlmatte", "die Stahlmatte"], "enAlt": ["reinforcing steel mesh", "steel mat", "mesh"]},
+        {"id": "englisch-4-baustelle-c003", "type": "vocab", "en": "railing", "de": "das Geländer", "note": "★ Im Vokabeltest falsch – üben!"},
+        {"id": "englisch-4-baustelle-c004", "type": "vocab", "en": "table saw", "de": "die Tischkreissäge", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["die Kreissäge"]},
+        {"id": "englisch-4-baustelle-c005", "type": "vocab", "en": "gravel", "de": "der Kies"},
+        {"id": "englisch-4-baustelle-c006", "type": "vocab", "en": "tool store", "de": "das Werkzeuglager", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["der Werkzeugcontainer", "der Werkzeugschuppen"], "enAlt": ["tool container"]},
+        {"id": "englisch-4-baustelle-c007", "type": "vocab", "en": "building", "de": "das Gebäude", "deAlt": ["der Bau", "das Haus"]},
+        {"id": "englisch-4-baustelle-c008", "type": "vocab", "en": "construction fence", "de": "der Bauzaun", "enAlt": ["site fence", "hoarding"]},
+        {"id": "englisch-4-baustelle-c009", "type": "vocab", "en": "plaster", "de": "der Putz", "note": "★ Im Vokabeltest falsch – üben!"},
+        {"id": "englisch-4-baustelle-c010", "type": "vocab", "en": "chimney", "de": "der Schornstein", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["der Kamin"]},
+        {"id": "englisch-4-baustelle-c011", "type": "vocab", "en": "shutters", "de": "die Fensterläden", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["der Fensterladen", "die Klappläden"]},
+        {"id": "englisch-4-baustelle-c012", "type": "vocab", "en": "hipped roof", "de": "das Walmdach", "note": "★ Im Vokabeltest falsch – üben!"},
+        {"id": "englisch-4-baustelle-c013", "type": "vocab", "en": "skylight", "de": "das Dachfenster", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["das Oberlicht"]},
+        {"id": "englisch-4-baustelle-c014", "type": "vocab", "en": "steel beam", "de": "der Stahlträger", "note": "★ Im Vokabeltest falsch – üben!", "enAlt": ["steel support", "steel girder"]},
+        {"id": "englisch-4-baustelle-c015", "type": "vocab", "en": "scaffolding", "de": "das Gerüst", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["das Baugerüst"]},
+        {"id": "englisch-4-baustelle-c016", "type": "vocab", "en": "lifting chain", "de": "die Anschlagkette", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["das Gehänge", "die Hebekette", "die Kette"], "enAlt": ["chain sling"]},
+        {"id": "englisch-4-baustelle-c017", "type": "vocab", "en": "gutter", "de": "die Dachrinne", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["die Regenrinne", "die Rinne"]},
+        {"id": "englisch-4-baustelle-c018", "type": "vocab", "en": "concrete", "de": "der Beton", "note": "★ Im Vokabeltest falsch – üben!"},
+        {"id": "englisch-4-baustelle-c019", "type": "vocab", "en": "reinforced concrete", "de": "der Stahlbeton", "note": "★ Im Vokabeltest falsch – üben!"},
+        {"id": "englisch-4-baustelle-c020", "type": "vocab", "en": "rebar", "de": "der Bewehrungsstahl", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["der Betonstahl", "die Bewehrung", "der Baustahl"], "enAlt": ["reinforcing steel", "reinforcement steel"]},
+        {"id": "englisch-4-baustelle-c021", "type": "vocab", "en": "topsoil", "de": "der Mutterboden", "deAlt": ["der Oberboden"]},
+        {"id": "englisch-4-baustelle-c022", "type": "vocab", "en": "foundation", "de": "das Fundament", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["die Gründung"]},
+        {"id": "englisch-4-baustelle-c023", "type": "vocab", "en": "column", "de": "die Säule", "note": "★ Im Vokabeltest falsch – üben!", "deAlt": ["die Stütze"], "enAlt": ["pillar"]},
+        {"id": "englisch-4-baustelle-c024", "type": "vocab", "en": "batter board", "de": "das Schnurgerüst", "note": "★ Im Vokabeltest falsch – üben!", "enAlt": ["batter boards"]},
+        {"id": "englisch-4-baustelle-c025", "type": "vocab", "en": "garage", "de": "die Garage"},
+        {"id": "englisch-4-baustelle-c026", "type": "vocab", "en": "tree", "de": "der Baum"},
+        {"id": "englisch-4-baustelle-c027", "type": "vocab", "en": "sky", "de": "der Himmel"},
+        {"id": "englisch-4-baustelle-c028", "type": "vocab", "en": "roof", "de": "das Dach"},
+        {"id": "englisch-4-baustelle-c029", "type": "vocab", "en": "window", "de": "das Fenster"},
+        {"id": "englisch-4-baustelle-c030", "type": "vocab", "en": "mountain", "de": "der Berg"},
+        {"id": "englisch-4-baustelle-c031", "type": "vocab", "en": "fence", "de": "der Zaun"},
+        {"id": "englisch-4-baustelle-c032", "type": "vocab", "en": "downspout", "de": "das Fallrohr", "deAlt": ["das Regenfallrohr"], "enAlt": ["downpipe"]},
+        {"id": "englisch-4-baustelle-c033", "type": "vocab", "en": "crane ballast", "de": "der Kranballast", "deAlt": ["das Gegengewicht", "der Ballast"], "enAlt": ["crane weight", "counterweight", "ballast"]},
+        {"id": "englisch-4-baustelle-c034", "type": "vocab", "en": "street", "de": "die Straße"},
+        {"id": "englisch-4-baustelle-c035", "type": "vocab", "en": "car", "de": "das Auto"},
+        {"id": "englisch-4-baustelle-c036", "type": "vocab", "en": "power box", "de": "der Stromkasten", "deAlt": ["der Baustromverteiler"]},
+        {"id": "englisch-4-baustelle-c037", "type": "vocab", "en": "electrical panel", "de": "der Schaltschrank", "deAlt": ["der Verteilerkasten", "der Stromverteiler"]},
+        {"id": "englisch-4-baustelle-c038", "type": "vocab", "en": "container", "de": "der Container"},
+        {"id": "englisch-4-baustelle-c039", "type": "vocab", "en": "pile of soil", "de": "der Erdhaufen", "deAlt": ["der Haufen Erde"]},
+        {"id": "englisch-4-baustelle-c040", "type": "vocab", "en": "saw", "de": "die Säge"}
+      ],
+      "quiz": [
+
+      ]
+    }
+  ]
+}

@@ -28,7 +28,7 @@
         {"id": "englisch-vocab-m1-c018", "type": "vocab", "en": "site access road", "de": "der Baustellenzufahrtsweg", "deAlt": ["die Baustellenzufahrt", "die Zufahrt", "die Zufahrtsstraße"], "enAlt": ["access road"]},
         {"id": "englisch-vocab-m1-c019", "type": "vocab", "en": "recreation room", "de": "der Aufenthaltsraum", "deAlt": ["der Pausenraum", "der Aufenthaltsraum"], "enAlt": ["break room"]},
         {"id": "englisch-vocab-m1-c020", "type": "vocab", "en": "site office", "de": "das Baubüro", "deAlt": ["das Baustellenbüro", "der Baucontainer", "das Bauleitungsbüro"], "enAlt": ["site cabin"]},
-        {"id": "englisch-vocab-m1-c021", "type": "vocab", "en": "skip", "de": "der Abfallcontainer", "example": "The skip is full.", "exampleDe": "Der Abfallcontainer ist voll.", "note": "Dein Satz vom Blatt, sprachlich korrigiert.", "deAlt": ["der Container", "die Mulde", "der Schuttcontainer", "die Abfallmulde", "der Bauschuttcontainer"], "enAlt": ["waste container", "dumpster"]},
+        {"id": "englisch-vocab-m1-c021", "type": "vocab", "en": "skip", "de": "der Abfallcontainer", "example": "The skip is full.", "exampleDe": "Der Abfallcontainer ist voll.", "note": "Dein Satz vom Blatt, sprachlich korrigiert.", "deAlt": ["der Container", "die Mulde", "der Schuttcontainer", "die Abfallmulde", "der Bauschuttcontainer"], "enAlt": ["waste container", "dumpster", "container"]},
         {"id": "englisch-vocab-m1-c022", "type": "vocab", "en": "building firm", "de": "das Bauunternehmen", "example": "I'm doing my apprenticeship at the building firm Stolz.", "exampleDe": "Ich mache meine Ausbildung beim Bauunternehmen Stolz.", "note": "Dein Satz vom Blatt, sprachlich korrigiert.", "deAlt": ["die Baufirma", "der Baubetrieb", "das Bauunternehmen"], "enAlt": ["construction company", "building company", "construction firm"]},
         {"id": "englisch-vocab-m1-c023", "type": "vocab", "en": "apprenticeship", "de": "die Berufsausbildung / die Lehre", "deAlt": ["die Ausbildung"], "enAlt": ["vocational training", "traineeship"]},
         {"id": "englisch-vocab-m1-c024", "type": "vocab", "en": "internship", "de": "das Praktikum", "note": "Auf dem Blatt mit (AE) = amerikanisches Englisch; britisch auch: work placement.", "deAlt": ["das Betriebspraktikum"], "enAlt": ["work placement", "placement"]},
@@ -72,7 +72,9 @@
         {"id": "englisch-vocab-m1-c062", "type": "vocab", "en": "to demand", "de": "verlangen / fordern", "deAlt": ["anfordern", "einfordern"], "enAlt": ["to require", "to request"]},
         {"id": "englisch-vocab-m1-c063", "type": "vocab", "en": "to prohibit", "de": "verbieten", "deAlt": ["untersagen"], "enAlt": ["to forbid", "to ban"]}
       ],
-      "quiz": []
+      "quiz": [
+
+      ]
     }
   ]
 }

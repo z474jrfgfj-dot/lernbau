@@ -66,41 +66,6 @@
         {"id": "englisch-2-comparatives-q031", "type": "mc", "question": "Comparative of **slow**?", "options": ["slover", "slower", "more slow", "slowlier"], "answer": 1, "explanation": "slow → slower"},
         {"id": "englisch-2-comparatives-q032", "type": "mc", "question": "*He is ___ younger than his father* (big difference).", "options": ["a bit", "much", "more", "most"], "answer": 1, "explanation": "much younger"}
       ]
-    },
-    {
-      "id": "englisch-2-vokabeltest",
-      "title": "Vokabeltest Baustelle (Unterricht)",
-      "description": "Die Wörter aus dem Vokabeltest vom 20.10. – mit Markierung, welche im Test falsch waren.",
-      "sources": ["Vokabeltest Englisch Baustelle - Unterricht.pdf"],
-      "cards": [
-        {"id": "englisch-2-vokabeltest-c001", "type": "basic", "front": "**bucket**", "back": "der Eimer", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c002", "type": "basic", "front": "**steel rod mat**", "back": "die Baustahlmatte", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c003", "type": "basic", "front": "**railing**", "back": "das Geländer\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c004", "type": "basic", "front": "**table saw**", "back": "die Tischkreissäge\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c005", "type": "basic", "front": "**gravel**", "back": "der Kies", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c006", "type": "basic", "front": "**tool store**", "back": "das Werkzeuglager\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c007", "type": "basic", "front": "**building**", "back": "das Gebäude", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c008", "type": "basic", "front": "**construction fence**", "back": "der Bauzaun", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c009", "type": "basic", "front": "**plaster**", "back": "der Putz\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c010", "type": "basic", "front": "**chimney**", "back": "der Schornstein / der Kamin\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c011", "type": "basic", "front": "**shutters**", "back": "die Fensterläden\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c012", "type": "basic", "front": "**hipped roof**", "back": "das Walmdach\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c013", "type": "basic", "front": "**skylight**", "back": "das Dachfenster\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c014", "type": "basic", "front": "**steel beam**", "back": "der Stahlträger\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c015", "type": "basic", "front": "**scaffolding**", "back": "das Gerüst\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c016", "type": "basic", "front": "**lifting chain**", "back": "das Gehänge / die Anschlagkette\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c017", "type": "basic", "front": "**gutter**", "back": "die Dachrinne\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c018", "type": "basic", "front": "**concrete**", "back": "der Beton\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c019", "type": "basic", "front": "**reinforced concrete**", "back": "der Stahlbeton\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c020", "type": "basic", "front": "**rebar**", "back": "der Bewehrungsstahl\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c021", "type": "basic", "front": "**topsoil**", "back": "der Mutterboden", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c022", "type": "basic", "front": "**foundation**", "back": "das Fundament\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c023", "type": "basic", "front": "**column**", "back": "die Säule / die Stütze\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."},
-        {"id": "englisch-2-vokabeltest-c024", "type": "basic", "front": "**batter boards**", "back": "das Schnurgerüst\n★ Im Vokabeltest falsch – üben!", "hint": "Erst auf Deutsch überlegen, dann aufdecken."}
-      ],
-      "quiz": [
-
-      ]
     }
   ]
 }
